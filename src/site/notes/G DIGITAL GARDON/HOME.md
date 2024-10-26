@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":"2","permalink":"/G DIGITAL GARDON/HOME/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-10-26T09:43:32.343+08:00","updated":"2024-10-26T10:17:12.391+08:00"}
+{"dg-publish":true,"dg-home":"true","dg-note-icon":"2","permalink":"/G DIGITAL GARDON/HOME/","tags":["gardenEntry"],"dgPassFrontmatter":true,"noteIcon":"2","created":"2024-10-26T09:43:32.343+08:00","updated":"2024-10-26T10:21:51.215+08:00"}
 ---
 
 ## 成熟度级别
