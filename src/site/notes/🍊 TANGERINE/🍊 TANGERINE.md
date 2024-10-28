@@ -1,10 +1,11 @@
 ---
-{"dg-publish":true,"dg-note-icon":"Tree-3","dg-path":"Tree Graph.md","permalink":"/Tree Graph/","dgPassFrontmatter":true,"noteIcon":"Tree-3","created":"2024-10-26T20:16:55.000+08:00","updated":"2024-10-28T15:25:15.014+08:00"}
+{"title":"🍊 TANGERINE","dg-home":true,"dg-publish":true,"dg-note-icon":"signpost","dg-path":"🍊 TANGERINE.md","permalink":"/🍊 TANGERINE/","tags":["gardenEntry"],"dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-10-28T13:02:15.886+08:00","updated":"2024-10-28T15:50:54.694+08:00"}
 ---
 
-## 成熟度级别
-
-每个音符的成熟度级别由各种生长的植物图标表示。
+- 这里是 🍊Tangerine|橘园，一个数字花园(Digital Garden)，是一个记录自己想法、观点萌发的地方，每一篇笔记/项目/想法的萌生都是埋下一粒种子，我会给它浇水施肥，在将来某一天它生根发芽，甚至开花结果。而橘园会记录和见证这一切的成长。
+- 如果想了解我：[[🍊 TANGERINE/README/About Me\|About Me]]
+- 想了解橘园：[[🍊 TANGERINE/README/Tangerine Garden\|Tangerine Garden]]
+## 成熟度等级
 
 |   Name   | Maturity |                         Icon                         | Desc                                                                   |
 | :------: | :------: | :--------------------------------------------------: | ---------------------------------------------------------------------- |
