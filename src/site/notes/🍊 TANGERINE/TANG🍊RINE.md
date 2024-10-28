@@ -1,10 +1,7 @@
 ---
-{"dg-publish":true,"dg-note-icon":"3","permalink":"/🍊 TANGERINE/Tree Graph/","dgPassFrontmatter":true,"noteIcon":"3","created":"2024-10-26T20:16:55.000+08:00","updated":"2024-10-28T14:23:42.541+08:00"}
+{"title":"🍊 TANGERINE","dg-home":true,"dg-publish":true,"dg-note-icon":"signpost","permalink":"/🍊 TANGERINE/TANG🍊RINE/","tags":["gardenEntry"],"dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-10-28T13:02:15.886+08:00","updated":"2024-10-28T14:21:59.427+08:00"}
 ---
 
-## 成熟度级别
-
-每个音符的成熟度级别由各种生长的植物图标表示。
 
 | Name     | 中文  | Icon                                                          | Desc                                                                   |
 | -------- | --- | ------------------------------------------------------------- | ---------------------------------------------------------------------- |
