@@ -1,5 +1,5 @@
 ---
-{"title":"🍊 TANGERINE","dg-home":true,"dg-publish":true,"dg-note-icon":"signpost","permalink":"/🍊 TANGERINE/TANG🍊RINE/","tags":["gardenEntry"],"dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-10-28T13:02:15.886+08:00","updated":"2024-10-28T14:21:59.427+08:00"}
+{"title":"🍊 TANGERINE","dg-home":true,"dg-publish":true,"dg-note-icon":"signpost","dg-path":"TANG🍊RINE.md","permalink":"/TANG🍊RINE/","tags":["gardenEntry"],"dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-10-28T13:02:15.886+08:00","updated":"2024-10-28T14:21:59.427+08:00"}
 ---
 
 
