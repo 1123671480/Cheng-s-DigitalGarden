@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":"stone","dg-path":"Garden Management/Digital Garden.md","permalink":"/Garden Management/Digital Garden/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-10-29T20:51:39.117+08:00","updated":"2024-10-29T21:01:27.072+08:00"}
+{"dg-publish":true,"dg-note-icon":"stone","dg-path":"Garden Management/Digital Garden.md","permalink":"/Garden Management/Digital Garden/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-10-29T20:51:39.117+08:00","updated":"2024-10-29T21:27:51.962+08:00"}
 ---
 
 ## 什么是数字花园？

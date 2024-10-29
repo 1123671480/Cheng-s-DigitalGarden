@@ -1,5 +1,5 @@
 ---
-{"dg-home":true,"dg-publish":true,"dg-note-icon":"signpost","dg-path":"Garden Management/TANGERINE.md","permalink":"/Garden Management/TANGERINE/","tags":["gardenEntry"],"dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-10-28T13:02:15.886+08:00","updated":"2024-10-29T21:25:23.092+08:00"}
+{"dg-home":true,"dg-publish":true,"dg-note-icon":"signpost","dg-path":"Garden Management/TANGERINE.md","permalink":"/Garden Management/TANGERINE/","tags":["gardenEntry"],"dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-10-28T13:02:15.886+08:00","updated":"2024-10-29T21:27:57.395+08:00"}
 ---
 
 - 这里是 🍊Tangerine|橘园，一个数字花园([[🍊 TANGERINE/Garden Management/Digital Garden\|Digital Garden]])，是一个记录自己想法、观点萌发的地方，每一篇笔记/项目/想法的萌生都是埋下一粒种子，我会给它浇水施肥，在将来某一天它生根发芽，甚至开花结果。而橘园会记录和见证这一切的成长。

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":3,"dg-path":"Garden Management/Tree Graph.md","permalink":"/Garden Management/Tree Graph/","dgPassFrontmatter":true,"noteIcon":3,"created":"2024-10-26T20:16:55.000+08:00","updated":"2024-10-29T21:01:06.706+08:00"}
+{"dg-publish":true,"dg-note-icon":3,"dg-path":"Garden Management/Tree Graph.md","permalink":"/Garden Management/Tree Graph/","dgPassFrontmatter":true,"noteIcon":3,"created":"2024-10-26T20:16:55.000+08:00","updated":"2024-10-29T21:27:50.393+08:00"}
 ---
 
 ## 成熟度级别
