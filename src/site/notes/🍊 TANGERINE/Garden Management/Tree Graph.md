@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"dg-note-icon":3,"dg-path":"Garden Management/Tree Graph.md","permalink":"/Garden Management/Tree Graph/","dgPassFrontmatter":true,"noteIcon":3,"created":"2024-10-26T20:16:55.000+08:00","updated":"2024-10-29T21:27:50.393+08:00"}
+{"dg-publish":true,"dg-note-icon":3,"dg-path":"Garden Management/Tree Graph.md","permalink":"/Garden Management/Tree Graph/","dgPassFrontmatter":true,"noteIcon":3,"created":"2024-10-26T20:16:55.000+08:00","updated":"2024-10-30T22:48:42.176+08:00"}
 ---
 
 ## 成熟度级别
-每个音符的成熟度级别由各种生长的植物图标表示。
+每个笔记的成熟度级别由各种生长的植物图标表示。
 
 |   Name   | Maturity |                         Icon                         | Desc                                                                                   |
 | :------: | :------: | :--------------------------------------------------: | -------------------------------------------------------------------------------------- |
