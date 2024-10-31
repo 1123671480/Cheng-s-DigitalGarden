@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":"3","author":["Maggie Appleton"],"url":"https://maggieappleton.com/garden-history?ref=ideasurg.pub","dg-path":"Garden Management/Digital Garden.md","permalink":"/Garden Management/Digital Garden/","dgPassFrontmatter":true,"noteIcon":"3","created":"2024-10-29T20:51:39.117+08:00","updated":"2024-10-30T22:57:18.749+08:00"}
+{"dg-publish":true,"dg-note-icon":"3","dg-path":"Garden Management/Digital Garden.md","permalink":"/Garden Management/Digital Garden/","dgPassFrontmatter":true,"noteIcon":"3","created":"2024-10-29T20:51:39.117+08:00","updated":"2024-10-31T08:49:24.051+08:00"}
 ---
 
 ## 什么是Digital Garden（数字花园）？
@@ -16,6 +16,20 @@
 它们也不像我们习惯于在网络上遇到的个人 “博客” 那么僵化，不那么表演、也不那么完美。
 
 ## 数字花园简史
+
+> AI 速读
+> 
+> 文档详细概述了数字花园的历史和理念，主要内容包括：
+> 
+> 1. 数字花园的起源可以追溯到1990年代关于超文本的讨论，Mike Caufield 在 2015 年的演讲中进一步阐述了这个概念。 
+> 2. 数字花园兴起的社会土壤包括 IndieWeb 社区、Roam Research 用户、个人知识管理系统的追随者等。
+> 3. 数字花园有六种模式：基于关联而非时间线组织、持续增长、公开学习、玩味性、内容多样性、独立所有权。
+> 4. 数字花园理念包括：知识的连续成长、公开学习、不完美、个性化、多种媒介并存、独立所有权。
+> 5. 数字花园是对个人博客的回应,更加私密、公开、怪诞、热情,注重知识积累而非社交对话。
+> 6. 数字花园为我们提供了展示自我的方式，而不仅仅是平台预设的模板。
+> 7. 数字花园还有很多可探索的方向，正在形成的理念和实践社区值得持续关注。
+> 
+> 综上所述，文档全面阐释了数字花园的理念，既有历史渊源，也与当前环境密切相关。它为我们提供了理解和实践数字花园的重要参考。
 
 数字花园这个词汇已经流传了二十多年。然而它在那段时间里经历了几次语义上的变化，多年来不同的人有不同的理解。
 
@@ -243,3 +257,6 @@ Gwern. net 是最早和最一致的园丁之一，对他们的工作提供元反
 ![](https://kidpic.oss-cn-beijing.aliyuncs.com/img/20221104161908.png)
 
 这就是我对花园的全部看法，但知识和新词总是存在于社区中。没有人拥有数字花园的官方定义。许多人为不断增长的对话做出了贡献，您也应该阅读他们的想法。
+
+原文链接：[A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history?ref=ideasurg.pub)
+作者：Maggie Appleton， [GitHub](https://github.com/MaggieAppleton/digital-gardeners)整理了一些相关资源
