@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":2,"permalink":"/🍊 TANGERINE/Garden Management/Construction Process/","dgPassFrontmatter":true,"noteIcon":2,"created":"2024-10-26T20:16:51.000+08:00","updated":"2024-10-30T20:21:07.302+08:00"}
+{"dg-publish":true,"dg-note-icon":2,"permalink":"/🍊 TANGERINE/Garden Management/Construction Process/","dgPassFrontmatter":true,"noteIcon":2,"created":"2024-10-26T20:16:51.000+08:00","updated":"2024-11-01T22:11:14.292+08:00"}
 ---
 
 ## Construction
@@ -12,9 +12,12 @@
 >您可以打开[Netlify](https://app.netlify.com)查看实时构筑情况，有时会出现各种意外情况导致构筑失败，请回想起是不是哪些元数据拼写错误，也可以点击构筑网站内的AI总结错误原因，最后可以看一下构筑日志中报错的部分
 
 - 网站构建对于新手来说比较困难，不过构筑成功后非常有成就感！橘子也一直在摸索中……
+## Project
+- [ ] 更改网站 CSS 颜色问题
 ## Log
 - 2024-10-26：初步搭建Digital Garden，更名为🍊Tangerine|橘园
 - 2024-10-28：添加主页Tree Graph，并且绘制了主页Icon
 - 2024-10-28：【构筑问题】原因：笔记元数据中的Icon格式问题，只能是“1、2、3、withered、stone、signpost”
-- 2024-10-29：更改CSS设置，更改主页Icon为🍊
+- 2024-10-29：更改CSS设置，更改网站Icon为🍊
 - 2024-10-29：【构筑问题】原因：网站图标必须是正方形
+- 2024-11-01：Obsidian Vault 待发布笔记全部完成，目前笔记数量 73 ，暂时告一段落备战考研
