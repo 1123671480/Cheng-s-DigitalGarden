@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":"signpost","permalink":"/🍊 TANGERINE/Waypoint/Garden Waypoint/","dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-11-01T20:00:44.313+08:00","updated":"2024-11-01T20:55:58.938+08:00"}
+{"dg-publish":true,"dg-note-icon":"signpost","permalink":"/🍊 TANGERINE/Waypoint/Garden Waypoint/","dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-11-01T20:00:44.313+08:00","updated":"2024-11-01T21:56:54.402+08:00"}
 ---
 
 - 🍊 TANGERINE | 橘园的管理部门：主页、橘园历程、名词解释、Obsidian Vault 相关、个人等
@@ -50,3 +50,52 @@
 	- [[D 📚 RESOURCE/⚒️ Software/SketchUp\|SketchUp]]
 	- [[D 📚 RESOURCE/⚒️ Software/Zotero\|Zotero]]
 	- [[D 📚 RESOURCE/⚒️ Software/Obsidian\|Obsidian]]
+- 🌳 [[🍊 TANGERINE/Waypoint/Major\|Major]] | 果实 - 专业相关：包含景观设计、风景园林、地理、施工等专业知识笔记
+	- **Chart** | 分析图
+		- [[C 📔 AREA/02 🌳 Major/Chart/图纸的制作问题\|图纸的制作问题]]
+		- 01 前期分析
+			- [[C 📔 AREA/02 🌳 Major/Chart/01 前期分析/功能分析\|功能分析]]
+			- [[C 📔 AREA/02 🌳 Major/Chart/01 前期分析/肌理分析\|肌理分析]]
+			- [[C 📔 AREA/02 🌳 Major/Chart/01 前期分析/交通分析\|交通分析]]
+			- [[C 📔 AREA/02 🌳 Major/Chart/01 前期分析/类型学分析\|类型学分析]]
+			- [[C 📔 AREA/02 🌳 Major/Chart/01 前期分析/区位分析\|区位分析]]
+			- [[C 📔 AREA/02 🌳 Major/Chart/01 前期分析/现状分析\|现状分析]]
+			- [[C 📔 AREA/02 🌳 Major/Chart/01 前期分析/形体分析\|形体分析]]
+		- 02 中期分析
+			- [[C 📔 AREA/02 🌳 Major/Chart/02 中期分析/手绘模型\|手绘模型]]
+			- [[C 📔 AREA/02 🌳 Major/Chart/02 中期分析/轴测分析图\|轴测分析图]]
+	- **Construction** | 施工
+		- **Working** **Drawing** | 施工图
+			- [[C 📔 AREA/02 🌳 Major/Construction/Working Drawing/总览\|总览]]
+			- [[C 📔 AREA/02 🌳 Major/Construction/Working Drawing/土建施工图\|土建施工图]]
+			- [[C 📔 AREA/02 🌳 Major/Construction/Working Drawing/水电施工图\|水电施工图]]
+			- [[C 📔 AREA/02 🌳 Major/Construction/Working Drawing/结构施工图\|结构施工图]]
+			- [[C 📔 AREA/02 🌳 Major/Construction/Working Drawing/植物施工图\|植物施工图]]
+	- **Geography** | 地理
+		- Data Type
+			- [[C 📔 AREA/02 🌳 Major/Geography/Data Tpye/DEM\|DEM]]
+			- [[C 📔 AREA/02 🌳 Major/Geography/Data Tpye/KML\|KML]]
+			- [[C 📔 AREA/02 🌳 Major/Geography/Data Tpye/MAP\|MAP]]
+			- [[C 📔 AREA/02 🌳 Major/Geography/Data Tpye/SHP\|SHP]]
+			- [[C 📔 AREA/02 🌳 Major/Geography/Data Tpye/SRTM\|SRTM]]
+		- Data
+			- [[C 📔 AREA/02 🌳 Major/Geography/Data/哥白尼 DEM\|哥白尼 DEM]]
+			- [[C 📔 AREA/02 🌳 Major/Geography/Data/基于多源遥感数据的全球30米复种指数数据\|基于多源遥感数据的全球30米复种指数数据]]
+			- [[C 📔 AREA/02 🌳 Major/Geography/Data/GADM地图和数据\|GADM地图和数据]]
+		- [[C 📔 AREA/02 🌳 Major/Geography/参数化城市建模\|参数化城市建模]]
+		- [[C 📔 AREA/02 🌳 Major/Geography/获取地形等高线\|获取地形等高线]]
+		- [[C 📔 AREA/02 🌳 Major/Geography/3D Map Generator Terrain\|3D Map Generator Terrain]]
+		- [[C 📔 AREA/02 🌳 Major/Geography/等高线、高程点地形\|等高线、高程点地形]]
+		- [[C 📔 AREA/02 🌳 Major/Geography/高程数字生成地形\|高程数字生成地形]]
+		- [[C 📔 AREA/02 🌳 Major/Geography/高德自定义地图\|高德自定义地图]]
+		- [[C 📔 AREA/02 🌳 Major/Geography/ArcGIS建筑体块\|ArcGIS建筑体块]]
+		- [[C 📔 AREA/02 🌳 Major/Geography/Blender开源地形（VPN）\|Blender开源地形（VPN）]]
+		- [[C 📔 AREA/02 🌳 Major/Geography/Local Space Viewer 地图下载\|Local Space Viewer 地图下载]]
+		- [[C 📔 AREA/02 🌳 Major/Geography/Local Space Viewer 开源地形\|Local Space Viewer 开源地形]]
+		- [[C 📔 AREA/02 🌳 Major/Geography/Mapbox地图\|Mapbox地图]]
+		- [[C 📔 AREA/02 🌳 Major/Geography/OpenStreetMap+Rhino\|OpenStreetMap+Rhino]]
+		- [[C 📔 AREA/02 🌳 Major/Geography/SU开源地形（VPN）\|SU开源地形（VPN）]]
+- 🖥️ [[🍊 TANGERINE/Waypoint/Equipment\|Equipment]]
+	- **System** | 系统
+		- [[D 📚 RESOURCE/🖥️ Equipment/System/MacOS\|MacOS]]
+		- [[D 📚 RESOURCE/🖥️ Equipment/System/MacOS修饰键\|MacOS修饰键]]
