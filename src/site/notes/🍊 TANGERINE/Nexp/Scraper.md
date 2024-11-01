@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":"stone","dg-path":"Nexp/Scraper.md","permalink":"/Nexp/Scraper/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-10-31T16:54:12.322+08:00","updated":"2024-10-31T23:05:26.018+08:00"}
+{"dg-publish":true,"dg-note-icon":"stone","permalink":"/🍊 TANGERINE/Nexp/Scraper/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-10-31T16:54:12.322+08:00","updated":"2024-10-31T23:05:26.018+08:00"}
 ---
 
 刮削，这个听起来非常无厘头的名词，越来越多的出现在网络上。那么，刮削这个奇奇怪怪的名字，到底是什么？

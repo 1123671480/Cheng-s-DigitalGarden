@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":"3","dg-path":"Nexp/Open Source.md","permalink":"/Nexp/Open Source/","dgPassFrontmatter":true,"noteIcon":"3","created":"2024-10-23T22:38:05.000+08:00","updated":"2024-10-31T15:02:16.829+08:00"}
+{"dg-publish":true,"dg-note-icon":"3","permalink":"/🍊 TANGERINE/Nexp/Open Source/","dgPassFrontmatter":true,"noteIcon":"3","created":"2024-10-23T22:38:05.000+08:00","updated":"2024-10-31T15:02:16.829+08:00"}
 ---
 
 >我们想说我们对于开源价值和原则应用到软件之外领域的方式很有兴趣。我们更愿意不仅将开源视为一种计算机软件开发和许可的方式，也把它视作一种态度。

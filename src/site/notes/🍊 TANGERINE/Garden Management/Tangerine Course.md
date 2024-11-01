@@ -1,5 +1,5 @@
 ---
-{"tags":["course"],"dg-publish":true,"dg-note-icon":"2","dg-path":"Garden Management/Tangerine Course.md","permalink":"/Garden Management/Tangerine Course/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-10-29T20:26:15.897+08:00","updated":"2024-10-31T23:13:40.451+08:00"}
+{"tags":["course"],"dg-publish":true,"dg-note-icon":"2","permalink":"/🍊 TANGERINE/Garden Management/Tangerine Course/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-10-29T20:26:15.897+08:00","updated":"2024-10-31T23:13:40.451+08:00"}
 ---
 
 

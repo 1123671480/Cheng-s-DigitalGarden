@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":3,"dg-path":"Garden Management/Tree Graph.md","permalink":"/Garden Management/Tree Graph/","dgPassFrontmatter":true,"noteIcon":3,"created":"2024-10-26T20:16:55.000+08:00","updated":"2024-10-30T22:58:48.069+08:00"}
+{"dg-publish":true,"dg-note-icon":3,"permalink":"/🍊 TANGERINE/Garden Management/Tree Graph/","dgPassFrontmatter":true,"noteIcon":3,"created":"2024-10-26T20:16:55.000+08:00","updated":"2024-10-30T22:58:48.069+08:00"}
 ---
 
 ## 成熟度级别
