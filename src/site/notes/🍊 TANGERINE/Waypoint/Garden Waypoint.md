@@ -1,0 +1,52 @@
+---
+{"dg-publish":true,"dg-note-icon":"signpost","permalink":"/🍊 TANGERINE/Waypoint/Garden Waypoint/","dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-11-01T20:00:44.313+08:00","updated":"2024-11-01T20:47:54.234+08:00"}
+---
+
+- 🍊 TANGERINE | 橘园的管理部门：主页、橘园历程、名词解释、Obsidian Vault 相关、个人等
+	- 🏡 [[🍊 TANGERINE/TANGERINE\|TANGERINE]] | 主页
+	- **Garden Management** | 工具房
+		- [[🍊 TANGERINE/Garden Management/Construction Process\|Construction Process]] | 橘园构筑及日志
+		- [[🍊 TANGERINE/Garden Management/Tangerine Course\|Tangerine Course]] | 橘园历程
+		- [[🍊 TANGERINE/Garden Management/Tree Graph\|Tree Graph]] | Tree Graph 及果实成熟度说明
+	- **Nexp** | 告示处：名词解释
+		- [[🍊 TANGERINE/Nexp/Digital Garden\|Digital Garden]] | 数字花园
+		- [[🍊 TANGERINE/Nexp/GTD\|GTD]] | 个人日程任务管理
+		- [[🍊 TANGERINE/Nexp/MOC\|MOC]] | 内容地图
+		- [[🍊 TANGERINE/Nexp/Open Source\|Open Source]] | 开源
+		- [[🍊 TANGERINE/Nexp/PKM\|PKM]] | 个人知识管理
+		- [[🍊 TANGERINE/Nexp/Scraper\|Scraper]] | 刮削
+	- **Obsidian** | Obsidian Vault 相关
+		- [[🍊 TANGERINE/Obsidian/Obsidian Course\|Obsidian Course]] | Vault 历程
+	- **Person** | 个人
+		- [[🍊 TANGERINE/Person/About Me\|About Me]] | 关于我
+		- [[🍊 TANGERINE/Person/Notes Course\|Notes Course]] | 个人笔记历程
+	- **Waypoint** | 导航
+		- [[🍊 TANGERINE/Waypoint/Garden Waypoint\|Garden Waypoint]] | 本文件夹导航站
+		- [[🍊 TANGERINE/Waypoint/Software\|Software]] | MOC
+- ⚒️[[🍊 TANGERINE/Waypoint/Software\|Software]] | 果实 - 软件相关：包含景观设计、风景园林、建筑设计专业的软件以及一些工具软件笔记
+	- **Adobe**
+		- [[D 📚 RESOURCE/⚒️ Software/Adobe/Adobe_Illustrator\|Adobe_Illustrator]]
+		- [[D 📚 RESOURCE/⚒️ Software/Adobe/Adobe_InDesign\|Adobe_InDesign]]
+		- [[D 📚 RESOURCE/⚒️ Software/Adobe/Adobe_Photoshop\|Adobe_Photoshop]]
+	- **Autodesk**
+		- [[D 📚 RESOURCE/⚒️ Software/Autodesk/AutoCAD_TArch\|AutoCAD_TArch]]
+		- [[D 📚 RESOURCE/⚒️ Software/Autodesk/Autodesk_AutoCAD\|Autodesk_AutoCAD]]
+	- **geography**
+		- [[D 📚 RESOURCE/⚒️ Software/geography/Esri_ArcGIS\|Esri_ArcGIS]]
+		- [[D 📚 RESOURCE/⚒️ Software/geography/Local Space Viewer\|Local Space Viewer]]
+	- **Media**
+		- [[D 📚 RESOURCE/⚒️ Software/Media/Potplayer\|Potplayer]]
+	- **Render**
+		- [[D 📚 RESOURCE/⚒️ Software/Render/D5_Render For Rhino\|D5_Render For Rhino]]
+		- [[D 📚 RESOURCE/⚒️ Software/Render/Physicallly_Based Rendering\|Physicallly_Based Rendering]]
+		- [[D 📚 RESOURCE/⚒️ Software/Render/V-ray For Rhino\|V-ray For Rhino]]
+	- **Rhinoceros 3D**
+		- **[[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper/Grasshopper\|Grasshopper]]**
+		- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper/Grasshopper_ALU\|Grasshopper_ALU]]
+		- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper/Grasshopper\|Grasshopper]]
+		- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Rhino_Practice\|Rhino_Practice]]
+		- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Rhino_Tool\|Rhino_Tool]]
+		- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Rhino\|Rhino]]
+	- [[D 📚 RESOURCE/⚒️ Software/SketchUp\|SketchUp]]
+	- [[D 📚 RESOURCE/⚒️ Software/Zotero\|Zotero]]
+	- [[D 📚 RESOURCE/⚒️ Software/Obsidian\|Obsidian]]

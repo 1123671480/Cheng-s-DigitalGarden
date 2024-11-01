@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":"2","permalink":"/🍊 TANGERINE/Nexp/MOC/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-10-23T22:38:05.000+08:00","updated":"2024-10-31T23:05:46.228+08:00"}
+{"dg-publish":true,"dg-note-icon":"stone","permalink":"/🍊 TANGERINE/Nexp/MOC/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-10-23T22:38:05.000+08:00","updated":"2024-11-01T20:40:20.527+08:00"}
 ---
 
 ## MOC(Map Of Contexts)

@@ -1,0 +1,30 @@
+---
+{"dg-publish":true,"dg-note-icon":"signpost","permalink":"/🍊 TANGERINE/Waypoint/Software/","dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-11-01T20:45:03.250+08:00","updated":"2024-11-01T20:48:25.818+08:00"}
+---
+
+- **Adobe**
+	- [[D 📚 RESOURCE/⚒️ Software/Adobe/Adobe_Illustrator\|Adobe_Illustrator]]
+	- [[D 📚 RESOURCE/⚒️ Software/Adobe/Adobe_InDesign\|Adobe_InDesign]]
+	- [[D 📚 RESOURCE/⚒️ Software/Adobe/Adobe_Photoshop\|Adobe_Photoshop]]
+- **Autodesk**
+	- [[D 📚 RESOURCE/⚒️ Software/Autodesk/AutoCAD_TArch\|AutoCAD_TArch]]
+	- [[D 📚 RESOURCE/⚒️ Software/Autodesk/Autodesk_AutoCAD\|Autodesk_AutoCAD]]
+- **geography**
+	- [[D 📚 RESOURCE/⚒️ Software/geography/Esri_ArcGIS\|Esri_ArcGIS]]
+	- [[D 📚 RESOURCE/⚒️ Software/geography/Local Space Viewer\|Local Space Viewer]]
+- **Media**
+	- [[D 📚 RESOURCE/⚒️ Software/Media/Potplayer\|Potplayer]]
+- **Render**
+	- [[D 📚 RESOURCE/⚒️ Software/Render/D5_Render For Rhino\|D5_Render For Rhino]]
+	- [[D 📚 RESOURCE/⚒️ Software/Render/Physicallly_Based Rendering\|Physicallly_Based Rendering]]
+	- [[D 📚 RESOURCE/⚒️ Software/Render/V-ray For Rhino\|V-ray For Rhino]]
+- **Rhinoceros 3D**
+	- **[[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper/Grasshopper\|Grasshopper]]**
+	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper/Grasshopper_ALU\|Grasshopper_ALU]]
+	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper/Grasshopper\|Grasshopper]]
+	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Rhino_Practice\|Rhino_Practice]]
+	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Rhino_Tool\|Rhino_Tool]]
+	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Rhino\|Rhino]]
+- [[D 📚 RESOURCE/⚒️ Software/SketchUp\|SketchUp]]
+- [[D 📚 RESOURCE/⚒️ Software/Zotero\|Zotero]]
+- [[D 📚 RESOURCE/⚒️ Software/Obsidian\|Obsidian]]
