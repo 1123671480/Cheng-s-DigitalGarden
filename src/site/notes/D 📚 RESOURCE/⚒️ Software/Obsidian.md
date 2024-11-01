@@ -1,5 +1,5 @@
 ---
-{"uid":20230409205013,"tags":["software"],"description":"Obsidian 概述，简介，初见","author":["windilycloud"],"type":["效率","Markdown","插件生态","本地化"],"dg-publish":true,"dg-note-icon":"1","dg-path":"⚒️ Software/Obsidian.md","permalink":"/⚒️ Software/Obsidian/","dgPassFrontmatter":true,"noteIcon":"1","created":"2024-09-24T22:57:38.000+08:00","updated":"2024-11-01T20:33:40.133+08:00"}
+{"uid":20230409205013,"tags":["software"],"description":"Obsidian 概述，简介，初见","author":["windilycloud"],"type":["效率","Markdown","插件生态","本地化"],"dg-publish":true,"dg-note-icon":"1","dg-path":"⚒️ Software/Obsidian.md","permalink":"/⚒️ Software/Obsidian/","dgPassFrontmatter":true,"noteIcon":"1","created":"2024-09-24T22:57:38.000+08:00","updated":"2024-11-01T20:55:13.415+08:00"}
 ---
 
 
@@ -58,10 +58,10 @@
 
 - 参考链接 [Pricing - Obsidian](https://obsidian.md/pricing)
 
-|      | 个人                                                        | 赞助者                             | 商业使用                          |
-| ---- | ----------------------------------------------------------- | ---------------------------------- | --------------------------------- |
-| 权益 | 个人 **完全免费**，无需登录，可访问所有插件和 API，社区支持 | 支持开发，内测，社区徽章，开发频道 | 14 天免费试用，商业使用，优先支持 |
-| 价格 | **$0**                                                      | 一次性赞助 **$25** 以上            | 每个用户每年 **$50**              |
+|     | 个人                                 | 赞助者               | 商业使用               |
+| --- | ---------------------------------- | ----------------- | ------------------ |
+| 权益  | 个人 **完全免费**，无需登录，可访问所有插件和 API，社区支持 | 支持开发，内测，社区徽章，开发频道 | 14 天免费试用，商业使用，优先支持 |
+| 价格  | **$0**                             | 一次性赞助 **$25** 以上  | 每个用户每年 **$50**     |
 
 另外一个收费项目是增值服务：
 

@@ -19,9 +19,9 @@
 	- [[D 📚 RESOURCE/⚒️ Software/Render/Physicallly_Based Rendering\|Physicallly_Based Rendering]]
 	- [[D 📚 RESOURCE/⚒️ Software/Render/V-ray For Rhino\|V-ray For Rhino]]
 - **Rhinoceros 3D**
-	- **[[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper/Grasshopper\|Grasshopper]]**
-	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper/Grasshopper_ALU\|Grasshopper_ALU]]
-	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper/Grasshopper\|Grasshopper]]
+	- **[[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper\|Grasshopper]]**
+	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper_ALU\|Grasshopper_ALU]]
+	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper\|Grasshopper]]
 	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Rhino_Practice\|Rhino_Practice]]
 	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Rhino_Tool\|Rhino_Tool]]
 	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Rhino\|Rhino]]

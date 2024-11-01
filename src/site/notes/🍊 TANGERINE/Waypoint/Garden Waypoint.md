@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":"signpost","permalink":"/🍊 TANGERINE/Waypoint/Garden Waypoint/","dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-11-01T20:00:44.313+08:00","updated":"2024-11-01T20:47:54.234+08:00"}
+{"dg-publish":true,"dg-note-icon":"signpost","permalink":"/🍊 TANGERINE/Waypoint/Garden Waypoint/","dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-11-01T20:00:44.313+08:00","updated":"2024-11-01T20:55:58.938+08:00"}
 ---
 
 - 🍊 TANGERINE | 橘园的管理部门：主页、橘园历程、名词解释、Obsidian Vault 相关、个人等
@@ -41,9 +41,9 @@
 		- [[D 📚 RESOURCE/⚒️ Software/Render/Physicallly_Based Rendering\|Physicallly_Based Rendering]]
 		- [[D 📚 RESOURCE/⚒️ Software/Render/V-ray For Rhino\|V-ray For Rhino]]
 	- **Rhinoceros 3D**
-		- **[[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper/Grasshopper\|Grasshopper]]**
-		- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper/Grasshopper_ALU\|Grasshopper_ALU]]
-		- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper/Grasshopper\|Grasshopper]]
+		- Grasshopper_ALU
+		- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper\|Grasshopper]]
+		- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper_ALU\|Grasshopper_ALU]]
 		- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Rhino_Practice\|Rhino_Practice]]
 		- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Rhino_Tool\|Rhino_Tool]]
 		- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Rhino\|Rhino]]
