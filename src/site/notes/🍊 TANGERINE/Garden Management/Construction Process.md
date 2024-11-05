@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":2,"permalink":"/🍊 TANGERINE/Garden Management/Construction Process/","dgPassFrontmatter":true,"noteIcon":2,"created":"2024-10-26T20:16:51.000+08:00","updated":"2024-11-05T23:44:41.872+08:00"}
+{"dg-publish":true,"dg-note-icon":2,"permalink":"/🍊 TANGERINE/Garden Management/Construction Process/","dgPassFrontmatter":true,"noteIcon":2,"created":"2024-10-26T20:16:51.000+08:00","updated":"2024-11-05T23:57:56.959+08:00"}
 ---
 
 ## Construction
@@ -21,3 +21,4 @@
 - 2024-10-29：更改CSS设置，更改网站Icon为🍊
 - 2024-10-29：【构筑问题】原因：网站图标必须是正方形
 - 2024-11-01：Obsidian Vault 待发布笔记全部完成，目前笔记数量 73 ，暂时告一段落备战考研
+- 2024-11-05：【构筑问题】原因：笔记元数据中的Icon格式问题，值不能为空
