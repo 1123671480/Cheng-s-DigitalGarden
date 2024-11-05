@@ -1,5 +1,5 @@
 ---
-{"tags":["software"],"type":["修图","调色"],"dg-publish":true,"dg-note-icon":"2","dg-path":"⚒️ Software/Adobe/Adobe_Photoshop.md","permalink":"/⚒️ Software/Adobe/Adobe_Photoshop/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-01T20:33:56.594+08:00"}
+{"tags":["software"],"type":["修图","调色"],"dg-publish":true,"dg-note-icon":"3","dg-path":"⚒️ Software/Adobe/Adobe_Photoshop.md","permalink":"/⚒️ Software/Adobe/Adobe_Photoshop/","dgPassFrontmatter":true,"noteIcon":"3","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:20:13.751+08:00"}
 ---
 
 # 简介  

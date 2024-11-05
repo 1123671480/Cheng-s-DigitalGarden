@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":"stone","permalink":"/🍊 TANGERINE/Nexp/GTD/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-10-23T22:38:02.000+08:00","updated":"2024-11-01T20:40:17.369+08:00"}
+{"dg-publish":true,"dg-note-icon":"stone","permalink":"/🍊 TANGERINE/Nexp/GTD/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-10-23T22:38:02.000+08:00","updated":"2024-11-03T17:49:55.022+08:00"}
 ---
 
 ##  GTD(Getting Things Done)
@@ -16,15 +16,7 @@ GTD 是由 David Allen 在《[Getting Things Done](https://book.douban.com/subje
    * 回顾：定期回顾任务和行动步骤，确保它们的进度和状态得到及时跟进，更好地掌控任务和生活，从而更加高效地完成任务。
 3. 执行：专注于当前任务，避免分散注意力，借助时间管理和注意力控制的技巧提高效率。
 
-## 例如我的 GTD 系统
-### GTD 总览页面
-![image.png](https://obsidian-1330151501.cos.ap-beijing.myqcloud.com/pic/202410311442297.png)
 
-### 日记中的闪念以及待办事项
-![image.png](https://obsidian-1330151501.cos.ap-beijing.myqcloud.com/pic/202410311441640.png)
-
-### 侧边栏中的代办
-![image.png](https://obsidian-1330151501.cos.ap-beijing.myqcloud.com/pic/202410311439630.png)
 ## References
 
 - [PKMer](https://pkmer.cn/)

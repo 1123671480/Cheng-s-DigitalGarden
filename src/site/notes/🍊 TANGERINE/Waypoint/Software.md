@@ -27,4 +27,4 @@
 	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Rhino\|Rhino]]
 - [[D 📚 RESOURCE/⚒️ Software/SketchUp\|SketchUp]]
 - [[D 📚 RESOURCE/⚒️ Software/Zotero\|Zotero]]
-- [[D 📚 RESOURCE/⚒️ Software/Obsidian\|Obsidian]]
+- [[🍊 TANGERINE/Obsidian/Obsidian\|Obsidian]]

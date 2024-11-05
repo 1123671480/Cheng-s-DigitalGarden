@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":"1","dg-path":"🌳 Major/Geography/Data Tpye/DEM.md","permalink":"/🌳 Major/Geography/Data Tpye/DEM/","dgPassFrontmatter":true,"noteIcon":"1","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-01T21:33:14.968+08:00"}
+{"dg-publish":true,"dg-note-icon":"stone","dg-path":"🌳 Major/Geography/Data Tpye/DEM.md","permalink":"/🌳 Major/Geography/Data Tpye/DEM/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T22:35:04.333+08:00"}
 ---
 
 DEM 数字高程模型

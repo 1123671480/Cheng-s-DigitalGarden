@@ -1,5 +1,5 @@
 ---
-{"title":"Physicallly_Based Rendering","tags":["software"],"dg-publish":true,"dg-note-icon":"3","dg-path":"⚒️ Software/Render/Physicallly_Based Rendering.md","permalink":"/⚒️ Software/Render/Physicallly_Based Rendering/","dgPassFrontmatter":true,"noteIcon":"3","created":"2024-10-09T09:32:55.000+08:00","updated":"2024-11-01T20:34:27.335+08:00"}
+{"title":"Physicallly_Based Rendering","tags":["software"],"dg-publish":true,"dg-note-icon":"stone","dg-path":"⚒️ Software/Render/Physicallly_Based Rendering.md","permalink":"/⚒️ Software/Render/Physicallly_Based Rendering/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-10-09T09:32:55.000+08:00","updated":"2024-11-05T23:19:49.453+08:00"}
 ---
 
 -   来自于_Auv_525的博客-CSDN博客  
