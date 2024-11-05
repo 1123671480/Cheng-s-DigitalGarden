@@ -1,0 +1,694 @@
+---
+{"title":"Rhino_工具","tags":["software"],"dg-publish":true,"dg-note-icon":"2","dg-path":"⚒️ Software/Rhinoceros 3D/Rhino_Tool.md","permalink":"/⚒️ Software/Rhinoceros 3D/Rhino_Tool/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:02.947+08:00"}
+---
+
+-   通用  
+    -   「Cancel」取消![](https://api2.mubu.com/v3/document_image/bfbd7bf4-2ee4-44db-95f1-e4cb9502a50d-20454557.jpg)  
+    -   「Join」 组合![](https://api2.mubu.com/v3/document_image/743b5bc9-9f4c-4d23-952f-a3d24d12552a-20454557.jpg)  
+    -   「Explode」 炸开![](https://api2.mubu.com/v3/document_image/62354f3b-e7e7-4573-883d-806613705da7-20454557.jpg)  
+    -   「Trim」修剪![](https://api2.mubu.com/v3/document_image/35280bf5-f1a1-4ff9-a60f-6b9749eab61e-20454557.jpg)  
+        -   「Untrim」 取消修剪  
+    -   「Split」分割![](https://api2.mubu.com/v3/document_image/d508a9b9-ba23-4747-b749-76ce57f541bf-20454557.jpg)  
+        -   右键 以结构线分割  
+    -   「Group」群组  
+    -   群组![](https://api2.mubu.com/v3/document_image/445476d7-f922-4d3e-aeb6-24e06e0f775e-20454557.jpg)  
+    -   「Ungroup」 解组![](https://api2.mubu.com/v3/document_image/cbed2bd2-7828-4cf6-a4a7-683aa58c3f8f-20454557.jpg)  
+    -   「TextObject」文字物件![](https://api2.mubu.com/v3/document_image/f962d154-2625-4075-ad39-c203b0c74f80-20454557.jpg)  
+        -   3D文字  
+    -   「ViewCaptureToClipboard」截图  
+    -   「-ViewCaptureToClipboard」设置截图  
+        -   缩放比越高质量越高  
+-   标准![](https://api2.mubu.com/v3/document_image/ffa91a98-1031-406d-bfa9-0a626771b3a7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5c1c29d6-8783-4bd5-9c36-6b85f6dbfa8b-20454557.jpg)  
+    -   「Copy」复制至剪贴板  
+    -   文件![](https://api2.mubu.com/v3/document_image/6893f0dd-6960-432f-a861-2fff89585337-20454557.jpg)  
+        -   分工工作![](https://api2.mubu.com/v3/document_image/275f88dd-c42a-4495-87f1-60c2989a717b-20454557.jpg)  
+            -   「Worksession」分工工作  
+                -   适用于服务器  
+                -   协同修改图块  
+            -   「-Worksession」附加分工工作文件  
+        -   「Save」保存  
+        -   「IncrementalSave」递增保存  
+            -   保存步骤  
+        -   「Savessmall」最小化保存  
+            -   不保存用于显示的网格  
+        -   「Save」仅几何图形保存  
+            -   只保留物件 其余一概丢失（图层、材质）  
+        -   「Revert」恢复文件  
+            -   恢复到上一次保存  
+    -   复原![](https://api2.mubu.com/v3/document_image/07842ec2-75ed-4fa6-80b7-b193eb6c7e36-20454557.jpg)  
+        -   「UndoMultiple」多次重复  
+            -   撤销之前的X步骤  
+        -   「UndoSelected」复原选取的物件  
+            -   复原某一个特定物件的修改  
+        -   「Cplane」复原工作平面更改  
+    -   视图![](https://api2.mubu.com/v3/document_image/0b5d36f2-baff-4383-8316-fca88efdf2da-20454557.jpg)  
+        -   包含部分标准和工作视窗配置  
+        -   「UndoView」复原视图更改  
+    -   工作视窗配置![](https://api2.mubu.com/v3/document_image/5fc43f43-33e3-4f02-a848-3f7c14014ac3-20454557.jpg)  
+    -   设置视图![](https://api2.mubu.com/v3/document_image/924fa116-b049-4b0a-ba85-0da0f41b47d0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ffd4eaad-cba9-46bd-8893-c45a4b2d8ed8-20454557.jpg)  
+    -   工作平面![](https://api2.mubu.com/v3/document_image/6ea641f4-3520-4bc7-b574-f8886389ef2d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b4738f74-013c-4853-b1c6-b7f0738fba9a-20454557.jpg)  
+    -   物件锁点![](https://api2.mubu.com/v3/document_image/678d8d5b-b751-4b88-9654-3c06a2bf2265-20454557.jpg)![](https://api2.mubu.com/v3/document_image/848f3d01-8be6-4755-8499-fddde26125e0-20454557.jpg)  
+    -   选取![](https://api2.mubu.com/v3/document_image/47399aeb-3d90-47d6-ac80-994707af115b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2a7d3be7-9eb2-4f2a-9f4a-f8b5106970af-20454557.jpg)  
+    -   可见性![](https://api2.mubu.com/v3/document_image/ff37fb09-051d-4cf0-8c2e-c9783a58e9a8-20454557.jpg)  
+    -   锁定![](https://api2.mubu.com/v3/document_image/cbdb2c2c-74ed-4574-8b2c-7f24a2e69dbd-20454557.jpg)  
+        -   包含部分可见性  
+    -   图层![](https://api2.mubu.com/v3/document_image/508c2020-4e6c-4c26-bfa5-24d309f23a11-20454557.jpg)  
+    -   属性![](https://api2.mubu.com/v3/document_image/6de9dff1-9300-4884-b0ae-387865eb3500-20454557.jpg)  
+    -   显示![](https://api2.mubu.com/v3/document_image/46fed7a2-5e36-4864-97c5-ee615f4e2dc5-20454557.jpg)  
+    -   渲染工具![](https://api2.mubu.com/v3/document_image/840e0aba-6d02-40e8-a937-d4c0a6cca761-20454557.jpg)![](https://api2.mubu.com/v3/document_image/73ef2540-97de-4584-a90f-4136e5fa1d0c-20454557.jpg)  
+    -   灯光![](https://api2.mubu.com/v3/document_image/6eb4cfbb-ca36-4b7f-90a9-6d470abc8e9a-20454557.jpg)  
+        -   灯光工具![](https://api2.mubu.com/v3/document_image/984a114f-6ede-4a36-9946-4b252bcafcc7-20454557.jpg)  
+    -   工具![](https://api2.mubu.com/v3/document_image/a3dbface-167d-4ede-ad9d-7ad5807dca2a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c1e6b164-bfac-46c6-9d7f-0491aa4ee6d1-20454557.jpg)  
+        -   3D测量![](https://api2.mubu.com/v3/document_image/c410714b-c216-497c-8a6b-8daefb9321b5-20454557.jpg)  
+        -   工具列![](https://api2.mubu.com/v3/document_image/29f2b06e-9498-4134-bd10-b50857f1d0e4-20454557.jpg)  
+        -   建构历史![](https://api2.mubu.com/v3/document_image/d96e8c47-d0ec-4a70-9348-f1b823a8c323-20454557.jpg)  
+        -   图层册![](https://api2.mubu.com/v3/document_image/27e314cf-b498-4625-94e7-6ea52d8a60c5-20454557.jpg)  
+            -   图层册高级设置![](https://api2.mubu.com/v3/document_image/71f5ebdf-5568-47f2-b3b2-4d21d5ce0b11-20454557.jpg)  
+    -   尺寸标注![](https://api2.mubu.com/v3/document_image/dbf759fb-9730-4596-aba9-ef95d4803336-20454557.jpg)![](https://api2.mubu.com/v3/document_image/acd3027b-be99-4d3a-b56f-b42f6d86f595-20454557.jpg)  
+    -   [GrassHopper_Basics](https://mubu.com/app/edit/home/ufZns6vLA0) ![](https://api2.mubu.com/v3/document_image/c3f90975-42ed-4f2f-9957-4e2ca664aa40-20454557.jpg)  
+    -   说明![](https://api2.mubu.com/v3/document_image/1f6aaeda-b5f1-472b-8333-b887ff5888e7-20454557.jpg)  
+-   工作平面![](https://api2.mubu.com/v3/document_image/6ea641f4-3520-4bc7-b574-f8886389ef2d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b4738f74-013c-4853-b1c6-b7f0738fba9a-20454557.jpg)  
+    -   「CPlane」设置工作平面至物件  
+-   设置视图![](https://api2.mubu.com/v3/document_image/924fa116-b049-4b0a-ba85-0da0f41b47d0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ffd4eaad-cba9-46bd-8893-c45a4b2d8ed8-20454557.jpg)  
+    -   视图![](https://api2.mubu.com/v3/document_image/0b5d36f2-baff-4383-8316-fca88efdf2da-20454557.jpg)  
+    -   导览![](https://api2.mubu.com/v3/document_image/1fd28838-4daf-4df9-87a7-95e9b57858a2-20454557.jpg)  
+        -   环视![](https://api2.mubu.com/v3/document_image/ee938399-ee2d-410b-8c93-ef48fdee8d23-20454557.jpg)  
+        -   步伐大小![](https://api2.mubu.com/v3/document_image/93de740c-3ca5-4f5e-9db9-01a5a59362be-20454557.jpg)  
+        -   镜头长度![](https://api2.mubu.com/v3/document_image/57d509f0-ea33-4386-bf93-96400b2fd77b-20454557.jpg)  
+    -   等角视图![](https://api2.mubu.com/v3/document_image/aa75205a-aead-4e9a-a40b-f205bf4dc2ea-20454557.jpg)  
+    -   「Zoom _Extents」 场景最大化显示  
+    -   「OrientCameraToSrf」正对曲面  
+        -   配合「ClippingPlan」新增截平面来纠正视角用的  
+    -   「TurnTable」旋转盘  
+-   显示![](https://api2.mubu.com/v3/document_image/46fed7a2-5e36-4864-97c5-ee615f4e2dc5-20454557.jpg)  
+-   选取![](https://api2.mubu.com/v3/document_image/47399aeb-3d90-47d6-ac80-994707af115b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2a7d3be7-9eb2-4f2a-9f4a-f8b5106970af-20454557.jpg)  
+    -   「SelLast」选取最后建立的物件  
+    -   「SelPt」选取点  
+    -   「SelCrv」选取曲线  
+    -   选取多重曲面![](https://api2.mubu.com/v3/document_image/0f1a039b-1b8e-4547-af3a-d800bca57195-20454557.jpg)  
+    -   选取曲面![](https://api2.mubu.com/v3/document_image/a5259987-721d-4c4c-b666-5014456a346d-20454557.jpg)  
+    -   选取网格![](https://api2.mubu.com/v3/document_image/5a4b5444-9e39-4082-8baa-5ee6fe06abaa-20454557.jpg)  
+    -   选取细分物件![](https://api2.mubu.com/v3/document_image/f07fe9c8-ff24-497d-af22-51750df67485-20454557.jpg)  
+    -   选取曲线![](https://api2.mubu.com/v3/document_image/8d4e5fda-0d10-4de9-bf61-178c58154658-20454557.jpg)  
+    -   选取点![](https://api2.mubu.com/v3/document_image/99465d10-287e-48f5-a9c9-ef61675684c9-20454557.jpg)  
+    -   连锁选取![](https://api2.mubu.com/v3/document_image/e22f3b9c-aa7e-4585-936b-2f7b9eb79f9a-20454557.jpg)  
+    -   选取建构历史![](https://api2.mubu.com/v3/document_image/b6c48a7c-c1ec-4e6c-a2a4-29d7a128529c-20454557.jpg)  
+    -   「SelAll」 全选  
+    -   「SelDup」 选择重复  
+    -   「SelCrv」 选择曲线  
+    -   「SelLast」 选择最后物体  
+    -   「SelBrush」 笔刷选择  
+-   工作视窗配置![](https://api2.mubu.com/v3/document_image/5fc43f43-33e3-4f02-a848-3f7c14014ac3-20454557.jpg)  
+    -   镜头长度![](https://api2.mubu.com/v3/document_image/57d509f0-ea33-4386-bf93-96400b2fd77b-20454557.jpg)  
+    -   「ViewportProperties」设为两点透视  
+    -   「Picture」添加图像平面  
+        -   生成为以图像为材质的平面  
+        -   可以重建曲面调整图片透视  
+        -   PNG格式自动抠图  
+        -   颜色遮罩可抠图  
+        -   正常直接拖动图片到Rhino即可  
+    -   出图![](https://api2.mubu.com/v3/document_image/e230b308-f4e2-4942-8839-c0c392c25ace-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0d1367a9-fef1-4057-80a1-c126c29966ae-20454557.jpg)  
+    -   「ClippingPlan」新增截平面  
+        -   可通过「SrfPt」 指定三或四个角建立曲面在截平面上建立曲面，通过「「OrientCameraToSrf」正对曲面来达到特定视角。  
+-   可见性![](https://api2.mubu.com/v3/document_image/ff37fb09-051d-4cf0-8c2e-c9783a58e9a8-20454557.jpg)  
+    -   「Hide」 隐藏物件  
+    -   「Show」 显示物件  
+    -   「Isolate」隔离物件  
+    -   「Lock」锁定物件  
+    -   「Unlock」 解锁锁定物件  
+-   点![](https://api2.mubu.com/v3/document_image/5fba3382-23ab-49d5-8e79-4a72c73f7581-20454557.jpg)  
+    -   「Points」单点  
+        -   左键 绘制单点  
+        -   右键 绘制多点  
+    -   「ExtractPt」抽离点  
+        -   点线面网格都可以抽离  
+    -   「ClosestPt」数个物件的最接近点  
+        -   找两个线最近点 河岸搭桥等等  
+    -   「CrvStrat」标识曲线起点/ 终点  
+        -   找封闭曲线的起点终点，可通过「CrvSeam」调整封闭曲线的接缝调整接缝。  
+    -   「Divide」等分曲线  
+        -   左键 依据长度等分  
+        -   右键 依据线段等分  
+            -   分割  
+            -   成组  
+    -   「PointGrid」点格  
+        -   点云的一种储存格式  
+        -   生成点矩阵  
+    -   「PointCloud」点云  
+        -   可以扫描模型 生成模型  
+        -   一种省资源的点显示集  
+-   直线![](https://api2.mubu.com/v3/document_image/b10ba90f-51b0-4286-9bf0-95f098c55ec6-20454557.jpg)  
+    -   「Line」直线  
+    -   「Polyline」 多段线  
+        -   「M」切换圆弧 无法输入半径  
+        -   「<角度」  
+        -   输入坐标绘制  
+            -   可在之前输入@ 获取相对坐标  
+    -   「CurveThroughPt」多重直线：通过数个点  
+        -   将多个点绘制成多重直线  
+    -   「Convert」将曲线转换为多重直线  
+        -   直线/圆弧拟合  
+        -   公差越小越贴合  
+-   曲线![](https://api2.mubu.com/v3/document_image/0ed4061a-6c2c-454d-b1b0-2572c7449e7b-20454557.jpg)  
+    -   「Curve」 控制点曲线  
+    -   「InterpCrv」内插点曲线  
+        -   左键 内插点曲线  
+        -   右键 控制杆曲线  
+            -   「Ctrl」拖动位置  
+            -   「Alt」拖动角  
+    -   「InterpcrvOnSrf」 曲面上的内插点曲线  
+    -   「HandleCurve」控制杆曲线  
+        -   类似AI钢笔工具  
+    -   「Sketch」描绘  
+        -   手绘线  
+    -   「Catenary」悬链线  
+        -   模拟铁链下垂  
+    -   「Helix」弹簧线  
+        -   景观塔 特殊造型  
+        -   丹麦螺旋塔  
+        -   螺旋楼梯  
+    -   「Spirals」螺旋线  
+        -   丝带教堂  
+    -   「TweenCurves」均分曲线  
+        -   两根曲线的均匀分布  
+        -   干扰曲线  
+-   圆![](https://api2.mubu.com/v3/document_image/4b0ae8fa-24b3-4cd2-b29f-dd0151191a78-20454557.jpg)  
+    -   「Circle」 圆  
+        -   3点画圆  
+            -   贴合圆弧  
+        -   可塑性圆  
+            -   可拖动控制点变形  
+        -   环绕曲线  
+            -   垂直于曲线端点  
+-   椭圆![](https://api2.mubu.com/v3/document_image/168aa268-875c-4f47-ad5e-44244728a264-20454557.jpg)  
+    -   「Ellipse 」椭圆圆  
+-   圆弧![](https://api2.mubu.com/v3/document_image/314a01e6-7a98-4c7a-bd94-d315c468bc22-20454557.jpg)  
+    -   「Arc」三点绘制圆弧  
+-   矩形![](https://api2.mubu.com/v3/document_image/22541051-b190-4733-a014-eb87b4cfa164-20454557.jpg)  
+    -   「Rectangle」 矩形  
+-   多边形![](https://api2.mubu.com/v3/document_image/2d0f22e7-149c-417d-8bc8-6279ccf55366-20454557.jpg)  
+    -   「Polygon」多边形  
+-   从物件建立曲线![](https://api2.mubu.com/v3/document_image/d802135b-aeed-4ec3-9f29-7ee65959f678-20454557.jpg)  
+    -   「Project」投影曲线或控制点  
+        -   松弛 不改变控制点 只贴合控制点  
+    -   「Pull」拉回曲线或控制点  
+        -   按照曲面法线投影  
+    -   「DupEdge」复制边缘  
+    -   「DupBorder」复制边框  
+        -   可以检查物体是否封闭  
+    -   「DupFaceBorder」复制面的边框  
+    -   「ExtractIsocurve」 抽离结构线  
+    -   「ExtractWireframe」抽离线框  
+    -   「BlendCrv」混接曲线垂直于边  
+    -   「Intersect」物件相交  
+        -   求交线  
+    -   「IntersectTwoSets」两组物件进行相交  
+        -   成组再相交  
+    -   「Contour」等距断面线  
+        -   断线  
+            -   曲面太简洁 幅度小  
+            -   公差太大  
+            -   重建曲面  
+            -   缩放  
+    -   「Section」断面线  
+    -   「ShortPath」测地线  
+        -   判断曲面上两点之间的最短路径  
+    -   「Sihouette」轮廓线  
+    -   「ExtractPt」抽离点  
+    -   「PointCloudSection」点云断面线  
+    -   「CreateUVCrv」建立UV曲线  
+        -   配合曲面流动，展开被流动的目标面的UV。  
+    -   「MeshOutline」网格而轮廓线  
+        -   做分析图加粗外边框  
+    -   「Make2D」建立2D图画  
+        -   避免线和曲面重复在一起  
+        -   避免物体离原点太远  
+-   曲线工具![](https://api2.mubu.com/v3/document_image/4493ecbb-1ddf-4d60-af1f-09aa8813242d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/32d10d3b-c3ca-41b6-8a29-ad0c6a5839ee-20454557.jpg)  
+    -   「Fillet」 曲线圆角  
+    -   「FilletCorners」全部圆角  
+    -   「BlendCrv」可调式混接曲线  
+        -   「位置」G0连续  
+        -   「正切」G1连续  
+        -   「曲率」G3连续  
+        -   修剪 组合  
+            -   可以在原有线的基础上向后取点  
+    -   「ArcBlend」弧形混接  
+    -   「Match」衔接曲线  
+        -   可以把两根线衔接成一根  
+    -   「Symmetry」对称  
+    -   点的编辑![](https://api2.mubu.com/v3/document_image/ead1720b-43dc-4236-801c-60e20189204a-20454557.jpg)  
+        -   拖拽模式![](https://api2.mubu.com/v3/document_image/39a07773-cca8-46ac-8b71-58ae42997020-20454557.jpg)  
+        -   「F10」打开曲线控制点  
+        -   「InsetControlPoint」插入控制点  
+        -   「RemoveControlPoint」移除控制点  
+        -   「InsertKnot」插入节点  
+        -   「RemoveKnot」移除节点  
+        -   「InsertKink」插入锐角点  
+        -   「Weight」编辑控制点权值  
+            -   修改权重值 不增加点的情况下做造型  
+    -   「Offset」偏移  
+        -   右键多次偏移  
+    -   「OffsetNormal」往曲面法线方向偏移曲线  
+    -   「OffsetCrvOnSrf」偏移曲面上的曲线  
+    -   延伸![](https://api2.mubu.com/v3/document_image/19fa5cfd-d151-4159-b0a5-308c6dce41fc-20454557.jpg)  
+        -   「Extend」延伸曲线  
+    -   「CrvSeam」调整封闭曲线的接缝  
+        -   影响曲面流动  
+    -   「Crv2View」两个视图的曲线  
+        -   从两个工作平面生成空间曲线  
+    -   「MatchCrvDir」符合曲线方向  
+        -   使曲线方向一致  
+    -   「CSec」从断面轮廓线建立曲线  
+    -   「Rebuild」重建曲线  
+        -   控制点均匀分布的重建曲线  
+    -   「RebuildCrvNonUniform」非一致性重建曲线  
+        -   设置公差值的重建曲线 控制点不均匀  
+    -   「FitCrv」以公差重新逼近曲线  
+        -   增加控制点以达到精度要求  
+        -   简化控制点  
+    -   「ChangeDegree」改变阶数  
+        -   点数比阶数多  
+    -   「Fair」整平曲线  
+    -   「MakeUniform」参数均匀化  
+        -   使控制点对于曲线的控制权重均匀  
+    -   「SimplifyCrv」简化直线与圆弧  
+        -   减少控制点  
+    -   「MakePeriodic」周期化  
+        -   非周期化适用于做曲线的尖锐造型  
+    -   「CloseCrv」封闭开放的曲线  
+        -   自动封闭未封闭的曲线  
+    -   「ContinueCurve」续画控制点曲线  
+    -   「DeleteSubCrv」截断曲线  
+    -   「ExtractSubCrv」抽离子线段  
+        -   只针对多重曲线  
+    -   「SubCrv」截短曲线  
+        -   将一个曲线截短一部分，可选复制  
+    -   「TweenCurves」均分曲线  
+    -   「CurveBoolean」曲线布尔运算  
+        -   打开结合区域即可获取轮廓线、曲面  
+        -   不同高度的曲线运行布尔运算会投影到当前视图平面  
+    -   从物件建立曲线![](https://api2.mubu.com/v3/document_image/d802135b-aeed-4ec3-9f29-7ee65959f678-20454557.jpg)  
+    -   「AddGuide」新增参考线  
+-   建立曲面![](https://api2.mubu.com/v3/document_image/3f6ed897-8a63-4a30-be38-50a38c2adc72-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d5440978-46e9-47ce-bd7a-8099fac9f393-20454557.jpg)  
+    -   「SrfPt」 指定三或四个角建立曲面  
+        -   三角形造型  
+    -   「PlanarSrf」 以平面曲线建立曲面  
+        -   修剪过的曲面  
+    -   「NetworkSrf」从网线建立曲面  
+        -   UV两个方向的断面线，必须符合四边面原则，逼近算法  
+    -   「Loft」 放样  
+        -   正切分割不勾选 方便流动  
+    -   「EdgeSrf 」2,3,4边线成面  
+        -   在结构线不一致的情况可以成最简曲面  
+    -   「Patch」嵌面  
+        -   无视UV法则 逼近算法  
+        -   生成单一曲面，适合表皮划分  
+        -   跨距数越高越贴合  
+        -   硬度越小越贴合  
+        -   选择起始曲面  
+            -   用选定的面来重建逼近 使嵌面后的曲面结构线达到要求  
+    -   平面![](https://api2.mubu.com/v3/document_image/8607378a-6994-4207-b95a-839a84d3e1fd-20454557.jpg)  
+        -   「Plane」矩形平面  
+            -   角对角  
+            -   三点成面  
+            -   垂直平面  
+    -   挤出![](https://api2.mubu.com/v3/document_image/28cc5343-ae47-4bee-9c1a-36928aa93598-20454557.jpg)  
+        -   「ExtrudeCrv」直线挤出  
+            -   「UseExtrusions」挤出类型  
+                -   多重曲面 适合深化  
+                -   挤出物件 正切分割  
+        -   「ExtrudeCrvAlongCrv」沿着曲线挤出  
+        -   「ExtrudeCrvToPoint」挤出至点  
+        -   「Ribbon」彩带  
+            -   曲线彩带控制点极多 逼近算法 适用于直线  
+        -   「Fin」往曲面法线方向挤出曲线  
+        -   「ExtrudeCrvTapered」挤出成锥状  
+    -   「Revolve」旋转成型  
+        -   右键「RailRevolve」沿着路经旋转  
+    -   「Drape」在物件上产生布帘曲面  
+        -   在曲面上盖上一块布生成Nurbs曲面  
+        -   在地形中提取曲面  
+    -   「Heightfield」以图片的灰阶高度生成曲面  
+        -   灰阶地形  
+        -   高程图片  
+    -   「SrfPtGrid」从点格建立曲面  
+    -   「Sweep1」单轨扫掠  
+        -   未修剪斜接 指定拐角处不进行正切分割 适用于直角  
+        -   一般勾选正切点不分割  
+        -   自由扭转 沿着法向扫掠  
+        -   走向 沿着一个方向扫掠 可设置轴向  
+        -   可以成宽度不一 渐变过渡的曲面  
+    -   「Sweep2」双轨扫掠  
+        -   先把线挤出面 选择曲面边缘可以调整扫掠连续性  
+        -   尽量保证两根曲线结构一致  
+    -   「DevLoft」从两条曲线建立可展开放样  
+        -   「-Devloft」可调选项  
+            -   密度越大误差越小  
+        -   可展开的双曲面，误差较小  
+-   曲面工具![](https://api2.mubu.com/v3/document_image/3623d18b-53ef-4a04-a623-fba669a38782-20454557.jpg)![](https://api2.mubu.com/v3/document_image/39cf515b-e3de-49a7-9ddd-300347a89b85-20454557.jpg)  
+    -   「FilletSrf」曲面倒角  
+        -   只针对两个面，并不关联实体  
+    -   「ExtendSrf」延伸曲面  
+        -   沿着一个方向延伸  
+    -   「ChamferSrf」曲面斜角  
+    -   「VariableFilletSrf」不等距曲面圆角  
+    -   「VariableChamferSrf」不等距曲面斜角  
+    -   「BlendSrf」混接曲面  
+        -   在两个曲面间新建混接曲面  
+        -   内部加线控制走势  
+        -   平面断面可以让断面线变成直线  
+    -   点的编辑![](https://api2.mubu.com/v3/document_image/ead1720b-43dc-4236-801c-60e20189204a-20454557.jpg)  
+    -   「OffsetSrf」偏移曲面  
+        -   多次偏移会导致误差放大  
+    -   平面布尔运算![](https://api2.mubu.com/v3/document_image/78548aaf-dcb7-419b-a3ac-947e18345116-20454557.jpg)  
+        -   「PlanarUnion」共面曲面并集  
+            -   合并两个共面曲面  
+        -   「PlanarDifference」共面曲面差集  
+            -   一个平面减去另一个平面  
+        -   「PlanarIntersection」共面曲面交集  
+            -   求两个平面相交的平面  
+    -   「VariableOffsetSrf」不等距偏移曲面  
+        -   通过距离变化偏移曲面  
+    -   「SetSurfaceTangent」设置曲面的正切方向  
+    -   「MatchSrf」衔接曲面  
+        -   衔接两个曲面 使其增加连续性  
+        -   可先满足连续性 最后在过一遍精准衔接  
+    -   「MergeSrf」合并曲面  
+        -   两个单一未修剪曲面合并成一个  
+        -   圆度控制连接处的顺滑度 越小越不变形  
+    -   「ConectSrf」连接曲面  
+    -   「RefitTrim」重新逼近已修剪曲面边缘  
+        -   逼近算法将修建曲面的边缘缩回  
+    -   「Symmetry」对称  
+        -   满足连续性进行对称  
+    -   「TweenSurfaces」在两个曲面之间建立均分曲面  
+        -   匹配样式改为重新逼近点数会少  
+    -   「Rebuild」重建曲面  
+        -   最大偏差值  
+    -   「RebuildUV」重建曲面的U或V方向  
+    -   「FitSrf」以公差重新逼近曲面  
+        -   简化控制点达到精度要求  
+    -   「Untrim」取消修剪  
+        -   右键分离修剪  
+            -   可以保留被修剪的部分  
+        -   将曲面复原为未修剪的曲面  
+    -   「ShrinkTrimmedSrf」缩回已修剪的曲面  
+        -   右键「ShrinkTrimmedSrfToEdge」缩回已修剪的曲面至边缘  
+            -   强制将已修剪的曲面控制点缩回修剪后的曲面边缘  
+        -   已修剪的曲面控制点缩回修剪后的曲面  
+        -   删除冗余数据  
+        -   缩回为未修剪单一的曲面只能是用控制线分割的曲面  
+    -   「MakeUniform」参数均匀化  
+        -   每一个控制点对于曲面的权重一致  
+    -   「MakePeriodic」使曲面周期化  
+        -   非周期化会使曲面端头处变为锐边  
+    -   「SrfSeam」调整封闭曲面的接缝  
+        -   影响表皮和流动  
+    -   「UnrollSrf」摊平可展开的曲面  
+        -   右键建立曲面的平面轮廓  
+        -   单曲面展开没有误差  
+        -   双曲面展开一定有误差  
+    -   「Smash」压平  
+        -   压平双曲面  
+    -   「Squish」碾平  
+        -   将不可展开的三维网格或者曲面压平  
+    -   「SquishBack」返回碾平  
+        -   将碾平的平面上的曲线或点对应至原来的空间曲面  
+    -   曲面分析![](https://api2.mubu.com/v3/document_image/b5eca345-d96b-4ef1-8351-4ad0f2baa48f-20454557.jpg)  
+        -   「CurvatureAnalysis」曲率分析  
+            -   分析曲面为单/双曲面  
+                -   点击自动范围  
+                -   全绿色为单曲  
+                -   蓝色为双曲  
+    -   边缘工具![](https://api2.mubu.com/v3/document_image/40a848d2-06df-4570-b372-e19d94022b7d-20454557.jpg)  
+        -   「SplitEdge」分割边缘  
+            -   分割曲面上的边缘线  
+        -   「MergeEdge」合并边缘  
+            -   合并曲面上的边缘线  
+    -   「CurvatureGraph」打开曲率图形  
+    -   「ShowDir」显示物件方向  
+        -   显示曲面UV方向  
+    -   「Flip」翻转方向  
+    -   「EdgeContinuity」边缘连续性  
+-   建立实体![](https://api2.mubu.com/v3/document_image/0637b31e-43a0-4708-b34a-92264321f43b-20454557.jpg)  
+    -   立方体![](https://api2.mubu.com/v3/document_image/88d25f00-4800-4dcc-bc30-2addc51a0110-20454557.jpg)  
+        -   「Box」 六面体  
+        -   「BoundingBox」边框方块  
+    -   「Cylinder」 圆柱  
+    -   球体![](https://api2.mubu.com/v3/document_image/3ac964da-4160-4439-ba05-44c1086d5c46-20454557.jpg)  
+        -   「Sphere」球体  
+    -   椭圆体![](https://api2.mubu.com/v3/document_image/13d3b2a2-ce98-4832-8eca-53fb42f14afa-20454557.jpg)  
+        -   「Ellipsoid」椭球  
+    -   「Paraboloid」抛物面锥体  
+    -   「Cone」圆锥体  
+    -   「TruncatedCone」平顶锥体  
+    -   「Tube」圆柱管  
+    -   「Torus」环状体  
+    -   「Pipe」圆管  
+    -   「ExtrudeCrv」挤出封闭的平面曲线  
+        -   默认挤出实体  
+    -   挤出建立实体![](https://api2.mubu.com/v3/document_image/7c68f49a-59f1-40e4-8d05-1a098807d150-20454557.jpg)  
+        -   「ExtrudeSrf」挤出曲面  
+        -   「Slab」以多重直线基础成厚片  
+            -   适合建立墙体  
+    -   「UnjoinEdge」取消边缘的组合状态  
+-   实体工具![](https://api2.mubu.com/v3/document_image/529b0427-2e0f-48c1-b101-7d2d6864b49d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b252f607-0b4f-4f66-b9fe-39b51bf136d9-20454557.jpg)  
+    -   「BooleanUnion」布尔运算联集  
+    -   「BooleanDifference」 布尔运算差集  
+        -   可以用曲面和实体进行布尔运算，具体切掉的方向是曲面的背面方向。  
+    -   「BooleanIntersection」布尔运算相交  
+    -   「BooleanSplit」布尔运算分割  
+    -   「CreateSolid」自动建立实体  
+        -   求出物件相交区域  
+    -   「Shell」封闭的多重曲面薄壳  
+        -   将一个实体开槽成厚度均匀的薄壳  
+    -   「Cap」将平面洞加盖  
+    -   「ExtractSrf」抽离曲面  
+        -   单独抽离出一个曲面  
+    -   「MerageCoplanarFace」合并两个共平面的面  
+        -   右键 合并全部共平面的面  
+        -   可以简化网格，简化SU方盒子模型  
+    -   「FilletEdge 」边缘倒角  
+        -   编辑  
+            -   可以修改相关参数  
+        -   实体倒角  
+    -   「ChamferEdge」边缘斜角  
+    -   「WireCut」线切割  
+        -   用线切割实体  
+    -   「MoveFace」将面移动  
+    -   「ExtrudeSrf」挤出面  
+    -   「SolidPtOn」打开实体控制点  
+    -   「MoveEdge」移动边缘  
+    -   「SplitFace」将面分割  
+    -   「RoundHole」建立圆洞  
+    -   「MakeHole」建立洞  
+        -   右键 放置洞  
+    -   「RevolveHole」旋转成洞  
+    -   「RotateHole」将洞旋转  
+    -   「MoveHole」将洞移动  
+    -   「ArrayHole」阵列洞  
+    -   「ArrayHolePolar」环形阵列洞  
+    -   「UntrimHoles」将洞删除  
+        -   右键删除所有的洞  
+-   网格工具![](https://api2.mubu.com/v3/document_image/ecbb41cf-5f2f-4f69-8c5e-daa1e1dbf971-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fc9e3b23-5eb7-4b15-944e-9f50872f79a9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7522c8cc-5a7e-43bb-8a01-01512520a937-20454557.jpg)  
+    -   「Check」检查物件  
+    -   「MeshRepair」网格修复精灵  
+        -   SU导入的网格如果出错可以进行检测及修复  
+    -   「AlignVertices」以公差对其顶点  
+    -   熔接![](https://api2.mubu.com/v3/document_image/8de47c07-e4f6-4661-bba7-f1121af44d76-20454557.jpg)  
+        -   「Weld」熔接网格  
+            -   右键「UnWeld」解除熔接  
+        -   「WeldVertices」熔接网格顶点  
+        -   「WeldEdge」熔接网格边缘  
+            -   右键接触熔接网格边缘  
+    -   「MatchMeshEdge」衔接网格边缘  
+    -   「FillMeshHole」填补网格洞  
+    -   「RebuildMeshNormals」重建网格法线  
+    -   「RebuildMesh」重建网格  
+    -   「DeleteFaces」删除网格面  
+    -   「PatchSingleFace」嵌入单一网格面  
+    -   「CullDegenerateMeshFaces」剔除退化的网格面  
+    -   「SwapMeshEdge」对调网格边缘  
+    -   「UnifyMeshNormals」统一网格法线  
+    -   「ApplyMesh」对应网格至Nurbs  
+    -   「SplitMeshEdge」分割网格边缘  
+    -   「SplitDisjointMesh」分割未相接的网格  
+    -   「Mesh」转化曲面/多重曲面为网格  
+        -   右键转化网格为Nurbs  
+    -   「MeshPatch」网格嵌面  
+    -   「MeshFromLines」从三条或以上直线建立网格  
+    -   「InsertPoint」在网格或细分上插入点  
+    -   网格布尔运算![](https://api2.mubu.com/v3/document_image/1d6db7d6-792a-4a15-adc9-636cfc4b616e-20454557.jpg)  
+        -   「MeshBooleanUnion」网格布尔运算联集  
+        -   「MeshBooleanDifference」网格布尔运算差集  
+        -   「MeshBooleanIntersection」网格布尔运算相交  
+        -   「MeshBooleanSplit」网格布尔运算分割  
+    -   「Bevel」网格斜角  
+    -   「MeshSplit」分割网格  
+    -   「MeshTrim」修剪网格  
+    -   「OffsetMesh」偏移网格  
+        -   相比于普通偏移，三角面转化为网格偏移更有优势，边缘不会出现问题。  
+    -   抽离网格![](https://api2.mubu.com/v3/document_image/68fb8b7a-4b73-4c3f-8344-e3e24fd5d04d-20454557.jpg)  
+    -   折叠网格![](https://api2.mubu.com/v3/document_image/50b175f3-796a-44b5-a471-217c7d0473da-20454557.jpg)  
+    -   选取网格![](https://api2.mubu.com/v3/document_image/5a4b5444-9e39-4082-8baa-5ee6fe06abaa-20454557.jpg)  
+    -   「QuadRemesh」用四边面重构网格  
+        -   网格逆向，方便转化为细分物件  
+-   细分工具![](https://api2.mubu.com/v3/document_image/6903bca4-2a4e-4896-b8aa-4e654dade6a2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6bc8696b-7ef2-42a5-b4be-2fca7e4d746c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/bf0529df-dc8a-4fd0-8e79-a431ec1c6420-20454557.jpg)  
+    -   「3DFace」创建单一细分面  
+        -   可以配合「Subdivide」对细分面再细分创建微地形  
+        -   多边形类型  
+            -   四边  
+        -   模式为多面 可以续画细分面  
+    -   「SubDPlane」创建细分平面  
+    -   「SubDSphere」创建细分球体  
+    -   「SubDBox」创建细分立方体  
+    -   「SubDSweep1」创建一个细分单轨扫掠物件  
+    -   「SubDSweep2」创建一个细分双轨扫掠物件  
+    -   「SubDLoft」创建一个细分放样  
+    -   「MultiPipe」创建一个细分多管相交物件  
+    -   「RemoveCrease」移除细分锐边  
+    -   「Crease」细分物件或网格添加锐边  
+    -   「SubDExpandEdges」扩展边缘  
+    -   「InsertEdge」插入细分边缘（循环）  
+        -   插入细分边缘（环形）  
+    -   「InsertPoint」在网格或细分上插入点  
+        -   插入的点连成线  
+    -   「3DFace」追加到细分  
+        -   续画单一细分面  
+    -   「Inset」插入细分边缘  
+        -   两侧可以插入两条  
+        -   偏移模式选择比例  
+        -   在面中可以插入偏移细分边缘  
+    -   「Stitch」缝合网格或细分物件的边缘或顶点  
+        -   焊接细分边缘  
+    -   「Birdge」桥接网格或细分  
+        -   桥接的部分一定要相等  
+    -   「Subdivide」对细分面再细分  
+        -   在细分面上进行细分  
+    -   「Slide」滑动网格或细分物件的边缘或顶点  
+        -   滑动范围固定 适合做精细调整  
+    -   「Reflect」细分物件镜面对称  
+    -   「Radiate」细分径向对称  
+    -   「Fill」填补细分网格洞  
+    -   「ExtrudeSubD」挤出细分面  
+    -   「OffsetSubD」偏移细分  
+    -   「QuadRemesh」用四边面重构网格  
+    -   「RepairSubD」修复细分  
+    -   「ToNurbs」将物件转换Nurbs  
+    -   「ToSubD」将物件转换为SubD  
+    -   「MakeSubDFriendly」使曲线适用细分  
+-   变动![](https://api2.mubu.com/v3/document_image/0ea60bdd-12f8-470d-b7ef-8a9c2dca915a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2412ffba-a017-479a-a1c7-9219a95b8714-20454557.jpg)  
+    -   移动![](https://api2.mubu.com/v3/document_image/d40d1428-584a-4a12-a020-0265333fdd8f-20454557.jpg)  
+        -   「Move」移动  
+        -   「SoftMove」不等量移动  
+            -   不等量移动一群物件，物件的移动距离由基准点往外衰减。  
+            -   适用于数量较多的大范围干扰  
+        -   「NamedPosition」位置记录  
+            -   记录不同的物件状态  
+            -   可以展示多种方案  
+    -   「Copy」 复制  
+        -   继承建构历史  
+    -   「Rotate」 旋转  
+        -   右键3D旋转  
+    -   缩放![](https://api2.mubu.com/v3/document_image/a6c4b9dc-049d-4f76-ad47-e0dcd45a0bd1-20454557.jpg)  
+        -   「Scale」 三轴缩放  
+            -   硬性：缩放物件之间的间距，物件不受缩放影响。  
+        -   「Scale2d」 二轴缩放  
+        -   「Scale1d」 单轴缩放  
+        -   「ScaleNU」不等比缩放  
+        -   「ScaleByPlane」在定义的平面上缩放  
+    -   「Mirror」 镜像  
+    -   「Orient」定位物件：两点  
+        -   右键定位物件：三点  
+        -   将物件进行对齐放置，用于对图。  
+    -   「BoxEdit」方块编辑  
+    -   「OrientOnSrf」定位物件至曲面  
+        -   将物件放在曲面上，比如文字。  
+    -   「OrientOnCrv」垂直定位至曲线  
+        -   适用于做单轨的断面线  
+    -   阵列![](https://api2.mubu.com/v3/document_image/51206cf7-6eab-4de3-9d47-c28782209944-20454557.jpg)  
+        -   「Array」矩形阵列  
+        -   「ArrayPolar」环形阵列  
+        -   「ArrayCrv」沿着曲线阵列  
+        -   「ArraySrf」在曲面上阵列  
+        -   「ArrayCrvOnSrf」沿着曲面上的曲线阵列  
+        -   「ArrayLinear」直线阵列  
+    -   「SetPt」设置XYZ坐标  
+        -   设定XYZ坐标使空间曲线在同一平面内，简称拍平。  
+    -   对齐与分布![](https://api2.mubu.com/v3/document_image/69a70aaf-0ef9-42d5-b017-f608bf4f2071-20454557.jpg)  
+        -   「Orient」 对齐物件  
+            -   注意视图，工作平面。  
+        -   「Distribute」平均分布物件  
+            -   控制物件间间距一致。  
+    -   变形工具![](https://api2.mubu.com/v3/document_image/7b2dea65-4740-4354-a5d1-502f47395eb6-20454557.jpg)  
+        -   「FlowAlongSrf」沿着曲面流动  
+            -   保证基准曲面和对应曲面尽量一致,一般通过「CreateUVCrv」建立UV曲线建立基准曲面。  
+            -   重建曲面以获得更均匀的点数使流动更可控  
+            -   用均匀的控制点曲线挤出的曲面作为流动的曲面再进行修剪，基准曲面用取消修剪的曲面可以做不发生形变的流动  
+            -   硬性  
+                -   决定物件在沿目标曲线流动时是否发生变形  
+        -   「Splop」球形对变  
+        -   「Maelstrom」绕转  
+        -   「Stretch」延展  
+            -   拉伸物件的某一部分  
+        -   「Twist」扭转  
+            -   一种建模思路，对形体进行扭转  
+            -   莫比乌斯环  
+        -   「Bend」弯曲  
+        -   「Taper」锥状化  
+        -   「Flow」沿着曲线流动  
+            -   将物件沿着曲线流动到指定曲线上  
+            -   硬性  
+                -   决定物件在沿目标曲线流动时是否发生变形  
+                -   硬性群组  
+                    -   决定使用组或单个物件来实线硬性  
+            -   延展  
+                -   将流动物体拉伸到整个曲线区间  
+            -   流动之前要保证物件的控制点不要超过曲线的外侧  
+            -   莫比乌斯环  
+    -   变形控制器![](https://api2.mubu.com/v3/document_image/f72290bd-10db-43fc-87af-dcc2cb9f0700-20454557.jpg)  
+        -   「CageEdit」变形控制器编辑  
+            -   对物体进行整体变形  
+    -   「SoftTransform」柔性变动  
+        -   据不同的径向衰减范围影响网格和细分物件顶点的移动程度。  
+    -   有机![](https://api2.mubu.com/v3/document_image/9f3c854d-802b-4568-8e2f-a8fa9a2350df-20454557.jpg)  
+        -   选取点![](https://api2.mubu.com/v3/document_image/99465d10-287e-48f5-a9c9-ef61675684c9-20454557.jpg)  
+        -   可见性![](https://api2.mubu.com/v3/document_image/ff37fb09-051d-4cf0-8c2e-c9783a58e9a8-20454557.jpg)  
+        -   显示![](https://api2.mubu.com/v3/document_image/46fed7a2-5e36-4864-97c5-ee615f4e2dc5-20454557.jpg)  
+        -   点的编辑![](https://api2.mubu.com/v3/document_image/ead1720b-43dc-4236-801c-60e20189204a-20454557.jpg)  
+        -   操作轴![](https://api2.mubu.com/v3/document_image/532c9eb9-98ea-4333-903e-94c4cc34587f-20454557.jpg)  
+-   分析![](https://api2.mubu.com/v3/document_image/52074a82-b97d-405e-b1f1-e2022eae7a80-20454557.jpg)  
+    -   「Dir 」UV线查看  
+    -   「Distance 」间距  
+    -   「Length 」长度  
+    -   「Area 」面积  
+    -   「ShowEdges 」边缘线检  
+-   检测![](https://api2.mubu.com/v3/document_image/561de0ea-6f24-437f-afc4-51f20f77bab2-20454557.jpg)  
+-   图块![](https://api2.mubu.com/v3/document_image/e1a6b5e4-258c-4cc5-9032-e68299f6463c-20454557.jpg)  
+    -   「Block」定义图块  
+        -   右键 编辑块定义  
+        -   给图块单独定义一个图层  
+        -   确保图块本身和图块内的物件在同一个图层中  
+        -   当模型作为配景导入Rhino可以使用插入文件  
+            -   图块定义类型 连结  
+        -   可用「Purge」清理未使用图块  
+    -   「Insert」插入图块  
+    -   「BlockManager」图块管理员  
+        -   对图块列表进行操作  
+    -   「ReplaceBlock」取代图块  
+        -   可以指定一个图块取代另一个图块进行更改  
+    -   「ExplodeBlock」炸开图块至最底层  
+-   渲染工具![](https://api2.mubu.com/v3/document_image/840e0aba-6d02-40e8-a937-d4c0a6cca761-20454557.jpg)![](https://api2.mubu.com/v3/document_image/73ef2540-97de-4584-a90f-4136e5fa1d0c-20454557.jpg)  
+    -   贴图轴![](https://api2.mubu.com/v3/document_image/2d7f6253-35c1-4863-ba5a-508751580384-20454557.jpg)  
+    -   贴图工具![](https://api2.mubu.com/v3/document_image/cb89e6c1-1869-4a6c-b217-5ae613980d46-20454557.jpg)  
+    -   动画设置![](https://api2.mubu.com/v3/document_image/6bba5487-b163-4ce1-944a-bec729941a79-20454557.jpg)  
+    -   动画预览![](https://api2.mubu.com/v3/document_image/d85859c0-81f5-4d3c-8e05-71cbe2732742-20454557.jpg)  
+-   出图![](https://api2.mubu.com/v3/document_image/e230b308-f4e2-4942-8839-c0c392c25ace-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0d1367a9-fef1-4057-80a1-c126c29966ae-20454557.jpg)  
+    -   图纸配置![](https://api2.mubu.com/v3/document_image/021e320d-af95-40c4-b567-d5bd712cc647-20454557.jpg)  
+    -   尺寸标注![](https://api2.mubu.com/v3/document_image/4e90e106-e338-4379-8325-663be61d740b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/913d5aea-d39d-4083-97a7-911e2f1e88c4-20454557.jpg)  
+        -   「Text」建立文字/单行文字  
+            -   Fx 表达式 可以选择要动态表达的数据  
+        -   「Make2D」建立2D图画  
+    -   注解点![](https://api2.mubu.com/v3/document_image/d942bdab-b2b9-4c51-8192-59a8c63dc27b-20454557.jpg)  
+    -   显示顺序![](https://api2.mubu.com/v3/document_image/db262bb5-83da-47f4-bf28-8f27fe8b9b78-20454557.jpg)  
+    -   选取尺寸标注![](https://api2.mubu.com/v3/document_image/3d789812-e616-40b3-9d93-c91d361fc294-20454557.jpg)

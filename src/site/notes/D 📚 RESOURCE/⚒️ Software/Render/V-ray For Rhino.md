@@ -1,0 +1,22 @@
+---
+{"tags":["software"],"type":["渲染器"],"dg-publish":true,"dg-note-icon":"2","dg-path":"⚒️ Software/Render/V-ray For Rhino.md","permalink":"/⚒️ Software/Render/V-ray For Rhino/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:02.959+08:00"}
+---
+
+ -   渲染手工模型  
+	    -   调整白膜材质  
+        -   Vray恢复设置  
+            -   曝光 14.229  
+            -   环境 背景贴图清除 覆盖天空背景  
+            -   打开太阳光 参数1 默认的天空  
+            -   材质覆盖  
+                -   颜色 白  
+                -   材质 手动调  
+                -   新建通用材质  
+                -   颜色偏白  
+                -   反射 光泽度70%  
+	    -   设置灯光  
+        -   渲染设置  
+            -   关闭太阳光  
+            -   关闭环境 背景贴图  
+            -   背景色改为深蓝色 倍数30  
+	    -   布置场景
