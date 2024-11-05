@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":"signpost","permalink":"/🍊 TANGERINE/Person/Links - 橘子的个人网站收藏/","dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-11-03T11:40:17.244+08:00","updated":"2024-11-04T17:57:40.275+08:00"}
+{"dg-publish":true,"dg-note-icon":"signpost","permalink":"/🍊 TANGERINE/Person/Links - 橘子的个人网站收藏/","dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-11-03T11:40:17.244+08:00","updated":"2024-11-05T23:44:41.845+08:00"}
 ---
 
 >这里包含了我从大学开始收录的所有网站，包含：数字花园 | Obsidian | 设备 | 软件 | 工具 | 游戏 | 书籍 | 学术 | 设计 | 数据 | 编程 | AI | 英语 等等兴趣点。

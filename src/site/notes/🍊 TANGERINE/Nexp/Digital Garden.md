@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":"stone","permalink":"/🍊 TANGERINE/Nexp/Digital Garden/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-10-29T20:51:39.117+08:00","updated":"2024-11-01T20:40:13.179+08:00"}
+{"dg-publish":true,"dg-note-icon":"stone","permalink":"/🍊 TANGERINE/Nexp/Digital Garden/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-10-29T20:51:39.117+08:00","updated":"2024-11-05T23:44:41.865+08:00"}
 ---
 
 ## 什么是Digital Garden（数字花园）？

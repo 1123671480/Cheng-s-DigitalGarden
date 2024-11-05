@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":"signpost","permalink":"/🍊 TANGERINE/Waypoint/Garden Waypoint/","dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-11-01T20:00:44.313+08:00","updated":"2024-11-05T22:38:58.628+08:00"}
+{"dg-publish":true,"dg-note-icon":"signpost","permalink":"/🍊 TANGERINE/Waypoint/Garden Waypoint/","dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-11-01T20:00:44.313+08:00","updated":"2024-11-05T23:44:41.840+08:00"}
 ---
 
 - 🍊 TANGERINE | 橘园的管理部门：主页、橘园历程、名词解释、Obsidian Vault 相关、个人等

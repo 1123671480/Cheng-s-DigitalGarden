@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":"1","permalink":"/🍊 TANGERINE/Obsidian/Plugins/","dgPassFrontmatter":true,"noteIcon":"1","created":"2024-10-26T20:16:55.000+08:00","updated":"2024-11-02T21:11:32.980+08:00"}
+{"dg-publish":true,"dg-note-icon":"1","permalink":"/🍊 TANGERINE/Obsidian/Plugins/","dgPassFrontmatter":true,"noteIcon":"1","created":"2024-10-26T20:16:55.000+08:00","updated":"2024-11-05T23:44:41.849+08:00"}
 ---
 
 - Plugin Groups

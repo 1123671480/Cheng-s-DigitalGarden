@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":"signpost","permalink":"/🍊 TANGERINE/Waypoint/Software/","dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-11-01T20:45:03.250+08:00","updated":"2024-11-01T20:48:25.818+08:00"}
+{"dg-publish":true,"dg-note-icon":"signpost","permalink":"/🍊 TANGERINE/Waypoint/Software/","dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-11-01T20:45:03.250+08:00","updated":"2024-11-05T23:44:26.930+08:00"}
 ---
 
 - **Adobe**

@@ -1,5 +1,5 @@
 ---
-{"tags":["software"],"dg-publish":true,"dg-note-icon":"1","permalink":"/🍊 TANGERINE/Obsidian/Obsidian/","dgPassFrontmatter":true,"noteIcon":"1","created":"2024-09-24T22:57:38.000+08:00","updated":"2024-11-05T09:03:27.449+08:00"}
+{"tags":["software"],"dg-publish":true,"dg-note-icon":"1","permalink":"/🍊 TANGERINE/Obsidian/Obsidian/","dgPassFrontmatter":true,"noteIcon":"1","created":"2024-09-24T22:57:38.000+08:00","updated":"2024-11-05T23:44:41.850+08:00"}
 ---
 
 ## Obsidian 是什么

@@ -1,5 +1,5 @@
 ---
-{"tags":[],"dg-publish":true,"dg-note-icon":1,"permalink":"/🍊 TANGERINE/Obsidian/Obsidian 历程 - 折腾之旅/","dgPassFrontmatter":true,"noteIcon":1,"created":"2024-10-26T20:16:52.000+08:00","updated":"2024-11-04T22:41:02.616+08:00"}
+{"tags":[],"dg-publish":true,"dg-note-icon":1,"permalink":"/🍊 TANGERINE/Obsidian/Obsidian 历程 - 折腾之旅/","dgPassFrontmatter":true,"noteIcon":1,"created":"2024-10-26T20:16:52.000+08:00","updated":"2024-11-05T23:44:41.852+08:00"}
 ---
 
 2024年10月27日12:35:44：官方同步上车 体验感拉满
