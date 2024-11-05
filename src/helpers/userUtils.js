@@ -35,12 +35,7 @@ const noteLabels = {
   "tree-1": { label: "Seedling", count: 0, icon: "tree-1" },
   "tree-2": { label: "Sapling", count: 0, icon: "tree-2" },
   "tree-3": { label: "Tree", count: 0, icon: "tree-3" },
-  withered: {
-    label: "Withered",
-    plural: "Withered",
-    count: 0,
-    icon: "withered",
-  },
+  withered: { label: "Withered", count: 0, icon: "withered" },
   signpost: { label: "Signpost", count: 0, icon: "signpost" },
   stone: { label: "Stone", count: 0, icon: "stone" },
 };
