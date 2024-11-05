@@ -30,7 +30,7 @@ function getPositions(trees) {
   let levels = sliceIntoChunks(trees, maxInRow);
   return levels;
 }
-
+//1
 const noteLabels = {
   "tree-1": { label: "Seedling", count: 0, icon: "tree-1" },
   "tree-2": { label: "Sapling", count: 0, icon: "tree-2" },
