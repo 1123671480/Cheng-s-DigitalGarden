@@ -1,5 +1,5 @@
 ---
-{"tags":["software"],"dg-publish":true,"dg-note-icon":"1","permalink":"/🍊 TANGERINE/Obsidian/Obsidian/","dgPassFrontmatter":true,"noteIcon":"1","created":"2024-09-24T22:57:38.000+08:00","updated":"2024-11-05T23:44:41.850+08:00"}
+{"tags":["software"],"dg-publish":true,"dg-note-icon":"1","permalink":"/🍊 TANGERINE/Obsidian/Obsidian/","dgPassFrontmatter":true,"noteIcon":"1","created":"2024-09-24T22:57:38.000+08:00","updated":"2024-11-06T11:43:09.535+08:00"}
 ---
 
 ## Obsidian 是什么
@@ -40,7 +40,7 @@ Obsidian 社区插件（已上架）近 2000 个插件，这还不包括未上�
 		- Quickadd 插件使我完成了库内大部分的自动化，如一键录入灵感、建立 Tasks 、快速新建模板笔记等等
 		- Map View 插件使我完成了个人 GIS 系统，可以标记自己去过/想去的地点、做旅游攻略等
 		- Vran 大佬开发的 Components 插件几乎实现了 Notion database 80%的功能，为 [[🍊 TANGERINE/Obsidian/Cheng\|Cheng]] 的核心之一
-		- 详情另见 [[🍊 TANGERINE/Obsidian/Plugins\|Plugins]]
+		- 详情另见 [[🍊 TANGERINE/Obsidian/Community Plugins\|Community Plugins]]
 Obsidian 的生态主要围绕着 Discord 和 [英文社区](https://forum.obsidian.md/) 展开的，这是因为两位创始人生活在加拿大，自然而然主要用户集中在欧美国家。据 [OSS Insight](https://ossinsight.io/) 统计，国内用户占到 25% 左右。国内社区的运营分散在互联网的各个角落，前期主要是以个人分享的内容为主，比如 [Ryooo](https://www.zhihu.com/people/rao-yao-47-68)，[Boninall](https://www.zhihu.com/people/kio-mis) 等人，大多是为爱发电，所以不温不火的。
 
 这就导致了 Obsidian 的内容多以英文为主，对许多人来说有着不小的门槛。唯一能解决的就是建立国内的软件生态，Pkmer 倒是有意接过这杆大旗。
@@ -72,7 +72,7 @@ Obsidian 的生态主要围绕着 Discord 和 [英文社区](https://forum.obsid
 | ------ | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | 权益     | 端到端加密，版本历史，邮件优先支持                                                                                                        | 零门槛需求，笔记选择性发布，关系图和大纲，邮件优先支持                                                                                                                    |
 | 价格     | 年付 $8/月                                                                                                                  | 年付 $16/月/站点                                                                                                                                    |
-| 个人解决办法 | 第三方同步也不稳定冲突，iCloud 同步也经常冲突，百度云同步盘不支持带有 emoji 的文件。最后还是选择了官方同步，淘宝拼车 118 一年，是真香，好用是真的好用，达到类似幕布的无感同步，还特别稳不会冲突，详见 [[🍊 TANGERINE/Obsidian/Sync 历程\|Sync 历程]] | 为建立数字花园我采用了 Obsidian-Digital-Gander 插件作为搭建桥梁，以 [Netlify](https://app.netlify.com) 作为构筑网站，以 Gtihub 作为代码托管。最终发布了🍊橘园，详见 [[🍊 TANGERINE/Garden Management/Construction Process\|Construction Process]] |
+| 个人解决办法 | 第三方同步也不稳定冲突，iCloud 同步也经常冲突，百度云同步盘不支持带有 emoji 的文件。最后还是选择了官方同步，淘宝拼车 118 一年，是真香，好用是真的好用，达到类似幕布的无感同步，还特别稳不会冲突，详见 [[🍊 TANGERINE/Obsidian/Sync\|Sync]] | 为建立数字花园我采用了 Obsidian-Digital-Gander 插件作为搭建桥梁，以 [Netlify](https://app.netlify.com) 作为构筑网站，以 Gtihub 作为代码托管。最终发布了🍊橘园，详见 [[🍊 TANGERINE/Garden Management/Construction Process\|Construction Process]] |
 
 是否会在未来收费这也是一个很大的问题，我个人倾向于这个免费 Obsidian 本体应该是永久的，基于下面的考虑：
 

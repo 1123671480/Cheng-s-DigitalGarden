@@ -1,5 +1,5 @@
 ---
-{"title":"Grasshopper_原生运算器","tags":["software"],"dg-publish":true,"dg-note-icon":"3","dg-path":"⚒️ Software/Rhinoceros 3D/Grasshopper_ALU.md","permalink":"/⚒️ Software/Rhinoceros 3D/Grasshopper_ALU/","dgPassFrontmatter":true,"noteIcon":"3","created":"2024-10-09T09:33:13.000+08:00","updated":"2024-11-05T23:48:02.956+08:00"}
+{"title":"Grasshopper_原生运算器","tags":["software"],"dg-publish":true,"dg-note-icon":"3","dg-path":"Software/Rhinoceros 3D/Grasshopper_ALU.md","permalink":"/Software/Rhinoceros 3D/Grasshopper_ALU/","dgPassFrontmatter":true,"noteIcon":"3","created":"2024-10-09T09:33:13.000+08:00","updated":"2024-11-05T23:48:02.956+08:00"}
 ---
 
 # Params 参数  

@@ -1,5 +1,5 @@
 ---
-{"tags":["software"],"type":["渲染器"],"dg-publish":true,"dg-note-icon":"2","dg-path":"⚒️ Software/Render/V-ray For Rhino.md","permalink":"/⚒️ Software/Render/V-ray For Rhino/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:02.959+08:00"}
+{"tags":["software"],"type":["渲染器"],"dg-publish":true,"dg-note-icon":"2","dg-path":"Software/Render/V-ray For Rhino.md","permalink":"/Software/Render/V-ray For Rhino/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:02.959+08:00"}
 ---
 
  -   渲染手工模型  

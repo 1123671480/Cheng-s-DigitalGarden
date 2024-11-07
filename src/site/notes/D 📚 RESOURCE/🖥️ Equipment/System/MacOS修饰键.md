@@ -1,5 +1,5 @@
 ---
-{"title":"MacOS修饰键","dg-publish":true,"dg-note-icon":"stone","dg-path":"🖥️ Equipment/System/MacOS修饰键.md","permalink":"/🖥️ Equipment/System/MacOS修饰键/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:47:57.525+08:00"}
+{"title":"MacOS修饰键","dg-publish":true,"dg-note-icon":"stone","dg-path":"Equipment/System/MacOS修饰键.md","permalink":"/Equipment/System/MacOS修饰键/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:47:57.525+08:00"}
 ---
 
 # Mac 键盘符号和修饰键说明

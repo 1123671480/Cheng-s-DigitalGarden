@@ -1,5 +1,5 @@
 ---
-{"title":"GADM地图和数据","dg-publish":true,"dg-note-icon":"stone","dg-path":"🌳 Major/Geography/Data/GADM地图和数据.md","permalink":"/🌳 Major/Geography/Data/GADM地图和数据/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:56:13.336+08:00"}
+{"title":"GADM地图和数据","dg-publish":true,"dg-note-icon":"stone","dg-path":"Major/Geography/Data/GADM地图和数据.md","permalink":"/Major/Geography/Data/GADM地图和数据/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:56:13.336+08:00"}
 ---
 
 [gadm.org](https://gadm.org/index.html)

@@ -1,5 +1,5 @@
 ---
-{"tags":["software"],"type":["建模","曲面","参数化"],"dg-publish":true,"dg-note-icon":"3","dg-path":"⚒️ Software/Rhinoceros 3D/Rhino.md","permalink":"/⚒️ Software/Rhinoceros 3D/Rhino/","dgPassFrontmatter":true,"noteIcon":"3","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:02.950+08:00"}
+{"tags":["software"],"type":["建模","曲面","参数化"],"dg-publish":true,"dg-note-icon":"3","dg-path":"Software/Rhinoceros 3D/Rhino.md","permalink":"/Software/Rhinoceros 3D/Rhino/","dgPassFrontmatter":true,"noteIcon":"3","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:02.950+08:00"}
 ---
 
 # Reference 参考于  

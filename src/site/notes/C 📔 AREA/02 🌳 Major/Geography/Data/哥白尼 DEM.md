@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":"stone","dg-path":"🌳 Major/Geography/Data/哥白尼 DEM.md","permalink":"/🌳 Major/Geography/Data/哥白尼 DEM/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:56:13.335+08:00"}
+{"dg-publish":true,"dg-note-icon":"stone","dg-path":"Major/Geography/Data/哥白尼 DEM.md","permalink":"/Major/Geography/Data/哥白尼 DEM/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:56:13.335+08:00"}
 ---
 
 数字高程模型 (Digital Elevation Model, DEM)是地球表面高程起伏的数字化表示，随着越来越多的光学立体测绘卫星和干涉雷达卫星发射升空，可用的全球性和区域性的 DEM 数据集数量也在不断增长。全球性的开源 DEM 数据集有 ETOPO、GTOPO30、GMTED2010、SRTM DEM、NASA DEM、ASTER GDEM、AW3D30、TanDEM-X DEM、Copernicus DEM 等。全球性的开源 DEM 数据集由于免费和可以开放使用受到大家的广泛欢迎。

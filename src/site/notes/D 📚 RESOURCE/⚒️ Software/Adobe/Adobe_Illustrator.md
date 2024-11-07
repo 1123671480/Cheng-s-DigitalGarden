@@ -1,5 +1,5 @@
 ---
-{"tags":["software"],"type":["矢量","插图"],"dg-publish":true,"dg-note-icon":"3","dg-path":"⚒️ Software/Adobe/Adobe_Illustrator.md","permalink":"/⚒️ Software/Adobe/Adobe_Illustrator/","dgPassFrontmatter":true,"noteIcon":"3","created":"2024-10-09T09:33:13.000+08:00","updated":"2024-11-05T23:48:11.666+08:00"}
+{"tags":["software"],"type":["矢量","插图"],"dg-publish":true,"dg-note-icon":"3","dg-path":"Software/Adobe/Adobe_Illustrator.md","permalink":"/Software/Adobe/Adobe_Illustrator/","dgPassFrontmatter":true,"noteIcon":"3","created":"2024-10-09T09:33:13.000+08:00","updated":"2024-11-05T23:48:11.666+08:00"}
 ---
 
 - ![](https://api2.mubu.com/v3/document_image/884339d7-bc9f-47e4-8b40-b51ef7bfb476-20454557.jpg)  

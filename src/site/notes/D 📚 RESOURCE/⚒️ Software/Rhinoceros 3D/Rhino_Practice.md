@@ -1,5 +1,5 @@
 ---
-{"title":"Rhino_练习","tags":["software"],"dg-publish":true,"dg-note-icon":"2","dg-path":"⚒️ Software/Rhinoceros 3D/Rhino_Practice.md","permalink":"/⚒️ Software/Rhinoceros 3D/Rhino_Practice/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:02.949+08:00"}
+{"title":"Rhino_练习","tags":["software"],"dg-publish":true,"dg-note-icon":"2","dg-path":"Software/Rhinoceros 3D/Rhino_Practice.md","permalink":"/Software/Rhinoceros 3D/Rhino_Practice/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:02.949+08:00"}
 ---
 
 -   Bosjes 教堂 / Steyn Studio![](https://api2.mubu.com/v3/document_image/a7e49bd3-0fce-4687-abe1-7a6acfc99cb7-20454557.jpg)  

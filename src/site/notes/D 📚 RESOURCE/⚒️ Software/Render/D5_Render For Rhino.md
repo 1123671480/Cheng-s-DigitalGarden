@@ -1,5 +1,5 @@
 ---
-{"tags":["software"],"type":["渲染器"],"dg-publish":true,"dg-note-icon":"2","dg-path":"⚒️ Software/Render/D5_Render For Rhino.md","permalink":"/⚒️ Software/Render/D5_Render For Rhino/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-10-09T09:33:06.000+08:00","updated":"2024-11-05T23:48:02.962+08:00"}
+{"tags":["software"],"type":["渲染器"],"dg-publish":true,"dg-note-icon":"2","dg-path":"Software/Render/D5_Render For Rhino.md","permalink":"/Software/Render/D5_Render For Rhino/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-10-09T09:33:06.000+08:00","updated":"2024-11-05T23:48:02.962+08:00"}
 ---
 
 # 简介  

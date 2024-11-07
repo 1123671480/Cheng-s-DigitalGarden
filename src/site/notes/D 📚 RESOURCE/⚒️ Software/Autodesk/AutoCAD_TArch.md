@@ -1,5 +1,5 @@
 ---
-{"tags":["software"],"type":["天正","建筑CAD"],"dg-publish":true,"dg-note-icon":"2","dg-path":"⚒️ Software/Autodesk/AutoCAD_TArch.md","permalink":"/⚒️ Software/Autodesk/AutoCAD_TArch/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:11.662+08:00"}
+{"tags":["software"],"type":["天正","建筑CAD"],"dg-publish":true,"dg-note-icon":"2","dg-path":"Software/Autodesk/AutoCAD_TArch.md","permalink":"/Software/Autodesk/AutoCAD_TArch/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:11.662+08:00"}
 ---
 
 # 简介  

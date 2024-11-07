@@ -1,5 +1,5 @@
 ---
-{"tags":["software"],"type":["排版"],"dg-publish":true,"dg-note-icon":"3","dg-path":"⚒️ Software/Adobe/Adobe_InDesign.md","permalink":"/⚒️ Software/Adobe/Adobe_InDesign/","dgPassFrontmatter":true,"noteIcon":"3","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:11.665+08:00"}
+{"tags":["software"],"type":["排版"],"dg-publish":true,"dg-note-icon":"3","dg-path":"Software/Adobe/Adobe_InDesign.md","permalink":"/Software/Adobe/Adobe_InDesign/","dgPassFrontmatter":true,"noteIcon":"3","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:11.665+08:00"}
 ---
 
 # 简介  

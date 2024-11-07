@@ -1,5 +1,5 @@
 ---
-{"tags":["software"],"type":["GIS","地理信息","地图"],"dg-publish":true,"dg-note-icon":"1","dg-path":"⚒️ Software/geography/Esri_ArcGIS.md","permalink":"/⚒️ Software/geography/Esri_ArcGIS/","dgPassFrontmatter":true,"noteIcon":"1","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:11.659+08:00"}
+{"tags":["software"],"type":["GIS","地理信息","地图"],"dg-publish":true,"dg-note-icon":"1","dg-path":"Software/geography/Esri_ArcGIS.md","permalink":"/Software/geography/Esri_ArcGIS/","dgPassFrontmatter":true,"noteIcon":"1","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:11.659+08:00"}
 ---
 
 # Setting 设置  

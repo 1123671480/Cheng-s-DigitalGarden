@@ -1,5 +1,5 @@
 ---
-{"tags":["software"],"type":["CAD"],"dg-publish":true,"dg-note-icon":"2","dg-path":"⚒️ Software/Autodesk/Autodesk_AutoCAD.md","permalink":"/⚒️ Software/Autodesk/Autodesk_AutoCAD/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-10-09T09:33:08.000+08:00","updated":"2024-11-05T23:48:11.661+08:00"}
+{"tags":["software"],"type":["CAD"],"dg-publish":true,"dg-note-icon":"2","dg-path":"Software/Autodesk/Autodesk_AutoCAD.md","permalink":"/Software/Autodesk/Autodesk_AutoCAD/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-10-09T09:33:08.000+08:00","updated":"2024-11-05T23:48:11.661+08:00"}
 ---
 
 # 简介  

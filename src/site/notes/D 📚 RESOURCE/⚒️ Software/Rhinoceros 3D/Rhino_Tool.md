@@ -1,5 +1,5 @@
 ---
-{"title":"Rhino_工具","tags":["software"],"dg-publish":true,"dg-note-icon":"2","dg-path":"⚒️ Software/Rhinoceros 3D/Rhino_Tool.md","permalink":"/⚒️ Software/Rhinoceros 3D/Rhino_Tool/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:02.947+08:00"}
+{"title":"Rhino_工具","tags":["software"],"dg-publish":true,"dg-note-icon":"2","dg-path":"Software/Rhinoceros 3D/Rhino_Tool.md","permalink":"/Software/Rhinoceros 3D/Rhino_Tool/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:02.947+08:00"}
 ---
 
 -   通用  

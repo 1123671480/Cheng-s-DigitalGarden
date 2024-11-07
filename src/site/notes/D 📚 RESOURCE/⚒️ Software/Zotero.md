@@ -1,5 +1,5 @@
 ---
-{"uid":20230817140317,"tags":["software"],"description":null,"author":"windingwind,Northword,汪汪,PKMer","type":["效率","PDF","文献","插件生态","本地化"],"modified":20230905010401,"dg-publish":true,"dg-note-icon":"1","dg-path":"⚒️ Software/Zotero.md","permalink":"/⚒️ Software/Zotero/","dgPassFrontmatter":true,"noteIcon":"1","created":"2024-09-24T22:57:44.000+08:00","updated":"2024-11-05T23:48:02.945+08:00"}
+{"uid":20230817140317,"tags":["software"],"description":null,"author":"windingwind,Northword,汪汪,PKMer","type":["效率","PDF","文献","插件生态","本地化"],"modified":20230905010401,"dg-publish":true,"dg-note-icon":"1","dg-path":"Software/Zotero.md","permalink":"/Software/Zotero/","dgPassFrontmatter":true,"noteIcon":"1","created":"2024-09-24T22:57:44.000+08:00","updated":"2024-11-05T23:48:02.945+08:00"}
 ---
 
 

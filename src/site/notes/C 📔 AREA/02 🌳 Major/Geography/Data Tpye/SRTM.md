@@ -1,5 +1,5 @@
 ---
-{"title":"SRTM 航天飞机雷达地形测绘使命","dg-publish":true,"dg-note-icon":"stone","dg-path":"🌳 Major/Geography/Data Tpye/SRTM.md","permalink":"/🌳 Major/Geography/Data Tpye/SRTM/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:56:07.550+08:00"}
+{"title":"SRTM 航天飞机雷达地形测绘使命","dg-publish":true,"dg-note-icon":"stone","dg-path":"Major/Geography/Data Tpye/SRTM.md","permalink":"/Major/Geography/Data Tpye/SRTM/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:56:07.550+08:00"}
 ---
 
 # 简介
