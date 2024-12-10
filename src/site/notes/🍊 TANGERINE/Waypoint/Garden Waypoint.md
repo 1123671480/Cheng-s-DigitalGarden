@@ -4,7 +4,7 @@
 
 ## 🌱 TANGERINE | 橘园的管理部门
 *主页、橘园历程、名词解释、Obsidian Vault 相关、个人等*
-- [[🍊 TANGERINE/TANGERINE\|TANGERINE]] | 主页
+- [[TANGERINE\|TANGERINE]] | 主页
 - **Garden Management** | **工具房**
 	- [[🍊 TANGERINE/Garden Management/Construction Process\|Construction Process]] | 橘园构筑及日志
 	- [[🍊 TANGERINE/Garden Management/Digital Garden Tools and Resources\|Digital Garden Tools and Resources]] | 数字园艺工具和资源
