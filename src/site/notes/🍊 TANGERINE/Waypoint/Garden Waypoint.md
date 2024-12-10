@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/🍊 TANGERINE/Waypoint/Garden Waypoint/","noteIcon":"signpost","created":"2024-11-01T20:00:44.313+08:00","updated":"2024-12-06T11:17:45.668+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Waypoint/Garden Waypoint/","noteIcon":"signpost","created":"2024-11-01T20:00:44.313+08:00","updated":"2024-12-10T21:00:25.949+08:00"}
 ---
 
 ## 🌱 TANGERINE | 橘园的管理部门
@@ -32,7 +32,7 @@
 	- [[🍊 TANGERINE/Person/Links\|Links]] | 橘子的链接收藏
 - **Waypoint** | **导航**
 	- [[🍊 TANGERINE/Waypoint/Garden Waypoint\|Garden Waypoint]] | 本文件夹导航站
-##  🍊 ACHIEVEMENT| 果实
+##  🍊 ACHIEVEMENT | 果实
 *本站精华内容、也是橘子思考的过程、园圃区*
 
 | 果实名称 |       ⚒️[[🍊 TANGERINE/Waypoint/Software\|Software]] \| 软件相关        |     🌳 [[🍊 TANGERINE/Waypoint/Major\|Major]] \| 专业相关     |   🖥️ [[🍊 TANGERINE/Waypoint/Equipment\|Equipment]] \| 设备相关   |
