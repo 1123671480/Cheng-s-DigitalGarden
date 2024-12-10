@@ -1,5 +1,5 @@
 ---
-{"tags":[],"dg-publish":true,"dg-note-icon":"2","permalink":"/🍊 TANGERINE/Garden Management/Tangerine History/","dgPassFrontmatter":true,"noteIcon":"2","created":"2024-10-29T20:26:15.897+08:00","updated":"2024-11-05T23:44:41.867+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Garden Management/Tangerine History/","noteIcon":"2","created":"2024-10-29T20:26:15.897+08:00","updated":"2024-11-05T23:44:41.867+08:00"}
 ---
 
 

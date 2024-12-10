@@ -1,5 +1,5 @@
 ---
-{"tags":["software"],"dg-publish":true,"dg-note-icon":"1","permalink":"/🍊 TANGERINE/Obsidian/Obsidian/","dgPassFrontmatter":true,"noteIcon":"1","created":"2024-09-24T22:57:38.000+08:00","updated":"2024-11-06T11:43:09.535+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Obsidian/Obsidian/","tags":["software"],"noteIcon":"1","created":"2024-09-24T22:57:38.000+08:00","updated":"2024-11-28T23:16:14.626+08:00"}
 ---
 
 ## Obsidian 是什么
@@ -15,32 +15,22 @@
 
 Obsidian 的优点集中在：
 
-- 高度自定义：每个人不仅可以定制独特的外观，还可以自动化自己的工作流。无代码能力的可以享受社区带来的种种惊喜。正是因为每个人做知识管理的目的和习惯都不同，高度自定义才能满足绝大部分人的需要。可以参看 [[Obsidian优秀外观分享\|Obsidian优秀外观分享]]
-- 高度自动化：一切繁琐重复的操作都能自动化，当然，对于大多数人来说还是得基于插件。
-- 可迁移性极强：本地 Markdown 可以无压力简单导入大部分笔记软件，而其它富文本则可能在此基础上需要做许多的迁移开发工作
-- 强大的社区生态：目前社区里有近 1000 个各式各样的插件，论坛有超过 2 万个帖子 (除去 bug 反馈)，知乎，B 站等地分布着各式各样的教程和分享，仅 Discord 就有接近 10 万人 。
-针对这句话有几点需要阐明的是：
-
-1. **Obsidian 是知识库管理工具**：不单单是文字编辑器，和 word，vim这些有本质上的区别。学习 ob 的目的不仅仅是为了记笔记，而更多的是打造自己的**知识体系**，Obsidian 提供笔记管理的工具罢了。这些工具包括但不限于：
+- **知识管理**：不单单是文字编辑器，和 word，vim 这些有本质上的区别。学习 ob 的目的不仅仅是为了记笔记，而更多的是打造自己的**知识体系**，Obsidian 提供笔记管理的工具罢了。这些工具包括但不限于：
 	- 优化输入体验（vim 模式，模板，自动补全，代码高亮，智能列表，折叠缩进，智能粘贴，图片、音频、视频、网页等多媒体插入）
 	- 笔记关联（双链，标签，块引用，关系图谱）其中双链笔记实组织 [[🍊 TANGERINE/Nexp/PKM\|PKM]] 知识管理、第二大脑的必备方式
 	- 高度开放的插件系统。
-1. **Obsidian 极其强大且扩展性极高**：这是由很多方面带来的：
-	- 一方面是 Obsidian 本身有着高度扩展性
-	- 一方面社区开发活跃
-	- 再一方面是本地纯文本可以被任意第三方工具操作
-1. **Obsidian 知识库是一个本地的文件夹**：Obsidian 不依赖于网络就可以正常运行，所有的数据都保存到本地，数据永远在自己手里。Obsidian 管理的所有数据都存在于一个文件夹中，这个文件夹称之为库 ([[🍊 TANGERINE/Nexp/Vault\|vault]])，包括配置文件和笔记文件。其中配置文件以 `.obsidian` 存在于库的根目录中，管理着 ob 的主题，样式，插件和一些运行时的数据。这带来了易于迁移和同步的特性。
-2. **Obsidian 是基于纯文本构建**：以 [[🍊 TANGERINE/Nexp/Markdown\|Markdown]] 格式为基础的储存格式，文件架结构透明，可以随时转移不受限制，占地空间小，这意味着即使脱离 Obsidian 软件，也是肉眼可读的，借助一些 [[🍊 TANGERINE/Nexp/Markdown\|Markdown]] 编辑器，也有不错的体验。
+- **本地化**：Obsidian 不依赖于网络就可以正常运行，所有的数据都保存到本地，数据永远在自己手里。Obsidian 管理的所有数据都存在于一个文件夹中，这个文件夹称之为库 ([[🍊 TANGERINE/Nexp/Vault\|Vault]])，包括配置文件和笔记文件。其中配置文件以 `.obsidian` 存在于库的根目录中，管理着 ob 的主题，样式，插件和一些运行时的数据。这带来了易于迁移和同步的特性。
+- **扩展性高**，**社区生态活跃**：每个人不仅可以定制独特的外观，还可以自动化自己的工作流。无代码能力的可以享受社区带来的种种惊喜。正是因为每个人做知识管理的目的和习惯都不同，高度自定义才能满足绝大部分人的需要。所谓的生态主要集中在两个方面，一方面是用 Obsidian 的分享，另一方面是 Obsidian 主题和插件。目前社区里有近 2000+ 各式各样的插件，185+ 主题，同时有大量的其他插件主题未上架。论坛有超过 20000+ 帖子 (除去 bug 反馈)，知乎，B 站等地分布着各式各样的教程和分享，仅 Discord 就有接近 10 万人。
+- **纯文本格式**：以 [[🍊 TANGERINE/Nexp/Markdown\|Markdown]] 格式为基础的储存格式，文件架结构透明，可以随时转移不受限制，占地 空间小，这意味着即使脱离 Obsidian 软件，也是肉眼可读的，借助一些 [[🍊 TANGERINE/Nexp/Markdown\|Markdown]] 编辑器，也有不错的体验。
 ### Obsidian 生态
 
-所谓的生态主要集中在两个方面，一方面是用 Obsidian 的分享，另一方面是 Obsidian 主题和插件。目前英文论坛有超过 2 万主题帖子，社区上架插件近 1000 个，同时有大量的其他插件主题未上架。除此之外，个人网站站点的分享，脚本分享，片段分享，美化分享，示例库分享也有很多，构成了 Obsidian 强大的软件生态。
-Obsidian 社区插件（已上架）近 2000 个插件，这还不包括未上架的在 Github 托管的插件
-		- Dataview 插件使我完成了数据筛选、Tasks 任务筛选、汇总每日 Capture |灵感笔记内容等
-		- Tasks + Templater 插件使我构筑好个人 [[🍊 TANGERINE/Nexp/GTD\|GTD]] 系统
-		- Quickadd 插件使我完成了库内大部分的自动化，如一键录入灵感、建立 Tasks 、快速新建模板笔记等等
-		- Map View 插件使我完成了个人 GIS 系统，可以标记自己去过/想去的地点、做旅游攻略等
-		- Vran 大佬开发的 Components 插件几乎实现了 Notion database 80%的功能，为 [[🍊 TANGERINE/Obsidian/Cheng\|Cheng]] 的核心之一
-		- 详情另见 [[🍊 TANGERINE/Obsidian/Community Plugins\|Community Plugins]]
+- Dataview 插件 
+- Tasks + Templater 插件使我构筑好个人 [[🍊 TANGERINE/Nexp/GTD\|GTD]] 系统
+- Quickadd 插件使我完成了库内大部分的自动化，如一键录入灵感、建立 Tasks 、快速新建模板笔记等等
+- Map View 插件使我完成了个人 GIS 系统，可以标记自己去过/想去的地点、做旅游攻略等
+- Vran 大佬开发的 Components 插件 几乎实现了 Notion database 80%的功能，为 [[🍊 TANGERINE/Obsidian/Cheng\|Cheng]] 的核心之一
+- 详情另见 [[🍊 TANGERINE/Obsidian/Community Plugins\|Community Plugins]]
+
 Obsidian 的生态主要围绕着 Discord 和 [英文社区](https://forum.obsidian.md/) 展开的，这是因为两位创始人生活在加拿大，自然而然主要用户集中在欧美国家。据 [OSS Insight](https://ossinsight.io/) 统计，国内用户占到 25% 左右。国内社区的运营分散在互联网的各个角落，前期主要是以个人分享的内容为主，比如 [Ryooo](https://www.zhihu.com/people/rao-yao-47-68)，[Boninall](https://www.zhihu.com/people/kio-mis) 等人，大多是为爱发电，所以不温不火的。
 
 这就导致了 Obsidian 的内容多以英文为主，对许多人来说有着不小的门槛。唯一能解决的就是建立国内的软件生态，Pkmer 倒是有意接过这杆大旗。

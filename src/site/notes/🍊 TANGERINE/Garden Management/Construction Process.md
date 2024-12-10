@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":2,"permalink":"/🍊 TANGERINE/Garden Management/Construction Process/","dgPassFrontmatter":true,"noteIcon":2,"created":"2024-10-26T20:16:51.000+08:00","updated":"2024-11-05T23:57:56.959+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Garden Management/Construction Process/","noteIcon":2,"created":"2024-10-26T20:16:51.000+08:00","updated":"2024-11-05T23:57:56.959+08:00"}
 ---
 
 ## Construction

@@ -1,15 +1,15 @@
 ---
-{"dg-home":true,"dg-publish":true,"dg-note-icon":"signpost","dg-path":"TANGERINE.md","permalink":"/TANGERINE/","tags":["gardenEntry"],"dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-10-28T13:02:15.886+08:00","updated":"2024-11-06T13:10:55.809+08:00"}
+{"dg-publish":true,"dg-path":"TANGERINE.md","permalink":"/TANGERINE/","tags":["gardenEntry"],"noteIcon":"signpost","created":"2024-10-28T13:02:15.886+08:00","updated":"2024-11-13T22:42:18.946+08:00"}
 ---
 
-<h1 align="center">🍊 TANGERINE | 橘园</h1>
+<h2 align="center">🍊 TANGERINE | 橘园</h1>
 <p align="center">
-	<a href="https://ccdg.netlify.app/">主发布站</a> |
-	<a href="https://ccdg.netlify.app/%F0%9F%8D%8A%20tangerine/garden%20management/construction%20process/">构筑过程</a> |
-	<a href="https://github.com/1123671480/Cheng-s-DigitalGarden">源代码仓</a> |
-	<a href="https://ccdg.netlify.app/%F0%9F%8D%8A%20tangerine/person/about%20me/">关于我</a>
+	<a href="https://ccdg.netlify.app/">Tangerine </a> |
+	<a href="https://ccdg.netlify.app/%F0%9F%8D%8A%20tangerine/garden%20management/construction%20process/">Construction Process</a> |
+	<a href="https://github.com/1123671480/Cheng-s-DigitalGarden">Source code repository</a> |
+	<a href="https://ccdg.netlify.app/%F0%9F%8D%8A%20tangerine/person/about%20me/">About Me </a>
 </p>
-这里是 🍊Tangerine | 橘园，一个[[🍊 TANGERINE/Nexp/Digital Garden\|数字花园]]（Digital Garden），是一个记录自己想法、观点萌发的地方，每一篇笔记/项目/想法的萌生都是埋下一粒种子，我会给它浇水施肥，在将来某一天它生根发芽，甚至开花结果。而橘园会记录和见证这一切的成长。这绝不是传统的博客，这是我思考过程的可视化，所以可能有很多看起来令人费解的半成品内容。
+这里是 🍊Tangerine | 橘园，一个数字花园（[[🍊 TANGERINE/Nexp/Digital Garden\|Digital Garden]]），是一个记录自己想法、观点萌发的地方，每一篇笔记/项目/想法的萌生都是埋下一粒种子，我会给它浇水施肥，在将来某一天它生根发芽，甚至开花结果。而橘园会记录和见证这一切的成长。这绝不是传统的博客，这是我思考过程的可视化，所以可能有很多看起来令人费解的半成品内容。
 
 数字花园的每一篇笔记元数据都包含了**成熟度**这一项，同时笔记标头会有相应成熟度的 Icon（图标）。根据成熟度不同可以划分为不同的生长阶段，详细说明课查看[[🍊 TANGERINE/Garden Management/Tree Graph\|成熟度说明]]。
 

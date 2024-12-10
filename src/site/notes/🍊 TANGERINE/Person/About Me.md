@@ -1,5 +1,5 @@
 ---
-{"aliases":["橘子"],"dg-publish":true,"dg-note-icon":"1","permalink":"/🍊 TANGERINE/Person/About Me/","dgPassFrontmatter":true,"noteIcon":"1","created":"2024-10-26T12:59:22.872+08:00","updated":"2024-11-05T23:44:41.846+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Person/About Me/","noteIcon":"1","created":"2024-10-26T12:59:22.872+08:00","updated":"2024-11-05T23:44:41.846+08:00"}
 ---
 
 这里是橘子，🍊 [TANGERINE|橘园](https://ccdg.netlify.app/)的主理人

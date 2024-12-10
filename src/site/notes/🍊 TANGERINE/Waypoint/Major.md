@@ -1,35 +1,35 @@
 ---
-{"dg-publish":true,"dg-note-icon":"signpost","permalink":"/🍊 TANGERINE/Waypoint/Major/","dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-11-01T21:22:07.327+08:00","updated":"2024-11-05T23:44:41.838+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Waypoint/Major/","noteIcon":"signpost","created":"2024-11-01T21:22:07.327+08:00","updated":"2024-11-05T23:44:41.838+08:00"}
 ---
 
 - **Chart** | 分析图
-	- [[C 📔 AREA/02 🌳 Major/Chart/图纸的制作问题\|图纸的制作问题]]
+	- [[C 📔 AREA/🌳 Major/Chart/图纸的制作问题\|图纸的制作问题]]
 	- 01 前期分析
-		- [[C 📔 AREA/02 🌳 Major/Chart/01 前期分析/功能分析\|功能分析]]
-		- [[C 📔 AREA/02 🌳 Major/Chart/01 前期分析/肌理分析\|肌理分析]]
-		- [[C 📔 AREA/02 🌳 Major/Chart/01 前期分析/交通分析\|交通分析]]
-		- [[C 📔 AREA/02 🌳 Major/Chart/01 前期分析/类型学分析\|类型学分析]]
-		- [[C 📔 AREA/02 🌳 Major/Chart/01 前期分析/区位分析\|区位分析]]
-		- [[C 📔 AREA/02 🌳 Major/Chart/01 前期分析/现状分析\|现状分析]]
-		- [[C 📔 AREA/02 🌳 Major/Chart/01 前期分析/形体分析\|形体分析]]
+		- [[C 📔 AREA/🌳 Major/Chart/01 前期分析/功能分析\|功能分析]]
+		- [[C 📔 AREA/🌳 Major/Chart/01 前期分析/肌理分析\|肌理分析]]
+		- [[C 📔 AREA/🌳 Major/Chart/01 前期分析/交通分析\|交通分析]]
+		- [[C 📔 AREA/🌳 Major/Chart/01 前期分析/类型学分析\|类型学分析]]
+		- [[C 📔 AREA/🌳 Major/Chart/01 前期分析/区位分析\|区位分析]]
+		- [[C 📔 AREA/🌳 Major/Chart/01 前期分析/现状分析\|现状分析]]
+		- [[C 📔 AREA/🌳 Major/Chart/01 前期分析/形体分析\|形体分析]]
 	- 02 中期分析
-		- [[C 📔 AREA/02 🌳 Major/Chart/02 中期分析/手绘模型\|手绘模型]]
-		- [[C 📔 AREA/02 🌳 Major/Chart/02 中期分析/轴测分析图\|轴测分析图]]
+		- [[C 📔 AREA/🌳 Major/Chart/02 中期分析/手绘模型\|手绘模型]]
+		- [[C 📔 AREA/🌳 Major/Chart/02 中期分析/轴测分析图\|轴测分析图]]
 - **Construction** | 施工
 	- **Working** **Drawing**
-		- [[C 📔 AREA/02 🌳 Major/Construction/Working Drawing/总览\|总览]]
-		- [[C 📔 AREA/02 🌳 Major/Construction/Working Drawing/土建施工图\|土建施工图]]
-		- [[C 📔 AREA/02 🌳 Major/Construction/Working Drawing/水电施工图\|水电施工图]]
-		- [[C 📔 AREA/02 🌳 Major/Construction/Working Drawing/结构施工图\|结构施工图]]
-		- [[C 📔 AREA/02 🌳 Major/Construction/Working Drawing/植物施工图\|植物施工图]]
+		- [[C 📔 AREA/🌳 Major/Construction/Working Drawing/总览\|总览]]
+		- [[C 📔 AREA/🌳 Major/Construction/Working Drawing/土建施工图\|土建施工图]]
+		- [[C 📔 AREA/🌳 Major/Construction/Working Drawing/水电施工图\|水电施工图]]
+		- [[C 📔 AREA/🌳 Major/Construction/Working Drawing/结构施工图\|结构施工图]]
+		- [[C 📔 AREA/🌳 Major/Construction/Working Drawing/植物施工图\|植物施工图]]
 - **Geography** | 地理
 	- Data Type
-		- [[C 📔 AREA/02 🌳 Major/Geography/Data Tpye/DEM\|DEM]]
-		- [[C 📔 AREA/02 🌳 Major/Geography/Data Tpye/KML\|KML]]
-		- [[C 📔 AREA/02 🌳 Major/Geography/Data Tpye/MAP\|MAP]]
-		- [[C 📔 AREA/02 🌳 Major/Geography/Data Tpye/SHP\|SHP]]
-		- [[C 📔 AREA/02 🌳 Major/Geography/Data Tpye/SRTM\|SRTM]]
+		- [[C 📔 AREA/🌳 Major/Geography/Data Tpye/DEM\|DEM]]
+		- [[C 📔 AREA/🌳 Major/Geography/Data Tpye/KML\|KML]]
+		- [[C 📔 AREA/🌳 Major/Geography/Data Tpye/MAP\|MAP]]
+		- [[C 📔 AREA/🌳 Major/Geography/Data Tpye/SHP\|SHP]]
+		- [[C 📔 AREA/🌳 Major/Geography/Data Tpye/SRTM\|SRTM]]
 	- Data
-		- [[C 📔 AREA/02 🌳 Major/Geography/Data/哥白尼 DEM\|哥白尼 DEM]]
-		- [[C 📔 AREA/02 🌳 Major/Geography/Data/基于多源遥感数据的全球30米复种指数数据\|基于多源遥感数据的全球30米复种指数数据]]
-		- [[C 📔 AREA/02 🌳 Major/Geography/Data/GADM地图和数据\|GADM地图和数据]]
+		- [[C 📔 AREA/🌳 Major/Geography/Data/哥白尼 DEM\|哥白尼 DEM]]
+		- [[C 📔 AREA/🌳 Major/Geography/Data/基于多源遥感数据的全球30米复种指数数据\|基于多源遥感数据的全球30米复种指数数据]]
+		- [[C 📔 AREA/🌳 Major/Geography/Data/GADM地图和数据\|GADM地图和数据]]

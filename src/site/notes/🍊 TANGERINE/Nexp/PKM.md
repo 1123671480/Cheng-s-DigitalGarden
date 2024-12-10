@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-note-icon":"stone","permalink":"/🍊 TANGERINE/Nexp/PKM/","dgPassFrontmatter":true,"noteIcon":"stone","created":"2024-10-23T22:37:58.000+08:00","updated":"2024-11-05T23:44:41.856+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Nexp/PKM/","noteIcon":"stone","created":"2024-10-23T22:37:58.000+08:00","updated":"2024-11-05T23:44:41.856+08:00"}
 ---
 
 ## PKM(Personal Knowledge Management)

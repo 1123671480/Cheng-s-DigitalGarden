@@ -1,30 +1,30 @@
 ---
-{"dg-publish":true,"dg-note-icon":"signpost","permalink":"/🍊 TANGERINE/Waypoint/Software/","dgPassFrontmatter":true,"noteIcon":"signpost","created":"2024-11-01T20:45:03.250+08:00","updated":"2024-11-05T23:44:26.930+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Waypoint/Software/","noteIcon":"signpost","created":"2024-11-01T20:45:03.250+08:00","updated":"2024-11-30T17:30:53.175+08:00"}
 ---
 
 - **Adobe**
-	- [[D 📚 RESOURCE/⚒️ Software/Adobe/Adobe_Illustrator\|Adobe_Illustrator]]
-	- [[D 📚 RESOURCE/⚒️ Software/Adobe/Adobe_InDesign\|Adobe_InDesign]]
-	- [[D 📚 RESOURCE/⚒️ Software/Adobe/Adobe_Photoshop\|Adobe_Photoshop]]
+	- [[C 📔 AREA/⚒️ Software/Adobe/Adobe_Illustrator\|Adobe_Illustrator]]
+	- [[C 📔 AREA/⚒️ Software/Adobe/Adobe_InDesign\|Adobe_InDesign]]
+	- [[C 📔 AREA/⚒️ Software/Adobe/Adobe_Photoshop\|Adobe_Photoshop]]
 - **Autodesk**
-	- [[D 📚 RESOURCE/⚒️ Software/Autodesk/AutoCAD_TArch\|AutoCAD_TArch]]
-	- [[D 📚 RESOURCE/⚒️ Software/Autodesk/Autodesk_AutoCAD\|Autodesk_AutoCAD]]
+	- [[C 📔 AREA/⚒️ Software/Autodesk/AutoCAD_TArch\|AutoCAD_TArch]]
+	- [[C 📔 AREA/⚒️ Software/Autodesk/Autodesk_AutoCAD\|Autodesk_AutoCAD]]
 - **geography**
-	- [[D 📚 RESOURCE/⚒️ Software/geography/Esri_ArcGIS\|Esri_ArcGIS]]
-	- [[D 📚 RESOURCE/⚒️ Software/geography/Local Space Viewer\|Local Space Viewer]]
+	- [[C 📔 AREA/⚒️ Software/geography/Esri_ArcGIS\|Esri_ArcGIS]]
+	- [[C 📔 AREA/⚒️ Software/geography/Local Space Viewer\|Local Space Viewer]]
 - **Media**
-	- [[D 📚 RESOURCE/⚒️ Software/Media/Potplayer\|Potplayer]]
+	- [[C 📔 AREA/⚒️ Software/Media/Potplayer\|Potplayer]]
 - **Render**
-	- [[D 📚 RESOURCE/⚒️ Software/Render/D5_Render For Rhino\|D5_Render For Rhino]]
-	- [[D 📚 RESOURCE/⚒️ Software/Render/Physicallly_Based Rendering\|Physicallly_Based Rendering]]
-	- [[D 📚 RESOURCE/⚒️ Software/Render/V-ray For Rhino\|V-ray For Rhino]]
+	- [[C 📔 AREA/⚒️ Software/Render/D5_Render For Rhino\|D5_Render For Rhino]]
+	- [[C 📔 AREA/⚒️ Software/Render/Physicallly_Based Rendering\|Physicallly_Based Rendering]]
+	- [[C 📔 AREA/⚒️ Software/Render/V-ray For Rhino\|V-ray For Rhino]]
 - **Rhinoceros 3D**
-	- **[[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper\|Grasshopper]]**
-	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper_ALU\|Grasshopper_ALU]]
-	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Grasshopper\|Grasshopper]]
-	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Rhino_Practice\|Rhino_Practice]]
-	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Rhino_Tool\|Rhino_Tool]]
-	- [[D 📚 RESOURCE/⚒️ Software/Rhinoceros 3D/Rhino\|Rhino]]
-- [[D 📚 RESOURCE/⚒️ Software/SketchUp\|SketchUp]]
-- [[D 📚 RESOURCE/⚒️ Software/Zotero\|Zotero]]
+	- **[[C 📔 AREA/⚒️ Software/Rhinoceros 3D/Grasshopper\|Grasshopper]]**
+	- [[C 📔 AREA/⚒️ Software/Rhinoceros 3D/Grasshopper_ALU\|Grasshopper_ALU]]
+	- [[C 📔 AREA/⚒️ Software/Rhinoceros 3D/Grasshopper\|Grasshopper]]
+	- [[C 📔 AREA/⚒️ Software/Rhinoceros 3D/Rhino_Practice\|Rhino_Practice]]
+	- [[C 📔 AREA/⚒️ Software/Rhinoceros 3D/Rhino_Tool\|Rhino_Tool]]
+	- [[C 📔 AREA/⚒️ Software/Rhinoceros 3D/Rhino\|Rhino]]
+- [[C 📔 AREA/⚒️ Software/SketchUp\|SketchUp]]
+- [[C 📔 AREA/⚒️ Software/Zotero\|C 📔 AREA/⚒️ Software/Zotero]]
 - [[🍊 TANGERINE/Obsidian/Obsidian\|Obsidian]]
