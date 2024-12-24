@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/B 📄 PROJECT/🔧 Obsidian/GTD 思考/","noteIcon":"2","created":"2024-12-24T09:28:21.221+08:00","updated":"2024-12-24T10:18:29.816+08:00"}
+{"dg-publish":true,"permalink":"/B 📄 PROJECT/🔧 Obsidian/GTD 思考/","noteIcon":"2","created":"2024-12-24T09:28:21.221+08:00","updated":"2024-12-24T15:22:49.595+08:00"}
 ---
 
 ## GTD(Getting Things Done)
@@ -47,5 +47,11 @@
 - 有一些Goal、Project夭折了直接进入Cancel，完成Done的项目则进入归档
 - 具体代办todo则是分布在project里，可以随时通过tasks插件添加deadline（截止日期），这样任务截止当天会显示在每日右上角的tasks语法任务列表中
 ![截屏2024-12-24 10.15.13.png](https://obsidian-1330151501.cos.ap-beijing.myqcloud.com/pic/202412241015281.png)
+## 模板
+
+![截屏2024-12-24 14.28.09.png](https://obsidian-1330151501.cos.ap-beijing.myqcloud.com/pic/202412241520567.png)
+## CPS文件设置
+![截屏2024-12-24 14.28.52.png](https://obsidian-1330151501.cos.ap-beijing.myqcloud.com/pic/202412241521984.png)
+![截屏2024-12-24 14.28.46.png](https://obsidian-1330151501.cos.ap-beijing.myqcloud.com/pic/202412241522022.png)
 - 未完待续，随着以后精进会继续深化
 - 以上
