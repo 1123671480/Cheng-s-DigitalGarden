@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/B 📄 PROJECT/🔧 Obsidian/GTD 思考/","noteIcon":"2","created":"2024-12-24T09:28:21.221+08:00","updated":"2024-12-24T15:22:49.595+08:00"}
+{"dg-publish":true,"permalink":"/B 📄 PROJECT/🔧 Obsidian/GTD 思考/","noteIcon":"2","created":"2024-12-24T09:28:21.221+08:00","updated":"2024-12-24T15:29:27.421+08:00"}
 ---
 
 ## GTD(Getting Things Done)
@@ -53,5 +53,6 @@
 ## CPS文件设置
 ![截屏2024-12-24 14.28.52.png](https://obsidian-1330151501.cos.ap-beijing.myqcloud.com/pic/202412241521984.png)
 ![截屏2024-12-24 14.28.46.png](https://obsidian-1330151501.cos.ap-beijing.myqcloud.com/pic/202412241522022.png)
+- CPS文件链接： https://pan.baidu.com/s/1kMbogNAOOqctv9BHKgg4Ig?pwd=nkhm 提取码: nkhm 
 - 未完待续，随着以后精进会继续深化
 - 以上
