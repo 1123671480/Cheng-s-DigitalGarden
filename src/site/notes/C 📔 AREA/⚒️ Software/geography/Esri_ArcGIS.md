@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/C 📔 AREA/⚒️ Software/geography/Esri_ArcGIS/","tags":["software"],"noteIcon":"1","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:11.659+08:00"}
+{"dg-publish":true,"permalink":"/C 📔 AREA/⚒️ Software/geography/Esri_ArcGIS/","tags":["⚒️"],"noteIcon":"1","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-12-12T15:53:38.106+08:00"}
 ---
 
 # Setting 设置  

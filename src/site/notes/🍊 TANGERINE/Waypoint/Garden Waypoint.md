@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/🍊 TANGERINE/Waypoint/Garden Waypoint/","noteIcon":"signpost","created":"2024-11-01T20:00:44.313+08:00","updated":"2024-12-10T21:00:25.949+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Waypoint/Garden Waypoint/","noteIcon":"signpost","created":"2024-11-01T20:00:44.313+08:00","updated":"2024-12-12T13:34:04.342+08:00"}
 ---
 
 ## 🌱 TANGERINE | 橘园的管理部门
@@ -23,7 +23,7 @@
 	- [[🍊 TANGERINE/Nexp/Vault\|Vault]] | 库
 - **Obsidian** | **Obsidian Vault 相关**
 	- [[🍊 TANGERINE/Obsidian/Obsidian\|Obsidian]] | 黑曜石介绍
-	- [[🍊 TANGERINE/Obsidian/Cheng\|Cheng]] | 橘子本地库成长史
+	- [[🍊 TANGERINE/Obsidian/Draedon\|Draedon]] | 橘子本地库成长史
 	- [[🍊 TANGERINE/Obsidian/Community Plugins\|Community Plugins]] | 橘子的插件推荐
 	- [[🍊 TANGERINE/Obsidian/Sync\|Sync]] | 同步系统历程
 - **Person** | **个人**

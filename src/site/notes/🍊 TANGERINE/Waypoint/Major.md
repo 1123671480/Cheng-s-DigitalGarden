@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/🍊 TANGERINE/Waypoint/Major/","noteIcon":"signpost","created":"2024-11-01T21:22:07.327+08:00","updated":"2024-11-05T23:44:41.838+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Waypoint/Major/","noteIcon":"signpost","created":"2024-11-01T21:22:07.327+08:00","updated":"2024-11-06T16:47:51.534+08:00"}
 ---
 
 - **Chart** | 分析图

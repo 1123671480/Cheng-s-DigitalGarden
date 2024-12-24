@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/C 📔 AREA/⚒️ Software/Render/Physicallly_Based Rendering/","title":"Physicallly_Based Rendering","tags":["software"],"noteIcon":"stone","created":"2024-10-09T09:32:55.000+08:00","updated":"2024-11-05T23:48:02.961+08:00"}
+{"dg-publish":true,"permalink":"/C 📔 AREA/⚒️ Software/Render/Physicallly_Based Rendering/","title":"Physicallly_Based Rendering","tags":["⚒️"],"noteIcon":"stone","created":"2024-10-09T09:32:55.000+08:00","updated":"2024-12-12T15:53:37.969+08:00"}
 ---
 
 -   来自于_Auv_525的博客-CSDN博客  

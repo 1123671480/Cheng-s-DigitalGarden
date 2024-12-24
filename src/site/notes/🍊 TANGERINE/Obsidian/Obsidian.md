@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/🍊 TANGERINE/Obsidian/Obsidian/","tags":["software"],"noteIcon":"1","created":"2024-09-24T22:57:38.000+08:00","updated":"2024-11-28T23:16:14.626+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Obsidian/Obsidian/","tags":["⚒️"],"noteIcon":"1","created":"2024-09-24T22:57:38.000+08:00","updated":"2024-12-12T15:53:38.148+08:00"}
 ---
 
 ## Obsidian 是什么
@@ -28,7 +28,7 @@ Obsidian 的优点集中在：
 - Tasks + Templater 插件使我构筑好个人 [[🍊 TANGERINE/Nexp/GTD\|GTD]] 系统
 - Quickadd 插件使我完成了库内大部分的自动化，如一键录入灵感、建立 Tasks 、快速新建模板笔记等等
 - Map View 插件使我完成了个人 GIS 系统，可以标记自己去过/想去的地点、做旅游攻略等
-- Vran 大佬开发的 Components 插件 几乎实现了 Notion database 80%的功能，为 [[🍊 TANGERINE/Obsidian/Cheng\|Cheng]] 的核心之一
+- Vran 大佬开发的 Components 插件 几乎实现了 Notion database 80%的功能，为 [[🍊 TANGERINE/Obsidian/Draedon\|Draedon]] 的核心之一
 - 详情另见 [[🍊 TANGERINE/Obsidian/Community Plugins\|Community Plugins]]
 
 Obsidian 的生态主要围绕着 Discord 和 [英文社区](https://forum.obsidian.md/) 展开的，这是因为两位创始人生活在加拿大，自然而然主要用户集中在欧美国家。据 [OSS Insight](https://ossinsight.io/) 统计，国内用户占到 25% 左右。国内社区的运营分散在互联网的各个角落，前期主要是以个人分享的内容为主，比如 [Ryooo](https://www.zhihu.com/people/rao-yao-47-68)，[Boninall](https://www.zhihu.com/people/kio-mis) 等人，大多是为爱发电，所以不温不火的。

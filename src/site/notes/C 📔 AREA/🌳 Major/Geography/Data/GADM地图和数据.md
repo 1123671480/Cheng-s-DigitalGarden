@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/C 📔 AREA/🌳 Major/Geography/Data/GADM地图和数据/","title":"GADM地图和数据","noteIcon":"stone","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:56:13.336+08:00"}
+{"dg-publish":true,"permalink":"/C 📔 AREA/🌳 Major/Geography/Data/GADM地图和数据/","title":"GADM地图和数据","noteIcon":"stone","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-28T22:03:46.916+08:00"}
 ---
 
 [gadm.org](https://gadm.org/index.html)

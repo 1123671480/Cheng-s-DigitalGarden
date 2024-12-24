@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/C 📔 AREA/⚒️ Software/Autodesk/Autodesk_AutoCAD/","tags":["software"],"noteIcon":"2","created":"2024-10-09T09:33:08.000+08:00","updated":"2024-11-05T23:48:11.661+08:00"}
+{"dg-publish":true,"permalink":"/C 📔 AREA/⚒️ Software/Autodesk/Autodesk_AutoCAD/","tags":["⚒️"],"noteIcon":"2","created":"2024-10-09T09:33:08.000+08:00","updated":"2024-12-12T15:53:37.892+08:00"}
 ---
 
 # 简介  

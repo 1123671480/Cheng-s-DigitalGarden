@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/🍊 TANGERINE/HOMEPAGE/","tags":["gardenEntry"],"noteIcon":"signpost","created":"2024-12-10T20:59:03.915+08:00","updated":"2024-12-10T21:08:37.992+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/HOMEPAGE/","tags":["gardenEntry"],"noteIcon":"signpost","created":"2024-12-10T20:59:03.915+08:00","updated":"2024-12-12T16:00:30.503+08:00"}
 ---
 
 这里是 🍊Tangerine | 橘园，一个数字花园（[[🍊 TANGERINE/Nexp/Digital Garden\|Digital Garden]]），是一个记录自己想法、观点萌发的地方，每一篇笔记/项目/想法的萌生都是埋下一粒种子，我会给它浇水施肥，在将来某一天它生根发芽，甚至开花结果。而橘园会记录和见证这一切的成长。这绝不是传统的博客，这是我思考过程的可视化，所以可能有很多看起来令人费解的半成品内容。
@@ -14,7 +14,7 @@
 - 笔记成熟度说明：[[🍊 TANGERINE/Garden Management/Tree Graph\|Tree Graph]] | 最具沉浸感的生长可视化
 - 个人笔记软件历程：[[🍊 TANGERINE/Person/Notes  History\|Notes  History]] | 历经有道云、印象、幕布、Notion，最后到 [[🍊 TANGERINE/Obsidian/Obsidian\|Obsidian]]
 - 橘园发展历史：[[🍊 TANGERINE/Garden Management/Tangerine History\|Tangerine History]] | 数字花园的新生
-- Obsidian Vault 发展历史：[[🍊 TANGERINE/Obsidian/Cheng\|Cheng]] | 个人库进化史
+- Obsidian Vault 发展历史：[[🍊 TANGERINE/Obsidian/Draedon\|Draedon]] | 个人库进化史
 - 个人收藏网站集合：[[🍊 TANGERINE/Person/Links\|Links]] | 通往外界的星门
 
 ### 🌱 快速上手

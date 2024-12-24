@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/C 📔 AREA/⚒️ Software/Render/D5_Render For Rhino/","tags":["software"],"noteIcon":"2","created":"2024-10-09T09:33:06.000+08:00","updated":"2024-11-05T23:48:02.962+08:00"}
+{"dg-publish":true,"permalink":"/C 📔 AREA/⚒️ Software/Render/D5_Render For Rhino/","tags":["⚒️"],"noteIcon":"2","created":"2024-10-09T09:33:06.000+08:00","updated":"2024-12-12T15:53:37.951+08:00"}
 ---
 
 # 简介  

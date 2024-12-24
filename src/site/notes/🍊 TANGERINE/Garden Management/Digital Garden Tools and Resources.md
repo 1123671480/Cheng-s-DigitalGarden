@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/🍊 TANGERINE/Garden Management/Digital Garden Tools and Resources/","noteIcon":"signpost","created":"2024-11-03T11:52:34.379+08:00","updated":"2024-11-05T23:44:41.871+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Garden Management/Digital Garden Tools and Resources/","noteIcon":"signpost","created":"2024-11-03T11:52:34.379+08:00","updated":"2024-11-06T16:48:04.264+08:00"}
 ---
 
 # 数字园艺工具和资源

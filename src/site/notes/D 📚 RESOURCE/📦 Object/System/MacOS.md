@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/D 📚 RESOURCE/📦 Object/System/MacOS/","title":"MacOS","noteIcon":"1","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:02.936+08:00"}
+{"dg-publish":true,"permalink":"/D 📚 RESOURCE/📦 Object/System/MacOS/","title":"MacOS","noteIcon":"1","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-12-12T15:56:31.598+08:00"}
 ---
 
 -   MacOS的大脑![](https://api2.mubu.com/v3/document_image/52e7d0b6-3705-4c66-bb3a-4e313781b881-20454557.jpg)  

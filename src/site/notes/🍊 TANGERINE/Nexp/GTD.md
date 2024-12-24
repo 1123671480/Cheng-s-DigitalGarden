@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/🍊 TANGERINE/Nexp/GTD/","noteIcon":"stone","created":"2024-10-23T22:38:02.000+08:00","updated":"2024-11-05T23:44:41.862+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Nexp/GTD/","noteIcon":"stone","created":"2024-10-23T22:38:02.000+08:00","updated":"2024-11-06T16:47:55.010+08:00"}
 ---
 
 ##  GTD(Getting Things Done)

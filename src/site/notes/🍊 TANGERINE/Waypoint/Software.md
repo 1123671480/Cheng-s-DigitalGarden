@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/🍊 TANGERINE/Waypoint/Software/","noteIcon":"signpost","created":"2024-11-01T20:45:03.250+08:00","updated":"2024-11-30T17:30:53.175+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Waypoint/Software/","noteIcon":"signpost","created":"2024-11-01T20:45:03.250+08:00","updated":"2024-12-21T22:01:07.602+08:00"}
 ---
 
 - **Adobe**
@@ -25,6 +25,6 @@
 	- [[C 📔 AREA/⚒️ Software/Rhinoceros 3D/Rhino_Practice\|Rhino_Practice]]
 	- [[C 📔 AREA/⚒️ Software/Rhinoceros 3D/Rhino_Tool\|Rhino_Tool]]
 	- [[C 📔 AREA/⚒️ Software/Rhinoceros 3D/Rhino\|Rhino]]
-- [[C 📔 AREA/⚒️ Software/SketchUp\|SketchUp]]
-- [[C 📔 AREA/⚒️ Software/Zotero\|C 📔 AREA/⚒️ Software/Zotero]]
+- [[C 📔 AREA/⚒️ Software/Model/SketchUp\|SketchUp]]
+- [[C 📔 AREA/⚒️ Software/PKM/Zotero\|C 📔 AREA/⚒️ Software/PKM/Zotero]]
 - [[🍊 TANGERINE/Obsidian/Obsidian\|Obsidian]]

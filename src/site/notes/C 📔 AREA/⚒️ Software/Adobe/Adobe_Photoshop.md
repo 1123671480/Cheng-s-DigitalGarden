@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/C 📔 AREA/⚒️ Software/Adobe/Adobe_Photoshop/","tags":["software"],"noteIcon":"3","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:48:11.664+08:00"}
+{"dg-publish":true,"permalink":"/C 📔 AREA/⚒️ Software/Adobe/Adobe_Photoshop/","tags":["⚒️"],"noteIcon":"3","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-12-12T15:53:37.855+08:00"}
 ---
 
 # 简介  

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/C 📔 AREA/⚒️ Software/Media/Potplayer/","tags":["software"],"noteIcon":"1","created":"2024-09-03T09:31:35.518+08:00","updated":"2024-11-05T23:48:02.963+08:00"}
+{"dg-publish":true,"permalink":"/C 📔 AREA/⚒️ Software/Media/Potplayer/","tags":["⚒️"],"noteIcon":"1","created":"2024-09-03T09:31:35.518+08:00","updated":"2024-12-12T15:53:37.921+08:00"}
 ---
 
 # 快捷键

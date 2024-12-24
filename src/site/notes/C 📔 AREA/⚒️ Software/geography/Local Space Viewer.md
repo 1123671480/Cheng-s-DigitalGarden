@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/C 📔 AREA/⚒️ Software/geography/Local Space Viewer/","tags":["software"],"noteIcon":"2","created":"2024-10-09T09:33:02.000+08:00","updated":"2024-11-05T23:48:02.964+08:00"}
+{"dg-publish":true,"permalink":"/C 📔 AREA/⚒️ Software/geography/Local Space Viewer/","tags":["⚒️"],"noteIcon":"2","created":"2024-10-09T09:33:02.000+08:00","updated":"2024-12-12T15:53:38.135+08:00"}
 ---
 
 图新地球

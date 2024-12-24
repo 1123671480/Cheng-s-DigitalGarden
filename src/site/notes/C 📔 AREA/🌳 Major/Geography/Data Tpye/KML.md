@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/C 📔 AREA/🌳 Major/Geography/Data Tpye/KML/","title":"KML 地理空间范围","noteIcon":"stone","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-05T23:56:13.332+08:00"}
+{"dg-publish":true,"permalink":"/C 📔 AREA/🌳 Major/Geography/Data Tpye/KML/","title":"KML 地理空间范围","noteIcon":"stone","created":"2024-07-04T13:45:17.000+08:00","updated":"2024-11-28T22:03:52.043+08:00"}
 ---
 
 地理空间范围
