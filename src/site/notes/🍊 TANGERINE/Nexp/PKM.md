@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/🍊 TANGERINE/Nexp/PKM/","noteIcon":"stone","created":"2024-10-23T22:37:58.000+08:00","updated":"2024-11-06T16:47:58.996+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Nexp/PKM/","noteIcon":"stone","created":"2024-10-23T22:37:58.000+08:00","updated":"2025-08-25T11:13:53.366+08:00"}
 ---
 
 ## PKM(Personal Knowledge Management)
@@ -8,7 +8,7 @@
 
 > 个人知识管理这个术语似乎相对较新。它的起源可以在 Frand & Hixon (1999) 的工作论文中找到。 PKM 集成了专注于个人技能的个人信息管理 (PIM) 和知识管理 (KM)，此外还有认知心理学、管理学和哲学等各种学科的输入 (Pauleen 2009)。从组织的角度来看，随着对人类认知能力和组织边界渗透性的了解不断扩大，对该领域的理解得到了发展。从元认知的角度来看，它比较了人类认知中的各种模式的能力和功效 (Sheridan 2008)。这是一个研究不足的领域（Pauleen 2009）。
 
-根据 Malhotra 的定义，知识管理指的是包括知识的获取、创造、更新、存档、传播和应用的一系列过程 [1](#user-content-fn-1)。而 Dorsey 则认为个人知识管理是一个包括获取信息、评估信息、组织信息、分析信息、传播信息、应用信息及保护信息安全七个部分的过程 [2](#user-content-fn-2)（此处“信息”一词可以理解“知识”）。Alavi and Leidner 则认为，知识管理至少要包含创造、存储检索、传递和应用知识的四个基本过程 [3](#user-content-fn-3)。
+根据 Malhotra 的定义，知识管理指的是包括知识的获取、创造、更新、存档、传播和应用的一系列过程[^1]。而 Dorsey 则认为个人知识管理是一个包括获取信息、评估信息、组织信息、分析信息、传播信息、应用信息及保护信息安全七个部分的过程 [2](#user-content-fn-2)（此处“信息”一词可以理解“知识”）。Alavi and Leidner 则认为，知识管理至少要包含创造、存储检索、传递和应用知识的四个基本过程 [3](#user-content-fn-3)。
 
 Jones 批评道个人知识管理是个伪概念 [4](#user-content-fn-4)，因为知识并不能被管理，管理的应该是信息。我们在这里并不站在知识论的角度来讨论个人知识管理，在一定程度上我们视知识为结构化的信息，和个人信息管理等同，同样也不纠结于数据，信息，知识，智慧等名词解释，目的都是 **有效的解决问题和决策**。
 
@@ -68,10 +68,12 @@ Jones 批评道个人知识管理是个伪概念 [4](#user-content-fn-4)，因�
 
 ## Footnotes
 
-1. Malhotra, Y. (2000), ‘‘From information management to knowledge management: beyond the ‘hi-tech hidebound’ systems’’, in Srikantaiah, K. and Koenig, M. (Eds), Knowledge Management for theInformation Professional, Information Today, Medford, NJ, pp. 37-61 [↩](#user-content-fnref-1)
+1.  [↩](#user-content-fnref-1)
 2. Dorsey, P. (2000), ‘‘What is PKM?’’, available at: <[www.millikin.edu/webmaster/seminar/pkm.html](http://www.millikin.edu/webmaster/seminar/pkm.html)\> [↩](#user-content-fnref-2)
 3. Alavi, M. and Leidner, D. E. (2001), ‘‘Review: knowledge management and knowledge managementsystems: conceptual foundations and research issues’’, MIS Quarterly, Vol. 25 No. 1, pp. 107-36\. [↩](#user-content-fnref-3)
 4. Jones, William (6 September 2010), [“No knowledge but through information”](http://firstmonday.org/ojs/index.php/fm/article/view/3062), _[First Monday](https://en.wikipedia.org/wiki/First%5FMonday%5F%28journal%29 "First Monday (journal)")_, vol. 15, no. 9, \[doi\](<https://en.wikipedia.org/wiki/Doi%5F%28identifier%29>“Doi (identifier)”):[10.5210/fm.v15i9.3062](https://doi.org/10.5210%2Ffm.v15i9.3062) [↩](#user-content-fnref-4)
 5. 拉票是系统地开始与个人直接接触，通常在政治竞选期间使用。拉票可以出于多种原因：政治竞选、基层筹款、社区意识、会员活动等等。 [↩](#user-content-fnref-5)
 6. 衡量某一检索系统的信号噪声比的一种指标，即检出的相关文献与检出的全部文献的百分比。 [↩](#user-content-fnref-6)
 7. 衡量某一检索系统从文献集合中检出相关文献成功度的一项指标，即检出的相关文献与全部相关文献的百分比 [↩](#user-content-fnref-7)
+
+[^1]: Malhotra, Y. (2000), ‘‘From information management to knowledge management: beyond the ‘hi-tech hidebound’ systems’’, in Srikantaiah, K. and Koenig, M. (Eds), Knowledge Management for theInformation Professional, Information Today, Medford, NJ, pp. 37-61

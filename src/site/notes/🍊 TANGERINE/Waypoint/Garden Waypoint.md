@@ -1,10 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/🍊 TANGERINE/Waypoint/Garden Waypoint/","noteIcon":"signpost","created":"2024-11-01T20:00:44.313+08:00","updated":"2024-12-12T13:34:04.342+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Waypoint/Garden Waypoint/","noteIcon":"signpost","created":"2024-11-01T20:00:44.313+08:00","updated":"2025-08-11T23:51:48.832+08:00"}
 ---
 
 ## 🌱 TANGERINE | 橘园的管理部门
 *主页、橘园历程、名词解释、Obsidian Vault 相关、个人等*
-- [[TANGERINE\|TANGERINE]] | 主页
+- [[🍊 TANGERINE/HOMEPAGE\|HOMEPAGE]] | 主页
 - **Garden Management** | **工具房**
 	- [[🍊 TANGERINE/Garden Management/Construction Process\|Construction Process]] | 橘园构筑及日志
 	- [[🍊 TANGERINE/Garden Management/Digital Garden Tools and Resources\|Digital Garden Tools and Resources]] | 数字园艺工具和资源
@@ -13,10 +13,10 @@
 	- [[🍊 TANGERINE/Garden Management/Tangerine History\|Tangerine History]] | 橘园历程 - 数字花园的新生
 	- [[🍊 TANGERINE/Garden Management/Tree Graph\|Tree Graph]] | 最具沉浸感的生长可视化
 - **Nexp** | **告示处：名词解释**
-	- [[🍊 TANGERINE/Nexp/Digital Garden\|🍊 TANGERINE/Nexp/Digital Garden]] | 数字花园
+	- [[🍊 TANGERINE/Nexp/Digital Garden\|Digital Garden]] | 数字花园
 	- [[🍊 TANGERINE/Nexp/Graph View\|Graph View]] | 数据链接地图
 	- [[🍊 TANGERINE/Nexp/GTD\|GTD]] | 个人日程任务管理
-	- [[🍊 TANGERINE/Nexp/MOC\|🍊 TANGERINE/Nexp/MOC]] | 内容地图
+	- [[🍊 TANGERINE/Nexp/MOC\|MOC]] | 内容地图
 	- [[🍊 TANGERINE/Nexp/Open Source\|Open Source]] | 开源
 	- [[🍊 TANGERINE/Nexp/PKM\|PKM]] | 个人知识管理
 	- [[🍊 TANGERINE/Nexp/Scraper\|Scraper]] | 刮削

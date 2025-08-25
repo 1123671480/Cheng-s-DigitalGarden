@@ -1,15 +1,15 @@
 ---
-{"dg-publish":true,"permalink":"/🍊 TANGERINE/Obsidian/Sync/","noteIcon":"2","created":"2024-11-04T22:36:14.351+08:00","updated":"2024-11-06T17:13:47.114+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Obsidian/Sync/","noteIcon":"2","created":"2024-11-04T22:36:14.351+08:00","updated":"2025-08-11T23:51:56.196+08:00"}
 ---
 
 ## iCloud 
-同步也经常冲突，
+同步也经常冲突
 
 ## InfinitiCLOUD
-第三方同步也不稳定冲突，
+第三方同步也不稳定冲突
 
 ## BaiduSyncdisk
-百度云同步盘不支持带有 emoji 的文件。
+百度云同步盘不支持带有 emoji 的文件
 
 ## Obsidian Sync
 

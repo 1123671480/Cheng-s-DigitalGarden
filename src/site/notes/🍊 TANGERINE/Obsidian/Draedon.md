@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/🍊 TANGERINE/Obsidian/Draedon/","noteIcon":"2","created":"2024-11-04T22:21:09.271+08:00","updated":"2024-12-12T16:00:29.450+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Obsidian/Draedon/","noteIcon":"2","created":"2024-11-04T22:21:09.271+08:00","updated":"2025-04-15T09:33:03.669+08:00"}
 ---
 
-是[[🍊 TANGERINE/Person/About Me\|橘子]]的 [[🍊 TANGERINE/Obsidian/Obsidian\|Obsidian]] 的 [[🍊 TANGERINE/Nexp/Vault\|Vault]]（仓库），也作为橘园的输入端，是搭建本站的基石。
+是[[🍊 TANGERINE/Person/About Me\|橘子]]的 [[🍊 TANGERINE/Obsidian/Obsidian\|🍊 TANGERINE/Obsidian/Obsidian]] 的 [[🍊 TANGERINE/Nexp/Vault\|Vault]]（仓库），也作为橘园的输入端，是搭建本站的基石。
 
 - HOME·主页
 - MOC·内容地图

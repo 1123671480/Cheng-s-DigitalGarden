@@ -1,0 +1,7167 @@
+---
+{"dg-publish":true,"permalink":"/C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/","title":"Grasshopper_原生运算器","noteIcon":"3","created":"2025-08-16T13:55:22.861+08:00","updated":"2025-08-17T13:23:25.027+08:00"}
+---
+
+# Params 参数  
+## Gemoetry 几何图形
+-   Geometry组运算器组为我们提供的是储存几何类数据的电池，它们本身不具有计算功能，你可以把它们理解为一个个的几何容器。![](https://api2.mubu.com/v3/document_image/d423a5e0-b640-467a-afeb-1c2495291975-20454557.jpg)  
+-   当你将鼠标放在一个电池输入端或输出端字母上时，会显示该端的基础数据类型，可以作为你判断如何连接电池的条件。![](https://api2.mubu.com/v3/document_image/ae2a0caf-1034-4180-a474-e8db399447ab-20454557.jpg)  
+-   几何容器之间的包含与被包含关系和Rhino的原理相同，比如Surface电池内的东西可以全部正常输入Brep电池，但Brep电池的内容输入Surface可能会报错。  
+-   几何类的容器电池一般都支持右键从Rhino空间中拾取物件，需要特别注意的是，当选取多个物件时：  
+-   逐一点击选取最后的排列顺序按照点击顺序。  
+-   框选选取最后的排列顺序按照当初的绘制顺序。  
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Point\|Point]]」点![](https://api2.mubu.com/v3/document_image/703db750-259a-46cf-be82-72e17ed8669d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/521f1dad-02df-4d3f-973f-9e8e026758c1-20454557.jpg)  
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Vector\|Vector]]」向量 或 矢量![](https://api2.mubu.com/v3/document_image/99366876-3d90-4a3b-a51c-a46a4c360dd6-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cbc59803-bad7-4abb-bf41-592f09907f23-20454557.jpg)  
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Circle\|Circle]]」圆线![](https://api2.mubu.com/v3/document_image/1a4e7af5-a7e7-45b9-9f0b-27e26fe8ef6f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d6b4e39d-a115-4813-9aa0-dad7fd52611f-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Circular Arc\|Circular Arc]]」弧线![](https://api2.mubu.com/v3/document_image/b09c782d-91b1-4002-852a-f0128f92a42c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2e2d48f1-aae6-4692-ada3-03e87cb2c078-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Curve\|Curve]]」曲线![](https://api2.mubu.com/v3/document_image/e1b9bf26-6575-4f51-a5f1-91f5c0b28500-20454557.jpg)![](https://api2.mubu.com/v3/document_image/172aaf7f-9bdd-445a-990a-56a21f001b98-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Line\|Line]]」直线![](https://api2.mubu.com/v3/document_image/7bd19fa8-0691-4cc2-9925-4f8b56049b54-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6b8ad632-7c50-44d5-9151-26cd22542a0f-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Plane\|Plane]]」坐标平面![](https://api2.mubu.com/v3/document_image/c204a57c-d107-4e32-83dc-5c91258c7397-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a8d54279-f575-499b-9649-65b90a759c04-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Rectangle\|Rectangle]]」矩形线![](https://api2.mubu.com/v3/document_image/16286197-2ad7-4901-a904-9fe469dc3a02-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e6a801dc-af8f-4210-aaf6-a246e1dfd6bc-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Box\|Box]]」立方体![](https://api2.mubu.com/v3/document_image/5f561f23-a2b6-4c91-b235-3090359563fe-20454557.jpg)![](https://api2.mubu.com/v3/document_image/bd4cbb0b-34cd-4c04-a3e5-80596c56ee7e-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Brep\|Brep]]」多重曲面![](https://api2.mubu.com/v3/document_image/8d2de44c-997f-49ed-8a32-10c16c104cc2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/85adf10f-d298-43fa-bc1b-679d0d1b4a30-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Mesh\|Mesh]]」几何网格![](https://api2.mubu.com/v3/document_image/375b9e67-3f04-4a3b-9adb-17d24dfca0cc-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7fc554f6-b22f-4197-954d-7a73b93f1087-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Mesh Face\|Mesh Face]]」网格单元![](https://api2.mubu.com/v3/document_image/afe73f4f-ba5b-46ee-b026-bcd61cdfa53a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/18bcba3e-ddd5-41e9-bbc4-2e362b209c57-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/SubD\|SubD]]」细分曲面![](https://api2.mubu.com/v3/document_image/945ba878-793d-4ea6-bc68-3d3985be04b2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e1d8b8f9-29be-4cc0-9913-bc7af1f57e6c-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Surface\|Surface]]」Nurbs曲面![](https://api2.mubu.com/v3/document_image/4b27dcc1-f668-433a-a837-1e5ac466dcfc-20454557.jpg)![](https://api2.mubu.com/v3/document_image/230a744a-b5fd-4e75-9294-36346c903454-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Twisted Box\|Twisted Box]]」变形立方体![](https://api2.mubu.com/v3/document_image/e90fff6e-ab26-4dc0-975f-3b6cb8995b6e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/aacc3a5a-9b05-46ae-b4c6-b12edd15301c-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Field\|Field]]」场![](https://api2.mubu.com/v3/document_image/4849a651-e11a-48fd-911b-3c221cb552ca-20454557.jpg)![](https://api2.mubu.com/v3/document_image/51e68a76-7e53-4fad-98dc-5695996e5efa-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Geometry\|Geometry]]」通用几何数据类型![](https://api2.mubu.com/v3/document_image/77af8cd4-3cef-4ac3-890d-76adaef9f13c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e0ed61a5-2505-473c-996a-9ea33b5b1df6-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Geometry Cache\|Geometry Cache]]」集合缓存![](https://api2.mubu.com/v3/document_image/6a870cf7-5df3-4c60-b1ae-be2386e4b4ea-20454557.jpg)![](https://api2.mubu.com/v3/document_image/75f539db-c98f-49ee-82f1-0cae6c95e87c-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Geometry Pipeline\|Geometry Pipeline]]」几何通道![](https://api2.mubu.com/v3/document_image/6d42aa09-0efe-4e72-b3fa-c28cb31d5322-20454557.jpg)![](https://api2.mubu.com/v3/document_image/47eef2e1-546e-455c-ae6a-11d43fe53592-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Group\|Group]]」群组![](https://api2.mubu.com/v3/document_image/e8c0fa01-8f5c-44cf-a33d-97f340acf804-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e50e068e-80ec-4aa5-9f39-a5e91e05b79c-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Transform\|Transform]]」几何变换![](https://api2.mubu.com/v3/document_image/4f64cb55-efb6-4bc1-b732-9fd9cb6c4557-20454557.jpg)![](https://api2.mubu.com/v3/document_image/689be17c-91f2-4eec-a143-f8cd9109038e-20454557.jpg)  
+## Primitive 初始数据  
+-   Params下的Primitive组运算器组和Geometry类似，为我们提供的是储存参数类数据的电池容器。  
+-   同Geometry组一样，也是基础电池，GH中所有电池中只有这两组电池logo是黑色六边形，代表了它们的属性，使用过程依然是注意其他电池输入输出端的标识类型。![](https://api2.mubu.com/v3/document_image/6ac21f46-d547-4f25-9e1f-6b23e4b59e0e-20454557.jpg)  
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Primitive 初始数据/Boolean\|Boolean]]」布尔值![](https://api2.mubu.com/v3/document_image/106aa236-2ce8-4de4-8269-067a1149eb46-20454557.jpg)![](https://api2.mubu.com/v3/document_image/db106854-a50a-4dde-b28e-9605e438773a-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Primitive 初始数据/Integer\|Integer]]」整数![](https://api2.mubu.com/v3/document_image/ba0bea09-1e42-41ef-8632-057c73c1ebc5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4734ee9b-98d2-4efa-abcd-4ded1f3b8280-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Primitive 初始数据/Number\|Number]]」小数![](https://api2.mubu.com/v3/document_image/30eb2745-2aeb-4dd1-b7b1-334f920e5f1c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fc5d7848-b157-4baa-b117-f0c357347aaf-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Primitive 初始数据/Text\|Text]]」字符![](https://api2.mubu.com/v3/document_image/8d2e333c-9c5e-4784-8466-ba0b7ee36b8c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b4ab9976-774b-45c5-95b4-f422eb4003f6-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Primitive 初始数据/colour\|colour]]」颜色数据![](https://api2.mubu.com/v3/document_image/1910ad2f-6296-4aca-8790-09e7d7593e81-20454557.jpg)![](https://api2.mubu.com/v3/document_image/9a976ddc-cd1f-4ac2-939d-9cdab2fc8586-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Primitive 初始数据/Complex\|Complex]]」复数![](https://api2.mubu.com/v3/document_image/4e5f4a96-50b4-4b87-bd3e-af22c51860ef-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7146571a-ee6d-4047-abbf-3a2078617010-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Primitive 初始数据/Culture\|Culture]]」区域性说明符![](https://api2.mubu.com/v3/document_image/17d5ac9a-039e-4cbd-a103-2d0af0005f5c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1b5690a6-bf75-472f-a568-e4e60b51d297-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Primitive 初始数据/domain\|domain]]」一维数值区间![](https://api2.mubu.com/v3/document_image/dfeccb14-5422-4fac-b5e5-0e2506b98309-20454557.jpg)![](https://api2.mubu.com/v3/document_image/221d612c-5b22-4a0b-aad0-459922e1944a-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Primitive 初始数据/Domain²\|Domain²]]」二维数值区间![](https://api2.mubu.com/v3/document_image/00b7522f-f60c-4f64-95d7-582876fd9304-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6a0f910d-1c61-40c2-93f7-a8d450ada39e-20454557.jpg)  
+
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Primitive 初始数据/Guid\|Guid]]」全局唯一标识符 (物件ID)![](https://api2.mubu.com/v3/document_image/5eea4847-ea48-4b48-9b4c-4d6d5de0efdf-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c14c7326-b935-44b8-8d8e-ca290e905cac-20454557.jpg)  
+
+-   「[[Matrix\|Matrix]]」数字矩阵![](https://api2.mubu.com/v3/document_image/e135da1d-4a3b-4c7a-9def-171b52c5b7c8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/20cbc719-a3b2-4876-961a-8b69c6ece1d0-20454557.jpg)  
+-   物理学、计算机科学等领域非常有用的概念，可用「[[Display Matrix\|Display Matrix]]」显示数值矩阵。  
+-   「[[Time\|Time]]」时间数据![](https://api2.mubu.com/v3/document_image/249393e9-906e-493e-a4fe-293a6b78b361-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1ca75c7a-50d4-4342-a0df-8455b9e3079a-20454557.jpg)  
+-   包含时间和日期  
+-   输入Now并结合Timeri运算器可以显示当前时间。![](https://api2.mubu.com/v3/document_image/6dea81eb-45bc-410a-8f0f-529ed50e8341-20454557.jpg)  
+-   「[[Data\|Data]]」通用数据类型![](https://api2.mubu.com/v3/document_image/f72626f1-c62d-4678-be96-2e2abd8f8c1c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ebf37824-96a5-415c-97d6-855aff98f79a-20454557.jpg)  
+-   所有能够导入Grasshopper的数据类型都属于通用数据，并支持另外安装的插件中特有的数据类型。![](https://api2.mubu.com/v3/document_image/eecb21c5-dde8-47b8-87ec-5ee998685f8c-20454557.jpg)  
+-   「[[Data Path\|Data Path]]」数据路径![](https://api2.mubu.com/v3/document_image/024f587a-b8c6-4b0a-9751-6e0fd1fd97b0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3745b74c-411b-4cc9-8efa-15a09238f3cc-20454557.jpg)  
+-   Grasshopper中的数据以树形数据结构组织，其中存储数据的每个列表都有对应的唯一路径。  
+-   数据路径即为pane查看输出内容时右上角的内容，格式为大括号中用英文分好隔开，如{A;B:C}。  
+-   输入路径内容，Data Path电池会自动将大括号补上。![](https://api2.mubu.com/v3/document_image/6db2a4f6-2291-4cff-96d3-ae0df3b3d16a-20454557.jpg)  
+-   「[[File Path\|File Path]]」文件路径![](https://api2.mubu.com/v3/document_image/75625407-8239-4dea-8bac-b318dd22cd9c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7a9b3b6b-04f3-42aa-bbad-a876632b90cb-20454557.jpg)  
+-   可以将外部文件提取到GH内进行数据处理，可以是一个或多个数据，或是一个路径，或是一个文件夹。  
+-   右键可选Synchronise，文件若有变动，GH会同步更新。![](https://api2.mubu.com/v3/document_image/64f77a4a-d27e-47c5-a8e4-db2980872ee0-20454557.jpg)  
+-   「[[Shader\|Shader]]」着色器![](https://api2.mubu.com/v3/document_image/f532b2a3-9199-45a9-b638-cb347bf85b13-20454557.jpg)![](https://api2.mubu.com/v3/document_image/627c20ae-3c17-47ce-8546-0509a667269d-20454557.jpg)  
+-   用于定义几何物件的显示效果  
+-   右键可以设置Rhino:场景中现有材质。![](https://api2.mubu.com/v3/document_image/441633f1-ea43-463c-8e5d-30845655484c-20454557.jpg)  
+## Input 控制输入  
+-   Input运算器组都是提供输入端的运算器，包括数字、颜色、时间等等。![](https://api2.mubu.com/v3/document_image/36bb4499-cecb-4c90-8e07-e9091027ddbd-20454557.jpg)  
+-   「[[Number Slider\|Number Slider]]」数值滑块![](https://api2.mubu.com/v3/document_image/f24cb645-ebc5-4177-af8d-63c5be925274-20454557.jpg)![](https://api2.mubu.com/v3/document_image/74eefc6e-6089-4be5-8af6-86e142395a7a-20454557.jpg)  
+-   输入数值最常用的运算器之一，双击电池可以更改数值，右键电池弹出菜单可以对其进行快速调节，点进菜单里的edit可以进行更详细的调节。  
+-   输入数值的快速方式  
+	-   双击GH空白处，输入想要的数值（正数）后回车，该方法得到的拉杆定义域为0—10的n次方，例如你输入5得到的是0—10的拉杆，输入50得到的是0—100的拉杆，输入500得到的是0—1000的拉杆。若想得到负数拉杆则需输入0-数值，如输入0-5得到-10—0的拉杆，其他依次类推。注意，拉杆的精度与输入数值的位数有关，且正负数有差别。  
+	-   双击GH空白处，输入x<数值  
+	-   双击GH空白处，输入x..y，同样可以得到定义域为x—y且当前值为所需数值的拉杆，拉杆精度与输入的数值位数有关。  
+-   Publish To Remote Panel。这个命令在右键的菜单里，可以关闭GH界面在犀牛视口里调节拉杆数值，好处是在观看模型变化效果时避免GH界面的遮挡。![](https://api2.mubu.com/v3/document_image/5ba67c4e-f700-4733-bb5d-c2297bdc04b6-20454557.jpg)  
+-   Animate。这个命令也在右键的菜单里，可以通过拉杆的自动变化结合gif制作软件生成动画。![](https://api2.mubu.com/v3/document_image/2922f6e2-7151-4af8-ac8f-dc6838307822-20454557.jpg)  
+-   「[[Panel\|Panel]]」数据面板![](https://api2.mubu.com/v3/document_image/f0cb2f35-bc49-4692-8f0a-db38bdd0127f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/384354d3-83ba-4764-956f-b4dfadea1213-20454557.jpg)  
+-   可以作为输出数据并解读数据或输入数据  
+-   双击GH空白处，输入//或者“，再输入内容即可直接得到带有内容的panel。![](https://api2.mubu.com/v3/document_image/61c3312a-4961-4ce7-a087-78db2614b735-20454557.jpg)![](https://api2.mubu.com/v3/document_image/397ac597-4c9f-4562-92a9-6ee9a11cbbb7-20454557.jpg)  
+-   Panel直接输出的是text，不是number。有时也可以用它来输入数值是因为后面运算器的输入端类型为number，自动将text转化成了number，而对于输入端为Data的运算器，如果直接输入Panel就可能会出现错误结果。  
+-   右键电池弹出的菜单可以进行编辑，其中最重要的一个选项是Multiline Data。它决定了文本框内容的数据结构，未勾选代表多行数据，勾选代表多行文本组成的一行数据。并且当为数字时，多行数字组成的一行数据由于存在换行字符所以不能识别转换为数字，连接运算器数字输入端会报错。![](https://api2.mubu.com/v3/document_image/db05f1dd-3279-4099-87b1-301d1ac4971d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/05324421-7f04-44a3-8fc9-02ba3d379275-20454557.jpg)  
+-   可以导出Excel  
+-   Draw Paths和Draw Indices是针对Multiline Data未勾选的情况，可以显示或不显示数据路径和序号。![](https://api2.mubu.com/v3/document_image/2b0bd76c-5f30-4f1c-bf44-215605148b16-20454557.jpg)  
+-   Align Left，Align Center和Align Right是针对Multiline Data勾选的情况，可以控制文本对齐方式。![](https://api2.mubu.com/v3/document_image/db0c3a1e-180e-447b-b6be-65dac8b806f1-20454557.jpg)  
+-   Font Settings、Colour和Set Default Colour用来设定字体、面板颜色和面板默认颜色。  
+-   Stream Contents可以将文本框内容保存至指定文件；Stream Destination可以保存至指定目录，之后点击Stream Contents就可以自动更新文件内容；Copy All Content和Copy Data Only可以复制文本框内容。  
+-   Special codes，针对Multiline Data勾选的情况，可以转换指定的代码，即{space}—空格、{tab}—缩进、{newline}—换行。几乎没用过，猜测为外部代码导入时使用，{tab}和{space}在代码里相近，试验时没看出{tab}具体效果。![](https://api2.mubu.com/v3/document_image/2e7b24c9-a771-4466-9049-41c3b6c479cb-20454557.jpg)  
+-   Wrap Items，可以对超出文本框的内容自动换行，用处不大。![](https://api2.mubu.com/v3/document_image/b9bc7795-a99e-4e54-8f8e-0ba4cef22138-20454557.jpg)  
+-   「[[Boolean Toggle\|Boolean Toggle]]」布尔切换![](https://api2.mubu.com/v3/document_image/103fce03-7d0d-4fd1-8113-8424889845f6-20454557.jpg)![](https://api2.mubu.com/v3/document_image/9033932a-d752-413a-9c80-9219bd6134cc-20454557.jpg)  
+-   布尔值 (true/false)切换 。常用于组件中某个功能的开启/关闭，或功能的切换  
+-   「[[Button\|Button]]」布尔按钮![](https://api2.mubu.com/v3/document_image/8c588b8e-5efa-4a1e-900b-0ef6392d9264-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ec31dca4-82bb-466d-998f-7d5aeba0fc5b-20454557.jpg)  
+-   按住为True 松开为False![](https://api2.mubu.com/v3/document_image/e34e84c2-0f40-4aa5-9f23-bc46c63373cd-20454557.jpg)  
+-   「[[Control Knob\|Control Knob]]」数值旋钮![](https://api2.mubu.com/v3/document_image/81baba3a-d2a5-4b66-989a-92380a87a039-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c203220d-fb16-4dd8-9b72-9d37b7ce32a4-20454557.jpg)  
+-   可以通过旋转取值，双击进行最大最小值等设置。  
+-   可以实现很多有意思的控制交互，但一般很少用。  
+-   旋钮可以设置旋转角度，以一圈360°为例![](https://api2.mubu.com/v3/document_image/6780bad0-c58c-472d-810a-ea48fbb42896-20454557.jpg)  
+	-   Range：一圈的数值  
+	-   Value：目前所在的数值  
+	-   Decimals：小数点后位数  
+	-   Minimum：最小值  
+	-   Maximum：最大值  
+-   「[[Digit Scroller\|Digit Scroller]]」数值滚动条![](https://api2.mubu.com/v3/document_image/f3e562fc-b2a9-4cc0-8f6e-9398486a57d3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ed3dbf3d-328c-4213-964a-2308d5c3f7e8-20454557.jpg)  
+-   上下施动改变相应位置数字，左右拖动改变小数点位置，双击可以输入数值，很少用到，输入数值我们有Number Slider足够了。  
+-   「[[MD Slider\|MD Slider]]」二维数值滑块![](https://api2.mubu.com/v3/document_image/6b651bf7-05e3-41eb-bb9b-6cade1059f80-20454557.jpg)![](https://api2.mubu.com/v3/document_image/df58b66a-42c4-4e05-bc94-ea21bb98dd93-20454557.jpg)  
+-   这个运算器可以作为UV值输入在曲面取点，滑动影响点的X，Y的数值，z=0。![](https://api2.mubu.com/v3/document_image/ca1390a4-a5e7-4db7-82af-fe506f65f17e-20454557.jpg)  
+-   但是Z值只能为0区间无法改变，双击可以改变和的区间值。这个运算器感觉还没开发完，Help文档里都没有相关的说明。  
+-   「[[Value List\|Value List]]」预设值列表![](https://api2.mubu.com/v3/document_image/20c3bfe3-8545-4eac-b97f-8c862326593f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5692c367-68a1-4442-bcfd-b21e1761cc82-20454557.jpg)  
+-   可以按列表顺序输出自设数值，双击后可以在编辑框内输入列表代号和对应值，对应值可以输入函数自动得到值。常用函数值例如有正弦Sin0、余弦Cos0、正切Tan0、平方x2、开方Sqrt0等等。  
+-   右键可以设置四种样式。![](https://api2.mubu.com/v3/document_image/161736ae-47f8-44c9-b01d-1a19e86fe8db-20454557.jpg)  
+-   「[[F 🎛️ OTHER/🧩 Plugins/00 Plugins Library/Calendar\|Calendar]]」日历![](https://api2.mubu.com/v3/document_image/14856ef9-cef4-4c13-b728-211bdd989d61-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ff8609b1-f09c-4aa7-b1a3-4ae893593a9a-20454557.jpg)  
+-   可以输出一个年月日日期，刚拖出来显示的今天的日期，左右滑动选择年和月份，点击日期选择具体日期。  
+-   「[[Clock\|Clock]]」时钟![](https://api2.mubu.com/v3/document_image/6cf674cd-6b1f-40fe-82d4-8ea689694ec7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f4fa641f-9c9f-44c3-aac5-954f972ed7f3-20454557.jpg)  
+-   可以通过旋转指针获得时分秒格式的时间，右键可以选择是否包含秒，双击电池可以得到现在的实时时间。  
+-   这个电池输出的静态时间，如果想得到变化的实时时间见<Time知识点1>。  
+-   「[[Colour Picker\|Colour Picker]]」取色器![](https://api2.mubu.com/v3/document_image/1a25ae11-9e47-41b3-bc0d-f95c53b22f26-20454557.jpg)![](https://api2.mubu.com/v3/document_image/97968d58-f416-46bf-9229-dfb666459744-20454557.jpg)  
+-   可以选择RGB和HSV两种颜色模式拾取颜色，与Colour Swatch的编辑选项一样，出于方便考虑，我们还是更多用后者。  
+-   「[[Colour Swatch\|Colour Swatch]]」颜色板![](https://api2.mubu.com/v3/document_image/0e5cddb2-cc33-4b87-b6d0-c740004f7183-20454557.jpg)![](https://api2.mubu.com/v3/document_image/dcc01941-86e4-4465-a313-2b7adad7f57d-20454557.jpg)  
+-   体积小巧，常用的颜色选择器  
+-   右键右侧颜色部分可以调节颜色，分为RGB和HSV两种色彩模式，还可以通过按住吸管小图标进行屏幕吸色。  
+-   （1）RGB：面向计算机，三字母代表红、绿、蓝，通过三种颜色的不同配比来得到不同的颜色，各项值区间为0—255。  
+-   （2）HSV：面向用户，三字母代表色调、饱和度、明度，通过三个维度的不同配比得到不同的颜色，各值区间为0%—100%。  
+-   「[[Colour Wheel\|Colour Wheel]]」随机颜色版![](https://api2.mubu.com/v3/document_image/0b577b0d-7697-4682-a507-f47c9c0ba118-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2e48cc9a-ea52-483f-987a-d2da472bdfd5-20454557.jpg)  
+-   输入端：  
+	-   随机颜色个数  
+-   输出端：  
+	-   随机颜色RGB值  
+-   简单来说就是通过HSL(和HSV类似)颜色范围选取，获得指定个数的RGB颜色值，可以看做是一个获得指定范围随机颜色的运算器。这个运算器体现了RGB的面向计算机、HSL/HSV面向用户的特点。  
+-   色轮电池具体用法如下：  
+	-   白色点拉杆数量代表了色调范围数量。![](https://api2.mubu.com/v3/document_image/f2ac61fc-7eb5-484e-808c-f4cd92948983-20454557.jpg)  
+	-   每个白色点拉杆会有两个小黑色点拉杆可以调节（色调）范围，两个小黑色点拉杆朝向白色点拉杆方向的夹角为色调范围夹角。![](https://api2.mubu.com/v3/document_image/403d739c-b4ce-43df-971c-a65b8837816d-20454557.jpg)  
+	-   两个大黑点的弧形拉杆调节S（饱和度）和L（亮度）范围，均为左侧值小，右侧值大。![](https://api2.mubu.com/v3/document_image/2ed8a004-4390-490e-bfa3-15cd8b4d6b4e-20454557.jpg)  
+	-   右键可以选择色调范围数量，最多为四个。![](https://api2.mubu.com/v3/document_image/8f51102b-b993-40d5-986b-55486545939b-20454557.jpg)  
+	-   右键还可以选择几个固定的取色模式，包括补色取色、正三点取色、正四点取色，这三种取色模式下，拖动一个小黑色点拉杆，其余拉杆会对称相应一起变动。![](https://api2.mubu.com/v3/document_image/20916977-d4a6-4e48-97f9-356fd73d2fac-20454557.jpg)  
+-   「[[Gradient\|Gradient]]」色彩渐变器![](https://api2.mubu.com/v3/document_image/5133f300-3bc9-474c-af97-e495cd4f3ed0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3b8d65f5-42a3-434a-b1f8-0be4116af468-20454557.jpg)  
+-   最常用的附色运算器之一，L0—L1为给定定义域，对应色彩范围为电池内从左到右的渐变色，t为定义域内的参数值，输出端输出不同t值时按比例所对应的颜色RGB值。![](https://api2.mubu.com/v3/document_image/1744f841-8a40-417c-a6c5-6201d1d0d104-20454557.jpg)  
+-   输入端：  
+	-   L0：下限值  
+	-   L1：上限值  
+	-   t：参数值  
+-   输出端：  
+	-   对应值的RGB色值  
+-   右键菜单里的Presets内有自带的配色方案。![](https://api2.mubu.com/v3/document_image/3435f3e3-fc1b-4ef1-bb1a-65958e99bcbc-20454557.jpg)  
+-   左键点击电池左上角彩色区域，不松向下拖动可以拖出新的色彩节点，右键点击色彩节点可以定义颜色，通过这种方式可以自定义渐变色彩，右键菜单里的Set As Default可以将自定义渐变色设为默认，Presets里最下方的Add Current Gradient可以将该渐变色方案储存供之后使用。  
+-   「[[Graph Mapper\|Graph Mapper]]」函数映射![](https://api2.mubu.com/v3/document_image/32492f69-5777-40a2-a71f-f82edce99acd-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f572b718-ead5-49ae-914b-c88eb5fa4ac1-20454557.jpg)  
+-   非常常用的图形类运算器，右键电池里的Graph types里默认有16种函数类型，经常用到的有以下6种，分别为贝塞尔曲线、贝塞尔曲线、直线、多折线、正弦曲线、抛物线。![](https://api2.mubu.com/v3/document_image/b5f5ed95-613a-416f-99f8-bcb38127d400-20454557.jpg)  
+-   输入端：  
+	-   可以理解为y=k(x)的x值  
+-   输出端：  
+	-   可以理解为y=k(x)的y值  
+-   拖动控制杆可以调节曲线形态，双击电池可以进入编辑选项，调节电池的定义域和值域。![](https://api2.mubu.com/v3/document_image/2526c6cb-a581-475c-bb3b-afd7cc14ced8-20454557.jpg)  
+-   双击电池在弹出面板调节定义域和值域会比较麻烦，而且无法用一个Graph Mapper运算器控制多个不同定义域或值域的电池组，所以我们常常结合Remap运算器来使用。![](https://api2.mubu.com/v3/document_image/ec8af382-089c-4823-a491-98c46208698b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1b35ddb6-3d1e-4bb4-8a9c-0bf888eba2e3-20454557.jpg)  
+-   当然我们也可以在Rhino里自绘矩形线框和曲线，进行更自由的编辑。![](https://api2.mubu.com/v3/document_image/1ec1b435-f6c1-463b-ad44-3d8b7fc3a789-20454557.jpg)  
+-   如果默认自带的函数不够用，可以去下载插件Riched Graph Mapper。![](https://api2.mubu.com/v3/document_image/acdc956d-9316-49b4-8219-60262fd49f77-20454557.jpg)  
+-   「[[Image Sampler\|Image Sampler]]」图像采样器![](https://api2.mubu.com/v3/document_image/c392f524-594e-40cf-92e1-c4eb508bf681-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0f5f5a8a-5760-406e-984e-93babd99a780-20454557.jpg)  
+-   输入端：  
+	-   矩形有序点阵  
+-   输出端：  
+	-   各点在图形区域采集到的对应信息  
+-   若想保证图片采集完整，需使点阵x和y方向上的总长度分别与编辑页面内采样范围X和Y的域值相等，即SxEx=X域值，SyEy=Y域值。![](https://api2.mubu.com/v3/document_image/3fd54969-1725-44f8-ab42-c976cc96a29e-20454557.jpg)  
+-   如果想避免问题，可以使用下面的连接方式，且这种方式不需要双节电池在编辑页面调整X和Y域值。![](https://api2.mubu.com/v3/document_image/6b9f5103-173c-450e-b37d-6936d06e558d-20454557.jpg)  
+	-   勾选Auto update自动更新和Save in file保存文件  
+-   「[[Atom Data\|Atom Data]]」原子数据![](https://api2.mubu.com/v3/document_image/e7dbd858-da63-4029-8303-d1873930d2a5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d6108f1e-08e1-4ae7-b145-bfd83c92a393-20454557.jpg)  
+-   获取原子的详细信息 。用于特定行业。  
+-   输入端：  
+	-   A:下限值  
+-   输出端：  
+	-   P:原子位置  
+	-   E:原子元素名称  
+	-   C:原子所属蛋白质链ID  
+	-   R:原子所属氨基酸残基名称  
+	-   e:原子电荷  
+	-   0:原子占有率  
+	-   T:温度  
+	-   AN:原子序数  
+	-   SN:原子序号  
+	-   RN:氨基酸残基序号  
+-   常和Import PDB运算器连用，读取蛋白质分子的原子构成数据，查看原子分布情况（不同的颜色点代表不同类型的原子）等等，但我们一般很少用到它。![](https://api2.mubu.com/v3/document_image/87c4e5c6-989a-430c-bb92-e289eae90e53-20454557.jpg)  
+-   参数![](https://api2.mubu.com/v3/document_image/efedcd74-fbbe-4da6-b6cc-18ebc026f34f-20454557.jpg)  
+-   「[[Image Resource\|Image Resource]]」图像预览![](https://api2.mubu.com/v3/document_image/c09f22c9-6e78-4b4b-aa33-119ae172ce0d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5fea0b63-bc42-48c9-836d-775d5d2ee8ca-20454557.jpg)  
+-   该工具用于快速预览本地或网络地址的图片，并不对图片做任何处理，输出为文件路径，用途很少。  
+-   输入端：  
+	-   本地图片路径或网络图片网址  
+-   输出端：  
+	-   图片地址  
+-   这个是一个可以预览图片链接的电池，包括本地链接和网络链接。网页上看到的所有图片右键选择属性，复制里面的u地址后可以通过这个电池导入到电池预览。![](https://api2.mubu.com/v3/document_image/eb2e4c8b-83c6-4385-ac8b-98836ba81fd3-20454557.jpg)  
+-   「[[Import 3DM\|Import 3DM]]」导入3DM文件![](https://api2.mubu.com/v3/document_image/b28e582e-03fe-4aba-9cee-2db6f00cd374-20454557.jpg)![](https://api2.mubu.com/v3/document_image/58a1e889-9602-435e-919c-3d9ce5e994b1-20454557.jpg)  
+-   Rhino文件 可以设置导入指定图层或名称的物体 丢失材质  
+-   输入端：  
+	-   F:文件路径  
+		-   L:图层  
+			-   N:名称  
+-   输出端：  
+	-   G:导入的几何物件  
+-   可以导入3DM格式文件，也就是犀牛格式文件。默认L端和N端都是"*”，可将模型全部导入，若输入L端和端则可以导入指定图层的指定物件，注意材质无法导入。  
+-   「[[Import Coordinates\|Import Coordinates]]」导入点坐标![](https://api2.mubu.com/v3/document_image/b9a48369-cc9f-468e-a7e7-ce4986a608f3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e6d7bacf-e96f-42d8-bbd9-257b9b3dc048-20454557.jpg)  
+-   导入文本坐标生成点 需要设置分隔符  
+-   输入端：  
+	-   F:文件路径  
+	-   S:分隔符号(默认是"，”)  
+	-   C:注释  
+	-   X:X坐标的序号(默认值是0)  
+	-   Y:Y坐标的序号(默认值是1)  
+	-   Z:Z坐标的序号(默认值是2)  
+-   输出端：  
+	-   P:导入的点坐标  
+-   可以导入tt文件的坐标信息，注意txt坐标格式中只能包含YZ坐标值和分隔符，否则可能会导入错误。输入端XZ为导入的坐标值顺序，改变012的顺序可改变输入顺序。输入端C的注释作用还没试出来。![](https://api2.mubu.com/v3/document_image/06c43c31-7440-4299-a50c-40f1bb01854b-20454557.jpg)  
+-   「[[Import Image\|Import Image]]」导入图像![](https://api2.mubu.com/v3/document_image/d2fc0559-7c83-4471-b705-9a29c28f1905-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f124f206-ab6b-43ca-9a3d-8ab2d5684ebb-20454557.jpg)  
+-   导入图像数据。 支持 bmp、jpg 或 png 文件。输出为mesh文件，颜色存储在mesh的顶点中。  
+-   输入端：  
+	-   F:文件路径  
+	-   R:矩形范围  
+	-   X:方向的采样数  
+	-   Y:Y方向的采样数  
+-   输出端：  
+	-   I:图片mesh网格  
+-   可以根据路径(本地路径，网络路径不可以)在Rhino中生成图片的mesh网格，R为图片生成的范围，Y采样数控制图片分辨率。R、X、Y均不输入的话会按照图片分辨率1像素对应1模型单位生成，每个像素均采样。对于一些分辨率较大的图片最好设置采样数，否则可能会非常卡。  
+-   「[[Import PDB\|Import PDB]]」导入PDB文件![](https://api2.mubu.com/v3/document_image/c74b89e3-168d-4cdd-9f4d-7d0ad607f374-20454557.jpg)![](https://api2.mubu.com/v3/document_image/bafef077-2ba0-4008-ab82-1d46a9c6c378-20454557.jpg)  
+-   输入端：  
+	-   F:文件路径  
+-   输出端：  
+	-   A:原子数据  
+	-   B:原子键  
+-   PDB的全称是[Protein Data Bank](https://www.pdbus.org/)(PDB蛋白质结构数据库)，是美国Brookhaven国家实验室于l97I年创建  
+-   的，由结构生物信息学研究合作组织(Research Collaboratory for Structural Bioinformatics,简称RCSB)维护。![](https://api2.mubu.com/v3/document_image/e2af4747-f5bd-4504-8616-87e0ffa8c8d5-20454557.jpg)  
+-   输出端A我们可以结合Atom Data电池得到分子信息。输出端B得到的是原子键长度信息，一般原子键长度单位为pm(1皮米=一万亿分之一米)，而这里的输出单位为mm,所以不知道具体代表什么。  
+-   「[[Import SHP\|Import SHP]]」导入SHP文件![](https://api2.mubu.com/v3/document_image/765ea6d4-72b2-48e5-817c-fa2888db4149-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f82c4127-01ad-4ca2-8b5b-83d6824f7760-20454557.jpg)  
+-   地理信息系统数据  
+-   输入端：  
+	-   F:文件路径  
+-   输出端：  
+	-   P:点  
+	-   C:线  
+	-   R:面  
+-   导入shp文件时可能会出错，解决方法为下载AccessDatabaseEngine并安装。  
+-   除了这个电池我们其实更常用到一个叫做 @ it 的插件，因为它除了可以读取几何信息，还能读取其他信息，比如每个几何信息的id、name等等。![](https://api2.mubu.com/v3/document_image/b4972df9-ef48-498d-ba64-0ec95dc687b2-20454557.jpg)  
+-   默认尺寸缩小了0.000001倍 应该放大100000倍。  
+-   「[[Object Details\|Object Details]]」物件属性![](https://api2.mubu.com/v3/document_image/4db30765-c662-4d0b-bc51-99de06b97b1d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/9e6aec32-ad54-4013-91ec-5cfb423e7cf4-20454557.jpg)  
+-   输入端：  
+	-   O:文件路径  
+-   输出端：  
+	-   R:物件是否被拾入  
+	-   A:物件是否在当前Rhino版本可用  
+	-   N:物件名称  
+	-   L:物件图层  
+	-   C:物件颜色  
+	-   Id:物件ID  
+-   可以拾取物体获得物体的名称、颜色、图层等信息。  
+-   「[[Read File\|Read File]]」读取文件![](https://api2.mubu.com/v3/document_image/ac3b6f45-9655-4559-8d83-46c9e562aa25-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8e461900-b466-4a3c-8694-86ef110f6c4c-20454557.jpg)  
+-   将数据以文本方式读取，输出为字符。  
+-   输入端：  
+	-   F:文件路径  
+-   输出端：  
+	-   C:文件内容  
+-   可以读取本地文件中的u信息，右键可选取按行直接解析或插入VB代码解析非标准文件。uri（统一资源标识符）是一个用于标识某一互联网资源名称的字符串。  
+-   一个使用的案例是可以用它来读取txt文件信息，比如坐标信息。![](https://api2.mubu.com/v3/document_image/c80a5efd-94ac-4596-8bd2-ce4ea2607a59-20454557.jpg)  
+## Util 参数实用  
+-   Util是utiliy的缩写，Params下的Util运算器组包含众多实用工具。![](https://api2.mubu.com/v3/document_image/1f882bde-ed2e-4488-b4bc-bb55655bf28a-20454557.jpg)  
+-   【插件】「[[Bifocals\|Bifocals]]」双光眼睛![](https://api2.mubu.com/v3/document_image/4fe9fdcb-09f2-41d2-938b-9689ca1ebaf6-20454557.jpg)  
+-   在电池上方显示电池的名字  
+-   现已被更简洁的 Sunglasses 替代  
+-   「[[Cherry Picker\|Cherry Picker]]」数据提取![](https://api2.mubu.com/v3/document_image/efb45a60-1cd4-419c-b2b8-fcdb10b8c511-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ea09b427-0e2c-4765-bd9d-d1736ed86368-20454557.jpg)  
+-   输入端：  
+	-   数据列表  
+-   输出端：  
+	-   指定组号内指定序号的数据  
+-   可以设置组号和序号筛选出指定数据，注意序号的选择是上下拖动数字。![](https://api2.mubu.com/v3/document_image/274bbce5-2fcd-42db-b9c2-98dcca4ed958-20454557.jpg)  
+-   「[[Jump\|Jump]]」位置跳转![](https://api2.mubu.com/v3/document_image/0c674d8e-bad5-4171-aeb7-df623e41ae33-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ca701134-5f3e-434a-9d1f-e05b52f34a13-20454557.jpg)  
+-   多用于GH电池的演示讲解，右键可以给每个跳转点命名，但是无法直接显示，点击后可以迅速跳转到下一个位置，能够实现类似prezi的效果。  
+-   「[[Param Viewer\|Param Viewer]]」数据浏览器![](https://api2.mubu.com/v3/document_image/30db096c-3395-403d-b0f2-f0b1a9ce1dbd-20454557.jpg)![](https://api2.mubu.com/v3/document_image/07526e49-132b-40a8-a9c6-c03f5a09c272-20454557.jpg)  
+-   输入端：  
+	-   待查看的数据流  
+-   输出端：  
+	-   数据结构路径名  
+-   双击电池切换文字形式和图形形式。  
+-   常用方式1：结合Replace Paths改变数据结构路径名。![](https://api2.mubu.com/v3/document_image/b3323e5f-a62e-464a-b35b-888a5e1a23b0-20454557.jpg)  
+-   常用方式2：结合Dispatch和Tree Branch对树形数据分流。![](https://api2.mubu.com/v3/document_image/b2725a7f-de33-499e-b897-c4502fb81733-20454557.jpg)  
+-   「[[Scribble\|Scribble]]」文字记录![](https://api2.mubu.com/v3/document_image/68641c17-ea13-4c97-a513-e59c6499fb28-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ad078d72-1986-415a-9461-378f2a1331f9-20454557.jpg)  
+-   在GH的画布上做文字记录的工具  
+-   快捷键 ~+文字  
+-   「[[Data Dam\|Data Dam]]」数据坝![](https://api2.mubu.com/v3/document_image/80a9670c-cfba-4f14-a18f-e30f50b0ee80-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a66e9209-4347-4cfb-a7fc-542eca4b7c74-20454557.jpg)  
+-   输入端：  
+	-   数据  
+-   输出端：  
+	-   缓冲后输出的数据  
+-   这个运算器和它的名字很像，Data Dam（数据大坝），可以对输入的数据量大小进行缓冲控制，即一旦输入端数据发生改变，电池会发生变化，需要点击三角开启按钮输出端才会跟着改变。右键可以选择控制的时间间隔，默认为Never（只能手动开启），若设置为1s,则表明电池1s后自动开启。  
+-   「[[Data Recorder\|Data Recorder]]」数据记录器![](https://api2.mubu.com/v3/document_image/4a584519-fdf0-4f2c-b565-7e60ec26ddcd-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5d5874a2-7243-4efd-a213-a578be30a573-20454557.jpg)  
+-   如果输入数据发生变化，该工具将会记录变化的数据。  
+-   输入端：  
+	-   变动的数据  
+-   输出端：  
+	-   所有从输入端输入过的数据都会被依次记录下来  
+-   电池左侧的小球彩色时记录数据功能开启，单击灰色后记录数据功能关闭，单击右侧×号可以清除所有已记录数据。![](https://api2.mubu.com/v3/document_image/aebda786-3675-4ecd-aa5e-23487023147a-20454557.jpg)  
+-   右键单击电池菜单里有个选项Record Limit，可以控制记录数据的总数量，新记录的数据会自动覆盖旧数据，保证数据总数不变，通过右侧箭头菜单里是否勾选Enable data limit控制开启状态。![](https://api2.mubu.com/v3/document_image/db06bdfa-f544-44dd-9a40-cfb7357b4f46-20454557.jpg)  
+-   迭代插件HoopSnake有一个输出端Feedback History和Data Recorder功能很像，可以用来记录数据，雨水径流分析中模拟雨点在地形流动的过程用到了这个功能。![](https://api2.mubu.com/v3/document_image/93d2d544-3da9-46a9-9bcc-dcee80abfcd1-20454557.jpg)  
+-   「[[Relay\|Relay]]」分线器![](https://api2.mubu.com/v3/document_image/105b76f4-a308-40ea-8be4-6bb91ee763cb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/019ce7b2-541b-450a-8918-bc1a1ace6d1e-20454557.jpg)  
+-   于整理GH窗口中的连线，让连线布局比较工整。在任意线上双击即可快速增增加或删除。  
+-   「[[Suirify\|Suirify]]」数据结构简化器![](https://api2.mubu.com/v3/document_image/23c77f6f-02ce-464e-b727-64fbc95ff56c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/65ded18b-9108-4ae7-a5b2-24249eca9462-20454557.jpg)  
+-   输入端：  
+	-   数据  
+-   输出端：  
+	-   简化结构后的数据  
+-   和Simplify作用类似，只是在单组数据的时候Simplify有时无法简化到最简组名，这时候我们就可以用Suirify。![](https://api2.mubu.com/v3/document_image/e2bef0ac-6214-4c74-a9d3-514703ecec4f-20454557.jpg)  
+-   数据树的“ Suire ”式简化。当数据是单个分支时（单一列表），也可以简化数据结构。  
+-   「[[trigger\|trigger]]」脉冲触发器![](https://api2.mubu.com/v3/document_image/b02042fc-0948-4ed5-ab3c-326c2878c853-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f3d61bcf-66f1-4ff2-996e-dcc9c1824985-20454557.jpg)  
+-   输出端：  
+	-   设置的时间间隔  
+-   Rhino7里新增的运算器，对应之前版本的Timer,右键可以选择Interval时间间隔，电池上的三个图标分别代表：  
+	-   左边一开始/暂停，用来控制Triggeri运算器是否工作。  
+	-   中间一手动/自动，自动模式下按照设定的时间间隔计时，手动模式下通过点击左边按钮自由控制计时。  
+	-   右边一释放/锁定，这个按钮主要针对发现后续运算器报错的情形。先暂停电池，由Lock切换到Free,数据会暂时被清空，这时可以修正电池错误，修改完好后点击开始按钮，计数会按照中断前的数字继续计数。  
+-   一个实例是和Kangaroo插件里的counter电池连用进行计数，在GH动画和动力学模拟中会经常用到。![](https://api2.mubu.com/v3/document_image/201d3647-7d48-4c17-a8e0-0ef42f924916-20454557.jpg)  
+-   当Timer运算器拖出时，电脑任务栏会多一个时间的外部开关，双击可以控制开启或关闭，这个设置是为了当运算量因为Timer过大卡死时，可以从外部关闭时间。![](https://api2.mubu.com/v3/document_image/3b0fe135-4a26-445a-8a26-fa5ccff05383-20454557.jpg)  
+-   电池组打包  
+-   Cluster 的可以把一堆组件组成的程序集合成一个组件，方便用户使用，  
+-   打包过程  
+	-   将要预留的输入端和输出端分别连接Cluster Input和Cluster Output，个数可根据预留端口个数自定。![](https://api2.mubu.com/v3/document_image/49833bf8-a57a-468b-bdc4-d542363de891-20454557.jpg)  
+	-   全选后中键点击Cluster图标。![](https://api2.mubu.com/v3/document_image/286bf800-40d8-4b2a-8f30-92caae1ef4a5-20454557.jpg)  
+	-   右键点击输入输出端可以更改名称方便识别。![](https://api2.mubu.com/v3/document_image/9086a25f-969e-4740-a95c-9ab2ed03e2c4-20454557.jpg)  
+	-   选中打包电池，再点击文件菜单中的Create User Object，设置名称和菜单后就可以将这个打包电池放到GH菜单栏了。![](https://api2.mubu.com/v3/document_image/68d587cb-3da5-4e48-9532-5117e667c909-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0b77e302-b9c1-4646-a53c-5847befe3823-20454557.jpg)  
+	-   直接调用输入相关内容就能使用。![](https://api2.mubu.com/v3/document_image/b29b9433-3cad-4667-a6e9-d935d410125e-20454557.jpg)  
+-   右键菜单的说明：  
+	-   Edit Cluster——进入电池内部进行修改，双击电池也可以。  
+	-   Properties——更改图标，添加名称等信息。  
+	-   Assign Password——设置密码。  
+	-   Explode Cluster——炸开，可以直接恢复到没有连接Cluster Input/Output的状态。  
+-   为了简便，我们也可以将容器电池视为Cluster Input/Output直接打包，但是会出现电池端口不够简洁的情况。  
+-   「[[Cluster Input\|Cluster Input]]」集合输入口![](https://api2.mubu.com/v3/document_image/0ff5cf61-d952-46ce-8712-b033190f6043-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2a207f70-f7a5-499f-8039-a3cec7760115-20454557.jpg)  
+-   Cluster (集合)的输入参数接头 。  
+-   「[[Cluster Output\|Cluster Output]]」集合输出口![](https://api2.mubu.com/v3/document_image/04dd0533-08cf-428d-8269-aead885949c2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a403929e-85ee-4328-b8c2-0632de0bf0f3-20454557.jpg)  
+-   Cluster (集合)的输出参数接头 。  
+-   「[[Data Input\|Data Input]]」数据外部输入![](https://api2.mubu.com/v3/document_image/9228fdce-4938-4c40-b588-1efd3ba3c003-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8940641a-b050-497b-8a21-0e04f123c554-20454557.jpg)  
+-   和Data Outputi搭配使用，可以导入其输出的ghdata格式文件，导入后自动生成对应个数的输出接口。  
+-   「[[Data Output\|Data Output]]」数据外部输出![](https://api2.mubu.com/v3/document_image/13c40928-1c52-4eb1-a7d7-681fff6470b8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/340c83d8-f18d-4bd9-bb7c-3d6e851902d5-20454557.jpg)  
+-   与Data Input搭配使用，可以通过右键的Destination将电池组的数据输出保存为一个ghdata格式文件，然后可以用Data Input电池右键的Source打开读取，放大可以增加左侧的输入端个数，当用Data Input打开后会生成相同个数和名称的输出端。这两个运算器结合的主要作用是可以方便自己在不同的GH文件中调入以往数据使用，也可以增强多人之间的协同，比如可以直接将分析结果给你的队友进行后一步处理。![](https://api2.mubu.com/v3/document_image/1e2a91ea-78e6-4259-8d12-00098f3c5e11-20454557.jpg)  
+-   需要注意的是：  
+	-   数据不能是拾取的，主要针对的是几何数据，必须是右键绘制的数据才能在两个运算器之间协同，否则会无法读取。  
+	-   端口之间的数据不会按照组号进行分组，每个端口都是一个单独的数据流。  
+	-   输入端数据发生改变后，输出端会跟着变化，Data Output右键的Delay内可以设置刷新的时间长短。  
+-   「[[Grasshopper Player\|Grasshopper Player]]」  
+-   GrasshopperPlayeri运算器组的作用和打包有类似之处，一是方便同类型再次使用，二是能够让GH的新手快速上手使用，而GrasshopperPlayeri运算器组可以使这个过程甚至连GH都不用打开就可以实现。举个简单的地形坡度分析的例子：  
+	-   将输入地形连接Get Geometry,得到的分析地形连接Context Bake![](https://api2.mubu.com/v3/document_image/4ad6051c-d0ac-42dd-9879-ccaf74b18676-20454557.jpg)  
+	-   右键Get Geometry定义可输入几何类型和可输入的最大和最小个数，At most;为空值时输入个数无上限。![](https://api2.mubu.com/v3/document_image/d1ea54c6-b213-4385-ba6a-89a8120abf46-20454557.jpg)  
+	-   右键Get Geometryi选择Prompt输入提示文字。![](https://api2.mubu.com/v3/document_image/2c9d0259-3238-4bec-a86a-0a367df38431-20454557.jpg)  
+	-   保存为gh格式。  
+	-   在Rhino命令栏输入GrasshopperPlayer,选择保存的文件，按照命令提示就可以像Rhino命令一样去使用电池了。  
+-   「[[Context Bake\|Context Bake]]」几何输出![](https://api2.mubu.com/v3/document_image/07b5739c-026e-4f16-8079-9b7a93e32b9d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0366303d-32bd-4842-993c-f1550a44bcc1-20454557.jpg)  
+-   在 GrasshopperPlayer 命令结束时烘焙几何体。  
+-   「[[Context Print\|Context Print]]」文字输出![](https://api2.mubu.com/v3/document_image/4c4216ed-a6a3-4ba1-adfe-f2399f227267-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ba446b19-9057-46bd-b7e5-f818bcb6ffe2-20454557.jpg)  
+-   在 GrasshopperPlayer 命令行输出的文本数据。  
+-   「[[Get Boolean\|Get Boolean]]」输入布尔值![](https://api2.mubu.com/v3/document_image/08337a26-ce83-4e61-829a-0d6df6694683-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f3dbbbbc-5fae-41b7-819f-7d562e6351f7-20454557.jpg)  
+-   GrasshopperPlayer 布尔值输入。  
+-   「[[Get File Path\|Get File Path]]」输入路径![](https://api2.mubu.com/v3/document_image/98b35d2e-7cb4-4d56-975a-316d657cb3e4-20454557.jpg)![](https://api2.mubu.com/v3/document_image/dc0c3cb3-fe55-465d-be95-eb6035d3a042-20454557.jpg)  
+-   GrasshopperPlayer 文件路径输入。  
+-   「[[Get Geometry\|Get Geometry]]」输入几何体![](https://api2.mubu.com/v3/document_image/95f4ae0e-5581-423e-add3-8d9ac67b181b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cf9c0a39-1931-433c-a2a0-23f1222643be-20454557.jpg)  
+-   GrasshopperPlayer 几何物件输入。  
+-   「[[Get Integer\|Get Integer]]」输入整数![](https://api2.mubu.com/v3/document_image/eb6b7412-0071-437b-b348-91204dc3b1a7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/496aabf5-b063-4692-87ea-56c7515d46f2-20454557.jpg)  
+-   GrasshopperPlayer 整数输入。  
+-   「[[Get Line\|Get Line]]」输入直线![](https://api2.mubu.com/v3/document_image/b2609c15-6283-4372-82bb-701ffa127633-20454557.jpg)![](https://api2.mubu.com/v3/document_image/68e79548-a7b4-4cac-b6ab-4a09c16ad478-20454557.jpg)  
+-   GrasshopperPlayer 直线输入。  
+-   右键有一个Realtimei选项，控制选点之间效果是否实时显示。  
+-   「[[Get Number\|Get Number]]」输入小数![](https://api2.mubu.com/v3/document_image/e292044c-045f-414a-8ffa-41501177a42c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/63583a84-a242-4826-a409-8d9b02591211-20454557.jpg)  
+-   GrasshopperPlayer 数字输入。  
+-   右键可以设置输入个数和数值范围。  
+-   「[[Get Point\|Get Point]]」输入点![](https://api2.mubu.com/v3/document_image/92c77895-096a-4e53-bb2d-182b0a92760b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f230375f-08ba-4b34-8330-6325d1d18751-20454557.jpg)  
+-   GrasshopperPlayer 点输入。  
+-   「[[Get String\|Get String]]」输入字符![](https://api2.mubu.com/v3/document_image/b467d2ec-e685-4063-a1a8-2782af50d0e5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/48cfc9a8-5bc2-48b3-a773-1af37a09b51a-20454557.jpg)  
+-   GrasshopperPlayer 字符输入。  
+-   「[[Fitness Landscape\|Fitness Landscape]]」景观适合度![](https://api2.mubu.com/v3/document_image/6ed7bcee-25bc-44ba-a397-789b5bc75f99-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ee2b128c-183d-4a3e-ac4c-7d97a557f8fb-20454557.jpg)  
+-   输入端：  
+	-   B:地形范围  
+	-   V:高程值(需要能被N端值整除)  
+	-   N:地形X方向的采样数(需要可以整除V端值)  
+-   输出端：  
+	-   L:地形网格  
+-   简单来说就是一个可以对地形高程值进行可视化分析的电池，包括基础的高程、坡度、坡向等等，右键选择分析类型以及等高线的疏密。![](https://api2.mubu.com/v3/document_image/9923c9c2-8518-4bf4-9c8d-e8034d76ad31-20454557.jpg)  
+-   右键的Remap Terraini可以将高程值映射到一个固定的高程范围内，这样无论怎么调节V端的输入值，地形的最低点和最高点都不会发生变化。  
+-   如果是对现有地形分析的话，我们一定需要保证V端值是可以被N端值整除的，否则会出错。![](https://api2.mubu.com/v3/document_image/02c58ce1-bef7-444e-a7ae-997f03713789-20454557.jpg)  
+-   这个运算器可调节性比较低，有更好的插件可以替代他，比如Bison。  
+-   「[[Galapagos\|Galapagos]]」通用解算工具 (遗传算法/模拟退火算法)![](https://api2.mubu.com/v3/document_image/bd270913-b675-425b-9fa0-fc6dc08b8c08-20454557.jpg)![](https://api2.mubu.com/v3/document_image/73a840ad-fe51-4f63-8c2e-eb4f11f581c3-20454557.jpg)  
+-   简单来说，这是一个求最优解的运算器，提供了遗传和退火两种算法，举个很简单的例子比如我们想算一下太阳在哪个位置建筑的阴影面积最小：  
+	-   双击电池进入编辑页面，Options内选择最小值（这里也可以选择最大值，任何最优解问题都能转化为最小或最大值的求解）。![](https://api2.mubu.com/v3/document_image/1bb42e9c-006b-49b6-a433-bdcc86d79d0c-20454557.jpg)  
+	-   在Solvers标签内左上角为选择算法，左边为遗传算法，右边为退火算法。![](https://api2.mubu.com/v3/document_image/1484d59d-af8b-400d-8be6-2acdd75da282-20454557.jpg)  
+	-   我们这里以遗传算法为例进行计算。![](https://api2.mubu.com/v3/document_image/d9ee79a3-0cc3-432a-b91e-db896c82c6e4-20454557.jpg)  
+	-   最终结果为当参数为0.414时，阴影面积最小，为34.702096。![](https://api2.mubu.com/v3/document_image/ccbb6504-d408-4ab0-8de2-a1d928e57e24-20454557.jpg)  
+	-   注意两个输入端都需要倒连，即从输入端处点击连接到其他电池。当变量拉棒很多时，为了便捷，右键电池可以选择与所有拉棒或所选拉棒一键连接。![](https://api2.mubu.com/v3/document_image/bbd2fd74-39f5-4351-9aeb-9e95559a7c48-20454557.jpg)  
+-   输入端：  
+	-   Genome：基因参数  
+	-   Fitness：目标适应值  
+-   [【数之道17】金属冷却处理中隐藏的智慧<模拟退火优化算法>_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1j64y1Y7FB?from=search&seid=3569532010892707035&spm_id_from=333.337.0.0&vd_source=d550f6dcc7e4f0a967ed4a51ca9e4f65)  
+-   [【数之道14】六分钟时间，带你走近遗传算法_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV19U4y1G7dU?from=search&seid=5357150754003077510&spm_id_from=333.337.0.0&vd_source=d550f6dcc7e4f0a967ed4a51ca9e4f65)  
+-   [优化算法：遗传算法](https://www.cnblogs.com/heaad/archive/2010/12/23/1914725.html)  
+	-   遗传算法（GA，GeneticAlgorithm ）也称进化算法，遗传算法是受达尔文的进化论的启发，借鉴生物进化过程而提出的一种启发式搜索算法。  
+	-   借鉴生物进化论，遗传算法将要解决的问题模拟成一个生物进化的过程，通过复制、交叉、突变等操作产生下一代的解，并逐步淘汰掉适应度函数值低的解，增加适应度函数值高的解。这样进化N代后就很有可能会进化出适应度函数值很高的个体。  
+-   [优化算法：模拟退火算法](https://www.cnblogs.com/heaad/archive/2010/12/20/1911614.html)  
+	-   爬山算法（Hill Climbing）  
+		-   爬山算法是一种简单的贪心搜索算法，该算法每次从当前解的临近解空间中选择一个最优解作为当前解，直到达到一个局部最优解。  
+		-   爬山算法实现很简单，其主要缺点是会陷入局部最优解，而不一定能搜索到全局最优解，如图所示：假设C点为当前解，爬山算法搜索到A点这个局部最优解就会停止搜索，因为在A点无论向那个方向小幅度移动都不能得到更优的解。![](https://api2.mubu.com/v3/document_image/cfa95320-0fe4-4d07-8e21-068b92192306-20454557.jpg)  
+	-   模拟退火（SA,Simulated Annealing）思想  
+		-   爬山法是完完全全的贪心法，每次都鼠目寸光的选择一个当前最优解，因此只能搜索到局部的最优值。模拟退火其实也是一种贪心算法，但是它的搜索过程引入了随机因素。模拟退火算法以一定的概率来接受一个比当前解要差的解，因此有可能会跳出这个局部的最优解，达到全局的最优解。以图为例，模拟退火算法在搜索到局部最优解后，会以一定的概率接受到E的移动。也许经过几次这样的不是局部最优的移动后会到达D点，于是就跳出了局部最大值A。  
+		-   模拟退火算法描述：  
+			-   若(Y(+1))>=(Y))（即移动后得到更优解），则总是接受该移动  
+			-   若(Y(+1))<(Y0)（即移动后的解比当前解要差），则以一定的概率接受移动，而且这个概率随着时间推移逐渐降低（逐渐降低才能趋向稳定）  
+			-   这里的”一定的概率”的计算参考了金属治炼的退火过程，这也是模拟以退火算法名称的由来。  
+		-   模拟退火算法是一种随机算法，并不一定能找到全局的最优解，可以比较快的找到问题的近似最优解。如果参数设置得当，模拟退火算法搜索效率比穷举法要高。  
+	-   关于爬山算法与模拟退火，有一个有趣的比喻：  
+		-   爬山算法：兔子朝着比现在高的地方跳去。它找到了不远处的最高山峰。但是这座山不一定是珠穆朗玛峰。这就是爬山算法，它不能保证局部最优值就是全局最优值。  
+		-   模拟退火：兔子喝醉了。它随机地跳了很长时间。这期间，它可能走向高处，也可能踏入平地。但是，它渐渐清醒了并朝最高方向跳去。这就是模拟退火。  
+-   「[[Gene Pool\|Gene Pool]]」基因池![](https://api2.mubu.com/v3/document_image/4eb7a073-2ce5-4176-89b7-8918946a326d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/36c81572-7b2b-4739-9f07-88172cae9d37-20454557.jpg)  
+-   可以看做一个多个拉棒的集合，双击可以进行数值个数，值域，精确度等调节。![](https://api2.mubu.com/v3/document_image/cd0ae130-1736-4bb6-a20b-c646dbd9295d-20454557.jpg)  
+-   右键能选择数值的随机变化程度。![](https://api2.mubu.com/v3/document_image/62ff14ed-c290-40d3-bb7e-0a2e362804bb-20454557.jpg)  
+-   【插件】「[[Moonlight\|Moonlight]]」![](https://api2.mubu.com/v3/document_image/c0680d30-5ef3-4f07-bfa7-32132ddac284-20454557.jpg)  
+-   切换浅色/深色主题  
+-   【插件】「[[Palette\|Palette]]」![](https://api2.mubu.com/v3/document_image/a6c241e3-8628-4edc-937b-a25babdbd80d-20454557.jpg)  
+	-   将界面各种元素的接口调出 可完全个性化界面颜色           
+# Maths 算法  
+## Domain 数值区间  
+-   Maths类Domain组的运算器都和区间有关，既包含数字构成的数值区间，也包括两个数值区间构成的面域的UV区间。![](https://api2.mubu.com/v3/document_image/0496fbed-d869-4632-8805-6e3227073847-20454557.jpg)  
+-   「[[Construct Domain\|Construct Domain]]」建立数值区间![](https://api2.mubu.com/v3/document_image/61eaf4cd-b072-4ebe-9878-880d3cfa520a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7eb4e1aa-eb6f-407f-81a4-12197bd59feb-20454557.jpg)  
+-   以两个数值创建数值区间  
+-   输入端：  
+	-   A：区间起始值  
+	-   B：区间终点值  
+-   输出端：  
+	-   I：构建的数值区间  
+-   B端值不一定要大于A端值。![](https://api2.mubu.com/v3/document_image/03ef1aed-86c6-440d-afaf-c4024c7dbff7-20454557.jpg)  
+-   区间输入我们也可以直接用Panel写为“A to B”的格式，to的大小写无所谓。![](https://api2.mubu.com/v3/document_image/c0d83bf1-3dae-4fdd-acc0-38079625895c-20454557.jpg)  
+-   「[[Deconstruct Domain\|Deconstruct Domain]]」拆分数值区间![](https://api2.mubu.com/v3/document_image/799bdc66-ca8d-465c-a8f4-0fb6b110776a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4535e284-b997-4b12-a1b4-59f0b97e32bd-20454557.jpg)  
+-   将数值区间拆分为两个数值  
+-   输入端：  
+	-   I：构建的数值区间  
+-   输出端：  
+	-   A：区间起始值  
+	-   B：区间终点值  
+-   Construct Domain的反向运算器，可以将一个区间拆解成首尾值。  
+-   「[[Bounds\|Bounds]]」一组数值的区间范围![](https://api2.mubu.com/v3/document_image/3dff10fa-ede9-4d18-834f-26e97081ee12-20454557.jpg)![](https://api2.mubu.com/v3/document_image/efc0be49-0771-4de6-9a0a-e98c63d27309-20454557.jpg)  
+-   创造一个数值区间，该区间刚好可以包含列表中所有的数值。  
+-   输入端：  
+	-   N：数列值  
+-   输出端：  
+	-   I：区间范围  
+-   结合Deconstruce Domain电池可以提取一个数列的最大值和最小值。![](https://api2.mubu.com/v3/document_image/ad727c5e-a904-4718-95a1-dceedc76e607-20454557.jpg)  
+-   「[[Consecutive Domains\|Consecutive Domains]]」转化相邻数值为区间![](https://api2.mubu.com/v3/document_image/a4e50964-fc4a-46c8-a94f-a0f51c2236a3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6ece499a-7064-4768-9767-935aa20a3599-20454557.jpg)  
+-   输入端：  
+	-   N：数列  
+	-   A：是否以叠加值作为区间节点值  
+-   输出端：  
+	-   D：生成的连续区间  
+-   区间个数为N端数据个数减1，输入端A默认为False，以N端输入数值为区间节点值，若为True，则变为以各数值处的叠加值为节点值。![](https://api2.mubu.com/v3/document_image/cc9dfd00-eb03-4273-b58f-ad26295e9aac-20454557.jpg)  
+-   节点值不是必须自小到大排列，无序数列也可生成连续区间。![](https://api2.mubu.com/v3/document_image/672a35a5-c05f-41f0-a78c-4caf6394f848-20454557.jpg)  
+-   「[[Divide Domain\|Divide Domain]]」等分区间![](https://api2.mubu.com/v3/document_image/d1052447-1b17-471a-bee1-ada7755939d9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/161159ad-6b56-438d-a8eb-54e753b3a945-20454557.jpg)  
+-   将数值区间等分为多个小区间。  
+-   输入端：  
+	-   I:区间  
+	-   C:等分个数  
+-   输出端：  
+	-   S:等分后的各区间  
+-   用法比较简单，注意区间不一定是起点值大，终点值小。![](https://api2.mubu.com/v3/document_image/4cf8816a-3246-41b9-bf04-cf607abbae48-20454557.jpg)  
+-   「[[Find Domain\|Find Domain]]」查找区间![](https://api2.mubu.com/v3/document_image/8bbbbe78-ffee-4a83-88ba-9cf1d5dfdb2b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/733d8273-5cf7-4ea0-ac32-3bf9554bcd7a-20454557.jpg)  
+-   输入端：  
+	-   D：区间列表  
+	-   N：要查找的数值  
+	-   S：是否严格查找  
+		-   当为False时，边界值可视为在区间内。  
+		-   当为True时，边界值在区间外。  
+-   输出端：  
+	-   I：数值所在区间序号（未在区间输出-1）  
+	-   N：数值最接近的区间序号  
+-   查找包含某个数值的区间对应的序号。![](https://api2.mubu.com/v3/document_image/f045f17a-0b06-4323-8a99-b0a2de0bb03d-20454557.jpg)  
+-   S端控制是否严格查找：  
+	-   当为False时，边界值可视为在区间内。  
+	-   当为True时，边界值在区间外。  
+-   这个运算器可以帮助我们做数据赋值并归类。  
+	-   比如我们有一些地形平面，每个平面都有一个坡度值，现在要在上面种植物，并且在坡度区间1可以种A植物，坡度区间2可以种B植物，坡度区间3可以种C植物，那么我们就可以通过这个运算给每一个平面按照种类ABC赋值，还可以结合Member Index运算器处理成树形数据，将能种同一种类植物的坡度分到同一组内。![](https://api2.mubu.com/v3/document_image/969ce880-0ef9-4a39-9353-c714b8a810af-20454557.jpg)  
+-   「[[Includes\|Includes]]」包含区间![](https://api2.mubu.com/v3/document_image/bc862a83-c410-4771-ae91-335c2c64d0fe-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ab046e9c-2a7b-4c87-9377-5134a682b943-20454557.jpg)  
+-   判断一个数值是否包含在数值区间中，结果输出布尔值。![](https://api2.mubu.com/v3/document_image/23023c92-2b68-4f3a-8151-ce16502e2a5c-20454557.jpg)  
+-   输入端：  
+	-   V：要检测数值  
+	-   D：区间  
+-   输出端：  
+	-   I：是否在区间内的布尔值（在为True，不在为False）  
+	-   D：V端数值与区间内最接近数值的距离  
+-   这个运算器有点像Find Domain的弱化版，因为它只能判断是不是在一个区间，但不能识别在哪个区间。Includes同样可以做一些数据的按区间归类，只是不能像Find Domain那样按类赋值,比如我们在Find Domain知识点2里提到的案例可以这样做。![](https://api2.mubu.com/v3/document_image/1a09c7c6-6224-4419-a5b4-8b392501f1eb-20454557.jpg)  
+-   「[[Remap Numbers\|Remap Numbers]]」区间映射![](https://api2.mubu.com/v3/document_image/cc7e72c4-4cab-4d2b-b6a5-37277404a1c9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/056ade69-184d-43b2-a027-90f45ed72a5a-20454557.jpg)  
+-   输入端：  
+	-   V：原数列  
+	-   S：起始区间  
+	-   T：目标区间  
+-   输出端：  
+	-   R：原数列经映射后在目标区间的对应数列  
+	-   C：若原数列有不在起始区间内的值，则只保留原区间内值得对应值  
+-   该运算器简单来讲就是R=V*（T/S）  
+-   该运算器比较常见的情况是V端数列区间就是S端的区间，用来将一系列数映射到一个新的区间上，这种情形输出端R和C是一样的。![](https://api2.mubu.com/v3/document_image/1ce91439-b038-4812-8377-e0a2ebd0ec7f-20454557.jpg)  
+-   还有一种情况是V端数列区间和S端区间不相同，那么这个时候输出端R和C就出现了不同，R按照比例映射全部V端数据，C只保留S区间内的映射数据。![](https://api2.mubu.com/v3/document_image/700c5ef2-3f82-4e02-9100-063aec8b50a5-20454557.jpg)  
+-   Remap Numbers常与Graph Mapper运算器连用。  
+-   「[[Construct Domain²\|Construct Domain²]]」区间建立二维区间![](https://api2.mubu.com/v3/document_image/703115f5-94c3-4aec-88c5-cd65540ede6d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/283cc11c-3c26-488c-9c85-f8a5993a77d0-20454557.jpg)  
+-   用两个区间创建二维区间。  
+-   输入端：  
+	-   U0:U方向最小值  
+	-   U1:U方向最大值  
+	-   V0:V方向最小值  
+	-   V1:V方向最大值  
+-   输出端：  
+	-   I²:UV二维区间  
+-   四个值构建一个UV二维区间，可以通过它来获取曲面上对应区间的小曲面。![](https://api2.mubu.com/v3/document_image/653ce134-ba44-494f-adb5-2f6c981760a3-20454557.jpg)  
+-   「[[Construct Domain²\|Construct Domain²]]」数值建立二维区间![](https://api2.mubu.com/v3/document_image/71797992-1cd0-4c94-ab02-a41c7092529e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/de6c43f1-251e-4f0a-87f4-811326c1142a-20454557.jpg)  
+-   输入四个数值区间建立二维数值区间。  
+-   输入端：  
+	-   U:U方向区间  
+	-   V:V方向区间  
+-   输出端：  
+	-   I²:UV二维区间  
+-   和上一个运算器类似，只不过是通过两个一维区间建立一个二维区间，同样可以结合Isotrim电池得到一个曲面不同区间的小曲面。  
+-   「[[Deconstruct Domain²\|Deconstruct Domain²]]」拆分二维区间为数值![](https://api2.mubu.com/v3/document_image/6e4756ce-5add-4eed-a1ec-4612f43dffeb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/81ce5bfa-9489-4f7d-8a99-92f674f75990-20454557.jpg)  
+-   将一个二维区间拆分为四个数值。  
+-   输入端：  
+	-   I²:UV二维区间  
+-   输出端：  
+	-   U0:U方向最小值  
+	-   U1:U方向最大值  
+	-   V0:V方向最小值  
+	-   V1:V方向最大值  
+-   「[[Deconstruct Domain²\|Deconstruct Domain²]]」拆分二维区间为区间![](https://api2.mubu.com/v3/document_image/028c19dc-c072-4d7c-9891-dfecf97e4c34-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ab76fa24-4977-4ed0-8f8c-da9870cca3aa-20454557.jpg)  
+-   将二维数值区间拆分为两个一维数值区间。  
+-   输入端：  
+	-   I²:UV二维区间  
+-   输出端：  
+	-   U:U方向区间  
+	-   V:V方向区间  
+-   「[[Bounds 2D\|Bounds 2D]]」点转化二维区间![](https://api2.mubu.com/v3/document_image/e8060d77-91db-4f75-8a3b-ef5eddb3b38f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0c32fbaf-a47e-40fd-b67c-707c95ce1c8f-20454557.jpg)  
+-   计算一组点的X和Y坐标数值范围，并建立二维数值区间。  
+-   输入端：  
+	-   C:点阵集合  
+-   输出端：  
+	-   I:UW区间  
+-   其实就是将点阵的X坐标范围作为U区间范围，Y坐标范围作为V区间范围，UV两个区间共同组成一个二维区间。输入端C输入的点阵可以是非平面的三维空间点阵，但是输出端的I区间也只以X和Y坐标作为参考依据。![](https://api2.mubu.com/v3/document_image/ade47584-d331-4528-b518-9f8a927c0f40-20454557.jpg)  
+-   「[[Divide Domain²\|Divide Domain²]]」等分二维区间![](https://api2.mubu.com/v3/document_image/2f218899-81c8-4239-bdf5-2b6bce411947-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0c8922b5-6730-4ebd-bfd5-ca765025a8de-20454557.jpg)  
+-   对二维区间做等分，得到多个子二维区间。  
+-   输入端：  
+	-   I：二维区间  
+	-   U：U区间等分个数  
+	-   V：V区间等分个数  
+-   输出端：  
+	-   S：等分后二维区间  
+-   将U区间等分成a个，将V区间等分成b个，两两对应后共形成a×b个小的UV区间。![](https://api2.mubu.com/v3/document_image/97ee2f53-4a8a-4782-8bc0-f610d7d8d525-20454557.jpg)  
+-   我们常结合Isotrim电池来对曲面进行细分。![](https://api2.mubu.com/v3/document_image/e417d8e0-9263-4c3b-ace4-939cd2b234d8-20454557.jpg)  
+## Matrix 数值矩阵  
+-   Maths:类Metrix组的运算器和矩阵概念有关。![](https://api2.mubu.com/v3/document_image/ecf03d86-e641-489e-b989-e30fd6c37e54-20454557.jpg)  
+-   「[[Construct Matrix\|Construct Matrix]]」建立数值矩阵![](https://api2.mubu.com/v3/document_image/d899f548-b6cd-438c-a5aa-a9ce9ae3a9a6-20454557.jpg)![](https://api2.mubu.com/v3/document_image/90cbbd5f-a9b3-4507-882a-b66a651f4019-20454557.jpg)  
+-   将数值列表转化为数值矩阵。  
+-   输入端：  
+	-   R:行数  
+	-   C:列数  
+	-   V:值  
+-   输出端：  
+	-   M:矩阵  
+-   输入端V若不提供值，则默认生成单位矩阵。![](https://api2.mubu.com/v3/document_image/2da9a4f4-be76-44b4-98e9-61a1f5d58acc-20454557.jpg)  
+-   在GH中矩阵主要与Transform类内电池的变动数据相结合。[无所不能的矩阵 - 三维图形变换](https://www.bilibili.com/video/BV1b34y1y7nF/?spm_id_from=trigger_reload&vd_source=d550f6dcc7e4f0a967ed4a51ca9e4f65)  
+-   「[[Deconstruct Matrix\|Deconstruct Matrix]]」拆分数值矩阵![](https://api2.mubu.com/v3/document_image/d2f1b0d1-5c63-4c50-bec5-7ad9ef84e70d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/11fb955f-b547-4927-a3c3-cf0b75a6de68-20454557.jpg)  
+-   将矩阵解构为数值列表。  
+-   输入端：  
+	-   M:矩阵  
+-   输出端：  
+	-   R:行数  
+	-   C:列数  
+	-   V:值  
+-   可以拆分一个矩阵，和Construct Metrix互为相反运算器。![](https://api2.mubu.com/v3/document_image/66838601-2f9e-48c6-b812-66941c3ef55c-20454557.jpg)  
+-   「[[Display Matrix\|Display Matrix]]」显示数值矩阵![](https://api2.mubu.com/v3/document_image/74ed21a8-6817-4706-9bb4-1beb50703485-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ef60c161-c089-4e5f-a435-5fc3e44678c9-20454557.jpg)  
+-   查看矩阵具体内容，右键可以设置矩阵数字小数点位数。![](https://api2.mubu.com/v3/document_image/d038f202-ec18-43d8-bacd-a64cbf78c129-20454557.jpg)  
+-   「[[Invert Matrix\|Invert Matrix]]」逆矩阵![](https://api2.mubu.com/v3/document_image/ff1055d1-ef82-4662-8225-9ed332df4e29-20454557.jpg)![](https://api2.mubu.com/v3/document_image/9f6cbf53-e39a-45a5-ae17-d8f51a60a3d4-20454557.jpg)  
+-   计算逆矩阵  
+-   输入端：  
+	-   M:矩阵  
+	-   t:容差  
+-   输出端：  
+	-   M:逆矩阵  
+	-   S:是否成功生成逆矩阵  
+-   从数值上看不出逆矩阵的数字变化规律，并不是所有矩阵都存在逆矩阵。  
+-   「[[Transpose Matrix\|Transpose Matrix]]」转置矩阵![](https://api2.mubu.com/v3/document_image/3ae994e7-8fff-4f29-b180-8997ba120903-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0d0f9fe4-10c9-4c91-883a-826f52002078-20454557.jpg)  
+-   计算转置矩阵（交换行和列）  
+-   输入端：  
+	-   M:矩阵  
+-   输出端：  
+	-   M:转置矩阵  
+-   将矩阵的行列互换得到的新矩阵称为转置矩阵。![](https://api2.mubu.com/v3/document_image/0c20a917-cd53-4393-a27a-9216c3dda3f2-20454557.jpg)  
+-   「[[Swap Columns\|Swap Columns]]」矩阵列交换![](https://api2.mubu.com/v3/document_image/ee16f870-8e8e-4a2e-837b-444714e0f175-20454557.jpg)![](https://api2.mubu.com/v3/document_image/caad0317-26d1-4033-b662-cfe8b62832f2-20454557.jpg)  
+-   交换矩阵中的两列  
+-   输入端：  
+	-   M:矩阵  
+	-   A:要交换的列A  
+	-   B:要交换的列B  
+-   输出端：  
+	-   M:交换后矩阵  
+-   将指定的A列和B列交换位置。![](https://api2.mubu.com/v3/document_image/cb2bf6b4-a6a7-4c53-bf2d-af6800e4e87e-20454557.jpg)  
+-   「[[Swap Rows\|Swap Rows]]」矩阵行交换![](https://api2.mubu.com/v3/document_image/0f66f76f-cfb8-45e2-bae9-ef2f8c437329-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6a891011-5940-4963-885d-21f00c69b1d6-20454557.jpg)  
+-   交换矩阵中的两行  
+-   输入端：  
+	-   M:矩阵  
+	-   A:要交换的行A  
+	-   B:要交换的行B  
+-   输出端：  
+	-   M:交换后矩阵  
+-   将指定的A行和B行交换位置。![](https://api2.mubu.com/v3/document_image/aa43b180-9de0-45d3-9c6d-8f3f6e3ec726-20454557.jpg)  
+## Operators 基础运算  
+-   Maths类Operators组里都是常用的数学运算电池。![](https://api2.mubu.com/v3/document_image/61307928-ed8a-43f7-a356-7a9fa3047e78-20454557.jpg)  
+-   「[[Addition\|Addition]]」加法![](https://api2.mubu.com/v3/document_image/a7547293-42c8-484b-bef4-1a5f0dc6d8ab-20454557.jpg)![](https://api2.mubu.com/v3/document_image/84da1f40-671c-4df9-a26d-d9b308846c11-20454557.jpg)  
+-   数值相加  
+-   输入端：  
+	-   A:第一个加数  
+	-   B:第二个加数  
+-   输出端：  
+	-   R:相加结果  
+-   放大到一定程度后可以出现加减号，能增减输入端数量。![](https://api2.mubu.com/v3/document_image/f3f6c850-b2fe-4e75-80cd-132caa6143b8-20454557.jpg)  
+-   输入端标记的数据类型是Data，比如还可以输入有数字作为参量的点、向量等。但AB两输入端必须为同类型数据（不能一个是数字，一个是非数字），否则会报错。  
+-   「[[Division\|Division]]」除法![](https://api2.mubu.com/v3/document_image/c473d33d-e8b7-4408-9d12-20fbff102c22-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e77d16de-bf30-4b7c-af79-0d201cee8075-20454557.jpg)  
+-   数值相除  
+-   输入端：  
+	-   A:被除数  
+	-   B:除数  
+-   输出端：  
+	-   R:相除结果  
+-   和加减乘不同的是，除法放大无法增减输入端。![](https://api2.mubu.com/v3/document_image/e8f7aa49-fa6e-4e91-898f-79e2b0e60eb0-20454557.jpg)  
+-   输入端标记的数据类型是Data，比如还可以输入有数字作为参量的点、向量等，但注意B端必须是数字，否则会报错。  
+-   「[[Multiplication\|Multiplication]]」乘法![](https://api2.mubu.com/v3/document_image/83ca3485-1bd3-46cb-91f0-3990281072f7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/06941174-c4e7-42fc-95a9-ddf737d1d922-20454557.jpg)  
+-   数值相乘  
+-   输入端：  
+	-   A:第一个乘数  
+	-   B:第二个乘数  
+-   输出端：  
+	-   R:相乘结果  
+-   放大可以增减输入端。![](https://api2.mubu.com/v3/document_image/e1017e7d-3423-469d-961c-a47af32d3623-20454557.jpg)  
+-   输入端标记的数据类型是Data，比如还可以输入有数字作为参量的点、向量等。注意两个相乘会得到其内积（注意和外积的区别），即向量a·向量b=|a||b|cosθ(θ是a,b在0-180°的夹角)，所以两个向量相乘会得到一个数字而非向量。  
+-   扩展知识：[向量内积（0点乘）和外积（叉乘）概念及几何意义](https://zhuanlan.zhihu.com/p/381280532)  
+-   「[[Negative\|Negative]]」负值![](https://api2.mubu.com/v3/document_image/0cb9a42a-4486-4e01-8791-c1e192261b5f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/73dace7d-62ca-491e-8c40-2c5075a09008-20454557.jpg)  
+-   输入端  
+	-   x:数值  
+-   输出端  
+	-   y:乘以-1后的数值  
+-   要得到负值除了连接该运算器外，还可以在右键电池菜单的Expression里输入-x。![](https://api2.mubu.com/v3/document_image/b6e9e5b7-4989-4575-9f74-7689e8a64a8d-20454557.jpg)  
+-   输入端标记的数据类型是Data，比如还可以输入有数字作为参量的点、向量等。  
+-   「[[Power\|Power]]」幂![](https://api2.mubu.com/v3/document_image/e80ea6a2-aed1-4f23-be5d-2b33b01371b3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3f7ca237-181c-425e-af0e-3d951d8f3a00-20454557.jpg)  
+-   A的B次幂。  
+-   求B个数字A相乘的结果。  
+-   输入端标记的数据类型是Data，比如还可以输入有数字作为参量的点、向量等，但注意B端必须是数字，否则会报错。  
+-   「[[Subtraction\|Subtraction]]」减法![](https://api2.mubu.com/v3/document_image/d82208a3-97f3-40d8-8a96-595693231516-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b718bba8-8780-48ad-a31e-e88a6d42d006-20454557.jpg)  
+-   数值相减  
+-   输入端：  
+	-   A:被减数  
+	-   B:减数  
+-   输出端：  
+	-   R:相减结果  
+-   和加法运算器一样，放大后可以增减输入端，不过减法只有第一个输入端是被减数，剩余都是减数。![](https://api2.mubu.com/v3/document_image/ebe872df-11f6-4f74-af57-fc6d69df4cd7-20454557.jpg)  
+-   输入端标记的数据类型是Data，比如还可以输入有数字作为参量的点、向量等。但AB两输入端必须为同类型数据（不能一个是数字，一个是非数字），否则会报错。  
+-   「[[Absolute\|Absolute]]」绝对值![](https://api2.mubu.com/v3/document_image/f35c1c4c-cf94-4ddd-ba41-b7e600d4b1d4-20454557.jpg)![](https://api2.mubu.com/v3/document_image/84d198b6-4b7e-471b-ae5a-c4565891ded6-20454557.jpg)  
+-   输入端：  
+	-   x:数字  
+-   输出端：  
+	-   y:绝对值  
+-   求x端输入数字的绝对值，正数的绝对值是它本身，负数的绝对值是它的相反数，0的绝对值是0。  
+-   输入端标记的数据类型是Data，比如还可以输入有数字作为参量的点、向量等。  
+-   「[[Factorial\|Factorial]]」阶乘![](https://api2.mubu.com/v3/document_image/dfefc1ae-852c-443a-9cee-b81bfd0a2c6a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1f3b4656-28ca-4c27-89d7-6d938aab480a-20454557.jpg)  
+-   输入端：  
+	-   N:正整数  
+-   输出端：  
+	-   F:阶乘结果  
+-   一个正整数的阶乘是所有小于及等于该数的正整数的积，即n!=1×2×3×.…×(n-1)×n,0的阶乘为1。![](https://api2.mubu.com/v3/document_image/fd023741-3046-4290-b905-0344b542f42a-20454557.jpg)  
+-   「[[Integer Division\|Integer Division]]」整除![](https://api2.mubu.com/v3/document_image/d6393f57-7ee0-4f77-89c3-5a10cdb12ef1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fff531af-1dc7-43b1-8a91-4e00302b39ca-20454557.jpg)  
+-   A整除Ｂ（对结果做四舍五入）  
+-   输入端：  
+	-   A：被除数  
+	-   B：除数  
+-   输出端：  
+	-   R：相除结果的整数部分  
+-   和Division用法基本一样，只不过结果是商的整数部分。  
+-   「[[Modulus\|Modulus]]」余除![](https://api2.mubu.com/v3/document_image/e2db8117-b1b5-4830-9111-436f28fc0807-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e4fd25e6-f82c-4c33-882f-ed54fbcde8a6-20454557.jpg)  
+-   数值相除求余数。  
+-   输入端：  
+	-   A：被除数  
+	-   B：除数  
+-   输出端：  
+	-   R：相除结果的整数部分  
+-   求A除以B的余数![](https://api2.mubu.com/v3/document_image/dacf5898-3909-4f0c-b231-f2a1aab98734-20454557.jpg)  
+-   「[[Mass Addition\|Mass Addition]]」数值累加![](https://api2.mubu.com/v3/document_image/5a5976cc-8c81-4038-a707-7acff35e698e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/af1d8de3-325d-4f91-b0ce-e3977e772f49-20454557.jpg)  
+-   累加 （列表中每个值与前面所有值相加）  
+-   输入端：  
+	-   I：数据  
+-   输出端：  
+	-   R：叠加总和  
+	-   Pr：每一步叠加的和  
+-   I端标记的数据类型是Data，比如输入有数字作为参量的点、向量等。![](https://api2.mubu.com/v3/document_image/ed14b9ce-4c5d-4560-97aa-decb8275592b-20454557.jpg)  
+-   「[[Mass Multiplication\|Mass Multiplication]]」数值累乘![](https://api2.mubu.com/v3/document_image/f30b0c37-2439-40ff-a090-f9203afb44b7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/93cd82c2-1d93-4e36-bea4-20c96be249d2-20454557.jpg)  
+-   数值累乘。（列表中每个值与上面所有值相乘）  
+-   输入端：  
+	-   I：数据  
+-   输出端：  
+	-   R：叠乘的积  
+	-   Pr：每一步叠乘的积  
+-   和Mass Addition类似，用法比较简单，端输入多为数列。![](https://api2.mubu.com/v3/document_image/e8d2fae5-0a8f-4c7b-a94a-2ca2e8f5c836-20454557.jpg)  
+-   端标记的数据类型是Dta,比如还可以输入有数字作为参量的点、向量等。需要注意两个向量相乘会得到其内积（注意和外积的区别），即向量a·向量b=|a||b|cosθ(θ是a,b在0-180°的夹角)，所以偶数个向量相乘会得到一个数字而非向量。  
+-   「[[Relative Differences\|Relative Differences]]」差异值![](https://api2.mubu.com/v3/document_image/f56c1a7f-9e5a-4949-8d0d-313ff20eedc8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/febba175-a753-4db5-a256-17a02078aebc-20454557.jpg)  
+-   数据列表中相邻数值的差异值 。（后一个减去前一个）  
+-   输入端：  
+	-   V数据  
+-   输出端：  
+	-   D:差值数据  
+-   连续用后一个数据减去前一个数据得到的结果，首项减自身所以结果的第一个值一直为0。![](https://api2.mubu.com/v3/document_image/4b65260c-3c00-4b8a-a4b9-b609970fc211-20454557.jpg)  
+-   输入端V标记的数据类型是Dta,同样可以输入有数字作为参量的点、向量等。  
+-   「[[equality\|equality]]」相等判断![](https://api2.mubu.com/v3/document_image/ec1fe3bf-7ace-45d5-b103-1fa52e2ec05e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cebf8349-739a-4492-a9e3-89dfb152d01a-20454557.jpg)  
+-   判断两个数字是否相等或不相等。  
+-   输入端：  
+	-   A：第一个值  
+	-   B：第二个值  
+-   输出端：  
+	-   “=”：若A等于B，输出True，否则输出False  
+	-   “≠”：若A不等于B，输出True，否则输出False  
+-   两个输出端其实互为补集，用其中一个就可以。  
+-   「[[Larger Than\|Larger Than]]」大于判断![](https://api2.mubu.com/v3/document_image/6ae8e2cf-d7f9-4b2a-83a2-3f1ccd7d73d2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f46e4045-ec5d-451b-83dc-b2c1ac8c58f0-20454557.jpg)  
+-   判断 数值A是否大于数值B（或大于等于）。  
+-   输入端：  
+	-   A：第一个值  
+	-   B：第二个值  
+-   输出端：  
+	-   “>”：若A大于B，输出True，否则输出False  
+	-   “>=”：若A大于等于B，输出True，否则输出False  
+-   该运算器常结合Dispatch来进行数据分流。![](https://api2.mubu.com/v3/document_image/ca16a25e-f653-4c1b-8d5e-32cd5a2d25bb-20454557.jpg)  
+-   「[[Similarity\|Similarity]]」约等于判断![](https://api2.mubu.com/v3/document_image/8ae9733e-d92f-4dc0-a376-845a7b02e20b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8748158f-66e8-4a5b-af7a-c49fc63eb9c8-20454557.jpg)  
+-   测试两个数字的相似性 ，通过设置差异比例值做判断。  
+-   输入端：  
+	-   A：数值A  
+	-   B：数值B  
+	-   T%：容差  
+-   输出端：  
+	-   =：布尔值（是否相似）  
+	-   dt：数值A和B的差值  
+-   判断数值A和B是否相似，输出布尔值，可以调节判断容差。![](https://api2.mubu.com/v3/document_image/41a868b6-d1ab-4186-aae3-f4ad11f0ce8d-20454557.jpg)  
+-   「[[Smaller Than\|Smaller Than]]」小于判断![](https://api2.mubu.com/v3/document_image/3809bb01-2632-419d-a345-11d9d67a1a65-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ca3a3887-bb00-44d9-ab8d-cfa00f97b95b-20454557.jpg)  
+-   判断数值A是否小于数值B（或小于等于）。  
+-   输入端：  
+	-   A：第一个值  
+	-   B：第二个值  
+-   输出端：  
+	-   “<”：若A小于B，输出True，否则输出False  
+	-   “<=”：若A小于等于B，输出True，否则输出False  
+-   该运算器常结合Dispatch来进行数据分流。  
+-   「[[Gate And\|Gate And]]」与门![](https://api2.mubu.com/v3/document_image/95ecd89a-ea7b-4cd1-9a24-52608bf12fed-20454557.jpg)![](https://api2.mubu.com/v3/document_image/bfc76145-7aec-4611-9228-4f140176e5cf-20454557.jpg)  
+-   必须所有输入的布尔值都为True，则输出布尔值才为True。  
+-   输入端：  
+	-   A:布尔值A  
+	-   B:布尔值B  
+-   输出端  
+	-   R:结果布尔值  
+-   与门、或门、非门、异或门等都是逻辑门的知识，大多在集成电路内常见，因为我们的GH类以电路图涉及逻辑的运用，所以也加入了这部分知识。我们知道布尔值包括True/Flse,对应1/0，这些逻辑门可以通过输入的布尔值输出指定的布尔结果。  
+-   与门逻辑是：  
+	-   只有输入端都为True时才会得True,否则得False。  
+	-   用1/0表达为（可看作乘法）：  
+		-   1和1得1,1和0得0,0和0得0。  
+-   「[[Gate Not\|Gate Not]]」非门![](https://api2.mubu.com/v3/document_image/7ae0d385-a215-4370-8b15-a08ee83573c3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fd778f24-db95-4790-b209-24ce6e32c4db-20454557.jpg)  
+-   将输入的布尔值反转后输出。  
+-   输入端：  
+	-   A:布尔值A  
+-   输出端：  
+	-   R:A的反向布尔值  
+-   非门逻辑是：  
+	-   输出反向布尔值，输入True得False,输入False得True。  
+	-   用1/0表达为：  
+	-   1得0,0得1。  
+-   「[[Gate Or\|Gate Or]]」或门![](https://api2.mubu.com/v3/document_image/54426831-da0b-402c-8ad6-39643bbd8220-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ea61daaf-a3e1-4503-b6d6-d7f064bdd2df-20454557.jpg)  
+-   至少有一个输入的布尔值为True，则输出布尔值就为True。  
+-   输入端：  
+	-   A:布尔值A  
+	-   B:布尔值B  
+-   输出端：  
+	-   R:结果布尔值  
+-   或门逻辑是：  
+	-   输入端只要其中有一个为True就会得True,只有全为Falsel时得False。  
+	-   用1/0表达为（可看作加法）：  
+		-   1和1得1,1和0得1,0和0得0。  
+-   「[[Gate Xor\|Gate Xor]]」异或门![](https://api2.mubu.com/v3/document_image/8ec40cc5-28c7-4390-ace2-cef44b0c10e8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/146e4c65-2c5c-4563-bc45-9a1650cff79a-20454557.jpg)  
+-   判断AB是否是不同的布尔值。 如果是不同的布尔值，则输出布尔值True，否则输出False。  
+-   输入端：  
+	-   A:布尔值A  
+	-   B:布尔值B  
+-   输出端：  
+	-   R:结果布尔值  
+-   异或门逻辑是：  
+	-   当两个输入端布尔值不相同时得True,相同时得False.  
+	-   用1/0表达为：  
+		-   1和1得0,1和0得1,0和0得0。  
+-   「[[Gate Majority\|Gate Majority]]」多数门![](https://api2.mubu.com/v3/document_image/29eb3649-a8b2-42bf-9f85-3197659cafb5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cb62954d-e651-40cb-baf6-7ef548a6d6c1-20454557.jpg)  
+-   ABC三个数据中，至少两个布尔值为True，则输出布尔值为True。  
+-   输入端：  
+	-   A:布尔值A  
+	-   B:布尔值B  
+	-   C:布尔值C  
+-   输出端：  
+	-   R:结果布尔值  
+-   多数决定门逻辑是：  
+	-   当输入端两个以上为True时才会得True,否则得False.  
+	-   用1/0表达为：  
+		-   3个1得1;2个1,1个0得1;1个1,2个0得0;3个0得0。  
+-   「[[Gate Nand\|Gate Nand]]」与非门![](https://api2.mubu.com/v3/document_image/0d81673a-5250-41d6-b9a5-87e4d09fc86b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/612b8577-b7fb-42fb-8321-071a9fd9a8b4-20454557.jpg)  
+-   只有所有输入的布尔值都为True，则输出布尔值才为False。  
+-   输入端：  
+	-   A:布尔值A  
+	-   B:布尔值B  
+-   输出端：  
+	-   R:结果布尔值  
+-   与非门逻辑是：  
+	-   只有输入端都为True时才会得False,否则得True。与非门可以看作是与门和非门的叠加，即“与门之后再取非”。  
+	-   用1/0表达为：  
+		-   1和1得0,1和0得1,0和0得1。  
+-   「[[Gate Nor\|Gate Nor]]」或非门![](https://api2.mubu.com/v3/document_image/99a16d76-08af-4ebc-bb56-f802ee24769c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0a19d5b8-078d-41d4-9e25-87d19094a922-20454557.jpg)  
+-   至少有一个输入的布尔值为True，则输出布尔值就为False。  
+-   输入端：  
+	-   A:布尔值A  
+	-   B:布尔值B  
+-   输出端：  
+	-   R:结果布尔值  
+-   或非门逻辑是：  
+	-   输入端只要其中有一个为True就会得False,只有全为False时得True。或非门可以看作是或门和非门的叠加，即“或门之后再取非”。  
+	-   用1/0表达为：  
+		-   1和1得0,1和0得0,0和0得1。  
+-   「[[Gate Xnor\|Gate Xnor]]」同或门![](https://api2.mubu.com/v3/document_image/1f1642eb-8c21-41c1-b8f2-27e1bfba2716-20454557.jpg)![](https://api2.mubu.com/v3/document_image/edf55d72-ead2-4e57-95d4-722aab2b70dc-20454557.jpg)  
+-   判断AB是否是相同的布尔值。 如果是相同的布尔值，则输出布尔值True，否则输出False。  
+-   输入端：  
+	-   A:布尔值A  
+	-   B:布尔值B  
+-   输出端：  
+	-   R:结果布尔值  
+-   同或门逻辑是：  
+	-   当两个输入端布尔值相同时得True,不相同时得Flse。同或门可以看作是异或门和非门的叠加，即“异或门后再取非”。  
+	-   用1/0表达为：  
+		-   1和1得1,1和0得0,0和0得1。  
+## Polynomials 高级运算  
+-   Maths类Polynomials组里是多项式相关运算电池。![](https://api2.mubu.com/v3/document_image/cd13ccf2-c566-443c-886f-b353d57a559e-20454557.jpg)  
+-   「[[Cube\|Cube]]」三次方![](https://api2.mubu.com/v3/document_image/73513599-0ef8-4c2d-a55e-880addcea00e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0892b8cd-280b-4c7e-8ae4-f02e72d9596a-20454557.jpg)  
+-   计算数值的三次方。  
+-   输入端：  
+	-   X:数据  
+-   输出端：  
+	-   y:数据的立方  
+-   输入端标记的数据类型是Data,比如还可以输入有数字作为参量的点、向量等。![](https://api2.mubu.com/v3/document_image/29a0525a-8a6a-45ca-89ec-d4a785ad5bef-20454557.jpg)  
+-   「[[Cube Root\|Cube Root]]」三次方根![](https://api2.mubu.com/v3/document_image/9e6979f7-813a-4976-b4d5-dd36cd93e0ed-20454557.jpg)![](https://api2.mubu.com/v3/document_image/770011d5-6e63-405c-8b18-6bff0a03440d-20454557.jpg)  
+-   数值的三次方根。  
+-   输入端  
+	-   X:数据  
+-   输出端  
+	-   y:数据的立方根  
+-   输入端标记的数据类型是Data,比如还可以输入有数字作为参量的点、向量等。  
+-   「[[Square\|Square]]」平方![](https://api2.mubu.com/v3/document_image/5073e0b7-bebd-459c-83e4-a0cd855e1dfe-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c3ec5719-5d9c-4e23-b5f9-0983dd51dda6-20454557.jpg)  
+-   计算数值的平方。  
+-   输入端：  
+	-   X:数据  
+-   输出端：  
+	-   y:数据的平方  
+-   输入端标记的数据类型是Data,比如还可以输入有数字作为参量的点、向量等。  
+-   「[[Square Root\|Square Root]]」平方根![](https://api2.mubu.com/v3/document_image/214f8492-9d2a-4254-b78d-a5ec35c4f070-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2535a1f2-7ebe-4e23-957e-7f9e89978c7e-20454557.jpg)  
+-   数值的平方根。  
+-   输入端：  
+	-   x:数据  
+-   输出端：  
+	-   y:数据的平方根  
+-   「[[One Over X\|One Over X]]」X的-1次方![](https://api2.mubu.com/v3/document_image/d008bb65-5646-4427-a8ea-e92ed06913c0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d1b212bf-a46f-4d3c-b12c-2b03cc5e5e75-20454557.jpg)  
+-   计算数值X的-1次方。  
+-   输入端：  
+	-   x:数据  
+-   输出端：  
+	-   y:数据的负一次方  
+-   「[[Power of 10\|Power of 10]]」10的x次![](https://api2.mubu.com/v3/document_image/91b1e0e1-2e9e-423a-8e7d-9d3b33032263-20454557.jpg)![](https://api2.mubu.com/v3/document_image/77402c98-8cd7-4be6-87b0-ed49a9c80b08-20454557.jpg)  
+-   10的x次方。  
+-   输入端  
+	-   x:数据  
+-   输出端  
+	-   y:数据10的次方结果  
+-   「[[Power of 2\|Power of 2]]」2的x次方![](https://api2.mubu.com/v3/document_image/97de7b8b-0aea-4390-a9a4-f065ed85c628-20454557.jpg)![](https://api2.mubu.com/v3/document_image/03c786e2-327f-4e84-a0a3-0192e369e66c-20454557.jpg)  
+-   2的x次方。  
+-   输入端：  
+	-   x:数据  
+-   输出端  
+	-   y:数据2的次方结果  
+-   「[[Power of E\|Power of E]]」e的x次方![](https://api2.mubu.com/v3/document_image/c7bfeb77-b5d5-491c-8ba1-f02cf4e10e40-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ad3059a2-f4c4-40f9-9fce-71ae75f47126-20454557.jpg)  
+-   常数 e 的x次方。  
+-   输入端：  
+	-   x:数据  
+-   输出端：  
+	-   y:数据e的次方结果  
+-   求输入数据的的次方。e,自然常数，为数学中一个常数，是一个无限不循环小数，其值约为2.718281828459045。它就像圆周率T,虚数单位i一样，是数学中最重要的常数之一。  
+-   「[[Log N\|Log N]]」对数![](https://api2.mubu.com/v3/document_image/5afb69dd-4b1b-45f3-bb6b-d959c7ff541d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a1bde15d-945f-4516-be83-35a5a77a7ef7-20454557.jpg)  
+-   计算一个值（V）以（B）为底的对数。  
+-   输入端：  
+	-   V:真数  
+	-   B:底数  
+-   输出端：  
+	-   R:对数  
+-   求对数值，如果a的x次方等于N(a>0,且a≠1)，那么x叫做以a为底N的对数，记作x=loga N。其中，a叫做对数的底数，N叫做真数。  
+-   「[[Logarithm\|Logarithm]]」10为底的对数![](https://api2.mubu.com/v3/document_image/dd978348-16e6-4490-929d-b360ec5f2919-20454557.jpg)![](https://api2.mubu.com/v3/document_image/774a29ab-07ff-4c9f-afcd-bd06ddf8ab26-20454557.jpg)  
+-   计算一个值的以10为底的对数。  
+-   输入端  
+	-   x:真数  
+-   输出端：  
+	-   y:对数  
+-   「[[Natural logarithm\|Natural logarithm]]」自然对数![](https://api2.mubu.com/v3/document_image/e6553e00-7622-4c21-b3d4-ccabcbac2899-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ac6ae672-d295-4502-a845-5cc0953015a6-20454557.jpg)  
+-   计算一个值的自然对数（以常数e为底的对数）。  
+-   输入端：  
+	-   x:真数  
+-   输出端：  
+	-   y:对数  
+## Script 脚本运算  
+-   大家知道GH里的电池其实就是一个个代码的打包，这样做的好处是易上手，但缺点也很明显，就是自由度不高，尤其当电池量较大的时候，会导致运算冗余运算速度变慢。所以这个组的电池就为我们提供了拓展，我们可以自由的编写代码去解决问题，可能一个需要很多电池组成的电池组，我们用几行简单的代码就解决了。![](https://api2.mubu.com/v3/document_image/ecabec1e-02f1-41be-b3ce-65d77635a8e7-20454557.jpg)  
+-   「[[evaluate\|evaluate]]」表达式![](https://api2.mubu.com/v3/document_image/747bd15a-7852-421f-89b7-f540fcac9b25-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6680ed23-f903-4b2a-9d69-3a2a17089adb-20454557.jpg)  
+-   允许用户以表达式的方式使用函数库中的功能。  
+-   输入端：  
+	-   F：函数表达式  
+	-   x：变量x  
+	-   y：变量y  
+-   输出端：  
+	-   r：结果  
+-   F端输入函数表达式，x和y的变量个数放大电池后可自由增减。例如我们经常用到的四舍五入函数F=round（x,y），x为输入的小数，y为精确的小数位数。![](https://api2.mubu.com/v3/document_image/1494b695-0bd7-4af1-acae-68ef12532b8a-20454557.jpg)  
+-   需要注意的是，变量输入端名称一定要和函数表达式匹配对应，否则会报错。![](https://api2.mubu.com/v3/document_image/bf945428-939c-4c28-a685-fb655a478c1a-20454557.jpg)  
+-   常用函数表达式可在Expression电池的函数列表中查询。  
+-   「[[expression\|expression]]」表达式![](https://api2.mubu.com/v3/document_image/40dfdaf6-3583-4fa9-b956-d989e60946de-20454557.jpg)![](https://api2.mubu.com/v3/document_image/928d0543-9122-4b1c-9cc4-5962d353359f-20454557.jpg)  
+-   Evaluate的升级版，双击电池可以打开编辑页面自由设置函数表达式，右上角还有可以调用的全部函数列表（列表函数同时可以应用于Evaluate），放大电池能自由增减输入端变量个数。![](https://api2.mubu.com/v3/document_image/fd24d6e4-62d5-405c-a279-3cff9e12b8b1-20454557.jpg)  
+-   输入端：  
+	-   x：变量x  
+	-   y：变量y  
+-   输出端：  
+	-   R：结果  
+-   注意函数列表中“[]”的内容表示不是必须有，例如Round四舍五入函数，表达式为Round(x[,d])。![](https://api2.mubu.com/v3/document_image/1d90ce5d-0475-4ff5-9e14-1d6b2482e12c-20454557.jpg)  
+	-   若写为Round(x)，代表不加d输入端，那么函数会将输入小数默认四舍五入到整数值。![](https://api2.mubu.com/v3/document_image/80a5ca9b-6ac2-4b9b-b156-3152da894dd2-20454557.jpg)  
+	-   若写为Round(x,d)，代表加入d输入端，那么四舍五入可以由d端控制小数位数。![](https://api2.mubu.com/v3/document_image/4927b1a9-0c2d-40c3-93ff-272a03db584a-20454557.jpg)  
+-   表达式列表中的字母必须保持和列表一致，比如Round(x,d)中的d不能是其他字母。还有一点是，Expression的输入端不是必须和变量名称保持一致，比如表达式Round(x,d)的输入端可以随意更改。![](https://api2.mubu.com/v3/document_image/d8364aa7-7fc6-4938-ade5-a56e5394c9af-20454557.jpg)  
+-   4.使用函数表达式能帮我们简化电池，例如如果我们有两个变量，想输出较大的一个。  
+	-   使用原生电池连接方法：![](https://api2.mubu.com/v3/document_image/9da9c543-74ab-412d-ab0f-b957f1f93816-20454557.jpg)  
+	-   如果使用f函数连接方法![](https://api2.mubu.com/v3/document_image/98cde796-f901-434b-b0f8-7a94a66916eb-20454557.jpg)  
+-   脚本前言  
+-   在用这几个工具之前，用户需要首先掌握对应的编程语言的语法，并了解 Grasshopper 中相关的规则，才能正确使用这些工具，因此在使用之前请先学习对应的编程语言。  
+-   大部分设计用户实际上并不需要使用这些工具。即便对于做很“高级”和“复杂”的设计来说也不需要。  
+-   很多时候由于行业内的一些偏见和误解，例如“看起来很酷”，会让用户认为必须掌握代码语言才能更好的使用参数化设计工具，做出更好的设计，这是不对的！实际上很多时候用户无法解决面临的问题，并不是缺少了一门编程语言的掌握，而是缺少解决该问题正确的思路和方法。  
+-   反映出用户相关的逻辑思维和分析能力需要提高，并对相关的行业知识了解度不够，在这种情况下花费大量时间去学习一门新的编程语言，其实没有任何作用的。希望刚开始学习参数化设计的用户对此保持清醒的认识。  
+-   C#、Python和VB都是编程语言，这里我们放在一起统一简单解释一下。  
+	-   C#:相对较底层的语言；入门门槛较高，可以做精雕细刻；GH的脚本语言，适合做GH插件的开发。  
+	-   Python:没有C#和VB底层，类似于工具包语言；入门门槛低，用来做大刀阔斧的快速处理。  
+	-   VB:相对较底层的语言；入门门槛较高，用法和C#相似；是Rhino的脚本语言，适合用来调用Rhino  
+-   「[[C#Script\|C#Script]]」C# 脚本![](https://api2.mubu.com/v3/document_image/4d9d7e9c-e7d9-4235-bcf6-b28a70cb1390-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3b0a827c-6f4f-4ce4-a4c9-91e55e627c6d-20454557.jpg)  
+-   基于 C#.NET 脚本的组件 。提供在 Grasshopper 中使用 C# 编程语言的脚本编写工具。双击组件打开编辑界面便可在其中编写脚本。![](https://api2.mubu.com/v3/document_image/31a979c0-3d9e-4017-a8c6-11699a48a5dc-20454557.jpg)  
+-   输入端：  
+	-   X:变量x  
+	-   y:变量y  
+-   输出端：  
+	-   out:Print/Reflect/Error信息  
+	-   A:输出结果  
+-   右键可以选择Remove out隐藏out输出端。  
+-   「[[GhPython Script\|GhPython Script]]」GhPython 脚本![](https://api2.mubu.com/v3/document_image/3647e7ff-e08c-454d-a012-290a8d35618a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/afb00cb8-2d4a-4cac-ae83-38fb3669819d-20454557.jpg)  
+-   基于 Python script 的组件 。提供在 Grasshopper 中使用 Python 编程语言的脚本编写工具。双击组件打开编辑界面便可在其中编写脚本。![](https://api2.mubu.com/v3/document_image/a8165c96-8a0b-4d37-bf98-69df75e039cf-20454557.jpg)  
+-   输入端：  
+	-   X:变量x  
+	-   y:变量y  
+-   输出端：  
+	-   out:运行信息  
+	-   a:输出结果  
+-   右键可以选择是否显示code输入端和out输出端。  
+-   「[[VB Script\|VB Script]]」VB 脚本![](https://api2.mubu.com/v3/document_image/df364ee6-3fea-4e31-abfb-eab2e5e464a0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d5a5921a-c900-43ff-b450-b78b3b372263-20454557.jpg)  
+-   基于 VB.NET script 的组件 。提供在 Grasshopper 中使用 VB编程语言的脚本编写工具。双击组件打开编辑界面便可在其中编写脚本。![](https://api2.mubu.com/v3/document_image/b4f2d38f-404b-4c3e-88a6-96a172bdfa65-20454557.jpg)  
+-   输入端：  
+	-   X:变量x  
+	-   y:变量y  
+-   输出端：  
+	-   out:Print/Reflect/Error信息  
+	-   A:输出结果  
+-   右键可以选择Remove out隐藏out输出端。  
+## Time 时间变量  
+-   Maths类Time组里是时间相关运算电池，很少用到。![](https://api2.mubu.com/v3/document_image/c5d3aba1-ec18-42e2-90c5-f37217aa28bf-20454557.jpg)  
+-   「[[Construct Date\|Construct Date]]」建立时间数据![](https://api2.mubu.com/v3/document_image/db47b33f-b9df-4aae-aa8b-19aa5c5643fb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3534470e-8010-45da-9490-df4d1822f2d7-20454557.jpg)  
+-   设定日期和时间  
+-   输入端：  
+	-   Y:年  
+	-   M:月  
+	-   D:日  
+	-   h:时  
+	-   m:分  
+	-   s:秒  
+-   输出端：  
+	-   D:日期时间  
+-   通过输入端来构建一个日期时间，右键可以选择是否设置为当前日期或时间。  
+-   「[[Construct Exotic Date\|Construct Exotic Date]]」建立日期数据![](https://api2.mubu.com/v3/document_image/ab80a010-4249-40fc-913f-19a2a4d73e31-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0867dcc9-f10d-4022-939d-f80107c7fd6f-20454557.jpg)  
+-   设定日期  
+-   输入端：  
+	-   Y:年  
+	-   M:月  
+	-   D:日  
+-   输出端：  
+	-   D:阴历日期  
+-   这个电池是将阳历日期转换成各自国家历法的日期，右键可以选择不同国家，若选择中国就是阴历日期。  
+-   「[[Construct Smooth Time\|Construct Smooth Time]]」建立相对时间![](https://api2.mubu.com/v3/document_image/9e96bcf4-c76f-45e0-aac5-124122654aa8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/858d82d1-42d7-4827-9f2b-1a4068afadb7-20454557.jpg)  
+-   设定一个相对时间  
+-   输入端：  
+	-   D:日  
+	-   H:时  
+	-   M:分  
+	-   S:秒  
+-   输出端：  
+	-   T:时间段  
+-   能够得到一个最高精确到秒的时间长度值。  
+-   「[[Construct Time\|Construct Time]]」建立时间![](https://api2.mubu.com/v3/document_image/b98ceeb1-b120-40ff-9273-1f0b0b8d57cf-20454557.jpg)![](https://api2.mubu.com/v3/document_image/78f9df97-7915-40aa-bd89-205b5a9a3531-20454557.jpg)  
+-   设定时间  
+-   输入端：  
+	-   H:时  
+	-   M:分  
+	-   S:秒  
+-   输出端：  
+	-   T:时间  
+-   右键可以设置为当前时间。  
+-   「[[Deconstruct Date\|Deconstruct Date]]」拆分日期时间![](https://api2.mubu.com/v3/document_image/f2ca2d08-78f3-4df8-9dd2-824be0f141dd-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ede0d0f6-b00d-401d-8541-9d363b26f787-20454557.jpg)  
+-   拆分日期和时间为数值  
+-   输入端：  
+	-   D:日期时间  
+-   输出端：  
+	-   Y:年  
+	-   M:月  
+	-   D:日  
+	-   h:时  
+	-   m:分  
+	-   s:秒  
+-   和Construct Date互为相反运算器，可以拆解日期时间。  
+-   「[[Combine Date Time\|Combine Date Time]]」合并日期&时间![](https://api2.mubu.com/v3/document_image/a05120d8-4350-4220-bbe1-c235b6f230b2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b5d05c1e-a7e2-494f-b3f0-6238c1228b70-20454557.jpg)  
+-   合并日期和时间  
+-   输入端：  
+	-   D:日期  
+	-   T:时间  
+-   输出端：  
+	-   R:合并结果  
+-   将单纯的日期和时间连接起来，注意用Construct Date创建的日期时间也可以输入，会自动将原电池的时分秒自动替换为T端输入的时间。![](https://api2.mubu.com/v3/document_image/7f18dc67-eed8-41d3-a9e2-ac104ee60ad7-20454557.jpg)  
+-   「[[Date Range\|Date Range]]」等分时刻![](https://api2.mubu.com/v3/document_image/276f58b4-1f0f-4405-9b88-4a59bd74d868-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b6484972-e408-488d-a04c-aacb8c9c4e4a-20454557.jpg)  
+-   把两个时间之间的跨度做等分，输出各个等时长的时刻。  
+-   输入端：  
+	-   A:起始日期或时间  
+	-   B:终止日期或时间  
+	-   N:等分节点个数  
+-   输出端：  
+	-   R:时间节点值  
+-   需要注意的是这里的等分单位是按照时间最小值“秒”来计算的。即使是日期的等分，也会按照“秒”的数量来计算，而不是“天”。![](https://api2.mubu.com/v3/document_image/53e2eb6a-4fc2-498a-8bd4-43697459e7f3-20454557.jpg)  
+-   「[[Interpolate Date\|Interpolate Date]]」插入时刻![](https://api2.mubu.com/v3/document_image/1add92ab-e773-4d8b-9823-18e90ba53e37-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e9bcf64b-1d6d-4f8b-a047-737230e33aa1-20454557.jpg)  
+-   在两个时间之间设定比值输出对应的时刻。  
+-   输入端：  
+	-   A:日期或时间值A  
+	-   B:日期或时间值B  
+	-   t:插值个数  
+-   输出端：  
+	-   D:插值时间值  
+-   简单来说这个运算器可以用一个公式来表示：D=A+(B-A)*t。  
+-   例如A=1时1分1秒，B=3时3分3秒，t=2,那么D=1时1分1秒+(3时3分3秒-1时1分1秒)*2=5时5分5秒。![](https://api2.mubu.com/v3/document_image/258a9d25-643a-491a-9f9c-f486b31809c9-20454557.jpg)  
+## Trig 三角函数  
+-   Maths类的Trig组里是和角度以及三角函数有关的电池。![](https://api2.mubu.com/v3/document_image/dd5efe09-dbfd-44b9-943c-f9103da3bc0a-20454557.jpg)  
+-   「[[Cosine\|Cosine]]」三角函数：余弦值![](https://api2.mubu.com/v3/document_image/a1d9fe60-e93b-4de7-a248-39fa897f8711-20454557.jpg)![](https://api2.mubu.com/v3/document_image/54f1aec7-89de-403e-8c56-a57f32076b6e-20454557.jpg)  
+-   输入端：  
+	-   X:数据  
+-   输出端：  
+	-   y:余弦值  
+-   在直角三角形中，某锐角的相临直角边和斜边的比，叫做该锐角的余弦。![](https://api2.mubu.com/v3/document_image/88106857-40a4-4939-b6cf-592b70d119ac-20454557.jpg)  
+-   注意输入数值按角度计量的话是弧度制。![](https://api2.mubu.com/v3/document_image/d2cef894-00ed-4838-86a9-5c732ae0036c-20454557.jpg)  
+-   输入端标记的数据类型是Data，比如还可以输入有数字作为参量的点、向量等。![](https://api2.mubu.com/v3/document_image/62d5ed3e-02c9-4432-8e76-a5818c518f1e-20454557.jpg)  
+-   「[[Sinc\|Sinc]]」辛格函数![](https://api2.mubu.com/v3/document_image/a06a073c-4f49-4594-a05e-c69c8597b866-20454557.jpg)![](https://api2.mubu.com/v3/document_image/30c14f59-12df-48e2-9f73-c7e06816a71f-20454557.jpg)  
+-   计算一个值的 sinc函数，又称辛格函数，(Sinus Cardinalis)。  
+-   输入端：  
+	-   x:数据  
+-   输出端  
+	-   y:辛格函数值  
+-   注意输入数值按角度计量的话是弧度制，辛格函数在我们的Graph MapperE电池中也有。![](https://api2.mubu.com/v3/document_image/aeee82ff-f904-4a55-be71-5538bd3697e2-20454557.jpg)  
+-   输入端标记的数据类型是Data，比如还可以输入有数字作为参量的点、向量等。  
+-   「[[Sine\|Sine]]」三角函数：正弦值![](https://api2.mubu.com/v3/document_image/212ebaf4-f84c-4c4d-945d-7fd4ed4f7be4-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1c5e3d4f-90cd-4692-a0a2-a000884fdae2-20454557.jpg)  
+-   在直角三角形中，某锐角的相对直角边和斜边的比，叫做该锐角的正弦。![](https://api2.mubu.com/v3/document_image/e55d2e3d-27b5-4819-b811-e56311842ac9-20454557.jpg)  
+-   注意输入数值按角度计量的话是弧度制。  
+-   输入端标记的数据类型是Data，比如还可以输入有数字作为参量的点、向量等。  
+-   「[[Tangent\|Tangent]]」三角函数：正切值![](https://api2.mubu.com/v3/document_image/0d509031-c341-48b7-acb1-6dc8e80398c7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f8858ee6-4bab-4d48-846f-643ddcd0d929-20454557.jpg)  
+-   在直角三角形中，某锐角的相对直角边和相邻直角边的比，叫做该锐角的正切。![](https://api2.mubu.com/v3/document_image/b144b4e0-69f3-40a0-a3ba-e49a364831ed-20454557.jpg)  
+-   注意输入数值按角度计量的话是弧度制。  
+-   输入端标记的数据类型是Data，比如还可以输入有数字作为参量的点、向量等。  
+-   「[[ArcCosine\|ArcCosine]]」反余弦![](https://api2.mubu.com/v3/document_image/8affb5b6-b4fe-4376-9ca6-c064f6baad50-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5f5f333c-aacb-4538-be3f-27d9bc47549e-20454557.jpg)  
+-   反余弦：计算余弦值对应的角度。  
+-   输入端：  
+	-   X:数据  
+-   输出端：  
+	-   y:反余弦值  
+-   余弦函数的反三角函数，注意输出数值按角度计量的话是弧度制。  
+-   输入端标记的数据类型是Data，比如还可以输入有数字作为参量的点、向量等。  
+-   「[[ArcSine\|ArcSine]]」反正弦![](https://api2.mubu.com/v3/document_image/511eedb2-b5e2-4509-a08d-775f37aced5d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f2c0f81b-a53d-4fb5-a376-fb746a9a947f-20454557.jpg)  
+-   反正弦：计算正弦值对应的角度。  
+-   输入端：  
+	-   x:数据  
+-   输出端：  
+	-   y:反正弦值  
+-   正弦函数的反三角函数，注意输出数值按角度计量的话是弧度制。  
+-   输入端标记的数据类型是Data，比如还可以输入有数字作为参量的点、向量等。  
+-   「[[ArcTangent\|ArcTangent]]」反正切![](https://api2.mubu.com/v3/document_image/cb5e915f-69f4-42eb-a824-72f0fe7bef80-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e5c9e2a6-14e8-4904-9935-87e6fddc11be-20454557.jpg)  
+-   反正切：计算正切值对应的角度。  
+-   输入端：  
+	-   x:数据  
+-   输出端：  
+	-   y:反正切值  
+-   正切函数的反三角函数，注意输出数值按角度计量的话是弧度制。  
+-   输入端标记的数据类型是Data，比如还可以输入有数字作为参量的点、向量等。  
+-   「[[CoSecant\|CoSecant]]」三角函数：余割值![](https://api2.mubu.com/v3/document_image/4a29f382-615f-4544-9ce2-e2651f7dc89c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0dd48c9b-c9d5-4b79-87d0-ae483f241323-20454557.jpg)  
+-   计算三角函数：余割值。  
+-   输入端：  
+	-   x:数据  
+-   输出端  
+	-   y:余割值  
+-   正弦函数的倒数，在直角三角形中，斜边和某锐角的相对直角边的比，叫做该锐角的余割。![](https://api2.mubu.com/v3/document_image/1246648f-9efb-4d97-920a-6c74a6ead1c2-20454557.jpg)  
+-   注意输入数值按角度计量的话是弧度制。![](https://api2.mubu.com/v3/document_image/390a8784-b431-4404-a22c-a430893c8004-20454557.jpg)  
+-   输入端标记的数据类型是Data,但是输入点和向量会报错。![](https://api2.mubu.com/v3/document_image/a858a5ee-3b5a-4cf8-8b49-acf1881a7238-20454557.jpg)  
+-   「[[CoTangent\|CoTangent]]」三角函数：余切值![](https://api2.mubu.com/v3/document_image/db91e0af-74e3-492e-9d3d-5309a72d525a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c5eb19dc-fc47-443e-bfc2-99df248a9ffe-20454557.jpg)  
+-   计算三角函数：余切值。  
+-   输入端：  
+	-   ×:数据  
+-   输出端：  
+	-   y:余切值  
+-   正切函数的倒数，在直角三角形中，某锐角的相邻直角边和相对直角边的比，叫做该锐角的余切。![](https://api2.mubu.com/v3/document_image/9d3f4192-ce6e-4eef-a851-9f5ebe8f647c-20454557.jpg)  
+-   注意输入数值按角度计量的话是弧度制。  
+-   输入端标记的数据类型是Data,但是输入点和向量会报错。  
+-   「[[Secant\|Secant]]」三角函数：正割值![](https://api2.mubu.com/v3/document_image/9e4fc1a0-df03-4ae6-b093-6e1adb2cc3dc-20454557.jpg)![](https://api2.mubu.com/v3/document_image/51fd6369-b8bb-4e32-be3b-39b6d6b05799-20454557.jpg)  
+-   计算三角函数：正割值。  
+-   输入端：  
+	-   x:数据  
+-   输出端：  
+	-   y:正割值  
+-   余弦函数的倒数，在直角三角形中，斜边和某锐角的相临直角边的比，叫做该锐角的正割。![](https://api2.mubu.com/v3/document_image/f37ea6e3-8fc6-492f-ab0a-9291e1dac0b4-20454557.jpg)  
+-   注意输入数值按角度计量的话是弧度制。  
+-   输入端标记的数据类型是Data,但是输入点和向量会报错。  
+-   「[[degrees\|degrees]]」转角度单位![](https://api2.mubu.com/v3/document_image/c77f6315-ea13-4670-9b87-81b65409f729-20454557.jpg)![](https://api2.mubu.com/v3/document_image/33bb3c74-9110-43a9-87b3-5c56508f95cd-20454557.jpg)  
+-   将弧度单位 转化为 角度单位 对应的数值。  
+-   输入端：  
+	-   R:弧度值  
+-   输出端：  
+	-   D:角度值  
+-   用法类似Radians,不过弧度转角度除了用这个运算器还可以在右键菜单的Expression Editor里设置。![](https://api2.mubu.com/v3/document_image/8ebe1d56-5dff-4da5-ba07-8a47fa875d2a-20454557.jpg)  
+-   「[[Radians\|Radians]]」转弧度单位![](https://api2.mubu.com/v3/document_image/33b7a54a-41bb-4f7e-a1b5-0bf322cfa7ea-20454557.jpg)![](https://api2.mubu.com/v3/document_image/28a27df9-6fe2-4404-8455-9b56c5473f8b-20454557.jpg)  
+-   将角度单位 转化为 弧度单位 对应的数值。  
+-   输入端：  
+	-   D:角度值  
+-   输出端：  
+	-   R:弧度值  
+-   「[[Right Trigonometry\|Right Trigonometry]]」直角三角的角度和边长![](https://api2.mubu.com/v3/document_image/ecbce646-13a1-4459-a5cd-5b27bd92dcb4-20454557.jpg)![](https://api2.mubu.com/v3/document_image/11101b18-2aef-4c6f-8ce9-5c667244be43-20454557.jpg)  
+-   直角三角形的角度值和边长推算。  
+-   输入端：  
+	-   α:α角度值  
+	-   β:β角度值  
+	-   P:P边长  
+	-   Q:Q边长  
+	-   R:R边长  
+-   输出端：  
+	-   α:α角度值  
+	-   β:β角度值  
+	-   P:P边长  
+	-   Q:Q边长  
+	-   R:R边长  
+-   输入端不需要全部输入，当输入值能确定唯一三角形后，变会自动生成全部输出值，这个知识点类似我们中学时学的证明全等三角形的法则“边边边”、“角边角”、“边角边”之类的，这个电池针对的是直角三角形，相当于已经有一个角度为90度了，所以比Triangle Trigonometry电池少一个角度输入和输出端。注意输入输出的角度数值是弧度制。![](https://api2.mubu.com/v3/document_image/c38af31d-b79a-41ac-97d4-debf36ece0e6-20454557.jpg)  
+-   「[[Triangle Trigonometry\|Triangle Trigonometry]]」任意三角的角度和变长![](https://api2.mubu.com/v3/document_image/94d4764c-868d-487b-9931-fc0f4876cbbb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3ce1b0ad-ada9-48cf-9cf4-e0bd1cb0b66f-20454557.jpg)  
+-   任意三角形的角度值和边长推算。  
+-   输入端：  
+	-   α:α角度值  
+	-   β:β角度值  
+	-   γ:γ角度值  
+	-   A:A边长  
+	-   B:B边长  
+	-   C:C边长  
+-   输出端：  
+	-   α:α角度值  
+	-   β:β角度值  
+	-   γ:γ角度值  
+	-   A:A边长  
+	-   B:B边长  
+	-   C:C边长  
+-   输入端不需要全部输入，当输入值能确定唯一三角形后，变会自动生成全部输出值，这个知识点类似我们中学时学的证明全等三角形的法则“边边边”、“角边角”、“边角边”之类的。注意输入输出的角度数值是弧度制。![](https://api2.mubu.com/v3/document_image/6709a66d-cbf4-462a-bb6c-3eaa35c947c7-20454557.jpg)  
+-   「[[Centroid\|Centroid]]」三角形的中线和重心![](https://api2.mubu.com/v3/document_image/a8bf711a-89af-4f77-8c2d-fcac4051242a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/283d9dbc-00ae-45d6-9ab2-dc62dbd55c67-20454557.jpg)  
+-   输出三角形的中线和重心。  
+-   输入端：  
+	-   A:点A  
+	-   B:点B  
+	-   C:点C  
+-   输出端：  
+	-   C:重心点坐标  
+	-   AB:AB边中线  
+	-   BC:BC边中线  
+	-   CA:CA边中线  
+-   重心是三条中线的交点。![](https://api2.mubu.com/v3/document_image/99e1b5de-e2b4-4eb0-baa7-d21af13f19c2-20454557.jpg)  
+-   重心的一些性质：  
+	-   重心到顶点的距离与重心到对边中点的距离之比为2:1.  
+	-   重心和三角形3个顶点组成的3个三角形面积相等。  
+	-   重心到三角形3个顶点距离的平方和最小。  
+	-   在平面直角坐标系中，重心的坐标是顶点坐标的算术平均。  
+	-   重心是三角形内到三边距离之积最大的点。  
+	-   三角形ABC的重心为G,点P为其内部任意一点，则3PG²=(AP²+BP²+CP²)-1/3(AB²+BC²+CA²).  
+	-   在三角形ABC中，过重心G的直线交AB、AC所在直线分别于P、Q,则AB/AP+AC/AQ=3  
+	-   从三角形ABC的三个顶点分别向以他们的对边为直径的圆作切线，所得的6个切点为Pi,则P均在以重心G为圆心，r=1/18(AB2+BC2+CA2)为半径的圆周上。  
+	-   G为三角形ABC的重心，P为三角形ABC所在平面上任意一点，则PA²+PB²+PC²=GA²+GB²+GC²+3PG²。  
+-   「[[Circumcentre\|Circumcentre]]」三角形的垂直平分线及外心![](https://api2.mubu.com/v3/document_image/824c0dde-3acb-4b16-bd79-6efff91c33b8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f28a3a08-f835-4e89-8501-a888e9b4c5c8-20454557.jpg)  
+-   输出三角形的垂直平分线及外心。  
+-   输入端：  
+	-   A:点A  
+	-   B:点B  
+	-   C:点C  
+-   输出端：  
+	-   C:外心点坐标  
+	-   AB:AB边中点和外心所在直线在三角形内部部分  
+	-   BC:BC边中点和外心所在直线在三角形内部部分  
+	-   CA:CA边中点和外心所在直线在三角形内部部分  
+-   外心是三条边中垂线的交点，到三个角点距离相等，是三角形外接圆的圆心。![](https://api2.mubu.com/v3/document_image/7e36dbcc-f28f-465d-9066-d8e2b008ecc9-20454557.jpg)  
+-   外心的一些性质：  
+	-   锐角三角形外心在三角形内部。  
+	-   直角三角形外心在三角形斜边中点。  
+	-   钝角三角形外心在三角形外。  
+-   「[[Incentre\|Incentre]]」三角形的平分线及内切圆心![](https://api2.mubu.com/v3/document_image/b4be565c-1557-4355-aab9-f5dad9510c5a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ca3ad5e9-e9b1-4675-9c81-30ad43838a3c-20454557.jpg)  
+-   输出三角形角平分线及内切圆心。  
+-   输入端：  
+	-   A:点A  
+	-   B:点B  
+	-   C:点C  
+-   输出端：  
+	-   I:内心点坐标  
+	-   A:角A的角平分线  
+	-   B:角B的角平分线  
+	-   C:角C的角平分线  
+-   内心是三个角角平分线的交点，到三条边距离相等，是三角形内切圆的圆心。![](https://api2.mubu.com/v3/document_image/bb47df9b-3460-4c58-a773-71297958e8b9-20454557.jpg)  
+-   内心的一些性质：  
+	-   若三边分别为a,b,c,周长为d,则内心的坐标为(a/d,b/d,c/d)。  
+	-   若直角三角形的内切圆半径为r,两直角边为a和b,斜边为c,则r=(a+b-c)/2。  
+-   「[[Orthocentre\|Orthocentre]]」三角形的高线和正交中心![](https://api2.mubu.com/v3/document_image/b39fbcac-5a1d-4308-942f-200a670a0548-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b9e77ddb-8f84-4169-8e68-2d33e6b2d51d-20454557.jpg)  
+-   输出三角形每条边的高线和正交中心。  
+-   输入端：  
+	-   A:点A  
+	-   B:点B  
+	-   C:点C  
+-   输出端：  
+	-   C:垂心点坐标  
+	-   AB:AB边垂线  
+	-   BC:BC边垂线  
+	-   CA:CA边垂线  
+-   垂心是三条边垂线的交点。![](https://api2.mubu.com/v3/document_image/89390884-54b0-4a58-832e-0c96a3d72fdd-20454557.jpg)  
+-   垂心的一些性质：  
+	-   锐角三角形垂心在三角形内部。  
+	-   直角三角形垂心在三角形直角顶点。  
+	-   钝角三角形垂心在三角形外部。  
+	-   三角形三个顶点，三个垂足，垂心这7个点可以得到6组四点共圆。![](https://api2.mubu.com/v3/document_image/0fe959fa-abcc-4bea-be5f-b6b706f0fcd1-20454557.jpg)  
+## Util 算法实用  
+-   Maths类的Util组，和Params类里的Util组类似，会有一些和数字有关的实用工具。![](https://api2.mubu.com/v3/document_image/12d14435-a754-47e4-ac22-7b0b5a6f37b2-20454557.jpg)  
+-   「[[Epsilon\|Epsilon]]」数学概念 ε![](https://api2.mubu.com/v3/document_image/343640b3-0758-4eaa-aedd-917fd59153be-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0f09e7b6-c1e0-41b5-b787-22cd0c38efdc-20454557.jpg)  
+-   epsilon（ε）：ε是高等数学课程中涉及的一个概念，ε在极限讨论中代表一个任意小的正数，非常接近于零，但不等于零。  
+-   输入端：  
+	-   N：倍数  
+-   输出端：  
+	-   y：输出常量  
+-   希腊语的第五个字母，ε代表任意给定的很小的数，只是一个过程量，不是一个具体的数，常作为参数设置。  
+-   只有输入端N在为1时，y端输出Epsilon,其余数值均输出0。  
+-   「[[Golden Ratio\|Golden Ratio]]」黄金比例值 Φ![](https://api2.mubu.com/v3/document_image/004a7761-a4a0-4766-bc68-d812af2ee7f1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4c1e1cab-a948-47ed-abab-028a5ea2def2-20454557.jpg)  
+-   输入端：  
+	-   N:倍数  
+-   输出端：  
+	-   y:输出常量  
+-   数学常数Φ：Φ代表黄金比例值，是一个定义为 (√5-1)/2的无理数。约为 0.618  
+-   黄金比例在这里的值是φ=（√5+1）/2≈1.618，也有φ=（√5-1）/2≈0.618的说法，这是因为黄金比例是个神奇的数字，即1.618的倒数等于0.618，而0.618的倒数等于1.618，所以0.618和1.618我们都可以看作是黄金比例。![](https://api2.mubu.com/v3/document_image/e4c1f3f7-e2d4-4b59-9398-d0a40c423c95-20454557.jpg)  
+-   由于黄金比例是公认的最能引起美感的比例，所以经常应用在美学领域，比如经典的斐波那契螺旋线。![](https://api2.mubu.com/v3/document_image/99b5db9b-26f0-4a82-882b-c35e1ed4e994-20454557.jpg)  
+-   「[[Natural logarithm\|Natural logarithm]]」数字常数 е![](https://api2.mubu.com/v3/document_image/9558d41f-151f-43e7-975b-a2425bb11bfb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e841fcf2-2a2e-4c55-b0e3-b77a2e94bd95-20454557.jpg)  
+-   输入端：  
+	-   N:倍数  
+-   输出端：  
+	-   y:输出常量  
+-   自然常数≈2.718281828459045，它就像圆周率π和虚数单位i,是数学中最重要的常数之一。注意自然常数和自然对数在GH里的英文均是Natrual logarithm,需要加以区分，我们在Maths类的Polynomials组讲到过自然对数。  
+-   「[[Pi\|Pi]]」圆周率常数 π![](https://api2.mubu.com/v3/document_image/84f3de1b-fc2c-4c04-b5f1-2c35cb1e2f0b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/712b1b0e-ab69-4462-bf3b-6335185b4eb1-20454557.jpg)  
+-   数学常数π：圆周率（π）是圆的周长与直径的比值，约等于3.14  
+-   输入端：  
+	-   N：倍数  
+-   输出端：  
+	-   y：输出常量  
+-   π≈3.141592654，是圆的周长与直径的比值，通常以3.14作为近似值计算，我们在计算圆、球体、三角函数等情况时会经常用到它。  
+-   注意当计算结果为π的0.5的倍数时，会显示N0.5 π，其他情况下会计算后保留六位小数。  
+-   「[[Extremes\|Extremes]]」极值![](https://api2.mubu.com/v3/document_image/aee00850-2bc0-4cbf-9931-03388408cb14-20454557.jpg)![](https://api2.mubu.com/v3/document_image/28e73ba1-a997-490b-b4cf-3dbd7cb67be5-20454557.jpg)  
+-   在多个数中输出最小数（v-）和 最大数（v+）  
+-   输入端：  
+	-   A:列表A  
+	-   B:列表B  
+-   输出端：  
+	-   V:极小值  
+	-   V+:极大值  
+-   判断输入数据对应值的大小，输出极小或极大值，电池放大后可增加输入端个数。![](https://api2.mubu.com/v3/document_image/65f71133-53e4-48f9-b1fd-e05f641348ed-20454557.jpg)  
+-   输入端标记的数据类型是Dta,还可以输入以数字为参量的数据比如向量，通过向量的长度作为极值判断依据。不过输入点会报措。![](https://api2.mubu.com/v3/document_image/d0c80f80-eb75-41d1-a256-ae28724ae3b1-20454557.jpg)  
+-   「[[Maximum\|Maximum]]」最大值![](https://api2.mubu.com/v3/document_image/5de4a247-17d2-4a86-af29-6c6b7658e6b7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1e78e0c1-b8da-48a6-a804-e24dfe7f025f-20454557.jpg)  
+-   在两个数之间输出最大的数  
+-   输入端：  
+	-   A:第一个值  
+	-   B:第二个值  
+-   输出端：  
+	-   R:输出A和B中较大的值  
+-   常用来限制数据列的最小边界。![](https://api2.mubu.com/v3/document_image/dacf4014-cecb-42dc-af92-b83c65a89500-20454557.jpg)  
+-   「[[minimum\|minimum]]」最小值![](https://api2.mubu.com/v3/document_image/a7eb0fe3-35a5-4dd7-8c59-3a13b1dd231e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a1849034-a9f1-4d50-a1b9-81c0d17aacd3-20454557.jpg)  
+-   在两个值之间输出最小值。  
+-   输入端：  
+	-   A:第一个值  
+	-   B:第二个值  
+-   输出端：  
+	-   R:输出A和B中较小的值  
+-   常用来限制数据列的最大边界。![](https://api2.mubu.com/v3/document_image/7ebc87c5-d133-488d-bcd5-d4217099d011-20454557.jpg)  
+-   「[[Round\|Round]]」数值取整![](https://api2.mubu.com/v3/document_image/7d5b2064-5979-4489-835b-1e781427e84e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/9fa2e240-32dc-42d1-a4d2-14e73ccd39c6-20454557.jpg)  
+-   把数值转化为整数。  
+-   输入端：  
+	-   X:数值  
+-   输出端  
+	-   N:四舍五入值  
+	-   F:不大于x的最大整数值  
+	-   C:不小于x的最小整数值  
+-   F为Floor，可以理解为地板值；C为Ceiling，可以理解为天花板值；N的四舍五入值也可以通过连接Integer整数运算器来实现。![](https://api2.mubu.com/v3/document_image/3369efc0-baca-4b40-949b-f9a33a03feca-20454557.jpg)  
+-   这个运算器可以用来控制小数位数。![](https://api2.mubu.com/v3/document_image/d370d0eb-de8d-4d40-b93a-faa10fea7132-20454557.jpg)  
+-   「[[Average\|Average]]」算数平均值![](https://api2.mubu.com/v3/document_image/49b4bc76-7e65-4f29-800d-2301cb209e43-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7befe896-26df-436c-a693-c0bd4b833466-20454557.jpg)  
+-   一组数值的算术平均值。  
+-   输入端：  
+	-   I:数值  
+-   输出端  
+	-   AM:算数平均数  
+-   Paneli连接会出现运算器报错的现象，这个时候在中间加一个Numberi运算器过渡一下即可。![](https://api2.mubu.com/v3/document_image/c61cfd4d-6486-455f-9fcd-a5d4145d83f5-20454557.jpg)  
+-   输入端标记的数据类型是Data，比如还可以输入有数字作为参量的点、向量等。例如求直线的中点和多边形的中心点。![](https://api2.mubu.com/v3/document_image/9ac79156-e332-4f17-979e-23488b37a018-20454557.jpg)  
+-   「[[Blur Numbers\|Blur Numbers]]」模糊数值![](https://api2.mubu.com/v3/document_image/3a8c74c3-0a23-4a85-9f96-baaf950cce89-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8bd83e8e-b7f4-4f69-82d2-50bcdf65997c-20454557.jpg)  
+-   通过对相邻数值做平均计算以“模糊”数字列表 。  
+-   输入端：  
+	-   N:数字列表  
+	-   S:强度(0-1)  
+	-   I:迭代次数  
+	-   L:是否锁定首尾数值  
+	-   W:是否循环列表  
+-   输出端：  
+	-   N:模糊后数列  
+-   总的来说就是可以通过相邻数字间的运算将数字差距抹平变小。其中解释一下，端迭代次数越大，抹平运算的次数越多，模糊强度也越大；w端若为循环列表，会将首尾两个数字间也进行运算。![](https://api2.mubu.com/v3/document_image/bb9e4cee-6c7b-40ec-8fff-399027526b02-20454557.jpg)  
+-   「[[Interpolate data\|Interpolate data]]」数值插值![](https://api2.mubu.com/v3/document_image/197d6c90-34fa-46c6-956b-b2b88b5ace93-20454557.jpg)![](https://api2.mubu.com/v3/document_image/91fd395d-f849-480c-ac89-26888c5d8b14-20454557.jpg)  
+-   对一个数值列表做插值计算，输出连续的数值。  
+-   输入端：  
+	-   D:取样数据  
+	-   t:插入位置参数(0-1)  
+-   输出端：  
+	-   V:t值处数据  
+-   这个运算器有点类似于Evaluate Curve,相当于给数据序号区间重新定义到0-1，然后取t值对应序号的数据，下图是默认Linear线性插值的工作原理。![](https://api2.mubu.com/v3/document_image/901bf4d0-9cae-4acc-8c90-ecee02863644-20454557.jpg)  
+-   右键可以选择不同的取值方式，后两种比较难理解，感兴趣可以自行百度：  
+	-   Bock:输出距离最近序号的取样数据。  
+	-   Linear（默认）：线性插值法。  
+	-   Cubic:三次插值法。  
+	-   Catmull:和三次插值法类似，只不过在取样数据间没有超调量。  
+-   输入端标记的数据类型是Data,比如还可以输入有数字作为参量的点、向量等。  
+-   「[[Smooth Numbers\|Smooth Numbers]]」延迟数值的变化![](https://api2.mubu.com/v3/document_image/06abe4cd-d7d2-49b1-a4af-fb0777b6bcfd-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1e1ac3df-a0a3-4268-953f-8e7a86c32f86-20454557.jpg)  
+-   输入端的变化数据延迟输出，右键可以选择延迟的总时间。  
+-   输入端：  
+	-   N：变化数值  
+-   输出端：  
+	-   N：柔滑后数值  
+-   常用的一个情景是在摄像机控制时，它会让镜头的移动更加顺滑。![](https://api2.mubu.com/v3/document_image/e2b09cd1-296e-4139-a16f-25a4d67bf299-20454557.jpg)  
+-   「[[Truncate\|Truncate]]」剔除极值![](https://api2.mubu.com/v3/document_image/12db10bb-9cfc-45e8-b458-dc7ce163a794-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ef86d7cf-eef2-4269-8f57-ca6e642768b2-20454557.jpg)  
+-   剔除数值列表中的极值。  
+-   输入端：  
+	-   I:数据列表  
+	-   t:删节比例因子  
+-   输出端：  
+	-   T:删节后数据  
+-   根据端输入的删节比例因子首尾删节等量数据，需要注意的是删节后数据会自动按大小重新排序。![](https://api2.mubu.com/v3/document_image/b602e3dc-67d1-4718-ac21-791d16b4b0f9-20454557.jpg)  
+-   「[[Weighted Average\|Weighted Average]]」加权平均值![](https://api2.mubu.com/v3/document_image/c075fc1b-93f0-44e2-b903-ceb87ea64118-20454557.jpg)![](https://api2.mubu.com/v3/document_image/022692a6-c09b-417a-a83d-c104a4c742ad-20454557.jpg)  
+-   一组数值的加权平均值。  
+-   输入端：  
+	-   I:数据列表  
+	-   W:权重  
+-   输出端：  
+	-   AM:加权平均值  
+-   输入端W的权重总和一般为1，加权平均结果等于各项数据乘以对应权重后的相加之和。![](https://api2.mubu.com/v3/document_image/eee64d4a-0d71-44a1-b060-e78d907c5760-20454557.jpg)  
+-   当输入端w的权重总和不为1时，会将权重值投影到0-1区间后，再与各项数据相乘后求和。![](https://api2.mubu.com/v3/document_image/58667183-1147-4724-bdd5-5892ef252589-20454557.jpg)  
+-   「[[Complex Argument\|Complex Argument]]」负数的辐角![](https://api2.mubu.com/v3/document_image/a728ac18-12a1-4ee3-aa60-23ed134e0a67-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a21e6d8b-4a54-4e98-9ebb-b6221fe5ee5e-20454557.jpg)  
+-   复数的辐角。  
+-   输入端：  
+	-   C:复数  
+-   输出端：  
+	-   A:辐角值（弧度制）  
+-   任意一个不为零的复数z=a+bi的辐角为tan0=b/a,一般辐角有无限多个值，且这些值相差2π的整数倍。把适合于0<9≤2π的辐角的值，叫做辐角的主值。![](https://api2.mubu.com/v3/document_image/410f3620-f65a-4711-bcb0-5d4af8ac4b36-20454557.jpg)  
+-   「[[Complex Components\|Complex Components]]」拆解复数![](https://api2.mubu.com/v3/document_image/b2da3104-8a81-418f-a041-bcdfd6c78847-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6858ebfa-4315-43c7-9d31-832069d1d044-20454557.jpg)  
+-   从复数中提取实部和虚部  
+-   输入端：  
+	-   C:复数  
+-   输出端：  
+	-   R:实部  
+	-   i:虚部  
+-   拆解一个复数的实部和虚部。![](https://api2.mubu.com/v3/document_image/cdb946fa-31bf-4fde-9834-855eb9d0091b-20454557.jpg)  
+-   「[[Complex Conjugate\|Complex Conjugate]]」共轭复数![](https://api2.mubu.com/v3/document_image/2726006d-2d6d-4e87-ba5f-38ed8c3b4014-20454557.jpg)![](https://api2.mubu.com/v3/document_image/843ab6ee-f3e7-4176-9c61-f65dc49c4ba3-20454557.jpg)  
+-   共轭复数  
+-   输入端：  
+	-   C:复数  
+-   输出端：  
+	-   C:共轭复数  
+-   共轭复数，两个实部相等，虚部互为相反数的复数互为共轭复数。当虚部不为零时，共轭复数就是实部相等，虚部相反，如果虚部为零，其共轭复数就是自身。![](https://api2.mubu.com/v3/document_image/85df53c3-cbb0-4651-942d-182da4a42eca-20454557.jpg)  
+-   「[[Complex Modulus\|Complex Modulus]]」复数模![](https://api2.mubu.com/v3/document_image/e04cf715-6b48-482d-a1fb-48ff7ae84909-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2c34fab0-4c2e-441e-85d4-85dfd0869b2d-20454557.jpg)  
+-   复数的模。  
+-   输入端：  
+	-   C:复数  
+-   输出端：  
+	-   M:复数模  
+-   将复数的实部与虚部的平方和的正的平方根的值称为该复数的模，它的几何意义是复平面上一点(a，b)到原点的距离。![](https://api2.mubu.com/v3/document_image/d13d8b4f-81d3-4b58-b78f-b32f200a72bb-20454557.jpg)  
+-   「[[Create Complex\|Create Complex]]」建立复数![](https://api2.mubu.com/v3/document_image/a440a20a-cb6a-4af6-b0c6-e888cc1f3784-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1f58a58b-8c24-46ff-b3c9-16c30c0120fb-20454557.jpg)  
+-   以实部和虚部创建复数 。  
+-   输入端：  
+	-   R:实部值  
+	-   i:虚部值  
+-   输出端：  
+	-   C:复数  
+-   通过输入实部值和虚部值来创建一个复数，当然我们也可以通过复数容器输入。![](https://api2.mubu.com/v3/document_image/86341ef7-f846-4fa9-abdf-5388839f1274-20454557.jpg)        
+# Sets 集合  
+## List 列表编辑  
+-   Sets类的List组，列表相关运算器，很重要且常用的一个集合，是对组内数据列表的编辑。![](https://api2.mubu.com/v3/document_image/bb2633d6-4a24-4c60-96d6-23d073e954a2-20454557.jpg)  
+-   「[[Insert Items\|Insert Items]]」插入数据![](https://api2.mubu.com/v3/document_image/c807b8c8-dc06-4ed6-9761-22fc0d3518f0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/68881049-de1e-4032-bbf8-3e5718019226-20454557.jpg)  
+-   在列表中插入数据。  
+-   输入端：  
+	-   L：数据列表  
+	-   I：要插入的数据  
+	-   i：在列表中插入的位置  
+	-   W：是否循环取值  
+-   输出端：  
+	-   L：插入后的数据列表  
+-   数据I插入原列表的序号i处，原有数据后移。![](https://api2.mubu.com/v3/document_image/1c0f215e-a39a-4b85-a658-1fc9df757e84-20454557.jpg)  
+-   w端为是否取循环值，适用于当i值大于原列表数据总数的情况。当为True时，循环取值；当为False时，仍插入到序号i处，中间的其余项数显示为空值。W端默认为True。![](https://api2.mubu.com/v3/document_image/df8dc87d-c220-446d-80ef-4ee4c81d95c7-20454557.jpg)  
+-   「[[Item Index\|Item Index]]」数据序号![](https://api2.mubu.com/v3/document_image/2d85c8e4-ae9a-4073-a0cc-fbe94501decb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3980b60e-1ad6-43fe-9c51-b311c96df841-20454557.jpg)  
+-   查找列表中某个项目的序号。注意：该查询是基于数据的来源做查询，并非常规意义上的通过比对数据相同性做查询的方法。  
+-   输入端：  
+	-   L:数据列表  
+	-   i:要查找的数据  
+-   输出端：  
+	-   i:数据对应的序号  
+-   这个运算器要类比Member Index去理解：  
+	-   Member Index-一查找数据序号，比如你要查找数字1的序号，那么列表中所有数值为l的序号都会查找出来。  
+	-   Item Index-一查找指定数据序号，注意这里的指定数据不单单是指“看起来一样”，而是“储存位置也一样”，举例来讲，一个列表中出现了两个1，这两个1虽然数值相同，但是它们的储存位置是不同的，只有数值和储存位置都匹配了，我们才可以正确得到该数据的序号，否则会得到-1。该运算器的应用场景是，比如一个数据经过多种复杂运算，顺序改变后，产生了很多相似值，而你仍然想找到这个数据的位置，那么就可以用这个运算器，因为虽然它经历了很多变换，但是它的储存位置为它提供了唯一性，可以被筛选出。  
+-   PS:做一个形象的比喻就是，现在屋子里有很多人，Member Index的作用就是找到某一姓名的所有人，而Item Index是要找到某一姓名的某一DNA的唯一那个人。![](https://api2.mubu.com/v3/document_image/e3505c93-98b1-4a7c-b006-7265a7a60f49-20454557.jpg)  
+-   「[[List Item\|List Item]]」数据提取![](https://api2.mubu.com/v3/document_image/01727724-31e4-4d90-9f96-5a6452a028c8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c97f673d-b51f-47e5-8cb0-72cc780a55ed-20454557.jpg)  
+-   依据序号从列表中提取对应的数据。  
+-   输入端：  
+	-   L：列表  
+	-   i：序号值  
+	-   W：是否循环取值（默认是True状态）  
+-   输出端：  
+	-   i：列表内对应序号的数据  
+-   i值代表的是序号，不是第几个，红框内为i值。![](https://api2.mubu.com/v3/document_image/2fee5b47-7d7a-4369-8b25-baddf7c81b0d-20454557.jpg)  
+-   如果输入的i序号大于列表L的序号范围，W值为False时输出空值，为True时进行循环取值。  
+-   i端输入负值可以倒着取值，例如输入-1取列表最后一个值。![](https://api2.mubu.com/v3/document_image/4d20fbcc-9f3c-4a92-914c-d32c1fc64acb-20454557.jpg)  
+-   右侧输出段上方加号 -1 获取每组内最后一个数据![](https://api2.mubu.com/v3/document_image/9225f725-1e82-46cb-89eb-7e48d84a7be3-20454557.jpg)  
+-   该电池放大后会出现“+”号，可以增加输出端。  
+-   「[[List Length\|List Length]]」列表长度![](https://api2.mubu.com/v3/document_image/c5bae72f-66a7-410c-bd4f-51fedbfd2985-20454557.jpg)![](https://api2.mubu.com/v3/document_image/396a255b-4960-41c0-a125-f0139e2a1622-20454557.jpg)  
+-   检查列表的长度，也即是列表中数据的个数。  
+-   输入端：  
+	-   L：列表  
+-   输出端：  
+	-   L：列表内的数据个数  
+-   用法比较简单，列表的数据个数等于列表的最大序号值+1。![](https://api2.mubu.com/v3/document_image/f919f85a-c1f5-4f84-9eaf-c98a2fa9cdc6-20454557.jpg)  
+-   「[[Partition List\|Partition List]]」分拆列表![](https://api2.mubu.com/v3/document_image/9420c7d4-a85e-465b-859f-ae41b41732b4-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e850935d-40b9-4c19-8412-724b931dbbcd-20454557.jpg)  
+-   将列表划分为子列表。  
+-   输入端：  
+	-   L：数据列表  
+	-   S：分块后一个块内有几个数据  
+-   输出端：  
+	-   C：分块后的数据  
+-   当S端只有一个值时相当于等分数据，不能整除的剩余数值自成一个列表。![](https://api2.mubu.com/v3/document_image/367c4335-5e30-4bc6-90e0-0a5dd775377d-20454557.jpg)  
+-   当S端有多个值时，则按照输入值得顺序循环分组，直至全部分完为止，不够数量的自成一个列表。![](https://api2.mubu.com/v3/document_image/092c2730-66c2-4b0a-a64b-aea2fe207a12-20454557.jpg)  
+-   「[[Replace Items\|Replace Items]]」替换数据![](https://api2.mubu.com/v3/document_image/126d184e-571a-49fd-ab33-cf70a4ff4ddf-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0f2d3ea8-cfe1-4a5e-9520-65cc734191d8-20454557.jpg)  
+-   替换列表中的某些数据。  
+-   输入端：  
+	-   L:数据列表  
+	-   I:要替换的数据  
+	-   i:替换数据序号  
+	-   W:是否循环取值  
+-   输出端：  
+	-   L:替换后的数据列表  
+-   将端输入的数据替换到数据列表序号处，w端为控制若序号超过数列最大序号，是否循环取值。![](https://api2.mubu.com/v3/document_image/74ad2897-b73d-42ca-b880-704916eeb6ea-20454557.jpg)  
+-   「[[Reverse List\|Reverse List]]」反转列表顺序![](https://api2.mubu.com/v3/document_image/378b933d-b21e-47ee-950b-ecfd858545b1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/bd2d152b-3829-405c-ad87-206bf4c49fdb-20454557.jpg)  
+-   倒转列表的顺序。  
+-   输入端：  
+	-   L:数据列表  
+-   输出端：  
+	-   L:翻转后的数据列表  
+-   将数据顺序反向翻转，和输出端右键的Reverse功能一样。![](https://api2.mubu.com/v3/document_image/2e234665-6e82-4057-b873-7473796e68b7-20454557.jpg)  
+-   「[[Shift List\|Shift List]]」位移数据![](https://api2.mubu.com/v3/document_image/da991a2f-5f28-4359-9aaa-d3c47838b765-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d9100ed9-79e3-4403-9d15-fb56b2bd2f43-20454557.jpg)  
+-   向前或向后移动列表中的所有项目。  
+-   输入端：  
+	-   L：数据列表  
+	-   S：推移长度  
+	-   W：是否循环列表  
+-   输出端：  
+	-   L：推移后的数据列表  
+-   根据S端输入的数值对输入列表进行推移。S为正数时，向上推移，S为负数时，向下推移。![](https://api2.mubu.com/v3/document_image/cc9dd529-988e-45b1-b489-61dde98432de-20454557.jpg)  
+-   W端为True时推移后的数据依次移动到开头（或结尾），W端为False时，删除推移后的数据。W端默认为True值。![](https://api2.mubu.com/v3/document_image/08cd33cb-f845-4860-8ec6-b41f11cf4b45-20454557.jpg)  
+-   「[[Sort List\|Sort List]]」排序列表![](https://api2.mubu.com/v3/document_image/79dd5a7f-3327-41c4-8c34-5adff3810fa5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d7acaa63-c5ef-4a1a-8deb-9ea5041c15c9-20454557.jpg)  
+-   将列表中的数据参考对应的数值，从小到大重新排序。例如学生姓名根据学生的学号排序。  
+-   输入端：  
+	-   K：排序的Key值（参考值）  
+	-   A：待排序的相关联的数据列表  
+-   输出端：  
+	-   K：从小到大排序后的Key值（参考值）  
+	-   A：根据输入K端同步排序后的A端数据列表  
+-   很常用的运算器，Key值为数值，A端可以是任意形式的数据，比如用点的纵坐标值来排序点。  
+-   电池放大后可以增加待排序的输入端，用同一个Key值数列排序多个数据列表。![](https://api2.mubu.com/v3/document_image/170c39c8-b42a-4119-876a-7711ed7583ed-20454557.jpg)  
+-   「[[Split List\|Split List]]」分割列表![](https://api2.mubu.com/v3/document_image/22415036-2149-4c6f-b7d4-5024e1cc4c97-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3a363b61-7b67-4f22-864c-ec0a89d70d2a-20454557.jpg)  
+-   将列表分割为两个列表。  
+-   输入端：  
+	-   L：数据列表  
+	-   i：分割处的序号值  
+-   输出端：  
+	-   A：分割后的A部分  
+	-   B：分割后的B部分  
+-   i值所对应的数据归在B端。![](https://api2.mubu.com/v3/document_image/009d811e-3c07-4af8-9722-64e8df6b58c8-20454557.jpg)  
+-   「[[Sub List\|Sub List]]」子列表![](https://api2.mubu.com/v3/document_image/31d489d2-50f7-44f6-8d5f-88ca4ae13e8b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2b16e27e-b1aa-4a8b-8dc1-fcf6fb93da96-20454557.jpg)  
+-   从列表中提取子集列表。  
+-   输入端：  
+	-   L：数据列表  
+	-   D：序号区间  
+	-   W：是否循环取值  
+-   输出端：  
+	-   L：对应区间的数据  
+	-   I：对应区间的序号  
+-   输入的序号区间会四舍五入取整数值。![](https://api2.mubu.com/v3/document_image/e0a0b67a-265d-4ae1-8782-5b91a83fd92f-20454557.jpg)  
+-   「[[Dispatch\|Dispatch]]」数据分流![](https://api2.mubu.com/v3/document_image/9e9b60a1-0ef4-4232-b442-b7360b12a1b4-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8fa2282b-3fd3-45b9-843c-80a88fa94072-20454557.jpg)  
+-   将列表中的数据根据布尔值分离为两个列表。通常可作为数据的筛选使用。  
+-   输入端：  
+	-   L：数据列表  
+	-   P：分流判断依据（True/False or 0/1）  
+-   输出端：  
+	-   A：分流后的列表A  
+	-   B：分流后的列表B  
+-   P端若不输入，默认是True—False循环分流取值。![](https://api2.mubu.com/v3/document_image/dc9ff190-29d4-45d5-9883-61cc59ba2546-20454557.jpg)  
+-   P端输入可以是其他电池的布尔结果，也可以自己手动输入，若布尔值个数小于L端数据总数，则会对布尔值循环取值直至所有数据都被分流。![](https://api2.mubu.com/v3/document_image/7269d626-6163-4d98-bd19-08991bfe7c40-20454557.jpg)  
+-   大多数情况下P端输入的是布尔值True和False，不过P端也可以输入0和任意一个非0数字来进行分流，0为False，1非0为True。![](https://api2.mubu.com/v3/document_image/eeea0640-53d5-4c39-8dc9-9d4112435c84-20454557.jpg)  
+-   「[[Null Item\|Null Item]]」检查Null![](https://api2.mubu.com/v3/document_image/bc69f6ef-3796-4aff-854b-c6f0efe3fc59-20454557.jpg)![](https://api2.mubu.com/v3/document_image/57e83603-6357-48e1-bafc-c7abe2d7ddc5-20454557.jpg)  
+-   判断数据是否为（Null）空值或无效。  
+-   输入端：  
+	-   I：数据  
+-   输出端：  
+	-   N：若为Null输出True，否则输出False  
+	-   X：若为Invalid输出True，否则输出False  
+	-   D：对数据为何无效的说明  
+-   Null指值不存在，比如半径为a的圆；Invalid指值存在，但不是有效值，比如半径为0的圆。  
+-   该运算器常配合Dispatch运算器来筛选数据类型。![](https://api2.mubu.com/v3/document_image/b2eb972c-6ae3-4d9d-b3a6-a5b7e18ee64e-20454557.jpg)  
+-   「[[Pick'n'Choose\|Pick'n'Choose]]」多选一![](https://api2.mubu.com/v3/document_image/bcaac947-6403-490f-9d2f-83febf6e8c8b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a996c754-0a56-4778-869f-08a772680ba0-20454557.jpg)  
+-   从多个数据中挑选其一。 类似于每次从多张牌中抽取一张。  
+-   输入端：  
+	-   P：挑选模式  
+	-   0：数据流0  
+	-   1：数据流1  
+-   输出端：  
+	-   R：挑选出的数据  
+-   按照P端的挑选模式从下面的数据流依次输出数据，输出数据个数和P端模式个数相同，若有剩余数据不会输出。![](https://api2.mubu.com/v3/document_image/7e5ca6a9-0c66-466a-85d1-3390de32ddfd-20454557.jpg)  
+-   电池放大可以增减输入端个数，最少为两个。  
+-   「[[Replace Nulls\|Replace Nulls]]」替换Null![](https://api2.mubu.com/v3/document_image/df2320d6-be8c-4808-a9fd-d6b8f6087c05-20454557.jpg)![](https://api2.mubu.com/v3/document_image/eee90f03-d3ff-45a3-ac82-ad3797b4ef1f-20454557.jpg)  
+-   用其他数据替换空值或无效数据 。  
+-   输入端：  
+	-   I:含有Nul值的数据列表  
+	-   R:用来替换Nul值的数据  
+-   输出端：  
+	-   I:替换后的数据列表  
+	-   N:被替换的Nul值个数  
+-   若Nu值个数和替换数据个数不匹配，会自动按照默认长映射进行计算。![](https://api2.mubu.com/v3/document_image/28e0aa08-ff8b-414b-9336-a2933a621960-20454557.jpg)  
+-   「[[Weave\|Weave]]」数据编织![](https://api2.mubu.com/v3/document_image/5d767531-2df3-4ed4-bc1c-fe2f533c46f2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/267ec8c6-61ce-4bb0-9d13-779d28620746-20454557.jpg)  
+-   将多个列表中的数据按照某种编排顺序合并为一个列表。  
+-   输入端：  
+	-   P：编织判断依据  
+	-   0：输入端0  
+	-   1：输入端1  
+-   输出端：  
+	-   W：编织后的数据列表  
+-   电池默认只有0和1两个输入端，放大后可以增加输入端。  
+-   该运算器可以按照P端输入数字的顺序依次排列对应数字输入端的数据。![](https://api2.mubu.com/v3/document_image/a344852d-4503-40ca-bb9c-edb0a1b548c5-20454557.jpg)  
+-   若P端的数字个数小于所有输入端的数据个数，则会按照P端的数字循环取值，只至所有输入端数据被编织完。![](https://api2.mubu.com/v3/document_image/1fbd574d-40b2-41d3-8752-4de3d961803d-20454557.jpg)  
+-   若在编织的过程中，某个输入端的数据“用完了”，则会跳过该输入端。![](https://api2.mubu.com/v3/document_image/89cf6205-3c08-419e-878d-f27247ff6c43-20454557.jpg)  
+-   Weave运算器经常和Dispatch搭配使用，用来将Dispatch分流后处理后的数据再按照分流前的顺序排列起来。由于Dispatch只能分流两个数据，所以该搭配也只限于分流两类数据的情况。需要注意的是False对应B和0，True对应A和1。![](https://api2.mubu.com/v3/document_image/5064fe1f-e455-4be7-a7a0-0ca481d3d776-20454557.jpg)  
+-   「[[Combine Data\|Combine Data]]」汇合数据![](https://api2.mubu.com/v3/document_image/3e53b1c7-4923-415f-9ea5-d82083e6fd12-20454557.jpg)![](https://api2.mubu.com/v3/document_image/755a8c6c-2db2-4439-adcb-52caf7671b9d-20454557.jpg)  
+-   汇合多个列表中对应序号的数据。  
+-   输入端：  
+	-   0:数据流0  
+	-   1:数据流1  
+-   输出端：  
+	-   R:合并结果  
+	-   I:每一项输出数据的数据流序号  
+-   该运算器的工作逻辑是，输出端按从小到大顺序检索各数据流：  
+	-   若是非Null数据一直接输出，并返回数据流序号。  
+	-   若是Null数据一检索下一个数据流，只到得到非Null数据为止，并返回该数据流序号。  
+-   PS:如果直到最后都没有检索到非Null数据，则输出Null，并返回-1,R端输出的总个数与数据流最多的个数保持一致。![](https://api2.mubu.com/v3/document_image/6ce3c267-f82a-49b0-96e1-cf7537144d3d-20454557.jpg)  
+-   「[[Sift Pattern\|Sift Pattern]]」筛选数据![](https://api2.mubu.com/v3/document_image/c45cfff2-79f2-4b97-a268-7957af847e17-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d6fe8932-3f3a-4392-b9cb-57c95c0a4515-20454557.jpg)  
+-   筛选列表中的元素,并保持原始列表的结构。  
+-   输入端：  
+	-   L:数据列表  
+	-   P:筛选输出端序号  
+-   输出端：  
+	-   0:输出端0  
+	-   1:输出端1  
+-   对L端的数据按照输入端P的序号依次输出到指定序号端，例如L端第一个数据对应P端的0，那么就从0端输出，1端输出null;第二个数据对应1，就从1端输出，0端输出null.P端序号为循环取值。这个运算器和Pick'n'Choose类似于相反运算器。![](https://api2.mubu.com/v3/document_image/4e775409-5347-4e20-ade2-d8c069882731-20454557.jpg)  
+-   「[[Cross Reference\|Cross Reference]]」数据交叉对应![](https://api2.mubu.com/v3/document_image/bc998ffe-3414-4357-b750-ddb9049a546a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8f6e3503-9169-4f3a-bea1-7e43eb725306-20454557.jpg)  
+-   列表中数据的交叉对应。  
+-   输入端：  
+	-   A:数据列表A  
+	-   B:数据列表B  
+-   输出端：  
+	-   A:映射后列表A  
+	-   B:映射后列表B  
+-   默认模式简单来说就是“握手原理”或”一一对应”，每两个元素都进行一次映射，右键共有7种模式可以选择：  
+	-   Holistic（默认）一全面交叉映射，即我们所说的"握手原理”。![](https://api2.mubu.com/v3/document_image/c9b02a78-d4ff-49dc-baf0-44dc6a732156-20454557.jpg)  
+	-   Diagona一斜角交叉映射，当序号均相同时不发生映射，所以少了aAl和bB2,其余的交叉映射。![](https://api2.mubu.com/v3/document_image/7ca313c3-2e2c-40df-85f0-d8986b69e308-20454557.jpg)  
+	-   Coincident-一巧合交叉映射，当序号只要有至少任意两个序号相同，就不发生映射。![](https://api2.mubu.com/v3/document_image/c516b029-f4b3-4c74-9dfe-fd466fa7f3bc-20454557.jpg)  
+	-   Lower Triangle-一下三角矩阵映射，只针对两个输入端的情况，具体来讲就是AB数列组成矩阵，从左上到右下将矩阵分开，只取左下部分的数据，与Jpper Triangle(strict)互为补集。![](https://api2.mubu.com/v3/document_image/331b2431-0900-44e2-a289-613a1212f33c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c906eec3-d7b6-4ef1-9d76-aebf9533b625-20454557.jpg)  
+	-   Lower Triangle(strict)一严格下三角矩阵映射，是上一个映射的加强版，对边界要求更严格，与Upper Triangle互为补集。![](https://api2.mubu.com/v3/document_image/2e1db51f-4f65-4676-8661-42bcf9badb69-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cd6a1111-36c4-499a-b918-aee44b8eb447-20454557.jpg)  
+	-   Upper Triangle——上三角矩阵映射，只取右上部分的数据，与Lower Triangle(strict)互为补集。![](https://api2.mubu.com/v3/document_image/f183ff96-d4a0-4f75-8d91-9b7452249d68-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7d4d0065-a61d-45f5-b162-c0474dee9fec-20454557.jpg)  
+	-   Upper Triangle(strict)一严格上三角矩阵映射，是上一个映射的加强版，对边界要求更严格，与Lower Triangle互为补集。![](https://api2.mubu.com/v3/document_image/f3868182-bd9d-4f77-bd77-a1eb8703109c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/63f5ab04-e5d0-4efa-b480-51577e63d092-20454557.jpg)  
+	-   其实我们在做数据结构时经常用到交叉运算，只是大部分情况直接用树形数据解决了而没有求助这个电池。![](https://api2.mubu.com/v3/document_image/023829f6-84bf-46e7-8efa-9a7b3b962087-20454557.jpg)  
+-   「[[Longest List\|Longest List]]」数据最长对应![](https://api2.mubu.com/v3/document_image/14a5ffe0-8a3f-40cf-8448-7f823b89269a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3f96e907-f706-43ff-a76c-7815c7a71c69-20454557.jpg)  
+-   最长对应工具。将列表集合增加到其中最长的长度 。  
+-   输入端：  
+	-   A:数据列表A  
+	-   B:数据列表B  
+-   输出端：  
+	-   A:映射后列表A  
+	-   B:映射后列表B  
+-   结果长度与长数据保持一致，默认模式为Repeat Last,是GH中所有运算器默认的映射方式。右键共有5种模式可以选择：  
+	-   (1)Repeat First:短数据重复首项补齐个数。![](https://api2.mubu.com/v3/document_image/8a93506f-9fd6-4780-bf29-ffaf1ff1a1ad-20454557.jpg)  
+	-   (2)Repeat Last:短数据重复末项补齐个数。![](https://api2.mubu.com/v3/document_image/b32e50b5-b5da-49e4-b391-89cc1dd08789-20454557.jpg)  
+	-   (3)Interpolate:按照插值函数采样补齐个数，具体来说是从短数据的两端向内离散重复直至补齐。当长数据个数是短数据的整数倍时，短数据每项会按相等倍数补齐。![](https://api2.mubu.com/v3/document_image/622be0ca-066a-4ea8-862d-9261ddbdfb98-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f9beafbb-9b1b-4f46-8932-18e893b0f353-20454557.jpg)  
+	-   (4)Wrap:短数据通过循环取值补齐个数。![](https://api2.mubu.com/v3/document_image/d4549d9f-da71-4a3c-bd91-b98d19fc6060-20454557.jpg)  
+	-   (5)FIip:短数据通过翻转取值补齐个数，和Wrap方式相对应，Wrap是"首尾相接”，FIip是"首首相接，尾尾相接”。![](https://api2.mubu.com/v3/document_image/92993a3a-07aa-4e45-979c-c13b63af1dc7-20454557.jpg)  
+-   「[[Shortest List\|Shortest List]]」数据最短对应![](https://api2.mubu.com/v3/document_image/81be878a-84dc-46c5-8d52-36e84ffcc268-20454557.jpg)![](https://api2.mubu.com/v3/document_image/02eb0d67-0769-4012-a835-a811e5682e56-20454557.jpg)  
+-   列表中数据的最短对应。将列表集合减少到其中最短的长度 。  
+-   输入端：  
+	-   A:数据列表A  
+	-   B:数据列表B  
+-   输出端：  
+	-   A:映射后列表A  
+	-   B:映射后列表B  
+-   结果长度与短数据保持一致，默认模式为Trim End。右键共有3种模式可以选择：  
+	-   (1)Trim Start:长数据从首项开始向下删除。![](https://api2.mubu.com/v3/document_image/6c882b12-cbd5-4d6d-86e3-14bf1b9ebd23-20454557.jpg)  
+	-   (2)Trim End:长数据从尾项开始向上删除。![](https://api2.mubu.com/v3/document_image/5be11fb2-9e16-4b3d-84d7-4f1b00a640b3-20454557.jpg)  
+	-   (3)Interpolate:按照插值函数采样删除，具体来说是从长数据的中间开始向两端离散删除直至个数与短数据相等。![](https://api2.mubu.com/v3/document_image/20e86201-38c0-4112-b679-efc290b47943-20454557.jpg)  
+## Sequence 序列编辑  
+-   Sets类的Sequence组，和数列相关的运算器，但其中有几个感觉更适合归类到List组，例如Cull Index。．![](https://api2.mubu.com/v3/document_image/efa8abe4-f486-4eaa-b64d-c608658c194f-20454557.jpg)  
+-   「[[Cull Index\|Cull Index]]」剔除序号对应的数据![](https://api2.mubu.com/v3/document_image/ce06da2e-759a-45f7-bcf9-9aa8eaeae131-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4e7f2b1b-cbdb-48e5-9c90-40cf2f13a2e9-20454557.jpg)  
+-   从列表中剔除（删除）序号对应的元素。  
+-   输入端：  
+	-   L：数据列表  
+	-   I：要删除项的序号  
+	-   W：是否循环取值（默认为True状态）  
+-   输出端：  
+	-   S：删除后的数据列表  
+-   和List Item运算器类似，I值为负数时反向取值，W为True时循环取值。![](https://api2.mubu.com/v3/document_image/13b6af24-f010-4d5c-868b-4bb57d0d1b67-20454557.jpg)  
+-   「[[Cull Nth\|Cull Nth]]」剔除第N的数据![](https://api2.mubu.com/v3/document_image/6f29d334-6b51-4f34-826a-06fbe531e5bc-20454557.jpg)![](https://api2.mubu.com/v3/document_image/58e2f737-bd88-4fd0-ade1-b21c1cf6748c-20454557.jpg)  
+-   剔除（删除）列表中的第 N或N的整数倍的数据。 例如3，就会删除 3，6，9，12...对应的数据。  
+-   输入端：  
+	-   L:数据列表  
+	-   N:删除频率  
+-   输出端：  
+	-   L:删除后数据  
+-   注意这里删除频率的数字指“第几个数据”，不是“数据序号”，例如输入2，代表删除第2、4、6、8…个数据。![](https://api2.mubu.com/v3/document_image/11c733d3-1d4b-4a1c-9a27-d0afb9dd7902-20454557.jpg)  
+-   「[[Cull Pattern\|Cull Pattern]]」规律性剔除数据![](https://api2.mubu.com/v3/document_image/eef60af5-43f6-4fa8-975d-2abe883c43d6-20454557.jpg)![](https://api2.mubu.com/v3/document_image/afc6877f-5dbc-4e1d-9616-00b22ca1a223-20454557.jpg)  
+-   使用布尔值列表对应数据，为Ture的数据将被保留，为False数据将被删除。 功能与 Dispatch 类似。  
+-   输入端：  
+	-   L：数据列表  
+	-   P：布尔值  
+-   输出端：  
+	-   L：删除后数据  
+-   通过P端的布尔值判定删除数据，True为保留，False为删除，布尔值循环取值，P端若不输入默认为False—False—True—True循环取值。![](https://api2.mubu.com/v3/document_image/10432c04-0672-471a-98ae-59a3d9ca11e9-20454557.jpg)  
+-   这个运算器比较少用的原因是和Dispatch有点类似，由于Dispatch除了删除还可以保留删除的部分，所以我们用的更多一些。![](https://api2.mubu.com/v3/document_image/5cda8d76-18cf-4ee5-9762-0ba3b75c9d9f-20454557.jpg)  
+-   「[[Random Reduce\|Random Reduce]]」随机删除数据![](https://api2.mubu.com/v3/document_image/4fa49d90-8dbc-4206-bcb8-6e1c998b1f00-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0b757f73-c4f0-4875-a953-ec52953b1f3f-20454557.jpg)  
+-   从列表中随机删除 N 个数据。  
+-   输入端：  
+	-   L：数据列表  
+	-   R：要删除的数量  
+	-   S：随机种子  
+-   输出端：  
+	-   L：删除后的数据列表  
+-   插件LunchBox里有一个电池Random Split List和该电池类似，但是可以保留删掉的数据。![](https://api2.mubu.com/v3/document_image/555a8fef-a166-4bae-b2dd-ce4919df191f-20454557.jpg)  
+-   「[[Char Sequence\|Char Sequence]]」创建字符序列![](https://api2.mubu.com/v3/document_image/c9a57b1a-78ae-4900-a78b-fdc4d29b2c59-20454557.jpg)![](https://api2.mubu.com/v3/document_image/9c18674b-7c7a-4936-8da3-48dcf5a53347-20454557.jpg)  
+-   输入端：  
+	-   C:字符个数  
+	-   P:备选字符池  
+	-   F:掩码  
+-   输出端：  
+	-   S:字符序列  
+-   计算机语言相关概念。  
+-   「[[Duplicate Data\|Duplicate Data]]」重复整个列表的数据![](https://api2.mubu.com/v3/document_image/f541b55d-ea19-43c5-b449-3d1fa87bc33e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/828f88e7-787f-4596-b2ec-5840e95823d6-20454557.jpg)  
+-   复制列表中的数据，可以以整个列表为整体重复，或按照每个列表中的数据为单位重复。  
+-   输入端：  
+	-   D：数据列表  
+	-   N：要复制的份数  
+	-   O：是否保持原数列顺序  
+-   输出端：  
+	-   D：复制后的数据列表  
+-   O端默认为True，即保留原数据的顺序整体复制；若为False，则会将复制后的数据逐一排序。![](https://api2.mubu.com/v3/document_image/a79ec292-1199-4df0-aafa-93ced398cda6-20454557.jpg)  
+-   「[[Fibonacci\|Fibonacci]]」斐波那契数列![](https://api2.mubu.com/v3/document_image/4de422db-7a91-4297-ae71-720eafc0232d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/9a3d91ed-8b36-4431-bc59-ac208a7d0d9b-20454557.jpg)  
+-   输入端：  
+	-   A：第一个数字  
+	-   B：第二个数字  
+	-   N：N值  
+-   输出端：  
+	-   S：斐波那契数列  
+-   斐波那契数列，又叫做“黄金分割数列”，我们在Golden Ratio中有提到过，它指的是这样一个数列：1、1、2、3、5、8、13、21、34、……在数学上，斐波那契数列定义公式为：F(N+2)=F(N + 1)+F(N)（N为正整数）。注意输入端的N并不代表项数，而是定义公式里的N值，因此得到的斐波那契数列项数为N+2。![](https://api2.mubu.com/v3/document_image/122d4b5f-6513-4087-8573-95b56fa722d5-20454557.jpg)  
+-   「[[Range\|Range]]」基于数值范围的等差数列![](https://api2.mubu.com/v3/document_image/9966f794-aa44-4589-b7ed-d0de0946e0b5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/72f1847c-261c-4aa6-9fc7-e6ef34697568-20454557.jpg)  
+-   基于数字区间和等分段数创建一个等差数列。  
+-   输入端：  
+	-   D：区间  
+	-   N：等分间隔的数量  
+-   输出端：  
+	-   R：节点值  
+-   N为间隔数量，R为等分节点的值，N与R的数量关系为R=N+1。![](https://api2.mubu.com/v3/document_image/b8dcd334-a27f-4a11-9d56-148c9588d032-20454557.jpg)  
+-   「[[Repeat Data\|Repeat Data]]」重复数据到某个长度![](https://api2.mubu.com/v3/document_image/b621a154-8ddb-4c41-b974-6c5a772d6969-20454557.jpg)![](https://api2.mubu.com/v3/document_image/dfcbab99-dc5f-41e4-8ae9-f68d0bef829e-20454557.jpg)  
+-   重复列表中的数据，直到达到一定的长度。  
+-   输入端：  
+	-   D：数据列表  
+	-   L：最终的数据长度  
+-   输出端：  
+	-   D：处理后的数据列表  
+-   Repeat Data和Duplicate Data相似，都有复制数据的作用，不过该运算器是按照输入D端数据的排列顺序逐一复制到数据量为L为止，不是按照整体的份数复制。![](https://api2.mubu.com/v3/document_image/ce125522-bc60-4386-8541-3f2d9d6e1453-20454557.jpg)  
+-   「[[Sequence\|Sequence]]」数列![](https://api2.mubu.com/v3/document_image/887a3be8-b250-4358-ae36-7770bc7749f6-20454557.jpg)![](https://api2.mubu.com/v3/document_image/385b7121-b87a-4e5d-9e7c-4afffa05d28f-20454557.jpg)  
+-   基于表达式及初始数据生成数字列表。  
+-   输入端：  
+	-   N:数列公式  
+	-   L:数列总项数  
+	-   I:首项值  
+-   输出端：  
+	-   S:生成数列  
+-   根据N端输入的公式，由首项值和项数得到一个数列，默认公式为[N-1]+[N-2](N代表项数)，即斐波那契数列。![](https://api2.mubu.com/v3/document_image/149a72bc-0c7b-4f96-85a5-43540cecba4e-20454557.jpg)  
+-   「[[Series\|Series]]」等差数列![](https://api2.mubu.com/v3/document_image/ec985021-6034-4b57-a531-0d6500d52764-20454557.jpg)![](https://api2.mubu.com/v3/document_image/91dbd24c-b4ca-40ce-b9ca-2f5b33dc92be-20454557.jpg)  
+-   使用初始值，等插值和数量创建等差数列。  
+-   输入端：  
+	-   S：首项  
+	-   N：公差  
+	-   C：项数  
+-   输出端：  
+	-   S：生成的等差数列  
+-   常用运算器，默认为S=0，N=1，C=10。![](https://api2.mubu.com/v3/document_image/aca557c0-683f-434f-b2fa-3cda248bdddc-20454557.jpg)  
+-   N端和C端输入多个数据时，可直接得到树形数据的多个等差数列。![](https://api2.mubu.com/v3/document_image/244f2e30-ff24-4774-8adb-74b6b45872f1-20454557.jpg)  
+-   「[[Stack Data\|Stack Data]]」指定每个数据的重复数量![](https://api2.mubu.com/v3/document_image/2d35305d-2802-4965-a262-ee4c60d2243f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/90e6ffff-384b-446d-a371-62b8d43b2f34-20454557.jpg)  
+-   根据每个数据对应的整数，复制列表中的数据。  
+-   输入端：  
+	-   D:数据列表  
+	-   S:堆叠个数  
+-   输出端：  
+	-   D:堆叠后数据列表  
+-   通过S端的堆叠数量，为对应序号的数据复制指定个数。当输入端D和S个数不相等时：  
+	-   (1)D端>S端时，S端循环取值。![](https://api2.mubu.com/v3/document_image/c67cff35-5f9c-4519-ac47-d6ab97acb6a0-20454557.jpg)  
+	-   (2)D端<S端时，D端值堆叠完即终止。![](https://api2.mubu.com/v3/document_image/d0fe7fb9-d5b0-4ad3-bdc4-ff6185c069e4-20454557.jpg)  
+-   「[[Jitter\|Jitter]]」打乱顺序![](https://api2.mubu.com/v3/document_image/4a974097-a962-416d-a4a8-a920e85eafb7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/25e99e28-a4a8-4691-b15b-41f168f150a3-20454557.jpg)  
+-   随机打乱一个列表中数据的顺序。  
+-   输入端：  
+	-   L：数据列表  
+	-   J：震荡程度  
+	-   S：随机种子  
+-   输出端：  
+	-   V：震荡后的数据列表  
+	-   I：原序号索引（原数据序号按震荡后顺序排列）  
+-   J端震荡程度范围为0—1，0为不打乱，1为完全打乱，从0到1打乱的程度逐渐递增。![](https://api2.mubu.com/v3/document_image/4b03d8c2-0a8c-4655-9b5b-132e01fcb209-20454557.jpg)  
+-   「[[Random\|Random]]」随机数值![](https://api2.mubu.com/v3/document_image/34f24aae-6643-4eec-866b-f12d34a76bad-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7a5b4e25-43a6-481f-9677-ebf9881a218a-20454557.jpg)  
+-   生成伪随机数值。  
+-   伪随机：如果不改动随机的相关参数，随机结果保持不变。  
+-   输入端：  
+	-   R：取值区间  
+	-   N：取值数量  
+	-   S：随机种子  
+-   输出端：  
+	-   R：得到的随机数列  
+-   S端对应的是整数，即不同整数对应不同的随机值，若输入小数，则会按照四舍五入的整数计算。  
+-   右键电池勾选Integer Numbers可以使输出的值四舍五入取整数，当然你也可以连接Round运算器或者整数运算器。![](https://api2.mubu.com/v3/document_image/a60553ab-4a23-4b6a-b168-bd480534958e-20454557.jpg)  
+-   勾选Integer Numbers后，随机是可能出现重复值的。  
+-   由于模块化会方便现实建造，所以常常不是在区间范围随机取值，而是在给定值里进行随机选择。![](https://api2.mubu.com/v3/document_image/c85490c9-8808-4330-8533-a93d996497a9-20454557.jpg)  
+-   在该运算器中，R和S若确定，给定一个N值，就会对应同一个随机结果，这种随机称为“伪随机”，GH中绝大多数电池的随机种子都是这种类型。如果想在GH中模拟一种更像“真随机”的随机，可以用Heteroptera插件里的Random，给出相同的N值，会得到不同的随机数结果。![](https://api2.mubu.com/v3/document_image/73758050-2afb-4ca4-be9c-e9bfdb22354a-20454557.jpg)  
+## Sets 集合编辑  
+-   Sets类的Sets组，数据处理的运算器，其中绿色Logo的都有一定难度。![](https://api2.mubu.com/v3/document_image/35942ef4-44cc-42af-8d09-2d993a63a27a-20454557.jpg)  
+-   「[[Create Set\|Create Set]]」创建数据集合![](https://api2.mubu.com/v3/document_image/36e4eb92-1d8f-4261-bbd4-295aeda9170f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f72083b7-5822-4ffb-b6d0-388e51545ad1-20454557.jpg)  
+-   创建有效的数据集合。（列表中不包含重复的数据）合并同类项  
+-   输入端：  
+	-   L：数据列表  
+-   输出端：  
+	-   S：合并后的数据列表  
+	-   M：每个原数据在合并后数据列表里的序号  
+-   Create Set用法和Delete Consecutive类似，只不过后者必须相同项连续才能删除，而前者不需要，每一种数据只保留一个。![](https://api2.mubu.com/v3/document_image/ce75e167-2643-4e66-a9b3-8617b79c4626-20454557.jpg)  
+-   「[[Set Difference\|Set Difference]]」剔除两个列表中相同的数据![](https://api2.mubu.com/v3/document_image/6c03b101-07f0-4a0b-b896-9f7ba08ad739-20454557.jpg)![](https://api2.mubu.com/v3/document_image/dee1d2c5-62ec-4398-a147-934100d40d08-20454557.jpg)  
+-   创建两个列表的非交集。（两个列表中剔除相同元素的集合）。  
+-   输入端：  
+	-   A:数据列表A  
+	-   B:数据列表B  
+-   输出端：  
+	-   U:取差集后的数据列表  
+-   返回A有而B没有，即只在A中有的数据。![](https://api2.mubu.com/v3/document_image/d1c17efe-465d-4aaf-bd0d-9abc32584714-20454557.jpg)  
+-   「[[Set Difference (S)\|Set Difference (S)]]」从A中剔除与B中相同的数据![](https://api2.mubu.com/v3/document_image/7e979401-6548-446f-bca3-4384efc254c0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/186c3755-5d2f-4506-8746-8ab5dcf36afd-20454557.jpg)  
+-   从A 集合中剔除 B中相同元素的集合。 （A-B）  
+-   输入端：  
+	-   A:数据列表A  
+	-   B:数据列表B  
+-   输出端：  
+	-   X:取加强差集后的数据列表  
+-   有点像取差集的加强版，AB互相做差集，即可以返回只在A中有和只在B中有的数据。![](https://api2.mubu.com/v3/document_image/f5a671ab-a2fb-4253-962c-ee1e1e463af6-20454557.jpg)  
+-   「[[Set Intersection\|Set Intersection]]」提取每个列表中都有的相同数据![](https://api2.mubu.com/v3/document_image/f9ebe4ee-79a7-47f7-b5d3-a83a9346f381-20454557.jpg)![](https://api2.mubu.com/v3/document_image/62140059-2aa0-4f28-8db9-2735739ab16b-20454557.jpg)  
+-   创建多个列表中数据的交集，即每个列表中都有的相同元素的集合。  
+-   输入端：  
+	-   A:数据列表A  
+	-   B:数据列表B  
+-   输出端：  
+	-   X:取交集后的数据列表  
+-   返回A和B中都有的数据。![](https://api2.mubu.com/v3/document_image/deb5a783-0e8d-41eb-9847-4d3800e45870-20454557.jpg)  
+-   「[[Set Majority\|Set Majority]]」提取出现多次的数据![](https://api2.mubu.com/v3/document_image/9f6c860e-d77f-4dd2-ace0-e3bebb1dccac-20454557.jpg)![](https://api2.mubu.com/v3/document_image/083ba140-107d-4a47-9618-bdfd37952b9a-20454557.jpg)  
+-   至少在两个列表中都包含的元素将被提取出来。  
+-   输入端：  
+	-   A:数据列表A  
+	-   B:数据列表B  
+	-   C:数据列表C  
+-   输出端：  
+	-   R:多数项数据列表  
+-   取ABC三列表中出现超过1次的数据，2次及以上是同等的。![](https://api2.mubu.com/v3/document_image/859918a7-5cbc-4450-b61d-386a7f2cd9ad-20454557.jpg)  
+-   「[[Set Union\|Set Union]]」合并数据（每个数据只有一个）![](https://api2.mubu.com/v3/document_image/efa9eeae-3693-4f6c-ab7a-ef64bda47a66-20454557.jpg)![](https://api2.mubu.com/v3/document_image/62eec5e4-84a5-43d2-9637-925eac6d4a90-20454557.jpg)  
+-   将多个列表中的数据合并为元素的并集。（包含所有数据，且每个数据只有一个）。  
+-   输入端：  
+	-   A:数据列表A  
+	-   B:数据列表B  
+-   输出端：  
+	-   U:取并集后的数据列表  
+-   返回AB中出现过的全部数据，出现过多次的合并成一次。![](https://api2.mubu.com/v3/document_image/c4da9f2f-a382-4936-8ccc-8a332f03af3f-20454557.jpg)  
+-   「[[Carthesian Product\|Carthesian Product]]」同序号共组![](https://api2.mubu.com/v3/document_image/987e8d8f-c9e9-4f91-bd44-1ea1dcf76211-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0abe5082-9d9e-4940-8b5f-bcead69d251f-20454557.jpg)  
+-   输入端：  
+	-   A:数据列表A  
+	-   B:数据列表B  
+-   输出端：  
+	-   P:共组后的数据列表![](https://api2.mubu.com/v3/document_image/29e33228-0a79-46e9-9a16-89990990dcac-20454557.jpg)  
+-   将AB数列中序号相同的数据放到同一个数据组，注意A和B的数据量要相同，否则会报措。  
+-   「[[Disjoint\|Disjoint]]」判断是否完全不同![](https://api2.mubu.com/v3/document_image/67296943-62e5-4f64-bde8-ace6217c2102-20454557.jpg)![](https://api2.mubu.com/v3/document_image/9c059e2c-2d8b-4230-8426-4338f48ffb73-20454557.jpg)  
+-   测试两个列表中的元素是否完全不一样（没有任何一个数据是相同的）。  
+-   输入端：  
+	-   A:数据列表A  
+	-   B:数据列表B  
+-   输出端：  
+	-   R:是否为不相交集  
+-   判断A和B是否是没有交集的数据列表，如果是输出True,如果不是输出False.。![](https://api2.mubu.com/v3/document_image/9497767a-0c62-4077-8fa3-0755b69ef6e9-20454557.jpg)  
+-   「[[Member Index\|Member Index]]」查找数据序号![](https://api2.mubu.com/v3/document_image/bd34338d-72cc-4224-ba06-aedc6ab78c89-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b9462980-dce7-44ee-aae8-8f7f3d72cf71-20454557.jpg)  
+-   查找列表中某个数据，并输出它的序号和数量。  
+-   输入端：  
+	-   S:被搜索的数据列表  
+	-   M:要查找的数据  
+-   输出端：  
+	-   I:查找数据在搜索列表的序号  
+	-   N:查找数据在搜索列表的个数  
+-   常与Create Set连用，将一个数据列表中相同的数据分到同一组中。![](https://api2.mubu.com/v3/document_image/589de8e8-0f7c-4414-9a9c-34de579cbf00-20454557.jpg)  
+-   注意这里的数据一定是要带数值的，例如直接查找curv是会报错的，这时候可以尝试进行转化，比如转化成curve的中点再去查找，因为点有坐标是带数据属性的。![](https://api2.mubu.com/v3/document_image/97422e7d-71e5-4723-8a8c-79061fbb07d8-20454557.jpg)  
+-   「[[Replace Members\|Replace Members]]」替换数据![](https://api2.mubu.com/v3/document_image/2ee60cf8-3f96-4864-a9d0-4fb0d230e8d8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/eaf070e9-cefb-453e-bf34-92f3cb677f96-20454557.jpg)  
+-   从列表中查询某个数据并替换为另一个数据。  
+-   输入端：  
+	-   S:数据列表  
+	-   F:要被替换的原数据  
+	-   R:替换后的新数据  
+-   输出端：  
+	-   R:替换后的数据列表  
+-   F端和R端的数量个数要相等，否则会报错。![](https://api2.mubu.com/v3/document_image/1d3416c1-493d-40b2-b74f-a6b59f641b28-20454557.jpg)  
+-   要特别注意的是F端和S端要保证数据类型一样，尤其要注意数字和字符的转换。![](https://api2.mubu.com/v3/document_image/8ce88cff-f671-4aff-b2ea-8ebdeb159f19-20454557.jpg)  
+-   该运算器要区别于Replace Items,一个是替换"具体数据”，一个是替换"指定序号数据”。![](https://api2.mubu.com/v3/document_image/ccfa5aa4-bd1a-47a2-9dc5-5443dedccaa5-20454557.jpg)  
+-   Formati函数的一些其他用法。![](https://api2.mubu.com/v3/document_image/834c62ed-36e5-4b58-b6ce-c105335c9afd-20454557.jpg)  
+-   「[[SubSet\|SubSet]]」判断是否子列表![](https://api2.mubu.com/v3/document_image/eb60cd4a-795a-4986-bc30-86291fbb93d8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/47f47899-106f-499a-923d-6c13d9328ed5-20454557.jpg)  
+-   测试一个列表是否完全包含另外一个列表中的所有元素。（子列表）  
+-   输入端：  
+	-   A:数据列表A  
+	-   B:数据列表B  
+-   输出端：  
+	-   R:是否为子集  
+-   判断B是否是A的子集，是输出True,不是输出False,注意不能倒过来，即A是B的子集仍1旧输出False。![](https://api2.mubu.com/v3/document_image/11018324-124f-4fc6-9950-b362dbb7b2ee-20454557.jpg)  
+-   「[[Delete Consecutive\|Delete Consecutive]]」剔除相邻且重复的数据![](https://api2.mubu.com/v3/document_image/7e4372a6-e770-4c0d-a9ee-98bd494f0587-20454557.jpg)![](https://api2.mubu.com/v3/document_image/347fb91a-1006-4e87-816c-a548e6ef5e3b-20454557.jpg)  
+-   剔除列表中相邻且重复的元素。  
+-   输入端：  
+	-   S：数据列表  
+	-   W：是否考虑首尾两个数据的重复性  
+-   输出端：  
+	-   S：处理后的数据列表  
+	-   N：删除数据总数  
+-   w端若为True，则当首尾数据相同时，删除尾项；若为False，则保留首尾项。w端默认为False。![](https://api2.mubu.com/v3/document_image/8c154537-0497-4401-a163-8b95b7967b26-20454557.jpg)  
+-   有些时候在删除连续点的时候会出现错误，不知道是为什么，这个时候可以用Kangaroo插件的removeDuplicatePts电池代替。![](https://api2.mubu.com/v3/document_image/821230be-ac64-4e74-8fd4-ce9dac06780e-20454557.jpg)  
+-   「[[Find similar member\|Find similar member]]」查找最近似的数据![](https://api2.mubu.com/v3/document_image/36a05266-3bc5-4ad7-93b0-8d23f2d6e747-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fc17517c-6e63-41c5-a120-1ee13393c393-20454557.jpg)  
+-   查找最相似（近似）的数据。  
+-   输入端：  
+	-   D：要查找的数据  
+	-   S：被搜索的数据列表  
+-   输出端：  
+	-   H：S端数据中最接近D端的值  
+	-   i：H中的值在S端的序号  
+-   D端为要查找的数据，S端为被搜素的集合，D端可以输入多个数据![](https://api2.mubu.com/v3/document_image/88ef782c-311e-46c6-bfb9-b1629722e4b0-20454557.jpg)  
+-   D端和S端不要直接连接Panel输入数据，无论是D端还是S端连接了都会出现错误结果，因为D端和S端输入的数据类型是Data，不是Number，无法把Panel输出的text信息转化为数值，失去了四舍五入的特性，因此只有在Panel后连接Number运算器将其变为数值才能恢复正常。![](https://api2.mubu.com/v3/document_image/7ef6446c-e8a4-4ca4-b236-e2097e3a173f-20454557.jpg)  
+-   这个案例的一个启示是，Panel输出的其实是text，之所以之前一直也可以用它来输入数值，例如Series，是因为电池的输入端数据类型是Number，自动将text转化成了数值，一旦输入端数据类型变为了更广阔的Data就会出现错误。![](https://api2.mubu.com/v3/document_image/a8bbfe3b-3d63-4c59-9435-15fc09be1d59-20454557.jpg)  
+-   「[[Key/Value Search\|Key/Value Search]]」键/值查询![](https://api2.mubu.com/v3/document_image/e341d22f-d494-4719-9b7a-d69343a752ef-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ef46de69-0e2e-4d42-a2cd-c4448d7e9aea-20454557.jpg)  
+-   使用 键/值 查询，从集合中提取对应数据。  
+-   输入端：  
+	-   K:关键字列表  
+	-   V:值列表  
+	-   S:要搜索的关键字  
+-   输出端：  
+	-   R:对应搜索关键字的值  
+-   直观理解就是给每一个值赋予了一个关键字名称，然后我们搜索关键字就能得到相应的值，注意K端和V端个数要保持一致，否则会报错。其实我们一般数据列表中数据的序号就可以看作它的关键字，只是序号的可读性没有名称高。![](https://api2.mubu.com/v3/document_image/37421868-712f-48be-8391-0df1dddea3a6-20454557.jpg)  
+-   关于这个电池的实际应用我们可以结合Human:插件来说，是有关构建BIM信息模型的知识。  
+	-   (1)赋值：在Rhio的物件属性选项卡里有一个用户属性文本，里面可以记录物件的信息，比如长度、面积、体积、坐标等等，我们可以在Rhino中手动输入，也可以通过Human插件将计算结果直接赋予。![](https://api2.mubu.com/v3/document_image/cdbcd318-c741-4b4d-83fe-c6dfb0f57cbe-20454557.jpg)  
+	-   (2)匹配：之后我们就可以在Rhino中对其他物件进行匹配。![](https://api2.mubu.com/v3/document_image/afbed17f-47fb-4941-87a3-70ebca5384a4-20454557.jpg)  
+	-   (3)关键字搜索：最后我们就可以在GH中按照关键字对新匹配的其他物件进行关键字数值提取了。![](https://api2.mubu.com/v3/document_image/1acab306-b4a0-40e1-b234-2e185f17edc2-20454557.jpg)  
+	-   (4)优点：这样的好处在于运算是在Rhino中完成的，而不是GH,GH只是做了一步数据读取工作，这样可以大大节省GH中的运算速度，当然也更方便模型的管理和多人协同。  
+## Text 文本文字  
+-   Sets类的Text组，对文本编辑的一组运算器。![](https://api2.mubu.com/v3/document_image/76c25ccc-6038-4c3d-9b70-a91cab73df7b-20454557.jpg)  
+-   「[[Characters\|Characters]]」拆分为字符![](https://api2.mubu.com/v3/document_image/622a27cf-1390-441f-b09d-82a88b970067-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c34eef27-3ecb-4ecf-a894-82f4cca26daf-20454557.jpg)  
+-   将文本分解为单个字符 。  
+-   输入端：  
+	-   T:文本  
+-   输出端：  
+	-   C:拆解后的字符  
+	-   U:每个字符的Unicode  
+-   文本支持中英文和符号，Unicode可以理解为任何语言的任意字符都有一个唯一的代码，这样方便于文本间的转换处理。![](https://api2.mubu.com/v3/document_image/dc20733d-3a67-4dca-9924-2d4dd613ec49-20454557.jpg)  
+-   「[[Concatenate\|Concatenate]]」合并文本片段![](https://api2.mubu.com/v3/document_image/02c40ffc-edf7-4bbb-9ea5-a75bf5c33bd6-20454557.jpg)![](https://api2.mubu.com/v3/document_image/63fd54bc-7b55-446d-8292-bf40f9a7ee27-20454557.jpg)  
+-   合并多个文本片段。  
+-   输入端：  
+	-   A：第一个文本  
+	-   B：第二个文本  
+-   输出端：  
+	-   R：连接后的文本  
+-   文本既可以是文字、数字、字母、符号、空格等，电池放大可以增减输入端。  
+-   「[[Text Join\|Text Join]]」文字合并![](https://api2.mubu.com/v3/document_image/0d6fc9b9-59e5-4716-9d86-0ea02326645e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a1ff4981-729f-4e14-a337-85c68f6ed216-20454557.jpg)  
+-   将一组文本片段合并。  
+-   输入端：  
+	-   T:文本  
+	-   J:分割符  
+-   输出端：  
+	-   R:合并后的文本  
+-   和Concatenate用法有点像，J端可以加入分割符，也可以不加入。![](https://api2.mubu.com/v3/document_image/a138f6d5-418f-4141-8fe2-79b7e78832bf-20454557.jpg)  
+-   「[[Text Length\|Text Length]]」文字长度![](https://api2.mubu.com/v3/document_image/5d8268cc-c4f2-4100-a26e-6d1e7ca5ee6f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3ca276d0-44d4-4323-bfe7-cb3a3254cce3-20454557.jpg)  
+-   输出文本的长度（字符数）  
+-   输入端：  
+	-   T:文本  
+-   输出端：  
+	-   L:字符个数  
+-   返回输入文本的字符个数。![](https://api2.mubu.com/v3/document_image/c9bf3a12-1973-4d6a-adeb-2894f106373e-20454557.jpg)  
+-   「[[Text Split\|Text Split]]」文字分割![](https://api2.mubu.com/v3/document_image/a789f03f-92f9-461b-b917-e643a3bc3981-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f60d83b7-fcb0-4a37-9368-e3df8a38fd51-20454557.jpg)  
+-   设置分隔符，将文本拆分为片段。  
+-   输入端：  
+	-   T：文本  
+	-   C：要截断处的字符  
+-   输出端：  
+	-   R：截断后的文本  
+-   C端输入的字符会自动删除。  
+-   若需要多个打断节点，可以将多个字符组成一个连着的文本输入，用多个字符共同和T端文本计算，只生成一组数据。如果多个字符分成多个文本输入，会分别和T端文本计算，生成多组数据。![](https://api2.mubu.com/v3/document_image/e56d6bb8-dcd5-404b-823c-778c3b904b9b-20454557.jpg)  
+-   T端文本内所有的C端字符都会被截断。![](https://api2.mubu.com/v3/document_image/e2a68b8a-d2dd-45e0-967d-85fd4b934b69-20454557.jpg)  
+-   「[[Format\|Format]]」格式化函数![](https://api2.mubu.com/v3/document_image/e75ac43b-874c-4f92-b824-62d6dc707d40-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1e9ae890-ffa4-4883-a599-b13be5d2daca-20454557.jpg)  
+-   输入端：  
+	-   F:文本信息  
+	-   C:文化设置  
+	-   0:数据0  
+	-   1:数据1  
+-   输出端：  
+	-   T:格式化后的文本  
+-   简单来讲就是用输入端0和1的数据替换F中“{}”内的内容，注意字符要使用英文输入法的。C端输入的是文化信息，可能不同的语言的字符会有使用区别。电池放大可以增减输入端。![](https://api2.mubu.com/v3/document_image/b16d75a3-e12f-4222-bd18-fb60b9cfb379-20454557.jpg)  
+-   Formati函数的一些拓展用法。![](https://api2.mubu.com/v3/document_image/8a74571c-9109-4d0f-a4ef-50e93a79ed3f-20454557.jpg)  
+-   「[[Text Case\|Text Case]]」大小写字符![](https://api2.mubu.com/v3/document_image/9ced115a-5158-4067-9a24-284a04342abb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fd6adae7-78b8-4613-8e94-b365780f0a73-20454557.jpg)  
+-   更改一段文本为大写和小写。  
+-   输入端：  
+	-   T:文本信息  
+	-   C:文化设置  
+-   输出端：  
+	-   U:大写  
+	-   L:小写  
+-   转换大小写，C端输入的是文化信息，可能不同的语言的字符会有使用区别。![](https://api2.mubu.com/v3/document_image/825bfce0-b729-4b60-82e2-fd5f84ba1d11-20454557.jpg)  
+-   「[[Text Fragment\|Text Fragment]]」提取特定位置文字片段![](https://api2.mubu.com/v3/document_image/5954abef-1794-4da3-bedc-a6f5691087a8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b7b8046d-2f8c-442b-ac6b-387c97848c8b-20454557.jpg)  
+-   提取某个位置开始的文字片段。可设置起始位置和长度。  
+-   输入端：  
+	-   T:文本信息  
+	-   i:起始字符序号  
+	-   N:字符个数  
+-   输出端：  
+	-   F:文本片段  
+-   从文本指定序号处向后截取N个字符作为文本片段。![](https://api2.mubu.com/v3/document_image/97dd6068-8ff7-40ab-86b3-f7897ad3e24c-20454557.jpg)  
+-   「[[Text Trim\|Text Trim]]」剔除文字前后的空格![](https://api2.mubu.com/v3/document_image/8a9e67af-76ce-4834-a86f-1809f1891d33-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8a409533-c28e-4d33-8251-538e0ee11f38-20454557.jpg)  
+-   从文本的开头和结尾删除多余的空格字符。  
+-   输入端：  
+	-   T:文本信息  
+	-   S:是否删除首端空白文本  
+	-   E:是否删除尾端空白文本  
+-   输出端：  
+	-   R:删除后文本  
+-   自由控制是否删除首尾空格。![](https://api2.mubu.com/v3/document_image/68e7682a-da79-4b20-ba58-1945f00ee65b-20454557.jpg)  
+-   「[[Match Text\|Match Text]]」查询文字片段![](https://api2.mubu.com/v3/document_image/0bc71194-ac70-4240-9e23-24a61e6b151c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1c056a4e-505b-480e-85a5-5914c1fbd6ba-20454557.jpg)  
+-   查询文本中是否有完全匹配或部分匹配的片段。  
+-   输入端：  
+	-   T:文本信息  
+	-   P:要匹配的文本  
+	-   R:正则表达式  
+	-   C:是否区分大小写  
+-   输出端：  
+	-   M:根据是否匹配输出布尔值  
+-   这个运算器很强大，但前提是要会使用编程语言，R端输入的[正则表达式](https://baike.baidu.com/item/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/1700215)在代码的编辑和搜索中有巨大的作用。如果抛开代码，对于我们普通使用来讲，就是个简单的文本匹配电池了，也可以使用些常见符号，例如”*”可以匹配任意个文本，“？”可以匹配一个文本。![](https://api2.mubu.com/v3/document_image/ed4293ef-4348-4d8f-a684-9ee7fc7b01e9-20454557.jpg)  
+-   「[[Replace Text\|Replace Text]]」替换文字![](https://api2.mubu.com/v3/document_image/f520cc6b-594b-4ef5-afd5-58bd61898b8c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/876aa706-5463-42da-a72b-46ff0d12fd37-20454557.jpg)  
+-   替换文字中某个特定的文字片段。输入端：  
+	-   T：文本信息  
+	-   F：查找替换文本  
+	-   R：用来替换的文本  
+-   输出端：  
+	-   R：替换后文本  
+-   用输入端R的文本替换输入端F的文本。![](https://api2.mubu.com/v3/document_image/8f8f35c8-72f6-4f1b-ae08-66f302218394-20454557.jpg)  
+-   「[[Sort Text\|Sort Text]]」文字排序![](https://api2.mubu.com/v3/document_image/179995df-6fc3-4e5b-903a-fafc28b93823-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e8399755-6a25-4545-ae09-8a3c5f49349f-20454557.jpg)  
+-   对文本列表进行排序。  
+-   输入端：  
+	-   K：关键字（排序依据）  
+	-   V：要排序的值  
+	-   C：文化  
+-   输出端：  
+	-   K：重新排序后的关键字  
+	-   V：重新排序后的值  
+-   通过对K输入端文本顺序的重排序，对V端输入值进行对应重新排序，类比于Sort List，一个是以数字作为关键字，一个是以文本作为关键字。![](https://api2.mubu.com/v3/document_image/cc06e2ee-2289-475c-85b3-7fbbbd497665-20454557.jpg)  
+-   输入端C的文化用来匹配不同 的输入文本，比如输入中文时我们要选择中国才能按照首字母顺序排序。![](https://api2.mubu.com/v3/document_image/e8f52ec0-6f73-4e84-86e1-aabbf79dce97-20454557.jpg)  
+-   「[[Text Distance\|Text Distance]]」莱文斯坦距离![](https://api2.mubu.com/v3/document_image/d397d599-a200-4f3d-a259-7d24052b73cc-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d7b8b956-d8f7-41cf-a892-fba48ff7903c-20454557.jpg)  
+-   计算两个文本片段之间的 Levenshtein 距离。 对于设计业用户来说基本不会用到该工具。  
+-   输入端：  
+	-   A:文本A  
+	-   B:文本B  
+	-   C:是否区分大小写  
+-   输出端：  
+	-   D:AB文本间的Levenshtein距离  
+-   莱文斯坦距离距离，又称编辑距离，指两个文本之间，由一个转换成另一个所需的最少编辑操作次数。许可的编辑操作包括将一个字符替换成另一个字符，插入一个字符，删除一个字符，例如将“BigRice”转换成"bigrice”，若区分大小写，总共需要两步。这个运算器应该也是多在编程语境下使用。![](https://api2.mubu.com/v3/document_image/75b6f090-5cc1-41af-b27a-4181b51e96b7-20454557.jpg)  
+-   「[[Text On Surface\|Text On Surface]]」3D表面上的文字![](https://api2.mubu.com/v3/document_image/24a0f487-4cc4-456b-9b66-d09a9aea3672-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2c8cc27f-5267-4013-8b71-57829a235c25-20454557.jpg)  
+-   在3D表面上制作文字几何体。  
+-   输入端：  
+	-   T:文字内容  
+	-   F:字体  
+	-   H:文字大小  
+	-   D:文字挤出厚度  
+	-   B:基准曲线（曲面上曲线）  
+	-   S:基准曲面(类型可以是Surface、Mesh、SubD)  
+-   输出端：  
+	-   S:生成的文本Brep  
+-   在曲面上生成贴合曲面表面的文本Brp,注意B端的基准曲线是贴合曲面的曲线，可以先画直线然后将其投影到曲面上再拾取。![](https://api2.mubu.com/v3/document_image/c3f1fdff-43c8-4fdb-afa5-4cab00595fa5-20454557.jpg)  
+## Tree 树形数据  
+-   Sets类的Treet组，数据结构相关运算器，很重要且常用的一个集合，是对组间数据结构的编辑。对数据结构的编辑，可以先用少量数据确定逻辑，在整体应用到大量数据进行计算。![](https://api2.mubu.com/v3/document_image/75254c74-f627-4cf0-b531-2b3a74df20a8-20454557.jpg)  
+-   「[[Clean Tree\|Clean Tree]]」清理数据树![](https://api2.mubu.com/v3/document_image/a90c355a-2f06-40e4-8ed3-a3269386f254-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8e330b5a-f7e9-43eb-9516-1faf7eb90d22-20454557.jpg)  
+-   从数据树中删除null （空值）和 invalid（无效）数据，以及空的分支。  
+-   输入端：  
+	-   N：Null，是否删除空值  
+	-   X：Invalid，是否删除无效值  
+	-   E：Empty，是否删除空数据组  
+	-   T：数据  
+-   输出端：  
+	-   T：清理后的数据  
+-   True为删除，False为不删除。Null指不存在，即输入的东西是不存在的，比如半径为a的圆；Invalid指输入的东西是存在的，但不是有效值，比如半径为0的圆；Empty指没有数据。若清理后组内没有任何数据，N端和X端会保留原路径名称，E端会删除路径名称。![](https://api2.mubu.com/v3/document_image/391d4035-13a8-4f0b-9dfb-c8835e3b4397-20454557.jpg)  
+-   默认值N和X为True，E为False。  
+-   「[[Flatten Tree\|Flatten Tree]]」拍平数据树![](https://api2.mubu.com/v3/document_image/a4449dce-4adb-463f-846c-ec17452b516a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a0d7e088-8137-4747-b148-f36580cd699a-20454557.jpg)  
+-   拍平数据树为一个单一列表。  
+-   输入端：  
+	-   T：数据  
+	-   P：数据路径名称  
+-   输出端：  
+	-   T：拍平后的数据  
+-   将多级数据拍成一级数据。  
+-   P端可以自定义输出数据的路径名称，默认为{0}。![](https://api2.mubu.com/v3/document_image/083e30ba-d884-4c3b-a511-9b7c84e448b4-20454557.jpg)  
+-   因为比较常用，被内置到了大多数电池输入或输出端的右键菜单中。  
+-   「[[Graft Tree\|Graft Tree]]」数据树增加一层![](https://api2.mubu.com/v3/document_image/155d8ee4-0291-4c55-9795-f55968b76ea5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a1eb2d10-6aa1-4594-ba89-99d598eebeae-20454557.jpg)  
+-   在当前的数据数结构中为每个数据添加一个分支，让每个数据都有一个独立的分支。  
+-   输入端：  
+	-   T：数据  
+-   输出端：  
+	-   T：输入数据增加一级后的数据  
+-   可以理解为和Flatten Tree相反的运算器，但又不是完全相反，Flatten Tree是无论多少级的数据都会拍平成一级数据，而Tree每连接一个只会增加一个级别。如果数据已无法再次分级，那么只会改变路径名称位数，数据结构实质上不发生变化。![](https://api2.mubu.com/v3/document_image/c2a1294d-9dd5-4d20-a921-b11dc79d4ede-20454557.jpg)  
+-   Graft Tree也被内置到了右键菜单里。  
+-   「[[Prune Tree\|Prune Tree]]」裁剪数据树![](https://api2.mubu.com/v3/document_image/10e579da-2749-4e6f-baa6-2e31f8cee1d3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0a178034-1f9c-4920-bbca-05d0dff90f2f-20454557.jpg)  
+-   移除数据长度不在指定数量范围的列表。  
+-   输入端：  
+	-   T:数据  
+	-   N0:数据项数最小值  
+	-   N1:数据项数最大值(若不设置最大值，输入0)  
+-   输出端：  
+	-   T:修剪后数据  
+-   修剪掉输入数据中项数小于N0和大于N1的分支。![](https://api2.mubu.com/v3/document_image/1c124a64-e045-410e-ab10-f1368cb43181-20454557.jpg)  
+-   「[[Simplify Tree\|Simplify Tree]]」简化数据树![](https://api2.mubu.com/v3/document_image/e1b3b903-89c4-4a67-a36e-5f91f1a2321e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/888f831a-b2d2-4f68-bc0d-15f6553ba8c6-20454557.jpg)  
+-   剔除树形数据中没有实际作用的层级结构，以此简化数据树。  
+-   输入端：  
+	-   T:数据  
+	-   F:是否只从首端简化数据结构  
+-   输出端：  
+	-   T:简化后的数据结构  
+-   这个运算器在多数输入端和输出端右键都有内置，用来简化多余的数据结构名称，F端用来控制是否只从首端简化数据，若为Tue,只会简化首端，尾端多余数据结构不会被简化。![](https://api2.mubu.com/v3/document_image/447467fc-c629-4029-a0f1-f5ebf2ff6fc8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6bdd00f2-26de-4c86-9e64-5bcaf9e51e74-20454557.jpg)  
+-   这个运算器在只有一个数据组的时候无法简化，这时可以用Suirify来简化。  
+-   「[[Tree Statistics\|Tree Statistics]]」数据树结构信息![](https://api2.mubu.com/v3/document_image/cddf8cb7-539a-4edf-8fd0-371d3e998a2b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a4706237-5447-4633-aa22-a5242d9a8dd9-20454557.jpg)  
+-   输出数据树的统计信息，包括：分支（列表）的总数，每个分支的路径，每个分支中数据的数量。  
+-   输入端：  
+	-   T：数据  
+-   输出端：  
+	-   P：路径名称  
+	-   L：每个路径的数据个数  
+	-   C：总的路径个数  
+-   用来查看数据结构的信息，和Param Viewer的作用有类似之处。![](https://api2.mubu.com/v3/document_image/c0c82edb-708d-4d19-9faf-022113d5ceb7-20454557.jpg)  
+-   「[[Trim Tree\|Trim Tree]]」切割数据树![](https://api2.mubu.com/v3/document_image/de20942a-4b4a-4bed-8458-d47039168bf3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/9dd03527-976f-475d-b6d8-87f59af1d977-20454557.jpg)  
+-   通过合并树形数据表层的分支，以达到合并对应层级数据的目的。  
+-   输入端：  
+	-   T:数据  
+	-   D:修剪位数  
+-   输出端：  
+	-   T:修剪路径后的数据结构  
+-   该运算器和Shift Paths类似，都可以把数据路径进行修剪，只不过Shift Paths,从首尾两端都可以修剪，而这个运算器只能从尾端修剪。![](https://api2.mubu.com/v3/document_image/9d6d1c14-f1db-401b-ac2a-c080cdad8914-20454557.jpg)  
+-   「[[Unflatten Tree\|Unflatten Tree]]」套用数据树结构![](https://api2.mubu.com/v3/document_image/12c08115-81aa-489f-9118-fbda2a089553-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2e9a648a-7615-4d24-80f3-8aff10747431-20454557.jpg)  
+-   将一组数据参考另一组数据的树形结构重新组织。要求原始数据和参考的数据量一致。  
+-   输入端：  
+	-   T:数据  
+	-   G:拍平前的数据结构  
+-   输出端：  
+	-   T:恢复后数据  
+-   和Flatten Tree互为反运算器，可以把已经拍平的数据再恢复原样，但需要在G端输入原来的数据结构。![](https://api2.mubu.com/v3/document_image/a568855f-e0cd-47c8-a9ae-cb970a99c253-20454557.jpg)  
+-   「[[Entwine\|Entwine]]」整合分支的数据![](https://api2.mubu.com/v3/document_image/ad1d65a4-1037-4f87-a6bd-d0b2bffa7999-20454557.jpg)![](https://api2.mubu.com/v3/document_image/57fbe1eb-62f9-40b5-a4ad-ba83398be4af-20454557.jpg)  
+-   将多个列表汇合到一起输出，或将多个列表嫁接到一起输出。是很有用的数据结构组织工具。  
+-   输入端：  
+	-   {0;0}：输入端0  
+	-   {0;1}：输入端1  
+	-   {0;2}：输入端2  
+-   输出端：  
+	-   R：处理后的数据  
+-   该电池有两种状态，Flatten和Graft，右键菜单的Flatten Inputs切换。Flatten状态下会先将每个输入端拍平，再分别按照输入端路径进行数据结构组织；Graft状态下不会拍平，直接在输入端每组数据的原路径名称前新增一级数据结构。![](https://api2.mubu.com/v3/document_image/c473c81b-6c29-47d3-a279-f45e741dec9d-20454557.jpg)  
+-   当输入端均为线性数据时，该电池的Flatten状态和Merge电池有相似之处，区别是Entwine分组，Merge不分组。  
+-   「[[Explode Tree\|Explode Tree]]」拆分分支![](https://api2.mubu.com/v3/document_image/028c83f2-6c3b-46f7-973b-02748b8679d8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/68aa77b7-5633-4723-914d-d3381d1e8677-20454557.jpg)  
+-   将数据树中每个分支独立输出。  
+-   输入端：  
+	-   D：数据  
+-   输出端：  
+	-   -：炸开后的单一组数据  
+	-   -：炸开后的单一组数据  
+-   输出端会自动显示输入数据的路径名称，右键电池选择Match outputs可以迅速匹配所有路径名称。![](https://api2.mubu.com/v3/document_image/e1d9cb49-439f-4626-b593-60b59ddd25d7-20454557.jpg)  
+-   当然对于数据路径非常多的情况，如果显示所有路径名称会使电池变得非常大，这种情况下若你只想选择其中几个数据，也可以放大电池手动增减输出端。  
+-   「[[Flip Matrix\|Flip Matrix]]」矩阵反转![](https://api2.mubu.com/v3/document_image/d3fcf9ef-c30a-48e1-b60d-eb0fa3afb94c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8003d3de-a878-44ae-9d3d-ddecb64b1254-20454557.jpg)  
+-   对二维数据树做数据结构的互换。  
+-   输入端：  
+	-   D：数据  
+-   输出端：  
+	-   D：翻转后的数据  
+-   这个运算器的原理可以简单理解为“横纵颠倒”，只能应用于2个级别的数据结构。常和Vector类里Grid组的运算器组合使用，因为GH里的连线是按照同组内的序号连接的，所以点的顺序会影响连线形式。![](https://api2.mubu.com/v3/document_image/a7387a47-2e17-46b4-9b2a-6719741901d6-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fd646a4a-d04f-474a-b253-6bafb9a527f3-20454557.jpg)  
+-   「[[Merge\|Merge]]」合并同路径的数据![](https://api2.mubu.com/v3/document_image/e242ff8d-268d-4540-99aa-6af7e64edfde-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6278cedd-a1d6-400c-b517-552e5c1016b1-20454557.jpg)  
+-   合并相同分支（路径）里的数据。  
+-   输入端：  
+	-   D1：数据1  
+	-   D2：数据2  
+-   输出端：  
+	-   R：合并后的数据  
+-   电池放大可以增减输入端，将路径名称相同的数据合并到同一组内，名称必须完全相同。![](https://api2.mubu.com/v3/document_image/0b1d0694-5ff5-45b7-9bd7-fb321a705be2-20454557.jpg)  
+-   「[[Match Tree\|Match Tree]]」套用数据树路径![](https://api2.mubu.com/v3/document_image/d5356bdc-5faf-45ca-a3a6-fe9ab42c05e0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ea372069-d2c1-40ba-86b8-080a2a88181c-20454557.jpg)  
+-   将一个数据树与另一个匹配（套用）。  
+-   输入端：  
+	-   T:数据  
+	-   G:匹配数据  
+-   输出端：  
+	-   T:路径名匹配后数据  
+-   将输入端G的路径名替换T的路径名，要保证输入端T和G的路径数量一致。![](https://api2.mubu.com/v3/document_image/8dc9de96-babb-46da-ba83-4d075e81f5d8-20454557.jpg)  
+-   「[[Path Mapper\|Path Mapper]]」路径映射![](https://api2.mubu.com/v3/document_image/d56d8ddd-2554-48c6-ae2b-df5f0cde205b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6fb46987-8c65-4d84-a16f-efb262cbe6b9-20454557.jpg)  
+-   对树形数据的层级结构做重新组织和调整。  
+-   输入端：  
+	-   输入数据  
+-   输出端：  
+	-   数据结构处理后的数据  
+-   Path Mapper用来处理数据结构，是一个非常强大的运算器，核心可概括为两类：  
+	-   组层面映射：改变路径名称，将相同组名的放在一起。  
+	-   项层面映射：改变序号，并重新按序排列。  
+-   首先，先解释一下基本用法，双击电池或者右键选择Mapping Editor后会看到一个输入界面：![](https://api2.mubu.com/v3/document_image/0bb22276-dfb9-48cc-9855-08c81f1d9b1c-20454557.jpg)  
+	-   上半部分用来输入数据结构变换的公式  
+		-   Source——原数据路径格式，一般“{}”代表组号，“()”代表序号，“{}”必须有，“()”是否有由Target是否需要而定  
+		-   Target——目标路径格式  
+	-   下半部分是一些固定字符串的说明，可以在编辑公式时引用  
+		-   item_count——当前组的数据个数  
+		-   path_count——输入数据结构中所有组的总数量  
+		-   path_index——当前组的序号（注意不是路径名称，而是按路径排列的序号，从0开始计数）  
+-   右键电池自带6种默认模式：  
+	-   （1）Create Null Mapping  
+		-   举例——{A;B;C} to {A;B;C}  
+			-   这个模式下数据结构本质不会发生变化，不过我们可以通过增减“0”，在不改变数据结构本质的情况下，改变路径名称级数，达到简化或匹配路径名称的目的。![](https://api2.mubu.com/v3/document_image/cf3d7f70-14ac-4caa-baea-9b8f77fb8efe-20454557.jpg)  
+	-   （2）Create Flatten Mapping  
+		-   举例——{A;B;C} to {0}  
+			-   对应电池Flatten Tree，将所有数据拍成一个组，当然有了Path Mapper，我们还可以自由修改拍平后的路径名称。![](https://api2.mubu.com/v3/document_image/fca77cad-ee73-4b40-8feb-1ee99d7ecec4-20454557.jpg)  
+	-   （3）Create Graft Mapping  
+		-   举例——{A;B;C} (i) to {A;B;C;i}  
+			-   对应电池Graft Tree，使原数据结构增加一级，即将每个数据的序号作为新增的一级序号加入路径名称。当然有了Path Mapper我们不仅可以把新一级序号加在末尾，还可以放在其他位置。![](https://api2.mubu.com/v3/document_image/d03289d5-6121-40dd-9581-0985e0c67b13-20454557.jpg)  
+	-   （4）Create Trim Mapping  
+		-   举例——{A;B;C} to {A;B}  
+			-   对应电池Trim Tree，可以增减数据级数，不过Path Mapper中既可以从首位两端任意修剪，这一点其实更像Shift Paths。![](https://api2.mubu.com/v3/document_image/7847bf44-a250-46a6-80ef-8cac7bb6a161-20454557.jpg)  
+	-   （5）Create Reverse Mapping  
+		-   举例——{A;B;C}(i) to {A;B;C}(item_count-1-i)  
+			-   对应电池Reverse List，将组内的数据倒序排列，这里用到了之前提到的item_count，即本组的数据个数，之后的“-1”是因为数据序号从0开始，“-i”是为了翻转序号。![](https://api2.mubu.com/v3/document_image/71e7d33a-ec14-4d92-80a0-77b5a8364b5e-20454557.jpg)  
+	-   （6）Create Renumber Mapping  
+		-   举例——{A;B;C;D} to {path_index}  
+			-   有点类似先Flatten再Graft，属于路径层面上的拍平，即全部变为2级数据结构。这里用到了之前提到的path_index，即当前组序号，比如第一个List的序号是0，第二个List的序号是1。![](https://api2.mubu.com/v3/document_image/4a50a522-3ddf-4417-a005-a4d906f3fb6c-20454557.jpg)  
+-   Path Mapper的其他常用方法：  
+	-   （1）翻转组顺序  
+		-   举例——{A} to {path_count-A-1}  
+			-   类似Create Reverse Mapping，只不过这里的翻转不是组内数据的顺序，而是组的顺序。需要注意的是，当是在大组内翻转小组顺序时，翻转后的组号不是从{0;0}开始，需要手动处理一下。![](https://api2.mubu.com/v3/document_image/664a734b-9e77-4606-8388-53ea0b7785a1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c9fdb073-933c-40c8-95b4-ffea33ad737b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0848ef29-775b-4863-ae00-2955ebe7a1e0-20454557.jpg)  
+	-   （2）矩阵变化  
+		-   举例——{A}(i) to {i}  
+		-   举例——{A;B}(i) to {A;i}  
+			-   类似于电池Flip Metrix，可以横纵交换，不过Path Mapper除了可以处理2级结构的交换，还能处理3级及以上结构的横纵变换。![](https://api2.mubu.com/v3/document_image/49cbddbe-2bf8-4876-85b5-65c2ba37d92e-20454557.jpg)  
+	-   （3）固定分组  
+		-   举例——{A}(i) to {A;floor(i/(item_count/3))}  
+		-   举例——{A} to {A%3}  
+			-   固定分组分为线形数据和树形数据两种，可以将输入数据分成指定的组数输出，无论数据量多少，指定的组数都不变。注意树形数据情形下组数不能超过原数据组数。![](https://api2.mubu.com/v3/document_image/460ce152-d38f-42f8-981f-0c5eed85a4bb-20454557.jpg)  
+	-   （4）合并  
+		-   举例——{A} to {item_count}  
+		-   举例——{A} to {floor(A/2)}  
+		-   举例——{A;B}(i) to {i}  
+			-   合并分为三种，项数数量相同、变化后组名相同、项序号相同。![](https://api2.mubu.com/v3/document_image/52b9f89e-a938-48f6-bb79-33b47c3c0bc4-20454557.jpg)  
+	-   （5）序号依次映射  
+		-   举例——{A}(i) to {A}(0)  
+			-   类似于用List Item取末尾项，这个用法有点难理解，{A}(i)映射到{A}(0)可以理解为，同组内每一个序号依次映射到i=0并覆盖，例如在组{0}中，i=1的值先映射到i=0处覆盖，接着i=2的值映射到i=0处覆盖，依次类推后，最后剩的值就是每组的最后一个值。![](https://api2.mubu.com/v3/document_image/eea923db-a7c3-4840-aeb0-f2183483bf6c-20454557.jpg)  
+-   需要注意的点：  
+	-   词典中只是用数字作为举例，Path Mapper还可以处理几何等其他类型的数据结构。  
+	-   所有符号要使用英文输入法下的字符，常见的有“/”为除法，“\”为整除，“%”为余数。  
+	-   常见函数有int()函数、fix()函数、floor()函数、ceiling()函数、round()函数。![](https://api2.mubu.com/v3/document_image/04c61436-09c2-4d0c-ac00-0c815f9d9879-20454557.jpg)  
+	-   Path Mapper中的序号名用“()”，当用Panle输入序号名时用“[]”。  
+-   「[[Shift Paths\|Shift Paths]]」合并数据树的顶层![](https://api2.mubu.com/v3/document_image/751faf57-565e-4a3f-9a63-afdad0c21437-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6b3d47b1-bffc-45be-a753-50841e6bc33c-20454557.jpg)  
+-   移动数据树中所有分支路径的编号串，缩减路径长度，以合并对应层级的数据。与Trim Tree工具作用基本一样。  
+-   输入端：  
+	-   D：数据  
+	-   O：推移的位数  
+-   输出端：  
+	-   D：推移后的数据  
+-   O端默认值为-1，指从右往左删除一级路径，若为正数则是从左往右删除。删除之后将同组号的数据合并到同一组内。![](https://api2.mubu.com/v3/document_image/38769b83-7d8b-4741-b8a4-468750ba8ea2-20454557.jpg)  
+-   「[[Split Tree\|Split Tree]]」分割数据树为两半![](https://api2.mubu.com/v3/document_image/defe5b05-e01a-428d-a8b3-dfa4727240ee-20454557.jpg)![](https://api2.mubu.com/v3/document_image/587597e8-2070-4975-8658-ac37cc95a555-20454557.jpg)  
+-   使用路径掩码将数据树分成两部分。  
+-   输入端：  
+	-   D:数据  
+	-   M:抽离的组名  
+-   输出端：  
+	-   P:抽离的数据  
+	-   N:剩余的数据  
+-   通过M端输入的组名将D端数据分成P端和N端两个部分，组名可以来自于其他运算器，也可以用Panel输入。![](https://api2.mubu.com/v3/document_image/237218c9-b36f-4869-b687-0bcda38fbbd0-20454557.jpg)  
+-   M端可以输入{A}[U]的格式，注意是中括号不是小括号，来抽离指定组指定序号的数据，例如{2}[1]代表抽离组2中序号1的数据。![](https://api2.mubu.com/v3/document_image/19f18da5-86ca-4715-9dff-95a1fba04294-20454557.jpg)  
+-   Split Tree输入端M的特殊字符功能：  
+	-   (1)"，”逗号  
+		-   M端可以通过”，“作为间隔输入连续的组，比如格式{2,3}，意为抽离组号为{2}、{3}的数据。再比如格式{0,1;2,3},意为抽离组号为{0;2}、{0;3}、{1;2}、{1;3}这四组数据。![](https://api2.mubu.com/v3/document_image/9696f31b-375f-467c-84bf-523e9ffc2984-20454557.jpg)  
+	-   (2)"..."省略号  
+		-   M端可以通过省略号重复前面输入，例如“0,2，...”代表按照偶数取值，注意组名要和输入数据级数一致。省略号后面可以接数字表示到该项停止。![](https://api2.mubu.com/v3/document_image/05ea4215-bc70-44ec-be90-7dbb9d02a2c2-20454557.jpg)  
+	-   (3)“？”问号  
+		-   可代替任意0或1个，多用于组名编辑。![](https://api2.mubu.com/v3/document_image/31b0ccf6-7e04-4dd4-9d7e-1df7477d9691-20454557.jpg)  
+	-   (4)”*”星号  
+		-   可代替任意个，多用于组名编辑。![](https://api2.mubu.com/v3/document_image/7c4fb441-55c2-4cbd-8ff4-99be706eb368-20454557.jpg)  
+	-   (5)"to”、“>”、“<”、“> =”、“< = ”范围区间![](https://api2.mubu.com/v3/document_image/62750c33-5803-445f-8114-e3194e8c67eb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d84df3bf-c9ad-4a41-90f0-f5eb5a92dd8d-20454557.jpg)  
+	-   (6)"and”、"or”、"not/！”与或非三类逻辑语句  
+		-   “and”为与逻辑，即同时满足；“or”为或逻辑，即满足其一即可；"not”和“！”都是非逻辑，即不满足。![](https://api2.mubu.com/v3/document_image/64243628-46f7-4c98-bd0c-a45d9e295cc4-20454557.jpg)![](https://api2.mubu.com/v3/document_image/caa4c58a-654c-40fd-91da-e992cc58e98f-20454557.jpg)  
+-   Split Tree的各种用法可以互相叠加使用，下面是几个综合使用：  
+	-   (1)不要2和3组，序号要小于1或大于3的。![](https://api2.mubu.com/v3/document_image/8a2c8976-e6ff-4549-86b6-ff4d4cddb721-20454557.jpg)  
+	-   (2)取三个网格中所有偶数列的奇数项：![](https://api2.mubu.com/v3/document_image/58700565-a8ba-4557-8a5d-3abe5f268842-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ea56fd03-9f35-415e-872b-f41dc1981c72-20454557.jpg)  
+	-   (3)通过非逻辑取奇数组。![](https://api2.mubu.com/v3/document_image/37c4995e-02cb-4cfa-a7c5-52335ff6160b-20454557.jpg)  
+-   注意在组的层面，抽离的组从P端输出，其余从N端输出；在项的层面，抽离的项会显示，但是未抽离的会输出Null,也就是说会保留原有的数据结构，当然你可以用Clean Tree将其剔除，但这个结构的保持在某些情况下是很有用的。这个和在修剪曲面布点类似，只是从原完整曲面的矩阵点将修剪处的点删除，但位置保留输出Null。![](https://api2.mubu.com/v3/document_image/c603ec18-1656-45b4-a9ae-ce84b8e8f8dd-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a33473ae-aadc-4770-a6a9-c5c3b8f21c81-20454557.jpg)  
+-   「[[Stream Filter\|Stream Filter]]」数据过滤![](https://api2.mubu.com/v3/document_image/d1499f94-454c-462e-9787-149fae47ad7d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6fa10a86-1cdf-40f5-bad7-150c44a4b92b-20454557.jpg)  
+-   指定某个输入数据端口的数据做输出。注意：G端口只能输入一个端口号。  
+-   输入端：  
+	-   G：输入端判定  
+	-   0：输入端0  
+	-   1：输入端1  
+-   输出端：  
+	-   S：输出G端判定的输入端数据  
+-   S端输出G端值对应的输入端数据，默认输出0端数据，电池放大能增减输入端。![](https://api2.mubu.com/v3/document_image/b1b63748-0b0a-410e-9311-2996a4a392c1-20454557.jpg)  
+-   当只有0和1两个输入端时，G端也可以通过True/False控制，False对应0端，True对应1端。![](https://api2.mubu.com/v3/document_image/0e62d1cb-8b1e-44a5-bb0e-840eece80fba-20454557.jpg)  
+-   「[[Stream Gate\|Stream Gate]]」数据门![](https://api2.mubu.com/v3/document_image/8d9b7794-9dfe-4599-8931-17343c2e488e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8dadccf6-2e0f-47ad-862f-5c8126bbad87-20454557.jpg)  
+-   指定数据从某个端口输出。注意：G端口只能输入一个端口号。  
+-   输入端：  
+	-   S：输入数据  
+	-   G：从哪个序号闸门输出  
+-   输出端：  
+	-   0：闸门0  
+	-   1：闸门1  
+-   和Stream Filter相对应，通过G端控制S端的数据从第几个闸门输出。![](https://api2.mubu.com/v3/document_image/63323292-8a89-4c30-8c29-93433c60c210-20454557.jpg)  
+-   「[[Relative Item\|Relative Item]]」数据树中的相对数据![](https://api2.mubu.com/v3/document_image/6228226d-08ab-4816-a8c4-e1eb80e0c8cb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/9cda82b2-d8bb-4fd1-a23c-46565f94e889-20454557.jpg)  
+-   数据树中检索相对项目。详细用法请观看工具用法视频中的介绍。  
+-   输入端：  
+	-   T:数据  
+	-   O:路径偏移量  
+	-   Wp:路径名是否循环取值  
+	-   Wi:序号是否循环取值  
+-   输出端：  
+	-   A:原路径数据  
+	-   B:偏移后的目标路径数据  
+-   该运算器的实质是给每一个数据路径通过输入偏移量得到一个新的路径。例如原路径为{A;B}[i]，当你在O端输入偏移值{0;1}[1]那么得到的目标路径就是{A+0;B+1}[i+1],则A端输出{A:B}[i]下的数据，B端输出{A+0;B+1}[i+1]的数据；同理，若O端偏移量为{-1;-2}[1]，那么得到的目标路径为{A-1;B-2}[i+1]。Wp和Wi控制组号和项序号上是否循环取值，默认均为False,所以输出端AB每组的项一般都比原数据少，因为不循环就会有部分数据无法匹配。![](https://api2.mubu.com/v3/document_image/6fae6b52-9d15-4d3e-b551-8bfb05533dd4-20454557.jpg)  
+-   在2级数据结构的情况下，当O端输入{0}[1]相当于默认的组内依次运算，当O端输入{1}[0]相当于横纵变换Flip Metrix。![](https://api2.mubu.com/v3/document_image/ad00744a-3d50-4045-b89d-cef43f53c0ca-20454557.jpg)  
+-   通过这个运算器我们可以用原生电池做网格的斜线相连，快速做出LunchBoxf插件中晶格结构的效果。![](https://api2.mubu.com/v3/document_image/14ea550a-53bb-4e38-8f48-f7c2acc462b6-20454557.jpg)  
+-   [云在亭全参建模教程](https://www.bilibili.com/video/BV1mB4y1i7Kq/?vd_source=43afd7bd65c75b2e71de316f8d0f0754)  
+-   「[[Relative Items\|Relative Items]]」数据树之间的相对数据![](https://api2.mubu.com/v3/document_image/b9546af3-12eb-43e2-a927-13132e5d4e10-20454557.jpg)![](https://api2.mubu.com/v3/document_image/eebee4d3-bc78-4cda-ba10-0395bf90f09f-20454557.jpg)  
+-   在两个数据树之间检索相对数据。  
+-   输入端：  
+	-   A:数据A  
+	-   B:数据B  
+	-   O:路径偏移量  
+	-   Wp:路径名是否循环取值  
+	-   Wi：序号是否循环取值  
+-   输出端：  
+	-   A:数据A中原路径数据  
+	-   B:数据B中按O值偏移后的目标路径数据  
+-   如果说Relative Item是本数据结构内的偏移，组号偏移后还从本组找数据，那么Relative Items就是A到B两组数据间的偏移，即A数据组号偏移后从B中找数据，注意A和B的数据结构级数要保持一致。![](https://api2.mubu.com/v3/document_image/a57022c5-c994-4d72-8f81-372e1d55c74f-20454557.jpg)  
+-   「[[Tree Branch\|Tree Branch]]」提取路径的数据![](https://api2.mubu.com/v3/document_image/f2607a7d-8734-4ea3-8011-9eb9853f6fca-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fa2276a0-c035-4828-94f8-07116b7101b1-20454557.jpg)  
+-   指定路径，从数据树中提取某个分支（列表）。  
+-   输入端：  
+	-   T：数据  
+	-   P：路径名称  
+-   输出端：  
+	-   B：抽取的分支数据  
+-   常配合Param Viewer或者Tree Statistics使用。![](https://api2.mubu.com/v3/document_image/e3ee8887-c0a1-4ae1-baf4-7a7a9a5f45eb-20454557.jpg)  
+-   「[[Tree Item\|Tree Item]]」数据树的某个数据![](https://api2.mubu.com/v3/document_image/511f040f-555b-4c9f-beb5-af2a7ac57b5b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ed0232b1-2003-4cb1-b575-9391823db607-20454557.jpg)  
+-   指定数据的路径和序号，从数据树中提取该数据。  
+-   输入端：  
+	-   T:输入数据  
+	-   P:抽取路径  
+	-   i:抽取项序号  
+	-   W:项序号是否循环取值  
+-   输出端：  
+	-   E:抽取的数据项  
+-   需要注意的是P端输入类型是Path,不是类似Split Tree输入M端的Mask,所以使用“*”、"？”代替任意字符会报错。![](https://api2.mubu.com/v3/document_image/588bd634-c2cf-4dfb-b895-6e46d15c1ca7-20454557.jpg)  
+-   「[[Construct Path\|Construct Path]]」整数列表转化为路径![](https://api2.mubu.com/v3/document_image/6d4db8c5-82c7-4640-8299-e7f7654a4a92-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5319166d-b15d-4ef7-a798-d09ce45bf716-20454557.jpg)  
+-   将整数的列表转化为数据树的分支路径。  
+-   输入端：  
+	-   I:要构建组名的数字  
+-   输出端：  
+	-   B:构建的组名  
+-   通过I端输入的数字构建组名。![](https://api2.mubu.com/v3/document_image/2f78dd28-8108-49a5-b736-56a8e34e3bd9-20454557.jpg)  
+-   「[[Deconstruct Path\|Deconstruct Path]]」路径拆分为列表![](https://api2.mubu.com/v3/document_image/ad3487dd-e62c-42ba-af19-00fb9ba3e651-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2866c5f1-7140-4414-a4c9-67b4c2d61deb-20454557.jpg)  
+-   将数据树的路径拆解为整数列表。  
+-   输入端：  
+	-   B:组名  
+-   输出端：  
+	-   I:拆分后的数字  
+-   将组名拆解为几个数字。![](https://api2.mubu.com/v3/document_image/ed84a18a-9e59-4cef-b591-16e78f7e3954-20454557.jpg)  
+-   「[[Path Compare\|Path Compare]]」路径查找![](https://api2.mubu.com/v3/document_image/02ed8b53-fcad-469b-8e09-a6d96ace2c1e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/22f70e99-a6be-4b9f-b263-47ca27cdb2d5-20454557.jpg)  
+-   使用掩码判断数据树中是否有符合的路径，输出结果为布尔值。  
+-   输入端：  
+	-   P:组名  
+	-   M:比较组名  
+-   输出端：  
+	-   C:判断组名是否相同  
+-   判断P端组名和M端组名是否相同，相同输出True,不相同输出Flse。由于M端是输入掩码格式，所以可以使用特殊字符功能，见<Split Tree知识点3>。  
+-   「[[Replace Paths\|Replace Paths]]」路径替换![](https://api2.mubu.com/v3/document_image/2db87c8f-3d34-4bb0-81cc-62c18f3d39bf-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b871aaeb-ebf5-4023-97d2-983171e54f06-20454557.jpg)  
+-   在数据树中查找并替换对应路径 。  
+-   输入端：  
+	-   D：数据  
+	-   S：查找组名  
+	-   R：替换组名  
+-   输出端：  
+	-   D：替换后的数据  
+-   注意S端要查找的组名是掩码格式，所以可以使用特殊字符功能，R端要求组名是路径格式，所以不能使用。特殊字符功能见<Split Tree知识点3>。改变组名后，同组名的数据自动合并。![](https://api2.mubu.com/v3/document_image/3c123d87-fd73-40fd-902f-f878ab3d4a90-20454557.jpg)  
+-   S端和R端都要输入线形数据，且组名数量要相等。![](https://api2.mubu.com/v3/document_image/f72a03fd-4e58-4c40-81ba-2de7baf6e49c-20454557.jpg)            
+# Vector 向量  
+## Field 磁场模拟  
+-   Vector类的Field组，用来做磁场模拟的一组运算器。![](https://api2.mubu.com/v3/document_image/3bec2385-0c83-430b-92da-3503a0336781-20454557.jpg)  
+-   「[[Line Charge\|Line Charge]]」直线场![](https://api2.mubu.com/v3/document_image/e11e1d78-124b-4de0-ba62-970bb7f14665-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7ea71067-281c-4ca8-aa10-813856732d14-20454557.jpg)  
+-   基于直线形状的电荷建立场。  
+-   输入端：  
+	-   L:直线  
+	-   C:磁力大小  
+	-   B:范围  
+-   输出端：  
+	-   F:直线磁力场  
+-   生成直线磁力场。B端输入类型要求是立方体，但实测输入矩形范围也能计算，要显示磁力大小变化需要结合Scalar Display电池，改变C端正负值可以反转磁力方向。![](https://api2.mubu.com/v3/document_image/24405d61-ba8f-41fb-b9d5-4eda04b0682c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7bc0ceb3-6cf9-4b24-bafd-51200f548d6b-20454557.jpg)  
+-   「[[Point Charge\|Point Charge]]」点电荷场![](https://api2.mubu.com/v3/document_image/7c0901c3-bbf1-482a-a421-b8377ef9685a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/636976e4-dee1-438e-a62c-4f19a835f480-20454557.jpg)  
+-   基于点形状电荷建立场。  
+-   输入端：  
+	-   P:点  
+	-   C:磁力大小  
+	-   D:衰减程度  
+	-   B:范围  
+-   输出端：  
+	-   F:点磁力场  
+-   生成一个点磁力场。B端输入类型要求是立方体，但实测输入矩形范围也能计算，要显示磁力大小变化需要结合Scalar Display电池，改变C端正负值可以反转磁力方向。![](https://api2.mubu.com/v3/document_image/8708c85c-01d9-4974-8920-bdd8f41f0fe5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7750bd5f-2bd5-478e-bd89-7a80fe4100ef-20454557.jpg)  
+-   「[[Spin Force\|Spin Force]]」漩涡场![](https://api2.mubu.com/v3/document_image/33b691fc-d227-4a40-b026-68eab46e0d5d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cd12c02b-2a99-4ea4-910e-f114fd094f10-20454557.jpg)  
+-   建立（圆形）漩涡场。  
+-   输入端：  
+	-   P:旋转平面及中心  
+	-   S:旋转强度  
+	-   R:半径  
+	-   D:衰减程度  
+	-   B:范围  
+-   输出端：  
+	-   F:点磁力场  
+-   生成一个旋转磁力场。B端输入类型要求是立方体，但实测输入矩形范围也能计算，要显示磁力大小变化需要结合Scalar Display电池，改变C端正负值可以反转磁力方向。![](https://api2.mubu.com/v3/document_image/a51e8123-006d-4ea9-8e87-a9301e5296fa-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c6aab5a7-c1cf-491e-8077-fb5977ffaf5e-20454557.jpg)  
+-   「[[Vector Force\|Vector Force]]」方向场![](https://api2.mubu.com/v3/document_image/418c77ab-3ccd-4268-9e4e-fe41a4f72bf5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/213a947f-e600-4826-94be-c1e96f856994-20454557.jpg)  
+-   建立固定方向的场。  
+-   输入端：  
+	-   L:向量直线  
+	-   B:范围  
+-   输出端：  
+	-   F:点磁力场  
+-   生成一个以输入直线起点到终点的磁力场。B端输入类型要求是立方体，但实测输入矩形范围也能计算。向量磁力场和直线磁力场不同，后者可以将线看做无数个点组成，是多个点磁力场叠加而成，磁力场内每一点的方向都不一样，而前者的方向均一致。![](https://api2.mubu.com/v3/document_image/f54dd8da-3ec0-4650-b18d-1fdf2781d386-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e7f85a7d-a4b4-4d16-bbb3-9971d5dfbf3c-20454557.jpg)  
+-   「[[Break Field\|Break Field]]」分解场![](https://api2.mubu.com/v3/document_image/cfe31748-c220-40dc-b9a7-5c87844e8853-20454557.jpg)![](https://api2.mubu.com/v3/document_image/556b3cda-da01-49bc-b354-1a6686d5408d-20454557.jpg)  
+-   将场分解为单个元素。  
+-   输入端：  
+	-   F:复合磁力场  
+-   输出端：  
+	-   F:拆分后的磁力场  
+-   和运算器Merge Fields对应，能够将复合磁力场拆分成单个磁力场。![](https://api2.mubu.com/v3/document_image/cbcf6348-b8e4-4de9-9de4-c7398b728589-20454557.jpg)  
+-   「[[Merge Fields\|Merge Fields]]」合并场![](https://api2.mubu.com/v3/document_image/5ea7fef8-7ba8-4b83-98aa-1156a741c77b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/22b977e2-1aaf-40dc-98e3-489a9ea40947-20454557.jpg)  
+-   将多个多个场合并。  
+-   输入端：  
+	-   F:多个磁力场  
+-   输出端：  
+	-   F:复合磁力场  
+-   和运算器Break Field对应，能够将多个磁力场合并成一个复合磁力场。![](https://api2.mubu.com/v3/document_image/2418f8b1-111f-4324-9d8a-b288225d6b64-20454557.jpg)  
+-   「[[Evaluate Field\|Evaluate Field]]」分析场![](https://api2.mubu.com/v3/document_image/974133e1-39b1-4b18-bf55-36a9034ab507-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8a12993f-5d26-46ac-9792-dbe60e5431a7-20454557.jpg)  
+-   输出场中某个点的强度值和方向。  
+-   输入端：  
+	-   F:磁力场  
+	-   P:指定点  
+-   输出端：  
+	-   T:指定点位置张量  
+	-   S:指定点位置强度  
+-   注意T端输出的是该点处的张量，具体见<Tensor Display知识点1>。![](https://api2.mubu.com/v3/document_image/149ed2a7-4c7e-44d3-90d4-92e9f07ae4e8-20454557.jpg)  
+-   「[[Field Line\|Field Line]]」场的轨迹线![](https://api2.mubu.com/v3/document_image/76f221df-e66a-46b1-8b17-2a54b2acf5b0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fcabf9aa-ee5f-46be-bc68-4845c5844bc5-20454557.jpg)  
+-   计算场中通过某个点的轨迹线。  
+-   输入端：  
+	-   F:磁力场  
+	-   P:起始点  
+	-   N:曲线采样步数  
+	-   A:精度  
+	-   M:曲线迭代方式(1=欧拉法、2=2阶龙格库塔法、3=3阶龙格库算法、4=4阶格库塔法)  
+-   输出端：  
+	-   C:磁场线  
+-   计算磁场内某一点的磁场线，注意N值为曲线计算的步数，步数越多，磁场线越长。M端为曲线迭代方式，保持默认即可。![](https://api2.mubu.com/v3/document_image/758c1bd9-ea50-4c3d-8f84-7dc3227a9943-20454557.jpg)![](https://api2.mubu.com/v3/document_image/551a367a-16b3-499f-a8c8-6f5dcf9716ce-20454557.jpg)  
+-   「[[Direction Display\|Direction Display]]」场方向分析![](https://api2.mubu.com/v3/document_image/e0860d90-a744-406c-84c6-061e2ee9ffcb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f270fd04-6bc3-40ee-938d-ef2236680edc-20454557.jpg)  
+-   场的衰减方向分析。  
+-   输入端：  
+	-   F:磁力场  
+	-   S:范围  
+	-   N:采样点数量  
+-   输出端：  
+	-   D:磁场方向展示  
+-   显示磁场方向。![](https://api2.mubu.com/v3/document_image/bc82dbfc-8276-49bf-88fc-58b62761d23d-20454557.jpg)  
+-   「[[Perpendicular Display\|Perpendicular Display]]」场强度转化为高度显示![](https://api2.mubu.com/v3/document_image/baff41f5-e40b-484e-990d-dac62bb89670-20454557.jpg)![](https://api2.mubu.com/v3/document_image/42a5906d-0ebc-40f3-a5f0-12626ceae69f-20454557.jpg)  
+-   将场的强度转化为对应高度的分析。  
+-   输入端：  
+	-   F:磁力场  
+	-   S:范围  
+	-   N:采样点数量  
+	-   C+:向上磁场力颜色（默认为白色）  
+	-   C-:向下磁场力颜色（默认为黑色）  
+-   输出端：  
+	-   D:磁场力纵向方向显示  
+-   向上的磁力显示为白色，向下的磁力显示为黑色，其他方向颜色依次过渡，黑色和白色都可以自己设置成其他颜色。只有在范围为空间时才会使用，平面范围会显示灰色。![](https://api2.mubu.com/v3/document_image/4f7fde28-9690-4385-9dc2-b42b6dbaec23-20454557.jpg)![](https://api2.mubu.com/v3/document_image/53d7db42-9353-46f9-bbd1-17c001c1de11-20454557.jpg)  
+-   「[[Scalar Display\|Scalar Display]]」场强度分析![](https://api2.mubu.com/v3/document_image/a62b8998-d94f-4884-ac98-1f65a86e8542-20454557.jpg)![](https://api2.mubu.com/v3/document_image/56bad993-7d21-419f-910f-0aae8328f0da-20454557.jpg)  
+-   场的强度分析。  
+-   输入端：  
+	-   F:磁力场  
+	-   S:范围  
+	-   N:采样点数量  
+-   输出端：  
+	-   D:磁场力强度显示  
+-   显示磁力场强度变化。![](https://api2.mubu.com/v3/document_image/1d194861-dc1b-42fd-8c97-2f3f0b532875-20454557.jpg)  
+-   「[[Tensor Display\|Tensor Display]]」张量分析![](https://api2.mubu.com/v3/document_image/deadea24-579c-4485-a0fc-7f825bb661b1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4500828c-d684-4b23-95c8-8139155ab2fc-20454557.jpg)  
+-   场的张量分析。类似于磁场中放入若干个指南针。  
+-   输入端：  
+	-   F:磁力场  
+	-   S:范围  
+	-   N:采样点数量  
+-   张量我们可以简单的理解为该点处磁场的方向向量，因为矢量是一阶张量。![](https://api2.mubu.com/v3/document_image/f80bfb17-f1a7-4588-b906-d7b6f72a27c0-20454557.jpg)  
+## Grid 点阵网格  
+-   Vector类的Grid组，主要用来提供阵列或随机的点数据。![](https://api2.mubu.com/v3/document_image/f0dcc853-6d50-4498-8b04-d49a9a457993-20454557.jpg)  
+-   「[[Hexagonal\|Hexagonal]]」六边形单元线![](https://api2.mubu.com/v3/document_image/8840eeb1-549b-4062-8707-dc78843a55c2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ae259010-057a-4508-9cf8-60ab45be5b2c-20454557.jpg)  
+-   建立2D 六边形单元线框 和 中心点格。  
+-   输入端：  
+	-   P：基准平面  
+	-   S：单元正六边形半径  
+	-   Ex：x方向的单元个数  
+	-   Ey：y方向的单元个数  
+-   输出端：  
+	-   C：网格单元  
+	-   P： 网格角点  
+-   正六边形网格，输出数据是树形结构，每一列是一组，注意输出P端是中心点不是角点，单元半径也等于边长，常用来做蜂窝类的造型。![](https://api2.mubu.com/v3/document_image/dd98ff58-4eef-4855-ba3b-bc8fc25d3959-20454557.jpg)  
+-   「[[Radial\|Radial]]」环形单元线![](https://api2.mubu.com/v3/document_image/48406572-bc10-4f8e-ae3b-6f8a34ebbfa7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0d0e7376-c5fb-476d-8648-8a1a3f29591f-20454557.jpg)  
+-   建立2D环形方框单元线 与 角落点格。  
+-   输入端：  
+	-   P：基准平面  
+	-   S：辐射间隔值  
+	-   Er：径向方向的单元个数  
+	-   Ep：极向方向的单元个数  
+-   输出端：  
+	-   C：网格单元  
+	-   P：网格角点  
+-   输出数据是树形结构，每一个环是一组。径向指沿半径方向，极向指沿环的方向。![](https://api2.mubu.com/v3/document_image/c5c2f769-52cf-43f1-a784-b48abe0b843c-20454557.jpg)  
+-   「[[Rectangular\|Rectangular]]」长方形单元线![](https://api2.mubu.com/v3/document_image/d7856074-284f-406b-bce1-004ed51dea96-20454557.jpg)![](https://api2.mubu.com/v3/document_image/647e5c7c-1746-4c76-8b8a-76b2c5f1fa9f-20454557.jpg)  
+-   建立2D长方形单元线 和 角落点格。  
+-   输入端：  
+	-   P：基准平面  
+	-   Sx：x方向的单元长度  
+	-   Sy：y方向的单元长度  
+	-   Ex：x方向的单元个数  
+	-   Ey：y方向的单元个数  
+-   输出端：  
+	-   C：网格单元  
+	-   P：网格单元角点  
+-   输出数据是树形结构，每一列是一组。![](https://api2.mubu.com/v3/document_image/3019e72f-bd62-4cbd-8bd4-8a786b518c18-20454557.jpg)  
+-   「[[Square\|Square]]」正方形单元线![](https://api2.mubu.com/v3/document_image/250a1233-3bc2-4676-a22a-70fcf91fb4c9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/08c5347b-8be6-4378-be1d-559147431fb5-20454557.jpg)  
+-   建立2D 正方形单元线 和 角落点格。  
+-   输入端：  
+	-   P：基准平面  
+	-   S：单元边长  
+	-   Ex：x方向的单元个数  
+	-   Ey：y方向的单元个数  
+-   输出端：  
+	-   C：网格单元  
+	-   P：网格角点  
+-   输出数据是树形结构，每一列是一组。![](https://api2.mubu.com/v3/document_image/6c5a688c-195f-4683-8d33-93d46eb8a875-20454557.jpg)  
+-   「[[Triangular\|Triangular]]」三角形单元线![](https://api2.mubu.com/v3/document_image/9befcfc1-5c7b-4671-a2f4-c4bc5f8d5280-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c76afa7a-b30c-47b1-b7d1-ba64dd3e9eb7-20454557.jpg)  
+-   建立2D 正三角单元线 和 中心点格。  
+-   输入端：  
+	-   P：基准平面  
+	-   S：单元正三角形边长  
+	-   Ex：x方向的单元个数  
+	-   Ey：y方向的单元个数  
+-   输出端：  
+	-   C：网格单元  
+	-   P：网格单元中心点  
+-   正三角形网格，输出数据是树形结构，每一列是一组，注意输出P端是中心点不是角点。![](https://api2.mubu.com/v3/document_image/7acae86a-8a23-47f9-94ce-df4e365bfab4-20454557.jpg)  
+-   「[[Populate 2D\|Populate 2D]]」平面方形区域填充随机点![](https://api2.mubu.com/v3/document_image/9c15efc9-9448-4c2f-bf76-4781849d3bd8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/99a49ab8-715d-43f9-961b-1f33a4982e17-20454557.jpg)  
+-   在平面矩形区域内填充随机点。  
+-   输入端：  
+	-   R：矩形  
+	-   N：点数量  
+	-   S：随机种子  
+	-   P：预先设置点  
+-   输出端：  
+	-   P：得到的随机点![](https://api2.mubu.com/v3/document_image/871ab75d-8ae3-4b3f-bbe5-64f56378e758-20454557.jpg)  
+-   只能在矩形区域内布点，输入端P可以提前设置点位，这样随机点就不会在这些位置出现。  
+-   「[[Populate 3D\|Populate 3D]]」矩形空间内部填充随机点![](https://api2.mubu.com/v3/document_image/8e8220a3-639a-4c18-804a-5398e019a206-20454557.jpg)![](https://api2.mubu.com/v3/document_image/149e199f-73c9-452b-8523-d9b3b6406575-20454557.jpg)  
+-   在3D立方体区域内填充随机点。  
+-   输入端：  
+	-   R：立方体  
+	-   N：点数量  
+	-   S：随机种子  
+	-   P：预先设置点  
+-   输出端：  
+	-   P：得到的随机点  
+-   和Populate 2D类似，在三维立方体范围生成随机点，输入P端依然是可以提前设置随机点不出现的位置。![](https://api2.mubu.com/v3/document_image/64ebe37a-8f98-445d-93a1-94e312658c98-20454557.jpg)  
+-   「[[Populate Geometry\|Populate Geometry]]」几何体表面填充随机点![](https://api2.mubu.com/v3/document_image/ae9f261d-b27f-4d1d-af3e-f7a47ac39d62-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8b4c27c5-f3c7-4a95-92a1-d7ec0e729334-20454557.jpg)  
+-   在几何物体表面填充随机点，支持 曲线，曲面，多重曲面，网格等多种几何类型。  
+-   输入端：  
+	-   G：几何形（包括曲线、曲面、多重曲面和网格）  
+	-   N：点数量  
+	-   S：随机种子  
+	-   P：预先设置点  
+-   输出端：  
+	-   P：得到的随机点  
+-   与Populate 2D和3D类似，只不过只能在几何形表面布点，同样可以预先设置随机点不出现的位置。![](https://api2.mubu.com/v3/document_image/fa2388fc-a72b-4edb-a2fd-c0eb96ddde57-20454557.jpg)  
+## Plane 工作平面  
+-   Vector类的Plane组，和工作平面有关的一组运算器。  
+-   用惯SU上手Rhio比较别扭的一点就是因为这个工作平面，比如你在SU里画一条垂线很简单锁定蓝色线只用鼠标就可以，但在Rhino.里就会变得相对复杂。不过这并不是Rhino的缺点，任何三维建模都有工作平面的概念只是SU里将这个概念简化了，这和它Sketch（草图）的概念或许有关，更系统的工作平面概念能带来更精确的建模成果。![](https://api2.mubu.com/v3/document_image/5ebfddc3-c57c-4c5e-9ade-c393dde98c67-20454557.jpg)  
+-   「[[Deconstruct Plane\|Deconstruct Plane]]」拆解坐标平面![](https://api2.mubu.com/v3/document_image/e0e0a36b-93d5-450f-aaac-d48207c04440-20454557.jpg)![](https://api2.mubu.com/v3/document_image/de6faac4-97e4-4c8b-b6db-910bb32bbb1e-20454557.jpg)  
+-   输入端：  
+	-   P：输入的平面  
+-   输出端：  
+	-   O：原点  
+	-   X：X方向  
+	-   Y：Y方向  
+	-   Z：Z方向  
+-   将平面拆解为原点、X向量、Y向量和Z向量，用法比较简单。![](https://api2.mubu.com/v3/document_image/6942c606-b45a-4ac5-817d-d676a06a5eaa-20454557.jpg)  
+-   「[[XY Plane\|XY Plane]]」XY平面![](https://api2.mubu.com/v3/document_image/a19b1561-b6d5-4319-b4d1-f8a4a9623e92-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e4c59f91-cfa7-4293-acd7-181c586517e5-20454557.jpg)  
+-   世界坐标 XY平面。  
+-   输入端：  
+	-   O:原点  
+-   输出端：  
+	-   P:输出的平面  
+-   根据原点位置得到世界坐标系的XY平面，对应Top视图。  
+-   「[[XZ Plane\|XZ Plane]]」XZ平面![](https://api2.mubu.com/v3/document_image/24792e94-31b8-4985-9467-9f9892d6dac1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5939d037-7005-4908-a88c-4a7eadb959af-20454557.jpg)  
+-   世界坐标 XZ平面。  
+-   输入端：  
+	-   O:原点  
+-   输出端：  
+	-   P:输出的平面  
+-   根据原点位置得到世界坐标系的XZ平面，对应Top视图。  
+-   「[[YZ Plane\|YZ Plane]]」YZ平面![](https://api2.mubu.com/v3/document_image/a2bfc5c7-cbcd-4a2d-aa05-8ba4459f7fda-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fae4a3aa-aeff-4827-aa48-afb1be02ee1b-20454557.jpg)  
+-   世界坐标 YZ平面。  
+-   输入端：  
+	-   O:原点  
+-   输出端：  
+	-   P:输出的平面  
+-   根据原点位置得到世界坐标系的YZ平面，对应Right视图。  
+-   「[[Construct Plane\|Construct Plane]]」建立坐标平面![](https://api2.mubu.com/v3/document_image/cf301912-de20-4267-a79b-9250c62c2998-20454557.jpg)![](https://api2.mubu.com/v3/document_image/415d02e4-4192-4db1-adff-60ca6d8ba883-20454557.jpg)  
+-   通过原点和X，Y方向建立坐标平面。  
+-   输入端：  
+	-   O：原点  
+	-   X：平面的X方向  
+	-   Y：平面的Y方向  
+-   输出端：  
+	-   PI：输出的平面  
+-   两个方向加原点建立一个平面，X和Y可以不垂直，会以输入X为输出平面的X方向，以Y在平面内X垂直方向的投影为Y方向。![](https://api2.mubu.com/v3/document_image/29eb8f91-5bee-4889-b15d-990834022a97-20454557.jpg)  
+-   XY端也可以直接输入直线，类似Line + Line电池，然而Line + Line只能输入直线不能输入向量。  
+-   「[[Line + Line\|Line + Line]]」直线+直线 建立坐标平面![](https://api2.mubu.com/v3/document_image/c7d834bb-a523-468c-8382-c54e390d0675-20454557.jpg)![](https://api2.mubu.com/v3/document_image/283d2e8a-a52f-4fa8-9f30-dcab007221d7-20454557.jpg)  
+-   通过 直线+直线 建立坐标平面  
+-   输入端：  
+	-   A:直线A  
+	-   B:直线B  
+-   输出端：  
+	-   PI:输出的平面  
+	-   直线A的起点会作为输出平面的原点，直线A起点到终点的方向会作为X方向，直线B起点到终点的方向在平面内X垂直方向的投影作为Y方向。![](https://api2.mubu.com/v3/document_image/5d5168d0-7bd0-42b0-b291-67b578f30d9f-20454557.jpg)  
+	-   电池B端解释里说直线B需和直线A共面且不平行，实际只要满足不平行即可。所以虽然输入的是直线，实际效果把它理解成两个向量即可，用法类似Construct Plane。![](https://api2.mubu.com/v3/document_image/b8b3eb7a-04c9-4856-8966-c419b51162c8-20454557.jpg)  
+-   「[[Line + Pt\|Line + Pt]]」直线+点 建立坐标平面![](https://api2.mubu.com/v3/document_image/e4e3fe6b-d6ce-46a8-af06-10b6b6374bfd-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e18408ef-6677-4dd7-8e6b-a43737af89b2-20454557.jpg)  
+-   通过 直线+点 建立坐标平面  
+-   输入端：  
+	-   L:直线  
+	-   P:点  
+-   输出端：  
+	-   PI:生成的平面  
+-   通过一条直线和一个点生成一个平面，注意点不能在直线和直线的延长线上。平面原点是直线的起点，生成平面的X方向是直线的方向。![](https://api2.mubu.com/v3/document_image/a2761999-2fc5-4bb1-acbf-d470d020e4a6-20454557.jpg)  
+-   「[[Plane 3Pt\|Plane 3Pt]]」三点 建立坐标平面![](https://api2.mubu.com/v3/document_image/78d720ea-657c-4f5c-bd6e-a43981373940-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f957a544-f4bf-46b7-8419-e994b2803a0d-20454557.jpg)  
+-   通过三个点建立坐标平面  
+-   输入端：  
+	-   A:点A  
+	-   B:点B  
+	-   C:点C  
+-   输出端：  
+	-   PI:生成的平面  
+-   通过三个不共线的点生成一个平面，平面原点是A点，X方向是A点和B点的连线方向。![](https://api2.mubu.com/v3/document_image/0bd163a2-8ffe-4799-90ee-5adf5bb9e201-20454557.jpg)  
+-   「[[Plane Fit\|Plane Fit]]」多点拟合坐标平面![](https://api2.mubu.com/v3/document_image/e107cfb3-048b-4d37-8162-bf8d957e0ba9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b8f46ac2-d090-4ab6-b616-73e8a1acb79a-20454557.jpg)  
+-   拟合一些点建立坐标平面  
+-   输入端：  
+	-   P:一系列点  
+-   输出端：  
+	-   PI:生成的平面  
+-   生成一个逼近多点的平面，注意生成的平面常常离输入的点集很远，不过不影响使用，因为平面是一个无限大的概念，在这里我们给它重新定义到了点集内的点。在Rhino中的曲面菜单里有一个命令叫“"逼近数个点的平面”，和这个电池的算法类似，只不过是建立了一个实际的平面曲面，而我们这个电池是建立了一个工作平面。![](https://api2.mubu.com/v3/document_image/b8bb6a52-a59d-4bb3-bb40-9ea89c0b81c9-20454557.jpg)  
+-   「[[Plane Normal\|Plane Normal]]」法向建立坐标平面![](https://api2.mubu.com/v3/document_image/5fddaa66-c668-4779-a71e-d6b25484dee2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7f9a59db-0b0b-4ca7-b6f0-3b28ada7122d-20454557.jpg)  
+-   输入端：  
+	-   O：点  
+	-   Z：生成平面的法线方向  
+-   输出端：  
+	-   PI：生成的平面  
+-   通过一个点和一个向量建立一个平面，生成的平面会以输入的向量为法线方向。![](https://api2.mubu.com/v3/document_image/6fab7ca5-3ddc-4950-b025-1448da867fa7-20454557.jpg)  
+-   当然大家知道法向方向确定后，X和Y方向还是不确定的，那么这两个方向是如何定义唯一值的呢。经测试，平面将法线曲率平面的Y方向作为X方向，在使用时如果对平面的XY方向有要求，可以结合Align Plane对XY方向进行校准。![](https://api2.mubu.com/v3/document_image/6ed82e9c-4ef9-4d1e-b070-6301b2d8a516-20454557.jpg)  
+-   「[[Plane Offset\|Plane Offset]]」偏移坐标平面![](https://api2.mubu.com/v3/document_image/315d3a55-c788-441a-a0d0-1663ef1a20b0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7f180fd7-7247-4239-b6ba-31137b6597e0-20454557.jpg)  
+-   沿着法向偏移坐标平面。  
+-   输入端：  
+	-   P:平面  
+-   O:偏移距离  
+	-   输出端：  
+-   PI:偏移后的平面  
+-   沿着平面的Z轴方向偏移平面，注意是平面的Z轴方向，不是空间的的Z轴方向。![](https://api2.mubu.com/v3/document_image/91503a6e-767c-4899-9140-912687deabc7-20454557.jpg)  
+-   「[[Plane Origin\|Plane Origin]]」指定坐标平面的原点![](https://api2.mubu.com/v3/document_image/67c4039c-d6cd-42eb-abbd-beeaf19ea62a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/486489d7-9cd4-448f-b472-6380815e853b-20454557.jpg)  
+-   改变坐标平面的原点。  
+-   输入端：  
+	-   B：平面  
+	-   O：新原点  
+-   输出端：  
+	-   PI：新原点平面  
+-   将输入平面平移到新原点的位置![](https://api2.mubu.com/v3/document_image/4b399194-b5b8-4ab7-b59c-1c67cbcc271e-20454557.jpg)  
+-   「[[Adjust Plane\|Adjust Plane]]」调整坐标平面法向![](https://api2.mubu.com/v3/document_image/3abad91b-10ff-490a-ad96-7834f20b5576-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5bc23282-4346-48b2-9e52-ef4137862408-20454557.jpg)  
+-   调整坐标平面的法向（Z方向）  
+-   输入端：  
+	-   P:平面  
+	-   N:新法线方向  
+-   输出端：  
+	-   PI:新法线方向平面  
+-   输入新法线方向修改原平面，注意修改后平面的原点位置不会发生变化。![](https://api2.mubu.com/v3/document_image/99025865-d839-4c66-b85b-91181a7dad7c-20454557.jpg)  
+-   新法线方向平面XY方向与Plane Norma一致，见<Plane Normal知识点2>。  
+-   「[[Align Plane\|Align Plane]]」坐标平面对齐矢量方向![](https://api2.mubu.com/v3/document_image/3eaa3b07-cb29-47e3-9103-6271f539f7b7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fafa0d98-1a06-4c5d-8134-f6009b860023-20454557.jpg)  
+-   让坐标平面对齐矢量： 将坐标平面沿着自己的Z轴旋转，让X方向尽可能接近给定的矢量方向。  
+-   输入端：  
+	-   P：待校准平面  
+	-   D：校准方向  
+-   输出端：  
+	-   P：校准后的平面  
+	-   A：校准过程旋转角度  
+-   这里的校准指的是：待校准平面以其Z轴为轴旋转至其X方向与D端校准方向夹角最小，A端输出旋转的角度。  
+	-   当校准方向不在校准平面内时：比如曲面上点的切平面校准，校准方向为-Y，校准后平面的X方向与校准方向不可能重合，会取以法线为轴旋转平面中和校准方向夹角最小的。我们常用这个方式通过Z轴校准来求曲面上一点的坡度最大方向，即当切平面的X方向与Z轴方向夹角最小时，平面-X方向就是坡度最大方向。![](https://api2.mubu.com/v3/document_image/524d19fc-3259-476b-92b0-e7db01f5e148-20454557.jpg)  
+	-   当校准方向在校准平面内时：校准后平面的X方向与校准方向重合。  
+-   「[[Align Planes\|Align Planes]]」坐标平面对齐坐标平面![](https://api2.mubu.com/v3/document_image/6fb4261a-f895-4e6e-8f3b-210bb55bc658-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a1ee5677-1789-42f3-b383-b900c22acb90-20454557.jpg)  
+-   将一个坐标平面对齐另外一个坐标平面。（X轴向对齐）  
+-   输入端：  
+	-   P：多个平面  
+	-   M：基准平面  
+-   输出端：  
+	-   PI：校准后的平面  
+-   根据选定的基准平面来校准其他平面，校准平面一般来说是从P端输入的多个平面中选择，M端不输入的话默认是P端第一个平面。这里的的校准平面是指将所有平面的XY方向最大程度变成一顺的（按照电池解释来讲就是旋转角度最小），需要注意的是，校准后的基准平面可能会有细微的变化，并不一定是完全一模一样的，分析可能所说的旋转角度最小是指所有平面向基准平面旋转角之和最小。![](https://api2.mubu.com/v3/document_image/54676fe0-c7e7-4750-9429-7a863b83c760-20454557.jpg)  
+-   当对于一条曲线的多个垂直等分曲面时，Align Planes和Prep Frames本身都有校准功能，只不过一个是以选定平面作为基准，一个是以对应点的曲率平面作为基准。从效果上来讲，用Align Planes在一些转弯比较急的地方效果更好，因为它将平面间的旋转做到了最小，但它无法保证截面和曲率方向的一致性。![](https://api2.mubu.com/v3/document_image/40635945-6c88-4431-8a1b-50b57debd432-20454557.jpg)  
+-   「[[Flip Plane\|Flip Plane]]」翻转坐标平面![](https://api2.mubu.com/v3/document_image/7376496a-7ab0-4ed5-bdc0-3e31238e0c89-20454557.jpg)![](https://api2.mubu.com/v3/document_image/875e02e2-ca70-4e41-b106-7d529b85b938-20454557.jpg)  
+-   将坐标平面的 X 或 Y 做反向，或将 XY 方向互换。  
+-   输入端：  
+	-   P:平面  
+	-   X:是否翻转X轴  
+	-   Y:是否翻转Y轴  
+	-   S:是否调换Y轴方向  
+-   输出端：  
+	-   P:翻转后的平面  
+-   通过控制对称X轴和调换X方向来实现平面的翻转变化效果。![](https://api2.mubu.com/v3/document_image/78bdff0f-a4e3-482a-8ae9-8e65bbb32e55-20454557.jpg)  
+-   「[[Plane Closest Point\|Plane Closest Point]]」坐标平面上最近点![](https://api2.mubu.com/v3/document_image/43d7b786-8313-4edf-b388-e8ee5cdee5a1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f7da1f86-46c7-4a66-aced-b429087cd0d5-20454557.jpg)  
+-   坐标平面上的最近点。将点垂直投射到坐标平面上。  
+-   输入端：  
+	-   S:点  
+	-   P:平面  
+-   输出端：  
+	-   P:点在平面上的最近点坐标  
+	-   uV:最近点在平面的uv坐标  
+	-   D:点到最近点的距离  
+-   求点到平面的最近点以及相关值。![](https://api2.mubu.com/v3/document_image/97f3caba-9785-46a1-bfe6-c351d3640e5d-20454557.jpg)  
+-   「[[Plane Coordinates\|Plane Coordinates]]」坐标平面上的点坐标![](https://api2.mubu.com/v3/document_image/16400797-1172-4a5a-b8a8-79a27d9abe81-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7bebee8f-2eb8-4d54-a242-4a3760bc47e4-20454557.jpg)  
+-   点在某个坐标平面上的坐标值。（相对坐标）  
+-   输入端：  
+	-   P:点  
+	-   S:平面（参考系）  
+-   输出端  
+	-   X:点在指定平面参考系的X坐标  
+	-   Y:点在指定平面参考系的Y坐标  
+	-   Z:点在指定平面参考系的Z坐标  
+-   相当于给一个点重新定义一个参考系，然后计算该点在新参考系内的XZ坐标值。![](https://api2.mubu.com/v3/document_image/79c0c9fe-2a42-441d-8ac9-8b6a6f98ac37-20454557.jpg)  
+-   「[[Rotate Plane\|Rotate Plane]]」旋转坐标平面![](https://api2.mubu.com/v3/document_image/3214813b-c49d-4f88-83f9-ac76a3a5438e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4d72e710-3612-48cb-ba06-bcbf8fcd57fb-20454557.jpg)  
+-   将坐标平面沿自己的Z轴旋转。  
+-   输入端：  
+	-   P:平面  
+	-   A:旋转角度  
+-   输出端：  
+	-   P:旋转后的平面  
+-   平面沿着其Z轴方向旋转，注意A端输入的角度是弧度制。![](https://api2.mubu.com/v3/document_image/ad5e8b66-3acb-412a-af4c-5c55334a2b05-20454557.jpg)  
+## Point 点  
+-   Vector类的Point组，和点有关的一组运算器。![](https://api2.mubu.com/v3/document_image/b76192fb-6e87-402c-ada4-196302623952-20454557.jpg)  
+-   「[[Construct Point\|Construct Point]]」通过XYZ坐标数值建立点![](https://api2.mubu.com/v3/document_image/ee470ed9-1941-43b9-a97f-0ab1f907b0ba-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2a0712ff-4fd1-4139-8776-ee62ed3d0ae9-20454557.jpg)  
+-   用X，Y，Z三个坐标的数值建立点。  
+-   输入端：  
+	-   X:X坐标值  
+	-   Y:Y坐标值  
+	-   Z:Z坐标值  
+-   输出端：  
+	-   Pt:创建的点  
+-   「[[Deconstruct\|Deconstruct]]」拆分点为XYZ坐标数值![](https://api2.mubu.com/v3/document_image/717aafd5-144b-43b7-9c1d-0694b09facf5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/77c81130-c050-4923-9e03-507af1d08b88-20454557.jpg)  
+-   将点拆分为 X，Y，Z三个轴向的坐标值。  
+-   输入端：  
+	-   P:要拆解的点  
+-   输出端：  
+	-   X:X坐标值  
+	-   Y:Y坐标值  
+	-   Z:Z坐标值  
+-   「[[Numbers to Points\|Numbers to Points]]」数值列表转化为点![](https://api2.mubu.com/v3/document_image/baadd2c1-ff9c-4a67-915a-a1e31736b60c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/14b513e0-f29e-40d6-8fb9-2662878c3102-20454557.jpg)  
+-   将数值列表转化为点。列表中的数值分别是点的XYZ坐标。  
+-   输入端：  
+	-   N:数字列表  
+	-   M:掩码  
+-   输出端：  
+	-   P:得到的点  
+-   根据M端的YZ掩码顺序对N端数字进行排序进而生成点，注意数字列表的个数需要是3的倍数否则会报错。![](https://api2.mubu.com/v3/document_image/94fcb103-e7f5-4789-a943-5bd7110bd010-20454557.jpg)  
+-   「[[Points to Numbers\|Points to Numbers]]」点转化为数值列表![](https://api2.mubu.com/v3/document_image/99b21e3b-ed46-4b3b-960c-a6fde92a5b5b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/48244488-9f4e-49d2-96f6-323af67add10-20454557.jpg)  
+-   将点的XYZ数值输出为数值列表。  
+-   输入端：  
+	-   P:点  
+	-   M:掩码  
+-   输出端：  
+	-   N:数字列表  
+-   与Numbers to Points.互为相反运算器，可以根据M端的掩码顺序将点坐标拆解成数字列表。![](https://api2.mubu.com/v3/document_image/d8eb21c3-6b41-4f8c-a070-27fbabdee764-20454557.jpg)  
+-   「[[Barycentric\|Barycentric]]」三个点的重心点![](https://api2.mubu.com/v3/document_image/10485ad1-1bf6-47a6-b25a-b4c78c97b954-20454557.jpg)![](https://api2.mubu.com/v3/document_image/df3a6522-39a9-4f23-b2cb-35eba0efd348-20454557.jpg)  
+-   计算三个点的重心点。  
+-   输入端：  
+	-   A:角点A  
+	-   B:角点B  
+	-   C:角点C  
+	-   U:重心坐标系坐标U  
+	-   V:重心坐标系坐标V  
+	-   W:重心坐标系坐标W  
+-   输出端：  
+	-   P:三角形内的一点  
+-   在某些翻译中也会将Barycentric翻译为质心，大多数情况下质心和重心是重合的。简单来说就是建立一个新的以三角形三个角点ABC为参考系的坐标系，三角形内任意一点都可以写为P=U×A+V×B+W×C的形式，且U+V+W=1,称ABC三点的权重UVW为点P的重心坐标系坐标。注意P端输出的坐标仍是YZ直角坐标系的值。![](https://api2.mubu.com/v3/document_image/097a173f-0e6c-4498-9243-e9afd9760d42-20454557.jpg)  
+-   当U=V=W=1/3时，P点为重心位置![](https://api2.mubu.com/v3/document_image/e15995b5-4f5c-4211-86ff-06815ce5fb19-20454557.jpg)  
+-   「[[Distance\|Distance]]」两点的距离![](https://api2.mubu.com/v3/document_image/6a5f8e1a-4a38-4498-8b60-71557cc86a82-20454557.jpg)![](https://api2.mubu.com/v3/document_image/12a17a81-6432-4b7c-9928-8a27d0e839ea-20454557.jpg)  
+-   计算两点之间的距离值。  
+-   输入端：  
+	-   A:点A  
+	-   B:点B  
+-   输出端：  
+	-   D:距离值  
+-   测量AB两点间的距离。![](https://api2.mubu.com/v3/document_image/4eba42f0-f6f6-4a13-8c0c-fb246d6c2da3-20454557.jpg)  
+-   「[[Point Cylindrical\|Point Cylindrical]]」柱坐标定点![](https://api2.mubu.com/v3/document_image/616b0124-eef6-46d8-95e0-79ff1638d39c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3b65df75-dd8e-492f-b6d2-191c5b807c91-20454557.jpg)  
+-   以柱状坐标定义空间中的点。  
+-   输入端：  
+	-   P:工作平面（基准点位置）  
+	-   A:角度（弧度制）  
+	-   R:半径  
+	-   E:高度  
+-   输出端：  
+	-   Pt:定位点  
+-   通过旋转角度、半径和高度来定位空间点的方法。![](https://api2.mubu.com/v3/document_image/d553ac62-b72b-4dcb-9e9e-183a05b0854b-20454557.jpg)  
+-   「[[Point Oriented\|Point Oriented]]」坐标平面上的点![](https://api2.mubu.com/v3/document_image/fe730f56-63af-4996-aa9e-0122971ec569-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0f90c561-c9f1-4eb0-a0ce-8d8dae4b2af5-20454557.jpg)  
+-   使用相对坐标值在特定的坐标平面中定义空间点  
+-   输入端：  
+	-   P:参考工作平面  
+	-   U:U值(可理解为参考面X方向)  
+	-   V:V值(可理解为参考面Y方向)  
+	-   W:W值(可理解为参考面Z方向)  
+-   输出端：  
+	-   Pt:定位点  
+-   其实就可以看做是通过一个平面的YZ值定义点位置，只是由于平面坐标系改变将其命名为UW。![](https://api2.mubu.com/v3/document_image/2c1f833d-e911-445f-85bb-62cd6c37dfe7-20454557.jpg)  
+-   「[[Point Polar\|Point Polar]]」极坐标定点![](https://api2.mubu.com/v3/document_image/547773cf-73d0-400d-b4c4-3c33c2d396db-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5dff50be-2d0d-4bf2-9824-c3338f6978b7-20454557.jpg)  
+-   使用极坐标（也叫做 球状坐标）定义空间点。  
+-   输入端：  
+	-   P:工作平面（基准点位置）  
+	-   y:y轴平面的旋转角度（弧度制）  
+	-   Z:Z轴垂面的旋转角度（弧度制）  
+	-   d:长度  
+-   输出端：  
+	-   Pt:定位点  
+-   通过平面角度、垂面角度和长度三个要素来确定一个空间点。![](https://api2.mubu.com/v3/document_image/5608eaeb-753f-434f-9409-df3532de907a-20454557.jpg)  
+-   「[[To Polar\|To Polar]]」输出点的极坐标值![](https://api2.mubu.com/v3/document_image/82254414-2ecf-4e5e-ad61-13a62ddbfe14-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cf536242-5d93-498e-baeb-ee453c744aeb-20454557.jpg)  
+-   读取点的极坐标值。  
+-   输入端：  
+	-   P:点  
+	-   S:参考工作平面  
+-   输出端：  
+	-   P:y轴平面的旋转角度（弧度制）  
+	-   T:Z轴垂面的旋转角度（弧度制）  
+	-   R:长度  
+-   和Point Ploar互为相反运算器，通过已知点和平面反求其平面角度、垂面角度和长度值。右键电池选择Pole Down Angles 会得到垂面角的余角。![](https://api2.mubu.com/v3/document_image/68c170d9-a6a0-4c61-bfb8-c4106611d5ee-20454557.jpg)![](https://api2.mubu.com/v3/document_image/97fde95e-0d73-4e49-9f17-f43c81c92cf8-20454557.jpg)  
+-   需要注意的一点是，在下图中，长度一定，“45度平面角+91度垂直角”和“225度平面角+89度垂直角”所取点是相同的，但是在To Polari运算器中，由于右键有Pole Down Angles的原因，T端角会总小于90度，所以输出值会取后者即“225度平面角+89度垂直角”。![](https://api2.mubu.com/v3/document_image/9c22b947-98cc-4df7-aa3d-93f585e35059-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c720ecc5-038b-4f7b-9102-6acb951879d3-20454557.jpg)  
+-   「[[Closest Point\|Closest Point]]」查找最近的一个点![](https://api2.mubu.com/v3/document_image/bc360c4d-3d34-4a70-8163-a9e74bff6a49-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f7a7cc7a-fefe-4f84-8138-e5c0c4ab7013-20454557.jpg)  
+-   输入端：  
+	-   P：指定点  
+	-   C：要搜索的点集  
+-   输出端：  
+	-   P：点集中距指定点最近的点  
+	-   i：最近点在点集中的序号  
+	-   D：指定点到最近点的距离  
+-   找到点集中距离指定点最近的点，并输出相关数值。![](https://api2.mubu.com/v3/document_image/5f953b48-195d-4b54-8944-1708c0848cbd-20454557.jpg)  
+-   「[[Closest Points\|Closest Points]]」查找最近的N个点![](https://api2.mubu.com/v3/document_image/11a393b0-cb73-431c-8eea-802a99c90222-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b71c37d6-76e7-448c-babb-66e6df142fe0-20454557.jpg)  
+-   输入端：  
+	-   P：指定点  
+	-   C：点集  
+	-   N：最近点个数  
+-   输出端：  
+	-   P：最近点  
+	-   i：最近点序号  
+	-   D：最近点到指定点的距离  
+-   Closest Point的高阶版本，可以获得多个最近点，并按照从近至远输出点，序号和距离。![](https://api2.mubu.com/v3/document_image/6e77dc16-5eb2-4aa0-a8d9-c78e40d7e3b0-20454557.jpg)  
+-   「[[Cull Duplicates\|Cull Duplicates]]」剔除重复点![](https://api2.mubu.com/v3/document_image/3819c508-8484-47d2-9dc4-7feaab1f2344-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a6009726-5463-4016-8c6b-f317aa9a9280-20454557.jpg)  
+-   基于设定的误差值，判断并剔除重复点。  
+-   输入端：  
+	-   P：点集  
+	-   T：距离公差  
+-   输出端：  
+	-   P：删除或合并后的点集  
+	-   I：剩余点在原点集中的序号  
+	-   V：对应序号I处点的个数  
+-   通过T端输入的公差进行判定，距离小于公差的点会被合并或删除，右键电池有三种模式：  
+-   Leave One——只保留合并后的第一个点。例如序号2、3、4点合并，那么只保留序号2点。  
+-   Cull All——删除全部重复点。  
+-   Average（默认）——将重复点合并为一个平均值点。取重复点坐标的算数平均值作为合并点坐标，合并点序号输出-1。![](https://api2.mubu.com/v3/document_image/31dd4bd9-1ba7-4c0c-8313-e4a91d6f107d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8796da5d-80c1-4c38-9fd1-105a10342a7e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/66e33ce8-0dc7-469d-9522-922dafe98aed-20454557.jpg)  
+-   「[[Point Groups\|Point Groups]]」以距离对点分组![](https://api2.mubu.com/v3/document_image/36ebe220-3794-4fcf-b6b4-3122cc626636-20454557.jpg)![](https://api2.mubu.com/v3/document_image/edc79791-0fd6-4ef9-9c72-ab876887413e-20454557.jpg)  
+-   基于距离阈值，判断点之间的距离，将一组点分成多组点。  
+-   输入端：  
+	-   P:点集  
+	-   D:距离公差  
+-   输出端：  
+	-   G:分组后的点  
+	-   I:分组后各点在原点集的序号  
+-   将距离小于距离公差的点分到一组，并可以得到各点在原点集的序号。![](https://api2.mubu.com/v3/document_image/8c96f887-de7c-4fd2-8406-011381646f8f-20454557.jpg)  
+-   「[[Project Point\|Project Point]]」投射点![](https://api2.mubu.com/v3/document_image/cf5f2ee3-9228-453b-8fb2-668963b9545e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/76c10af1-c523-4f12-b029-f8390850c4fd-20454557.jpg)  
+-   将点以某个方向投射到物件上  
+-   输入端：  
+	-   P：点  
+	-   D：投影方向  
+	-   G：要投影的物件  
+-   输出端：  
+	-   P：投影点  
+	-   I：投影物件的序号  
+-   G端可输入多个物件，但运算器只会将点投影到最近的物件上，并输出物件序号。所以这个运算器也可以用来筛选距点最近的物件，比如下图中，我们的矩形是从下向上绘制的，所以输出的序号值为3。![](https://api2.mubu.com/v3/document_image/58ad91de-870d-4283-9064-d181bff46e57-20454557.jpg)  
+-   对比来讲，类似的Project和Mesh / Ray，都会投影到每一个选择的物件上。![](https://api2.mubu.com/v3/document_image/6fe81ba6-69c8-4fe9-8f9e-ad54cf7784cd-20454557.jpg)  
+-   「[[Pull Point\|Pull Point]]」求拉回点到最近的物体上![](https://api2.mubu.com/v3/document_image/c9b2c6b5-1042-4a23-9d50-01e2f5c11e71-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f6576e31-cba1-4973-aa10-812e9082503c-20454557.jpg)  
+-   判断最近物件，并将点拉回到物件上。  
+-   输入端：  
+	-   P：点  
+	-   G：物件集  
+-   输出端：  
+	-   P：点在物件集中的最近点  
+	-   D：点到最近点的距离  
+-   右键可以选择是否勾选Closest Only，默认为勾选。勾选情况下，会给输入点从所有物件集的投影点中选取最近的输出；未勾选情况下，会将每个物件上的最近点均输出，类似Curve Closest Point，但是仔细看的话二者输出点的坐标有细微差别，可能是算法上有区别。![](https://api2.mubu.com/v3/document_image/ab791894-eee9-4dee-a9ee-65c2d2039e84-20454557.jpg)  
+-   「[[Sort Along Curve\|Sort Along Curve]]」沿曲线方向排序点![](https://api2.mubu.com/v3/document_image/ac369a7f-2529-4a5b-8b48-1aadef05f03f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c8da7a86-6512-4e2d-9528-1640799097c5-20454557.jpg)  
+-   参考曲线的方向，对一组空间中的点做排序。  
+-   输入端：  
+	-   P:点集  
+	-   C:曲线  
+-   输出端：  
+	-   P:重新排序后的点  
+	-   I:重新排序后的点在原点集中的序号  
+-   根据曲线的走向对点集进行重新排序。![](https://api2.mubu.com/v3/document_image/d3a3e3c2-daec-44eb-8731-af3440bd88b7-20454557.jpg)  
+-   「[[Sort Points\|Sort Points]]」点排序![](https://api2.mubu.com/v3/document_image/9640036e-9224-45e6-9fe5-68a1de3f92a2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/864e5823-d29a-4dc7-b1a5-03c39b7f1874-20454557.jpg)  
+-   输入端：  
+	-   P:点集  
+-   输出端：  
+	-   P:重新排序后的点  
+	-   I:重新排序后的点在原点集中的序号  
+-   按照空间直角坐标系的X、Y、Z方向进行排序，首先按照X,其次Y,最后Z。![](https://api2.mubu.com/v3/document_image/3a944e99-3b54-4d27-94ed-537c0b76d036-20454557.jpg)  
+## Vector 矢量向量  
+-   Vector类的Vector组，和矢量有关的一组运算器。  
+-   同样是用惯SU不太顺手的一个概念，一般的移动都是直接拖动物体从A点到B点，但是在程序的背景下，你需要给物体一个移动的方向，以及一个移动的长度，才能发生移动，这里的方向和长度合起来就是向量。![](https://api2.mubu.com/v3/document_image/eed5e6d5-2ac8-42ae-9f8e-b0912bde1a08-20454557.jpg)  
+-   「[[Deconstruct Vector\|Deconstruct Vector]]」拆分矢量![](https://api2.mubu.com/v3/document_image/941fe49f-7801-4b25-bcfe-ce33a0a12363-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6f22be1d-9710-46a6-a084-0895963e487f-20454557.jpg)  
+-   将矢量拆分为三个数值。  
+-   输入端：  
+	-   V:向量  
+-   输出端：  
+	-   X:X值  
+	-   Y:Y值  
+	-   Z:Z值  
+-   将一个向量拆解成XYZ值。  
+-   「[[Vector XYZ\|Vector XYZ]]」XYZ数值建立矢量![](https://api2.mubu.com/v3/document_image/dba64812-b2fa-42bd-a133-51612c1fcab9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f5704fcb-d8c1-4527-86aa-445e0accace9-20454557.jpg)  
+-   基于 XYZ 坐标值建立矢量。 矢量的方向为原点指向该点的方向，矢量的数值是该点到原点的距离。  
+-   输入端：  
+	-   X:X值  
+	-   Y:Y值  
+	-   Z:Z值  
+-   输出端：  
+	-   V:向量  
+	-   L:向量长度  
+-   V端输出向量，L端输出向量长度。![](https://api2.mubu.com/v3/document_image/5399799d-003d-4c65-bd1b-571c5fdb752f-20454557.jpg)  
+-   「[[Unit Vector\|Unit Vector]]」单位矢量![](https://api2.mubu.com/v3/document_image/82b4ccac-d99f-46a1-bb9e-a1e8592a46b8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/82eb1e4d-d348-4978-a66e-55071ddc663e-20454557.jpg)  
+-   转化为单位矢量。其方向不变，长度变为1。  
+-   输入端：  
+	-   V:向量  
+-   输出端：  
+	-   V:输入端向量方向的单位长度向量  
+-   单位向量就是模等于1的向量，方向不变，长度为1。![](https://api2.mubu.com/v3/document_image/52b40127-9fcf-4878-9c49-92d1ba85e805-20454557.jpg)  
+-   「[[Unit X\|Unit X]]」单位矢量X方向![](https://api2.mubu.com/v3/document_image/377d04ca-a685-4bc8-a036-93710ee3d161-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c0cfdc12-c7d5-4a55-904e-8c254954af42-20454557.jpg)  
+-   建立世界坐标X方向的矢量，默认矢量长度为1。  
+-   输入端：  
+	-   F:长度  
+-   输出端：  
+	-   V:输出的向量  
+-   F端输入长度可以得到世界坐标系的X方向向量。  
+-   「[[Unit Y\|Unit Y]]」单位矢量Y方向![](https://api2.mubu.com/v3/document_image/455f3535-2ee7-4349-8af5-87da818f6563-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ca5294d7-d5c3-42ef-8564-c70672022d8a-20454557.jpg)  
+-   建立世界坐标Y方向的矢量，默认矢量长度为1。  
+-   输入端：  
+	-   F:长度  
+-   输出端：  
+	-   V:输出的向量  
+-   F端输入长度可以得到世界坐标系的Y方向向量。  
+-   「[[Unit Z\|Unit Z]]」单位矢量Z方向![](https://api2.mubu.com/v3/document_image/3b6f2464-1f10-4380-b8fe-9eea50575a05-20454557.jpg)![](https://api2.mubu.com/v3/document_image/666133d6-6461-4a84-a41f-08036050a5c0-20454557.jpg)  
+-   建立世界坐标Z方向的矢量，默认矢量长度为1。  
+-   输入端：  
+	-   F:长度  
+-   输出端：  
+	-   V:输出的向量  
+-   F端输入长度可以得到世界坐标系的Z方向向量。  
+-   「[[Amplitude\|Amplitude]]」修改矢量长度![](https://api2.mubu.com/v3/document_image/d7663664-3e22-462b-8c0b-52b618f81082-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f75dd2a2-ad8e-44f1-a6d8-ed21da52af8e-20454557.jpg)  
+-   重新定义矢量的数值（长度）  
+-   输入端：  
+	-   V：输入向量  
+	-   A：长度值  
+-   输出端：  
+	-   V：输出的向量  
+-   取输入向量的方向和A端长度合并生成新向量![](https://api2.mubu.com/v3/document_image/a874943f-3b12-49b5-8b49-2e1860fd2c90-20454557.jpg)  
+-   「[[Angle\|Angle]]」矢量的角度![](https://api2.mubu.com/v3/document_image/c434599c-ad49-4091-8a69-edcbbc62525b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4bcae6da-a58a-42ee-aef3-01ce596aa2cd-20454557.jpg)  
+-   计算两个矢量的角度和反向角度。  
+-   输入端：  
+	-   A：向量A  
+	-   B：向量B  
+	-   P：平面  
+-   输出端：  
+	-   A：角度  
+	-   R：组角（相加为360°的两个角互为组角）  
+-   向量包含方向和长度，但是不包括起点，所以向量夹角可以理解为两个向量平移到起点重合时两条直线的夹角。![](https://api2.mubu.com/v3/document_image/d067aad9-e0ee-4cf4-934b-1c979f264148-20454557.jpg)  
+-   P端若不输入平面，会自动取最小角，即最大不会超过180°；若P端输入平面，则会按照逆时针取角（这里的逆时针是指从向量A到向量B参考工作平面的方向）。![](https://api2.mubu.com/v3/document_image/2a8097cf-d45f-4c74-96cf-023d390c78c2-20454557.jpg)  
+-   一般情况下P端输入两向量所在平面，如果输入的不是所在平面，则会计算两向量在平面投影向量的夹角，取角方向依然是逆时针（这里的逆时针是指从向量A到向量B参考工作平面的方向）。![](https://api2.mubu.com/v3/document_image/499d3d23-fbff-4b57-aaed-c3b69db1a8d3-20454557.jpg)  
+-   「[[Cross Product\|Cross Product]]」矢量叉乘![](https://api2.mubu.com/v3/document_image/d8fec620-4ab8-4ff1-bb0f-88f58b31995a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e5cc89a6-db64-4a46-9668-694f6be55004-20454557.jpg)  
+-   矢量叉乘。  
+-   输入端：  
+	-   A:向量A  
+	-   B:向量B  
+	-   U:是否输出单位向量  
+-   输出端：  
+	-   V:向量A和B的向量积  
+	-   L:向量积的长度  
+-   向量积又叫叉积，可以写作A×B(有时也被写成A∧B,避免和字母X混淆)，向量积是一个矢量，简单来讲就是可以得到垂直于向量AB平面的法向量，指向按右手定则从A转向B来确定。向量积和模的计算方法为：  
+	-   (1)向量积：若A(x1,y1,Z1),B(x2,y2,Z2),则A×B=y1z2-Z1y2,z1x2-x1z2,x1y2-y1x2)  
+	-   (2)模：IA×B=|ABlsineθ(O≤6≤π)，也等于AB向量围成四边形的面积![](https://api2.mubu.com/v3/document_image/6afaaf5d-252d-4b56-a9af-98dd624dd268-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fa2688fe-9e1e-4a7a-be84-2af6e334df6b-20454557.jpg)  
+-   「[[Dot Product\|Dot Product]]」矢量点乘![](https://api2.mubu.com/v3/document_image/b68c1536-0e8f-4b05-8b94-f48ca2fad7af-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4758a433-626f-42eb-92c4-6687651400ff-20454557.jpg)  
+-   矢量点乘。  
+-   输入端：  
+	-   A:向量A  
+	-   B:向量B  
+	-   U:向量AB是否看作单位向量  
+-   输出端：  
+	-   D:向量AB的点积值  
+-   点积可以写作A·B,两个向量的点积是一个标量，即只有模。点积模的计算方法有两种：  
+	-   (1)模（坐标法）：若A=(x1,y1,Z1),B=(x2,y2,Z2),则AB=x1x2+y1y2+Z1Z2  
+	-   (2)模（几何法）：A·B=AB coseθ(O≤6≤π)![](https://api2.mubu.com/v3/document_image/e473ccf8-e766-40d6-bcd3-332b44231ae3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ef578828-9273-42a4-a81c-933b6b62a40c-20454557.jpg)  
+-   「[[reverse\|reverse]]」翻转矢量的方向![](https://api2.mubu.com/v3/document_image/b895fed5-c1d3-4740-ba29-93a88cee2d95-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cc605c94-e024-45c2-824a-e4a9ea72314a-20454557.jpg)  
+-   反转矢量的方向。  
+-   输入端：  
+	-   V:向量  
+-   输出端：  
+	-   V:反向向量  
+-   得到输入向量的反向向量，注意右键的Reverse只能翻转数列序号顺序，对向量方向是不起作用的。![](https://api2.mubu.com/v3/document_image/66d17875-158e-43c8-b80e-b7fdc0ddc6a3-20454557.jpg)  
+-   「[[Rotate\|Rotate]]」矢量旋转![](https://api2.mubu.com/v3/document_image/5789b9e2-90f1-432e-962d-340bf6c63a96-20454557.jpg)![](https://api2.mubu.com/v3/document_image/86d14e80-2393-4a7d-b736-d9b73a9f05ea-20454557.jpg)  
+-   定义旋转轴，并旋转矢量。  
+-   输入端：  
+	-   V:向量  
+	-   X:旋转轴  
+	-   A:旋转角度（弧度制）  
+-   输出端：  
+	-   V:旋转后向量  
+-   和运算器Rotate Axis类似，向量绕指定轴旋转。![](https://api2.mubu.com/v3/document_image/87db3143-c8e2-4781-92e4-6fc160bdb382-20454557.jpg)  
+-   「[[Vector 2Pt\|Vector 2Pt]]」两点建立矢量![](https://api2.mubu.com/v3/document_image/244f0ab0-93b2-4d0c-a0dd-f2cbe22a7fc9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b6ea60bf-cdce-4f6e-a133-b0f15f05f873-20454557.jpg)  
+-   以两点建立矢量。矢量的方向是点A指向点B的方向，矢量的长度是A到B的距离。  
+-   输入端：  
+	-   A：起点A  
+	-   B：终点B  
+	-   U：是否按照单位向量输出  
+-   输出端：  
+	-   V：向量  
+	-   L：向量长度  
+-   两点确定一个向量，若U端为False输出以AB直线长度的向量；若U端为True，输出长度为1的单元向量。![](https://api2.mubu.com/v3/document_image/22950114-3c85-4426-9cd3-1936c99623ae-20454557.jpg)  
+-   「[[Vector Length\|Vector Length]]」矢量长度![](https://api2.mubu.com/v3/document_image/b7bbd4c4-6dc0-4847-b6c8-c1930e0db7b3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a29deced-8468-414d-a5f7-af29590d0285-20454557.jpg)  
+-   输出矢量的数值（长度）  
+-   输入端：  
+	-   V：向量  
+-   输出端：  
+	-   V：向量长度  
+-   得到输入向量的长度，也就是向量的模。![](https://api2.mubu.com/v3/document_image/0c9e51b4-141e-4645-861c-6cb5ff126357-20454557.jpg)              
+# Curve 曲线  
+## Analysis 曲线分析  
+-   Curve类的Analysis组，曲线分析相关的运算器，例如求曲线最近点，是否在曲线范围内等等。![](https://api2.mubu.com/v3/document_image/f587e6a0-e995-464f-85a2-725ae77aa3d6-20454557.jpg)  
+-   「[[Control Points\|Control Points]]」拆解曲线结构![](https://api2.mubu.com/v3/document_image/c8f6e5d0-9197-4498-9516-06b6a59a546b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/af62b452-da13-4485-b9cb-0ddc8dc1daa7-20454557.jpg)  
+-   拆解曲线的结构，提取出曲线控制点以及权重值，和节点的赋值。  
+-   输入端：  
+	-   C:曲线  
+-   输出端：  
+	-   P:控制点  
+	-   W:控制点权重  
+	-   K:节点向量大小  
+-   和Rho里的命令“显示物件控制点”一样，能够输出曲线控制点和相关参量。一般来说对于产品设计等精细化造型建模会用到诸如曲线阶数、曲率连续等概念，会涉及到输出端W和K的设置，一般建筑景观规划的尺度很少用到，下面是一些说明：  
+	-   (1)控制点：控制点负责控制曲线的整体轮廓，走势。  
+	-   (2)权重：控制点将影响该点附近的曲线轨迹，该点的权重越大，该点附近的曲线轨迹越靠近该点。  
+	-   (3)节点向量大小：调节曲线的形状，类型。控制点数量=阶数+节点数量+1。![](https://api2.mubu.com/v3/document_image/0789159f-010c-487f-9bdc-4d79536283f5-20454557.jpg)  
+-   「[[Control Polygon\|Control Polygon]]」曲线控制点![](https://api2.mubu.com/v3/document_image/328893b7-1d1d-470f-beb1-db7014c64305-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2e10069c-02cc-4a31-b3e1-c254294b5ac5-20454557.jpg)  
+-   提取曲线的控制点 及控制点连接的边框线。  
+-   输入端：  
+	-   C:曲线  
+-   输出端：  
+	-   C:控制点连线  
+	-   P:控制点  
+-   提取曲线控制点，并连接成多段线。![](https://api2.mubu.com/v3/document_image/1ca94a16-4c46-44e0-85c3-3c0382baace3-20454557.jpg)  
+-   「[[Curve Middle\|Curve Middle]]」曲线长度中点![](https://api2.mubu.com/v3/document_image/f4c9b6d2-4036-4fe3-8a74-105ca851484e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8edb48f6-07b1-4eea-b653-35d04b849e8f-20454557.jpg)  
+-   提取曲线长度的中点。  
+-   输入端：  
+	-   C:曲线  
+-   输出端：  
+	-   M:曲线中点  
+-   注意中点是两段弧长相等的点，与参数t=0.5处不一定是同一点，见<Point On Curve知识点2>。  
+-   「[[Deconstruct Arc\|Deconstruct Arc]]」圆弧线分析![](https://api2.mubu.com/v3/document_image/3e45d4d1-7128-4500-b129-3ea826582f7c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e19e0a6e-aacb-4291-8ee4-ba7ab47383ad-20454557.jpg)  
+-   输入端：  
+	-   A：圆弧/圆  
+-   输出端：  
+	-   B：工作平面（原点即为圆心）  
+	-   R：半径  
+	-   A：角度范围  
+-   分析圆弧线，输出圆弧线的坐标平面（中心点），圆弧半径，以及圆弧的角度范围（弧度单位）![](https://api2.mubu.com/v3/document_image/3df5ed9c-1384-47aa-8fb9-04e5792d901f-20454557.jpg)  
+-   「[[Deconstuct Rectangle\|Deconstuct Rectangle]]」矩形线分析![](https://api2.mubu.com/v3/document_image/48fa3b31-4b84-4ee1-8e7b-0adb2ae8bb2e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/22bbe3d8-3259-4b3c-95d0-0f144c295b9e-20454557.jpg)  
+-   分析矩形线，输出矩形线的坐标平面，以及坐标平面上的长宽方向的坐标范围。  
+-   输入端：  
+	-   R:矩形  
+-   输出端：  
+	-   B:工作平面（原点即为短形中心）  
+	-   X:矩形X区间  
+	-   Y:矩形Y区间  
+-   注意XY输出的是长宽区间，格式为(-X一X），（-Y一Y)，所以长宽的实际值为2X和2Y。![](https://api2.mubu.com/v3/document_image/f2c9bae4-7d05-44c2-a7ee-deb5cdf924f2-20454557.jpg)  
+-   「[[End Points\|End Points]]」曲线起点和终点![](https://api2.mubu.com/v3/document_image/52ec46f8-d1d7-4ab0-a1e6-abbe28436f34-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8dea0298-f432-4195-8ab9-1347ab6cdde0-20454557.jpg)  
+-   提取曲线的起点和终点  
+-   输入端：  
+	-   C:曲线  
+-   输出端：  
+	-   S:起点  
+	-   E:终点  
+-   输入曲线，输出曲线的起点和终点，闭合曲线的起点和终点是同一点。![](https://api2.mubu.com/v3/document_image/20381767-91d0-4bde-863f-a7933a2f8c75-20454557.jpg)  
+-   「[[Polygon Center\|Polygon Center]]」多边形线中心点![](https://api2.mubu.com/v3/document_image/afd0a536-89b2-4c10-9149-0c45616e62c6-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e8b26cf4-10d1-4124-be16-86d611476768-20454557.jpg)  
+-   计算多边形线的中心点，有三种中心点计算方式：  
+	-   多边形角点的平均值。  
+	-   多边形边的平均值。  
+	-   多边形的面积中心。  
+-   输入端：  
+	-   P：多边形  
+-   输出端：  
+	-   Cv：顶点平均值中心点  
+	-   Ce：边平均值中心点  
+	-   Ca：面积中心点  
+-   如果是正多边形，三种计算方式的中心点是同一个点。  
+-   如果不是正多边形，三种计算方式的中心点会有不同：  
+	-   Cv中心点是各顶点求平均后的结果。删除点的过程是因为输入的是多折线多算了一个顶点。![](https://api2.mubu.com/v3/document_image/d1fd1c2c-6b95-49f5-9811-1a76765ba10f-20454557.jpg)  
+	-   Ce中心点是边平均值，但是average运算器只能求多点的平均值，输入边会报错，所以这里可以将边等分，等分点数量大的话等同于对应边来计算。![](https://api2.mubu.com/v3/document_image/08d18c8e-44e4-4797-acd9-fffb4422379b-20454557.jpg)  
+	-   Ca面积中心点和Area求得的中心点一致。![](https://api2.mubu.com/v3/document_image/bf4ff917-3b0a-4243-bc3f-3794e429a19f-20454557.jpg)  
+-   「[[Closed\|Closed]]」判断曲线是否封闭![](https://api2.mubu.com/v3/document_image/960f6ca1-c2b9-4c75-8d73-2dd1f2584fc7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0d9ab528-06b3-4592-bcb7-9295bdb8908c-20454557.jpg)  
+-   判断曲线是否是封闭曲线和是否是周期化封闭曲线。  
+-   输入端：  
+	-   C:曲线  
+-   输出端：  
+	-   C:是否是闭合曲线  
+	-   P:是否是周期曲线  
+-   曲线是否封闭好理解，就是首尾点相连，那么什么是周期化呢，简单来说就是在首尾相接的基础上，拖动控制点时首尾点相连处的变化是均匀的，不会出现锐角点，所以周期化曲线一定是封闭的。![](https://api2.mubu.com/v3/document_image/e0dedffa-0327-4c7d-888f-2b3b76c5b06e-20454557.jpg)  
+-   Rhino中曲线工具里的命令“周期化/非周期化”可以进行转化。![](https://api2.mubu.com/v3/document_image/d6ec6e9e-d9ac-4a24-a15c-f63dc9484069-20454557.jpg)  
+-   「[[Curvature Graph\|Curvature Graph]]」曲线曲率图形分析![](https://api2.mubu.com/v3/document_image/1eb5958f-8b02-4ee5-9733-230872cc3e72-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cf53256f-9aff-4662-8ad2-67dfe1982b99-20454557.jpg)  
+-   绘制曲线的曲率图  
+-   输入端：  
+	-   C:曲线  
+	-   D:曲率采样点密度  
+	-   S:曲率缩放值百分比  
+-   类以Rhino分析中的命令"打开曲率图形”，曲线弯曲程度越大，其曲率半径就越小，曲率值越大，曲率查看线偏移的就越大。![](https://api2.mubu.com/v3/document_image/e9cfc497-973e-4440-a0ca-afdd1780b1fd-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6b495723-f894-4890-a202-385dd5f7f1c7-20454557.jpg)  
+-   「[[Curve Closest Point\|Curve Closest Point]]」曲线上的最近点![](https://api2.mubu.com/v3/document_image/e39b097d-f9a6-4988-b060-3038ae485fec-20454557.jpg)![](https://api2.mubu.com/v3/document_image/500a7465-8db2-45cc-9312-f4f08cf817af-20454557.jpg)  
+-   该工具是编辑和分析曲线的重要工具，包含三个功能，  
+	-   计算点拉回到曲线上的最近点  
+	-   计算点到曲线的最近距离  
+	-   分析点拉回到曲线上的位置的参数值。  
+-   输入端：  
+	-   P：点  
+	-   C：曲线  
+-   输出端：  
+	-   P：点在曲线上的最近点  
+	-   t：最近点的参数t  
+	-   D：点距曲线上最近点的距离  
+-   该运算器除了找曲线上距离已知点的最近点，还常和Evaluate Curve搭配找曲线上已知点的切线方向。![](https://api2.mubu.com/v3/document_image/33c5231b-1047-4562-be02-fd62730cff08-20454557.jpg)  
+-   「[[Curve Nearest Object\|Curve Nearest Object]]」曲线上的最近几何物件![](https://api2.mubu.com/v3/document_image/a02ea924-e2cb-41c1-9b66-206fa6ef6962-20454557.jpg)![](https://api2.mubu.com/v3/document_image/10fc2f5a-bd74-4c81-b86d-c42931ce3c4a-20454557.jpg)  
+-   查找曲线上的最近几何物件，输出物件的序号。并输出最近点。目前不支持Mesh 和 SubD几何物件。  
+-   输入端：  
+	-   C:曲线  
+	-   G:物件  
+-   输出端：  
+	-   A:曲线上距离物件最近的点  
+	-   B:物件上距离曲线最近的点  
+	-   I:最近物件的序号  
+-   物件包括点、线、面、Brep、工作平面、向量等，但输入网格会报错。![](https://api2.mubu.com/v3/document_image/4ab8d775-41a8-4dff-b1be-768efc3b4b55-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0a8f5650-373f-41d0-9b10-4e38c8553e7f-20454557.jpg)  
+-   「[[Curve Proximity\|Curve Proximity]]」两条曲线之间的最近点和距离![](https://api2.mubu.com/v3/document_image/f0470493-b50d-4fd5-aae9-31a553bbdbc7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fa7eecc6-6c43-4fb8-8f91-b3bd6ad1dd13-20454557.jpg)  
+-   计算两条曲线之间的最近点位置和距离。  
+-   输入端：  
+	-   A:曲线A  
+	-   B:曲线B  
+-   输出端：  
+	-   A:曲线A上的最近点  
+	-   B:曲线B上的最近点  
+	-   D:两最近点间的距离  
+-   找两条曲线间相距最近的两点，并得到两点间距离。![](https://api2.mubu.com/v3/document_image/b704aa44-ebc6-421c-9119-c1654ef27d1e-20454557.jpg)  
+-   「[[Curve Side\|Curve Side]]」判断点在曲线的哪一侧![](https://api2.mubu.com/v3/document_image/623b6ee8-afa1-49d1-bab1-6511deb33d71-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fe53ab27-382c-40f3-9738-c9e8128d0bed-20454557.jpg)  
+-   判断点在曲线的左侧或者右侧，如果点和曲线是空间上分布的，将会投射到平面上做判断。  
+-   输入端：  
+	-   C:曲线  
+	-   P:点  
+	-   PI:工作平面(若不输入，默认为曲线所在平面)  
+-   输出端：  
+	-   S:点在曲线的哪一侧(-1=左侧，0=曲线上，1=右侧)  
+	-   L:是否在曲线左侧  
+	-   R:是否在曲线右侧  
+-   注意判定的是曲线的左右，而不是空间的左右，曲线的左右是和起止点顺序有关，在指定平面内遵循左手定则，手掌向上，四指沿起点到终点的指向，拇指方向是曲线的左边。由此可得，当曲线为闭合曲线时，四指指向曲线的方向，也可以用来判定曲线内外。![](https://api2.mubu.com/v3/document_image/729b9511-bb93-4360-8d2e-02ab9516b011-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f8cf12fb-88c8-4439-9996-465efc921ec8-20454557.jpg)  
+-   P端输入的平面是指观察的平面，也是应用左手定则的平面，一般是在空间非平面曲线时设定，不同的平面判定结果不同：  
+	-   (1)当为顶视图时，对应的是Y平面![](https://api2.mubu.com/v3/document_image/ada77aea-0891-4b0b-a0bf-ec0c33b2af17-20454557.jpg)  
+	-   (2)当为前视图时，对应的是XZ平面![](https://api2.mubu.com/v3/document_image/2f7ed856-9c47-4315-917b-2e6e8d7adeb0-20454557.jpg)  
+	-   (3)当为左视图时，对应的是YZ平面![](https://api2.mubu.com/v3/document_image/ff1b6f06-c135-4fd1-81bf-d129de0cdebd-20454557.jpg)  
+-   「[[Discontinuity\|Discontinuity]]」提取曲线拐角点（或其他连续性级别的点）![](https://api2.mubu.com/v3/document_image/b85f5b3a-5d29-45fe-a295-edb0e7ccac7e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/62c4214e-271a-4f9f-bb50-af38d5851988-20454557.jpg)  
+-   默认设置提取曲线上的尖锐点（G0连续的点），也可以基于不同的连续性级别（G1，G2，G3连续性），提取曲线上未达到该连续性的点。  
+-   不满足L端判定设定的点输出为不连续点。L端可输入3个数值，1=tangency（G1相切连续），2=curvature（G2曲率连续），3=analytic（G3及以上的所有连续）。对于建筑景观规划这个尺度来说，该运算器大部分情况都是用默认L=1时的判定是否相切连续，找出不连续的拐角点。  
+-   输入端：  
+	-   C：曲线  
+	-   L：阶数  
+-   输出端：  
+	-   P：不连续点  
+	-   t：不连续点的参数t值  
+-   简单解释一下各种连续的定义：  
+	-   （1）G0——点连续：曲线无断点，曲面相接处无裂缝。曲率查看线有裂缝。![](https://api2.mubu.com/v3/document_image/cd7108a0-49ec-45cf-b9fe-b67d0a99f5ea-20454557.jpg)  
+	-   （2）G1——相切连续：比G0高一级，曲线无断点，曲面相接处无裂缝，并且相接处的点或曲面是相切关系。曲率查看线无裂缝，但相接处边缘长度不等。![](https://api2.mubu.com/v3/document_image/b22d1e5e-88df-4b97-9b87-c8537f51602d-20454557.jpg)  
+	-   （3）G2——曲率连续：比G1高一级，曲线无断点，曲面相接处无裂缝，相接处相切，并且相接处的曲率半径也一样。曲率查看线无裂缝，相接处边缘长度相等，但存在锐角点。![](https://api2.mubu.com/v3/document_image/e255ccdf-d884-4d6c-ae5c-7a97d45cdad9-20454557.jpg)  
+	-   （4）G3——曲率变化率连续：G2高一级，一般在汽车设计的时候可能会用到。曲率查看线无裂缝，相接处边缘长度相等，不存在锐角点。  
+	-   （5）G4——曲率变化率的变化率连续：比G3高一级，极少用到，与G3连续几乎看不出太大区别。曲率查看线无裂缝，相接处边缘长度相等，不存在锐角点，而且查看线曲率变化率也相同。  
+-   「[[Extremes\|Extremes]]」曲线的最高点和最低点![](https://api2.mubu.com/v3/document_image/10146e86-40b2-4c31-9cd9-25f68f936300-20454557.jpg)![](https://api2.mubu.com/v3/document_image/caeaa8a0-b3cf-444c-a9f2-f704726c76ea-20454557.jpg)  
+-   分析曲线上的最高点和最低点，默认为xy平面，即世界z轴方向为高度方向。可以自定义坐标平面，坐标平面的z方向是高度方向。  
+-   输入端：  
+	-   C:曲线  
+	-   P:极值参考平面  
+-   输出端：  
+	-   H:曲线最高点  
+	-   L:曲线最低点  
+-   找到曲线相对输入参考平面的最高点和最低点，注意，最高最低指的是沿参考平面Z轴方向的相对高低，并不是到平面的距离。![](https://api2.mubu.com/v3/document_image/d8f07592-2a7d-44f9-9d41-4cafd79f7fe6-20454557.jpg)  
+-   「[[Planar\|Planar]]」测试曲线是否是平面线![](https://api2.mubu.com/v3/document_image/e45ac706-2ca0-47a0-9c07-5f75604cc6d7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f9340c97-6d70-4f49-93ad-ac6581828d20-20454557.jpg)  
+-   测试曲线是否为平面线。  
+-   输入端：  
+	-   C:曲线  
+-   输出端：  
+	-   p:是否是平面曲线  
+	-   P:曲线所在平面  
+	-   D:偏移程度  
+-   若曲线为平面曲线，P端输出该曲线所在平面，若为非平面曲线，则P端输出一个均值平面。D端表示曲线的偏移程度，类似方差和标准差，值越大说明曲线起伏越剧烈，平面曲线该值为0。![](https://api2.mubu.com/v3/document_image/a7bd0209-9cd4-4857-8afd-b80b65890e7f-20454557.jpg)  
+-   「[[Curvature\|Curvature]]」曲线的曲率![](https://api2.mubu.com/v3/document_image/82f0f158-0270-487e-bbf2-64aa2ca644ea-20454557.jpg)![](https://api2.mubu.com/v3/document_image/22fb5995-fb61-458d-b303-7eddbd29e775-20454557.jpg)  
+-   在曲线上以参数值指定点并分析它的曲率。  
+-   输入端：  
+	-   C:曲线  
+		-   Reparameterize 重新参数化 固定曲率区间在0 to 1  
+	-   t:曲线参数t  
+-   输出端：  
+	-   P:t值点  
+	-   K:值点处曲率方向  
+	-   C:t值点处的曲率圆  
+-   我们将曲线上任意一点处曲率圆半径叫做曲率半径，该半径值的倒数叫做该点的曲率。该点到曲率圆圆心的方向是该点曲率的方向，垂直于切线方向。曲率越大，表示曲线的弯曲程度越大。![](https://api2.mubu.com/v3/document_image/eea66168-3a1c-4d66-bc0a-c53c9d4ecb2b-20454557.jpg)  
+-   「[[Curve Frame\|Curve Frame]]」曲线上坐标平面![](https://api2.mubu.com/v3/document_image/8eba4004-c510-49d0-a768-37a8f5dac7f0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b4e7dc44-df76-485d-a5d9-83171253a546-20454557.jpg)  
+-   输入端：  
+	-   C：曲线  
+	-   t：曲线参数t  
+-   输出端：  
+	-   F：参数t处的切线/曲率半径工作平面  
+-   在参数t值处生成一个以切线方向为X轴，曲率半径方向为Y轴的平面。![](https://api2.mubu.com/v3/document_image/abe31f35-c0c7-45f0-900d-b3dac8439c4f-20454557.jpg)  
+-   「[[Derivatives\|Derivatives]]」计算曲线上某点的导数值![](https://api2.mubu.com/v3/document_image/94ebbfe0-3064-4fc1-8eed-389c6da70504-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6eebf495-992e-47bf-8dc0-8cace6967ab9-20454557.jpg)  
+-   在曲线上以参数值指定点计算它的导数值。  
+-   输入端：  
+	-   C:曲线  
+	-   t:曲线参数t  
+-   输出端：  
+	-   P:参数t处的点  
+	-   1:第1个衍生值（速度）  
+-   得到t值处的一系列衍生值，不知道有什么具体用途，放大后可增加输出端至总共6个衍生值：  
+	-   (1)第1个衍生值一速度(Velocity)  
+	-   (2)第2个衍生值一加速度(Acceleration)  
+	-   (3)第3个衍生值—颠簸值(Jot)  
+	-   (4)第4个衍生值一震动值(Jounce)  
+	-   (5)第5个衍生值一未知  
+	-   (6)第6个衍生值一未知![](https://api2.mubu.com/v3/document_image/0b465fa8-8cb2-41c1-a0ae-229a5060c93c-20454557.jpg)  
+-   「[[Evaluate Curve\|Evaluate Curve]]」以参数值指定曲线上的一个点![](https://api2.mubu.com/v3/document_image/6a798d39-52ea-4e21-933a-fcf3eca7d83c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cb9a8d02-d2ab-421e-bbd4-be9de7dc828d-20454557.jpg)  
+-   在曲线上以参数值定位分析一个点。  
+-   输入端：  
+	-   C：曲线  
+	-   t：曲线点的参数t  
+-   输出端：  
+	-   P：参数t处的曲线点  
+	-   T：曲线点处的切线方向  
+	-   A：当为闭合曲线时，起点向量和终点向量的夹角（弧度制）  
+-   任意一条曲线都会对应一个0到M的区间（M值大小受曲线控制点的数量、控制点分布是否均匀、曲线阶数等影响），简单来说就是参数t在0到M可以恰好取到曲线上的所有点，注意这里的M不等于曲线长度，而是区间的最大值。![](https://api2.mubu.com/v3/document_image/a6d91f9f-c2aa-4184-9302-39096ad15495-20454557.jpg)  
+-   一般来说为了方便使用，我们常在C端右键菜单里勾选Reparameterize，这样就将曲线的区间映射到了0到1的范围。需要注意的是，只有在控制点均匀的情况下，t=0.5才是中点位置![](https://api2.mubu.com/v3/document_image/3cdc7f14-3086-4842-bb8d-baa83e14f582-20454557.jpg)  
+-   T端输出切线方向，注意是顺着曲线方向的切向![](https://api2.mubu.com/v3/document_image/d180de71-bd32-4690-9d03-82742d741dc3-20454557.jpg)  
+-   输出端A几乎没用过，试验了下大概是指闭合曲线情况下起点向量和终点向量的夹角，只有在这个位置有值，其余位置一般都是0。  
+-   「[[Horizontal Frame\|Horizontal Frame]]」曲线的水平坐标平面![](https://api2.mubu.com/v3/document_image/4c05c965-bbcf-4aa6-817a-8faf1e698fdd-20454557.jpg)![](https://api2.mubu.com/v3/document_image/70236b58-f829-4044-ba71-706bc4e94282-20454557.jpg)  
+-   在曲线上以参数值指定点，并计算它的水平坐标平面。  
+-   输入端：  
+	-   C：曲线  
+	-   t：参数t值  
+-   输出端：  
+	-   F：t值位置处的平行于世界坐标系XY平面的工作平面  
+-   和Perp Frame类似，生成平行于世界坐标系XY平面的工作平面，平面的X轴为t值处曲线的切线方向在XY平面的投影方向。![](https://api2.mubu.com/v3/document_image/4fc52ca2-54d6-40f2-9db9-b6166dd5ba70-20454557.jpg)  
+-   平行相当于确定了平面的法线方向，但工作平面中还有XY两个方向，在这里默认将每点处切线方向的水平投影作为平面的X方向。如果对XY方向有要求，可以结合Align Plane校准平面。![](https://api2.mubu.com/v3/document_image/07105191-04a7-44c9-b651-cd393a513d1e-20454557.jpg)  
+-   「[[Perp Frame\|Perp Frame]]」曲线的垂直坐标平面![](https://api2.mubu.com/v3/document_image/434be8e8-6251-4c33-9a3b-b3c00bbb1b00-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7f4ea924-5b83-4aa1-8ada-adecd9b2f4f2-20454557.jpg)  
+-   在曲线上以参数值指定点计算垂直的坐标平面，注意XY轴线方向并不固定。  
+-   输入端：  
+	-   C：曲线  
+	-   t：参数t值  
+-   输出端：  
+	-   F：t值位置处的垂直于曲线的工作平面  
+-   和Evaluate Curve类似，C端右键勾选Reparameterize将曲线区间t值定义在0到1范围内，输出对应t值位置处垂直于曲线的工作平面。这个运算器常在做单轨扫掠截平面时使用。![](https://api2.mubu.com/v3/document_image/451607c7-ff5d-417b-b534-4e8f82e8c86f-20454557.jpg)  
+-   大家知道有法线方向能确定一个平面的Z方向，但工作平面中还有XY两个方向，在这里默认将每点处的曲率向量作为平面的X方向。如果对XY方向有要求，可以结合Align Plane校准平面。![](https://api2.mubu.com/v3/document_image/4e9e1cc9-9a93-4829-95c0-8ac5bd48ad70-20454557.jpg)  
+-   「[[Point On Curve\|Point On Curve]]」曲线上的点![](https://api2.mubu.com/v3/document_image/47317b9b-2ec5-4073-b753-eb4fb3038caa-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5f3231af-1bdc-4d20-a7f8-d6dcbbb75886-20454557.jpg)  
+-   以长度比例值定位曲线上的点。  
+-   输入端：  
+	-   曲线  
+-   输出端：  
+	-   曲线上的点  
+-   拖动选择点的位置，一般用该运算器取中点，右键电池可以选取其他点位。![](https://api2.mubu.com/v3/document_image/4651a938-6168-491d-b158-6b5347485f60-20454557.jpg)  
+-   和该运算器类似的还有Evaluate Curve和Curve Middel，三者都可以取中点，具体的区别为：  
+	-   Point On Curve——按照曲线的长度比例取点，无论控制点是否均匀，当为0.5时是曲线的中点，分开的两段线段长度相等。![](https://api2.mubu.com/v3/document_image/11e34519-c23c-4469-b96a-c073245ce888-20454557.jpg)  
+	-   Curve Middle——相当于简化版的Point On Curve，按照曲线的长度比例取点，无论控制点是否均匀，分开的两段线段长度相等。![](https://api2.mubu.com/v3/document_image/3685b800-3c06-4798-89dc-28eb87128395-20454557.jpg)  
+	-   Evaluate Curve——只有当控制点均匀时，t=0.5才是中点。![](https://api2.mubu.com/v3/document_image/ab5f597c-5b60-446f-9d96-e36421b786cc-20454557.jpg)  
+-   「[[Torsion\|Torsion]]」曲线的扭曲度![](https://api2.mubu.com/v3/document_image/e3944125-46f4-4347-bc3f-2b75f7cf8224-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a2100b92-e896-4842-a0d2-1d837b8efe0d-20454557.jpg)  
+-   分析曲线上某点的轴向扭曲度。  
+-   输入端：  
+	-   C:曲线  
+	-   t:曲线参数t  
+-   输出端：  
+	-   P:参数t处的点  
+	-   T:参数t处的扰率  
+-   简单来说就是当曲线为非平面曲线时，由于曲率只是针对平面内的刻画，所以还需要一个在空间层面的参量来描述曲线的变化，这就是扰率，也叫作第二曲率，用来反映空间曲线的扭曲程度。扰率绝对值越大，扭曲程度越大，当扰率非0时，称其倒数为扰率半径。![](https://api2.mubu.com/v3/document_image/1e2aada1-e022-4cd8-b4da-b2798d6935dd-20454557.jpg)  
+-   「[[Curve Domain\|Curve Domain]]」曲线的参数值范围![](https://api2.mubu.com/v3/document_image/92fd752c-2053-4324-a520-da563172eadb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6b065d6e-77fe-4131-b8c2-cd15ffca0504-20454557.jpg)  
+-   分析曲线的参数值范围。  
+-   输入端：  
+	-   C:曲线  
+	-   D:新区间  
+-   输出端：  
+	-   C:重设后的曲线  
+	-   D:原区间  
+-   给曲线重设区间值，其实我们之前的右键Reparameterize就是将曲线区间重新定义为O一1，不过这个运算器可以设为任意值。![](https://api2.mubu.com/v3/document_image/31de250c-31ff-4e77-bbc1-15ee26ef2ba8-20454557.jpg)  
+-   「[[Evaluate Length\|Evaluate Length]]」曲线长度指定点![](https://api2.mubu.com/v3/document_image/d1340d16-667d-4404-a010-e821e29f59a1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8e1d0863-1a2b-48c6-9bde-c344ded3f5f3-20454557.jpg)  
+-   以实际长度或长度比例值分析曲线上的点。  
+-   输入端：  
+	-   C:曲线  
+	-   L:长度值  
+	-   N:是否将曲线总长度定义为0一1  
+-   输出端：  
+	-   P:各长度值处的点  
+	-   T:各长度值处的点的切线方向  
+	-   t:各长度值处的点的参数t  
+-   根据L端输入的长度值在曲线上取点，并输出相关参数，注意每个长度值都是从起始点开始计算。![](https://api2.mubu.com/v3/document_image/be3a3ea2-6e63-4cce-ac1e-6dbfc25acde9-20454557.jpg)  
+-   类比于Evaluate Curve通过t值参数化曲线，这里是通过长度参数化曲线。和Reparameterize将t值映射到O—1一样，输入端的N可以将曲线总长度映射到0一1。![](https://api2.mubu.com/v3/document_image/2701a715-0410-47ff-9f9f-10e12b4dde9a-20454557.jpg)  
+-   Divide Length只能按同一长度等分曲线取点，若想在曲线上按照多个不同长度循环取点，则可用Evaluate Length:来实现。![](https://api2.mubu.com/v3/document_image/8cae4728-f8b0-4829-8325-26bf41716b07-20454557.jpg)  
+-   「[[Length\|Length]]」曲线长度![](https://api2.mubu.com/v3/document_image/a26d116e-7728-48c6-985e-0a0e84cb2010-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5f273f75-dc67-4250-a594-38f0cdba779f-20454557.jpg)  
+-   输入端：  
+	-   C:曲线  
+-   输出端：  
+	-   L:曲线长度  
+-   用法简单，输入曲线，输出该曲线长度值。![](https://api2.mubu.com/v3/document_image/96123a0d-c371-4bc3-9be9-1f39005f16cd-20454557.jpg)  
+-   「[[Length Domain\|Length Domain]]」曲线上参数值范围对应的长度![](https://api2.mubu.com/v3/document_image/c7b20023-d176-4d91-af99-2fdea14504ce-20454557.jpg)![](https://api2.mubu.com/v3/document_image/76640cf4-a00f-48d2-a76f-a6dbe64c4a71-20454557.jpg)  
+-   分析曲线上指定某个参数值范围对应的曲线的长度。  
+-   输入端：  
+	-   C:曲线  
+	-   D:区间  
+-   输出端：  
+	-   L:区间内曲线长度  
+-   得到指定区间曲线的曲线长度。![](https://api2.mubu.com/v3/document_image/2df86af1-515f-41c0-9bba-27250c5502d1-20454557.jpg)  
+-   「[[Length Parameter\|Length Parameter]]」曲线上某个点两边的线的长度![](https://api2.mubu.com/v3/document_image/8acdc3d9-4ea8-48d0-9998-0bd7f2ebea5d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d7acd9a0-d283-47c2-8d4b-7d4f87458583-20454557.jpg)  
+-   分析曲线上某个点到曲线起点和终点的长度值。  
+-   输入端：  
+	-   C:曲线  
+	-   P:参数t  
+-   输出端：  
+	-   L-:参数t分割的前一段长度  
+	-   L+:参数t分割的后一段长度  
+-   在参数t处将曲线分为两段，并得到两段曲线的长度值。![](https://api2.mubu.com/v3/document_image/3d6b7212-acab-4ab0-90ce-9f06b5c5999d-20454557.jpg)  
+-   「[[Segment Lengths\|Segment Lengths]]」曲线每段的长度统计![](https://api2.mubu.com/v3/document_image/4dd47fb2-60c5-410c-8617-febb0b0495df-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5e49081c-383e-4aea-ad11-62d351fca95a-20454557.jpg)  
+-   在曲线上查找最长和最短的一段。  
+-   输入端：  
+	-   C:多重曲线  
+-   输出端：  
+	-   S:最短分段长度  
+	-   Sd:最短分段区间  
+	-   L:最长分段长度  
+	-   Ld:最长分段区间  
+-   得到多重曲线中最长和最短的分段长度，以及其区间值。![](https://api2.mubu.com/v3/document_image/eb154070-f52e-494f-8d0d-b9f7daa35d63-20454557.jpg)  
+-   「[[Point In Curve\|Point In Curve]]」判断点是否在封闭曲线内![](https://api2.mubu.com/v3/document_image/e7f5c815-f994-4575-9ed4-05be64f6e0cb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/30c2e828-9bd8-4ed7-9d9f-5dc750f4d61d-20454557.jpg)  
+-   测试点是否在封闭曲线内。只能单根曲线。  
+-   输入端：  
+	-   P：点  
+	-   C：闭合曲线  
+-   输出端：  
+	-   R：判定结果  
+	-   P：点在闭合曲线所在平面的投影点  
+-   R端判定结果0=在曲线外，1=在曲线上，2=在曲线内。  
+-   一般点落在曲线上的情况比较少，所以我们也会直接用dispatch来分流，0对应False输出B端，2对应True输出A端。![](https://api2.mubu.com/v3/document_image/7969c1da-7a99-48a2-a2a3-f298a16cce1d-20454557.jpg)  
+-   输出端P’为点在闭合曲线平面内的投影点，用于点和闭合曲线不在同一平面的情况，基本没怎么用过。![](https://api2.mubu.com/v3/document_image/b74f88d3-98dc-4c2a-b28f-f16b54eff7be-20454557.jpg)  
+-   「[[Point in Curves\|Point in Curves]]」判断点在哪跟封闭曲线内![](https://api2.mubu.com/v3/document_image/81b39bbd-2f90-44fd-98d0-b133d26f3ab9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a133a1ed-72b7-4d55-acb1-d5b34577e54d-20454557.jpg)  
+-   判断点在哪根封闭曲线内部。可以接入多跟曲线。  
+-   输入端：  
+	-   P：点  
+	-   C：多条闭合曲线  
+-   输出端：  
+	-   R：判定结果  
+	-   I：每个点被第一次包含的闭合曲线的序号，若为-1则是没被任一闭合曲线包含  
+	-   P’：点在闭合曲线所在平面的投影点  
+-   用法和Point In Curve类似，由一个闭合 曲线范围变为多条闭合曲线组成的并集范围。每一个点可能不被包含，也可能被每条曲线都包含一次，I端输出的是按照C端曲线输入顺序，第一次被包含时对应的曲线序号，若均未包含输出-1。该运算器同样常和Dispatch搭配使用。![](https://api2.mubu.com/v3/document_image/b98cbf82-f740-4129-854a-340e26c78eb3-20454557.jpg)  
+## Division 曲线等分  
+-   Curve类的Division组，等分曲线相关的运算器![](https://api2.mubu.com/v3/document_image/d484b457-d35d-44b0-bd0b-0205a3b1c27b-20454557.jpg)  
+-   「[[Contour\|Contour]]」曲线等高点![](https://api2.mubu.com/v3/document_image/2b230770-6667-4fbf-8e2b-a7e911fd2a48-20454557.jpg)![](https://api2.mubu.com/v3/document_image/eabbed04-e6c8-4cb5-8200-554418e62a13-20454557.jpg)  
+-   计算曲线的等高点  
+-   输入端：  
+	-   C：曲线  
+	-   P：起始点  
+	-   N：方向  
+	-   D：等距距离  
+-   输出端：  
+	-   C：断面点  
+	-   t：断面点在输入曲线的参数t  
+-   类比于Intersect类Mathematical组的Contour运算器，一个是对面取等距线，一个是对线取等距点。![](https://api2.mubu.com/v3/document_image/b7f13bfb-43fb-4852-8d65-6fad788c9a3c-20454557.jpg)  
+-   「[[Contour (ex)\|Contour (ex)]]」曲线的高点（高级）![](https://api2.mubu.com/v3/document_image/4145ed16-e716-44c5-a13c-1f6575d2a424-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c820addf-9efe-4268-8ad7-e8efa30d879f-20454557.jpg)  
+-   计算曲线的高点，可以设置每个高点的高度值，或者相邻高点的间距值。  
+-   输入端：  
+	-   C：曲线  
+	-   P：工作平面  
+	-   O：等距偏移距离  
+	-   D：递增偏移距离  
+-   输出端：  
+	-   C：点  
+	-   t：等分点的参数t值  
+-   Curve类Division组的Contour运算器只能等距取点，而这个加强版可以不等距取点。相当于用P端输入的工作平面偏移和曲线产生交点取点，有两种方式，只能选择其一：  
+	-   O端等距偏移取点——每次偏移距离都是从起点开始计算  
+	-   D端递增偏移取点——每次偏移距离从上一点开始计算![](https://api2.mubu.com/v3/document_image/0abb7db9-4ed7-444d-b7b2-94442ee03e42-20454557.jpg)![](https://api2.mubu.com/v3/document_image/71e57417-3246-4c2b-b5c0-2ca73bffd200-20454557.jpg)  
+-   「[[Dash Pattern\|Dash Pattern]]」规律化分割曲线![](https://api2.mubu.com/v3/document_image/0d2dc45a-e903-4988-8761-0d3d56c71796-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7bb07103-1f93-4f50-96c5-89bd9857c3b3-20454557.jpg)  
+-   设置分段长度的规则，规律化的重复等分曲线。可以用来制作一些线形如虚线。  
+-   输入端：  
+	-   C：曲线  
+	-   Pt：虚线长度和空隙长度  
+-   输出端：  
+	-   D：虚线  
+	-   G：空隙线  
+-   一般情况下Pt端输入一个值即可，虚线长度和空隙长度相等；若要二者不相等可以输入两个不同数值。![](https://api2.mubu.com/v3/document_image/df9d6f1b-890a-4a5a-a77b-0bd4ac17ec20-20454557.jpg)  
+-   该运算器常在直出分析图时使用。![](https://api2.mubu.com/v3/document_image/3183c148-c146-4bbc-9f35-dd65f61a4bb3-20454557.jpg)  
+-   「[[Divide Curve\|Divide Curve]]」曲线等分![](https://api2.mubu.com/v3/document_image/f4f039b7-392d-421b-aff7-b2613fd0dccb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/446022ae-de28-4c32-b15e-d786bcc5a616-20454557.jpg)  
+-   设置分段数以曲线长度等分曲线。  
+-   输入端：  
+	-   C：曲线  
+	-   N：等分段数  
+	-   K：是否在角点处生成点  
+-   输出端：  
+	-   P：点  
+	-   T：等分点的切线方向  
+	-   t：等分点的参数t值  
+-   将曲线等分成N份段，每一段弧长都相等。当曲线是开放曲线时，等分点数=等分段数+1；当曲线时闭合曲线时，首末点合成一个点，等分点数=等分段数。![](https://api2.mubu.com/v3/document_image/05c7203d-ecf8-44d5-a812-4194c97a95a1-20454557.jpg)  
+-   K段为判定是否在角点处生成点。![](https://api2.mubu.com/v3/document_image/64f7cf6c-0177-4ba3-b505-ee40a7c27cee-20454557.jpg)  
+-   「[[Divide Distance\|Divide Distance]]」以弦长等分曲线![](https://api2.mubu.com/v3/document_image/7972dba6-be42-47c2-9387-132f3a34d63b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f3ff5d1a-4ff6-4ef7-a291-0b806ee40e56-20454557.jpg)  
+-   以弦长值（曲线端点的距离）等分曲线。  
+-   输入端：  
+	-   C：曲线  
+	-   D：相邻等分点间的直线距离  
+-   输出端：  
+	-   P：点  
+	-   T：等分点的切线方向  
+	-   t：等分点的参数t值  
+-   Divide Curve和Divide Length着眼点是相邻点的弧线距离，而这个运算器着眼点是相邻点的直线距离。可以理解为用前一点为圆心，D值为半径画圆，与原曲线的交点就是下一点。![](https://api2.mubu.com/v3/document_image/f8cde51b-2c6d-46df-b2a7-b7ef1cc0031a-20454557.jpg)  
+-   「[[Divide Length\|Divide Length]]」以长度值等分曲线![](https://api2.mubu.com/v3/document_image/54242a25-885b-4526-8635-a514dc7610b8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2fb6ee14-123c-42c5-9761-a3bb668222d2-20454557.jpg)  
+-   以每段曲线的长度值等分曲线。  
+-   输入端：  
+	-   C：曲线  
+	-   L：相邻等分点间的弧线距离  
+-   输出端：  
+	-   P：点  
+	-   T：等分点的切线方向  
+	-   t：等分点的参数t值  
+-   按照长度等分，如果无法正好等分，最后一段会比等分长度短。![](https://api2.mubu.com/v3/document_image/fb195faf-cf62-44ee-a40e-81e26e24abd4-20454557.jpg)  
+-   「[[Shatter\|Shatter]]」分割曲线![](https://api2.mubu.com/v3/document_image/f299b9c8-69ee-45b1-953c-ce1381cf4c7f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/09abd82b-d37e-47c3-9e27-82f274a6e250-20454557.jpg)  
+-   以曲线上的t值分割曲线。  
+-   输入端：  
+	-   C：曲线  
+	-   t：参数t值  
+-   输出端：  
+	-   S：打断后的各段曲线  
+-   根据输入的曲线在对应的t值处打断。由于输入端有t值，所以输出端有t值的运算器，如Evaluate Curve、Discontinuity、Divide Curve等都经常和该运算器搭配使用。![](https://api2.mubu.com/v3/document_image/d7512ad1-7787-4bc7-80d9-521f7f976405-20454557.jpg)  
+-   「[[Curve Frames\|Curve Frames]]」等分曲线建立坐标平面![](https://api2.mubu.com/v3/document_image/2c75f556-9771-4684-8556-affd984def49-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c1f7c0f6-9afc-4649-be37-02295bc6affe-20454557.jpg)  
+-   等分曲线，在等分点上建立保持在水平方向的切向坐标平面。  
+-   输入端：  
+	-   C：曲线  
+	-   N：等分段数  
+-   输出端：  
+	-   F：多个平行于世界坐标XY平面的工作平面  
+	-   t：等分平面处的参数t值  
+-   Curve Frame的加强版，生成多个以切线方向为X轴，曲率半径方向为Y轴的平面。注意N值不是平面个数，是分段数，例如当N=2时，生成3个平面。![](https://api2.mubu.com/v3/document_image/2f58694f-ba89-4027-8bc0-cddaf3756363-20454557.jpg)  
+-   该运算器可以用Divide Curve和Curve Frame组合来代替。  
+-   「[[Horizontal Frames\|Horizontal Frames]]」等分曲线建立水平坐标平面![](https://api2.mubu.com/v3/document_image/567bbeb0-66da-4c62-bcb9-a56783171fe4-20454557.jpg)![](https://api2.mubu.com/v3/document_image/64295079-089f-47d4-a444-908ab1db6dae-20454557.jpg)  
+-   等分曲线，并在等分点建立垂直于曲线的坐标平面。  
+-   输入端：  
+	-   C：曲线  
+	-   N：等分段数  
+-   输出端：  
+	-   F：多个平行于世界坐标XY平面的工作平面  
+	-   t：等分平面处的参数t值  
+-   Horizontal Frame的加强版，生成多个等分曲线并平行于世界坐标XY平面的工作平面。注意N值不是平面个数，是分段数，例如当N=2时，生成3个平面。![](https://api2.mubu.com/v3/document_image/0105a7e3-9aca-4e10-9b5c-df9f8206e3f7-20454557.jpg)  
+-   该运算器可以用Divide Curve和Horizontal Frame组合来代替，所以平面的XY方向也遵从Horizontal Frame的规律  
+-   「[[Perp Frames\|Perp Frames]]」等分曲线建立垂直坐标平面![](https://api2.mubu.com/v3/document_image/a0c03827-2bee-467c-ba31-2e89f9bc6a58-20454557.jpg)![](https://api2.mubu.com/v3/document_image/320343b0-b1ed-480f-b2dd-c67159544e4b-20454557.jpg)  
+-   等分曲线，并在等分点建立切向坐标平面。（x方向为切向，y方向为弯曲方向）  
+-   输入端：  
+	-   C：曲线  
+	-   N：等分段数  
+	-   A：是否校准平面  
+-   输出端：  
+	-   F：多个垂直工作平面  
+	-   t：等分平面处的参数t值  
+-   Perp Frame的增强版，可以设置多个等分垂直平面，注意N值不是平面个数，是分段数，例如当N=2时，生成3个平面。A端为是否校准平面，默认为True，一般保持True默认就好。这个运算器的一个用处是可以快速生成多种截平面的单轨扫掠。![](https://api2.mubu.com/v3/document_image/f58e11a1-90b0-434c-982c-b603f4cb4195-20454557.jpg)  
+-   该运算器的默认模式（A端为True）可以用Divide Curve和Perp Frame组合来代替，所以平面的XY方向也遵从Perp Frame的规律  
+## primtive 初始曲线  
+-   Curve类的Primitive组，绘制基础几何形相关的运算器。![](https://api2.mubu.com/v3/document_image/49f069d2-471e-4b4c-936d-258fe68ac6ce-20454557.jpg)  
+-   「[[Fit Line\|Fit Line]]」拟合直线![](https://api2.mubu.com/v3/document_image/977226fd-3600-474f-ac0c-47d4cce609bd-20454557.jpg)![](https://api2.mubu.com/v3/document_image/be2333c8-2acf-4000-8262-228f32ab501a-20454557.jpg)  
+-   通过一些点拟合得到最接近的直线。  
+-   输入端：  
+	-   P:点集  
+-   输出端：  
+	-   L:直线  
+-   生成一条逼近点集的拟合直线。![](https://api2.mubu.com/v3/document_image/f11935ae-4fc7-469e-9315-12c96e5dcb00-20454557.jpg)  
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Line\|Line]]」两点画直线![](https://api2.mubu.com/v3/document_image/e940b19f-5bd6-410f-8587-7348bd8cd2b3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b8129cbb-c419-4418-bd2d-6371df2d406e-20454557.jpg)  
+-   在两点之间建立直线  
+-   输入端：  
+	-   A:起点  
+	-   B:终点  
+-   输出端：  
+	-   L:直线  
+-   用法很简单，注意区分直线方向。![](https://api2.mubu.com/v3/document_image/9c530729-674d-4d22-aaf3-03e3c071f69b-20454557.jpg)  
+-   「[[Line 2Plane\|Line 2Plane]]」在两个平面之间截取直线![](https://api2.mubu.com/v3/document_image/f79af82f-fe50-4edf-9248-f3b6dd02ad67-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b91914be-37dc-4ec4-82a3-664557fd8d7c-20454557.jpg)  
+-   在两个平面之间截取直线  
+-   输入端：  
+	-   L:方向参考直线  
+	-   A:工作平面A  
+	-   B:工作平面B  
+-   输出端：  
+	-   L:直线  
+-   以输入端L的直线方向作为参考，得到一条AB工作平面间的直线。![](https://api2.mubu.com/v3/document_image/bc06ff32-553f-4ad0-9433-83cf89ed769d-20454557.jpg)  
+-   「[[Line 4Pt\|Line 4Pt]]」在两点之间截取直线![](https://api2.mubu.com/v3/document_image/ffd18060-a15c-43bc-a028-92c7a759847f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3c6d6975-c944-4d6a-baf0-98eb2b77f86f-20454557.jpg)  
+-   在两点之间截取曲线。  
+-   输入端：  
+	-   L:方向参考直线  
+	-   A:起点A  
+	-   B:终点B  
+-   输出端：  
+	-   L:直线  
+-   以输入端L的直线方向作为参考，生成首尾点为A和B的直线。当点不在直线上时，以点到直线的投影点为准。![](https://api2.mubu.com/v3/document_image/a932fc6e-2d82-4ebf-bc63-d301cb7f5167-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1bb17f53-e082-41cc-992a-d9d8b4aecd46-20454557.jpg)  
+-   「[[Line SDL\|Line SDL]]」起点，方向，长度 建立曲线![](https://api2.mubu.com/v3/document_image/757252a8-8538-4b21-a992-8865d49b1a7d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d39bde08-fa89-413e-b4dd-8b2e1603a749-20454557.jpg)  
+-   设置 起点，方向，长度值建立直线。  
+-   输入端：  
+	-   S：起点  
+	-   D：方向  
+	-   L：长度  
+-   输出端：  
+	-   L：直线  
+-   通过起点、方向和长度确定一条直线。![](https://api2.mubu.com/v3/document_image/e6c07c2e-f4f8-4bf6-aab2-f73355934d55-20454557.jpg)  
+-   「[[Tangent Lines\|Tangent Lines]]」点到圆的切线![](https://api2.mubu.com/v3/document_image/aa57b988-a2f0-47c6-bfce-45bd2c19e1b5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/45685f34-07c4-4520-bd6a-2bcbe6bb4951-20454557.jpg)  
+-   通过点到圆建立切线。  
+-   输入端：  
+	-   P:点  
+	-   C:圆  
+-   输出端：  
+	-   T1:切线1  
+	-   T2:切线2  
+-   得到指定点到指定圆的两条切线。![](https://api2.mubu.com/v3/document_image/2c0302a4-8a66-4bf9-991e-6286c8316558-20454557.jpg)  
+-   「[[Tangent Lines (Ex)\|Tangent Lines (Ex)]]」两个圆之间的外切线![](https://api2.mubu.com/v3/document_image/bd3344e4-9e09-49c1-a01d-dd49e49e1bc1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5f46f232-8bf3-46fb-90d9-bb678e7b4c9d-20454557.jpg)  
+-   在两个圆之间建立外切直线。  
+-   输入端：  
+	-   A:圆A  
+	-   B:圆B  
+-   输出端：  
+	-   T1:外切线1  
+	-   T2:外切线2  
+-   两个指定圆之间的外切线。![](https://api2.mubu.com/v3/document_image/87d1b058-39b5-4526-a33a-6d83eac69b55-20454557.jpg)  
+-   「[[Tangent Lines (In)\|Tangent Lines (In)]]」两个圆之间的内切直线![](https://api2.mubu.com/v3/document_image/37e7d3ea-8e58-40ca-8795-aafb9b01570b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/190c3791-220f-480c-8742-0396c989092b-20454557.jpg)  
+-   在两个圆之间建立内切直线。  
+-   输入端：  
+	-   A:圆A  
+	-   B:圆B  
+-   输出端：  
+	-   T1:内切线1  
+	-   T2:内切线2  
+-   两个指定圆之间的内切线。![](https://api2.mubu.com/v3/document_image/9c9fc517-72d2-4d25-b7d7-52af46b0c467-20454557.jpg)  
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Circle\|Circle]]」建立圆曲线![](https://api2.mubu.com/v3/document_image/09892441-97d9-4cdf-abb8-18aded6142f4-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4b2204f6-8b93-492b-aa68-a2d7a9f378db-20454557.jpg)  
+-   基于坐标平面和半径建立圆曲线。  
+-   输入端：  
+	-   P：平面  
+	-   R：半径  
+-   输出端：  
+	-   C：圆  
+-   P端可以直接输入点，默认平面是世界坐标系的XY平面；如果输入平面会默认平面原点为圆心。![](https://api2.mubu.com/v3/document_image/2e0390e6-cb0b-492c-b5d8-9eaf22016dff-20454557.jpg)  
+-   该运算器生成的圆是标准圆，区别于可塑性圆  
+-   「[[Circle 3Pt\|Circle 3Pt]]」3点建立圆曲线![](https://api2.mubu.com/v3/document_image/fbabd37e-5867-49b8-bf3e-0d4d33a7e79e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0b5a1765-2122-45a8-a2c1-73d441603d93-20454557.jpg)  
+-   基于空间上的三个点建立圆曲线。  
+-   输入端：  
+	-   A:点A  
+	-   B:点B  
+	-   C:点C  
+-   输出端：  
+	-   C:圆  
+	-   P:圆所在工作平面（原点即圆心）  
+	-   R:半径  
+-   通过不共线的三点生成圆，并得到圆所在平面、圆心和半径。工作平面原点在圆心，以圆心到点A的方向为X轴。![](https://api2.mubu.com/v3/document_image/31e70f03-93aa-4d5d-8f61-e5a90aa1aee8-20454557.jpg)  
+-   「[[Circle CNR\|Circle CNR]]」圆心，法向，半径建立圆![](https://api2.mubu.com/v3/document_image/ba94e340-0c2c-448c-a46d-efba5a1577a0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0a9f832d-153d-4968-b93e-6b25f69e37de-20454557.jpg)  
+-   基于圆心，法向和半径建立圆曲线。法向就是圆所在平面的垂直方向。  
+-   输入端：  
+	-   C:圆心  
+	-   N:法向方向  
+	-   R:半径  
+-   输出端：  
+	-   C:圆  
+-   通过圆心，法向方向和半径三个值来生成一个圆。![](https://api2.mubu.com/v3/document_image/3378137b-c3c3-4efa-9210-b1cb835057cd-20454557.jpg)  
+-   「[[Circle Fit\|Circle Fit]]」拟合圆![](https://api2.mubu.com/v3/document_image/0e851f41-9e57-4a05-a051-7319e4e5d3ba-20454557.jpg)![](https://api2.mubu.com/v3/document_image/467c3ed1-ef3c-49a9-9c47-01f5f999c2b9-20454557.jpg)  
+-   输入一些点计算最接近的拟合圆。  
+-   输入端：  
+	-   P:点集  
+-   输出端：  
+	-   C:圆  
+	-   R:半径  
+	-   D:最大偏离值  
+-   生成一个逼近点集的圆，并得到圆半径值、点集中相对圆偏离最远的点到圆的距离。![](https://api2.mubu.com/v3/document_image/6a824a3a-5262-478e-9735-dc04800c8309-20454557.jpg)  
+-   「[[Circle TanTan\|Circle TanTan]]」两条曲线的相切圆![](https://api2.mubu.com/v3/document_image/348232bd-2d3c-4398-935d-3ff4b78d639a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/701bbcec-f09e-403c-8703-76d7eebb5b45-20454557.jpg)  
+-   在两条曲线之间建立相切圆。  
+-   输入端：  
+	-   A:曲线A  
+	-   B:曲线B  
+	-   P:公切圆参考点  
+-   输出端：  
+	-   C:公切圆  
+-   生成两条曲线的公切圆，P端的参考点控制公切圆的位置，公切既可能是外切，也可能是内切。![](https://api2.mubu.com/v3/document_image/af724100-cd81-4176-bb1a-c84053aaa64e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/808b0475-d730-4489-a3f4-1c94106d5490-20454557.jpg)  
+-   「[[Circle TanTanTan\|Circle TanTanTan]]」在三条线之间建立相切圆![](https://api2.mubu.com/v3/document_image/766dd944-afa3-4357-b611-60ad18064e9d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1b84c4a1-d24f-4fe5-8f1f-69efa9089d51-20454557.jpg)  
+-   在三条线之间建立相切圆。  
+-   输入端：  
+	-   A:曲线A  
+	-   B:曲线B  
+	-   C:曲线C  
+	-   P:公切圆参考点  
+-   输出端：  
+	-   C:公切圆  
+-   生成三条曲线的公切圆，输入端也有一个参考点P,但和Circle TanTan不同的是移动点好像没什么变化。![](https://api2.mubu.com/v3/document_image/37ee694e-fccf-4068-a89f-639cad3f4149-20454557.jpg)  
+-   「[[Ellipse\|Ellipse]]」建立椭圆线![](https://api2.mubu.com/v3/document_image/e64d66d9-4395-4a0a-aad1-4f18584cc78f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2fce2328-7f3a-4c3e-8377-a2a881f0ff63-20454557.jpg)  
+-   基于坐标平面及两个半径值建立椭圆曲线。  
+-   入端：  
+	-   P：平面  
+	-   R1：X方向半径  
+	-   R2：Y方向半径  
+-   输出端：  
+	-   E：椭圆  
+	-   F1：焦点1  
+	-   F2：焦点2  
+-   圆其实是椭圆的一个特例，当R1=R2时就是圆。  
+-   当R1>R2时，焦点在x轴，椭圆的标准方程是：x²/a²+y²/b²=1，(a>b>0)；  
+-   当R2>R1时，焦点在y轴，椭圆的标准方程是：y²/a²+x²/b²=1，(a>b>0)；  
+-   a²=c²+b²。![](https://api2.mubu.com/v3/document_image/239f02c7-b50a-4b99-8f84-41ee4b194f5d-20454557.jpg)  
+-   「[[InCircle\|InCircle]]」三角形中的内切圆![](https://api2.mubu.com/v3/document_image/36ba3f7f-f19d-42ae-8b60-73de6e349306-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8f076f18-d5da-46e0-963b-86feccd8f8c4-20454557.jpg)  
+-   在三个点形成的三角形中建立内切圆线。  
+-   输入端：  
+	-   A:点A  
+	-   B:点B  
+	-   C:点C  
+-   输出端：  
+	-   C:内切圆  
+	-   P:圆所在工作平面（原点即圆心）  
+	-   R:半径  
+-   通过三点生成三角形的内切圆，以及工作平面、圆心和半径。工作平面原点在圆心，X轴与ABC点顺序有关，当为逆时针时，与空间X轴一致，当为顺时针时，与空间X轴相反。![](https://api2.mubu.com/v3/document_image/7fd58ffb-ef0f-4f5b-ac9b-fb5f4e8f6977-20454557.jpg)![](https://api2.mubu.com/v3/document_image/bea9d3b3-cdb5-4318-802c-498611009862-20454557.jpg)  
+-   「[[InEllipse\|InEllipse]]」三角形中的内切椭圆![](https://api2.mubu.com/v3/document_image/c4315834-f45c-4f36-9af8-2d1a8a803df6-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c2de6532-0214-4cd9-86d8-92047b5cf24b-20454557.jpg)  
+-   在三个点形成的三角形中建立内切椭圆线。  
+-   输入端：  
+	-   A:点A  
+	-   B:点B  
+	-   C:点C  
+-   输出端：  
+	-   C:内切椭圆  
+	-   P:椭圆所在工作平面  
+-   通过三点生成三角形的内切圆，以及工作平面、圆心和半径。工作平面的圆心在A点，X轴沿AB方向。![](https://api2.mubu.com/v3/document_image/05e9b521-76ae-4bc5-ad94-81e8dc943c41-20454557.jpg)  
+-   「[[Arc\|Arc]]」建立圆弧线![](https://api2.mubu.com/v3/document_image/0f6bf076-6b7a-4311-8ec2-088f607d9e00-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ebe033ef-5b5f-4e06-ae3b-5bcac627c897-20454557.jpg)  
+-   建立圆弧线。  
+-   输入端：  
+	-   P:工作平面（原点即圆心）  
+	-   R:半径  
+	-   A:角度范围（弧度制）  
+-   输出端：  
+	-   A:圆弧  
+	-   L:弧长  
+-   通过工作平面、半径和角度范围生成圆弧，并得到弧长值。注意弧的起点在工作平面的X轴，然后逆时针方向生成。![](https://api2.mubu.com/v3/document_image/383be934-21f7-41e0-853b-db9181a10f09-20454557.jpg)  
+-   「[[Arc 3Pt\|Arc 3Pt]]」3点建立圆弧线![](https://api2.mubu.com/v3/document_image/264d5a84-d643-4db6-ac0b-6de39c36e52e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0d0935ad-5ed0-41c2-ae16-54f05fef9bdb-20454557.jpg)  
+-   通过三个点建立圆弧线。  
+-   输入端：  
+	-   A:点A  
+	-   B:点B  
+	-   C:点C  
+-   输出端：  
+	-   A:圆弧  
+	-   P:圆弧所在工作平面  
+	-   R:半径  
+-   三个不共线点生成圆弧，工作平面的原点是圆心，X轴沿圆心到A点方向。![](https://api2.mubu.com/v3/document_image/0e9ca4df-c310-4862-b5ec-320514ea44db-20454557.jpg)  
+-   「[[Arc SED\|Arc SED]]」起点，终点，方向建立圆弧线![](https://api2.mubu.com/v3/document_image/c9a54edb-7856-4ae0-a8a8-29e9b7a3020e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2918802c-4295-40f6-9311-890b4ff891bd-20454557.jpg)  
+-   设置起点，终点，以及起点的方向矢量，建立圆弧线。  
+-   输入端：  
+-   S:点A  
+-   E:点B  
+-   D:点C  
+-   输出端：  
+-   A:圆弧  
+-   P:圆弧所在工作平面  
+-   R:半径  
+-   只点：  
+-   根据起点、终点和起点处的向量方向生成圆弧，向量方向为起点的切线方向。工作平面的原点是圆心，X轴沿圆心到起点方向。![](https://api2.mubu.com/v3/document_image/124c1b88-ed77-4508-8467-22f5b8dc7333-20454557.jpg)  
+-   「[[BiArc\|BiArc]]」两端弧线![](https://api2.mubu.com/v3/document_image/5737bff1-b6ce-4f94-9d0c-402f1e653cd9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a0d2d632-5b5d-4121-aac1-ddd69332cfc0-20454557.jpg)  
+-   在两点之间设置切向建立由两条圆弧合并而成的过度线。  
+-   输入端：  
+	-   S:起点  
+	-   Ts:起点方向  
+	-   E:终点  
+	-   Te:终点方向  
+	-   R:比例(默认为0.5)  
+-   输出端：  
+	-   A1:圆弧1  
+	-   A2:圆弧2  
+	-   B:双圆弧曲线  
+-   以起点、终点、起点方向和终点方向生成两端圆弧组成的曲线，R端控制A1和A2的占比，当为0时全为A1,当为1时全为A2,默认为一半一半。我们在实际施工建造时基本都要将曲线转换为圆弧曲线，便于放线。![](https://api2.mubu.com/v3/document_image/dd6567e6-9d21-4e36-b4f9-c2b2f45c500c-20454557.jpg)  
+-   「[[Modified Arc\|Modified Arc]]」修改圆弧![](https://api2.mubu.com/v3/document_image/4df5b0d7-600d-4fd1-b5ed-ed38476409bb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/48efe30d-cd64-4aa7-b601-15f7382a8989-20454557.jpg)  
+-   重新定义圆弧的半径和角度范围。保持圆心和空间朝向不变。  
+-   输入端：  
+	-   A:圆弧  
+	-   R:半径  
+	-   A:角度范围（弧度制）  
+-   输出端：  
+	-   A:调整后圆弧  
+-   对现有圆弧的半径和角度范围进行调整，可以理解为对原圆弧的圆心和工作平面赋予新的半径值和角度范围，角度以原圆弧的起点为0值点顺时针增加。![](https://api2.mubu.com/v3/document_image/c282778b-8de8-49aa-b919-e15208a310d6-20454557.jpg)  
+-   「[[Tangent Arcs\|Tangent Arcs]]」两个圆之间的切向圆弧![](https://api2.mubu.com/v3/document_image/be521c0a-ad07-479b-a12e-48527d47537d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/62a985b2-b4e8-49b2-8323-10fcb2ccb20b-20454557.jpg)  
+-   在两个圆之间计算外切圆弧  
+-   输入端：  
+	-   A:圆A  
+	-   B:圆B  
+	-   R:公切圆弧半径  
+-   输出端：  
+	-   A:公切圆弧A  
+	-   B:公切圆弧B  
+-   生成与两个指定圆相切的公切圆弧。![](https://api2.mubu.com/v3/document_image/bd29e8df-1531-4cfb-883f-c9507db78902-20454557.jpg)  
+-   「[[Polygon\|Polygon]]」正多边形线![](https://api2.mubu.com/v3/document_image/c611d3b7-92ff-4357-9128-1d51dd04acb2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/55d1760a-0429-4372-9a3f-a02ac6178f50-20454557.jpg)  
+-   建立正多边形线  
+-   输入端：  
+	-   P：平面  
+	-   R：半径  
+	-   S：边数 最小为3  
+	-   Rf：倒角半径  
+-   输出端：  
+	-   P：椭圆  
+	-   L：周长  
+-   生成正多边形，S最小值为3。![](https://api2.mubu.com/v3/document_image/b3855ffb-2169-40d5-b06f-b784cfb66ac2-20454557.jpg)  
+-   「[[Polygon Edge\|Polygon Edge]]」定义一条边的两点建立多边形线![](https://api2.mubu.com/v3/document_image/9c470f20-fbec-47b8-81bc-e522f8648836-20454557.jpg)![](https://api2.mubu.com/v3/document_image/63fa0103-dc5d-4ed8-974a-1b3821f82105-20454557.jpg)  
+-   通过定义边的两点建立多边形线。  
+-   输入端：  
+	-   E0:边长起点  
+	-   E1:边长终点  
+	-   P:正多边形所在平面定位点  
+	-   S:边数  
+-   输出端：  
+	-   P:正多边形  
+	-   C:正多边形中心点  
+	-   Rc:中心点到角点距离  
+	-   Rc:中心点到边的垂直距离  
+-   主要通过边长来生成正多边形，并得到一系列相关值，注意输入端的P点不能和E0点和E1点共线，否则无法确定平面。  
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Rectangle\|Rectangle]]」建立矩形线![](https://api2.mubu.com/v3/document_image/83aceb30-b43a-4e9c-8844-91a14f8ba970-20454557.jpg)![](https://api2.mubu.com/v3/document_image/9f4146f9-0893-44ff-9546-223613e67ad8-20454557.jpg)  
+-   在坐标平面上建立矩形线。  
+-   输入端：  
+	-   P：平面  
+	-   X：X方向长度  
+	-   Y：Y方向长度  
+	-   R：倒角半径  
+-   输出端：  
+	-   R：矩形  
+	-   L：周长  
+-   要保证P端为矩形中心点，X和Y端需要输入区间，如果输入的是数值就会讲P端作为矩形的角点。![](https://api2.mubu.com/v3/document_image/e25a0f1c-66b6-4760-9c34-287412fcfca9-20454557.jpg)  
+-   「[[Rectangle 2Pt\|Rectangle 2Pt]]」以对角点建立矩形线![](https://api2.mubu.com/v3/document_image/d129e701-34fe-4764-962b-e27eb23dc0fc-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d9eee326-43af-4d99-b84d-1efb18d53f81-20454557.jpg)  
+-   通过定义坐标平面，以及对角上的点建立矩形。  
+-   输入端：  
+	-   P:工作平面  
+	-   A:矩形第一点A  
+	-   B:矩形第二点B  
+	-   R:倒角半径  
+-   输出端：  
+	-   R:矩形  
+	-   L:周长  
+-   在工作平面内，通过两点作为对角点生成矩形。![](https://api2.mubu.com/v3/document_image/40297ee0-53d1-4082-861c-5cdba6eae6df-20454557.jpg)  
+-   「[[Rectangle 3Pt\|Rectangle 3Pt]]」以三个点建立矩形线![](https://api2.mubu.com/v3/document_image/24ade64f-5ca0-43e4-8e79-5ff3532dfb07-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2b10ff35-c250-4530-8fd9-f75f2c38e4fb-20454557.jpg)  
+-   以三个点建立矩形线。  
+-   输入端：  
+	-   A:矩形第一点A  
+	-   B:矩形第二点B  
+	-   C:定位点C  
+-   输出端：  
+	-   R:矩形  
+	-   L:周长  
+-   点AB确定矩形的一条边，定位点C确定矩形的另一边边长，所以点C可能在矩形边上，也可能在矩形边的延长线上。![](https://api2.mubu.com/v3/document_image/9956d70d-7c6f-4539-bd09-0688710ce6f1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/069cdbe9-9f0b-4fb2-af09-280421f2a4f8-20454557.jpg)  
+## Spline 样条曲线  
+-   Curve类的Spline?组，绘制样条曲线相关的运算器。![](https://api2.mubu.com/v3/document_image/d51dcfdc-fa48-4505-8eb7-e3a894449c04-20454557.jpg)  
+-   「[[Bezier Span\|Bezier Span]]」可设置端点切向的贝兹曲线![](https://api2.mubu.com/v3/document_image/2bbaf00d-3a0b-4be9-8d6d-30dcf485d811-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fb24716c-649c-4f63-b833-60cf85718a36-20454557.jpg)  
+-   建立可设置起点和终点处切向的贝兹曲线。矢量的方向和大小都会影响曲线的形状。  
+-   输入端：  
+	-   A:起点A  
+	-   At:起点A处的方向  
+	-   B:起点B  
+	-   Bt:起点B处的方向  
+-   输出端：  
+	-   C:贝塞尔曲线  
+	-   L:曲线长度  
+	-   D:曲线区间  
+-   贝塞尔曲线是B样条曲线的一个子集，而B样条曲线是Nubs曲线(非均匀有理B样条曲线)的一个子集，所以贝塞尔曲线是Nurbs曲线的一种特殊情况。Rhino中的贝塞尔曲线也叫控制杆曲线，我们在PS和AI里常用的钢笔工具，也是贝塞尔曲线。通过AB首尾点，并以两点处的方向作为切线方向确定一条贝塞尔曲线。输出端的贝塞尔曲线区间总为0一1。![](https://api2.mubu.com/v3/document_image/60e482b5-4a56-4e8d-9f19-ca98c5b013ff-20454557.jpg)  
+-   「[[Interpolate\|Interpolate]]」内插点曲线![](https://api2.mubu.com/v3/document_image/1212d05b-0ce4-4a69-b5ff-ca0ee3aa2064-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ebcbf1ea-f3a7-44d4-9bf9-ce9c975c5277-20454557.jpg)  
+-   穿过几个点建立内插点曲线。注意曲线的阶数只能是单数。  
+-   输入端：  
+	-   V：点  
+	-   D：曲线阶数  
+	-   P：是否闭合  
+	-   K：节点样式  
+-   输出端：  
+	-   C：内插点曲线  
+	-   L：曲线长度  
+	-   D：曲线区间  
+-   根据输入顺序将V端点作为内插点连成曲线，P端控制是否闭合，默认不闭合。![](https://api2.mubu.com/v3/document_image/1cabd6fc-7f5b-45d1-82e1-5f9d1bcd78b2-20454557.jpg)  
+-   输入端D的阶数和K的节点样式值（0=Uniform Spacing、1=Chord Spacing、2=SqrtChord Spacing）在Rhino中画内插点曲线时都有对应提示。  
+-   关于曲线阶数：  
+	-   曲线阶数=控制点个数-节点个数+1  
+	-   对于最简曲线来讲，由于只有首尾2个节点，所以有阶数=控制点个数-2+1=控制点个数-1，例如直线为1阶（2控制点-1），抛物线与圆弧为2阶（3控制点-1），自由曲线为3阶（4控制点-1）。  
+-   关于节点样式：  
+	-   有均匀（Uniform Spacing）、弦长（Chord Spacing）、弦长平方根（SqrtChord Spacing）三种样式，对同一组节点，不同的样式决定了节点之间的不同参数间距。节点样式默认为K=1（弦长），推荐设置为K=0（均匀），这样得到的曲线更简洁。  
+-   「[[Interpolate (t)\|Interpolate (t)]]」端点可设置方向的内插点曲线![](https://api2.mubu.com/v3/document_image/ded4d26b-f939-45e9-8123-f3ec83659454-20454557.jpg)![](https://api2.mubu.com/v3/document_image/65a8a8de-b101-4db1-883e-5b7e3c34efe9-20454557.jpg)  
+-   建立端点可设置切向的内插点曲线。矢量的方向决定曲线端点处的切向，但矢量的大小不影响曲线形状。  
+-   输入端：  
+	-   V:点  
+	-   Ts:起始点切线方向  
+	-   Te:终止点切线方向  
+	-   K:节点样式  
+-   输出端：  
+	-   C:内插点曲线  
+	-   L:曲线长度  
+	-   D:曲线区间  
+-   内插点曲线的升级版，增加了首尾点处的切线方向对曲线调整，生成一条三阶曲线。关于曲线阶数和节点样式，见<Interpolate?知识点2>。![](https://api2.mubu.com/v3/document_image/6ab624de-8969-4b73-91e0-b744648d0a66-20454557.jpg)  
+-   「[[Kinky Curve\|Kinky Curve]]」带有尖点的曲线1![](https://api2.mubu.com/v3/document_image/dce34297-dde7-4ea7-950f-f3e8caf09bf0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/86b5ebdf-b4eb-4d98-9894-4ebf42ae69a6-20454557.jpg)  
+-   创建一根通过所有点并带有尖锐点的曲线，尖锐点由角度临界值决定。主意查看视频中角度的定义，并不是点之间的夹角，而是夹角的补角的角度值。  
+-   输入端：  
+	-   V:点集  
+	-   D:曲线阶数  
+	-   A:扭折角  
+-   输出端：  
+	-   C:内插点曲线  
+	-   L:曲线长度  
+	-   D:曲线区间  
+-   当两直线夹角大于扭折角时，以内插点曲线相连，否则以直线相连，注意这里的两直线夹角要考虑直线方向。![](https://api2.mubu.com/v3/document_image/d1e938ae-e026-4b9e-92a4-5ce11712a1b2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fce5bcc9-f91c-413c-8721-a89335b8eb89-20454557.jpg)  
+-   「[[Nurbs Curve\|Nurbs Curve]]」Nurbs 曲线![](https://api2.mubu.com/v3/document_image/3296ce50-79ff-4bb2-a3f9-d6547b2be415-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6d76a15b-6fb9-4c0e-91e6-610cabdd9c00-20454557.jpg)  
+-   通过控制点建立NURBS曲线。  
+-   输入端：  
+	-   V：点  
+	-   D：曲线阶数  
+	-   P：是否闭合  
+-   输出端：  
+	-   C：控制点曲线  
+	-   L：曲线长度  
+	-   D：曲线区间  
+-   根据输入顺序将V端点作为控制点生成曲线，P端控制是否闭合，默认不闭合。![](https://api2.mubu.com/v3/document_image/0c8de66c-31f5-4494-bf1a-9def36bbcd24-20454557.jpg)  
+-   输入端D的阶数在Rhino回执控制点曲线时有对应的提示，保持默认D=3即可。  
+-   关于曲线阶数，见<Interpolate知识点2>。  
+-   「[[PolyArc\|PolyArc]]」多重弧线![](https://api2.mubu.com/v3/document_image/46c8e846-0adb-461f-ad28-28f866566f1a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f0631d6a-1c66-4cc3-8e50-7c7006e94c42-20454557.jpg)  
+-   通过点创建由多跟弧线或直线连接的光滑曲线。曲线半径由起点的切向和点的空间位置决定。  
+-   输入端：  
+	-   V:点集  
+	-   T:第一个点处方向  
+	-   C:是否闭合曲线  
+-   输出端：  
+	-   CrV:复合弧  
+-   生成多个圆弧组成的复合弧，类似于Arc SED,通过起始点和起点方向定义圆弧，在给定第一点方向后，之后每个圆弧都以上一个圆弧终点的方向作为其起始点方向。![](https://api2.mubu.com/v3/document_image/cf6996e5-47ab-48ad-afb0-f33f2a9aa626-20454557.jpg)  
+-   「[[PolyLine\|PolyLine]]」折线![](https://api2.mubu.com/v3/document_image/1d0f9c30-20df-4052-a371-369e9ed3f424-20454557.jpg)![](https://api2.mubu.com/v3/document_image/aa238cd6-d688-4698-aeaa-398ae7072b1a-20454557.jpg)  
+-   连接多个点生成折线。  
+-   输入端：  
+	-   V：点  
+	-   C：是否闭合  
+-   输出端：  
+	-   PI：多折线  
+-   按照选取顺序将V端的点相连生成多折线，C端True时开放多折线线自动闭合，False时不闭合，默认为False。![](https://api2.mubu.com/v3/document_image/e3670a64-c9d0-47ea-ab3e-46dfcb039d9f-20454557.jpg)  
+-   「[[Tangent Curve\|Tangent Curve]]」可设置每个点方向的曲线![](https://api2.mubu.com/v3/document_image/ab513de7-9ebe-419f-a5f7-4ce81066ad39-20454557.jpg)![](https://api2.mubu.com/v3/document_image/38fe5471-e0e5-49e1-833e-9ea061743478-20454557.jpg)  
+-   穿过每个点建立可设置每个点方向的曲线。注意曲线的阶数只能是单数。  
+-   输入端：  
+	-   V:点集  
+	-   T:每点处的方向  
+	-   B:混接曲线因子(0一1)  
+	-   D:曲线阶数  
+-   输出端：  
+	-   C:内插点曲线  
+	-   L:曲线长度  
+	-   D:曲线区间  
+-   连接点集各点，并以每点处的方向作为切线方向生成内插点曲线。输入端B的因子对应Rhio命令可调式混接曲线的拉杆调节，在0-1区间内值越大，对曲线的控制力越强。![](https://api2.mubu.com/v3/document_image/30425678-30f3-472e-8f96-37fe2ac599f8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f2b41c12-df0b-47cc-926a-ce016b64d262-20454557.jpg)  
+-   「[[Curve On Surface\|Curve On Surface]]」曲面上画曲线![](https://api2.mubu.com/v3/document_image/59f6c515-b479-458a-b465-81b4f865b9a3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/de49b80f-c1b8-4906-ae72-df2b0930a99b-20454557.jpg)  
+-   在曲面面上建立通过点(内插点)的曲线，并且线贴合在曲面上。注意输入必须是曲面，不能是Brep。  
+-   输入端：  
+	-   S:曲面  
+	-   uV:点在曲面的uv坐标  
+	-   C:是否闭合  
+-   输出端：  
+	-   C:内插点曲线  
+	-   L:曲线长度  
+	-   D:曲线区间  
+-   生成一条穿过指定点并贴合曲面的曲线。![](https://api2.mubu.com/v3/document_image/91f76a47-6709-4ae7-9f8e-cf9511edf6a2-20454557.jpg)  
+-   「[[Geodesic\|Geodesic]]」测地线![](https://api2.mubu.com/v3/document_image/6d8d6de4-9194-4f03-910e-1cb841979c68-20454557.jpg)![](https://api2.mubu.com/v3/document_image/046c31a4-6051-462f-b9d1-31e37a722b23-20454557.jpg)  
+-   在曲面上两点之间建立测地线。也即是曲面上两点之间最近路径线。  
+-   输入端：  
+	-   S:曲面  
+	-   S:曲面上起点  
+	-   E:曲面上终点  
+-   输出端：  
+	-   G:起始点在曲面上的最短距离  
+-   可以得到曲面两点间的最短距离。![](https://api2.mubu.com/v3/document_image/ed594503-9130-4acf-ba34-7a026c376dd1-20454557.jpg)  
+-   「[[Iso Curve\|Iso Curve]]」提取曲面的结构线![](https://api2.mubu.com/v3/document_image/11e3fbee-bc31-4396-b13e-12e4086a8ab5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c29c113f-e7f0-47eb-b019-17b7fb289d1c-20454557.jpg)  
+-   通过曲面上点的UV坐标，提取曲面上的结构线。  
+-   输入端：  
+	-   S：曲面  
+	-   uv：uv点坐标  
+-   输出端：  
+	-   U：指定点的U方向结构线  
+	-   V：指定点的V方向结构线  
+-   提取以指定点为交点的UV结构线。 如果想只提取一个方向的结构线，可以选在在曲面边缘取点。![](https://api2.mubu.com/v3/document_image/dba2e4cf-0a77-4b43-bd2b-6869579708d7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ef096be3-220c-4c7d-a1c5-dace464b5410-20454557.jpg)  
+-   「[[Sub Curve\|Sub Curve]]」截取部分曲线![](https://api2.mubu.com/v3/document_image/aadb6f3c-ca19-4b7b-8a08-9cb1e793b768-20454557.jpg)![](https://api2.mubu.com/v3/document_image/bd3f2ac1-d21e-4119-a0e4-140625494a22-20454557.jpg)  
+-   通过设置参数值范围提取曲线的一部分（子曲线）。  
+-   输入端：  
+	-   C：曲线  
+	-   D：参数子区间  
+-   输出端：  
+	-   C：子曲线  
+-   通过D端输入t值区间得到子曲线。需要注意的是只有在曲线是两点直线时，t值与曲线长度才是均匀变化的（例如当t=0.5时子曲线是一半长度曲线），其他大多数情况下t的值都与子曲线长度比例无关。![](https://api2.mubu.com/v3/document_image/d56b1b10-e06a-4cd0-8e30-eda29befe41b-20454557.jpg)  
+-   「[[Tween Curve\|Tween Curve]]」过渡曲线![](https://api2.mubu.com/v3/document_image/36689906-023a-4fb9-a8c6-27d8063a54d8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c8b385ed-ab1f-4659-844d-ed9d0fa340df-20454557.jpg)  
+-   两条曲线之间建立过度形状的曲线，注意原理介绍部分的视频，介绍了曲线内部位置对应的原理。  
+-   输入端：  
+	-   A：曲线A  
+	-   B：曲线B  
+	-   F：位置因子  
+-   输出端：  
+	-   T：子曲线  
+-   F的取值范围为0-1，在AB间按比例确定位置。当F=0时，位置在曲线A；当F=1时，位置在曲线B。![](https://api2.mubu.com/v3/document_image/65f6ed19-5bf7-4d1b-bbcc-20e3d01f980e-20454557.jpg)  
+-   「[[Knot Vector\|Knot Vector]]」曲线的节点矢量数据生成工具![](https://api2.mubu.com/v3/document_image/73ac5826-9fcd-42f3-b027-6578d40f64de-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f72a6668-8b48-427f-8a64-d5d3c0845e4a-20454557.jpg)  
+-   该工具配合 Nurbs Curve PWK 工具使用，用于生成Nurbs曲线的节点矢量的数值。输入曲线的控制点数和阶数自动计算出数值，并且输出的是均匀性的节点值。  
+-   输入端：  
+	-   N:控制点个数  
+	-   D:曲线阶数  
+	-   P:是否周期性闭合曲线  
+-   输出端：  
+	-   K:节点向量  
+-   这里的节点向量并不是我们常规意义上的向量，如果你尝试去连接Vector Display去显示它也会报错。KnotVector是一串总数为D+N-1(曲线阶数+控制点个数-1)的数字，它的数量比节点数量要多，节点数量=控制点个数-阶数+1。![](https://api2.mubu.com/v3/document_image/685778ad-c8f0-4092-acdf-0acd959179ba-20454557.jpg)  
+-   「[[Nurbs Curve PWK\|Nurbs Curve PWK]]」Nurbs 曲线（控制点/权重值/节点值）![](https://api2.mubu.com/v3/document_image/a41e5873-b142-4a3e-8c21-8cf53d2d4bd2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/065e4772-148a-4406-b6a7-b6d3981ab317-20454557.jpg)  
+-   以控制点，权重值和节点值建立Nurbs曲线  
+-   输入端：  
+	-   P:控制点  
+	-   W:控制点权重(0一1)  
+	-   K:节点向量  
+-   输出端：  
+	-   C:Nurbs曲线  
+	-   L:曲线长度  
+	-   D:曲线区间  
+-   根据控制点、控制点权重以及节点向量生成一条Nurbs曲线，这里的节点向量对应Knot VectorE电池里的内容。控制点权重的范围为0一1，值越大，对曲线的吸引力就越大。![](https://api2.mubu.com/v3/document_image/fa4452dd-5b39-49a6-ac5f-249cb7add582-20454557.jpg)  
+-   「[[Blend Curve\|Blend Curve]]」混接曲线![](https://api2.mubu.com/v3/document_image/479705a2-2b69-477a-93ad-1e4b254e41ec-20454557.jpg)![](https://api2.mubu.com/v3/document_image/648c261a-305d-44b8-8cff-b9ae66bdc4d6-20454557.jpg)  
+-   在两条曲线之间生成混接曲线，可设置对接处的连续性（光滑度）。  
+-   输入端：  
+	-   A:曲线A  
+	-   B:曲线B  
+	-   Fa:曲线A混接处凸度因子(0一1)  
+	-   Fb:曲线B混接处凸度因子(0一1)  
+	-   C:连续性  
+-   输出端：  
+	-   B:混接曲线  
+-   曲线的尾点与曲线B的起点进行可调式混接，凸度因子可视为控制混接处的曲率半径。C端为控制混接点的连续性，关于连续性。![](https://api2.mubu.com/v3/document_image/51d5f75a-5691-412c-894d-b17b05d41c0a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/eb8fbb03-d4e9-446b-9252-8a21fa1440e3-20454557.jpg)  
+-   「[[Blend Curve Pt\|Blend Curve Pt]]」通过点的混接曲线![](https://api2.mubu.com/v3/document_image/f61fef90-171a-49a4-81db-300c2a407962-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4bce2847-6ed1-4381-bc78-9cc0e2faf0e7-20454557.jpg)  
+-   在两条曲线之间创建通过某个点的混接曲线。  
+-   输入端：  
+	-   A:曲线A  
+	-   B:曲线B  
+	-   P:控制点  
+	-   C:连续性  
+-   输出端：  
+	-   B:混接曲线  
+-   曲线A的尾点与曲线B的起点进行混接，混接曲线要穿过设置的控制点。C端为控制混接点的连续性，关于连续性，见<Discontinuity知识点2>。![](https://api2.mubu.com/v3/document_image/c1e29f0a-076f-45e9-b477-c8d184aaac04-20454557.jpg)  
+-   当无法穿过控制点时，电池会有错误提醒，但依旧会生成一条曲线![](https://api2.mubu.com/v3/document_image/584cb40b-0271-42f0-bb34-b8e8f080cb8c-20454557.jpg)  
+-   「[[Catenary\|Catenary]]」悬垂曲线![](https://api2.mubu.com/v3/document_image/e734cef2-1f20-4141-b687-34afb89f62a9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/31318892-a936-4ac9-acb1-80b55acca86e-20454557.jpg)  
+-   在两个点之间建立悬垂线。  
+-   输入端：  
+	-   A:点A  
+	-   B:点B  
+	-   L:垂曲线长度(需大于AB距离)  
+	-   G:重力方向  
+-   输出端：  
+	-   C:垂曲线  
+-   Rhino中的曲线工具中也有这个命令，可以模拟绳子，锁链等在重力下的悬垂曲线效果。![](https://api2.mubu.com/v3/document_image/aae83cd9-a7b2-4458-af52-0aaf0b3569aa-20454557.jpg)![](https://api2.mubu.com/v3/document_image/bf5430c9-afad-4a23-924a-f5c1830d8fc3-20454557.jpg)  
+-   「[[Connect Curves\|Connect Curves]]」连接多条曲线![](https://api2.mubu.com/v3/document_image/de3bb5e2-9e17-4a0b-a178-85c64e3c6dd1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1c67e946-479f-4769-8d7e-9a658bfd4225-20454557.jpg)  
+-   在多条曲线之间建立连接线。  
+-   输入端：  
+	-   C:一系列曲线  
+	-   G:连续性  
+	-   L:是否闭合  
+	-   B:混接处的凸度因子  
+-   输出端：  
+	-   C:混接后的合并曲线  
+-   将多条曲线按照混接曲线的规则进行混接，并将原曲线与混接部分合并生成一条曲线，混接曲线规则见<Blend Curve知识点1>。![](https://api2.mubu.com/v3/document_image/42159d32-06a3-4a44-af05-261239e63c63-20454557.jpg)  
+## Util 曲线实用  
+-   Curve类的Util组，曲线相关的实用工具运算器。![](https://api2.mubu.com/v3/document_image/cfcfc75c-d08a-4c11-87ac-bb4bb987e13c-20454557.jpg)  
+-   「[[Explode\|Explode]]」炸开曲线![](https://api2.mubu.com/v3/document_image/299dedc5-d2e6-4eca-ab95-0a36fca33faf-20454557.jpg)![](https://api2.mubu.com/v3/document_image/72d8bef5-34b0-428d-828a-70d12d51f93b-20454557.jpg)  
+-   将曲线炸开成多段线段。炸开位置依据曲线内部的结构决定。注意该工具的R端口目前功能异常，通常并不使用该端口。  
+-   输入端：  
+	-   C：曲线  
+	-   R：是否完全炸开  
+-   输出端：  
+	-   S：曲线段  
+	-   V：分段点  
+-   封闭曲线注意炸开后会有首尾点重合的现象，注意删减。R端保持默认True即可。![](https://api2.mubu.com/v3/document_image/34042525-26c1-48dd-a658-aa7a2ed8685a-20454557.jpg)  
+-   「[[Extend Curve\|Extend Curve]]」延伸曲线![](https://api2.mubu.com/v3/document_image/e44e799f-ee70-4d76-ae18-3ce8c73aa53d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8f0c6114-677e-437a-bc16-6b7659a6a2d9-20454557.jpg)  
+-   在曲线的起点和终点位置延伸曲线。可选直线，圆弧线与原始曲线。光滑度依次提高。  
+-   输入端：  
+	-   C：曲线  
+	-   T：延长方式（0=直线、1=圆弧、2=自由曲线）  
+	-   L0：起点处延长长度  
+	-   L1：终点处延长长度  
+-   输出端：  
+	-   C：延长后的曲线  
+-   需要注意的就是L0和L1端必须输入数值，如果不延长就输入0，否则会报错。![](https://api2.mubu.com/v3/document_image/2094a92f-844c-41ca-b21c-3ea166a9cfb5-20454557.jpg)  
+-   「[[Flip Curve\|Flip Curve]]」反转曲线方向![](https://api2.mubu.com/v3/document_image/28db3c3a-4d19-4cec-ad8d-376bbc1f473b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/50e7fe79-163f-47fe-ac13-99f3fca5fe4c-20454557.jpg)  
+-   反转曲线方向，或以样本曲线方向统一所有曲线方向。  
+-   输入端：  
+	-   C：曲线  
+	-   G：参照曲线  
+-   输出端：  
+	-   C：翻转后的曲线  
+	-   F：是否发生翻转  
+-   如果G端不输入，则输入曲线自动发生翻转；若G端输入参照曲线，则输入曲线保持和参照曲线方向一致。F端为判断输入曲线是否发生了翻转。![](https://api2.mubu.com/v3/document_image/a4882ea3-e4b3-4152-acef-fc475388ee21-20454557.jpg)  
+-   「[[Join Curves\|Join Curves]]」组合曲![](https://api2.mubu.com/v3/document_image/0837acfb-3600-4240-a266-1b4acaa4353f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8e8a5f74-2674-4ae3-aa8e-8f5f36d06932-20454557.jpg)  
+-   组合多跟曲线为一根。注意组合曲线必须满足相关几何条件  
+-   输入端：  
+	-   C：曲线  
+	-   P：是否保留输入曲线原有方向  
+-   输出端：  
+	-   C：合并后的曲线  
+-   将多条曲线合并。P端为很少用到，判定是否保留输入曲线原有方向，若为True则原曲线只有首尾相接处才能合并，若为False则都能合并，默认为False。![](https://api2.mubu.com/v3/document_image/8428ad16-d73d-4540-abe6-d3e142f9659e-20454557.jpg)  
+-   「[[Fillet\|Fillet]]」曲线圆角（所有角）![](https://api2.mubu.com/v3/document_image/eceb5eb1-1ea7-40ec-a597-e06d6d71bed3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/92ae551b-0c48-4aa7-8c48-2e4ec1cfe825-20454557.jpg)  
+-   对曲线上尖角做圆角处理。  
+-   输入端：  
+	-   C：曲线  
+	-   R：倒角半径  
+-   输出端：  
+	-   C：倒角后的曲线  
+-   根据R端倒角半径对曲线所有角进行倒角，在R增大的过程中，当其中一个倒角达到最大值后便保持不变，其他角继续变大直到最大为止。![](https://api2.mubu.com/v3/document_image/59c24317-1030-4cfe-9728-50c0ee0893d4-20454557.jpg)  
+-   「[[Fillet\|Fillet]]」曲线圆角（通过参数值指定）![](https://api2.mubu.com/v3/document_image/f49284cc-3657-4789-b014-5afb9b2a422a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1bee0395-1d11-49a6-99f8-cab98485e59e-20454557.jpg)  
+-   在参数值所指定的位置附近的尖角做圆角。  
+-   输入端：  
+	-   C:曲线  
+	-   t:曲线参数t  
+	-   R:倒角半径  
+-   输出端：  
+	-   C:倒角后的合并曲线  
+	-   t:实际发生倒角处的参数t  
+-   距离参数t处点最近的倒角点进行倒角，输出端t得到的就是实际倒角点的参数t值。![](https://api2.mubu.com/v3/document_image/c6f4ded6-e611-492e-9a0b-545220aaa6f9-20454557.jpg)  
+-   「[[Fillet Distance\|Fillet Distance]]」曲线圆角（基于距离）![](https://api2.mubu.com/v3/document_image/7121d29d-a3dc-457a-853f-4beaeb8941b1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/9a6227cd-f339-498f-ac3a-c4e16964d8a1-20454557.jpg)  
+-   在曲线上尖角处设置距离导圆角。  
+-   输入端：  
+	-   C:曲线  
+	-   D:倒角点沿直线方向移动距离  
+-   输出端：  
+	-   C:倒角后的合并曲线  
+-   和Fillet不同，不是以半径倒角，而是倒角点沿直线方向的移动距离。![](https://api2.mubu.com/v3/document_image/80e48178-44cc-41a4-8c87-cc186ec7dc81-20454557.jpg)  
+-   「[[Offset Curve\|Offset Curve]]」曲线偏移![](https://api2.mubu.com/v3/document_image/ada6a658-77f7-4ee2-bfb3-960133588009-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c32bf45a-40bc-4d43-9f2d-2662fdb74b62-20454557.jpg)  
+-   设置距离偏移曲线，偏移距离的精度依据rhino中设置的公差值。  
+-   输入端：  
+	-   C：曲线  
+	-   D：偏移距离  
+	-   P：平面  
+	-   C：转角类型（0=无、1=锐角、2=圆角、3=光滑角、4=斜角）  
+-   输出端：  
+	-   C：偏移后的曲线  
+-   当D为正值时，曲线向顺时针方向偏移，当D为负值时，曲线向逆时针方向偏移。注意曲线有方向的，可以通过曲线上任意一点的切线方向判断曲线的方向，另外这里说的顺时针和逆时针是针对P端输入的平面而言的。偏移也可以转化成“右手定则”，即当为正值时，右手手心向上，四指指向曲线方向，拇指所值方向就是偏移方向。  
+	-   当P端不输入时，默认为世界坐标系平面。![](https://api2.mubu.com/v3/document_image/2c42e411-9daa-4aa8-aff2-304ad17dca94-20454557.jpg)  
+	-   当P端输入曲线自己的平面时。![](https://api2.mubu.com/v3/document_image/70af39e5-83f4-4bc1-87e9-132c2991bdaf-20454557.jpg)  
+-   如果想调整曲线偏移方向一致，有两种方法：  
+	-   将曲线方向反向。![](https://api2.mubu.com/v3/document_image/61d0ed03-3613-48dc-b78c-be9a9839c205-20454557.jpg)  
+	-   将P端输入工作平面反向。![](https://api2.mubu.com/v3/document_image/943b4e87-2bf1-4705-b648-6f8a1dae6f3a-20454557.jpg)  
+-   C端不同的值对应不同的转角方式，对圆滑曲线没影响，对有折点的曲线有影响，默认值为C=1，一般保持默认值即可。![](https://api2.mubu.com/v3/document_image/9802b7a8-1084-480b-b019-8a6646342455-20454557.jpg)  
+-   曲线偏移指的是沿其曲率半径方向移动。![](https://api2.mubu.com/v3/document_image/5e8d89e1-4184-4664-be31-e1fa5f5978c3-20454557.jpg)  
+-   「[[Offset Curve Loose\|Offset Curve Loose]]」曲线偏移（保持曲线结构）![](https://api2.mubu.com/v3/document_image/ccffa454-4189-4769-b8d6-793e6344098e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f6bd3e10-4b06-4b8b-8c4a-9a981531b590-20454557.jpg)  
+-   指定距离偏移曲线，并保持曲线的结构，因此偏移距离通常并不精确。  
+-   输入端：  
+	-   C:曲线  
+	-   D:控制点折线偏移距离  
+	-   P:偏移平面  
+-   输出端：  
+	-   C:偏移后的曲线  
+-   通过控制点折线偏移的方式偏移曲线，这样偏移后，曲线上各点沿曲率半径方向的移动距离不再相等。![](https://api2.mubu.com/v3/document_image/07caa121-63b7-41b1-8bb6-5da0fb23a4ca-20454557.jpg)  
+-   注意这种偏移模式的偏移方向和Offset Curv相反，可以相对的理解为“左手定则”，即当为正值时，左手手心向上，四指指向曲线方向，拇指所值方向就是偏移方向，输入端P的用法参见<Offset Curve知识点>。![](https://api2.mubu.com/v3/document_image/2720cf50-65b7-4700-96d1-f18bc5b4c546-20454557.jpg)  
+-   「[[Offset on Srf\|Offset on Srf]]」在曲面上偏移曲线![](https://api2.mubu.com/v3/document_image/5901bff9-5bb0-4e83-8897-d13ab1684431-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a598cb93-076a-4e81-a704-0c9f3fd1250b-20454557.jpg)  
+-   指定距离在曲面上偏移曲线。  
+-   输入端：  
+	-   C:曲面上的曲线  
+	-   D:偏移距离  
+	-   S:曲面  
+-   输出端：  
+	-   C:偏移后的曲线  
+-   在曲面上偏移曲线，超过曲面的部分会自动被裁掉，偏移方向遵循“左手定则”，即当为正值时，左手手心向上，四指指向曲线方向，拇指所值方向就是偏移方向。![](https://api2.mubu.com/v3/document_image/713ced0a-e00a-4e76-afa3-57d1288fa8b9-20454557.jpg)  
+-   注意这个电池在偏移时不会自动延伸到曲面边缘，而Rhino命令中的“偏移曲面上的曲线”是可以延伸的。GH里的解决方法可以尝试用Extend Curve命令延长曲线后，将曲线沿法向方向挤出，再偏移曲面与原曲面得到交线，该交线就是偏移曲线。![](https://api2.mubu.com/v3/document_image/19eecdff-bd50-4c4a-9338-2237d657bae6-20454557.jpg)  
+-   「[[Project\|Project]]」曲线投影到曲面![](https://api2.mubu.com/v3/document_image/d8500156-5915-4623-ad9e-d5f4fff79c90-20454557.jpg)![](https://api2.mubu.com/v3/document_image/369befe7-85b6-4c02-b737-ae479ad7e659-20454557.jpg)  
+-   设置投影方向，将曲线投影到曲面或多重曲面上（Brep）  
+-   输入端：  
+	-   C：曲线  
+	-   B：曲面或多折曲面  
+	-   D：投影方向  
+-   输出端：  
+	-   C：投影曲线  
+-   将曲线沿投影方向投影到目标曲面或多重曲面上，D端默认为世界坐标系Z轴方向。注意这里的方向没有分正负，沿方向轴都可以投影。![](https://api2.mubu.com/v3/document_image/00b706ff-9d60-4899-9e1a-2cee58e067e0-20454557.jpg)  
+-   「[[Pull Curve\|Pull Curve]]」拉回（垂直投影到表面）曲线![](https://api2.mubu.com/v3/document_image/9e8eedd3-84c6-4b91-891c-4a507bcb1b0d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/099e4d27-4807-4d74-bef1-5a6873c46a3a-20454557.jpg)  
+-   拉回曲线到曲面。方向为曲面上的垂直方向。  
+-   输入端：  
+	-   C:曲线  
+	-   S:曲面  
+-   输出端：  
+	-   C:拉拽到曲面上的曲线  
+-   将曲线拉拽到曲面上，原理是，拉拽曲线上的点与原曲线对应点的连线与曲面垂直。![](https://api2.mubu.com/v3/document_image/7f6f0df7-4da3-461c-8cd0-c4b36f9f8f2a-20454557.jpg)  
+-   「[[Seam\|Seam]]」调节曲线的接缝![](https://api2.mubu.com/v3/document_image/55e04a9d-16a5-497e-8d1f-161874d1c32b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/38f272d1-aac7-419e-8ed5-2147ad9ff50f-20454557.jpg)  
+-   调节封闭曲线上的接缝点位置。  
+-   输入端：  
+	-   C:闭合曲线  
+	-   t:新的接缝点参数t  
+-   输出端：  
+	-   C:调整接缝后的闭合曲线  
+-   注意输入的一定是闭合曲线，因为闭合曲线才涉及接缝的概念，简单来说就是闭合曲线的起点位置，虽然它是闭合的，但它仍然有起止点，只不过起止点重合了而已![](https://api2.mubu.com/v3/document_image/a95b9a93-eb5a-4f68-9394-834365c9941c-20454557.jpg)  
+-   接缝调整主要针对的是放样，因为如果曲线的接缝不对齐，是会出现放样错误的，大家知道在Rhino手工放样中同样会提示调整接缝位置。![](https://api2.mubu.com/v3/document_image/63beaa1c-013a-4d8b-b375-de0c1e565059-20454557.jpg)  
+-   接缝位置某些情况下还会影响曲面流动，也就是流动物体在主物体上的相对位置。![](https://api2.mubu.com/v3/document_image/5827c015-485b-4dce-8318-d6ba9f85c2e8-20454557.jpg)  
+-   「[[Curve To Polyline\|Curve To Polyline]]」曲线转化为折线![](https://api2.mubu.com/v3/document_image/47ee72e2-b3d0-42ec-8d20-f63f1af32716-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ed7fd031-41e7-49be-9703-91ca5c67b057-20454557.jpg)  
+-   转化曲线为折线，可设置公差距离，和公差角度，以及折线长度值范围来约束转化效果。  
+-   输入端：  
+	-   C:闭合曲线  
+	-   Td:误差最大值  
+	-   Ta:角度误差最大值  
+	-   E-:每段最短长度  
+	-   E+:每段最长长度  
+-   输出端：  
+	-   P:多折线  
+	-   S:多折线段数  
+-   将一条曲线通过参数设置生成一条多折线。![](https://api2.mubu.com/v3/document_image/f8e80558-ed01-4d8e-b31a-7d63014bc2ed-20454557.jpg)  
+-   「[[Fit Curve\|Fit Curve]]」以公差值重新逼近曲线![](https://api2.mubu.com/v3/document_image/2d2ac34d-d5da-406f-a669-bd55cbf0ae46-20454557.jpg)![](https://api2.mubu.com/v3/document_image/04ccea50-375e-4a69-a3ba-6ab31748a812-20454557.jpg)  
+-   以公差值重新逼近曲线。  
+-   输入端：  
+	-   C:闭合曲线  
+	-   D:阶数  
+	-   Ft:偏离误差最大值  
+-   输出端：  
+	-   C:逼近曲线  
+-   和Rhino曲线工具中的“以公差重新逼近曲线”类以，可以在误差范围内对曲线进行重新逼近，这里Ft端对应的值就是Rhino中的公差值。![](https://api2.mubu.com/v3/document_image/cd21a9db-b840-47c8-8362-18f6665827c6-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3d1e19d4-069c-4553-8604-47acbcb22e42-20454557.jpg)  
+-   这个电池一般用来帮助我们重新修正曲线，比如你画了一条曲线，但是不够柔滑，就可以用这个运算器进行误差范围内的修正，我们有时也用“重建曲线”逼近，但是无法控制误差率。![](https://api2.mubu.com/v3/document_image/186d7262-887b-44ea-9fcd-0f939236d31c-20454557.jpg)  
+-   「[[Polyline Collapse\|Polyline Collapse]]」合并折线上的短边![](https://api2.mubu.com/v3/document_image/2a0b32ec-9771-4a58-b9b8-fb3a99d52122-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e99d04ef-a46c-4e24-a13e-388c275fc46a-20454557.jpg)  
+-   设置长度临界值合并多重折线上的短边。  
+-   输入端：  
+	-   P:多段线  
+	-   t:保留多段线长度最小值  
+-   输出端：  
+	-   PI:缩减后多段线  
+	-   N:缩减段数  
+-   将多段线中长度小于值的删去，并以删除线段中点作为保留角点重新组合成一条多段线，建模中用来优化有极小长度的多段线。![](https://api2.mubu.com/v3/document_image/83da36a4-acf7-4f03-ae42-612f96991802-20454557.jpg)  
+-   「[[Rebuild Curve\|Rebuild Curve]]」重建曲线![](https://api2.mubu.com/v3/document_image/ab219f14-ba5f-45fc-af5d-3cdb5a742b28-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c0b671d2-ca50-42ab-b2be-beb114a35b75-20454557.jpg)  
+-   通过设置阶数和控制点数重建曲线。是常用的曲线优化工具。  
+-   输入端：  
+	-   C:曲线  
+	-   D:阶数  
+	-   N:控制点个数  
+	-   T:是否保持起始点切线方向  
+-   输出端：  
+	-   C:重建后曲线  
+-   T端控制两个端点是否保持原有切线方向，D端阶数相关概念见<Interpolate知识点2>。![](https://api2.mubu.com/v3/document_image/5e50a9ce-a0dd-45af-8e0a-e6d9601fa856-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fa78982d-0774-4aff-abcb-55c2fa688b8b-20454557.jpg)  
+-   常用来对放样曲线进行应用，两条放样曲线具有相同的控制点数量可以保证其UV结构线均匀。![](https://api2.mubu.com/v3/document_image/7d00a829-c0bb-4003-a17d-5185df4fd726-20454557.jpg)  
+-   「[[Reduce\|Reduce]]」减少折线上的控制点![](https://api2.mubu.com/v3/document_image/4ce52b8b-c6ae-464d-8707-83ae1b17cbce-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4966e400-5357-42bf-8343-c376023f4ad0-20454557.jpg)  
+-   通过公差值简化折线中的控制点。  
+-   输入端：  
+	-   P:多折线  
+	-   T:误差值  
+-   输出端：  
+	-   P:缩减角点后的多折线  
+	-   R:缩减角点的个数  
+-   根据T端的误差值对角点进行删除，但是没发现删除点和T值的关系，比如下面这种情况。![](https://api2.mubu.com/v3/document_image/6404cedf-0418-4ef2-a686-7ea419060119-20454557.jpg)  
+-   「[[Simplify Curve\|Simplify Curve]]」简化曲线![](https://api2.mubu.com/v3/document_image/5904dc4e-91c8-46e2-807f-14575dc60e16-20454557.jpg)![](https://api2.mubu.com/v3/document_image/139d35a1-ba00-4af8-820c-cf5caab33b66-20454557.jpg)  
+-   合并多重曲线中共直线的线段，以简化曲线结构。  
+-   输入端：  
+	-   C:曲线  
+	-   t:偏离误差最大值  
+	-   a:角度误差最大值  
+-   输出端：  
+	-   C:简化后曲线  
+	-   S:是否被简化  
+-   在误差范围内通过删除控制点的方式对曲线进行简化，和Fit Curve有点类似，但控制点删除对曲线的影响更大一些。输入端t和若不输入会默认为Rhino中设置的公差和角度公差。举个例子如下图，原曲线有7个控制点，当偏离误差逐渐增大时，控制点会缩减为3个。![](https://api2.mubu.com/v3/document_image/2ec185bb-1765-4a1e-8bb1-6ab55e7f3b9c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/68e0e3e0-bf13-4f48-a52d-bb1a3fe192a3-20454557.jpg)  
+-   「[[Smooth Polyline\|Smooth Polyline]]」光顺多重折线![](https://api2.mubu.com/v3/document_image/470fc493-dd43-4e79-b0ac-cf89f52b188e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e6b11f66-17b6-4490-b6e9-f5adbaff7dd1-20454557.jpg)  
+-   对多重折线的控制点做光顺控制，让整体形态趋向于光滑。  
+-   输入端：  
+	-   P：多折线  
+	-   S：平滑强度（0—1）  
+	-   T：平滑次数  
+-   输出端：  
+	-   P：平滑后多折线  
+-   S端值越大，平滑强度越大，T端值越大，平滑运行次数越多，总之就是S和T越大，多折线越趋近于直线。![](https://api2.mubu.com/v3/document_image/4e73a2b2-15dd-44c1-8052-77d46deb6002-20454557.jpg)         
+# Surface 曲面  
+## Analysis 曲面分析  
+-   Surface类的Analysis组，曲面分析相关的运算器，例如求曲面最近点，是否在Brep空间范围内等等。![](https://api2.mubu.com/v3/document_image/5752becd-e411-4290-aaa4-5c25cb4f95af-20454557.jpg)  
+-   「[[Box Corners\|Box Corners]]」提取立方体顶点![](https://api2.mubu.com/v3/document_image/97317afb-74a4-45a2-bdff-527b1be39296-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b5128ede-d424-4bb6-80ff-24c5c71ad546-20454557.jpg)  
+-   提取立方体的8个顶点。  
+-   输入端：  
+	-   B:立方体  
+-   输出端：  
+	-   A:底面顶点A  
+	-   B:底面顶点B  
+	-   C:底面顶点C  
+	-   D:底面顶点D  
+	-   E:顶面顶点E  
+	-   F:顶面顶点F  
+	-   G:顶面顶点G  
+	-   H:顶面顶点H  
+-   得到立方体的八个顶点。  
+-   「[[Box Properties\|Box Properties]]」立方体属性![](https://api2.mubu.com/v3/document_image/267e9e32-33ac-48f6-bb4c-3aa6a9e88631-20454557.jpg)![](https://api2.mubu.com/v3/document_image/513c2640-c533-4b33-885b-14c30c98d829-20454557.jpg)  
+-   提取立方体的属性  
+-   输入端：  
+	-   B:立方体  
+-   输出端：  
+-   C:立方体中心点  
+	-   D:对角线向量  
+	-   A:表面积  
+	-   V:体积  
+	-   d:是否退化  
+-   得到输入立方体的各种属性，前五个都好理解，最后一个Degeneracy:是退化的意思，举例来说点是退化的圆(因为当圆的半径为0时就是一个点)，线段是退化的矩形(因为矩形的一边为0时就是一条线段)，所以一个立方体退化后就是一个矩形平面，那么这个d端输出的就是是否为退化立方体，是的话输出1对应Tue,不是的话输出0对应False。![](https://api2.mubu.com/v3/document_image/d252433a-c04c-4c20-b19c-d613f3e5f4b5-20454557.jpg)  
+-   「[[Deconstruct Box\|Deconstruct Box]]」立方体拆解![](https://api2.mubu.com/v3/document_image/109d9ae1-6d29-4dcb-90af-e3dd2c81e5bc-20454557.jpg)![](https://api2.mubu.com/v3/document_image/976e62c1-2a4f-46e8-8f74-a26617507263-20454557.jpg)  
+-   拆解立方体，输出它的坐标平面以及坐标范围。  
+-   输入端：  
+	-   B:立方体  
+-   输出端：  
+	-   P:立方体底面所在平面  
+	-   X:X方向区间长度  
+	-   Y:Y方向区间长度  
+	-   Z:Z方向区间长度  
+-   拆解立方体得到相应边长等相关数值，注意Z方向区间和X、Y方向不同是从0值开始的。![](https://api2.mubu.com/v3/document_image/810c240e-4249-46fa-ba4c-86f8a8dad924-20454557.jpg)  
+-   「[[Evaluate Box\|Evaluate Box]]」定位立方体内的点![](https://api2.mubu.com/v3/document_image/a171c8df-119a-44d2-a6b9-bbe88ba5f15b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e83cb6ee-09fe-4808-9ffc-12201543b87b-20454557.jpg)  
+-   基于立方体内三个方向的坐标值定义点。  
+-   输入端：  
+	-   B:立方体  
+	-   U:U参数  
+	-   V:V参数  
+	-   W:W参数  
+-   输出端：  
+	-   Pl:UVW参数确定点处的工作平面  
+	-   Pt:UVW参数确定点  
+	-   I:UVW参数确定点是否在立方体内或表面  
+-   这个运算器相当于是在立方体内部建立了一个用UVW定义的坐标系，当UW均在0一1时，点在立方体内部或表面，任一值大于1的点都在立方体外。![](https://api2.mubu.com/v3/document_image/feeb901d-453b-43d2-945a-997f5e761d1d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ebf01c03-c1f3-4641-9434-fc81eb43d184-20454557.jpg)  
+-   「[[Brep Edges\|Brep Edges]]」Brep 边线![](https://api2.mubu.com/v3/document_image/2005cd26-a778-4dd7-883f-47e0fbfdd353-20454557.jpg)![](https://api2.mubu.com/v3/document_image/79cfe332-4f68-4cc3-a16a-4c60d19a07b7-20454557.jpg)  
+-   分类提取Brep边线：外露边，内部边，非流行边。  
+-   输入端：  
+	-   B：Brep  
+-   输出端：  
+	-   En：裸露边缘（只被一个面使用的曲线）  
+	-   Ei：内部边缘（被两个面共同使用的曲线）  
+	-   Em：非流形边缘（被三个及以上的面共用的曲线）  
+-   提取Brep的边缘。非流形边缘实际建模很少遇到，举例的话，当两个相接的立方体取布尔并集后，公共棱就是非流形边缘。![](https://api2.mubu.com/v3/document_image/5065d20b-6ba8-48bc-8234-b7303fcf040b-20454557.jpg)  
+-   「[[Brep Topology\|Brep Topology]]」Brep 拓扑结构![](https://api2.mubu.com/v3/document_image/bc81ec86-777f-4feb-af8e-c37a0f4274d0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/bfb07db7-057a-439e-9a06-8a9ef165c4df-20454557.jpg)  
+-   分析Brep的[拓扑](https://baike.baidu.com/item/%E6%8B%93%E6%89%91/573536?fr=aladdin)结构： 面与面的连接关系， 面周围的边，边两边的面。该工具实际中很少用到。  
+-   输入端：  
+	-   B:Brep  
+-   输出端：  
+	-   FF:每个面被包围所有面的序号  
+	-   FE:每个面被包围所有边的序号  
+	-   EF:每条边被包围所有面的序号  
+-   拓扑是几何学的范畴，简单来说就是只考虑物体间的位置关系而不考虑它们的形状和大小，这个运算器可以得到Brep中相邻边和面的序号关系。![](https://api2.mubu.com/v3/document_image/9855081e-4f32-431e-a4bb-3c27e9045e31-20454557.jpg)![](https://api2.mubu.com/v3/document_image/aae35955-d503-4594-9d96-a365209bda75-20454557.jpg)  
+-   「[[Brep Wireframe\|Brep Wireframe]]」提取 Brep 边框![](https://api2.mubu.com/v3/document_image/d43d608c-7d1e-43b0-9b3d-7cf3e9692754-20454557.jpg)![](https://api2.mubu.com/v3/document_image/60571367-f89e-4050-ab90-40a7535d281c-20454557.jpg)  
+-   提取Brep的线框，可以设置线框密度。默认-1：几何线框 0：外加结构线  
+-   输入端：  
+	-   B:Brep  
+	-   D:结构线密度  
+-   输出端：  
+	-   W:结构线  
+-   这里所说的结构线就是Iso Curve,对应Rhino物件属性中的结构线密度设置。![](https://api2.mubu.com/v3/document_image/a770774e-05b1-413f-a2fb-f3d761c3cc17-20454557.jpg)  
+-   结构线数量的具体计算为：  
+	-   (1)结构线数量和密度值的数量关系  
+		-   密度为-1时，不显示结构线。  
+		-   密度为0时，在节点的位置显示结构线  
+		-   密度为1时，除了在节点的位置显示结构线以外，中间无节点的单一跨距曲面也显示一条结构线。  
+		-   密度为2时，除了在节点的位置显示结构线以外，在两个节点之间多加入一条结构线。  
+		-   密度为N时，除了在节点的位置显示结构线以外，在两个节点之间多加入N-1条结构线。  
+	-   (2)曲线节点数量计算  
+		-   节点数量=控制点个数-阶数+1![](https://api2.mubu.com/v3/document_image/81a51170-454b-4536-a5c5-5345142159bd-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c7b65ab4-3dfc-429d-9c84-5dbed12fe7e8-20454557.jpg)  
+-   「[[Deconstruct Brep\|Deconstruct Brep]]」拆解 Brep![](https://api2.mubu.com/v3/document_image/d2263b6a-a5d9-410f-b07d-309084776bf5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4c1941f9-27d7-435e-a3db-07ace0230237-20454557.jpg)  
+-   将Brep拆解为面，边和点。是常用的几何分析工具。  
+-   输入端：  
+	-   B：Brep  
+-   输出端：  
+	-   F：拆解的面  
+	-   E：拆解的边线  
+	-   V：拆解的点  
+-   很常用的运算器，将Brep炸开成点线面。![](https://api2.mubu.com/v3/document_image/6d4b33d6-3f0a-48e0-bd14-5670f2e9e391-20454557.jpg)  
+-   「[[Dimensions\|Dimensions]]」面的尺寸（慎用）![](https://api2.mubu.com/v3/document_image/4c7e856d-5017-4173-bfd8-4e8c3f9b7308-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4c1e3921-32e6-413e-9955-f45b7075e273-20454557.jpg)  
+-   计算曲面两个方向大致的尺寸。经测试计算误差太大，因此建议用户慎用。  
+-   输入端：  
+	-   S：曲面  
+-   输出端：  
+	-   U：展开后U方向长度  
+	-   V：展开后V方向长度  
+-   得到曲面的展开UV尺寸，等同于Rhino命令“建立UV曲线”，可以得到曲面的展开矩形，配合曲面流动操作。在这里提醒一下，Dimensions和“建立UV曲线”得到的矩形长度可能不一致，但流动后的结果是一样的。![](https://api2.mubu.com/v3/document_image/4f2a21f4-27e9-493a-a72e-f296090aed41-20454557.jpg)  
+-   需要注意的是，这里的UV尺寸是展开矩形的尺寸，并不是曲面本身UV区间的最大值。要想得到曲面的UV区间。  
+-   「[[Is Planar\|Is Planar]]」检测平面度![](https://api2.mubu.com/v3/document_image/d8821639-0bd3-4747-91e3-7b23632f3802-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6bbb9570-fc72-46c8-98a8-ede058da09aa-20454557.jpg)  
+-   测试曲面形状是否为平面，并输出最接近的坐标平面  
+-   输入端：  
+	-   S:曲面  
+	-   I:是否只判定修剪后部分  
+-   输出端：  
+	-   F:判定布尔结果(True=是，False=不是)  
+	-   P:曲面平面部分所在平面  
+-   判定是否为平面曲线好理解，主要来解释一下I端，当端为True时，只判定修剪后曲面，当端为Flse时，要判定完整曲面，也就是重建后的曲面。有一个没搞清楚的是，P端输出工作平面的原点位置不知道是依据什么。![](https://api2.mubu.com/v3/document_image/00c5c4fe-01e7-440e-8aa1-50624c2361d9-20454557.jpg)  
+-   「[[Surface Points\|Surface Points]]」曲面控制点![](https://api2.mubu.com/v3/document_image/e2e70311-5107-4b34-a4c4-be4ecfdca487-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d27b2276-de17-47a3-a26d-150f6a309646-20454557.jpg)  
+-   提取曲面的控制点，以及控制点的权重值，和UV方向的控制点数量。  
+-   输入端：  
+	-   S:曲面  
+-   输出端：  
+	-   P:曲面的控制点  
+	-   W:控制点权重  
+	-   G:格雷维尔广义逆矩阵  
+	-   U:U方向点个数  
+	-   V:V方向点个数  
+-   得到曲线各控制点的相关属性，W端曲面控制点权重类似曲线控制点权重，见<Control Points知识点l>。![](https://api2.mubu.com/v3/document_image/6d9d5a18-10f1-4779-ad6a-3313a26e05a7-20454557.jpg)  
+-   G输出端叫做格雷维尔广义逆矩阵，简单来说就是将点的UV坐标转换为坐标，最终形成一个点的矩阵，但是转换的原理不太清楚。如果对曲面右键Reparameterize重新定义的话，XY坐标会映射到0一1范围内。![](https://api2.mubu.com/v3/document_image/19bfb454-0e29-4ab7-8226-bb5b66bbf31a-20454557.jpg)  
+-   「[[🌏导航\|🌏导航]]」测表面积![](https://api2.mubu.com/v3/document_image/742a2ceb-a64e-48b5-9c02-5b2d9a25ae99-20454557.jpg)![](https://api2.mubu.com/v3/document_image/64329f52-89f0-40c4-a8cf-c24c8b49de48-20454557.jpg)  
+-   计算平面封闭曲线，网格，曲面或brep的表面积。  
+-   输入端：  
+	-   G：曲面、多重曲面、网格或者封闭的多折线  
+-   输出端：  
+	-   A：面积  
+	-   C：中心点  
+-   求输入几何元素的面积和中心点。需要注意的是，由于该运算器计算面积的算法运算量较大，所以如果只是单纯计算中心点的话推荐使用Polygon Center里的Ca，相同的计算结果运算速度要比Area快很多。![](https://api2.mubu.com/v3/document_image/daefe7cb-363e-479f-9f21-f092e9b20448-20454557.jpg)  
+-   「[[Area Moments\|Area Moments]]」面积矩![](https://api2.mubu.com/v3/document_image/316ca2c2-dd21-4d18-8ba7-877a148a4ed8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/71133a0c-5cbf-417f-9c8c-b3c69796a07b-20454557.jpg)  
+-   计算平面封闭曲线，网格，曲面或brep的面积矩。普通用户请忽略  
+-   输入端：  
+	-   G:几何体  
+-   输出端：  
+	-   A:面积  
+	-   C:中心点  
+	-   I:中心点转动惯量  
+	-   I±：中心点转动惯量误差  
+	-   S:中心点惯性矩  
+	-   S±：中心点惯性炬误差  
+	-   G:惯性半径  
+-   几何体面积矩相关属性。![](https://api2.mubu.com/v3/document_image/bbe5b56d-bd44-474d-a00e-744b15d89ab0-20454557.jpg)  
+-   「[[volume\|volume]]」测体积![](https://api2.mubu.com/v3/document_image/d2a69341-bf59-4e4b-ba6b-592dc531a86d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6de3525f-134a-4905-862a-8a25b6d03a7b-20454557.jpg)  
+-   计算封闭网格或brep的体积。  
+-   输入端：  
+	-   G：闭合的多重曲面或者网格  
+-   输出端：  
+	-   V：体积  
+	-   C：中心点  
+-   求输入几何元素的体积和中心点。![](https://api2.mubu.com/v3/document_image/e8d6f862-f0e5-433e-b80b-cfc2be56b999-20454557.jpg)  
+-   「[[Volume Moments\|Volume Moments]]」体积矩![](https://api2.mubu.com/v3/document_image/6f49fe55-9762-4926-aab5-2775cbd3e61f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/08fa7f3b-8b4e-4eaa-8f52-d700d64e050d-20454557.jpg)  
+-   计算封闭网格或封闭brep的体积矩，普通用户请忽略。  
+-   输入端：  
+	-   G:几何体  
+-   输出端：  
+	-   A:体积  
+	-   C:体中心点  
+	-   I:体中心点转动惯量  
+	-   I±：体中心点转动惯量误差  
+	-   S:体中心点惯性炬  
+	-   S±：体中心点惯性矩误差  
+	-   G:体中心点惯性半径  
+-   求体中心点的体积矩相关参量，和面积矩类似，见<Area Moments知识点l>。![](https://api2.mubu.com/v3/document_image/bd1a9507-1bc0-48c2-bf8b-b71ea38ec974-20454557.jpg)  
+-   「[[Brep Closest Point\|Brep Closest Point]]」Brep 上的最近点![](https://api2.mubu.com/v3/document_image/03665db8-dba2-4d1c-a646-98566d207c56-20454557.jpg)![](https://api2.mubu.com/v3/document_image/79a70906-57d6-4e5b-8ca8-db469842641d-20454557.jpg)  
+-   查找Brep上的最近点。  
+-   输入端：  
+	-   P：点  
+	-   S：Brep  
+-   输出端：  
+	-   P：最近点  
+	-   N：最近点的法向量  
+	-   D：点到最近点的距离  
+-   B端输入Brep，由于Brep包含曲面，所以也可以输入曲面，当输入曲面时，该运算器可以直接提取曲面点的法向方向，用法类似Surface Closest Point和Evaluate Surface一起求法向量的方法。![](https://api2.mubu.com/v3/document_image/66ddd594-21cc-4faa-94e9-0277c119c6dd-20454557.jpg)  
+-   「[[Surface Closest Point\|Surface Closest Point]]」曲面上的最近点![](https://api2.mubu.com/v3/document_image/a508becd-3a0f-4986-a837-ffcc3ace953e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ca82ec01-a47e-40b7-adad-02e03938b7f9-20454557.jpg)  
+-   计算空间点到曲面上的最近点，并输出曲面上该点的UV坐标。  
+-   输入端：  
+	-   P：点  
+	-   S：曲面  
+-   输出端：  
+	-   P：最近点  
+	-   uvP：最近点在曲面上的uv坐标值  
+	-   D：点到最近点的距离  
+-   求点在指定曲面上的最近点，uv坐标值以点坐标的形式表示。![](https://api2.mubu.com/v3/document_image/fac1e559-c5f2-4b4b-a852-f4ad72a69d3e-20454557.jpg)  
+-   该运算器常和Evaluate Surface合用来求曲面上点的法向量。![](https://api2.mubu.com/v3/document_image/49e4b17b-e6da-4b5f-838b-12aae3aabe4b-20454557.jpg)  
+-   「[[Point In Brep\|Point In Brep]]」判断点是否在 Brep 内![](https://api2.mubu.com/v3/document_image/7e7acc3c-80cc-4940-9e35-f0b423d97b51-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cc5c7ef4-4d85-4556-9d8f-1f8f4e911855-20454557.jpg)  
+-   测试点是否在封闭的Brep内部。  
+-   输入端：  
+	-   B：闭合Brep  
+	-   P：待判定点  
+	-   S：是否严格判定  
+-   输出端：  
+	-   I：判定结果（True=内部，False=外部）  
+-   常和Dispach一起使用来判定点的内外关系，S端控制是否严格判定，若为True，Brep上的点则不算在内部；若为False，则Brep上的点算在内部。![](https://api2.mubu.com/v3/document_image/dce50d73-9c9e-410a-b41d-47326f9d45ce-20454557.jpg)  
+-   「[[Point In Breps\|Point In Breps]]」点是否在多个 Brep 内![](https://api2.mubu.com/v3/document_image/64a11bd8-7af8-466b-8550-2b4f9fe34ed3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/23247ca1-3d5a-4462-92d2-05252b4df581-20454557.jpg)  
+-   测试一组点是否在一组封闭的Brep内部，并输出对应Brep的序号。  
+-   输入端：  
+	-   B：闭合Brep  
+	-   P：待判定点  
+	-   S：是否严格判定  
+-   输出端：  
+	-   I：判定结果（True=内部，False=外部）  
+	-   i：每个点被第一次包含的闭合Brep的序号，若为-1则是没被任一闭合Brep包含  
+-   类似于Point in Curves，每一个点可能不被包含，也可能被每个Brep都包含一次，I端输出的是按照B端Brep输入顺序，第一次被包含时对应的Brep序号，若均未包含输出-1。![](https://api2.mubu.com/v3/document_image/1587aa1d-f62f-4baa-95be-b74fbfcd71b6-20454557.jpg)  
+-   「[[Point In Trim\|Point In Trim]]」点是否在切割面内![](https://api2.mubu.com/v3/document_image/31579aff-7c0c-46e4-b7c0-a55c69735dbc-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6fd79bbc-cd91-43f3-b956-327298ae3c18-20454557.jpg)  
+-   测试以UV坐标定义的点是否在该曲面切割面的内部。注意p端不是输入几何点，而是输入UV坐标。  
+-   输入端：  
+	-   S:曲面  
+	-   P:UV点  
+-   输出端：  
+	-   I:判定UV点是否在修剪曲面内  
+-   首先，UV点是指曲面UV展开矩形内的点，这个运算器是为了补充GH展开曲面相对Rhino手工的不足，具体来说就是，我们知道如果一个修剪曲面用Rhino命令“建立UV曲线”展开后，展开矩形内是有切割线的，我们也就可以判断出哪些对应修剪保留部分，而GH的Dimensions运算器展开不会出现切割线，所以就需要配合Point In Trim来辨别保留部分范围。![](https://api2.mubu.com/v3/document_image/07ac831c-14ad-4253-ad99-e83c30d546c4-20454557.jpg)![](https://api2.mubu.com/v3/document_image/468ecaa3-fa58-47c9-8c5a-8e23e7ebf917-20454557.jpg)  
+-   「[[Shape In Brep\|Shape In Brep]]」形体是否在 Brep 内![](https://api2.mubu.com/v3/document_image/a3c21cb5-16b0-45e1-9110-8a7d5093eeb6-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5070664b-1a84-4917-873b-68cd68607944-20454557.jpg)  
+-   测试几何形体是否在封闭Brep内部。形体类型支持点，曲线，曲面，Brep和Mesh。  
+-   输入端：  
+	-   B:Brep  
+	-   S:要判定的物件  
+-   输出端：  
+	-   R:包含关系(0=包含，1=相交，2=不包含)  
+-   判定S端物件是否被B端物件包含。![](https://api2.mubu.com/v3/document_image/d99e9b16-aae3-4ef4-bce7-03a27134ce19-20454557.jpg)![](https://api2.mubu.com/v3/document_image/712261ad-75b3-4030-9850-60024688ce6c-20454557.jpg)  
+-   「[[Evaluate Surface\|Evaluate Surface]]」分析曲面上的方向![](https://api2.mubu.com/v3/document_image/4063e4c5-267a-497c-82ec-fc2465253866-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ef7676a9-6ade-4cd9-99df-94c78532ab40-20454557.jpg)  
+-   以UV坐标指定曲面上的点，并分析曲面在该点处的法向和U向，V向。并输出切向坐标平面。  
+-   输入端：  
+	-   S：曲面  
+	-   uv：点的uv值  
+-   输出端：  
+	-   P：点坐标  
+	-   N：法向量  
+	-   U：U方向向量  
+	-   V：V方向向量  
+	-   F：切平面（以U方向为Y轴）  
+-   该运算器常和Surface Closest Point合用求曲面点的法向量。  
+-   需要注意uv坐标的U方向和V方向不一定是垂直方向，F端输出的切平面以U方向为Y轴，但X轴不一定与V方向重合。![](https://api2.mubu.com/v3/document_image/e7fd0276-53a3-4e21-816a-7b3fe07e61cf-20454557.jpg)  
+-   「[[Osculating Circles\|Osculating Circles]]」曲面上的主曲率圆![](https://api2.mubu.com/v3/document_image/bb7b3a3d-cc73-4c29-9b1e-5b038dea7873-20454557.jpg)![](https://api2.mubu.com/v3/document_image/89113196-f59d-4c07-9e7e-9ba4755fb73f-20454557.jpg)  
+-   以UV坐标指定曲面上的点，并分析该点处的最大曲率和最小曲率，并输出圆曲线。  
+-   输入端：  
+	-   S:曲面  
+	-   uv:曲面上点的uv值  
+-   输出端：  
+	-   P:uv值处的点  
+	-   C1:第一个曲率圆  
+	-   C2:第二个曲率圆  
+-   两个曲率圆沿着曲率最大和最小的方向，且互相垂直，曲率圆相关概念见，曲率圆方向见<Principal Curvature知识点l>。![](https://api2.mubu.com/v3/document_image/d2005c35-0ad0-4cf9-a7e0-1439583b1122-20454557.jpg)  
+-   「[[Principal Curvature\|Principal Curvature]]」曲面的主曲率数据![](https://api2.mubu.com/v3/document_image/675c0cd6-69ee-4233-bf92-b83a9b15965f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/eacf1867-5cf0-4f55-bb67-6cde9a6c2705-20454557.jpg)  
+-   求曲面在 UV 坐标上的主曲率  
+-   输入端：  
+	-   S:曲面  
+	-   uv:曲面上点的uv值  
+-   输出端：  
+	-   F:uV点的切平面  
+	-   C1:uV点的曲率最小值  
+	-   C2:uV点的曲率最大值  
+	-   K1:uV点曲率最小值矢量方向  
+	-   K2:uV点曲率最大值矢量方向  
+-   曲面上一点曲率的最大值和最小值合起来叫做该点的主曲率，曲率的正负和曲面的UV方向有关，曲率和曲率半径的倒数关系取绝对值就可以。![](https://api2.mubu.com/v3/document_image/7039a941-27e7-4f6e-a0af-47e0bc7c0405-20454557.jpg)  
+-   「[[Surface Curvature\|Surface Curvature]]」曲面的曲率值![](https://api2.mubu.com/v3/document_image/abf04992-f4b0-4e01-a704-31c435bd904c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4f5b2feb-809b-4edc-b0dc-91d33c823c93-20454557.jpg)  
+-   以UV坐标指定曲面上的点，并分析该点处曲面的高斯曲率和平均曲率值和方向。  
+-   输入端：  
+	-   S:曲面  
+	-   uv:曲面上点的uv值  
+-   输出端：  
+	-   F:uv点的切平面  
+	-   G:高斯曲率  
+	-   M:平均曲率  
+-   主曲率、高斯曲率和平均曲率是曲率的三个基本要素，主曲率见<Principal Curvature知识点l>,高斯曲率是两个主曲率的乘积，平均曲率是两个主曲率的算数平均数。![](https://api2.mubu.com/v3/document_image/bc597854-414e-401f-abb9-3ac271b014b4-20454557.jpg)  
+-   这个电池的图标让人很容易联想到地形的分析，提到曲率我们很容易联想到坡度，但需要注意的是，曲率并不等于坡度，可以把它理解为坡度的变化率，曲率越大，坡度变化率越大，但曲率大并不代表坡度大，这和速度与加速度的关系是一致的。我们可以看下面的例子，红色点处坡度大，但是它的曲率却小。![](https://api2.mubu.com/v3/document_image/4977c59a-1e8b-46c5-bf4c-b127e4b28428-20454557.jpg)  
+## Freeform 自由成面  
+-   Surface类的Freeform组，建立曲面相关的运算器，例如挤出、放样、单轨扫掠、双轨扫掠等，基本都有Rhino的对应命令，但是普遍要求要比Rhino更严格。Rhino建面的本质其实就是一个UV两方向的“四边面”。![](https://api2.mubu.com/v3/document_image/2b54f045-be2b-43d8-a603-342c55c54372-20454557.jpg)  
+-   「[[4Point Surface\|4Point Surface]]」4顶点建立曲面![](https://api2.mubu.com/v3/document_image/4b3ef183-fcee-4e4e-9b78-55fcaf6d1ca5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6570c9e2-b6ab-4d96-a821-a0d8ac15cc25-20454557.jpg)  
+-   设置三个或四个顶点建立曲面。曲面的边缘是直线。  
+-   输入端：  
+	-   A:点A  
+	-   B:点B  
+	-   C:点C  
+	-   D:点D  
+-   输出端：  
+	-   S:曲面  
+-   该运算器对应Rhio建面命令里的SrfPt（指定三或四个角建立曲面），通过四个不共线点生成曲面，注意ABCD点的顺序要按照顺时针或逆时针依次选，不要连着选对角点。输入三个点可以得到一个三角平面。![](https://api2.mubu.com/v3/document_image/9d2f284c-3b9f-44c8-a708-00dafe195fb3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/43ac93b1-509e-4cc2-b962-e5b35ba4bf12-20454557.jpg)  
+-   「[[Surface From Points\|Surface From Points]]」点阵建立曲面![](https://api2.mubu.com/v3/document_image/157dd626-8353-4e47-9020-fcf828cf1706-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d89f54b8-0ecc-479d-9eab-e0c4d375b7d1-20454557.jpg)  
+-   以点阵建立曲面，点阵作为曲面的控制点，或内插点  
+-   输入端：  
+	-   P：有序网格点  
+	-   U：U方向点个数  
+	-   I：是否插值采样  
+-   输出端：  
+	-   S：曲面  
+-   该运算器对应Rhino建面命令里的SrfPtGrid（从点格建立曲面）。P端输入点需满足uv网格排布，输入U端点会自动算出V端点个数。常和运算器Rectangular和Square合用，注意单方向网格数和点数“+1”的关系。![](https://api2.mubu.com/v3/document_image/84cd52ac-0860-42d3-908f-8e10b197d0c5-20454557.jpg)  
+-   I端为True时，以内插点采样；为False时，以控制点采样。默认为False。![](https://api2.mubu.com/v3/document_image/c3c49b45-1401-455d-9e3c-ebb080f1ddc9-20454557.jpg)  
+-   「[[Boundary Surfaces\|Boundary Surfaces]]」平面边缘轮廓建立平面![](https://api2.mubu.com/v3/document_image/dae693fc-d150-4dce-8a60-5d90d777b560-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2e5995ec-1328-4627-8dc0-557c13208d96-20454557.jpg)  
+-   以平面的边缘轮廓线建立填充的平面。  
+-   输入端：  
+	-   E：平面闭合曲线  
+-   输出端：  
+	-   S：平面曲面  
+-   该运算器对应Rhino建面命令里的PlanarSrf（以平面曲线建立曲面），既可以识别曲线是否共面，也可以识别曲线间的包含与被包含关系，生成掏洞曲面。  
+-   该运算器当拾取多个曲线时，会先计算曲线间的共面关系和包含关系，所以曲线较多时运算量很大，如果只是封面处理可以考虑生成树形数据分组处理，计算量会减少很多。这也是为什么建议大家学习C#、Python等底层语言的原因，GH的电池都是打包的算法，有时你可能只需要使用一部分功能，但不得不附带增加了许多无关的计算量，电池少还好，电池多了自然是一种电脑运算能力的浪费。  
+-   一个非常需要注意的点：  
+	-   由于该运算器知识点2中的特性，多条曲线一起输入时得到的面的顺序会发生改变。要使其不改变顺序，就是先分组，组内成面后再拍平。![](https://api2.mubu.com/v3/document_image/5f804301-27cc-4dfe-aa5f-e8c0066b124d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/85b38c9a-0ad1-4bc0-8b36-52128ea8b2da-20454557.jpg)  
+-   「[[Control Point Loft\|Control Point Loft]]」控制点放样曲面![](https://api2.mubu.com/v3/document_image/c36a5b0b-58b7-4bba-95e5-258e452cd3ca-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a36a7177-dd04-465f-8a85-ef67cae5de59-20454557.jpg)  
+-   以多跟曲线的控制点建立曲面。  
+-   输入端：  
+	-   C:控制点曲线  
+	-   D:阶数(最小等于2，且小于等于曲线数量-1)  
+-   输出端：  
+	-   S:曲面  
+-   虽然叫做控制点放样，但其实输入的是控制点连线生成的曲线。D端输入的阶数数量关系和曲线阶数的定义有关，也就是说比如截面控制点曲线是U方向(U阶数已由曲线设置里确定)，而端的控制点个数等于曲线数量，所以也需满足阶数≤控制点个数-l的关系，曲线阶数相关具体见<Interpolate知识点2>。![](https://api2.mubu.com/v3/document_image/e38af1e3-7a51-4e4e-8c56-3fb7193c40ae-20454557.jpg)  
+-   「[[Edge Surface\|Edge Surface]]」边缘线建立曲面![](https://api2.mubu.com/v3/document_image/e925ce75-f969-4c05-86c8-a8c05fa7a170-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8f09326f-d0de-49df-9b28-7d696f0e5e48-20454557.jpg)  
+-   通过两根，三根或四根线作为边线建立曲面。  
+-   输入端：  
+	-   A：边A  
+	-   B：边B  
+	-   C：边C  
+	-   D：边D  
+-   输出端：  
+	-   S：曲面  
+-   该运算器对应Rhino建面命令里的EdgeSrf（以二、三或四个边缘曲线建立曲面），通过两条，三条或四条边生成曲面。![](https://api2.mubu.com/v3/document_image/917939cb-0367-4bf4-b878-17e067be4a80-20454557.jpg)  
+-   「[[Fit Loft\|Fit Loft]]」重新整修的简化放样曲面![](https://api2.mubu.com/v3/document_image/b8d075ec-3b88-4c6a-9336-3ebb258d19dc-20454557.jpg)![](https://api2.mubu.com/v3/document_image/90159edc-974f-41e7-a760-e5c63d607d9b-20454557.jpg)  
+-   通过多跟曲线整修后的控制点建立曲面。  
+-   输入端：  
+	-   C:放样曲线  
+	-   Nu:U方向点个数  
+	-   Du:U方向曲线阶数  
+	-   Dv:V方向曲线阶数  
+-   输出端：  
+	-   S:曲面  
+-   相当于将曲线按Nu端个数重建后再放样，这里默认放样曲线的跨度方向为V方向，曲线方向为U方向，Du端和Nu端均为U方向，需满足Du≤Nu-1,C端曲线数量就是V端控制点数量，所以需满足DV≤C-1。![](https://api2.mubu.com/v3/document_image/c2326316-37eb-48e7-b09a-60238156050c-20454557.jpg)  
+-   「[[Loft\|Loft]]」放样曲面![](https://api2.mubu.com/v3/document_image/7e238811-19a8-4402-aaba-7e9559e1677d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e731abaa-176a-4ef4-9abc-4880e0b4adb8-20454557.jpg)  
+-   通过几根断面曲线建立放样曲面。  
+-   输入端：  
+	-   C：要放样的曲线  
+	-   O：设置  
+		-   Closed loft：是否闭合放样  
+		-   Align sections：是否对齐截面  
+		-   样式：  
+			-   Normal 标准  
+			-   Loose 松弛  
+			-   Tight 紧绷  
+			-   Unifrom 统一  
+			-   Straight 平直区段  
+			-   Developable 可展开的  
+		-   断面曲线选项：  
+			-   None——不简化  
+			-   Rebuilt——设置重建点数  
+			-   Refit——设置逼近曲线公差  
+-   输出端：  
+	-   L：放样曲面  
+-   该运算器对应Rhino建面命令里的Loft（放样），但对曲线方向、曲线输入顺序等都要比Rhino里更严格。如下案例中数字代表绘制次序，在Rhino中整体框选放样可以忽略绘制次序生成柱状曲面；在GH中整体框选拾入后，会依据绘制次序放样生成曲面。![](https://api2.mubu.com/v3/document_image/4f83311c-0a21-4fe9-9a72-80290a267709-20454557.jpg)  
+-   Rhino中可以用点和曲线进行放样，GH中不可以，会报错，因为C端只能输入曲线。解决办法是将点转化成长度为0的曲线。![](https://api2.mubu.com/v3/document_image/6fd39f41-9ba0-40e6-86be-2794cd7d8eda-20454557.jpg)  
+-   「[[Loft Options\|Loft Options]]」放样选项![](https://api2.mubu.com/v3/document_image/3d843735-e19a-4d6b-9fc0-05ef5c2ca716-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0d1ebec2-097b-46ff-9327-524e1a77a238-20454557.jpg)  
+-   放样曲面的设置选项，配合loft工具使用，调整生成的曲面形状和结构。  
+-   输入端：  
+	-   Cls：是否闭合  
+	-   Adj：是否对齐接缝  
+	-   Rbd：重建曲线控制点个数（0=不重建）  
+	-   Rft：逼近公差（0=不逼近）  
+	-   T：样式  
+-   输出端：  
+	-   O：放样设置值  
+-   配合Loft运算器可以对放样进行设置，和电池Loft输入端O右键设置类似，T端样式设置规则为：  
+	-   0=Normal（标准）  
+	-   1=Loose（松弛）  
+	-   2=Tight（紧绷）  
+	-   3=Straight（平直区段）  
+	-   4=Uniform（均匀）![](https://api2.mubu.com/v3/document_image/becbeeed-05e9-43f5-bbe6-152f6a6d72fb-20454557.jpg)  
+-   「[[Network Surface\|Network Surface]]」网线建立曲面![](https://api2.mubu.com/v3/document_image/401de495-702a-45a3-8a29-96c79b69e7bd-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6862868a-d43c-486b-80ce-c428ceca882c-20454557.jpg)  
+-   从空间曲线网架建立曲面，网架必须是两个方向建立的框架。  
+-   输入端：  
+	-   U:U方向曲线  
+	-   V:V方向曲线  
+	-   C:曲面连续性  
+-   输出端：  
+	-   S:曲面  
+-   该运算器对应Rhino建面命令里的NetworkSrf（以网线建立曲面），通过U和V两个方向的截面线生成曲面，可以理解为UV两个方向同时放样。C端曲面连续性用Rhino中的斑马纹分析可以看出差别，具体的设置规则为：  
+	-   0=loose（松弛）  
+	-   1=posion(G0位置连续)  
+	-   2=tangency(G1切线连续)  
+	-   3=curvature(G2曲率连续)![](https://api2.mubu.com/v3/document_image/aadf3401-4db4-498b-a40f-e21261e1ef42-20454557.jpg)![](https://api2.mubu.com/v3/document_image/49986d23-5740-4749-88e8-b7a9e86576cc-20454557.jpg)  
+-   「[[Ruled Surface\|Ruled Surface]]」两条线建立曲面![](https://api2.mubu.com/v3/document_image/4172016f-bb8b-4a28-aef9-c7ff523e2a75-20454557.jpg)![](https://api2.mubu.com/v3/document_image/01b01b64-a0a6-4374-86bf-6f97ee1030a5-20454557.jpg)  
+-   在两条线之间建立曲面。  
+-   输入端：  
+	-   A:曲线A  
+	-   B:曲线B  
+-   输出端：  
+	-   S:曲面（直纹面）  
+-   该运算器对应Rhino建面命令里的DevLoft（从两条曲线建立可展开放样），直纹面是由一条条直线所织成，这些直线称为此直纹面的（直）母线。还没遇到直纹面的特殊用法，目前使用上和两曲线放样&断面为直线的双轨扫掠差不多。![](https://api2.mubu.com/v3/document_image/5b809df9-6217-4045-8880-5b9777c6a9c0-20454557.jpg)  
+-   「[[Sum Surface\|Sum Surface]]」双向挤出曲面![](https://api2.mubu.com/v3/document_image/cb205e91-0a47-4c06-9e76-ca22fde1d6b1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d0d5687d-8fc6-4346-ad00-86d8b9c55c1e-20454557.jpg)  
+-   将曲线或曲面沿着矢量方向挤出。  
+-   输入端：  
+	-   A:边缘曲线A  
+	-   B:边缘曲线B  
+-   输出端：  
+	-   S:曲面  
+-   通过两临边建立曲面，可以理解为一条边作为断面线，一条线作为轨道进行单轨扫掠。![](https://api2.mubu.com/v3/document_image/987534cc-d079-4445-b27f-5c79155dd8a6-20454557.jpg)  
+-   「[[Extrude\|Extrude]]」挤出为曲面或实体![](https://api2.mubu.com/v3/document_image/14ee216e-f141-43e1-8917-b6fac148c17b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4e5be94d-ed23-4a34-8e5b-06f1e723493a-20454557.jpg)  
+-   将曲线或曲面沿着矢量方向挤出。  
+-   输入端：  
+	-   B：曲线或者曲面  
+	-   D：向量  
+-   输出端：  
+	-   E：挤出的曲面或多重曲面  
+-   该运算器对应Rhino建面命令里的ExtrudeCrv（直线挤出），只不过电池里除了曲线还可以是曲面。![](https://api2.mubu.com/v3/document_image/8de7c3a3-4e3c-4c90-bc96-6c4bf26ec54a-20454557.jpg)  
+-   「[[Extrude Along\|Extrude Along]]」沿曲线方向挤出![](https://api2.mubu.com/v3/document_image/01c153e1-04b8-454b-9fe9-cdb6f4fa84ed-20454557.jpg)![](https://api2.mubu.com/v3/document_image/13800f83-a017-4415-a0fa-ff500124a823-20454557.jpg)  
+-   沿着曲线方向挤出曲线或曲面。  
+-   输入端：  
+	-   B:曲线或者曲面  
+	-   C:曲线  
+-   输出端：  
+	-   E:挤出的曲面或多重曲面  
+-   该运算器对应Rhino建面命令里的ExtrudeCrvAlongCrv（沿着曲线挤出），沿曲线挤出曲线或曲面。其中曲线C的位置不受位置影响。![](https://api2.mubu.com/v3/document_image/6c9faac6-1b78-449f-a4a5-1b27489b0a6a-20454557.jpg)  
+-   注意沿曲线挤出和单轨扫掠想象着有点类似，但实际生成结果有区别。![](https://api2.mubu.com/v3/document_image/51c7cfe6-715d-433d-948b-0c56eccb3cd2-20454557.jpg)  
+-   「[[Extrude Linear\|Extrude Linear]]」直线挤出![](https://api2.mubu.com/v3/document_image/e27f9db6-d036-42fd-a2e0-c74a9ef4dab2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5a72f3bf-0ce1-4e49-bc6e-5f4d80ec927f-20454557.jpg)  
+-   将曲线或曲面沿着矢量方向挤出。  
+-   输入端：  
+	-   P:截面曲线或曲面  
+	-   Po:截面工作平面  
+	-   A:直线路径  
+	-   AO:直线路径工作平面  
+-   输出端：  
+	-   E:挤出Brep  
+-   将P端输入曲线或曲面沿A端直线路径挤出，和Extrude Along用法类似，Po端和Ao端需要输入相同的工作平面，否则会生成奇怪的物件且偏离P端截面，可能是电池BUG。![](https://api2.mubu.com/v3/document_image/470f0be5-1fd2-4839-8fd7-cf63b3994e05-20454557.jpg)  
+-   「[[Extrude Point\|Extrude Point]]」挤出到点![](https://api2.mubu.com/v3/document_image/6660d18c-e79d-4587-afe7-ac93662c0d44-20454557.jpg)![](https://api2.mubu.com/v3/document_image/91e7649a-ac49-418e-a159-b58650c5a243-20454557.jpg)  
+-   挤出曲线或曲面到一个点  
+-   输入端：  
+	-   B:截面曲线或曲面  
+	-   P:点  
+-   输出端：  
+	-   E:挤出Brep  
+-   该运算器对应Rhino建面命令里的ExtrudeCrvToPoint（挤出至点），将截面挤出至点形成推体。![](https://api2.mubu.com/v3/document_image/1a6106d1-30d9-4d96-b114-2e029ee1c3af-20454557.jpg)  
+-   「[[Fragment Patch\|Fragment Patch]]」多面组合嵌面![](https://api2.mubu.com/v3/document_image/dc0142f6-f0bd-4e60-9465-2ec1c0e82c22-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c45761e8-f9be-48bc-8924-e94854e5bdb9-20454557.jpg)  
+-   在封闭折线内部创建一个由多个平面组合而成的填充面。注意必须输入封闭折线。  
+-   输入端：  
+	-   B:多折线边缘  
+-   输出端：  
+	-   P:多折嵌面  
+-   有点像SU里的手工封面，将多折线边缘以折面封面。![](https://api2.mubu.com/v3/document_image/601e7865-e509-4d89-8410-a046687d565b-20454557.jpg)  
+-   「[[Patch\|Patch]]」嵌面![](https://api2.mubu.com/v3/document_image/d8be16b1-b633-4e2c-81e8-910d113c0408-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5a52d625-959f-421e-8973-1f8d28006eed-20454557.jpg)  
+-   基于边缘线或内部点及建立嵌面。生成的面通常误差较大，因此并不是主要的做面工具，请谨慎使用。  
+-   输入端：  
+	-   C：曲线  
+	-   P：点  
+	-   S：跨距数量（越大越精准）  
+	-   F：柔度（越大越贴合）  
+	-   T：是否修建曲面  
+-   输出端：  
+	-   P：曲面  
+-   该运算器对应Rhino建面命令里的Patch（嵌面），可以根据点、线或者二者都有逼近生成曲面。S端和V端分别对应Rhino命令里的UV方向的跨距数和硬度。嵌面运算器多用在不需要很高精度建面的情况，例如景观地形。![](https://api2.mubu.com/v3/document_image/ab0d73af-22f0-4d62-aa28-3b0c744f2aab-20454557.jpg)  
+-   「[[Pipe\|Pipe]]」圆管![](https://api2.mubu.com/v3/document_image/2113c596-6d56-431e-8ab9-ba43d501cb10-20454557.jpg)![](https://api2.mubu.com/v3/document_image/85a0e14b-eb0f-4585-97f4-225403ca0bb3-20454557.jpg)  
+-   沿着曲线建立等半径圆管，可以设置圆管端口的形状。  
+-   输入端：  
+	-   C：曲线  
+	-   R：截面半径  
+	-   E：封盖样式（None=不加盖、Flat=平盖、Round=圆盖）  
+-   输出端：  
+	-   P：成管  
+-   该运算器对应Rhino建面命令里的Pipe（圆管），成管运算器，计算量很大，用多了电脑会很卡，有个叫MeshTools的插件里面有个Mesh Pipe电池可以根据线成网格管，能大大节省结算量。![](https://api2.mubu.com/v3/document_image/60312249-378a-4d40-9e53-7abb6e9f5300-20454557.jpg)  
+-   「[[Pipe Variable\|Pipe Variable]]」变半径圆管![](https://api2.mubu.com/v3/document_image/91b6a691-ec02-4569-8bfd-6287fbdc94d8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f240a601-6ccf-4460-8554-8407ce17889b-20454557.jpg)  
+-   沿着曲线建立可变半径的圆管。  
+-   输入端：  
+	-   C:曲线  
+	-   t:截面位置参数t  
+	-   R:半径  
+	-   E:封盖样式(None=不加盖、Flat=平盖、Round=圆盖)  
+-   输出端：  
+	-   P:管  
+-   在不同的参数值处加入不同半径截面成管。![](https://api2.mubu.com/v3/document_image/5f6169f0-c43a-4d9c-b071-f291b5b46391-20454557.jpg)  
+-   「[[Sweep1\|Sweep1]]」单轨扫掠曲面![](https://api2.mubu.com/v3/document_image/06ad8b42-cd36-47aa-8148-08ae5e7ce19e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f437fdca-a732-4c0b-9be7-f8b0aba1f2bf-20454557.jpg)  
+-   沿着一根轨道线通过数个断面线建立曲面。  
+-   输入端：  
+	-   R：轨道  
+	-   S：断面线（可为多条）  
+	-   M：扭转衔接类型（可能有bug，改变输入值无变化）  
+-   输出端：  
+	-   S：曲面  
+-   该运算器对应Rhino建面命令里的Sweep1（单轨扫掠），断面会沿着曲线方向扫掠。若只有一条断面线，从断面线起点扫掠到轨道终点；若有多条断面线，则从第一条断面线扫掠到沿曲线方向最后一条断面线为止。![](https://api2.mubu.com/v3/document_image/2a08a0a6-c197-4ac1-9b34-898a64b112d6-20454557.jpg)  
+-   常和Prep Frames合用生成方管。![](https://api2.mubu.com/v3/document_image/b5241f1d-c588-4fb0-b894-fbbd5aa4cd51-20454557.jpg)  
+-   「[[Sweep2\|Sweep2]]」双轨扫掠曲面![](https://api2.mubu.com/v3/document_image/54c3d214-aaf6-4143-af1d-d2f94c701dbb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a0a42e87-8085-4141-934d-3dce7d4c722f-20454557.jpg)  
+-   通过两根轨道线以数根断面线建立曲面。  
+-   输入端：  
+	-   R1：轨道1  
+	-   R2：轨道2  
+	-   S：断面线（可为多条）  
+	-   H：是否相同高度  
+-   输出端：  
+	-   S：曲面  
+-   该运算器对应Rhino建面命令里的Sweep2（双轨扫掠），GH中比Rhino中严格，两条轨道需方向一致，断面沿曲线方向进行扫掠。若只有一条断面线，从断面线起点扫掠到轨道终点；若有多条断面线，则从第一条断面线扫掠到沿曲线方向最后一条断面线为止。![](https://api2.mubu.com/v3/document_image/a6cd9deb-3618-4ca2-a41d-aa8da4253fa7-20454557.jpg)  
+-   H端的控制主要针对单一断面线的情况，当为False时，曲线会随着轨道的开合发生等比缩放，高度发生变化；当为True时，曲线随着轨道的开合只在跨度上发生变化，高度保持定值。H端默认为False。![](https://api2.mubu.com/v3/document_image/eb92d72f-2963-47da-bf70-0ab45ce2a7da-20454557.jpg)  
+-   「[[Rail Revolution\|Rail Revolution]]」沿轨道旋转成面![](https://api2.mubu.com/v3/document_image/9c53dafc-f203-41c3-a128-0f8e03379186-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8b577ca4-5ca2-4f00-8c98-e8c8d03a219a-20454557.jpg)  
+-   使用直线为轴并用轨道线引导旋转生成曲面。  
+-   输入端：  
+	-   P:截面线  
+	-   R:轨迹线  
+	-   A:旋转轴  
+	-   S:是否缩放截面线  
+-   输出端：  
+	-   S:放样曲面  
+-   该运算器对应Rhino建面命令里的RailRevolve（沿着路径旋转），将截面线按轴绕轨迹线旋转成面，用来做一些规则的特殊几何形体。不过这个缩放截面线的原理不太清楚。![](https://api2.mubu.com/v3/document_image/765595ab-fcef-48bb-9c93-3069135253f0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/bf4cfb4b-cabe-4a30-b0e5-d2eb7bf1befa-20454557.jpg)  
+-   「[[Revolution\|Revolution]]」旋转成面![](https://api2.mubu.com/v3/document_image/e073299b-8336-46a1-bb00-7f91cc401dff-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7c56e636-fd0e-4658-a214-bddde3c7c5e9-20454557.jpg)  
+-   以直线为轴旋转成面。  
+-   输入端：  
+	-   P:截面线  
+	-   A:旋转轴  
+	-   D:旋转角度（弧度制）  
+-   输出端：  
+	-   S:放样曲面  
+-   该运算器对应Rhino建面命令里的Revolve（旋转成形），旋转角度可以控制。![](https://api2.mubu.com/v3/document_image/2e8ada38-511e-4cf0-b176-7ec5b2e3aaa5-20454557.jpg)  
+## Primitive 初始曲面  
+-   Surface类的Primitive:组，建立基本几何形体的运算器。![](https://api2.mubu.com/v3/document_image/bf95c0a3-2332-450a-8e5e-119aed292496-20454557.jpg)  
+-   「[[Plane Surface\|Plane Surface]]」矩形曲面![](https://api2.mubu.com/v3/document_image/7d1b1107-7e50-4854-9f38-f89ce5b388fe-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e154502b-f256-4712-bead-204125d2b613-20454557.jpg)  
+-   创建一个矩形的曲面。  
+-   输入端：  
+	-   P：工作平面  
+	-   X：X方向长度  
+	-   Y：Y方向长度  
+-   输出端：  
+	-   P：矩形平面  
+-   在P端工作平面建立矩形面，工作平面原点为矩形基点，X和Y端可输入区间值也可输入数值。![](https://api2.mubu.com/v3/document_image/d3e1274a-b615-4bf0-89aa-5fa2336af4cb-20454557.jpg)  
+-   「[[Plane Through Shape\|Plane Through Shape]]」框住形体的平面![](https://api2.mubu.com/v3/document_image/2c25d34e-fcbe-4871-9a5a-daf8000b9171-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3f734ba6-5660-48a9-8a74-9f68a6523592-20454557.jpg)  
+-   建立一个能刚好框住形体的平面。  
+-   输入端：  
+	-   P:工作平面  
+	-   S:物件  
+	-   I:边缘偏移距离  
+-   输出端：  
+	-   S:平面曲面  
+-   生成一个在指定工作平面能包含物件的矩形平面曲面，端为平面曲面边缘与物件边缘的距离。右键电池有"Section Only'”选项，可选择是包含整个S端物件，还是只包含工作平面与物件的相交线。![](https://api2.mubu.com/v3/document_image/b56dbf28-a86c-4f51-8571-6844e27b55d2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/42f338ed-0ace-4c4d-8b34-dae7e4e4e0cc-20454557.jpg)  
+-   「[[Bounding Box\|Bounding Box]]」包裹住形体的立方体![](https://api2.mubu.com/v3/document_image/0fa80c00-230e-4967-8611-c2386f595efb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/99da9e17-a58e-4dc9-b9d9-ec2fc09d7185-20454557.jpg)  
+-   建立一个能包裹形体的立方体  
+-   输入端：  
+	-   C：几何形  
+	-   P：工作平面  
+-   输出端：  
+	-   B：世界坐标系的最小包裹立方体  
+	-   B：P端工作平面坐标系的最小包裹立方体  
+-   生成一个能包裹住所有C端输入几何形的最小立方体，默认为世界坐标系，如果P端输入平面则按照P端坐标系。![](https://api2.mubu.com/v3/document_image/91c6a073-c752-4ad7-af13-e17c25cc2318-20454557.jpg)  
+-   电池右键中可选Union Box，未勾选每个几何形单独生成立方体，勾选后会将所有几何形看做整体生成立方体。![](https://api2.mubu.com/v3/document_image/6e143cb7-5a30-4e3b-be7e-aba656c13f01-20454557.jpg)  
+-   「[[Box 2Pt\|Box 2Pt]]」以两点（对角线）建立方体![](https://api2.mubu.com/v3/document_image/283d151f-6bed-4d75-98da-8e77b0a90e95-20454557.jpg)![](https://api2.mubu.com/v3/document_image/079dd936-bb50-4ed4-9b29-d31ded992ce8-20454557.jpg)  
+-   以两点（对角线）建立方体  
+-   输入端：  
+	-   A:对角点A  
+	-   B:对角点B  
+	-   P:工作平面  
+-   输出端：  
+	-   B:立方体  
+-   以对角点建立立方体，P端工作平面可以确定立方体的生成方向，默认为X平面。![](https://api2.mubu.com/v3/document_image/f2d1cdb0-04c2-4f23-ad0a-93bd8be47d73-20454557.jpg)  
+-   「[[Box Rectangle\|Box Rectangle]]」以矩形线建立方体![](https://api2.mubu.com/v3/document_image/866c6268-32f2-4926-8526-0f6af7ac2e7a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5c1f4c85-7ccf-4b5e-9753-fb825181df12-20454557.jpg)  
+-   以矩形线并设置高度范围建立方体。  
+-   输入端：  
+	-   R:矩形  
+	-   H:高度  
+-   输出端：  
+	-   B:立方体  
+-   通过一个矩形和一个高度值得到一个立方体，注意端输入的是长度区间，当为负值时，是向矩形Z轴负方向挤出。![](https://api2.mubu.com/v3/document_image/571fe246-baa0-4ae9-a4a2-45cc75e1ca27-20454557.jpg)  
+-   「[[Center Box\|Center Box]]」中心点建立方体![](https://api2.mubu.com/v3/document_image/d802b667-a998-4b44-ae9f-88ee42bb4354-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e6cf0d36-4b11-4433-a205-9b35c3fc09d2-20454557.jpg)  
+-   基于中心点的平面建立立方体  
+-   输入端：  
+	-   B：工作平面  
+	-   X：X方向边长的一半  
+	-   Y：Y方向边长的一半  
+	-   Z：Z方向边长的一半  
+-   输出端：  
+	-   B：立方体  
+-   最基础的生成立方体的运算器，中心点为工作平面原点。需要注意的是XYZ值都是各自方向的一半值，边长等于XYZ乘2。![](https://api2.mubu.com/v3/document_image/9f06af5a-fb12-47b7-8b2d-9d5cd745b961-20454557.jpg)  
+-   「[[Domain Box\|Domain Box]]」以坐标范围建立方体![](https://api2.mubu.com/v3/document_image/c7a7ff3f-04b0-4104-9278-8f8e01663300-20454557.jpg)![](https://api2.mubu.com/v3/document_image/9344bfe8-f061-41ce-bc24-a90050b45985-20454557.jpg)  
+-   基于边的坐标范围建立方体v。  
+-   输入端：  
+	-   B:工作平面  
+	-   X:X方向区间  
+	-   Y:Y方向区间  
+	-   Z:Z方向区间  
+-   输出端：  
+	-   B:立方体  
+-   以输入B端工作平面原点为基准点，按区间长度建立立方体。![](https://api2.mubu.com/v3/document_image/83790658-1cc3-4b05-9ce0-5a64412e3d26-20454557.jpg)  
+-   「[[Cone\|Cone]]」圆锥体![](https://api2.mubu.com/v3/document_image/f09c5a2d-d2fd-468e-8345-592b0e84c473-20454557.jpg)![](https://api2.mubu.com/v3/document_image/85c5ad5d-bfde-4ce6-ad98-32d73183b5b4-20454557.jpg)  
+-   建立圆锥体曲面。  
+-   输入端：  
+	-   B:工作平面  
+	-   R:底面半径  
+	-   L:高度  
+-   输出端：  
+	-   C:圆锥（无底面）  
+	-   T:圆锥顶点  
+-   建立圆锥，B端输入工作平面定义圆锥底面所在平面。![](https://api2.mubu.com/v3/document_image/7839fb14-207b-4b0a-8e01-c53254d8fbf4-20454557.jpg)  
+-   「[[Cylinder\|Cylinder]]」圆柱体![](https://api2.mubu.com/v3/document_image/91731467-ad3e-4170-9deb-c920c4503fa7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/99bafa2d-bfd3-4e25-a501-b6b84be0c809-20454557.jpg)  
+-   建立圆柱体  
+-   输入端：  
+	-   B：工作平面  
+	-   R：底面半径  
+	-   L：高度  
+-   输出端：  
+	-   C：圆柱（无底面和顶面）  
+-   建立圆柱，B端输入工作平面定义圆柱底面所在平面。![](https://api2.mubu.com/v3/document_image/4da14e0a-52c4-4fd1-9e4b-164d729cef83-20454557.jpg)  
+-   「[[Quad Sphere\|Quad Sphere]]」六面体结构球体![](https://api2.mubu.com/v3/document_image/93b712e3-4857-4806-8f4d-0f0dcd677cab-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4bbb3fd7-e612-4ab0-bef2-9f8c5c4606a0-20454557.jpg)  
+-   基于六面体结构建立球体。该球体是近似球体。  
+-   输入端：  
+	-   B:工作平面  
+	-   R:球体半径  
+-   输出端：  
+	-   S:球体  
+-   B输入端工作平面原点为圆心，生成的球体视近似球体，不是标准球体，可以看作一个六个面是曲面的正立方体。![](https://api2.mubu.com/v3/document_image/16116da4-768e-4bef-be0d-15da06739fff-20454557.jpg)  
+-   「[[Sphere\|Sphere]]」标准球体![](https://api2.mubu.com/v3/document_image/df776f1c-700c-48a0-b7c6-82914017acfa-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6f575861-f470-47b6-916e-bc89c3e25f9e-20454557.jpg)  
+-   建立标准球体。  
+-   输入端：  
+	-   B：工作平面  
+	-   R：球体半径  
+-   输出端：  
+	-   S：球体  
+-   绘制球体，圆心为工作平面原点。注意球体虽然是一个实体，但是它的面是连续的，所以是一个曲面而不是多重曲面，类似的像椭圆体也是曲面。![](https://api2.mubu.com/v3/document_image/0a342b95-0161-496d-8cf2-06a904fab42b-20454557.jpg)  
+-   「[[Sphere 4Pt\|Sphere 4Pt]]」4点定球体![](https://api2.mubu.com/v3/document_image/ac6a1547-7de3-4645-a16c-633c04c97a3c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/45c6ced2-0d9d-4af0-ad25-421ab8f3e204-20454557.jpg)  
+-   建立标准球体。  
+-   输入端：  
+	-   P1:点1  
+	-   P2:点2  
+	-   P3:点3  
+	-   P4:点4  
+-   输出端：  
+	-   C:球体中心点  
+	-   R:半径  
+	-   S:球体  
+-   三个不共线点可以确定一个圆，四个不共面点可以确定一个球体。![](https://api2.mubu.com/v3/document_image/62349e36-ad1d-46a6-b4d0-6d7d573bf7e8-20454557.jpg)  
+-   「[[Sphere Fit\|Sphere Fit]]」通过多个点的球体![](https://api2.mubu.com/v3/document_image/3df3973a-a208-45e1-a199-fcc64387990c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ea868856-4bfc-4e2d-8a70-77a0dad1dbd0-20454557.jpg)  
+-   尽可能通过多个点的球体。  
+-   输入端：  
+	-   P:点集  
+-   输出端：  
+	-   C:球体中心点  
+	-   R:半径  
+	-   S:球体  
+-   建立一个逼近输入点集的球体。![](https://api2.mubu.com/v3/document_image/e6657fb8-5183-49ed-af36-2ce2ec309c6f-20454557.jpg)  
+## SubD 细分曲面  
+-   Surface类的SubD组，建立细分的运算器。![](https://api2.mubu.com/v3/document_image/806fe632-f267-4a72-b976-0b48fd7d0b1f-20454557.jpg)  
+-   「[[Mesh from SubD\|Mesh from SubD]]」SubD 转化为网格![](https://api2.mubu.com/v3/document_image/bfc4eca4-86ff-44be-9acf-88514d17466a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0ab8e9a9-62fc-4509-bbe8-06b2899b5871-20454557.jpg)  
+-   输入端：  
+	-   S:SubD  
+	-   D:网格细分密度(0一5)  
+-   输出端：  
+	-   M:网格  
+-   从一个SubD形体得到一个近似的网格。![](https://api2.mubu.com/v3/document_image/b4d9e8b9-eb54-45da-8adc-5f8368e2f0c1-20454557.jpg)  
+-   「[[SubD from Mesh\|SubD from Mesh]]」网格转化为 SubD![](https://api2.mubu.com/v3/document_image/6cbcd980-87e7-43bc-b777-793d7fb38b3c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/113e0e1a-b850-4f32-8215-a857ede90c81-20454557.jpg)  
+-   以网格的顶点框架建立SubD  
+-   输入端：  
+	-   M:网格  
+	-   Cr:SubD边缘是否和网格边缘重合（体）  
+	-   Co:SubD角点是否和网格角点重合（面）  
+	-   I:SubD是否通过网格顶点  
+-   输出端：  
+	-   S:SubD  
+-   从一个网格得到一个近似的SubD形体，C端主要针对三维体，Co端主要针对二维平面。![](https://api2.mubu.com/v3/document_image/49920207-6373-49ef-b5d6-4ea082494d23-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fcbd5e8c-8b23-4a5c-a9d2-6914435200a0-20454557.jpg)  
+-   由于SubD可以转化为Nurbs,所以该运算器可以作为Mesh和Nurbs之间的桥梁。![](https://api2.mubu.com/v3/document_image/fec1faad-e0f6-425d-87b4-de92e2d30f3e-20454557.jpg)  
+-   「[[MultiPipe\|MultiPipe]]」分叉管（SubD）![](https://api2.mubu.com/v3/document_image/afef79e1-8268-416f-9513-abf8871bb4d3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f007f2da-d1a4-49e5-a7b0-27f679b1d01a-20454557.jpg)  
+-   将直线或曲线建立的分叉框架线转化为融合的管状。  
+-   输入端：  
+	-   Curves:多条曲线（需互相打断）  
+	-   NodeSize:结点半径  
+	-   SizePoints:结点  
+	-   EndOffset:结点处的倒角程度  
+	-   StrutSize:整体粗细控制  
+	-   Segment:分段数  
+	-   KinkAngle:截面扭转最大角度  
+	-   CubeFit:交点处方管控制(0一1)  
+	-   Caps:封盖样式(0=不加盖、1=圆盖、2=方盖)  
+-   输出端：  
+	-   P:多管细分  
+-   输入的曲线需要先两两之间互相打断，通常可结合插件Bubalus.里的电池Split Curves。![](https://api2.mubu.com/v3/document_image/65a83074-5edb-494f-beb5-131c6996f180-20454557.jpg)  
+-   SizePoints端输入结点一般为端点和交点。  
+-   NodeSize:结点半径可以输入一个值，应用到每一个结点；也可以输入和结点数相等的数量，给结点一一对应赋值。结点为端点时，半径改变只有端点变化；结点为交点时，半径改变除了交点处还会连带周边一起变化。![](https://api2.mubu.com/v3/document_image/f1e67729-7bfa-41f2-8f99-d6f934edadd2-20454557.jpg)  
+-   「[[SubD Control Polygon\|SubD Control Polygon]]」提取 SubD 控制多边形![](https://api2.mubu.com/v3/document_image/af38c068-9130-4160-a616-0127b722b7f1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/235aa150-e763-4c3b-b0c9-d6385f2dba09-20454557.jpg)  
+-   输入端：  
+	-   S:SubD  
+-   输出端：  
+	-   M:控制网格  
+-   得到SubD的控制网格。![](https://api2.mubu.com/v3/document_image/009d6803-e5b2-43d3-af65-e5b95d278e64-20454557.jpg)  
+-   「[[SubD Edges\|SubD Edges]]」提取 SubD 的边线![](https://api2.mubu.com/v3/document_image/b7a8c9c8-3000-40db-a2d6-4e2dc683fabe-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5dcd9143-1186-4563-ae0f-3751b9df6c75-20454557.jpg)  
+-   提取SubD物件的边线，并输出边线的序号和特征标签，用于后续的挑选。  
+-   输入端：  
+	-   S:SubD  
+-   输出端：  
+	-   L:SubD控制线  
+	-   E:SubD边线  
+	-   T:边类型(crease=锐边，smooth=光滑边，interior=内部边，naked=外露边)  
+	-   I:内外边标识号(和序号类似，不过是从1开始计数)  
+-   可以通过T端边类型筛选需要的边线，经验证：  
+	-   锐边：边两侧锐角转折，边缘线属于锐边  
+	-   光滑边：边两侧光滑过度  
+	-   内部边：两侧均有面的边  
+	-   外露边：只有一侧有面的边![](https://api2.mubu.com/v3/document_image/9459dc48-0660-49f0-82dd-37ece17ce761-20454557.jpg)![](https://api2.mubu.com/v3/document_image/45f2c855-afdf-4982-9d1c-d00cdc67df5a-20454557.jpg)  
+-   「[[SubD Fuse\|SubD Fuse]]」SubD 融合（类似布尔）![](https://api2.mubu.com/v3/document_image/a1765fc7-52c7-4859-b4c7-60938f026fad-20454557.jpg)![](https://api2.mubu.com/v3/document_image/678c1a7c-2469-402c-86b6-ce2622169f24-20454557.jpg)  
+-   融合两个SubD物件，类似布尔几何运算。  
+-   输入端：  
+	-   A:SubD A  
+	-   B:SubD B  
+	-   0:融合方式(0=并集，1=差集，2=A-B,3=B-A)  
+	-   S:柔滑程度（值越大越柔滑）  
+-   输出端：  
+	-   F:融合后的SubD或者Mesh  
+-   只能完成两个物件的融合，不管是融合SubD还是融合Mesh,最后得到的都是SubD。![](https://api2.mubu.com/v3/document_image/cfc12d70-3dd1-4f72-bc0a-14c9ed152bd3-20454557.jpg)  
+-   「[[SubD Vertices\|SubD Vertices]]」提取 SubD 顶点![](https://api2.mubu.com/v3/document_image/b9ca3f65-376f-476a-b496-cd564b2ca7a2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cf0b4935-234b-49d5-9334-2b073f0284a7-20454557.jpg)  
+-   提取SubD物件的顶点，并输出顶点的序号和特征标签，用于后续的挑选。  
+-   输入端：  
+	-   S:SubD  
+-   输出端：  
+	-   P:SubD控制点  
+	-   I:控制点标识号(和序号类似，不过是从1开始计数)  
+	-   T:点类型(crease=锐点，smooth=光滑点，corner:=角点，dart=凸变点)  
+-   控制点就是控制线的节点，可以通过T端点类型筛选需要的控制点，点的类型由对应交点周围四边边线锐边的数量决定：  
+	-   锐点：指对应交点周围四条边有2条锐边的点，边缘线属于锐边  
+	-   光滑点：指对应交点交点周围四条边线有0条锐边，4条光滑边的点  
+	-   角点：指对应交点交点周围四条边线有3或4条锐边的点，角点一般会紧贴曲面  
+	-   凸变点：对应交点交点周围四条边线有1条锐边，3条光滑边的点![](https://api2.mubu.com/v3/document_image/486c81f3-cff8-4781-8da2-0f5ab359f216-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1d9a7722-8c0a-446a-93d7-0f89dc9d2797-20454557.jpg)  
+-   「[[SubD Edge Tags\|SubD Edge Tags]]」修改 SubD 边线的标签![](https://api2.mubu.com/v3/document_image/39a20c6f-690c-43e8-b323-ebd8902cd70a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/03f4b999-5fe5-43a5-b0b6-56be2ccde0e7-20454557.jpg)  
+-   修改SubD物件边线的标签属性，以达到修改边线处形状的目的。  
+-   输入端：  
+	-   S:SubD  
+	-   T:边类型  
+	-   E:内外边标识号(和序号类似，不过是从1开始计数)  
+-   输出端：  
+	-   S:转换后的SubD  
+-   给SubD指定标识号的边变换类型（锐边和圆滑边相互转换），T端输入的类型只有crease和smooth两种，边的标识号可以根据SubD Edges来查看，一般是比序号大1。注意有时第二个SubD Edges会爆红，重新连接一下SubD Edges和SubD Edge Tags就会恢复正常。![](https://api2.mubu.com/v3/document_image/821be7e3-7c7d-4d38-ad6a-e00d26e1eaca-20454557.jpg)  
+-   「[[SubD Vertex Tags\|SubD Vertex Tags]]」修改 SubD 的顶点属性![](https://api2.mubu.com/v3/document_image/3fd803ca-de9b-41ba-ac1b-d3049c16520d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8f661c79-7aec-4d7c-b7df-207cf6c4da47-20454557.jpg)  
+-   修改SubD物件顶点的标签属性，以达到修改顶点处形状的目的。  
+-   输入端：  
+	-   S:SubD  
+	-   T:点类型  
+	-   E:内外边标识号(和序号类以，不过是从1开始计数)  
+-   输出端：  
+	-   S:转换后的SubD  
+-   对控制点对应的交点进行转换![](https://api2.mubu.com/v3/document_image/70d02b88-11a5-479f-aa37-f652a0f7fbf0-20454557.jpg)  
+## Util 曲面实用  
+-   Surface类的Util组，曲面相关的实用工具运算器。![](https://api2.mubu.com/v3/document_image/73b34847-82a8-4892-835a-55a2d24cd8b2-20454557.jpg)  
+-   「[[Divide Surface\|Divide Surface]]」曲面参数值等分点![](https://api2.mubu.com/v3/document_image/0bb90eef-de97-4835-9108-ecef531d8cb9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0cbdd4ce-2c1e-417a-92ef-ebd2df4b1a3f-20454557.jpg)  
+-   在曲面上以曲面UV坐标做等分得到等分点。  
+-   输入端：  
+	-   S：曲面  
+	-   U：U方向的分段数（点数=分段数+1）  
+	-   V：V方向的分段数（点数=分段数+1）  
+-   输出端：  
+	-   P：网格点（树形结构）  
+	-   N：法向方向  
+	-   uv：uv坐标  
+-   网格点是根据完整曲面来生成的，比如你输入的如果是一个修剪后曲面，那么得到的点其实是它对应完整曲面的网格点落在修剪后曲面上的部分，如果想生成完整的网格点，就需要对修剪后曲面进行重建。![](https://api2.mubu.com/v3/document_image/bf0b529d-8ebf-44d8-843b-fea1baa42fea-20454557.jpg)  
+-   Divide Surface提取最后一个角点UV坐标就是曲面UV区间的最大值。![](https://api2.mubu.com/v3/document_image/a6f97564-5776-49d7-ac07-82ff25b218b3-20454557.jpg)  
+-   「[[Surface Frames\|Surface Frames]]」曲面上等分切平面![](https://api2.mubu.com/v3/document_image/5e2d7fb8-58fa-4982-a15a-3e717f997ef8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4f7d8969-610c-49e1-9e9e-4b121f7d298b-20454557.jpg)  
+-   在曲面上以UV坐标等分得到切向坐标平面。  
+-   输入端：  
+-   S：曲面  
+	-   U：U方向的分段数（平面数=分段数+1）  
+	-   V：V方向的分段数（平面数=分段数+1）  
+-   输出端：  
+	-   P：网格平面（树形结构）  
+	-   uv：uv坐标  
+-   U方向为平面X轴，V方向为平面Y轴，法线方向为平面Z轴。![](https://api2.mubu.com/v3/document_image/b9eba9fc-e593-4d2a-bf9c-6118d14cd4d3-20454557.jpg)  
+-   「[[Copy Trim\|Copy Trim]]」复制曲面切割![](https://api2.mubu.com/v3/document_image/19758fac-71fa-4a0e-ba50-627081ac9e39-20454557.jpg)![](https://api2.mubu.com/v3/document_image/acb9556b-b4be-46a4-8cfe-af7bf1757345-20454557.jpg)  
+-   将曲面上的切割位置信息套用到另外一个曲面上。  
+-   输入端：  
+	-   S：原始曲面  
+	-   T：目标曲面  
+-   输出端：  
+	-   S：被修剪后的目标曲面  
+-   类似于将原始曲面流动到目标曲面上，可以结合Dimensions生成对应UV的矩形作为原始曲面进行编辑。![](https://api2.mubu.com/v3/document_image/ed4fd9f3-310a-4e6e-8582-5738327e5d87-20454557.jpg)  
+-   「[[Isotrim\|Isotrim]]」结构线切割（提取子曲面）![](https://api2.mubu.com/v3/document_image/8a1151a8-1a4e-4702-aa2f-4fd2c3e4d8e2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ae5f9ece-917e-4d2b-bfa5-7b71565544ae-20454557.jpg)  
+-   从曲面中提取子曲面。实际上并非曲面的切割。  
+-   输入端：  
+	-   S：曲面  
+	-   D：曲面UV参量区间  
+-   输出端：  
+	-   S：提取区间部分的曲面  
+-   按照曲面UV方向的参数区间来修剪曲面，通过Divide Surface运算器我们可以查看曲面的UV最大值，见。当然也可以将曲面Reparameterize重新定义，这样UV区间就都在0—1范围内了。![](https://api2.mubu.com/v3/document_image/a7e6cb42-ec57-4960-ad9e-cb8e01efa57f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b10345c5-d411-4913-8543-4c9f41a0e390-20454557.jpg)  
+-   我们经常结合Divide Domain²对曲面进行等分  
+-   「[[Retrim\|Retrim]]」重新切割![](https://api2.mubu.com/v3/document_image/f96cfa7e-8e4f-4ccf-aedf-763f2dceaf96-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e3ed92a2-fa00-45a1-9bad-eff6777df447-20454557.jpg)  
+-   把一个切割面上的切割边缘投射到另外一个曲面上做同样的切割。  
+-   输入端：  
+	-   S:原始曲面（修剪曲面）  
+	-   T:要修剪的目标曲面  
+-   输出端  
+	-   S:修剪后的目标曲面  
+-   简单来说就是用原始曲面的修剪曲线拉拽(Pull Curve)到目标曲面上进行修剪，不是投影注意原始曲面要放置在目标曲面的垂直方向上，保证修剪曲线能完整拉拽到目标曲面上，否则会报错会出现误差，再次强调是拉拽不是投影，见<Pull Curve知识点1>。![](https://api2.mubu.com/v3/document_image/c4a6e057-a0e7-4ca9-a608-3f01db285ae6-20454557.jpg)  
+-   「[[Untrim\|Untrim]]」取消曲面修剪![](https://api2.mubu.com/v3/document_image/3db9fd77-f29c-43d0-a3d5-b44380a92bdf-20454557.jpg)![](https://api2.mubu.com/v3/document_image/242e7cce-43ca-4800-b940-b69f726db1f1-20454557.jpg)  
+-   取消曲面上的所有修剪信息。可以恢复曲面为未修剪状态。  
+-   输入端：  
+	-   S:修剪曲面  
+-   输出端：  
+	-   S:恢复修剪前完整曲面  
+-   将曲面恢复到修剪前的曲面，也相当于是一种曲面重建。![](https://api2.mubu.com/v3/document_image/2923f736-1cbc-40bf-b11c-4af1fb253e33-20454557.jpg)  
+-   「[[Brep Join\|Brep Join]]」曲面组合![](https://api2.mubu.com/v3/document_image/446ddf1c-14ae-48f8-9791-a1e23cbd2dd5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a24155d2-3220-4e77-84f1-51658abef32a-20454557.jpg)  
+-   组合多个曲面为一体。如果两个面有重叠的边缘且误差值在rhino系统公差值以内，将会组合到一起，成为公用边。  
+-   输入端：  
+	-   B：Brep  
+-   输出端：  
+	-   B：拼接后的Brep  
+	-   C：判断是否是闭合Brep  
+-   将相连的Brep拼接为一个整体，相连的判定依据是小于公差，例如模型单位是米，公差是0.01单位，那么小于0.01米即1厘米就会被判定为相连。![](https://api2.mubu.com/v3/document_image/ea26c460-d2c7-4b6b-9b85-3d18bf85e330-20454557.jpg)  
+-   「[[Cap Holes\|Cap Holes]]」平面切口补平面![](https://api2.mubu.com/v3/document_image/1a42620f-7bf6-4739-a1c0-eff401f6d56e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/537c8c0d-d7bf-40c2-a12a-2cb9188fb0a6-20454557.jpg)  
+-   给brep或曲面上所有平面的切口填充平面。  
+-   输入端：  
+	-   B:Brep  
+-   输出端：  
+	-   B:加盖后的Brep  
+-   只能给平面洞加盖。![](https://api2.mubu.com/v3/document_image/da8b3024-4cec-4d3d-a985-ece41090ea04-20454557.jpg)  
+-   「[[Cap Holes Ex\|Cap Holes Ex]]」平面切口补平面（高级）![](https://api2.mubu.com/v3/document_image/98e062f0-7013-4fb7-a0f2-c14945715a27-20454557.jpg)![](https://api2.mubu.com/v3/document_image/47069f94-4129-4db4-8d82-fc366ecabff7-20454557.jpg)  
+-   给brep或曲面上的平面切口补上填充平面。  
+-   输入端：  
+	-   B:Brep  
+-   输出端：  
+	-   B:加盖后的Brep  
+	-   C:加盖数量  
+	-   S:是否闭合  
+-   Cap Holes的增强版，除了平面洞还可以给折面洞加盖。需要注意的是，折面洞大部分情况下适用于两个折面的加盖，当折面更多时可能会出现非预想的加盖方式，同时对非平面洞也不能加盖。![](https://api2.mubu.com/v3/document_image/95f2ce28-f7df-42a5-948a-a2edff3702e3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f5c71a37-4f79-499e-abab-a00aa9aeb08e-20454557.jpg)  
+-   「[[Merge Faces\|Merge Faces]]」合并共平面形体![](https://api2.mubu.com/v3/document_image/749e169d-dbea-42eb-9670-fc8f8f7e462e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/638141a5-d05c-4408-ba11-173216e9ff84-20454557.jpg)  
+-   在Brep中合并共平面的形体。简化模型结构。  
+-   输入端：  
+	-   B：Brep  
+-   输出端：  
+	-   B：合并共面后的Brep  
+	-   N0：合并前的平面数量  
+	-   N1：合并后的平面数量  
+-   和Rhino中的操作一样，在合并共面前我们一般要先将整体做一个布尔联集，将多个Brep并成一个Brep后再去运算。![](https://api2.mubu.com/v3/document_image/f3a197d7-83d5-4e4f-b4c7-a8ceba8a35a2-20454557.jpg)  
+-   「[[Flip\|Flip]]」曲面法向反转或统一![](https://api2.mubu.com/v3/document_image/0bdf9959-d8bc-4a7e-9201-033b8edd06c9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/16bd0c67-2e18-4736-b787-d4fbddb677ad-20454557.jpg)  
+-   统一或反转曲面的法向。  
+-   输入端：  
+	-   S:原曲面  
+	-   G:指导曲面  
+-   输出端：  
+	-   S:翻转后的原曲面  
+	-   R:是否翻转  
+-   和Flip Curve类似，通过一个指导曲面来将所有曲面翻转成同一方向。![](https://api2.mubu.com/v3/document_image/75400df6-1f18-4002-9a14-95010fd95a69-20454557.jpg)  
+-   曲面的正反面可以通过Rho中设置颜色来区分，正反面会影响到曲面的法线方向等。曲面的正反面和绘制的方式有关，举例来说，四点绘制曲面时，顺时针绘制反面向上，逆时针绘制正面向上，但我们建模时一般很难考虑的这么细致，所以大多是发现需要翻转时及时处理就可以。![](https://api2.mubu.com/v3/document_image/a2c85e15-e8f6-41de-8a6d-a87ced9846ac-20454557.jpg)  
+-   「[[Offset Surface\|Offset Surface]]」精确曲面偏移![](https://api2.mubu.com/v3/document_image/53828ada-ecf1-4cba-a44f-024e172aa62a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1822d9c9-8825-439b-8ca3-f99e0104d864-20454557.jpg)  
+-   等距离偏移曲面。确保偏移曲面与原始曲面的距离误差在rhino中设置的系统公差值以内。注意曲面结构会不可避免的变复杂。  
+-   输入端：  
+	-   S：曲面  
+	-   D：偏移距离（正值为沿曲面法线方向）  
+	-   T：是否修剪偏移曲面  
+-   输出端：  
+	-   S：偏移后的曲面  
+-   曲面的法线方向可以通过Rhino命令ShowDir来查看，正值为法线方向偏移，负值为法线反方向偏移；T端指当曲面为修剪后曲面时，偏移曲面是否修剪，默认为True修剪。![](https://api2.mubu.com/v3/document_image/5733f19d-03d2-42a1-b613-9b85b7b4329e-20454557.jpg)  
+-   经常和Brep Edges搭配生成偏移实体。![](https://api2.mubu.com/v3/document_image/70b174da-5821-461c-9587-922a23a99aa6-20454557.jpg)  
+-   S端只能输入曲面，不能输入多重曲面。实际上Rhino中的OffsetSrf是可以偏移多重曲面的，GH中可能是算法较为复杂没有安排相关电池，多重曲面的难点在于折角处的偏移处理。目前比较折中的一个方法是转化成mesh再去做偏移，不足之处在于mesh的偏移是有误差的，这也体现了网格的不精确性，偏移距离看起来差不多但实际有薄厚之分，这里用到了插件Ameba里的OffsetMesh。![](https://api2.mubu.com/v3/document_image/3f58862c-42ab-4298-a0fd-1664f825337f-20454557.jpg)  
+-   「[[Offset Surface Loose\|Offset Surface Loose]]」偏移曲面（维持曲面结构不变）![](https://api2.mubu.com/v3/document_image/a27f9e63-2569-4e64-9a2a-b3821a7a71be-20454557.jpg)![](https://api2.mubu.com/v3/document_image/71d5a35c-8af0-4dda-8da1-3fe3c959bc3e-20454557.jpg)  
+-   保持曲面的结构不变的情况下偏移曲面，因此偏移曲面的距离并不精确。  
+-   输入端：  
+	-   S:曲面  
+	-   D:偏移距离（正值为沿曲面法线方向）  
+	-   T:是否修剪偏移曲面  
+-   输出端：  
+	-   S:偏移后的曲面  
+-   和Offset Surface类似，都是曲面偏移，区别在于Offset Surface是逼近偏移（不断增加控制点，直到满足公差为止），Offset Surface Loose是控制点偏移，所以，前者的控制点数量由公差决定，公差越小，控制点数量越多，后者的控制点数量由原曲面控制点数量决定，大部分情况下后者的控制点数量会更少，但误差也相对较大。![](https://api2.mubu.com/v3/document_image/3e989f66-7f0e-49d7-8559-69e65ed75646-20454557.jpg)  
+-   「[[Convex Edges\|Convex Edges]]」以凹凸提取边线![](https://api2.mubu.com/v3/document_image/70863efc-756e-426b-9ad3-03d7a2d23c59-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ecc761e2-227c-4a46-9d29-2b0ba892b3ad-20454557.jpg)  
+-   以Brep物件中边的凹凸特性分类输出边的序号。  
+-   输入端：  
+	-   B:Brep  
+-   输出端：  
+	-   CV:凸边序号（所有边缘总排序）  
+	-   Cc:凹边序号（所有边缘总排序）  
+	-   Mx:混合边序号（所有边缘总排序）  
+-   首先判断凹凸要先明确Brp的方向，因为不同的方向，凹凸是正好相反的。凹凸边是针对两侧均有面的边缘来说的：  
+	-   (1)凸边：两侧面夹角均大于180°。  
+	-   (2)凹边：两侧面均小于180°。  
+	-   (3)混合边：两侧面部分大于180°，部分小于180°。![](https://api2.mubu.com/v3/document_image/7ca3c09d-f349-4600-be20-7a225704844b-20454557.jpg)  
+-   「[[Edges from Directions\|Edges from Directions]]」以方向提取边线![](https://api2.mubu.com/v3/document_image/47f2b4f3-fd13-4e6f-be32-b57ca0e1892f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a4cc406d-47d7-44dd-a732-312213b91605-20454557.jpg)  
+-   以矢量的方向提取Brep上接近该方向的边。  
+-   输入端：  
+	-   B:Brep  
+	-   D:指导方向  
+	-   R:是否包括大于180°角  
+	-   A:角度容差（弧度制）  
+-   输出端：  
+	-   E:筛选边缘  
+	-   I:边缘序号（所有边缘总排序）  
+	-   M:筛选边缘的指导方向对应序号  
+-   在角度容差范围内根据指导方向筛选边缘。注意输入端R判断是否包含大于180°的角，简单理解就是：  
+	-   True——曲线方向不考虑曲线的首尾点顺序![](https://api2.mubu.com/v3/document_image/b6f5f55c-3c0f-4065-8f59-44344c4a7209-20454557.jpg)  
+	-   False——曲线方向考虑曲线的首尾点顺序![](https://api2.mubu.com/v3/document_image/e402a3db-52da-4f4e-8116-e9f05cfb8f77-20454557.jpg)  
+-   M端主要针对的是D端输入多个指导方向的情况，可以得到每条边缘是那个指导方向筛选出来的。![](https://api2.mubu.com/v3/document_image/b69c3fbd-59b6-493c-91dc-fc591f1f195d-20454557.jpg)  
+-   「[[Edges from Faces\|Edges from Faces]]」提取曲面的边线![](https://api2.mubu.com/v3/document_image/993d8ff0-6687-4cf6-b50c-c8c647d0a407-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6058eead-11ca-4fd1-aca4-7137b841e4ce-20454557.jpg)  
+-   以点指定Brep中某一块面，并提取他的所有边线。并输出边的序号。  
+-   输入端：  
+	-   B:Brep  
+	-   P:Brep上的点  
+-   输出端：  
+	-   E:点所在面边缘  
+	-   I:边缘序号（所有边缘总排序）  
+-   P端点需要在Brep上，筛选出点所在面的边缘，I端序号对应的是Deconstruct Brep输出的边缘列表。![](https://api2.mubu.com/v3/document_image/ee976dce-2e2e-4be1-9eb5-684e36ad91a6-20454557.jpg)  
+-   「[[Edges from Length\|Edges from Length]]」以长度提取边线1![](https://api2.mubu.com/v3/document_image/e6125b20-1437-4ef6-be24-e81254546861-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ae70f5fb-e138-440b-8fb7-c649da321c4f-20454557.jpg)  
+-   以长度范围提取Brep物件中边界的序号。  
+-   输入端：  
+	-   B:Brep  
+	-   L~:最短长度  
+	-   L+:最长长度  
+-   输出端：  
+	-   E:筛选边缘  
+	-   I:边缘序号（所有边缘总排序）  
+-   筛选出指定长度范围内的边缘，I端序号对应的是Deconstruct Brep输出的边缘列表。![](https://api2.mubu.com/v3/document_image/283e6da2-b4bc-43fe-86c5-eb273febd824-20454557.jpg)  
+-   「[[Edges from Linearity\|Edges from Linearity]]」以平直度提取边线![](https://api2.mubu.com/v3/document_image/8b9fa663-9457-4a71-b211-6fda966272c9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/51e3253f-bfda-4fc0-b2f1-c9a4e1f84a78-20454557.jpg)  
+-   在Brep上以曲线的平直度提取边线。  
+-   输入端：  
+	-   B:Brep  
+	-   L-:直线性最小值(默认为0)  
+	-   L+:直线性最大值(默认为1)  
+-   输出端  
+	-   E:筛选边缘  
+	-   I:边缘序号（所有边缘总排序）  
+-   直线性是指一条曲线偏离直线的程度，值越小越接近于直线，一般来说可以保持默认值用来筛选Brep中的直线，I端序号对应的是Deconstruct Brep输出的边缘列表。![](https://api2.mubu.com/v3/document_image/ab10ae8b-dc70-4272-87a8-a851e9b87279-20454557.jpg)  
+-   「[[Edges from Points\|Edges from Points]]」以点提取边![](https://api2.mubu.com/v3/document_image/f28d284a-b79d-464a-b772-90303f827310-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4dc4eff4-3411-4430-9c08-395dbf73510b-20454557.jpg)  
+-   放一个点在Brep的边上以提取这条边。并输出边的序号。  
+-   输入端：  
+	-   B:Brep  
+	-   P:边缘上的点  
+	-   V:每条边缘最小点数(最小为1)  
+	-   T:点到边缘距离容差  
+-   输出端：  
+	-   E:筛选边缘  
+	-   I:边缘序号（所有边缘总排序）  
+	-   M:每条边包含点的序号  
+-   根据边缘上容差范围内的点筛选。![](https://api2.mubu.com/v3/document_image/1ecba87d-e887-4373-92fb-15cf1b90b0af-20454557.jpg)  
+-   V端值指每条边缘包含的最少点数，最小为1，可结合M端输出数据来看。![](https://api2.mubu.com/v3/document_image/fc594c64-bcbc-476e-949d-f4ee5e52da87-20454557.jpg)  
+-   「[[Fillet Edge\|Fillet Edge]]」曲面导角![](https://api2.mubu.com/v3/document_image/3ffc4a20-276b-4db2-ae52-f7a5fc33ece1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e811b92a-c480-4283-a145-7e6a4311ac03-20454557.jpg)  
+-   在Brep物件上对边做导角。  
+-   输入端：  
+	-   S:Brep  
+	-   B:倒角类型(0=圆角，1=斜角，2=混接倒角)  
+	-   M:路径造型(0=滚球，1=与边缘距离，2=路径间距)  
+	-   E:倒角边缘序号  
+	-   R:倒角半径  
+-   输出端：  
+	-   B:倒角后的Brep  
+-   Brep倒角，B端和M端可以输入数字，也可以右键选择。![](https://api2.mubu.com/v3/document_image/29c8e10f-e198-4cd4-8c7f-e16bc192276b-20454557.jpg)  
+-   M端路径造型与Rhino的倒角命令选项一致，主要控制两个倒角间对中间面的修剪方式![](https://api2.mubu.com/v3/document_image/1c12d00c-53bb-4b09-ac57-7a1317373864-20454557.jpg)![](https://api2.mubu.com/v3/document_image/85a271fa-ce4c-492b-aab1-5f67e36b9ea2-20454557.jpg)                  
+# Mesh 网格  
+## Analysis 网格分析  
+-   Mesh类的Analysis组，网格分析相关的运算器![](https://api2.mubu.com/v3/document_image/c24a9284-b956-4946-825c-92c40e75f022-20454557.jpg)  
+-   「[[Deconstruct Face\|Deconstruct Face]]」拆解网格面序号![](https://api2.mubu.com/v3/document_image/df223dfa-f517-4de1-9dc1-295f280807bf-20454557.jpg)![](https://api2.mubu.com/v3/document_image/84ace7ba-3c69-43ab-bd62-900c9983bc3d-20454557.jpg)  
+-   输入端：  
+	-   F：网格面  
+-   输出端：  
+	-   A：第一个网格面点序号  
+	-   B：第二个网格面点序号  
+	-   C：第三个网格面点序号  
+	-   D：第四个网格面点序号  
+-   F端输入的不是网格（对应几何容器的Mesh），而是网格面序号（对应几何容器的Mesh Face，标记网格角点序号的一组数据），而这个电池的作用就是将角点序号拆分，分别输出。通常状况下会结合Deconstruct Mesh使用，见l<Deconstruct Mesh知识点1>。![](https://api2.mubu.com/v3/document_image/72205533-08b8-4385-a8c5-db597ee5a650-20454557.jpg)  
+-   「[[Deconstruct Mesh\|Deconstruct Mesh]]」拆解网格![](https://api2.mubu.com/v3/document_image/a15f7341-5ae9-43e6-89fb-1fb0bed67a68-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ed950051-c433-4312-b2aa-980447ee5209-20454557.jpg)  
+-   输入端：  
+	-   M：网格  
+-   输出端：  
+	-   V：顶点  
+	-   F：面（不是网格，是网格的点序）  
+	-   C：颜色  
+	-   N：顶点的法线方向  
+-   拆解网格，类似Deconstruct Brep，需要注意的是F端输出的不是网格小面，而是构建每一个小面的点序，也就是V端顶点的序号。T（Triangulation）代表三角面，三个顶点序号，Q（Quadrilateral）代表四边形，四个顶点序号。电脑根据各角点的坐标和序号顺序来构建网格面，常和Deconstruct Face连用提取每个小面四角点序号。![](https://api2.mubu.com/v3/document_image/d8cfacf6-704e-467f-a131-513ef82e579e-20454557.jpg)  
+-   注意这里的输出端N得到的是各顶点的法线方向，注意焊接顶点对顶点法向的影响，焊接后的顶点法向可以理解为焊接前重合点各法向的平均值（其实也相当于各相临面法向的平均值），网格顶点的焊接。![](https://api2.mubu.com/v3/document_image/55c4c396-7910-4820-a8eb-d595a7789750-20454557.jpg)  
+-   「[[Face Normals\|Face Normals]]」网格面法线方向![](https://api2.mubu.com/v3/document_image/57979fa3-84a0-413f-a87f-1ecf39407a79-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b075d263-ddd5-4dc0-9a78-3f317c61525b-20454557.jpg)  
+-   输入端：  
+	-   M：网格  
+-   输出端：  
+	-   C：中心点  
+	-   N：法线方向  
+-   得到网格面的中心点和面法线方向，注意区分和Deconstruct Mesh中顶点法向方向的区别。![](https://api2.mubu.com/v3/document_image/8c0c1684-bf21-46b4-9ce4-d54ae1cac442-20454557.jpg)  
+-   【插件MeshEdit】「[[Mesh ConvertQuads\|Mesh ConvertQuads]]」非平面四边形网格三角化![](https://api2.mubu.com/v3/document_image/5ea12505-4261-4c7d-bc71-7ffa564837d0-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+	-   S:是否按最短对角线三角化非平面四边形网格  
+-   输出端：  
+	-   M:三角化后网格  
+	-   0:网格的各个小面是否是三角化而来的(0=不是，1=是)  
+-   将非平面四边形网格转化成三角形网格，以保证每个网格面都是平面。属于Mesh Triangulate的补充运算器，后者会将所有四边形网格都转化成三角形网格，每个三角形都是平面所以方便后期施工，而前者是只转换非平面四边形网格，平面的保持不变，不过这就会导致网格中既有四边形网格又有三角形网格。![](https://api2.mubu.com/v3/document_image/4f186edb-11f4-4226-90e7-def8d8e4481a-20454557.jpg)  
+-   「[[Mesh Edges\|Mesh Edges]]」网格边缘![](https://api2.mubu.com/v3/document_image/a429263c-8dae-4d02-90cb-d2d7f9cf6a9e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/40e23184-977e-4fd6-9a77-7eed3bdd1916-20454557.jpg)  
+-   输入端：  
+	-   M：网格  
+-   输出端：  
+	-   E1：裸露边缘（只被一个面使用的边缘）  
+	-   E2：内部边缘（被两个面共同使用的边缘）  
+	-   E3：非流形边缘（被三个及以上的面共用的边缘）  
+-   提取网格边缘，非流体边缘和Brep Edges中提到的一样。![](https://api2.mubu.com/v3/document_image/8fd19f3b-e2a4-4f9f-bb79-c437d0dfea99-20454557.jpg)  
+-   【插件 MeshEdit】「[[Mesh Explode\|Mesh Explode]]」炸开网格![](https://api2.mubu.com/v3/document_image/89af4fa9-51b6-4082-bd72-a5f0d66130d3-20454557.jpg)  
+-   输入端：  
+	-   M：网格  
+	-   I：是否插入顶点颜色  
+-   输出端：  
+	-   F：炸开后的网格面  
+-   将含有多面的大网格炸开成多个只有一个面的小网格。I端输入布尔值，但没试出具体用法。![](https://api2.mubu.com/v3/document_image/45a539c4-f534-4e07-a126-df306d1b92be-20454557.jpg)  
+-   该电池和Rhino中的Explode命令有区别，前者是不管网格点间是否焊接，均可以炸开，而后者只能炸开未焊接的点，对于焊接点网格是无法继续炸开的。![](https://api2.mubu.com/v3/document_image/3778c1b9-beb7-4816-adb3-41f3aea8a49f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c159d4da-e962-45e5-bec4-6fcd253b1906-20454557.jpg)  
+-   【插件 MeshEdit】「[[Mesh Triangulate\|Mesh Triangulate]]」四边形网格三角化![](https://api2.mubu.com/v3/document_image/d9a36652-b7a5-4591-bb54-43ea90943fe1-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+	-   S:是否按最短对角线分割非平面四边形网格  
+-   输出端：  
+	-   M:三角化后网格  
+-   将所有的四边形网格都转换成三角形网格。![](https://api2.mubu.com/v3/document_image/9590ba23-5c8b-4cad-ac45-b39cb01f32a1-20454557.jpg)  
+-   「[[Face Boundaries\|Face Boundaries]]」单个网格边框![](https://api2.mubu.com/v3/document_image/0d4aace4-d4a9-4242-b4e8-9d0d71df95bd-20454557.jpg)![](https://api2.mubu.com/v3/document_image/81580811-fcc4-4513-ab20-f5259432c91e-20454557.jpg)  
+-   输入端：  
+	-   M：网格  
+-   输出端：  
+	-   B：边框线  
+-   和Mesh Edges都是提取边框线，但是该电池提取的是每个炸开后最小网格的边框线，全部炸开后会有重合边框。![](https://api2.mubu.com/v3/document_image/c0bf2338-965a-4919-824f-97870dc1d64b-20454557.jpg)  
+-   「[[Face Circles\|Face Circles]]」三角形网格外接圆![](https://api2.mubu.com/v3/document_image/ff401de2-d9b5-42e8-b86c-cc2851233e61-20454557.jpg)![](https://api2.mubu.com/v3/document_image/979549af-7342-4bd0-b9d5-8040fa957642-20454557.jpg)  
+-   输入端：  
+	-   M:三角形网格  
+-   输出端：  
+	-   C:外接圆  
+	-   R:外接圆半径  
+-   注意只能输入三角形网格，输入四边形网格得不到值。![](https://api2.mubu.com/v3/document_image/6e0d1fa6-c7ce-40ab-bbb3-042d6b34a310-20454557.jpg)  
+-   【插件 MeshEdit】「[[Mesh Attributes\|Mesh Attributes]]」添加网格信息![](https://api2.mubu.com/v3/document_image/eb9ee408-0ac8-46de-82f7-23d69cc0b95a-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+	-   [C]:是否删除网格原本信息  
+	-   Data0:新增信息0  
+-   输出端：  
+	-   out:Print/Reflect/Error信息  
+	-   M:增加信息后的网格  
+-   放大电池可以增减输入端Data的数量，通常搭配Mesh ExtractAttributes使用。C端控制是否删除网格原本信息，若为False,可以针对性的替换原有信息。![](https://api2.mubu.com/v3/document_image/27a83b9b-2507-47c2-97f9-3675d04b3bbe-20454557.jpg)![](https://api2.mubu.com/v3/document_image/119f0c5e-6e22-4b52-aa5b-2aa3c8c9f285-20454557.jpg)  
+-   【插件 MeshEdit】「[[Mesh ExtractAttributes\|Mesh ExtractAttributes]]」添加网格信息![](https://api2.mubu.com/v3/document_image/e3f0a154-d5a0-4f50-a8ae-6b50129206ee-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+-   输出端：  
+	-   D:Data数据流列表  
+	-   0:Data0端数据  
+-   和Mesh AddAttributes搭配使用，放大可以增减输出端Data个数，要和Mesh AddAttributes输入端的Data个数相等，具体见<Mesh AddAttributes知识点2>。  
+-   「[[Mesh Inclusion\|Mesh Inclusion]]」点是否在闭合网格内![](https://api2.mubu.com/v3/document_image/6f380abe-4adb-4b05-9b9c-90cb4aba7e6e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cdec669f-c2d2-4199-814f-d592a3d1394a-20454557.jpg)  
+-   输入端：  
+	-   M:闭合Mesh  
+	-   P:待判定点  
+	-   S:是否严格判定  
+-   输出端：  
+	-   I:判定结果(True=内部，False=外部)  
+-   和Point In Brep类似，常和Dispach一起使用来判定点的内外关系，S端控制是否严格判定，若为True,Brep上的点则不算在内部；若为False,则Brep上的点算在内部。![](https://api2.mubu.com/v3/document_image/b844abf4-2da3-46c0-800c-284f5ce5a994-20454557.jpg)  
+-   【插件 MeshEdit】「[[Mesh Area\|Mesh Area]]」网格面积![](https://api2.mubu.com/v3/document_image/498b7307-30b7-43c6-ac09-9a24275c7356-20454557.jpg)  
+-   输入端：  
+	-   M：网格  
+-   输出端：  
+	-   A：面积  
+	-   C：中心点  
+-   曲面也可以输入到M端，相当于将曲面转换成网格后再进行求解，由于网格的不准确性，面积和中心点都会发生变化，但也能看出网格求解运算的速度确实比曲面要快很多。![](https://api2.mubu.com/v3/document_image/5e6c0602-1136-4f81-b210-dc9ad1229fcc-20454557.jpg)  
+-   「[[Mesh Closest Point\|Mesh Closest Point]]」网格最近点![](https://api2.mubu.com/v3/document_image/f271d1e3-5bff-4d95-932b-79068db3cb89-20454557.jpg)![](https://api2.mubu.com/v3/document_image/45b14d1a-51f3-485f-9eb5-f24033f168fe-20454557.jpg)  
+-   输入端：  
+	-   P：点  
+	-   M：网格  
+-   输出端：  
+	-   P：最近点  
+	-   I：最近点所在网格面序号  
+	-   P：最近点参数  
+-   和Surface Closest Point类似，可以求点在Mesh上的最近点。不过Mesh自有一套定位体系，使用的是重心坐标系，比如最近点参数输出的不是曲面的uv坐标格式，而是所在网格面的序号+点在该网格内的坐标值。重心坐标系是通过与三角化网格或四角化网格各顶点相关的一个参量确定点在网格面内的位置，由于该电池将原网格全部细分成三角网格计算，所以坐标值虽然包含四个数字，但有一个会为0。![](https://api2.mubu.com/v3/document_image/051140ff-1cec-4750-95a5-059894c54a5e-20454557.jpg)  
+-   「[[Mesh Eval\|Mesh Eval]]」网格参数![](https://api2.mubu.com/v3/document_image/3cfb1e0a-9329-41d6-8968-a4e38fc88cec-20454557.jpg)![](https://api2.mubu.com/v3/document_image/85bfabb3-23bb-47e2-b796-d8f3eafd2dc3-20454557.jpg)  
+-   输入端：  
+	-   M：网格  
+	-   P：参数  
+-   输出端：  
+	-   P：参数处的点  
+	-   N：参数点处的法线方向  
+	-   C：参数点处的颜色  
+-   和Evaluate Surface类似，常和Mesh Closest Point连用找网格上某点的法线方向。![](https://api2.mubu.com/v3/document_image/801fb130-11d1-4be3-a2ee-7302ce952d5e-20454557.jpg)  
+-   【插件 MeshEdit】「[[Mesh NakedEdge\|Mesh NakedEdge]]」网格开放边缘![](https://api2.mubu.com/v3/document_image/86714ca5-71cd-4821-8d56-a8f1d52fd3ce-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+-   输出端：  
+	-   V:网格角点  
+	-   A:所有开放边缘的起点  
+	-   B:所有开放边缘的终点  
+-   通过连接开放边缘的起止点可以得到开放边缘。注意开放边缘和Mesh Edges的E1端裸露边缘不一样，裸露边缘是指只被一个面使用的边缘，而开放边缘的范围更广一些，除了裸露边缘还包括多边形的棱和曲面的接缝。![](https://api2.mubu.com/v3/document_image/dab1a771-6d7a-4046-a969-448c94eb658e-20454557.jpg)  
+-   【插件 MeshEdit】「[[Mesh Volume\|Mesh Volume]]」网格体积![](https://api2.mubu.com/v3/document_image/174da792-99d6-476b-b7b9-08b3684aca85-20454557.jpg)  
+-   输入端：  
+	-   M：网格  
+-   输出端：  
+	-   V：体积  
+	-   C：中心点  
+-   和Mesh Area类似，输入端也可以直接输入闭合Brep，转换成网格再计算，但因为网格的不精确性，结果相比Brep会有误差。![](https://api2.mubu.com/v3/document_image/265d7138-90ad-43e0-be87-a2db580ebb03-20454557.jpg)  
+## Primitive 初始网格  
+-   Mesh类的Primitive组，建立基本网格的运算器。![](https://api2.mubu.com/v3/document_image/3307c73e-ddb2-4b5d-bfb2-c3a958484d24-20454557.jpg)  
+-   「[[Construct Mesh\|Construct Mesh]]」构建网格![](https://api2.mubu.com/v3/document_image/33841160-ed01-40dd-8a58-614e8dcb5c29-20454557.jpg)![](https://api2.mubu.com/v3/document_image/819300b3-395d-49a4-8ec2-8c2afb3baffb-20454557.jpg)  
+-   输入端：  
+	-   V：点  
+	-   F：网格面点序  
+	-   C：网格点颜色  
+-   输出端：  
+	-   M：网格  
+-   该运算器很形象的说明了网格的生成规则，即通过点和点的顺序构建，因此才可以不需要相接也可以合并成一个网格，见。相同的点，不同的点序可以生成不同的网格。![](https://api2.mubu.com/v3/document_image/8f35765e-cea8-40ac-a998-b2f8738b57c9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8413be94-c88a-4dd3-b7e5-843a69717832-20454557.jpg)  
+-   四角网格搭配Mesh Quad运算器，三角网格搭配Mesh Triangle运算器。![](https://api2.mubu.com/v3/document_image/23c18242-82c0-42e9-8d28-22859d1c5b63-20454557.jpg)  
+-   点的连接顺序会影响网格的正反面，逆时针连接为正面，顺时针连接为反面。![](https://api2.mubu.com/v3/document_image/f0eca5ca-8144-420e-8b74-2738e96d5cff-20454557.jpg)  
+-   Mesh的颜色按照点的顺序依次附色，然后整体渐变。![](https://api2.mubu.com/v3/document_image/f435bbe4-1191-4f5b-a0cc-a1b97fe656cd-20454557.jpg)  
+-   「[[Mesh Colours\|Mesh Colours]]」网格颜色![](https://api2.mubu.com/v3/document_image/6befcfe3-4329-488f-b9e1-61d501fd7c67-20454557.jpg)![](https://api2.mubu.com/v3/document_image/73802465-e049-4749-be04-754a9dd6429c-20454557.jpg)  
+-   输入端：  
+	-   M：网格  
+	-   C：颜色  
+-   输出端：  
+	-   M：着色网格  
+-   网格的着色实际上是对网格顶点的着色，然后网格面会根据该面各顶点的颜色计算渐变。![](https://api2.mubu.com/v3/document_image/da79f836-f4c4-4c5b-97c0-1b750112fd2f-20454557.jpg)  
+-   「[[Mesh Quad\|Mesh Quad]]」四边构建网格点序![](https://api2.mubu.com/v3/document_image/3b54d642-274a-4e72-a591-7a2f90632ce1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/206b5b85-79d9-4e60-b33f-c67ab1251e50-20454557.jpg)  
+-   输入端：  
+	-   A：网格第一点序号  
+	-   B：网格第二点序号  
+	-   C：网格第三点序号  
+	-   D：网格第四点序号  
+-   输出端：  
+	-   F：网格点序（Mesh Face）  
+-   通过四个数字构建格式为Q{A;B;C;D}格式的点序，搭配Construct Mesh运算器按照ABCD的顺序连接对应点生成网格,具体见<Construct Mesh知识点1和2>。  
+-   「[[Mesh Spray\|Mesh Spray]]」网格喷涂![](https://api2.mubu.com/v3/document_image/4fe3d45b-b747-4064-b86f-add59f980a45-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d7ecec67-317e-4d79-8a29-96dbc19819b2-20454557.jpg)  
+-   输入端：  
+	-   M：网格  
+	-   P：喷涂点  
+	-   C：顶点颜色  
+-   输出端：  
+	-   M：着色网格  
+-   可以理解为是Mesh Colours的升级版，因为网格着色我们只可以按照点的顺序依次附色，而该运算器的喷涂点可以自由选取，不仅可以自由选择顶点附色，还可以选择非顶点。![](https://api2.mubu.com/v3/document_image/c6a3aa81-210f-455d-a3fc-a8adbb213510-20454557.jpg)![](https://api2.mubu.com/v3/document_image/86823a34-3c5d-4cce-925c-fe1f090528b5-20454557.jpg)  
+-   右键提供五种不同的喷涂模式：  
+	-   （1）Nearest：各网格顶点选择最近的喷涂点着色![](https://api2.mubu.com/v3/document_image/c7c74126-0a72-448f-b025-26d3afe0bed1-20454557.jpg)  
+	-   （2）Furthest：各网格顶点选择最远的喷涂点着色![](https://api2.mubu.com/v3/document_image/ba189034-0b29-4617-b778-d87b780a44fd-20454557.jpg)  
+	-   （3）Blend（linear）：各网格顶点受所有喷涂点影响（线性变化）![](https://api2.mubu.com/v3/document_image/f7a6b198-ed90-4d69-b6f1-b261aac83a55-20454557.jpg)  
+	-   （4）Blend（square）：各网格顶点受所有喷涂点影响（平方变化）![](https://api2.mubu.com/v3/document_image/8258d1bb-4eb4-45a2-bfaa-11d5500ab3ed-20454557.jpg)  
+	-   （5）Blend（root）：各网格顶点受所有喷涂点影响（平方根变化）![](https://api2.mubu.com/v3/document_image/89963c8b-608b-4f17-8610-9d9ce3e50a81-20454557.jpg)  
+-   「[[Mesh Triangle\|Mesh Triangle]]」三边构建网格点序![](https://api2.mubu.com/v3/document_image/8b723782-224f-4937-86d3-5db2d7ba5f0d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a0003d46-1037-4ac2-a27d-9fe4e8f937ec-20454557.jpg)  
+-   输入端：  
+	-   A：网格第一点序号  
+	-   B：网格第二点序号  
+	-   C：网格第三点序号  
+-   输出端：  
+	-   F：网格点序（Mesh Face）  
+-   通过三个数字构建格式为T{A;B;C}格式的点序，搭配Construct Mesh运算器按照ABC的顺序连接对应点生成三角网格  
+-   「[[Mesh Box\|Mesh Box]]」网格立方体![](https://api2.mubu.com/v3/document_image/8dcc6ee9-38f4-456f-9ecd-4d1b0079ccf9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cb091824-c9a5-4078-a24c-cbbabd14be1d-20454557.jpg)  
+-   输入端：  
+	-   B：立方体  
+	-   X：立方体长度方向网格数量  
+	-   Y：立方体宽度方向的网格数量  
+	-   Z：立方体高度方向的网格数量  
+-   输出端：  
+	-   M：网格  
+-   和Mesh Plane类似，XYZ不是建模空间的xyz方向，而是立方体的长宽高方向，分别对应右键设定立方体（选三点）的第一个方向，第二个方向和第三个方向。![](https://api2.mubu.com/v3/document_image/d07b3293-cd6d-43c6-8cc3-25f769b2bb34-20454557.jpg)  
+-   【插件Meshtools】「[[Mesh Pipe\|Mesh Pipe]]」网格圆管![](https://api2.mubu.com/v3/document_image/f54a02be-f53e-4051-9e86-acd56cb84a69-20454557.jpg)  
+-   输入端：  
+	-   C：曲线  
+	-   R：截面半径  
+	-   A：角度公差  
+	-   P：旋转角度（弧度制）  
+	-   S：截面数量  
+	-   E：封盖样式（None=不加盖、Flat=平盖、Round=圆盖）  
+-   输出端：  
+	-   M：网格管  
+-   曲面管当数量很大时会非常卡，这时候可以选用网格管。![](https://api2.mubu.com/v3/document_image/e059bc0b-8671-4c64-b9ae-8e4a22a108bc-20454557.jpg)  
+-   「[[Mesh Plane\|Mesh Plane]]」网格平面![](https://api2.mubu.com/v3/document_image/534a6f3a-2ca1-4ae4-b21e-e4804f42c6b2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c49929c3-ad9b-4c00-8df5-381c3fc603f0-20454557.jpg)  
+-   输入端：  
+	-   B：矩形框  
+	-   W：宽度方向网格数量  
+	-   H：高度方向的网格数量  
+-   输出端：  
+	-   M：网格  
+	-   A：网格面积  
+-   根据输入参量生成平面网格。矩形框的宽度和高度方向确定方法是，选定矩形框，在Rhino中用设置工作平面至物件命令查看，x方向为宽度方向，y方向为高度方向，一般来说不用特意查看，如果设置反了交换W和H值即可。![](https://api2.mubu.com/v3/document_image/79153246-8d40-44f4-9618-a2f68d630bc8-20454557.jpg)  
+-   「[[Mesh Sphere\|Mesh Sphere]]」网格球体![](https://api2.mubu.com/v3/document_image/3e734188-7f6c-4371-a5db-82b22a0c4fcb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5ce6ca11-8aa1-4525-be7e-19fe2c2620e5-20454557.jpg)  
+-   输入端：  
+	-   B：平面  
+	-   R：半径  
+	-   U：U方向网格数量  
+	-   V：V方向网格数量  
+-   输出端：  
+	-   M：网格  
+-   绘制网格球体![](https://api2.mubu.com/v3/document_image/43aec1ab-062f-4028-ba87-6d9f056ca1a0-20454557.jpg)  
+-   「[[Mesh Sphere Ex\|Mesh Sphere Ex]]」拟合网格球体![](https://api2.mubu.com/v3/document_image/a7596bee-c104-49e4-bbba-a5fe837313fe-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fca6709e-5153-41bf-9a80-5d04fb3e3149-20454557.jpg)  
+-   输入端：  
+	-   B:工作平面（原点为球心）  
+	-   R:半径  
+	-   C:每条边四角网格个数  
+-   输出端：  
+	-   M:拟合网格球体  
+-   和Mesh Sphere?不同的是，该运算器生成的网格球体全部由四边网格构成，原理是从一个正方体出发，对六个面不断进行球体化细分：  
+	-   当C=2时，代表每条边有2个网格，每个面有4个网格，共4×6=24个网格。  
+	-   当C=3时，代表每条边有3个网格，每个面有9个网格，共9×6=54个网格。  
+	-   以此类推![](https://api2.mubu.com/v3/document_image/91a1b4df-8155-46c0-9035-2fb1b4001f4a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5a95f9fb-8421-4b4a-9012-35340e7529c8-20454557.jpg)  
+-   【插件Meshtools】「[[Mesh Sweep\|Mesh Sweep]]」单轨网格![](https://api2.mubu.com/v3/document_image/a497d983-8af9-45fc-ad60-133cf0bca904-20454557.jpg)  
+-   输入端：  
+	-   R：轨道  
+	-   S：截面曲线  
+	-   A：角度公差  
+	-   C：是否加盖  
+	-   O：是否自动对齐截面  
+	-   P：旋转角度（弧度制）  
+-   输出端：  
+	-   M：网格  
+-   单轨网格的一个作用是可以做网格方管。![](https://api2.mubu.com/v3/document_image/bac19901-ebe2-4368-b4ac-59afc25104d0-20454557.jpg)  
+## Triangulation 三角图形  
+-   Mesh类的Triangulation组，三角测量相关运算器。该组运算器比较有趣，可以做很多独特的造型![](https://api2.mubu.com/v3/document_image/a19527d8-00c4-4be6-a20e-bf770c8d4981-20454557.jpg)  
+-   「[[Convex Hull\|Convex Hull]]」凸包算法![](https://api2.mubu.com/v3/document_image/2f412c24-586b-4bb0-bfa4-638b5cc958dd-20454557.jpg)![](https://api2.mubu.com/v3/document_image/290e35c5-16bb-4f25-816e-e206df8f8b64-20454557.jpg)  
+-   输入端：  
+	-   P:点集  
+	-   P:工作平面（若不输入则会默认取最适合平面）  
+-   输出端：  
+	-   H:工作平面内的二维凸多边形（投影）  
+	-   Hz:世界坐标系内的三维凸多边形（空间）  
+	-   I:凸多边形上的点的序号  
+-   凸包算法简单来说就是依次连接点集最边缘的点形成一个凸多边形，最终使得To视图里所有的点都能够在凸边形内或凸边形上。![](https://api2.mubu.com/v3/document_image/9a7bdb6d-b9ba-4ae6-8a61-4083a1ed5dde-20454557.jpg)  
+-   「[[Delaunay Edges\|Delaunay Edges]]」德洛内三角边缘![](https://api2.mubu.com/v3/document_image/5641dfca-0475-4f8d-83b3-2b5da0dac3a7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ceb8e09f-19a5-4d46-b4f0-cd93f6d3540d-20454557.jpg)  
+-   输入端：  
+	-   P:点集  
+	-   P!:工作平面（若不输入则会默认取最适合平面）  
+-   输出端：  
+	-   C:顶点拓扑关系序号  
+	-   E:三角网格线  
+-   德洛内三角简单来说就是一系列相连的但不重叠的三角形的集合，这些三角形的外接圆不包含除该三角形顶点外的其他任何点(若为空间点，则是在P端工作平面的投影内不包含)。![](https://api2.mubu.com/v3/document_image/b468aef2-753f-4b19-8f66-cb174f002a59-20454557.jpg)  
+-   C输出端的拓扑关系序号，指每个输入点对应连接点的序号。![](https://api2.mubu.com/v3/document_image/17732a18-0b6a-49f4-952f-64c37f188c99-20454557.jpg)  
+-   「[[Delaunay Mesh\|Delaunay Mesh]]」德洛内三角网格![](https://api2.mubu.com/v3/document_image/d3043dd4-037f-47b7-8902-8ce9ea044b95-20454557.jpg)![](https://api2.mubu.com/v3/document_image/15610385-0fdf-4ac2-aa3b-3654a24a8e4b-20454557.jpg)  
+-   输入端：  
+	-   P：点  
+	-   PI：平面（如果不输入会提供最合适的平面）  
+-   输出端：  
+	-   M：网格  
+-   通过输入一系列点生成三角形网格面，我们常用该电池结合CAD高程点来做地形。![](https://api2.mubu.com/v3/document_image/10dfa499-ed66-4474-94cf-706a73c419d2-20454557.jpg)  
+-   「[[Substrate\|Substrate]]」Substrate算法![](https://api2.mubu.com/v3/document_image/df44e5a7-6ac4-441d-8436-d945f696c66a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a0813378-e2b7-4438-b1c5-3cefcf4bc70c-20454557.jpg)  
+-   输入端：  
+	-   B：矩形边界  
+	-   N：肌理中线的数量  
+	-   A：基础角度（弧度制）  
+	-   D：角度变化最大值（弧度制）  
+	-   S：随机种子  
+-   输出端：  
+	-   S：Substrate算法肌理  
+-   受[Jared Tarbell](http://www.complexification.net/gallery/)启发的一个肌理算法，类似于冰裂纹，也可以用来生成城市肌理。![](https://api2.mubu.com/v3/document_image/d6ec6792-0efb-49ce-9e82-23f18b9e8ea3-20454557.jpg)  
+-   「[[Facet Dome\|Facet Dome]]」泰森多边形穹顶![](https://api2.mubu.com/v3/document_image/8c02eee2-30fc-476b-bdd4-282276e781a4-20454557.jpg)![](https://api2.mubu.com/v3/document_image/91e64663-a7eb-4232-8180-3998744a6085-20454557.jpg)  
+-   输入端：  
+	-   P:点集  
+	-   B:穹顶立方体边界（立方体顶面位置要保证高于穹顶最高点）  
+	-   R:单元细胞半径  
+-   输出端：  
+	-   P:穹顶结构线  
+	-   D:穹顶基础球体  
+-   可以理解为用泰森多边形的原理生成一个穹顶结构，泰森多边形相关见<Voronoi知识点1>。![](https://api2.mubu.com/v3/document_image/5465110b-2d9e-4791-bef7-728544550527-20454557.jpg)  
+-   「[[Voronoi\|Voronoi]]」泰森多边形![](https://api2.mubu.com/v3/document_image/773b7a3d-966e-49ed-afd5-cee0d26333b2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4056de45-d289-4015-b4b2-7a1dcf6fe45c-20454557.jpg)  
+-   输入端：  
+	-   P：点集  
+	-   R：单元细胞半径  
+	-   B：矩形边界  
+	-   Pl：平面（如果不输入会提供最合适的平面）  
+-   输出端：  
+	-   C：泰森多边形细胞  
+-   非常常用的一种自然肌理，很多建筑类表皮都源于泰森多边形。![](https://api2.mubu.com/v3/document_image/e08f9ec7-fd62-4315-949c-2e97095b1485-20454557.jpg)  
+-   「[[Voronoi 3D\|Voronoi 3D]]」立体泰森多边形![](https://api2.mubu.com/v3/document_image/4d9eeec0-7d97-4eba-a19e-8af495ee9ed1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/af114588-81ce-4218-a361-0eb2af660bf4-20454557.jpg)  
+-   输入端：  
+	-   P：点  
+	-   N：临近点  
+	-   B：边界  
+-   输出端：  
+	-   C：单元网格  
+-   可以理解为将P端和N端的点共同组成一个Voronoi 3D，然后删除N端点所属单元，只保留P端所属单元。常结合Weaverbird插件做景观中的卵石。![](https://api2.mubu.com/v3/document_image/181d235d-3da0-43fb-ae5a-b959c7976b6b-20454557.jpg)  
+-   「[[Voronoi Cell\|Voronoi Cell]]」泰森多边形单元网格![](https://api2.mubu.com/v3/document_image/12179b23-b8d9-4ec0-9d5e-321b913800a1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/837bc10e-3f58-4a2f-b3c7-06c6570c4af5-20454557.jpg)  
+-   输入端  
+	-   P:点  
+	-   N:临近点  
+	-   B:边界  
+-   输出端：  
+	-   C:单元网格  
+-   可以理解为将P端和N端的点共同组成一个Voronoi3D,然后删除N端点所属单元，只保留P端所属单元。常结合Weaverbird插件做景观中的卵石。![](https://api2.mubu.com/v3/document_image/423e120b-8ccb-4a62-a29e-d3c391de2bb4-20454557.jpg)  
+-   「[[Voronoi Groups\|Voronoi Groups]]」嵌套泰森多边形![](https://api2.mubu.com/v3/document_image/4d5fd992-be31-4e94-8c83-8c8e0c7e1dc0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c3a07759-da21-49df-985f-697d2c038f2c-20454557.jpg)  
+-   输入端：  
+	-   B:矩形边界  
+	-   G1:第一层级点集  
+	-   G2:第二层级点集  
+-   输出端：  
+	-   D1:第一层级泰森多边形  
+	-   D2:第二层级泰森多边形  
+-   放大电池可以增加层级，即先生成第一层级，再在第一层级的细胞内生成第二层级，以此类推逐级嵌套，可以理解为泰森多边形的[递归算法](https://www.bilibili.com/read/cv9968790/)。![](https://api2.mubu.com/v3/document_image/9667d829-edfd-415f-87be-874de3949aa4-20454557.jpg)  
+-   「[[OcTree\|OcTree]]」八叉树![](https://api2.mubu.com/v3/document_image/68c292c9-e482-46c4-9857-cdea7ead9b4f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c76af97c-451d-4e4b-8af2-5ba6edb5ee1f-20454557.jpg)  
+-   输入端：  
+	-   P:点集  
+	-   S:每个树叶立方体是否为正方体  
+	-   G:每个树叶立方体包含几个点  
+-   输出端：  
+	-   B:树叶立方体  
+	-   P:每个树叶立方体中包含的点  
+-   [八叉树算法](https://baike.baidu.com/item/%E5%85%AB%E5%8F%89%E6%A0%91/5635733?fr=aladdin)，简单来说就是对点集生成一个Bounding Box立方体，然后对立方体进行八等分（即每一个小立方体长宽高变为二分之一），若等分后的小立方体内包含点数大于G端数量，则继续将其进行八等分，依次递推，直到所有立方体内的点都小于等于G端数量，最后删除不包含点的立方体。![](https://api2.mubu.com/v3/document_image/abb55cad-d6e0-4e05-8e72-4886ade7d7ef-20454557.jpg)![](https://api2.mubu.com/v3/document_image/efa30c06-353a-4d98-8005-00e5a6331073-20454557.jpg)  
+-   「[[Proximity 2D\|Proximity 2D]]」2D搜寻点![](https://api2.mubu.com/v3/document_image/28cb81d3-1e7f-447c-ba1c-e41bc4b97a9b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b0d4df5b-8a32-469c-892c-fc0dc172de54-20454557.jpg)  
+-   输入端：  
+	-   P:点集  
+	-   P:平面（如果不输入会提供最合适的平面）  
+	-   G:搜寻点数量最大值  
+	-   R-:搜寻半径最小值  
+	-   R+:搜寻半径最大值  
+-   输出端：  
+	-   L:查找点与各搜寻点连线  
+	-   T:分组后各搜寻点的序号  
+-   对点集的每一个点，在点集内进行搜索并分组，举个例子，在如下的搜寻设定中，点0搜索到的点为点3和点4,那么就会把点0分别与点3和点4相连，并且点3和点4会被分到同一组。以此类推，点1、点2、点3点4都参照这一标准进行连线和分组。![](https://api2.mubu.com/v3/document_image/32d5e848-a412-4e91-9006-53714ccf5420-20454557.jpg)  
+-   需要注意的是，搜索半径R-和R+指的是连线在P平面内的投影长度。![](https://api2.mubu.com/v3/document_image/29b5722b-3781-4c10-a703-edfd43448785-20454557.jpg)  
+-   「[[Proximity 3D\|Proximity 3D]]」![](https://api2.mubu.com/v3/document_image/08247847-7e95-42a6-a7a9-848922c96c5e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/31295797-fe19-47b3-b684-ae32f3ad8ac3-20454557.jpg)  
+-   输入端：  
+	-   P:点集  
+	-   G:搜寻点数量最大值  
+	-   R-:搜寻半径最小值  
+	-   R+:搜寻半径最大值  
+-   输出端：  
+	-   L:查找点与各搜寻点连线  
+	-   T:分组后各搜寻点的序号  
+-   和Proximity2D原理一样，对点集的每一个点，在点集内进行搜索并分组，具体见<Proximity2D知识点1>,只不过搜索半径R-和R+指的是连线本身长度。![](https://api2.mubu.com/v3/document_image/1dd44ceb-a1f0-44dc-b333-766e47148310-20454557.jpg)  
+-   「[[QuadTree\|QuadTree]]」四叉树![](https://api2.mubu.com/v3/document_image/ee502df4-7a63-4571-9392-5c26db3c78f9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5e622797-b547-4c92-8b23-4f75f218b85e-20454557.jpg)  
+-   输入端：  
+	-   P:点集  
+	-   P:平面（如果不输入会提供最合适的平面）  
+	-   S:每个树叶矩形是否为正方形  
+	-   G:每个树叶矩形包含几个点  
+-   输出端：  
+	-   Q:树叶矩形  
+	-   P:每个树叶矩形中包含的点  
+-   [四叉树算法](https://baike.baidu.com/item/%E5%9B%9B%E5%8F%89%E6%A0%91/8557650?fr=aladdin)，相当于八叉树的平面化版，点集生成一个最小边界矩形（可理解为高度为0的BoundingB0x),然后对矩形进行四等分（即每一个小矩形长宽变为二分之一），若等分后的小矩形内包含点数大于G端数量，则继续将其进行四等分，依次递推，直到所有矩形内的点都小于等于G端数量，最后删除不包含点的矩形。当点集不在同一平面时，将所有点投影到P输入平面上，再进行计算。![](https://api2.mubu.com/v3/document_image/50f36312-064d-49dd-b695-9472622ed2d8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/56ee8169-a2c5-4761-b3e2-d95a1146bca8-20454557.jpg)  
+-   「[[MetaBall\|MetaBall]]」融球算法![](https://api2.mubu.com/v3/document_image/b6369b3b-3fa8-40c3-b1e6-81acd20d7863-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e97785f9-2245-4ed2-9311-52dd112cce11-20454557.jpg)  
+-   输入端：  
+	-   P：点集  
+	-   Pl：平面（如果不输入会提供最合适的平面）  
+	-   X：每条融球线穿过的点  
+	-   A：融球线采样精度（值越小越圆滑，若不输入则为自适应精度）  
+-   输出端：  
+	-   I：融球线  
+-   通过P端点集和X端穿过点来定义一条融球线，X端有多少个穿过点就会生成多少条融球线。![](https://api2.mubu.com/v3/document_image/799942a5-882b-415a-aaeb-f5922cecb622-20454557.jpg)  
+-   当点集不在同一平面时，会以点在Pl平面的投影点进行计算，但是最终的融球线会受到各点相对平面的偏移距离不同而产生变化，具体来讲就是，一个点距离平面越近，对融球线的引力就越大，反之越小。![](https://api2.mubu.com/v3/document_image/03bccd26-0df1-4eaa-ae29-790d161c0ac0-20454557.jpg)  
+-   「[[MetaBall (t)\|MetaBall (t)]]」融球算法（阈值定义）![](https://api2.mubu.com/v3/document_image/8159f8d9-58bb-41be-b725-15e6cc1fb29d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/de8da85e-ecfb-4351-8e70-62a469f7f1ae-20454557.jpg)  
+-   输入端：  
+	-   P:点集  
+	-   P川：平面（如果不输入会提供最合适的平面）  
+	-   T:阈值  
+	-   A:融球线采样精度(值越小越圆滑，若不输入则为自适应精度)  
+-   输出端：  
+	-   I:融球线  
+-   通过T端输入的阈值来定义融球线，T值越小各点融球半径越大，一个T值对应一条融球线。同样，对于非平面点集，点距离P平面越近，对融球线的引力越大，见<MetaBall知识点2>。![](https://api2.mubu.com/v3/document_image/79a70872-828e-4799-8fb1-09a4f8173fbb-20454557.jpg)  
+-   「[[MetaBall (t) Custom\|MetaBall (t) Custom]]」融球算法（阈值和引力自定义）![](https://api2.mubu.com/v3/document_image/3ca3234f-4d7c-46cf-b878-6cb2aefc4327-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1462587a-4323-487e-973a-c749265f9bb3-20454557.jpg)  
+-   输入端：  
+	-   P:点集  
+	-   C:点引力（均为正值）  
+	-   Pl：平面（如果不输入会提供最合适的平面）  
+	-   T:阈值  
+	-   A:融球线采样精度(值越小越圆滑，若不输入则为自适应精度)  
+-   输出端：  
+	-   I:融球线  
+-   通过引力C和阈值T共同来定义融球线。C端值越大，点的引力越大，数值个数需要和点集内点的数量保持一致：端阈值越小，点的融球半径越大，T的数量定义融球线数量。同样，对于非平面点集，点距离P平面越近，对融球线的引力越大，见<MetaBall知识点2>。  
+-   【插件MeshEdit】「[[3D Convexhull\|3D Convexhull]]」3D凸包算法![](https://api2.mubu.com/v3/document_image/c4fc1f3b-eabc-4009-992a-f59652d2a5e6-20454557.jpg)  
+-   输入端：  
+	-   P:点集  
+-   输出端：  
+	-   M:凸多边体  
+-   ConvexHull的三维版，连接最边缘点生成一个可以包括所有点的最小凸多边体。![](https://api2.mubu.com/v3/document_image/2b6a3e70-fecc-4f22-94c5-6303f3f4df0d-20454557.jpg)  
+-   【插件MeshEdit】「[[3D Delaunay\|3D Delaunay]]」3D德洛内三角网![](https://api2.mubu.com/v3/document_image/b262a155-1f84-4f19-a462-9389caf70af3-20454557.jpg)  
+-   输入端：  
+	-   P:点集  
+-   输出端：  
+	-   E:三角网格线  
+	-   C:顶点拓扑关系序号  
+-   Delaunay Edges的三维版，即对于三维空间点集，任一三角形的外接圆平面内不包含除该三角形顶点外的其他任何点(不再是Delaunay Edges中的投影内不包含)。![](https://api2.mubu.com/v3/document_image/312565d2-aea5-4d99-adc9-d2766601de6b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e5da0ed9-bfba-4f42-814c-9f7cf9fe09d9-20454557.jpg)  
+-   【插件MeshEdit】「[[3D DelaunayCell\|3D DelaunayCell]]」3D德洛内三角四面体![](https://api2.mubu.com/v3/document_image/35d83178-3632-468c-b223-ff3177c0099f-20454557.jpg)  
+-   输入端：  
+	-   P:点集  
+-   输出端：  
+	-   M:四面体网格  
+	-   CID:各四面体网格顶点的序号  
+-   简单理解就是将3 D Delaunayl的线框封面，并形成多个四面体网格。![](https://api2.mubu.com/v3/document_image/6407b327-4c69-468a-86ea-ae0703ec70a8-20454557.jpg)  
+-   【插件MeshEdit】「[[3D Voronoi\|3D Voronoi]]」立体泰森多边形（线框）![](https://api2.mubu.com/v3/document_image/9700903c-b08b-411c-bb4a-90d21dfaf140-20454557.jpg)  
+-   输入端：  
+	-   P:点集  
+	-   B:立方体边界  
+-   输出端：  
+	-   M:泰森多边形细胞体  
+	-   C:细胞体拓扑关系序号  
+-   和GH原生电池中的Voronoi3D功能类似，不过生成的是每个Mesh细胞的边框。![](https://api2.mubu.com/v3/document_image/17916ba6-db0e-43e3-a527-067595ae6c5b-20454557.jpg)  
+-   C输出端的拓扑关系序号，指每个细胞体所有相邻细胞体内点的序号。![](https://api2.mubu.com/v3/document_image/04f46f65-ad58-4b68-8c7a-3509f7a4e4a3-20454557.jpg)  
+-   【插件MeshEdit】「[[Convex Hull Points\|Convex Hull Points]]」凸包算法（点）![](https://api2.mubu.com/v3/document_image/ba0580ec-6133-4245-bedd-5a4f4a4ee4bc-20454557.jpg)  
+-   输入端：  
+	-   P:点集  
+-   输出端：  
+	-   P:凸多边形/凸多边体的点  
+	-   ID:凸多边形/凸多边体的点序号  
+-   能够得到凸包算法最边缘的点，右键可以选择2D或者3D模式，相当于把Convex Hull和3D ConvexHull的主要功能结合到了一起，注意只有当点集不在同一平面时，才可以切换3D模式，否则无法勾选。![](https://api2.mubu.com/v3/document_image/9b2afbea-5973-42b9-a8ed-9b3384c27756-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8cbbc460-3ac0-4e96-b029-5e8cecb9c53c-20454557.jpg)  
+-   「[[Quad Remesh\|Quad Remesh]]」以四边面重构网格![](https://api2.mubu.com/v3/document_image/95fae530-16f3-4412-a6c8-e396350b53d9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f01dbc38-605d-4340-9223-44e90e2f0ac5-20454557.jpg)  
+-   输入端：  
+	-   M：要重构的网格  
+	-   G：指导曲线  
+	-   S：网格重构设置  
+-   输出端：  
+	-   Q：只有四边面的重构网格  
+-   非常厉害的一个电池，可以将无序的网格重构为均匀且全为四边面的网格，结合S端的重构设置更加强大。![](https://api2.mubu.com/v3/document_image/4c7a5d6b-59fa-4a28-8148-f1a9eac607da-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5da9e2f1-723e-4a47-91a0-1622f1ea3471-20454557.jpg)  
+-   G端的输入曲线可以使网格按照曲线走向进行重构，与网格贴合的曲线更准确。![](https://api2.mubu.com/v3/document_image/1075d9a7-1fd1-4c9a-bd02-cd765769aee0-20454557.jpg)  
+-   「[[Quad Remesh Settings\|Quad Remesh Settings]]」四边重构网格设置![](https://api2.mubu.com/v3/document_image/61031f42-0e3f-4263-abbc-81724130fe7b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/937a55a1-3449-4e09-9a20-6f72f5c4f64e-20454557.jpg)  
+-   输入端：  
+	-   Tc：重构网格的四边面数量  
+	-   As：四边面尺寸受曲率影响程度（0—100，值越大，曲率大的地方网格越密）  
+	-   Ac：是否允许在曲率大的地方生成较密网格  
+	-   He：是否保留锐边  
+	-   Se：是否保留Brep边缘（0=Off，1=Smart，2=Strict）  
+	-   Sy：对称轴（0=none，1=X，2=Y，3=Z）  
+	-   Gc：指导曲线影响设置（0=approximate，1=edge-ring，2=edge-loop）  
+-   输出端：  
+	-   S：网格设置结果  
+-   结合Quad Remesh对网格进行重构，各输入端具体演示为：  
+-   Tc值越大，四边网格面越多。![](https://api2.mubu.com/v3/document_image/c577b5e9-75a1-4b1b-a31a-f9099bb35918-20454557.jpg)  
+-   As值越大，曲率越大的地方网格就越密。![](https://api2.mubu.com/v3/document_image/bc7e55d3-68b5-4de2-9379-500e0360b366-20454557.jpg)  
+-   Ac与As搭配使用，当为True时，As才会起作用。![](https://api2.mubu.com/v3/document_image/65a7455a-39ea-40e4-b20b-f98c6744d8ec-20454557.jpg)  
+-   He控制是否保留原Mesh网格的锐边，True为保留。![](https://api2.mubu.com/v3/document_image/4fca5d5a-6e90-4b3a-860a-25c6cd215194-20454557.jpg)  
+-   Se控制Brep边缘  
+-   Sy用来调整网格分布根据哪个轴来进行对称。![](https://api2.mubu.com/v3/document_image/4802b180-bcbb-43e8-b56a-e8793f4b8c84-20454557.jpg)  
+-   Gc针对Quad Remesh的G输入端，approximate（指导曲线对结果的影响很小），edge-ring（指导曲线对结果有较大的影响），edge-loop（指导曲线对结果的影响最大）。![](https://api2.mubu.com/v3/document_image/fbde1ab8-ca2f-4c16-b0b2-7ea76fafe8d4-20454557.jpg)  
+-   「[[TriRemesh\|TriRemesh]]」以三角面重构网格![](https://api2.mubu.com/v3/document_image/7f87e186-450d-4c26-8412-b940105cd542-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e74d3a49-642a-4719-a727-5fa5dfc12091-20454557.jpg)  
+-   输入端：  
+	-   Geometry：几何物件（网格、Brep、曲面、闭合曲线）  
+	-   Target：目标网格  
+	-   Sharp：是否保留锐边  
+	-   Features：内部网格要对齐的线或点  
+	-   Length：重构后三角网格和对偶网格边长  
+	-   Iters：重构迭代次数（0为不迭代，默认值为25）  
+-   输出端：  
+	-   T：重构后的三角面网格  
+	-   D：重构后的对偶网格（Ngon）  
+	-   C：重构网格锐边  
+-   可以将网格、Brep、曲面或闭合曲线转化为均匀的三角面网格或对偶网格：  
+-   三角面网格——5-6-7三角面网格，每个内部顶点都被 5、6 或 7 个三角形包围  
+-   对偶网格——主要由六边形构成，少量五边形和七边形![](https://api2.mubu.com/v3/document_image/b9d3a556-cfe1-4067-b952-b76346ccab3a-20454557.jpg)  
+-   Target端一般用于修复有问题网格（例如包含非流行边缘或重复面），即可以用一个新网格对目标网格进行包裹计算，从而生成近似形体。![](https://api2.mubu.com/v3/document_image/644c9708-cbf0-4fef-9a36-d22ba8395221-20454557.jpg)  
+-   Sharp端指是否保留原几何物件中的锐边。![](https://api2.mubu.com/v3/document_image/770c5d1b-fb03-425f-abeb-3b1aa78e4a46-20454557.jpg)  
+-   Features端可以让内部的网格尽可能贴合输入的曲线或点。![](https://api2.mubu.com/v3/document_image/1480da53-51ab-43de-9963-1aaa44141162-20454557.jpg)  
+## Util 网格实用  
+-   Mesh类的Util组，网格相关的实用工具运算器。![](https://api2.mubu.com/v3/document_image/2c12df9a-9d42-4a1c-91c3-e4c9d5341809-20454557.jpg)  
+-   「[[Mesh Brep\|Mesh Brep]]」Brep转网格![](https://api2.mubu.com/v3/document_image/ef1c15b9-9ac8-4b04-9875-79762cfcf26a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/68638678-bb4f-449b-ba87-fa8e511fbc52-20454557.jpg)  
+-   输入端：  
+	-   B：Brep  
+	-   S：设置  
+-   输出端：  
+	-   M：网格  
+-   将Brep转化成网格，S端可以对网格进行设置，这个设置端涉及的网格相关知识点很多，我们之后在电池Settings（Custom）中详细解释。![](https://api2.mubu.com/v3/document_image/4acdb699-92d9-4db2-9dd8-ee14738b8287-20454557.jpg)  
+-   【插件MeshEdit】「[[Mesh FromPoints\|Mesh FromPoints]]」点阵生成网格![](https://api2.mubu.com/v3/document_image/3170133e-a565-4f11-8554-56d33ac86d06-20454557.jpg)  
+-   输入端：  
+	-   P：有序网格点  
+	-   U：U方向点个数  
+	-   V：V方向点个数  
+	-   C：网格点颜色  
+-   输出端：  
+	-   M：网格  
+-   和Surface From Points类似，通过一个有序网格点阵生成网格面，区别是这个电池可以输入UV两个方向的点数，C端可以输入每个点的颜色给网格面上色。![](https://api2.mubu.com/v3/document_image/c42fdc57-d511-4829-b0b8-f5c7d993e825-20454557.jpg)  
+-   「[[Mesh Surface\|Mesh Surface]]」曲面转网格![](https://api2.mubu.com/v3/document_image/d55c8125-9ce7-47db-ae63-111b2b9db09a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e774cb9d-da99-4389-8075-37d4dd77ffe4-20454557.jpg)  
+-   输入端：  
+-   S:曲面  
+	-   U:U方向网格个数  
+	-   V:V方向网格个数  
+	-   H:是否允许网格超过修剪边缘  
+	-   Q:是否调整网格大小尽可能接近  
+-   输出端：  
+	-   M:网格  
+-   H端主要针对输入修剪曲面的情况，当为True时，网格可以超过修剪边缘，当为Falsel时，网格不超过修剪边缘。![](https://api2.mubu.com/v3/document_image/e2dccdaf-17ee-41fc-b406-41b5599814f2-20454557.jpg)  
+-   Q端主要针对输入曲面为非平面的情况，当为True时，网格会自动调整到近似大小，当为Falsel时，一般曲率较大处网格较小。![](https://api2.mubu.com/v3/document_image/73c807d9-ad1a-423e-821f-744e9160af48-20454557.jpg)  
+-   「[[Settings (Custom)\|Settings (Custom)]]」网格设置（自定义）![](https://api2.mubu.com/v3/document_image/1b6c7d8a-6f8e-4c84-afe1-b43e597f710e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3d067b47-a415-45bb-8107-3a46561f55fb-20454557.jpg)  
+-   输入端：  
+	-   Stitch：是否对齐接缝  
+	-   Planes：是否平面最简化  
+	-   Refne：是否精细化网格  
+	-   Min：起始四角网格面最小数量  
+	-   Max：起始四角网格面最大数量  
+	-   Aspect：起始四角网格面最大长宽比  
+	-   Max Dist：边缘至曲面的最大距离  
+	-   Max Angle：相邻面法向夹角最大角度（角度制）  
+	-   Min Edge：最小边缘长度  
+	-   Max Edge：最大边缘长度  
+-   输出端：  
+	-   S：设置值  
+-   对应Rhino中网格转换设置中的各选项。![](https://api2.mubu.com/v3/document_image/15acae3b-6399-48a3-a4bd-0f31e2fdcc0e-20454557.jpg)  
+-   配合Mesh Brep使用，简单解释一下各设置值含义：  
+-   对齐接缝。若为True，相邻两面的结构线会全部进行配对连接。![](https://api2.mubu.com/v3/document_image/2b08d6e7-4041-4ff1-8a60-c1536b8806c1-20454557.jpg)  
+-   平面最简化。若为True，会删除平面网格内部的结构线。![](https://api2.mubu.com/v3/document_image/768fc7f0-b84f-49f1-bf23-013fc3811e82-20454557.jpg)  
+-   精细化网格。若为True，对不满足公差的部分进行自动化补面精细化处理。![](https://api2.mubu.com/v3/document_image/373b9de4-f67e-4fbf-a115-08c1a68fa384-20454557.jpg)  
+-   起始四角网格面数量最大最小值。最大值貌似不怎么起作用。![](https://api2.mubu.com/v3/document_image/0cfb0c27-c6cd-4ef8-9f44-4b63d482d975-20454557.jpg)  
+-   起始四角网格面最大长宽比。控制四角网格面的长宽比。![](https://api2.mubu.com/v3/document_image/e0c2f449-cc35-443d-b6a3-489eb23cce04-20454557.jpg)  
+-   边缘至曲面的最大距离。指每条边缘中点到原Brep的距离，反应了生成Mesh相对原Brep的精度，值越小，精度越高。![](https://api2.mubu.com/v3/document_image/6344b6d8-ff4e-48bc-99db-eafc6767e8b6-20454557.jpg)  
+-   最大角度。指相邻面法向方向夹角的最大角度，值越小，网格精度越高。![](https://api2.mubu.com/v3/document_image/689718ee-7906-44b5-b279-5bbffc0d7298-20454557.jpg)  
+-   边缘最大最小长度。最小值貌似不怎么起作用。![](https://api2.mubu.com/v3/document_image/86a1ab63-55db-48e1-8e87-c47708fd57fa-20454557.jpg)  
+-   「[[Settings (Quality)\|Settings (Quality)]]」网格设置（质量）![](https://api2.mubu.com/v3/document_image/e047fbf6-842c-446d-b98e-0a422d6996ec-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d1f09914-7585-49ee-9b14-210300e84439-20454557.jpg)  
+-   配合Mesh Brep使用，由于Settings(Custom)中的设置值太多，所以提供了简易设置选项，这个可以提供精度较高的网格，但生成速度可能不够快。  
+-   「[[Settings (Speed)\|Settings (Speed)]]」网格设置（速度）![](https://api2.mubu.com/v3/document_image/496d5dc2-93f8-4482-a8b1-895055ec4829-20454557.jpg)![](https://api2.mubu.com/v3/document_image/03c958b1-4a8e-455a-bcd7-7e424131155a-20454557.jpg)  
+-   配合Mesh Brep使用，由于Settings(Custom)中的设置值太多，所以提供了简易设置选项，这个可以提供速度较快的网格生成，但网格精度可能不够快高。  
+-   「[[Simple Mesh\|Simple Mesh]]」最简网格![](https://api2.mubu.com/v3/document_image/730216e5-dc82-414b-9b3d-aed48f14a100-20454557.jpg)![](https://api2.mubu.com/v3/document_image/77cf2ce1-52e0-4229-aac9-96e3c1d0cb92-20454557.jpg)  
+-   输入端：  
+	-   B：Brep（三角面或四角面构成）  
+-   输出端：  
+	-   M：网格  
+-   主要针对的是由三角面或四角面构成的Brep，直接提取各顶点生成一个无结构线的最简Mesh网格。多边形平面或曲面都无法准确还原输入的Brep形体。![](https://api2.mubu.com/v3/document_image/12582d66-c40f-40b5-8083-7d77d75ea58c-20454557.jpg)  
+-   「[[Blur Mesh\|Blur Mesh]]」网格模糊着色![](https://api2.mubu.com/v3/document_image/a220c57c-0299-4a06-97ed-d786176f282b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/72900e8f-6368-44d5-b8a1-51a7d0f488a9-20454557.jpg)  
+-   输入端：  
+	-   M:着色网格  
+	-   I:迭代次数  
+-   输出端：  
+	-   M:模糊后的网格  
+-   可以使颜色过渡的更加柔和，迭代次数越多越柔和，但饱和度也会降低。![](https://api2.mubu.com/v3/document_image/292d75b7-ab93-4f88-afde-01d4380f560d-20454557.jpg)  
+-   「[[Cull Faces\|Cull Faces]]」布尔删除网格面![](https://api2.mubu.com/v3/document_image/62477124-b17e-4b5d-b821-0d5f47f7a2b7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/808008b3-b472-4e0d-a157-52aaed8a8954-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+	-   P:删除方式（布尔值）  
+-   输出端：  
+	-   M:被删除的网格面  
+-   根据P端输入的布尔值进行删除，False为删除，True为保留，注意输出端输出的是删除的网格，即False端对应的网格。这个运算器的逻辑稍微有点别扭，简单可以理解为筛选出Flse端网格。![](https://api2.mubu.com/v3/document_image/93d7bcff-fe29-4663-a0cc-3ad8e7afcad3-20454557.jpg)  
+-   「[[Cull Vertices\|Cull Vertices]]」布尔删除顶点![](https://api2.mubu.com/v3/document_image/e2d8d980-22f1-4384-bef1-50d2711f0e60-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d1633f53-43cf-454e-96b8-d7602914794b-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+	-   P:删除方式（布尔值）  
+	-   S:是否允许生成三角网格  
+-   输出端：  
+	-   M:被删除网格顶点构成的网格  
+-   根据P端输入的布尔值进行删除，False为删除，True为保留，注意输出端输出的是由被删除点构成的网格，即False端点对应的网格。这个运算器的逻辑稍微有点别扭，简单可以理解为筛选出False端点并构成网格。S端控制是否允许生成三角网格。![](https://api2.mubu.com/v3/document_image/a6289d9d-fdd7-4389-bf24-df6936559411-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b71dc820-28ec-426b-83cd-ea0f0ba6ec65-20454557.jpg)  
+-   「[[Delete Faces\|Delete Faces]]」按序号删除网格面![](https://api2.mubu.com/v3/document_image/eb660e3f-e298-4770-a9f5-5a6333c72591-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e1b414d6-bf53-429f-aace-c06af68c4318-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+	-   I:面序号  
+-   输出端：  
+	-   M:删除后剩余的网格面  
+-   删除指定序号的网格面，输出剩余的。![](https://api2.mubu.com/v3/document_image/3555293e-bd79-473b-95bb-035fb50a1e2d-20454557.jpg)  
+-   「[[Delete Vertices\|Delete Vertices]]」按序号删除点![](https://api2.mubu.com/v3/document_image/8edee93b-3572-4597-a137-326e2c102ece-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1e5a1319-d965-4ccb-bbb3-96c3aef511ad-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+	-   I:顶点序号  
+	-   S:是否允许生成三角网格  
+-   输出端：  
+	-   M:删除后剩余顶点构成的网格  
+-   删除指定序号的顶点，并将剩余顶点构成网格。S端控制是否允许生成三角网格。![](https://api2.mubu.com/v3/document_image/a666055e-92c3-4092-a5db-27268b0a3498-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4bf571e6-f058-4527-950e-e63eead9e429-20454557.jpg)  
+-   「[[Disjoint Mesh\|Disjoint Mesh]]」拆分网格![](https://api2.mubu.com/v3/document_image/72d9e0f9-5632-4eaa-be23-7c2efd8b138e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8d5efa4f-49f3-4a22-b5dc-e2d6efc99344-20454557.jpg)  
+-   输入端：  
+	-   M：网格  
+-   输出端：  
+	-   M：拆分后的网格  
+-   和Mesh Join相对应，将合并网格拆分成单独网格。需要注意的是，当合并的网格有完全重合的边或面时，无法拆分。![](https://api2.mubu.com/v3/document_image/447714d8-8ee1-41d9-a29f-bc7e137e5ed2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0efdc4c6-0550-4bd7-bac1-fce6937f9767-20454557.jpg)  
+-   「[[Mesh Join\|Mesh Join]]」合并网格![](https://api2.mubu.com/v3/document_image/b1df94db-7a5f-4283-9606-13e117f2dc2f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/472ad6df-4c6f-4000-b344-f0a507695b75-20454557.jpg)  
+-   输入端：  
+	-   M：网格  
+-   输出端：  
+	-   M：合并后的网格  
+-   网格的合并不像Brep Join需要曲面相接才能组合，不相接的网格也可以合并，多个网格合并成一个网格后会大大节省内存，提升显示速度。![](https://api2.mubu.com/v3/document_image/de4bbd2c-1f21-491c-8578-e7e1a7577a89-20454557.jpg)  
+-   注意网格的合并只是简单的组合，并不会焊接重合顶点。![](https://api2.mubu.com/v3/document_image/438f11d9-6125-4bb7-8abd-6faf1fca9448-20454557.jpg)  
+-   「[[Mesh Shadow\|Mesh Shadow]]」网格阴影![](https://api2.mubu.com/v3/document_image/f5eec529-eabd-4244-a2ac-1e92c3f4f3f8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0db4b6f2-3228-4f58-ab07-617a30180228-20454557.jpg)  
+-   输入端：  
+	-   M：网格  
+	-   L：光线方向  
+	-   P：接收阴影平面  
+-   输出端：  
+	-   O：阴影轮廓线  
+-   多个网格若单独输入，得到的是各自的阴影轮廓线，若将多个网格合并后输入，得到的是整体的阴影轮廓线。![](https://api2.mubu.com/v3/document_image/2659a8ee-89db-4a0b-b6af-434b538d4d93-20454557.jpg)  
+-   「[[Mesh Split Plane\|Mesh Split Plane]]」工作平面分割网格![](https://api2.mubu.com/v3/document_image/46c44fce-1a1f-462d-87e2-763090be0d0a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7a80e22c-c69b-485e-85f1-fb3d718f75e9-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+	-   P:光线方向  
+-   输出端：  
+	-   A:网格A  
+	-   B:网格B  
+-   用工作平面将网格分成A和B两个部分。![](https://api2.mubu.com/v3/document_image/9ce76e05-2060-46b1-9ea4-b5c10d7fce06-20454557.jpg)  
+-   「[[Smooth Mesh\|Smooth Mesh]]」柔化网格![](https://api2.mubu.com/v3/document_image/31addb9b-ba56-4e5e-a09c-7b9c8b0eff16-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d5c49a35-0191-4b75-b465-10094ae6849f-20454557.jpg)  
+-   输入端：  
+	-   M：网格  
+	-   S：柔化强度（0—1）  
+	-   N：是否保留网格裸露角点（True=保留原网格角点 False=不保留原网格角点）  
+	-   I：迭代次数  
+	-   L：顶点偏移最大距离  
+-   输出端：  
+	-   M：柔化后网格  
+-   将网格柔化，有点类似于Smooth Polyline。![](https://api2.mubu.com/v3/document_image/81426195-3af5-4a5a-86de-efeaed635462-20454557.jpg)  
+-   输入端N注释的是“Skip naked vertices”，是否忽略裸露顶点，实际效果为，当输入True时，柔化网格会保持原网格角点和边缘形状，当为False时，不会保持。![](https://api2.mubu.com/v3/document_image/8c3018a7-bf87-495f-b3dd-fcaa21534249-20454557.jpg)![](https://api2.mubu.com/v3/document_image/834abda8-7a26-44b5-971b-b919464a21fc-20454557.jpg)  
+-   「[[Align Vertices\|Align Vertices]]」校准网格顶点![](https://api2.mubu.com/v3/document_image/0aa3b47a-e3fa-47dc-8509-8e394df7aec9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/62b1901c-3988-44d2-ae3c-d6bdd87ea307-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+	-   T:公差  
+-   输出端：  
+	-   R:校准后网格  
+	-   N:被校准的顶点个数  
+-   可以将网格内距离在公差内的顶点校准移动到同一点，移动规则是序号大的点向序号小的点移动，注意只是移动位置至重合，并没有合并顶点。![](https://api2.mubu.com/v3/document_image/1b1006af-b5a0-47e4-9283-82bf23f81988-20454557.jpg)![](https://api2.mubu.com/v3/document_image/45d6574f-6e26-42c2-bba3-70c8ee7e8c58-20454557.jpg)  
+-   要注意多个重合顶点一起被校准的情况。例如下图两个例子中，图一的输出端N值为1(1个点被校准)，图二的输出端N值为2(2个点被校准，因为重合了所以容易看不出)。![](https://api2.mubu.com/v3/document_image/2362a8b6-87ec-415b-a409-90b10104dd39-20454557.jpg)  
+-   「[[Flip Mesh\|Flip Mesh]]」反转网格方向![](https://api2.mubu.com/v3/document_image/1c82c154-1206-41e9-b340-862adf984949-20454557.jpg)![](https://api2.mubu.com/v3/document_image/581165bf-1d65-4134-8c1b-0bddd80cd46e-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+	-   Vn:是否翻转顶点法向  
+	-   Fn:是否翻转面法向  
+	-   Fo:是否翻转面方向  
+-   输出端：  
+	-   R:翻转后网格  
+-   翻转网格顶点或面的法向方向。感觉F和Fo的作用有点重复，也或许是我没搞清，就目前来说，Fn用布尔值无法控制，True和False都是翻转面法向。![](https://api2.mubu.com/v3/document_image/3b05313c-3c54-44e3-adf7-66ce7af15270-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c71557b2-aa27-4906-94e6-06456fbb5942-20454557.jpg)  
+-   【插件MeshEdit】「[[Mesh CullUnused Vertices\|Mesh CullUnused Vertices]]」清楚网格未使用顶点![](https://api2.mubu.com/v3/document_image/dd22dd2f-8023-4362-bba8-5921d1f972d2-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+-   输出端  
+	-   M:清除后的网格  
+-   可以清掉没有被Face序号列用到的序号点。![](https://api2.mubu.com/v3/document_image/e5421c17-a1a9-486a-9e78-bbf4aa70e666-20454557.jpg)  
+-   【插件MeshEdit】「[[Mesh Flip\|Mesh Flip]]」反转网格![](https://api2.mubu.com/v3/document_image/710e0322-1266-4de9-a0ca-eb29380a1e05-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+-   输出端：  
+	-   M:翻转后的网格  
+-   和Flip Mesh,用法一样，只不过顶点和面是整体翻转，不能单独控制。![](https://api2.mubu.com/v3/document_image/87ef6656-0f0e-47d1-ba47-d2e1ce8c9f4d-20454557.jpg)  
+-   【插件MeshEdit】「[[Mesh UnifyNormals\|Mesh UnifyNormals]]」统一网格法向![](https://api2.mubu.com/v3/document_image/5fe14053-8013-4f21-a2a3-e72e044a30d5-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+-   输出端：  
+	-   M:统一法向后的网格  
+-   和Unify Meshi运算器功能一样，将网格的面法向统一成一个方向，也可以理解为将所有面翻转成同一个方问。![](https://api2.mubu.com/v3/document_image/52021435-e5c8-4dcf-b97c-1159e1aa2594-20454557.jpg)  
+-   【插件MeshEdit】「[[Mesh Weldvertices\|Mesh Weldvertices]]」焊接网格顶点![](https://api2.mubu.com/v3/document_image/e79fc29d-3bbd-4fea-9c29-1f58a8ed2647-20454557.jpg)  
+-   输入端：  
+	-   M：网格  
+	-   t：公差  
+-   输出端：  
+	-   out：Print/Reflect/Error信息  
+	-   M：焊接顶点后的网格  
+-   将相距在公差距离内的点焊接合并成为一个顶点。![](https://api2.mubu.com/v3/document_image/f0cbe007-d1bd-43a1-b312-e2b8d60c78ae-20454557.jpg)  
+-   焊接后的网格面，将只具有结构线框，而不具有每个小面的边缘线。网格的结构线框类似曲面的UV结构线。焊接前每一个小面都是独立的网格，具有各自的边缘，而焊接后成为了整体就只有整体的边缘了。![](https://api2.mubu.com/v3/document_image/154cca92-e969-47e9-bad6-aad794ebdb66-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6d97e771-4f9b-4da9-a344-cd04d4eb6ed8-20454557.jpg)  
+-   焊接后，网格显示和渲染效果都会更加柔滑，且运算速度也更快。![](https://api2.mubu.com/v3/document_image/826aa69b-5676-499b-857f-cdd212583eaa-20454557.jpg)  
+-   「[[Quadrangulate\|Quadrangulate]]」四边化网格![](https://api2.mubu.com/v3/document_image/7f0ab64b-5683-4d8a-9925-9a15f35d4662-20454557.jpg)![](https://api2.mubu.com/v3/document_image/510561af-7c87-480c-a1ef-e5ba2dd6c341-20454557.jpg)  
+-   输入端：  
+	-   M:三角面网格  
+	-   A:三角面扭转角阈值(弧度制，超过该阈值将不进行组合四边化)  
+	-   R:四边面较短对角线和较长对角线比值阈值（超过该阈值将不生成四边面）  
+-   输出端  
+	-   M:四边化后的网格  
+	-   N:被四边化的三角面数量  
+-   输入端A的三角面扭转角，指两个三角平面的夹角（三角面都是平面）。![](https://api2.mubu.com/v3/document_image/ff053faa-b2ad-4bab-96b1-9afffe68ef6b-20454557.jpg)  
+-   「[[Triangulate\|Triangulate]]」三角化网格![](https://api2.mubu.com/v3/document_image/cbedac8a-5e92-4cdf-a4e4-80dd0192a195-20454557.jpg)![](https://api2.mubu.com/v3/document_image/02752f79-ef9b-413c-9d9b-27dacb7dd9fc-20454557.jpg)  
+-   输入端：  
+	-   M:四边面网格  
+-   输出端：  
+	-   M:三角化后的网格  
+	-   N:被三角化的四边面数量  
+-   和Quadrangulate相对应，可以将四边面网格转化为三角面网格。![](https://api2.mubu.com/v3/document_image/a8435573-69f6-4a04-a041-6ba6f17b13b2-20454557.jpg)  
+-   「[[Unify Mesh\|Unify Mesh]]」统一网格法向![](https://api2.mubu.com/v3/document_image/2f702318-63c5-480d-89be-a1029c4bdb38-20454557.jpg)![](https://api2.mubu.com/v3/document_image/af0b95a3-32fb-4c47-b940-1b054b02b80f-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+-   输出端：  
+	-   M:统一法向后的网格  
+	-   N:被翻转的网格面数量  
+-   和Mesh UnifyNormals这个插件运算器功能一样，能够将网格每个小面的法向统一一致。![](https://api2.mubu.com/v3/document_image/afefe3fa-74ac-4f86-9863-303020524b59-20454557.jpg)  
+-   「[[Unweld Mesh\|Unweld Mesh]]」取消网格焊接![](https://api2.mubu.com/v3/document_image/828673bb-6c37-4b07-8bf1-858b7c9dc8a5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/998f8d66-07bc-4c5c-a6f3-17b0dcff17e3-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+	-   A:取消焊接最小角度(弧度制，0一π)  
+-   输出端：  
+	-   R:取消焊接后的网格  
+-   和Weld Mesh是对应运算器，取消焊接角度指两个面中心点法线方向夹角，大于等于A端值的面取消焊接，最小为0，也就是说当A端为0时，所有面都会被取消焊接。焊接其实就是将重合的边和点合并，关于焊接知识具体可参考。![](https://api2.mubu.com/v3/document_image/456d2c2f-fff0-400f-99cc-3c36050fc1d2-20454557.jpg)  
+-   「[[Weld Mesh\|Weld Mesh]]」网格焊接![](https://api2.mubu.com/v3/document_image/ad37944b-f214-43fb-9da4-1db5e5a4925d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/068a6f21-0988-4196-8b25-ef6d463d423a-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+	-   A:焊接最大角度(弧度制，0一π)  
+-   输出端：  
+	-   R:焊接后的网格  
+-   焊接角度指两个面中心点法线方向夹角，小于等于A端值的面焊接，最大为π，也就是说当A端为π时，所有网格都会被焊接。焊接其实就是将重合的边和点合并，关于焊接知识具体可参考点2、3、4>。![](https://api2.mubu.com/v3/document_image/e9b21879-362b-4650-a043-16531d096882-20454557.jpg)  
+-   「[[Exposure\|Exposure]]」网格日照辐射量计算![](https://api2.mubu.com/v3/document_image/829319bf-877c-4287-9e0f-e792377fda6c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3e5a7102-f573-4b34-93ab-33180cac38ec-20454557.jpg)  
+-   输入端：  
+	-   S:接收计算结果的网格（可视为地形）  
+	-   O:光线遮挡网格（可视为建筑等物体）  
+	-   R:光线方向  
+	-   E:光线强度值  
+	-   L:是否遵循Lambertian（朗伯定律）  
+-   输出端：  
+	-   E:辐射计算结果  
+	-   R:辐射量范围  
+-   端输出的是S端网格各顶点辐射量，S端网格细分越高，计算的结果越精确。L端朗伯定律简单来说就是，相同的光线强度值下，太阳越高，辐射量越小，反之越大。![](https://api2.mubu.com/v3/document_image/186600c8-2738-4fc4-81a0-3d15905b4d7c-20454557.jpg)  
+-   「[[Occlusion\|Occlusion]]」网格视线遮挡计算![](https://api2.mubu.com/v3/document_image/202f4837-308b-45d3-a9a8-f77b0c1fcb91-20454557.jpg)![](https://api2.mubu.com/v3/document_image/33afd1da-ad01-4037-9376-5bdcb18ed1fb-20454557.jpg)  
+-   输入端：  
+	-   S:接收计算结果的采样点  
+	-   O:视线遮挡网格（可视为建筑等物体）  
+	-   R:视线方向  
+-   输出端：  
+	-   H:每个采样点被遮挡的视线数量  
+	-   O:每个采样点是否有视线被遮挡的拓扑关系  
+-   该运算器可判断多视线方向的可见关系，比如下面的例子，输入两个视线方向，每个采样点有三种可能结果(有0个视线被遮挡，有1个视线被遮挡，有2个视线被遮挡)，通过逻辑关系，我们可以定义有2个视线被遮挡的点(即O输出端2个拓扑均为True)为不可见点。![](https://api2.mubu.com/v3/document_image/72d3c5fc-92af-4032-b48e-a0fa6a49511a-20454557.jpg)  
+# Intersect 交错  
+## Mathematioal 线面交错  
+-   Intersect类的Mathematical组，求交线和交点的运算器![](https://api2.mubu.com/v3/document_image/7a60568b-6a72-42c7-82a5-84c378e24acc-20454557.jpg)  
+-   「[[Brep │ Line\|Brep │ Line]]」Brep和直线相交![](https://api2.mubu.com/v3/document_image/646073d4-e006-4f62-be79-91584c84c325-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c24b84e3-6ab4-454c-a7c0-51cbb98867de-20454557.jpg)  
+-   输入端：  
+	-   B：Brep  
+	-   L：直线  
+-   输出端：  
+	-   C：直线和Brep重叠部分的曲线  
+	-   P：相交点  
+-   求Brep和直线的相交，要么是一个点，要么是一条线。![](https://api2.mubu.com/v3/document_image/048db552-6857-4fd3-a25f-a1764977e7ff-20454557.jpg)  
+-   「[[Curve │ Line\|Curve │ Line]]」曲线和直线相交![](https://api2.mubu.com/v3/document_image/3e1b7859-0247-457f-97a3-c931a708d2c8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c3bae3a3-8c29-4478-a752-6fbf236e65c0-20454557.jpg)  
+-   输入端：  
+	-   C：曲线  
+	-   L：直线  
+-   输出端：  
+	-   P：交点  
+	-   t：交点在曲线C上的参数t值  
+	-   N：交点个数  
+-   求曲线和直线的交点，右键勾选“Limit To First”后，可以只求第一个交点。![](https://api2.mubu.com/v3/document_image/6253e4fd-6e28-430c-b797-78978d8eb4b1-20454557.jpg)  
+-   「[[Line │ Line\|Line │ Line]]」直线和直线相交![](https://api2.mubu.com/v3/document_image/a5021e0e-d5bb-43f6-9689-9551f10494e5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/db1374db-b761-4651-83cf-f01f5d061f73-20454557.jpg)  
+-   输入端：  
+	-   A:直线A  
+	-   B:直线B  
+-   输出端：  
+	-   tA:交点在直线A的参数t值  
+	-   tB:交点在直线B的参数t值  
+	-   PA:交点在直线A上的点  
+	-   pB:交点在直线B上的点  
+-   求直线和直线的交点。![](https://api2.mubu.com/v3/document_image/ac87a541-95c9-4e35-bc49-2e3566d95078-20454557.jpg)  
+-   「[[Mesh │ Ray\|Mesh │ Ray]]」网格和射线相交![](https://api2.mubu.com/v3/document_image/77e5f479-97aa-40b6-9a7a-9525d8859232-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b842bfe6-7e8e-4c63-a0a6-b861a7963120-20454557.jpg)  
+-   输入端：  
+	-   M：网格  
+	-   P：射线起点  
+	-   D：射线方向  
+-   输出端：  
+	-   X：射线和网格的第一个交点  
+	-   H：相交结果，有交点为True，无交点为False  
+-   需要注意的是即使有两个交点X端返回的也只有第一个交点，有点类似Ray这个单词，背光的一面是照不到的。![](https://api2.mubu.com/v3/document_image/34de05f6-580d-4c9a-a36f-d7722f40d25c-20454557.jpg)  
+-   「[[Surface │ Line\|Surface │ Line]]」曲面和直线相交![](https://api2.mubu.com/v3/document_image/d5b553cd-f35e-471e-b706-6697acadd5ee-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b32ab9e8-cd29-4f0a-8359-e07378d5ce4e-20454557.jpg)  
+-   输入端：  
+	-   S：曲面  
+	-   L：直线  
+-   输出端：  
+	-   C：直线和曲面重叠部分的曲线  
+	-   P：相交点  
+	-   uv：相交点的uv坐标  
+	-   N：相交点处的法向方向  
+-   求曲面和直线的相交，要么是一个点，要么是一条线段。![](https://api2.mubu.com/v3/document_image/ce93f730-33be-45ef-a148-4a019937e4f6-20454557.jpg)  
+-   「[[Brep │ Plane\|Brep │ Plane]]」Brep和平面相交![](https://api2.mubu.com/v3/document_image/2078dd40-ad9e-426d-9cca-8c676621a9f0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5ee2d2b8-00bb-4b20-8d58-cfb467ba2426-20454557.jpg)  
+-   输入端：  
+	-   B:Brep  
+	-   P:平面  
+-   输出端：  
+	-   C:相交曲线  
+	-   P:相交点  
+-   实操中输出P端的相交点不会报错，但却输不出内容，不知道是不是bug。![](https://api2.mubu.com/v3/document_image/01ad8b05-1aef-475f-97cc-9a5a324cb547-20454557.jpg)  
+-   「[[Contour\|Contour]]」等距断面线![](https://api2.mubu.com/v3/document_image/ad29d6bd-f258-43b3-85ca-154d7f719b74-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1936e588-6f04-4bc5-a8f5-dc522151fef9-20454557.jpg)  
+-   输入端：  
+	-   S：Brep或网格  
+	-   P：起始点  
+	-   N：方向  
+	-   D：等高距  
+-   输出端：  
+	-   C：曲线  
+-   和Rhino中的等距断面线命令使用方法类似，相同等高距的断面线会被分到同一组。![](https://api2.mubu.com/v3/document_image/a26ce696-9d94-4859-9a1e-0819ed4b7145-20454557.jpg)  
+-   「[[Contour (ex)\|Contour (ex)]]」不等距断面线（高级）![](https://api2.mubu.com/v3/document_image/97e74c1f-269f-4cb2-942f-f5af39e001c7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ef8b07a6-595d-4121-9a77-5fb30eeb09d7-20454557.jpg)  
+-   输入端：  
+	-   S:Brep或网格  
+	-   P:工作平面  
+	-   O:等距偏移距离  
+	-   D:递增偏移距离  
+-   输出端：  
+	-   C:断面线  
+-   Intersect类Mathematical组的Contouri运算器只能等距取断面线，而这个加强版可以不等距取断面线。相当于用P端输入的工作平面偏移和S端几何物件产生交线，有两种方式，只能选择其一：  
+	-   (1)O端等距偏移断面线一每次偏移距离都是从起始切平面开始计算  
+	-   (2)D端递增偏移断面线每次偏移距离从上一个切平面开始计算![](https://api2.mubu.com/v3/document_image/c6ca25a4-e312-45e0-a91b-9b951c3f52b0-20454557.jpg)  
+-   「[[Curve │ Plane\|Curve │ Plane]]」曲线和工作平面相交![](https://api2.mubu.com/v3/document_image/8b6b5350-6b6a-499a-8bd4-77a36938986b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cf7b066a-fc21-483d-a612-99c7356779c2-20454557.jpg)  
+-   输入端：  
+	-   C:曲线  
+	-   P:工作平面  
+-   输出端：  
+	-   P:交点  
+	-   t:交点在曲线上的参数t值  
+	-   uV:交点在工作平面的uv坐标  
+-   求工作平面和曲线的交点，输出端为交点在输入的工作平面P中的坐标，注意工作平面是无限的，但只能和曲线本身产生交点，不包括曲线延长线。![](https://api2.mubu.com/v3/document_image/5e86130b-e6c5-42d9-89b0-7e8b52de753d-20454557.jpg)  
+-   「[[Line │ Plane\|Line │ Plane]]」直线和工作平面相交![](https://api2.mubu.com/v3/document_image/6f0619d3-a9dc-4fa2-817c-ea7723a3b78e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0cb96cd6-9583-40c7-ae3b-af9fc0210b7d-20454557.jpg)  
+-   输入端：  
+	-   L:直线  
+	-   P:工作平面  
+-   输出端：  
+	-   P:交点  
+	-   t:交点在直线上的参数t值  
+	-   uV:交点在工作平面的uv坐标  
+-   求直线和工作平面的交点，和Curve/Plane运算器类似，uv输出端为交点在输入的工作平面P中的坐标，不过区别是这个运算器除了和直线本身相交，还可以和直线延长线相交。![](https://api2.mubu.com/v3/document_image/5cfa3288-7e85-4e8a-bb8e-eb3f69085f63-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3aa4722f-5351-4a23-977b-2c6c77378f4d-20454557.jpg)  
+-   「[[Mesh │ Plane\|Mesh │ Plane]]」网格和工作平面相交![](https://api2.mubu.com/v3/document_image/aea7229a-f3b4-440d-a430-343e9405179d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/635899df-cf21-487a-85e3-55aa425f4637-20454557.jpg)  
+-   输入端：  
+	-   M:网格  
+	-   P:工作平面  
+-   输出端：  
+	-   C:交线  
+-   求网格和工作平面的交线。![](https://api2.mubu.com/v3/document_image/151c0a0c-164d-43fb-8599-505db321e44c-20454557.jpg)  
+-   「[[Plane │ Plane\|Plane │ Plane]]」工作平面和工作平面相交![](https://api2.mubu.com/v3/document_image/5ce5feda-0224-4d49-85d4-39a70a2b9f87-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f6246d05-3023-4bcd-96ee-90a1cfd723ff-20454557.jpg)  
+-   输入端：  
+	-   A:工作平面A  
+	-   B:工作平面B  
+-   输出端：  
+	-   L:交线  
+-   求两个工作平面的交线，由于工作平面是无限平面，所以相交线只显示单位长度，因此我们这里求得的交线其实是交线方向。![](https://api2.mubu.com/v3/document_image/0fb36598-874f-4378-af3f-1e9a841da07b-20454557.jpg)  
+-   「[[Plane │ Plane │ Plane\|Plane │ Plane │ Plane]]」三个工作平面相交![](https://api2.mubu.com/v3/document_image/16dd7a30-0f57-4a7d-9962-e01cc2181cce-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d4dd38d6-bce2-4432-8378-3396015488a4-20454557.jpg)  
+-   输入端：  
+	-   A:工作平面A  
+	-   B:工作平面B  
+	-   C:工作平面C  
+-   输出端：  
+	-   Pt:交点  
+	-   AB:工作平面A和B的交线  
+	-   AC:工作平面A和C的交线  
+	-   BC:工作平面B和C的交线  
+-   求三个工作平面的交点和两两交线，由于工作平面是无限平面，所以相交线只显示单位长度，因此我们这里求得的交线其实是交线方向。![](https://api2.mubu.com/v3/document_image/4c215d4a-62f0-469d-8375-7892db63dad6-20454557.jpg)  
+-   「[[Plane Region\|Plane Region]]」工作平面维和区域![](https://api2.mubu.com/v3/document_image/a8445ed8-976b-4435-8d0c-90f3d6b86931-20454557.jpg)![](https://api2.mubu.com/v3/document_image/45161ef3-99f4-4690-8c78-4839c524a8b8-20454557.jpg)  
+-   输入端：  
+	-   P:区域所在平面  
+	-   B:用来围合区域的工作平面  
+-   输出端：  
+	-   R:区域边界线  
+-   根据B端平面与P端平面的相交线，在工作平面P内围合成一个边界区域。![](https://api2.mubu.com/v3/document_image/ccdd0276-8a59-4017-9825-ff870384c37c-20454557.jpg)  
+-   「[[IsoVist\|IsoVist]]」视域模拟![](https://api2.mubu.com/v3/document_image/1f56993f-14a6-4472-ab95-7bab22cf84d6-20454557.jpg)![](https://api2.mubu.com/v3/document_image/91bbeae6-8a0c-4143-82bd-1a3d70a7a2ef-20454557.jpg)  
+-   输入端：  
+	-   P：视线点平面（原点为视线点）  
+	-   N：视线数量  
+	-   R：视线半径  
+	-   O：遮挡物边线  
+-   输出端：  
+	-   P：视线与遮挡物交点  
+	-   D：每条视线的长度  
+	-   I：每条视线发生相交的遮挡物序号（若无遮挡，则输出-1）  
+-   一个模拟视域范围的运算器，注意输入端O虽然容器类型标注的是几何容器，但是经验证只能输入曲线才能得到正确结果。![](https://api2.mubu.com/v3/document_image/9c2c9f74-f353-41df-bc06-a45db8e48331-20454557.jpg)  
+-   「[[IsoVist Ray\|IsoVist Ray]]」视域模拟（加强版）![](https://api2.mubu.com/v3/document_image/ce04d106-4e0c-425b-b3f3-84a28e4054f0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0fd1542b-59f5-4c7d-a9ee-f5a2f5a3e7ff-20454557.jpg)  
+-   输入端：  
+	-   S：视线  
+	-   R：视线半径  
+	-   O：遮挡物（曲线、工作平面、网格、Brep都可以）  
+-   输出端：  
+	-   P：视线与遮挡物交点  
+	-   D：每条视线的长度  
+	-   I：每条视线发生相交的遮挡物序号（若无遮挡，则输出-1）  
+-   比IsoVist运算器加强的不仅是O端的容器类型增加了，而且也从平面视域模拟变为了空间视域模拟。![](https://api2.mubu.com/v3/document_image/d5098d2a-1ac7-4fbe-a134-192370ac34dd-20454557.jpg)  
+## Physioal 实体交错  
+-   Intersect类的Physiacal组，和Mathematical组一样，是求交线和交点的运算器。![](https://api2.mubu.com/v3/document_image/8a58d635-cb26-4c34-a027-40ed8232beb3-20454557.jpg)  
+-   「[[Curve │ Curve\|Curve │ Curve]]」曲线求交点![](https://api2.mubu.com/v3/document_image/2d7ebd01-316f-4576-b96c-e77b9a329b5a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/064715a8-8abe-4cd5-96e5-7da603f11171-20454557.jpg)  
+-   输入端：  
+	-   A：曲线A  
+	-   B：曲线B  
+-   输出端：  
+	-   P：交点  
+	-   tA：交点在曲线A的参数  
+	-   tB：交点在曲线B的参数  
+-   可以将曲线AB右键Reparameterize重新定义，这样tA和tB就可以映射到0-1范围方便处理。![](https://api2.mubu.com/v3/document_image/fcd52df4-223b-458b-8685-59dd9f98831b-20454557.jpg)  
+-   「[[Curve │ Self\|Curve │ Self]]」曲线自交![](https://api2.mubu.com/v3/document_image/9bf78f0d-0b0f-4696-a927-c94ab72f90c0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/45101b5a-e4f1-4011-b550-98071a3acd2a-20454557.jpg)  
+-   输入端：  
+	-   C：曲线  
+-   输出端：  
+	-   P：交点  
+	-   t：交点在曲线的参数t值  
+-   注意单条曲线的每个自交点会按其在曲线的两个位置分别计算一次，所以当有一个交点时，P端和t端会输出两个结果。![](https://api2.mubu.com/v3/document_image/25fd670e-d8f2-478c-9151-24d757621b35-20454557.jpg)  
+-   「[[Multiple Curves\|Multiple Curves]]」多根曲线求交点![](https://api2.mubu.com/v3/document_image/594c4f99-43f3-4f4c-9510-a610d075ea5f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7f479cb0-00a9-407d-badb-7ee225a57924-20454557.jpg)  
+-   输入端：  
+	-   C：多条曲线  
+-   输出端：  
+	-   P：交点  
+	-   iA：各交点对应的第一条曲线  
+	-   iB：各交点对应的第二条曲线  
+	-   tA：各交点在第一条曲线的参数t值  
+	-   tB：各交点在第二条曲线的参数t值  
+-   每个交点的产生都是由两条线产生的，所以iA就代表序号较小的第一条，iB代表序号较大的第二条。![](https://api2.mubu.com/v3/document_image/1121c8a1-d870-48d7-9d29-e0a866b4acfe-20454557.jpg)  
+-   「[[Brep │ Brep\|Brep │ Brep]]」Brep和Brep求交点![](https://api2.mubu.com/v3/document_image/05195c82-7ff2-47ce-a762-9d9fbf3102d1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8cdf2bcf-57ff-4e8a-9529-2901972cc362-20454557.jpg)  
+-   输入端：  
+	-   A：Brep A  
+	-   B：Brep B  
+-   输出端：  
+	-   C：交线  
+	-   P：交点  
+-   和Brep / Plane一样，输出P的交点不会报错但是没有内容。![](https://api2.mubu.com/v3/document_image/74b6fe99-38a9-47b6-9b48-b09c87729c5b-20454557.jpg)  
+-   「[[Brep │ Curve\|Brep │ Curve]]」Brep和曲线求交点![](https://api2.mubu.com/v3/document_image/5bfc4230-1fe6-4aa6-8d80-ebf6583990c3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/210bcd8f-910e-4e9f-ac9e-fe942d1d6929-20454557.jpg)  
+-   输入端：  
+	-   B：Brep  
+	-   C：曲线  
+-   输出端：  
+	-   C：交线  
+	-   P：交点  
+-   求曲线和Brep的交线和交点。![](https://api2.mubu.com/v3/document_image/54ad2c50-72f8-440c-addb-d0fa6968abeb-20454557.jpg)  
+-   「[[Surface │ Curve\|Surface │ Curve]]」曲面和曲线求交点![](https://api2.mubu.com/v3/document_image/7580131e-16bc-490c-8b98-e38f13c35c30-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1c792deb-c3ed-472a-ab83-b20ee1961658-20454557.jpg)  
+-   输入端：  
+	-   S：曲面  
+	-   C：曲线  
+-   输出端：  
+	-   C：交线  
+	-   P：交点  
+	-   uv：交点在曲面的uv坐标  
+	-   N：曲面交点处的法向向量  
+	-   t：交点在曲线的参数t值  
+	-   T：曲线交点处的切向向量  
+-   求曲面和曲线的交线和交点，及相关参数值。![](https://api2.mubu.com/v3/document_image/c2425f14-76dd-4c05-9381-bd4d5c17337f-20454557.jpg)  
+-   「[[Surface Split\|Surface Split]]」分割曲面![](https://api2.mubu.com/v3/document_image/ab966203-9085-417b-a885-74f5edddf815-20454557.jpg)![](https://api2.mubu.com/v3/document_image/94212ac6-c265-4e31-bfbd-bbd88a031772-20454557.jpg)  
+-   输入端：  
+	-   S：曲面  
+	-   C：曲线  
+-   输出端：  
+	-   F：分割后的曲面  
+-   将曲面分割的运算器，一般在SU中，CAD导入后会对平面进行自动分面便于推拉建模，这个命令和该用法类似，将场地CAD导入后对平面进行切割分面。该电池计算量也较大，分面量大的时候要谨慎。![](https://api2.mubu.com/v3/document_image/b1d11475-9fb3-4a5d-8be5-fb20e8855310-20454557.jpg)  
+-   「[[Mesh │ Curve\|Mesh │ Curve]]」网格曲线求交点![](https://api2.mubu.com/v3/document_image/8bf16bce-dd50-4972-9e19-dca96a59197a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/75a6c1bf-d295-4251-b664-2ae8c7344ec3-20454557.jpg)  
+-   输入端：  
+	-   M：网格  
+	-   C：曲线  
+-   输出端：  
+	-   X：交点  
+	-   F：每个交点所在网格面序号  
+-   网格面序号指的是曲面炸开后每个小面所属的序号。![](https://api2.mubu.com/v3/document_image/caead6f0-d0f5-42a0-9254-6d0d189ee3d4-20454557.jpg)  
+-   「[[Mesh │ Mesh\|Mesh │ Mesh]]」网格和网格求交点![](https://api2.mubu.com/v3/document_image/fbddff85-1e0d-4e68-95ad-0b3db2b3ea88-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3b4df104-64d0-4142-8cf1-677ee843ae53-20454557.jpg)  
+-   输入端：  
+	-   A：网格A  
+	-   B：网格B  
+-   输出端：  
+	-   X：交线  
+-   求网格和网格的交线。![](https://api2.mubu.com/v3/document_image/a6476765-5949-4568-bba7-010c46600983-20454557.jpg)  
+-   「[[Clash\|Clash]]」集合间碰撞检测![](https://api2.mubu.com/v3/document_image/4a1b2f83-70f8-4065-83ab-8628b56a8cb8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/dbf4268f-8b11-4072-ab46-275ecf2df39b-20454557.jpg)  
+-   输入端：  
+	-   A:集合A(可为网格、曲面、多重曲面、SubD)  
+	-   B:集合B(可为网格、曲面、多重曲面、SubD)  
+	-   D:碰撞检测最小距离  
+	-   F:最多检测数量  
+-   输出端：  
+	-   N:碰撞点数量  
+	-   P:碰撞点  
+	-   R:碰撞半径  
+	-   i:集合A中碰撞物件序号  
+	-   j:集合B中碰撞物件序号  
+-   检测两个物件集合之间的碰撞情况，并得到相关参数结果。输出端和的碰撞序号顺序一一对应，输出端的碰撞半径值为输入端D值的一半，大概意思是在这个球体半径内都会发生碰撞。![](https://api2.mubu.com/v3/document_image/492a463c-f871-4131-ba9f-9e3750f3a210-20454557.jpg)  
+-   「[[Collision Many Many\|Collision Many Many]]」多物体间碰撞检测![](https://api2.mubu.com/v3/document_image/cfdf65dd-b6d2-43ab-93f8-99d2360e9750-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3f3b3d87-2a33-4510-afaf-bcbdd426e84c-20454557.jpg)  
+-   输入端：  
+	-   C:多个物件(可为曲线、曲面、多重曲面、网格、SubD)  
+-   输出端：  
+	-   C:是否发生碰撞  
+	-   I:与之发生碰撞的物件序号(若与多个物件发生碰撞，只输出第一个碰撞物件序号，若无碰撞输出-1)  
+-   检测多个物件之间的相互碰撞情况，但不能像Clash运算器那样分组。![](https://api2.mubu.com/v3/document_image/06ea68f6-181d-43aa-af92-6b1c641c0fcf-20454557.jpg)  
+-   「[[Collision One Many\|Collision One Many]]」指定物件碰撞检测![](https://api2.mubu.com/v3/document_image/c2b3fd60-337c-4eec-8575-a980494c6cc6-20454557.jpg)![](https://api2.mubu.com/v3/document_image/257cac28-2c6c-44ca-93c5-f38b24d418ef-20454557.jpg)  
+-   输入端：  
+	-   C:要检测物件(可为曲线、曲面、多重曲面、网格、SubD)  
+	-   O:阻挡物件  
+-   输出端：  
+	-   C:是否发生碰撞  
+	-   I:与之发生碰撞的物件序号(若与多个物件发生碰撞，只输出第一个碰撞物件序号，若无碰撞输出-1)  
+-   检测指定物件和阻挡物件的碰撞情况，虽然运算器名有检测单个的意思，但是输入端C可以输入多个物件。![](https://api2.mubu.com/v3/document_image/4821beb5-c480-4610-a378-fd674f8fbae1-20454557.jpg)  
+## Region 范围交错  
+-   Intersect类的Region组，分割和修剪相关运算器。![](https://api2.mubu.com/v3/document_image/38f5a4b8-9c70-4964-8db5-336c3c88dd04-20454557.jpg)  
+-   「[[Split with Brep\|Split with Brep]]」单个Brep分割曲线![](https://api2.mubu.com/v3/document_image/225b190d-2068-403a-af8d-ea0d311b5c76-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2cfd4de4-82fd-48b5-ba49-8847f9eb41a3-20454557.jpg)  
+-   输入端：  
+	-   C:曲线  
+	-   B:Brep  
+-   输出端：  
+	-   C:分割后曲线  
+	-   P:分割点  
+-   用单个Brep来对曲线进行分割。![](https://api2.mubu.com/v3/document_image/0c3a1b2f-f9fd-4720-8589-fd6bcaacb80a-20454557.jpg)  
+-   「[[Split with Breps\|Split with Breps]]」多个Brep分割曲线![](https://api2.mubu.com/v3/document_image/b6d28860-98ae-49a3-812d-9b6d8425ef89-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b4b49753-29fc-4201-ba72-e74430931f16-20454557.jpg)  
+-   输入端：  
+	-   C:曲线  
+	-   B:Brep  
+-   输出端：  
+	-   C:分割后曲线  
+	-   P:分割点  
+-   用多个Brep来对曲线进行分割，和Split with Brepl的区别见下图。![](https://api2.mubu.com/v3/document_image/39d53a77-802a-4769-be67-74462a7c08fb-20454557.jpg)  
+-   「[[Trim with Brep\|Trim with Brep]]」单个Brep修剪曲线![](https://api2.mubu.com/v3/document_image/befa44f4-8d32-46da-8eb8-83c5c93deed8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3315f58e-ef98-4456-b1f0-9eeec8824b5d-20454557.jpg)  
+-   输入端：  
+	-   C:曲线  
+	-   B:Brep  
+-   输出端：  
+	-   Ci:修剪后内部曲线  
+	-   Co:修剪后外部曲线  
+-   用单个Brp来对曲线进行修剪，由于GH无法判断你是想要修剪掉内部的还是外部曲线，所以干脆两部分都保留，分别输出自己选，但这样其实就和分割很像了。![](https://api2.mubu.com/v3/document_image/712e7414-6805-42ef-b849-5c2c3a31a2d9-20454557.jpg)  
+-   「[[Trim with Breps\|Trim with Breps]]」多个Brep修剪曲线![](https://api2.mubu.com/v3/document_image/f31e0346-bf6d-4692-bf86-5b89f34d95c8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8e037bd2-02e0-4159-b527-8914eee67e4c-20454557.jpg)  
+-   输入端：  
+	-   C:曲线  
+	-   B:Brep  
+-   输出端：  
+	-   Ci:修建后内部曲线  
+	-   C0:修建后外部曲线  
+-   用多个Brep来对曲线进行修剪，和Trim with Brep的区别见下图，主要区别在外部曲线上。![](https://api2.mubu.com/v3/document_image/a614f1e1-21a8-46dd-8431-8b71a99ecb9b-20454557.jpg)  
+-   「[[Trim with Region\|Trim with Region]]」单个封闭区域修剪曲线![](https://api2.mubu.com/v3/document_image/cacc3aa5-b9b2-4980-9dfa-90bf155dd97d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d21d5047-758b-4a9c-a2e0-7eb49e47a3fe-20454557.jpg)  
+-   输入端：  
+	-   C:曲线  
+	-   R:封闭区域  
+	-   P:工作平面(若不输入，会选择最适合工作平面)  
+-   输出端：  
+	-   Ci:修剪后内部曲线  
+	-   C0:修剪后外部曲线  
+-   用一个封闭曲线区域对曲线进行修剪，由于G无法判断你是想要修剪掉内部的还是外部曲线，所以干脆两部分都保留，分别输出自己选，但这样其实就和分割很像了。![](https://api2.mubu.com/v3/document_image/66d52318-2e17-436f-a584-35130f48b686-20454557.jpg)  
+-   「[[Trim with Regions\|Trim with Regions]]」多个封闭区域修剪曲线![](https://api2.mubu.com/v3/document_image/c9db5095-4abb-4b0a-b49a-bd6d8c909755-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1c006727-ca09-4e80-8b72-6bf6816d86a0-20454557.jpg)  
+-   输入端：  
+	-   C:曲线  
+	-   R:多个封闭区域  
+	-   P:工作平面(若不输入，会选择最适合工作平面)  
+-   输出端：  
+	-   Ci:修建后内部曲线  
+	-   Co:修建后外部曲线  
+-   用多个封闭曲线区域来对曲线进行修剪，和Trim with Region的区别见下图，主要区别在外部曲线上。![](https://api2.mubu.com/v3/document_image/4bc680f3-ffc0-479e-977c-1d7fc76c9210-20454557.jpg)  
+## Shape 布尔交错  
+-   Intersect类的Shape组，和布尔运算有关的运算器。![](https://api2.mubu.com/v3/document_image/c405a19c-7de6-43b0-89b1-1bad5e294857-20454557.jpg)  
+-   「[[Boundary Volume\|Boundary Volume]]」多折面几何体![](https://api2.mubu.com/v3/document_image/8e99acf4-212a-4575-9d0d-144e6eb425be-20454557.jpg)![](https://api2.mubu.com/v3/document_image/dc036e26-ed22-44bf-a5a0-bf8b8dac2245-20454557.jpg)  
+-   输入端：  
+	-   B:边界Brep  
+-   输出端：  
+	-   S:多折面几何体  
+-   以输入的Brep作为边界，生成一个封闭的多折面几何体。![](https://api2.mubu.com/v3/document_image/fc80b6e3-3eae-48fa-9c66-e648140ae7d6-20454557.jpg)  
+-   「[[Solid Difference\|Solid Difference]]」封闭Brep差集![](https://api2.mubu.com/v3/document_image/fbb509f9-2df9-4249-ad43-51214719b661-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4eaf14f8-526b-49b8-b01e-b2fa064bf25a-20454557.jpg)  
+-   输入端：  
+	-   A:单个/多个封闭Brep A  
+	-   B:单个/多个封闭Brep B  
+-   输出端：  
+	-   R:B-A的差集结果  
+-   A和B既可以是单个封闭Brep也可以是多个封闭Brep的集合。![](https://api2.mubu.com/v3/document_image/7d8c006a-019c-4daf-8855-30868a0c8729-20454557.jpg)  
+-   「[[Solid Intersection\|Solid Intersection]]」封闭Brep交集![](https://api2.mubu.com/v3/document_image/ffd7b1eb-a17f-428a-b826-fc1f2145f565-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8ed42942-b157-4524-8d5b-e751130c2b39-20454557.jpg)  
+-   输入端：  
+	-   A:单个/多个封闭Brep A  
+	-   B:单个封闭Brep B  
+-   输出端：  
+	-   R:A和B交集结果  
+-   直接输入的话B端只能输入单个封闭Brep进行交集计算，所以当B端要输入多个封闭Brep时，可采取如下方法：  
+	-   (1)若B端物体全部相接，可以先取并集再计算。![](https://api2.mubu.com/v3/document_image/4dfb2d0d-e8cd-4371-b969-4a23875adfa2-20454557.jpg)  
+	-   (2)若B端物体未全部相接，可以将B端做成树形数据，分别运算后最后取并集。![](https://api2.mubu.com/v3/document_image/35a29bca-e9fe-4f97-a7cb-2a45f5d3b3d8-20454557.jpg)  
+-   「[[Solid Union\|Solid Union]]」封闭Brep并集![](https://api2.mubu.com/v3/document_image/38b92460-0a28-4bbf-9d71-1afc960f5833-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a0dd53e5-70cd-44e2-9c33-2af81d37c4b3-20454557.jpg)  
+-   输入端：  
+	-   B：要组合的封闭Brep  
+-   输出端：  
+	-   R：并集结果  
+-   该运算器主要针对的是有重叠部分的封闭Brep，如果是开放Brep，判断依据是交线是否可以完全分割每个Brep。![](https://api2.mubu.com/v3/document_image/84a87b24-2bd5-4a05-bb12-6e50d032479b-20454557.jpg)  
+-   「[[Split Brep\|Split Brep]]」用单个Brep分割Brep![](https://api2.mubu.com/v3/document_image/1c0c2910-7b29-49fa-b661-7a39e5ceeac2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/235ee8f5-32da-4d24-bf1d-fc6e0b6de7a8-20454557.jpg)  
+-   输入端：  
+	-   B:目标Brep  
+	-   C:单个分割用Brep  
+-   输出端：  
+	-   R:分割后的目标Brep  
+-   用C端的Brep对B端目标Brep分割，C端分割用Brep只能是一个。![](https://api2.mubu.com/v3/document_image/af499490-47a8-4b50-993b-f32ace466f37-20454557.jpg)![](https://api2.mubu.com/v3/document_image/bcf161cb-3ebb-4a22-8637-1958eae4fa48-20454557.jpg)  
+-   「[[Split Brep Multiple\|Split Brep Multiple]]」用多个Brep分割Brep![](https://api2.mubu.com/v3/document_image/31667ccc-f8ef-45da-98b1-f6b7edfc4cfa-20454557.jpg)![](https://api2.mubu.com/v3/document_image/dc9811b3-2bae-4804-90a7-63ded690e83b-20454557.jpg)  
+-   输入端：  
+	-   B:目标Brep  
+	-   C:多个分割用Brep  
+-   输出端  
+	-   R:分割后的目标Brep  
+-   用C端的Brep对B端目标Brep分割，C端分割用Brep可为多个。![](https://api2.mubu.com/v3/document_image/ae9a0f7f-23b8-43cd-8e19-9f3290bb8878-20454557.jpg)![](https://api2.mubu.com/v3/document_image/bf3e977d-07e7-4dce-be4e-2fc39ec499cb-20454557.jpg)  
+-   和Split Brep的区别见下图。![](https://api2.mubu.com/v3/document_image/d7576baa-4afb-47c5-9556-2deb63ae1fcb-20454557.jpg)  
+-   「[[Trim Solid\|Trim Solid]]」Brep裁剪Brep![](https://api2.mubu.com/v3/document_image/b41ee640-24d5-46a0-871b-c25629928586-20454557.jpg)![](https://api2.mubu.com/v3/document_image/eaf4491d-9707-4c28-94fd-584aadc4f6e0-20454557.jpg)  
+-   输入端：  
+	-   S:目标Brep  
+	-   T:裁剪用Brep(必须是封闭实体，可为多个)  
+-   输出端：  
+	-   R:裁剪后的目标Brep  
+-   裁剪用Brep既可以是单个也可以是多个，但必须是封闭Brep。![](https://api2.mubu.com/v3/document_image/e1ace38f-7141-4ae8-93a3-7f5369536634-20454557.jpg)  
+-   这个运算器和Solid Union类似，而且更严格，除了要求切割Brep在原Brep上形成封闭切割曲线外，还要求切割用Brep必须是封闭实体。![](https://api2.mubu.com/v3/document_image/a3278a2d-19bf-43df-8a1f-0d441b27c541-20454557.jpg)  
+-   「[[Region Difference\|Region Difference]]」封闭曲线差集![](https://api2.mubu.com/v3/document_image/fd8bf6f8-99aa-459c-84a4-4b577cba60a8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/da65d994-1e30-40fc-8997-b604376f3cc4-20454557.jpg)  
+-   输入端：  
+	-   A:单个/多个封闭曲线A  
+	-   B:单个/多个封闭曲线B  
+	-   P:工作平面  
+-   输出端：  
+	-   R:B-A的差集结果  
+-   A和B既可以是单个封闭曲线也可以是多个封闭曲线的集合。![](https://api2.mubu.com/v3/document_image/98d3d351-3ef3-4613-8c00-5aee96a4f1f3-20454557.jpg)  
+-   「[[Region Intersection\|Region Intersection]]」封闭曲线交集![](https://api2.mubu.com/v3/document_image/36abbb8e-dc46-42d4-b47e-5231a37a11ef-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b950e303-21fc-4a6f-a7c3-45e3981b8842-20454557.jpg)  
+-   输入端：  
+	-   A:单个/多个封闭曲线A  
+	-   B:单个封闭曲线B  
+-   输出端：  
+	-   R:A和B的交集结果  
+-   直接输入的话B端只能输入单个封闭曲线进行交集计算，所以当B端要输入多个封闭曲线时，可采取如下方法：  
+	-   (1)若B端全部相接，可以先取并集再计算。![](https://api2.mubu.com/v3/document_image/e713c999-ccb1-44e8-8f04-a59fc1be1460-20454557.jpg)  
+	-   (2)若B端未全部相接，可以将B端做成树形数据，分别运算后最后取并集。![](https://api2.mubu.com/v3/document_image/12ea8f0e-b363-44d8-aaae-8db6cfda5fd8-20454557.jpg)  
+-   「[[Region Union\|Region Union]]」封闭曲线并集![](https://api2.mubu.com/v3/document_image/b20ee531-fcc5-4f95-84b0-ff21d706b435-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e5071b22-6921-43e6-a618-8ccf3a664eb3-20454557.jpg)  
+-   输入端：  
+	-   B：要组合的封闭曲线  
+	-   P：工作平面  
+-   输出端：  
+	-   R：并集结果  
+-   取多个封闭曲线的并集。![](https://api2.mubu.com/v3/document_image/8fa422d5-5901-4381-96d3-b2c80f0dedf9-20454557.jpg)  
+-   「[[Mesh Difference\|Mesh Difference]]」封闭网格差集![](https://api2.mubu.com/v3/document_image/72012b00-d4b2-41d7-bc6b-486704e2fde1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/eea7351f-7dd3-4519-bb21-d808b72604d8-20454557.jpg)  
+-   输入端：  
+	-   A:单个/多个封闭网格A  
+	-   B:单个/多个封闭网格B  
+-   输出端：  
+	-   R:B-A的差集结果  
+-   A和B既可以是单个封闭网格也可以是多个封闭网格的集合。![](https://api2.mubu.com/v3/document_image/36c99285-0783-4606-885e-4377436e6555-20454557.jpg)  
+-   「[[Mesh Intersection\|Mesh Intersection]]」封闭网格交集![](https://api2.mubu.com/v3/document_image/e70815a9-6c0a-4c41-aa7a-b3264a236058-20454557.jpg)![](https://api2.mubu.com/v3/document_image/bb38ff11-3bda-4018-b2a8-51a887d9456f-20454557.jpg)  
+-   输入端：  
+	-   A:单个/多个封闭网格A  
+	-   B:单个/多个封闭网格B  
+-   输出端：  
+	-   R:A和B交集结果  
+-   封闭网格的交集和Brp和曲线不一样，B端可以直接输入多个进行正确运算。![](https://api2.mubu.com/v3/document_image/bfd9a2db-add6-437f-9378-7915d9e52114-20454557.jpg)  
+-   「[[Mesh Split\|Mesh Split]]」用网格分割网格![](https://api2.mubu.com/v3/document_image/e759dbaf-c0bc-460e-86cf-e96baf622c34-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b599e6b8-526c-410d-9d94-0c842eb54721-20454557.jpg)  
+-   输入端：  
+	-   B:目标网格  
+	-   C:分割用Brep(可为单个，也可为多个)  
+-   输出端：  
+	-   R:分割后的目标Brep  
+-   用单个或多个网格对目标网格进行分割。![](https://api2.mubu.com/v3/document_image/1b2b71d9-a72d-44f6-8d7d-05359976bf90-20454557.jpg)![](https://api2.mubu.com/v3/document_image/9c1f0545-101b-4a72-b4b5-0da92817b856-20454557.jpg)  
+-   「[[Mesh Union\|Mesh Union]]」封闭网格并集![](https://api2.mubu.com/v3/document_image/f19a7a24-dfc9-4778-b04b-da5ac450f4af-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1c313a1d-4b4b-45c3-8865-a24935fbd761-20454557.jpg)  
+-   输入端：  
+	-   B：要组合的封闭网格  
+-   输出端：  
+	-   R：并集结果  
+-   该运算器主要针对的是有重叠部分的封闭网格，如果是开放网格，判断依据和封闭Brep类似。![](https://api2.mubu.com/v3/document_image/b8983253-6184-482c-affc-27d6c146165c-20454557.jpg)  
+-   「[[Box Slits\|Box Slits]]」立方体穿插切口![](https://api2.mubu.com/v3/document_image/bed21053-e63b-4b9b-8c2f-10d431c5f0c4-20454557.jpg)![](https://api2.mubu.com/v3/document_image/fdf46ad9-3da7-4573-b117-e41b474f5f71-20454557.jpg)  
+-   输入端：  
+	-   B:立方体  
+	-   G:增加的切口宽度  
+-   输出端：  
+	-   B:穿插后的立方体  
+	-   T:穿插切口拓扑关系  
+-   立方体只有沿世界坐标XZ方向正交相交时，才能正确形成穿插切口，其他情况均无法正确形成切口。![](https://api2.mubu.com/v3/document_image/d21d1700-5ece-482a-b440-96fab4a34235-20454557.jpg)  
+-   注意G端为增加的切口宽度，当为0时，正好卡口像榫卯结构一样无缝隙咬合。T端的拓扑关系一直没有值输出，暂且存疑。![](https://api2.mubu.com/v3/document_image/6f7c2524-7048-494f-b21d-03ab18c2f784-20454557.jpg)  
+-   「[[Region Slits\|Region Slits]]」平面封闭曲线穿插切口![](https://api2.mubu.com/v3/document_image/aee6630a-c380-4771-9c53-599478bae4ef-20454557.jpg)![](https://api2.mubu.com/v3/document_image/931b2fc3-8b0b-467e-a569-8af302d4f39d-20454557.jpg)  
+-   输入端：  
+	-   R:平面封闭曲线  
+	-   W:切口宽度  
+	-   G:增加的切口长度  
+-   输出端：  
+	-   B:穿插后的封闭曲线  
+	-   T:穿插切口拓扑关系  
+-   该运算器和Box Slits类似，能形成平面封闭曲线的穿插切口，但比Box Slits,应用更广泛，因为它不仅可以兼容非正交的情况，还可以兼容平面的任意曲线形态，我们可以生成切口后再挤出厚度。![](https://api2.mubu.com/v3/document_image/76449bb9-524b-41f7-8bc1-b0dbbf27cccd-20454557.jpg)  
+-   注意该运算器虽然比Box Slits多了一个W端，但实际上Region Slits的W端和Box Slits的G端意思一样代表切口宽度，Region Slits的G端代表增加的切口长度。T端的拓扑关系同样一直没有值输出，暂且存疑。![](https://api2.mubu.com/v3/document_image/7c42f99c-cdb8-4017-81c8-69a6953b946b-20454557.jpg)          
+# Transform 形变  
+## Affine 自我形变  
+-   Transform类的Affine组，仿射变换相关的运算器。![](https://api2.mubu.com/v3/document_image/7368c53f-4ac1-4ce9-9767-c14f5065305b-20454557.jpg)  
+-   「[[Camera Obscura\|Camera Obscura]]」小孔成像![](https://api2.mubu.com/v3/document_image/3f2daa15-45da-4a64-84a2-fbfd964f374f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/09ec874c-52b7-4b30-b6e0-53c836cee5b2-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   P:成像小孔点  
+	-   F:成像比例  
+-   输出端：  
+	-   G:小孔成像后的几何形  
+	-   X:变动数据  
+-   按照小孔成像原理，对输入几何形进行变换，变换后的物件会上下颠倒，注意F端变化，成像后物件与小孔点的距离也会相应变化。![](https://api2.mubu.com/v3/document_image/2cfd3985-8c70-453c-97b4-c42de91cffad-20454557.jpg)  
+-   「[[Scale\|Scale]]」三维缩放![](https://api2.mubu.com/v3/document_image/8d33aad1-1d92-4864-9ce5-8446af986e51-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1494fe65-4df4-4c8e-b62e-f602d37fde8b-20454557.jpg)  
+-   输入端：  
+	-   G：几何形  
+	-   C：缩放中心点  
+	-   F：缩放比例  
+-   输出端：  
+	-   G：缩放后几何形  
+	-   X：变动数据  
+-   三维等比例缩放，缩放中心点常选择几何形的中心点![](https://api2.mubu.com/v3/document_image/7720b83e-6e02-434a-847d-78d6783c112c-20454557.jpg)  
+-   「[[Scale NU\|Scale NU]]」三维自由缩放![](https://api2.mubu.com/v3/document_image/1a142306-8bc2-4a48-9fb8-0a2409af7725-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3b871c99-3901-4058-9922-d6a186de978f-20454557.jpg)  
+-   输入端：  
+	-   G：几何形  
+	-   P：工作平面  
+	-   X：X方向缩放比例  
+	-   Y：Y方向缩放比例  
+	-   Z：Z方向缩放比例  
+-   输出端：  
+	-   G：缩放后几何形  
+	-   X：变动数据  
+-   按照P端输入平面的XYZ方向进行可变自由缩放，缩放基准点为工作平面原点。![](https://api2.mubu.com/v3/document_image/bcaea51b-3745-4fbc-a6b3-021cf172a751-20454557.jpg)  
+-   「[[Shear\|Shear]]」斜切![](https://api2.mubu.com/v3/document_image/bda58b1a-0a6f-4ab5-b051-f232ad8f0040-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a1cc5210-015f-4dfa-b8a2-64ca5e13e5a4-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   P:工作平面  
+	-   G:参照点  
+	-   T:目标点  
+-   输出端：  
+	-   G:斜切后的几何形  
+	-   X:变动数据  
+-   根据参照点指向目标点的方向向量对几何形进行斜切变形。工作平面设置原则为：  
+	-   (1)平面位置为几何形在对应工作平面Z值最小点，也就是最低点  
+	-   (2)平面原点为参照点在工作平面的投影点  
+	-   (3)所有工作平面均可以可以在三维空间任意斜切变动，所以一般使用平面即可![](https://api2.mubu.com/v3/document_image/89a35ddd-2e7f-49fd-8424-897d5320cf21-20454557.jpg)  
+-   「[[Shear Angle\|Shear Angle]]」按角度斜切![](https://api2.mubu.com/v3/document_image/ba9224c4-27b4-4b70-aa5e-4d73ea1a0a36-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4d8e5f4f-e3dd-4dc2-a06f-dbb325609670-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   P:工作平面  
+	-   Ax:沿工作平面X轴旋转角度（弧度制）  
+	-   Ay:沿工作平面Y轴旋转角度（弧度制）  
+-   输出端：  
+	-   G:斜切后的几何形  
+	-   X:变动数据  
+-   和Shear类似，可以通过旋转对几何形进行斜切变形。工作平面设置原则为：工作平面以几何形在对应工作平面Z值最小点为原点。![](https://api2.mubu.com/v3/document_image/c99f7660-ee27-44c4-8fbe-31e713975f23-20454557.jpg)  
+-   「[[Box Mapping\|Box Mapping]]」立方体映射![](https://api2.mubu.com/v3/document_image/12c6e704-aace-4c02-ac24-bc73f7af6c7a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cc9756e9-7cbb-4e97-a4f6-4bfdffba4d59-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   S:参考立方体(通常为G端几何形的Bounding Box)  
+	-   T:目标立方体  
+-   输出端：  
+	-   G:映射后的几何形  
+	-   X:变动数据  
+-   通过目标立方体与参考立方体之间的缩放变化来对几何形进行变动。![](https://api2.mubu.com/v3/document_image/488d1fb6-7e57-48e5-a053-981685990a4b-20454557.jpg)  
+-   Box Mapping只能在同一工作平面的立方体进行映射，不能像Rectangle Mappingi和Triangle Mapping那样在不同的工作平面进行映射。![](https://api2.mubu.com/v3/document_image/3d234480-b317-4e90-b235-b61b3f889e5f-20454557.jpg)  
+-   「[[Orient Direction\|Orient Direction]]」向量映射![](https://api2.mubu.com/v3/document_image/5c3f6598-f404-40ae-b3da-85ca815495b9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/31499c97-db29-404b-839f-b7e01030cdec-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   pA:参考点A  
+	-   dA:参考向量A  
+	-   pB:目标点B  
+	-   dB:目标向量B  
+-   输出端：  
+	-   G:映射后的几何形  
+	-   X:变动数据  
+-   通过两个向量间的方向和长度两个层面的变化来对几何形进行变动，例如下面案例，向量旋转90度，长度变为2倍，那么几何形也旋转90度，对应边长度都变为2倍。![](https://api2.mubu.com/v3/document_image/43fdbcb7-0607-4b8c-b39c-5a8994ad1bcc-20454557.jpg)  
+-   「[[Project\|Project]]」投影![](https://api2.mubu.com/v3/document_image/380ee9ec-7eef-4308-ad88-e5ce59ae626d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b62bac34-b482-47d9-a383-372155a2f7af-20454557.jpg)  
+-   输入端：  
+	-   G：几何形  
+	-   P：工作平面  
+-   输出端：  
+	-   G：投影几何形  
+	-   X：变动数据  
+-   在Curve类的Util组内也有一个Project运算器，是用来投影曲线的，这里的Project除了曲线还可以投影其他几何形，只是投影对象只能是到某工作平面上，无法投影到曲面上。投影后的几何性质和投影前保持一致，比如Brep投影后仍然是Brep。![](https://api2.mubu.com/v3/document_image/5684da0a-6780-4d26-8661-a93afc1ccc03-20454557.jpg)  
+-   「[[Project Along\|Project Along]]」指定方向投影![](https://api2.mubu.com/v3/document_image/9c5f3171-26bb-49ec-83dc-c8771c33f5a8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d58ee66a-932d-4f04-9249-982c775f770e-20454557.jpg)  
+-   输入端：  
+	-   G：几何形  
+	-   P：工作平面  
+	-   D：方向  
+-   输出端：  
+	-   G：投影几何形  
+	-   X：变动数据  
+-   Project的升级版，可以按照指定方向进行投影而不仅仅是Z轴方向。![](https://api2.mubu.com/v3/document_image/68904d81-29df-4f9d-83df-6525eab094d6-20454557.jpg)  
+-   「[[Rectangle Mapping\|Rectangle Mapping]]」矩形映射![](https://api2.mubu.com/v3/document_image/7deba437-a81e-49e7-a1a8-ab8b221c311b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/eb916de0-00ef-4bb6-b92a-0306762de6ec-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   S:参考矩形  
+	-   T:目标矩形  
+-   输出端：  
+	-   G:映射后的几何形  
+	-   X:变动数据  
+-   可以理解为高度为O的Box Mapping,所以参考矩形我们依然可以使用Bounding Box运算器。注意下面的案例中，由于参考矩形是炸开重组得来的，为了匹配矩形的长宽对应，我们对目标矩形进行了炸开再重组合，如果不进行这个操作，长宽在映射中会颠倒形成错误。![](https://api2.mubu.com/v3/document_image/2327b735-ef3a-494c-81a8-8cd7b69be94e-20454557.jpg)  
+-   虽然是平面映射，但参考矩形和目标矩形河以在不同的平面内。![](https://api2.mubu.com/v3/document_image/eaf53cfb-4da6-4461-92b2-7116d3f3d34c-20454557.jpg)  
+-   「[[Triangle Mapping\|Triangle Mapping]]」三角形映射![](https://api2.mubu.com/v3/document_image/a3452af5-f4ae-48b3-88f6-2e48a1d80c38-20454557.jpg)![](https://api2.mubu.com/v3/document_image/56aefe93-e6d6-479f-a351-85fcbe577959-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   S:参考三角形  
+	-   T:目标三角形  
+-   输出端：  
+	-   G:映射后的几何形  
+	-   X:变动数据  
+-   和Triangle Mapping类以，可以进行非相同工作平面的映射。![](https://api2.mubu.com/v3/document_image/8ad471dc-71d8-4c9f-a781-ffc40e3c12ab-20454557.jpg)  
+## Array 阵列形变  
+-   Transform类的Array组，阵列相关的运算器。![](https://api2.mubu.com/v3/document_image/c6c0c9af-acb8-4040-ac39-1d8c82042ad9-20454557.jpg)  
+-   「[[Box Array\|Box Array]]」立体阵列![](https://api2.mubu.com/v3/document_image/c2843f70-03fc-444f-b0d7-0f99e682b915-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0efd6bdf-99e9-49db-8e58-2ada0e5606ee-20454557.jpg)  
+-   输入端：  
+	-   G：几何形  
+	-   C：单元立方体  
+	-   X：X方向阵列个数  
+	-   Y：Y方向阵列个数  
+	-   Z：Z方向阵列个数  
+-   输出端：  
+	-   G：阵列后的几何形  
+	-   X：变动数据  
+-   起始几何形本身是第一个阵列体，建议单元立方体包裹住起始几何形。阵列几何形间的距离由单元立方体和几何形的间隙有关。![](https://api2.mubu.com/v3/document_image/52f31861-aec9-4979-b7c6-11ed02045127-20454557.jpg)  
+-   「[[Curve Array\|Curve Array]]」曲线阵列![](https://api2.mubu.com/v3/document_image/4aacfdb3-7351-41ee-8092-eefb9a26dfcb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a3df5923-bdee-4cc0-9801-52edf629c414-20454557.jpg)  
+-   输入端：  
+	-   G：几何形  
+	-   C：曲线  
+	-   N：阵列个数  
+-   输出端：  
+	-   G：阵列后的几何形  
+	-   X：变动数据  
+-   起始几何形本身是第一个阵列体，所以建议曲线起点放置在起始几何形上，空间曲线的阵列还可以对每个阵列几何形进行正确的旋转。![](https://api2.mubu.com/v3/document_image/191db6f0-9816-4b23-a565-abe864ed7cd8-20454557.jpg)  
+-   「[[Linear Array\|Linear Array]]」直线阵列![](https://api2.mubu.com/v3/document_image/70a5b54a-f46e-4900-8c8c-dc487cc39f72-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1480dda2-b867-4440-8b91-4bd57c1618be-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   D:向量（确定方向和间隔）  
+	-   N:阵列个数  
+-   输出端：  
+	-   G:阵列后的几何形  
+	-   X:变动数据  
+-   起始几何形本身是第一个阵列体，所以建议向量起点放置在起始几何形上，向量方向定义阵列间距。![](https://api2.mubu.com/v3/document_image/44d2e471-7aea-4076-a3ef-af83e65a1d36-20454557.jpg)  
+-   「[[Polar Array\|Polar Array]]」环形阵列![](https://api2.mubu.com/v3/document_image/46d1d85b-4f96-48ed-bbc3-a1e29aebb809-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6adaff3a-09c3-44d2-86cc-022649879ca6-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+		-   P:工作平面  
+		-   N:阵列个数  
+		-   A:总阵列角度(逆时针，弧度制)  
+	-   输出端：  
+		-   G:阵列后的几何形  
+		-   X:变动数据  
+	-   起始几何形本身是第一个阵列体，环形半径是工作平面原点到起始几何形的长度。![](https://api2.mubu.com/v3/document_image/4bb0d217-6c2c-490f-8db7-506fdec2ef4b-20454557.jpg)  
+-   「[[Rectangular Array\|Rectangular Array]]」矩形阵列![](https://api2.mubu.com/v3/document_image/237d0921-3740-4ed4-bdf8-6b588fb0ca1c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/75d3d3f8-4122-4e2a-8d98-ff8146ffa76e-20454557.jpg)  
+-   输入端：  
+	-   G：几何形  
+	-   C：单元矩形  
+	-   X：X方向阵列个数  
+	-   Y：Y方向阵列个数  
+-   输出端：  
+	-   G：阵列后的几何形  
+	-   X：变动数据  
+-   起始几何形本身是第一个阵列体，建议单元矩形围合住起始几何形。阵列几何形间的距离由单元矩形和几何形的间隙有关，注意单元矩形不是必须在起始几何形的工作平面内。![](https://api2.mubu.com/v3/document_image/f0e297a1-6300-4616-a804-179f69670ebd-20454557.jpg)  
+-   「[[Kaleidoscope\|Kaleidoscope]]」万花筒阵列![](https://api2.mubu.com/v3/document_image/df9b6940-e01b-49b8-b391-4fe392c5ce53-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4371151f-1163-4acb-9ce4-827d092b5337-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   P:工作平面  
+	-   S:阵列个数  
+-   输出端：  
+	-   G:阵列后的几何形  
+	-   X:变动数据  
+-   将一个起始几何形不断变换并进行环形阵列，形成万花筒的效果。和Polar Array类似，起始几何形本身是第一个阵列体，环形半径是工作平面原点到起始几何形的长度。![](https://api2.mubu.com/v3/document_image/e52d44e5-b58a-4a32-8763-ab51a6d33243-20454557.jpg)  
+-   有个叫Andru Pavlov的外国大佬儿还为这个算法专门做了一个Kaleidoscope插件，感兴趣的同学可以去YouTube看他的同名主页。相类似的还有一个Parakeet插件，之后我们再插件部分再详细介绍。![](https://api2.mubu.com/v3/document_image/a3d1fbc4-a5b2-4d88-9e0e-144a01dc5518-20454557.jpg)  
+## Euclidean 欧几里得形变  
+-   Transform类的Euclidean组，欧几里得几何（平面几何）相关的运算器。![](https://api2.mubu.com/v3/document_image/b4e5be04-82d0-47d3-9949-b4a7d9bd92be-20454557.jpg)  
+-   「[[Mirror\|Mirror]]」镜像![](https://api2.mubu.com/v3/document_image/2427a17b-8715-4dcd-aaf8-9917c83b9afb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/07e9106e-5a5e-4d29-be44-595ecd9a167f-20454557.jpg)  
+-   输入端：  
+	-   G：几何形  
+	-   P：镜像工作平面  
+-   输出端：  
+	-   G：镜像后的几何形  
+	-   X：变动数据  
+-   几何形以P端镜像工作平面作为对称轴进行对称变换。![](https://api2.mubu.com/v3/document_image/9c3907f0-0b40-4826-897e-356a936883a2-20454557.jpg)  
+-   「[[Move\|Move]]」移动![](https://api2.mubu.com/v3/document_image/63a802a0-a397-457b-8dae-ad771a54d02a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/57fbe22d-5ea5-47f6-88e9-ce83d0f589c3-20454557.jpg)  
+-   输入端：  
+	-   G：几何形  
+	-   T：移动向量  
+-   输出端：  
+	-   G：移动后几何形  
+	-   X：变动数据  
+-   注意T端输入的是向量，包括方向和长度，只有方向会默认按照单元长度1赋值。![](https://api2.mubu.com/v3/document_image/62f7887a-5599-4338-9e25-0903c0da476b-20454557.jpg)  
+-   「[[Move Away From\|Move Away From]]」反向移动![](https://api2.mubu.com/v3/document_image/92d2a73b-4b4e-4cb1-8980-77185214927f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5225d466-9208-41e8-beed-916f5018362d-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   E:参考几何形  
+	-   D:移动距离  
+-   输出端：  
+	-   G:反向移动后的几何形  
+	-   X:变动数据  
+-   向着参考几何形的相反方向移动，移动的方向为初始几何形相对参考几何形的法向方向。![](https://api2.mubu.com/v3/document_image/8a44cef0-3eb1-44c3-87d3-e37e34618a20-20454557.jpg)  
+-   「[[Move To Plane\|Move To Plane]]」移动至平面![](https://api2.mubu.com/v3/document_image/daae74cc-0f53-4fdf-92d1-f8f1eab62837-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f19c84b0-c2ec-49ff-b3c8-b50011df0936-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   P:移动到的工作平面  
+	-   A:当几何形位于工作平面上方时是否移动  
+	-   B:当几何形位于工作平面下方时是否移动  
+-   输出端：  
+	-   G:移动后的几何形  
+	-   X:变动数据  
+-   将几何形的最低点移动到工作平面上。![](https://api2.mubu.com/v3/document_image/ec63c908-4485-4d65-b715-b7998fab0fae-20454557.jpg)  
+-   「[[Orient\|Orient]]」朝向变换![](https://api2.mubu.com/v3/document_image/602d2a10-b83a-407f-9878-2ce9280b0f03-20454557.jpg)![](https://api2.mubu.com/v3/document_image/dd92c92e-246b-4211-ad0a-82aa1b8f9e82-20454557.jpg)  
+-   输入端：  
+	-   G：几何形  
+	-   A：平面A  
+	-   B：平面B  
+-   输出端：  
+	-   G：朝向改变后的几何形  
+	-   X：变动数据  
+-   将原几何形在的A平面变换到B平面，常结合Perp Frame或者Perp Frames进行单轨扫掠。需要注意的是A和B平面的原点是要精准对应的，比如在下图案例中，平面A的原点要设置在G端几何形的中心点，否则就会出错。![](https://api2.mubu.com/v3/document_image/f21271ab-55b3-4358-8693-26aaec99b7e3-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e4719a20-ae14-4705-8ac7-0de9b33ca84f-20454557.jpg)  
+-   该运算器的一个常用用途是曲面展平，尤其是施工布图阶段，比如下图将一个球体网格展开。![](https://api2.mubu.com/v3/document_image/cafecba4-144c-4d51-a8e4-c9fedf9089b8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/037a36ae-5755-41e2-86d2-760fcd1558a4-20454557.jpg)  
+-   这里还要提到一个GH插件OpenNest，它可以计算最节省的排料方式。比如我们需要将之前的球体网格展开平面加工切割出来，现在只有固定尺寸的方形材料板，那么如何排布这些面可以使用最省的板材呢？OpenNest插件做的就是这个事情。![](https://api2.mubu.com/v3/document_image/45d4047a-a96f-428f-853e-fa1068009c18-20454557.jpg)  
+-   「[[Rotate\|Rotate]]」旋转![](https://api2.mubu.com/v3/document_image/6ad12057-0e31-4d61-8844-6fec061f3916-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6e12fc06-95b5-4c29-a32c-cb42e74b8fe7-20454557.jpg)  
+-   输入端：  
+	-   G：几何形  
+	-   A：旋转角度（弧度制）  
+	-   P：旋转平面  
+-   输出端：  
+	-   G：旋转后的几何形  
+	-   X：变动数据  
+-   P端输入旋转平面，可以理解为以平面的Z轴为旋转轴旋转，A端为弧度制，右键输入端A可以选择Degrees转换角度制。![](https://api2.mubu.com/v3/document_image/8a7afe52-8a4f-4b4a-94a8-7e35e5f62ab7-20454557.jpg)  
+-   「[[Rotate 3D\|Rotate 3D]]」三维旋转![](https://api2.mubu.com/v3/document_image/e01a2d69-5710-45c6-b5c4-b55c883fe4d8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/681d2efd-6958-4006-83c6-27a2f311b60b-20454557.jpg)  
+-   输入端：  
+	-   G：几何形  
+	-   A：旋转角度（弧度制）  
+	-   C：旋转中心点  
+	-   X：旋转轴方向  
+-   输出端：  
+	-   G：旋转后的几何形  
+	-   X：变动数据  
+-   和Rotate Axis类似，C端中心点和X端方向就组成了旋转轴，A端为弧度制，右键输入端A可以选择Degrees转换角度制。![](https://api2.mubu.com/v3/document_image/6367f640-22ec-49db-8b12-0e27f12b68c0-20454557.jpg)  
+-   「[[Rotate Axis\|Rotate Axis]]」按轴旋转![](https://api2.mubu.com/v3/document_image/0b8257d8-96bd-4e9d-8a2e-f1c3ef3cae68-20454557.jpg)![](https://api2.mubu.com/v3/document_image/24330b66-97eb-430d-bc71-223cef982577-20454557.jpg)  
+-   输入端：  
+	-   G：几何形  
+	-   A：旋转角度（弧度制）  
+	-   X：旋转轴  
+-   输出端：  
+	-   G：旋转后的几何形  
+	-   X：变动数据  
+-   A端为弧度制，右键输入端A可以选择Degrees转换角度制。![](https://api2.mubu.com/v3/document_image/6bab522f-fbda-40da-b2e8-19d3989a0364-20454557.jpg)  
+-   「[[Rotate Direction\|Rotate Direction]]」按方向旋转![](https://api2.mubu.com/v3/document_image/196ff2f8-17bd-4e25-abf8-f70ba5cb16c6-20454557.jpg)![](https://api2.mubu.com/v3/document_image/778d0a1d-aa11-469f-9522-eff134f28351-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   C:旋转中心点  
+	-   F:参考方向  
+	-   T:目标方向  
+-   输出端：  
+	-   G:旋转后的几何形  
+	-   X:变动数据  
+-   将初始几何形从参考方向旋转到目标方向，没有了角度参数，旋转更加直观。![](https://api2.mubu.com/v3/document_image/f9514612-5cf6-4a15-b011-8dfdf924c95d-20454557.jpg)  
+## Morph 形态变化  
+-   Transform类的Morph组，造型变形建模最主要的一组运算器。![](https://api2.mubu.com/v3/document_image/02b63826-eb83-4231-bae7-49b1162a1637-20454557.jpg)  
+-   「[[Blend Box\|Blend Box]]」混接立方体![](https://api2.mubu.com/v3/document_image/a6ef1f18-1112-45ac-98e7-6da35de7048f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7363cffd-fe19-4982-bf8b-798c3ce9225b-20454557.jpg)  
+-   输入端：  
+	-   Sa:曲面A  
+	-   Da:曲面A区间  
+	-   Sb:曲面B  
+	-   Db:曲面B区间  
+-   输出端：  
+	-   B:混接立方体  
+-   在两个曲面间形成一个扭曲立方体，规则是以AB曲面的两个区间面为相对面，并将顶点对应连线。![](https://api2.mubu.com/v3/document_image/b0c8e9c1-06f9-4816-b980-8cd13eac7805-20454557.jpg)  
+-   「[[Box Morph\|Box Morph]]」扭转立方体![](https://api2.mubu.com/v3/document_image/8186cfeb-3d5b-468e-9a0d-d657172e5a7e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ac575b6c-1712-47f7-8b3b-5f7cc1829957-20454557.jpg)  
+-   输入端：  
+	-   G：几何形  
+	-   R：参考正常立方体  
+	-   T：目标扭曲立方体  
+-   输出端：  
+	-   G：变形后的几何形  
+-   常结合Bonuding Box对几何形进行扭曲变形。![](https://api2.mubu.com/v3/document_image/b47940d3-f562-44d7-911a-627d88fb31a2-20454557.jpg)  
+-   该运算器经常和Surface Box连用，可以在曲面上进行单元模块阵列建模。![](https://api2.mubu.com/v3/document_image/ee783a6a-79f9-4066-ae60-47c118485613-20454557.jpg)  
+-   「[[Surface Box\|Surface Box]]」曲面细分立方体![](https://api2.mubu.com/v3/document_image/b67f8291-f091-4c0c-8184-3f99a65b78e8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/199c6a41-3387-41de-8070-fe912cd75ac9-20454557.jpg)  
+-   输入端：  
+	-   S：曲面  
+	-   D：曲面区间  
+	-   H：立方体高度  
+-   输出端：  
+	-   B：曲面细分立方体  
+-   在曲面的指定区间内生成一个扭曲立方体，需要注意的是扭曲立方体的边均为直线，所以并不会贴合曲面，想要更加贴合曲面只能尽可能小的细分区间。该运算器经常和Box Morph连用。![](https://api2.mubu.com/v3/document_image/67c82c13-ec62-4ed9-999e-84cc2307b1cc-20454557.jpg)  
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Twisted Box\|Twisted Box]]」扭曲立方体![](https://api2.mubu.com/v3/document_image/9772e45f-67bc-467b-8e52-7d5967001790-20454557.jpg)![](https://api2.mubu.com/v3/document_image/61477772-3479-46d9-abae-c4397c0d4a10-20454557.jpg)  
+-   输入端：  
+	-   A:点A  
+	-   B:点B  
+	-   C:点C  
+	-   D:点D  
+	-   E:点E  
+	-   F:点F  
+	-   G:点G  
+	-   H:点H  
+-   输出端：  
+	-   B:扭曲立方体  
+-   通过八个顶点来生成一个扭曲立方体，需要注意点的顺序。![](https://api2.mubu.com/v3/document_image/de4750b4-edc4-4c54-baee-0308dc7ce258-20454557.jpg)  
+-   「[[Bend Deform\|Bend Deform]]」弯曲![](https://api2.mubu.com/v3/document_image/9a81764e-8ef1-4d72-a781-2a2e88717b6f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a98d7f8b-9e8d-4fa2-a494-e86883e6a2af-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   B:弯曲参照圆弧  
+-   输出端：  
+	-   G:弯曲后的几何形  
+-   参照B端输入的圆弧将G端几何形弯曲。建议将参照圆弧设置在几何形端点，这样几何形只是发生弯曲，总长度几乎不发生变化，比较好控制。![](https://api2.mubu.com/v3/document_image/ec4dd09c-7a24-49a9-8a05-47b505284744-20454557.jpg)  
+-   「[[Flow\|Flow]]」曲线流动![](https://api2.mubu.com/v3/document_image/8118ddd7-e517-4107-8251-e9c8f6045ab7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2826e824-7ec4-4589-9011-0e129d76c4e4-20454557.jpg)  
+-   输入端：  
+	-   G：几何形  
+	-   C0：参考曲线  
+	-   C1：目标曲线  
+	-   R0：是否翻转参考曲线  
+	-   R1：是否翻转目标曲线  
+	-   S：是否拉伸模型覆盖全部目标曲线  
+	-   R：是否保持原几何形形状  
+-   输出端：  
+	-   G：流动后的几何形  
+-   和Bend Deform不同的是，该运算器可以将几何形按照任意曲线弯曲变形，注意曲线的方向会影响几何形和曲线的相对位置。![](https://api2.mubu.com/v3/document_image/b9de6fd2-ae75-4ba6-b407-0b9a0222b3f7-20454557.jpg)  
+-   「[[Maelstrom\|Maelstrom]]」绕转![](https://api2.mubu.com/v3/document_image/d4ec6063-4095-4a19-8634-3bb0ba124b36-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6feb12eb-ffe5-469b-9f8c-533cc95c21ca-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   P:工作平面  
+	-   R0:第一个半径值  
+	-   R1:第二个半径值  
+	-   A:绕转角度（弧度制）  
+	-   R:是否保持原几何形形状  
+-   输出端：  
+	-   G:绕转后的几何形  
+-   R0、R1、A三个输入端均不为0时才会发生绕转。工作平面的原点为绕转中心点，该运算器可以用来做水面漩涡建模。![](https://api2.mubu.com/v3/document_image/8dbcc30e-3ae4-45c4-8f43-d90c41f37980-20454557.jpg)  
+-   「[[Mirror Curve\|Mirror Curve]]」曲线镜像![](https://api2.mubu.com/v3/document_image/0a9421b6-d2c0-4a48-b4da-eca4c1810228-20454557.jpg)![](https://api2.mubu.com/v3/document_image/aa7baf47-08cb-4264-873e-6698d13182a1-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   C:曲线  
+	-   T:是否根据曲线的切向延长线镜像  
+-   输出端：  
+	-   G:镜像后的几何形  
+-   可以将几何形按照自由曲线进行镜像，运算器的图标很形象的解释了工作原理，就是将几何形的点根据曲线进行法向对称。![](https://api2.mubu.com/v3/document_image/677955db-4d38-4aff-94e1-d0133adb759c-20454557.jpg)  
+-   「[[Mirror Surface\|Mirror Surface]]」曲面镜像![](https://api2.mubu.com/v3/document_image/6a230f68-ebab-4e38-9014-9b1984eceee5-20454557.jpg)![](https://api2.mubu.com/v3/document_image/9f26b0ad-2d8a-4e47-ad84-0687e0a62450-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   S:曲面  
+	-   T:是否根据曲面的边界外区域镜像  
+-   输出端：  
+	-   G:镜像后的几何形  
+-   和Mirror Curve:类似，将几何形的点根据曲面进行法向对称。![](https://api2.mubu.com/v3/document_image/5e1d2564-d708-4728-b52e-7a8a8a11e73e-20454557.jpg)  
+-   T端和Mirror Curve类以，控制当曲面有未覆盖垂点区域时，是否将曲面按照边缘趋势延展进行镜像。当T端为Flse且曲面存在垂点未覆盖区域，会将几何形的剩余点根据曲面的边缘点进行镜像。![](https://api2.mubu.com/v3/document_image/f886c454-d5ff-4c05-ab02-33d4b9234eee-20454557.jpg)  
+-   「[[Splop\|Splop]]」定位物件曲面![](https://api2.mubu.com/v3/document_image/a4f4c0f9-4b02-4c4d-a93e-e0a4583851d7-20454557.jpg)![](https://api2.mubu.com/v3/document_image/9ff6337e-9a01-424c-a852-2eafc97de88b-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   P:参照工作平面（原点为定位基点）  
+	-   S:曲面  
+	-   uV:曲面uV点（定位目标点）  
+	-   A:旋转角度（弧度制）  
+	-   R:是否保持原几何形形状  
+-   输出端：  
+	-   G:定位后的几何形  
+-   将几何形定位到曲面上并贴合，注意参照工作平面定位基点的选择，以及u端的输入格式。![](https://api2.mubu.com/v3/document_image/b58cde39-ebec-449b-902f-bd5f75a8a8cb-20454557.jpg)  
+-   「[[Sporph\|Sporph]]」曲面流动![](https://api2.mubu.com/v3/document_image/bfc5411e-7081-49e4-acbc-d97f06f089b0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2327e068-0175-4661-a80a-3cc0a0eae57d-20454557.jpg)  
+-   输入端：  
+	-   G：几何形  
+	-   S0：参照曲面  
+	-   P0：参照曲面参考点  
+	-   S1：目标曲面  
+	-   P1：目标曲面参考点  
+	-   R：是否保持原几何形形状  
+-   输出端：  
+	-   G：流动后的几何形  
+-   P0和P1端对应Rhino的曲面流动命令中选取基底曲面和目标曲面的环节，我们一般将P0和P1设置为起始顶点，即“0,0”，注意输入格式。![](https://api2.mubu.com/v3/document_image/c5ffbf22-660c-4fe6-9da0-7edef71b5442-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1e475dfc-1d28-4476-a7ae-612d8192e7ed-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5ec3d7c2-d274-45e3-8cd8-57c9afd6b40b-20454557.jpg)  
+-   「[[Stretch\|Stretch]]」延展![](https://api2.mubu.com/v3/document_image/0827c2bc-f2c0-4652-a6cb-ec38aab032d0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/60927ce3-b2f3-4451-ac98-388375785603-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   X:延展轴  
+	-   L:延展长度  
+	-   R:是否保持原几何形形状  
+-   输出端：  
+	-   G:延展后的几何形  
+-   跟单轴缩放的区别在于，延展可以只变动几何形的一部分。![](https://api2.mubu.com/v3/document_image/f6aff2ad-4f31-4921-9fcc-8de9b1fe3fac-20454557.jpg)  
+-   「[[Surface Morph\|Surface Morph]]」指定区间曲面流动![](https://api2.mubu.com/v3/document_image/e816748d-c7f9-47dd-bc57-48cf8d437a3a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a9af7c93-4b4b-4c31-b3b9-ba78acf4e52a-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   R:参考立方体  
+	-   S:目标曲面  
+	-   U:曲面U方向范围  
+	-   V:曲面V方向范围  
+	-   W:曲面W方向范围  
+-   输出端：  
+	-   G:流动后的几何形  
+-   可以将几何形流动到目标曲面的指定区间范围内，注意R端输入的是立方体，我们可以结合Bounding Box来做。需要注意的一点是，当目标曲面Reparameterize后，只有U和V两个方向重新定义到了0一l区间，并不包括W方向，所以W方向要设置成原Bounding Box的高度。![](https://api2.mubu.com/v3/document_image/f30c7bf4-6949-4d9e-ba01-e0ba41427827-20454557.jpg)  
+-   「[[Taper\|Taper]]」锥状化![](https://api2.mubu.com/v3/document_image/af4edc76-9b7d-48c7-b8d8-e035adb712bf-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b5a8a45f-5109-43c3-a4a4-a86f55788f51-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   X:锥状轴  
+	-   R0:锥状轴起点半径  
+	-   R1:锥状轴终点半径  
+	-   F:是否单轴变形  
+	-   I:是否无限延长锥状轴  
+	-   R:是否保持原几何形形状  
+-   输出端：  
+	-   G:锥状化后的几何形  
+-   R0和R1两个半径值是通过相对大小比例来影响推状化效果，当二者相等时，不论值为多少几何形都不发生变化。![](https://api2.mubu.com/v3/document_image/43fc4537-2f63-4e56-aca0-5b79b7a3def3-20454557.jpg)  
+-   F端的单轴变形类似单轴缩放，即当几何形的宽度发生变化时，厚度跟不跟着改变。![](https://api2.mubu.com/v3/document_image/fa47e2c8-d48c-41e5-a86f-2c12d88df7e7-20454557.jpg)  
+-   端主要针对锥状轴长度不足以覆盖全部几何形的情况。若为Tue,则视为无限长，可全部锥状化；若为False,则只锥状化其覆盖的部分。![](https://api2.mubu.com/v3/document_image/f0d45c2f-0c2b-43e1-84cf-cb12842186e3-20454557.jpg)  
+-   「[[Twist\|Twist]]」扭转![](https://api2.mubu.com/v3/document_image/ad66bf8e-1a17-451c-81e2-7807dd3f830f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4d9fe2a1-b729-4eae-80c1-bc2e1423724f-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   X:扭转轴  
+	-   A:扭转角度（弧度制）  
+	-   I:是否无限延长扭转轴  
+	-   R:是否保持原几何形形状  
+-   输出端：  
+	-   G:扭转后的几何形  
+-   扭转角度指扭转轴起点和终点的扭转角度。![](https://api2.mubu.com/v3/document_image/8435e508-96a2-4b8f-a489-8db6b701dce6-20454557.jpg)  
+-   I端主要针对扭转轴长度不足以覆盖全部几何形的情况。若为True,则视为无限长，可全部扭转；若为False,则只扭转其覆盖的部分。![](https://api2.mubu.com/v3/document_image/97092d04-cf1f-4f76-8f9e-5b5c5b6a3249-20454557.jpg)  
+-   「[[Map to Surface\|Map to Surface]]」曲线映射到曲面![](https://api2.mubu.com/v3/document_image/13a682a9-dde0-4861-b49f-26d61daf912c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/912f89e1-cc8d-43d9-b065-35f2c88bf10d-20454557.jpg)  
+-   输入端：  
+	-   C:曲线  
+	-   S:参考曲面  
+	-   T:目标曲面  
+-   输出端：  
+	-   G:映射后的曲线  
+-   该运算器是通过控制点将曲线映射到曲面上，由于只有控制点在曲面上，所以曲线并不一定能完全贴合曲面，因此该运算器一般只适用于平面到平面的映射，从电池的图标上也能看出这一点。![](https://api2.mubu.com/v3/document_image/ff019557-1332-4460-a175-453f093a0b0c-20454557.jpg)  
+-   和曲面流动不同的是，参考曲面并不需要是其对应UV曲面，只是将曲线按其和参考曲面的比例映射到目标曲面。![](https://api2.mubu.com/v3/document_image/cb0c9907-12d1-4160-a54b-5177a9f02ad2-20454557.jpg)  
+-   「[[Point Deform\|Point Deform]]」控制点变形![](https://api2.mubu.com/v3/document_image/3963febb-ac9f-441a-b9ae-96ec4fec53d0-20454557.jpg)![](https://api2.mubu.com/v3/document_image/63e1e84f-5098-4d43-bf5c-2bc8d7d6bec9-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   P:控制点  
+	-   M:控制点的变形向量  
+-   输出端：  
+	-   G:变形后的几何形  
+-   通过改变几何形控制点的位置来对几何形进行变形处理，M端向量数量需要和P端控制点数量相等。![](https://api2.mubu.com/v3/document_image/d632c187-2227-479c-a4d2-fab48845296b-20454557.jpg)  
+-   「[[Spatial Deform\|Spatial Deform]]」空间自由变形![](https://api2.mubu.com/v3/document_image/87147974-6596-4977-8bd9-f4ce0148f934-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2a07ccc6-b712-4577-8d85-81815097c73f-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   S:点  
+	-   F:点的变形向量  
+-   输出端：  
+	-   G:变形后的几何形  
+-   有点类似Rhio命令“变形控制器”，S端的点不需要是控制点也不需要在几何形表面，F端输入和点等量的向量即可自由变形几何形。![](https://api2.mubu.com/v3/document_image/26655939-68f2-4caa-b928-153ab98b865a-20454557.jpg)  
+-   「[[Spatial Deform(custom)\|Spatial Deform(custom)]]」空间自由变形（自定义）![](https://api2.mubu.com/v3/document_image/2f799ce2-d2b6-4995-99b3-d243cc67229e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/465837ea-53df-4d23-aafd-ff7961f5a218-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   S:点  
+	-   F:点的变形向量  
+	-   F:变形衰减  
+-   输出端：  
+	-   G:变形后的几何形  
+-   该运算器理论上和Spatial Deform的区别是可以实现带有衰减过渡的局部变形，由f端控制，变形衰减指控制变形区域和未变形区域的过渡程度，这个在Rhio官方针对变形控制器的说明也有提到。但试了下在GH中改变数值貌似得到的结果一样，这个暂且存疑吧。![](https://api2.mubu.com/v3/document_image/8d589402-c152-4f87-ba9f-3e998415a59a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/82f6b65a-15ac-4959-9080-1e01f2cfa602-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7b71ca19-c081-44a2-99d2-b36b51ccbfd8-20454557.jpg)  
+-   对于整体变形和Spatial Deform用法一样，具体见<Spatial Deform知识点1>。  
+## Util 形变实用  
+-   Transform类的Util组，变形相关的实用工具运算器。![](https://api2.mubu.com/v3/document_image/4d94ec4a-dc96-4df4-ae8f-6a9f589d1075-20454557.jpg)  
+-   「[[Compound\|Compound]]」复合![](https://api2.mubu.com/v3/document_image/16182f1d-5121-449d-a66b-b07ae94bffcb-20454557.jpg)![](https://api2.mubu.com/v3/document_image/8fa1bfc7-a0ea-4267-be96-9323545eab2c-20454557.jpg)  
+-   输入端：  
+	-   T:变动数据  
+-   输出端：  
+	-   X:复合后的变动数据  
+-   将多种变动复合在一起，形成多个维度的变动，常配合Transform类Util组的Transform运算器使用，比如下面的案例是移动、旋转和缩放三种复合。需要注意的是，每一种变动需要以上一变动的输出结果作为输入几何形，例如本案例中旋转以移动的输出端作为输入端，而不能以初始形作为输入端。![](https://api2.mubu.com/v3/document_image/9b54dfa6-af6f-4bb8-9429-c7e7922c479b-20454557.jpg)  
+-   「[[Split\|Split]]」拆解![](https://api2.mubu.com/v3/document_image/145eef17-3e8f-4a98-88e4-1570a9b640dd-20454557.jpg)![](https://api2.mubu.com/v3/document_image/77777819-5422-43e3-9ae1-919bbdc4f100-20454557.jpg)  
+-   输入端：  
+	-   T:复合变动数据  
+-   输出端：  
+	-   F:拆解后的变动数据  
+-   和Compound互为相反运算器，将复合的变动数据拆解为两个单独的变动数据，比如我们将Compound运算器讲解时的复合变动拆解。![](https://api2.mubu.com/v3/document_image/631a9d54-51bd-462b-9dc5-4c1b18c92c99-20454557.jpg)  
+-   「[[Inverse Transform\|Inverse Transform]]」翻转![](https://api2.mubu.com/v3/document_image/6bee8ae6-77ca-4bf1-a8d3-c0ce8d3138ad-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6e118b9b-8ebe-483e-b556-dd00b28ce39a-20454557.jpg)  
+-   输入端：  
+	-   T:变动数据  
+-   输出端：  
+	-   T:翻转后的变动数据  
+-   所谓翻转就是按照之前相反的形式进行变动，比如本来是方向移动，翻转后就是-X方向移动，本来是顺时针旋转，翻转后就是逆时针旋转。注意翻转只能针对一种变动，加入复合变动可能会出现错误。![](https://api2.mubu.com/v3/document_image/aacba430-04a2-45b8-bcfb-593a11366e4b-20454557.jpg)  
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Transform\|Transform]]」变动![](https://api2.mubu.com/v3/document_image/166e7c54-5b1e-4482-af5b-07d634243f8d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/956189e9-b28a-4b72-982b-97fed1a025d8-20454557.jpg)  
+-   输入端：  
+	-   G:几何形  
+	-   T:变动数据  
+-   输出端：  
+	-   G:变动后的几何形  
+-   主要用于复合变动，见<Compound:知识点1>。  
+-   「[[Transform Matrix\|Transform Matrix]]」变动矩阵![](https://api2.mubu.com/v3/document_image/ef59095a-393d-4552-a36e-0c682f3af3a1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a0a3cdb5-bac4-490d-807a-6e6ce13c1db0-20454557.jpg)  
+-   在GH中，矩阵的概念主要和几何的变动有关，可以结合Maths类Metrix组的电池做出丰富的变动效果，关于变动数据如何和矩阵相结合，具体可以看看中的视频。  
+-   该电池本身没有计算功能，更像一个矩阵查看器，类似电池Display Metrix，右键可以更改小数位数，只不过Display Metrix查看完就完了，而这个运算器查看完还有输出端可以接着向后连接。![](https://api2.mubu.com/v3/document_image/a4c198fd-74c6-4144-a494-c63cecab5b46-20454557.jpg)  
+-   「[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU/Params 参数/Gemoetry 几何图形/Group\|Group]]」成群组![](https://api2.mubu.com/v3/document_image/154c1966-fefe-47d2-ae28-d64833110f74-20454557.jpg)![](https://api2.mubu.com/v3/document_image/66577c63-d946-480f-ba17-b51c1e3d5096-20454557.jpg)  
+-   输入端：  
+	-   O：数据（包含任意数据类型）  
+-   输出端：  
+	-   G：成组后的数据  
+-   成组后的数据bake后会自动成为一组。需要注意的是成组后的数据会失去原有的数据类型，比如下图中的点成组后输入点的容器会报错。![](https://api2.mubu.com/v3/document_image/1350715d-ce85-49d6-92ed-f1183c6f848a-20454557.jpg)  
+-   结合Ungroup运算器可以成为一种新的树形数据分组思路。下图是将36个数据分成三大组、两小组、每组六个数据的两种方法。![](https://api2.mubu.com/v3/document_image/ad0d6c56-333f-4c1d-b5c8-76de5a1859a0-20454557.jpg)  
+-   「[[Ungroup\|Ungroup]]」解组![](https://api2.mubu.com/v3/document_image/3dfec115-4c8f-47f2-b67b-61fb4680e212-20454557.jpg)![](https://api2.mubu.com/v3/document_image/26b11dc7-985d-4999-9a66-d1f11f8c1f49-20454557.jpg)  
+-   输入端：  
+	-   G：成组后的数据  
+-   输出端：  
+	-   O：原数据（包含任意数据类型）  
+-   和Group互为相反运算器，经常搭配使用。  
+-   「[[Merge Group\|Merge Group]]」合并组![](https://api2.mubu.com/v3/document_image/5d640ff1-1ae8-4452-a989-f27fd5741090-20454557.jpg)![](https://api2.mubu.com/v3/document_image/26506e61-3759-42a3-9c14-71112637be89-20454557.jpg)  
+-   输入端：  
+	-   A:组A  
+	-   B:组B  
+-   输出端：  
+	-   G:合并后的组  
+-   将两个组合并到一起，和运算器Mrge不同的是它放大不会出现增加输入端的+号，只能合并两个组。![](https://api2.mubu.com/v3/document_image/35100ca9-901a-41d1-8589-5694c673c9b8-20454557.jpg)  
+-   「[[Split Group\|Split Group]]」拆分组![](https://api2.mubu.com/v3/document_image/24de8760-e715-42d3-a25d-fa6fac542599-20454557.jpg)![](https://api2.mubu.com/v3/document_image/477fb870-9dee-4f7f-bea1-930b213eaf7c-20454557.jpg)  
+-   输入端：  
+	-   G:合并组  
+	-   I:要拆分到A组的序号  
+	-   W:是否循环取值  
+-   输出端：  
+	-   A:组A  
+	-   B:组B  
+-   注意端输入的是要拆分到A组的所有序号值，而不是像运算器Split List那样从某个序号处分成两段。![](https://api2.mubu.com/v3/document_image/68645793-8bb0-4b09-8e25-f7cd4b28648c-20454557.jpg)  
+-   W端控制当序号大于总序号值时是否循环取值。![](https://api2.mubu.com/v3/document_image/1d436c3f-4193-4faa-901f-31203d1a2e91-20454557.jpg)            
+# Display 显示  
+## Colour 颜色显示  
+-   Display类的Colour组，颜色相关的运算器。![](https://api2.mubu.com/v3/document_image/87405042-8f98-466b-bfe6-3c50c209ab62-20454557.jpg)  
+-   「[[Colour CMYK\|Colour CMYK]]」CMYK颜色![](https://api2.mubu.com/v3/document_image/9c13ed7c-a4dd-4bba-a29d-a03c5eaba526-20454557.jpg)![](https://api2.mubu.com/v3/document_image/ef38f39f-63b0-4f34-8223-7a76cd942d5e-20454557.jpg)  
+-   以 0~1之间的小数值基于 {CMYK} 通道创建颜色。  
+-   输入端：  
+	-   C:青  
+	-   M:洋红（品红）  
+	-   Y:黄  
+	-   K:黑  
+-   输出端：  
+	-   C:输出颜色(RGB)  
+-   通过CMYK四个值(区间都是0一1)设置一个颜色，得到的颜色是RGB格式。![](https://api2.mubu.com/v3/document_image/303261a2-eac6-417f-b4a6-83bc20eeafc2-20454557.jpg)  
+-   CMYK是一种针对印刷的色模式，与它对应的是针对显示器的RGB模式，二者区别是：RGB种屏幕显示发光的色彩模式，颜色通过三种颜色的光混合而成，RGB模式是加色模式。CMYK种依靠反光的色彩模式，需要有外界光源，颜色通过四种颜色的颜料混合而成，CMYK模式是减色模式。![](https://api2.mubu.com/v3/document_image/65436034-d2b2-4a69-93ad-cf2634068c2b-20454557.jpg)  
+-   「[[Colour HSL\|Colour HSL]]」HSL颜色![](https://api2.mubu.com/v3/document_image/8854a69d-2816-41f2-8ad6-b952fabf8877-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f393b61b-9eb1-4c51-bab1-39b316ed4009-20454557.jpg)  
+-   以0~1的小数值基于 {HSL} 通道创建颜色。  
+-   输入端：  
+	-   A:Alpha通道  
+	-   H:色相  
+	-   S:饱和度  
+	-   L:亮度  
+-   输出端：  
+	-   C:输出颜色(RGB)  
+-   通过HSL三个值(区间都是0一1)设置一个颜色，得到的颜色是RGB格式，Alpha通道控制透明度，区间也为0一1。![](https://api2.mubu.com/v3/document_image/b6964051-6447-4ccb-ade7-4bfe8df3b723-20454557.jpg)  
+-   HSL和HSV是从人的感知角度开发的颜色模式。相区别的是RGB和CMYK,前者针对的是屏幕，后者针对的是印刷材质，均不从人的角度出发。关于HSL和HSV的区别，以及哪个更适合人的感知众说纷纭，详细内容大家可以参考下面的链接。![](https://api2.mubu.com/v3/document_image/a694455a-c5f1-4b35-ba60-6649ea76eb33-20454557.jpg)  
+-   「[[Colour HSV\|Colour HSV]]」HSV颜色![](https://api2.mubu.com/v3/document_image/8b427736-4111-426d-8989-012ba0cb5130-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e02c2c04-3eb7-48c4-8927-83f40db947c5-20454557.jpg)  
+-   以0~1的小数值基于 {HSV} 通道创建颜色。  
+-   输入端：  
+	-   A:Alpha通道  
+	-   H:色相  
+	-   S:饱和度  
+	-   V:明度  
+-   输出端：  
+	-   C:输出颜色(RGB)  
+-   通过HSV三个值(区间都是0一1)设置一个颜色，得到的颜色是RGB格式，Alph通道控制透明度，区间也为0一1.HSV颜色也称作HSB,B全称为Brightness。  
+-   HSV和HSL是从人的感知角度开发的颜色模式。相区别的是RGB和CMYK,前者针对的是屏幕，后者针对的是印刷材质，均不从人的角度出发。HSV和HSL的区别具体见<Colour HSL知识点2>。  
+-   「[[Colour L*ab\|Colour L*ab]]」L*ab颜色![](https://api2.mubu.com/v3/document_image/7b689388-0207-4d6e-bec2-92384ad03660-20454557.jpg)![](https://api2.mubu.com/v3/document_image/df468ce3-43bc-4bd7-823f-b9e7b3198ad7-20454557.jpg)  
+-   以 0~1之间的小数值基于 {CIE L*ab} 通道创建颜色。  
+-   输入端：  
+	-   A:Alpha通道  
+	-   L:亮度  
+	-   A:第一颜色(负值表示绿色，正值表示品红)  
+	-   B:对立颜色(负值表示蓝色，正值表示黄色)  
+-   输出端：  
+	-   C:输出颜色(RGB)  
+-   通过Lab三个值(区间都是0一1)设置一个颜色，得到的颜色是RGB格式，Alpha:通道控制透明度，区间也为0一1。  
+-   L*ab、LCH、XYZ-Yxy三种都属于CIE体系，也都比较契合人类视觉，但他们一般出现比较少，常用在色差仪。![](https://api2.mubu.com/v3/document_image/521bc8dd-ccd7-4481-b9b8-829ed2192be5-20454557.jpg)  
+-   「[[Colour LCH\|Colour LCH]]」LCH颜色![](https://api2.mubu.com/v3/document_image/d88fb761-3a9f-4885-a5cf-5d05b9bf6681-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5bf1c6bd-a6a4-4cf1-a517-9fcd223fb156-20454557.jpg)  
+-   以 0~1之间的小数值基于 {CIE LCH} 通道创建颜色。  
+-   输入端：  
+	-   A:Alpha通道  
+	-   L:亮度  
+	-   C:饱和度  
+	-   H:色相  
+-   输出端：  
+	-   C:输出颜色(RGB)  
+-   通过LCH三个值(区间都是0一1)设置一个颜色，得到的颜色是RGB格式，Alphai通道控制透明度，区间也为0一1。  
+-   L*ab、LCH、XYZ-Yxy三种都属于CIE体系，也都比较契合人类视觉，但他们一般出现比较少，常用在色差仪。  
+-   「[[Colour RGB\|Colour RGB]]」RGB颜色![](https://api2.mubu.com/v3/document_image/37119c03-7758-46db-8078-cad2097d9717-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5a0deb42-8784-413f-a3d9-3f0402c0e282-20454557.jpg)  
+-   使用 0~255 之间的整数值{RGB} 创建颜色。  
+-   输入端：  
+	-   A:Alpha通道  
+	-   R:红  
+	-   G:绿  
+	-   B:蓝  
+-   输出端：  
+	-   C:输出颜色(RGB)  
+-   我们最熟悉的颜色模式，也是屏幕显示采用的颜色模式，通过RGB三个值(区间都是0一255)设置一个颜色，得到的颜色是RGB格式，Alpha:通道控制透明度，区间为0一255。  
+-   「[[Colour RGB（f）\|Colour RGB（f）]]」RGB（f）颜色![](https://api2.mubu.com/v3/document_image/3d36cef5-5a6f-41fe-9916-685548b4d3f9-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a589d5ca-e085-4da3-9a7f-08aee07025ab-20454557.jpg)  
+-   使用0~1之间的小数值 {RGB} 创建颜色。  
+-   输入端：  
+	-   A:Alpha通道  
+	-   R:红  
+	-   G绿  
+	-   B:蓝  
+-   输出端：  
+	-   C:输出颜色(RGB)  
+-   和Colour RGB运算器用法一样，只是输入端全部变为了0一1区间。  
+-   「[[Colour XYZ\|Colour XYZ]]」XYZ颜色![](https://api2.mubu.com/v3/document_image/eded1122-9382-4727-a3c0-08e588403ee8-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6291ac8c-e886-4b7e-b875-0562f67eca60-20454557.jpg)  
+-   以 0~1之间的小数值基于 {XYZ} 通道创建颜色（CIE 1931 规范）。  
+-   输入端：  
+	-   A:Alpha通道  
+	-   X:红色的刺激值  
+	-   Y:绿色的刺激值  
+	-   Z:蓝色的刺激值  
+-   输出端：  
+	-   C:输出颜色(RGB)  
+-   YZ颜色模型，也叫做XYZ-YXy颜色模型，通过YZ三个值(区间都是0一1)设置一个颜色，得到的颜色是RGB格式，Alpha通道控制透明度，区间也为O一1。![](https://api2.mubu.com/v3/document_image/d5ee6fa4-11f0-432c-bc3e-4e4c3f88a21e-20454557.jpg)  
+-   L*ab、LCH、XYZ-Yxy三种都属于CIE体系，也都比较契合人类视觉，但他们一般出现比较少，常用在色差仪。  
+-   「[[Split AHSL\|Split AHSL]]」AHSL颜色分解![](https://api2.mubu.com/v3/document_image/f49e8c64-c71d-4cee-b184-50012385ad70-20454557.jpg)![](https://api2.mubu.com/v3/document_image/67f80a96-f9be-48cd-a8fb-6e52211ce704-20454557.jpg)  
+-   将颜色拆分为0~1之间小数值的 {AHSL} 通道 。  
+-   输入端：  
+	-   C:输入颜色(RGB)  
+-   输出端：  
+	-   A:Alpha通道  
+	-   H:色相  
+	-   S:饱和度  
+	-   L:亮度  
+-   将输入的RGB颜色转换为HSL模式并拆分。![](https://api2.mubu.com/v3/document_image/96d3bfe8-0bfe-4ee6-8c74-87de101fddb4-20454557.jpg)  
+-   「[[Split AHSV\|Split AHSV]]」AHSV颜色分解![](https://api2.mubu.com/v3/document_image/73d07efb-268c-4462-86a8-caab6a06f4c1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/bba31421-39c1-446f-8674-e58d4bc26b80-20454557.jpg)  
+-   将颜色拆分为0~1之间小数值的 {AHSV} 通道 。  
+-   输入端：  
+	-   C:输入颜色(RGB)  
+-   输出端：  
+	-   A:Alphai通道  
+	-   H:色相  
+	-   S:饱和度  
+	-   V:明度  
+-   将输入的RGB颜色转换为HSV模式并拆分。![](https://api2.mubu.com/v3/document_image/abc520e7-f080-4ee3-8f91-ed9adc42099a-20454557.jpg)  
+-   「[[Split ARGB\|Split ARGB]]」ARGB颜色分解![](https://api2.mubu.com/v3/document_image/32c5b399-a7c2-4514-9578-d98b44f9712b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/15600e6b-76c5-43b4-ab83-94e31db1a585-20454557.jpg)  
+-   将颜色拆分为0~1之间小数值的 {ARGB} 通道。  
+-   输入端：  
+	-   C:输入颜色(RGB)  
+-   输出端：  
+	-   A:Alpha通道  
+	-   R:红  
+	-   G:绿  
+	-   B:蓝  
+-   将输入的RGB颜色拆分为R、G、B三个值，右键勾选Integer Channelsi可以切换区间变为0一255。![](https://api2.mubu.com/v3/document_image/11ed5a87-d759-40ce-8d02-ae2522efe537-20454557.jpg)  
+## Dimensions 尺寸标注  
+-   Display类的Dimensions组，尺寸标注相关的运算器。![](https://api2.mubu.com/v3/document_image/ac1559a4-ab3f-4f4a-adb6-b7aac2c39ab6-20454557.jpg)  
+-   「[[Gradient Hatch\|Gradient Hatch]]」填充渐变色![](https://api2.mubu.com/v3/document_image/f3ba8741-6def-4963-aa87-79b9d9631856-20454557.jpg)![](https://api2.mubu.com/v3/document_image/afcfe607-e72c-455b-937c-462a7a8db4e0-20454557.jpg)  
+-   创建渐变颜色填充。必须是封闭且平面的线。  
+-   输入端：  
+-   B：边界曲线  
+-   A：渐变轴  
+-   C1：渐变轴起点颜色  
+-   C2：渐变轴终点颜色  
+-   根据轴的方向为区域填充渐变颜色。![](https://api2.mubu.com/v3/document_image/33e2a481-4569-4cc6-bc75-62465f3b7db2-20454557.jpg)  
+-   「[[Pattern Hatch\|Pattern Hatch]]」剖面线![](https://api2.mubu.com/v3/document_image/c7df372d-efee-47ff-86f1-42fae9f0997f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/7d6e0472-4fc2-4b55-bdad-b8c5c3f71bfa-20454557.jpg)  
+-   填充剖面线。必须是平面且封闭的线才可以。  
+-   输入端：  
+-   B：边界曲线  
+-   P：图案类型序号（0—8）  
+-   S：图案缩放  
+-   A：图案角度（弧度制）  
+-   根据P端输入的图案类型对区域进行填充，也可以右键P输入端选择图案类型。![](https://api2.mubu.com/v3/document_image/b6c4638c-fc89-472f-bb0a-a35a85a84911-20454557.jpg)  
+-   「[[Text Tag\|Text Tag]]」文字标注1![](https://api2.mubu.com/v3/document_image/7d62d0d1-9bac-400e-8313-583e28d6f94e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/da78635c-8b83-4f71-9a51-b834cbb3c338-20454557.jpg)  
+-   在Rhino视窗中做文字注解点。效果类似与Rhino中的Dot（注解点）工具。  
+-   输入端：  
+	-   L:位置  
+	-   T:文字内容  
+	-   C:颜色  
+-   给指定位置标注文字，注意该运算器无法设置文字大小，并且随着视角的远近变化，文字的大小不变，Bak电池可以生成Rhino中的注解点样式。![](https://api2.mubu.com/v3/document_image/396ac3f6-c3fe-46e1-bdb0-4a19d908ee39-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4a329327-4bcc-4b8a-84b4-3f2f1a556afd-20454557.jpg)  
+-   「[[Text Tag 3D\|Text Tag 3D]]」3D文字标注![](https://api2.mubu.com/v3/document_image/3fae0a1c-de18-4fe2-89a6-93a31d45ad8d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6d5a0c39-ab47-448b-99a3-bc7b6bcd739e-20454557.jpg)  
+-   在Rhino视窗中做3D文字标注。  
+-   输入端：  
+-   L：位置  
+-   T：文字内容  
+-   S：大小  
+-   C：颜色  
+-   J：对齐调整  
+-   L端用来确定文字位置，J端可以调整文字和定位点的相对关系，并且文字可以bake到犀牛空间内。![](https://api2.mubu.com/v3/document_image/da0881e3-6ef7-4ec3-99a3-a58ed83e4aaa-20454557.jpg)  
+-   这个文字电池的一个不足之处是不能更改字体，这个缺点可以用Human插件里的JustifiedText3d来弥补。此外JustifiedText3d还可以通过将M端设置为True，来显示C端的透明效果；att端可以配合CreateAttributes实现更丰富的设置表现，如材质、图层等等。![](https://api2.mubu.com/v3/document_image/6e25ac63-e689-48f5-8ba1-b18d47e0b500-20454557.jpg)  
+-   这里再多联系一个电池，也是Human插件里的，叫做Render Text to Screen，它可以将文字渲染到视口屏幕上，也就是说不论你的视角如何变化，文字都会保持在视口的指定位置不动，这个功能在做GH动画时会经常用到。需要注意的是这个电池的输入端L输入的是视口屏幕点坐标，以视口的左上角点为像素点0点，不是犀牛的空间坐标。![](https://api2.mubu.com/v3/document_image/db164ffb-4a92-4408-8965-51ff527aed3c-20454557.jpg)  
+-   「[[Aligned Dimension\|Aligned Dimension]]」同一方向标注![](https://api2.mubu.com/v3/document_image/b2d0b687-fee6-4c8f-b615-7276a252f88e-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cb5856c6-fd55-478a-80c8-2dce16926d67-20454557.jpg)  
+-   在两点之间基于工作平面创建距离标注。  
+-   输入端：  
+	-   P:工作平面  
+	-   A:标注点A  
+	-   B:标注点B  
+	-   O:标注偏移距离  
+	-   T:标注文字  
+	-   S:标注文字大小  
+-   对应Rhino出图工具里的对齐尺寸标注，可以对两点之间距离进行标注，T端不输入的话，默认是标注两点间实际距离。![](https://api2.mubu.com/v3/document_image/25ef359d-4e8e-4c4e-9c23-5e321e054de5-20454557.jpg)  
+-   T端默认数值设置为{0:0.00}，代表保留两位小数，所以该格式可以控制小数点位数，比如{0:0.0}就是保留一位小数，{0:0.000}就是保留三位小数。![](https://api2.mubu.com/v3/document_image/2acaa1eb-9c7b-41a4-8c8c-9cd1aeb66cab-20454557.jpg)  
+-   T端也可以输入其他文字，比如一条线段明明是10米，你也可以给他输入100米。![](https://api2.mubu.com/v3/document_image/e704ae60-ff84-4a1a-b267-941473ae3460-20454557.jpg)  
+-   该电池Bake后可能会和GH中显示的不同，因为它Bake后会以Rhino的设置来显示，这时可以双击标注编辑，也可以在下图位置设置Rhino中的注解样式。![](https://api2.mubu.com/v3/document_image/ea397b5a-ebd8-4684-bf44-9ec21e8ee8d7-20454557.jpg)  
+-   「[[Line Dimension\|Line Dimension]]」直线标注![](https://api2.mubu.com/v3/document_image/de7019dc-698b-4f3d-b584-2af2c8320427-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a671713c-a0a2-4e37-86c1-d75b2b8c8843-20454557.jpg)  
+-   在直线上建立距离标注。  
+-   输入端：  
+-   L：工作平面  
+-   T：标注文字  
+-   S：标注文字大小  
+-   T端不输入可直接标注直线的实际尺寸。  
+-   T端可以输入指定格式控制标注小数位数，也可以输入任意其他文字信息![](https://api2.mubu.com/v3/document_image/2ae43043-df68-4944-a3c1-c614b512651b-20454557.jpg)  
+-   「[[Linear Dimension\|Linear Dimension]]」基于直线方向![](https://api2.mubu.com/v3/document_image/12e33cf6-ff2d-4cdd-9822-ba4443ea4509-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4ae61d30-d75f-48c0-a7aa-2c237038ff85-20454557.jpg)  
+-   在两点之间基于直线方向创建距离标注 。  
+-   输入端：  
+	-   L:直线  
+	-   A:标注点A  
+	-   B:标注点B  
+	-   T:标注文字  
+	-   S:标注文字大小  
+-   类似于Rhino出图工具中水平尺寸标注和垂直尺寸标注，标注的是点A和B在直线L上的投影长度，T端不输入时标注的是实际长度值。![](https://api2.mubu.com/v3/document_image/186abee5-7b59-4f34-b3c8-662e09bf638e-20454557.jpg)  
+-   T端可以输入指定格式控制标注小数位数，也可以输入任意其他文字信息，具体见点<Aligned Dimension知识2和3>。  
+-   该电池Bake后与GH中显示不同的原因及解决办法见<Aligned Dimension知识点4>。  
+-   「[[Marker Dimension\|Marker Dimension]]」直线末端标注![](https://api2.mubu.com/v3/document_image/759807f4-ed7e-4b11-b079-738ba1aa4eac-20454557.jpg)![](https://api2.mubu.com/v3/document_image/130c78cc-b556-41c9-bde6-74351d2be468-20454557.jpg)  
+-   在点上创建文本标注。  
+-   输入端：  
+	-   L:直线  
+	-   A:标注点A  
+	-   B:标注点B  
+	-   T:标注文字  
+	-   S:标注文字大小  
+-   以L端直线为标注线，标注直线起点的信息。T端默认为Z={2:0.0},意思文字内容是Z=起点Z坐标，简单解释：  
+	-   “2”代表起点的Z坐标值，具体讲就是X、Y、Z三个坐标值序号分别为0、1、2，所以2对应的就是Z坐标。  
+	-   "0.0”代表保留一位小数，具体见Aligned Dimension知识点2>。![](https://api2.mubu.com/v3/document_image/7e2fe39d-0695-4d62-9029-4de30073ddd1-20454557.jpg)  
+	-   T端还可以自己任意设置文字信息，比如输入"起点Y坐标={1:0.0}”和"大米营造”。![](https://api2.mubu.com/v3/document_image/9db14c61-492b-4603-975b-227e1ef698c1-20454557.jpg)  
+	-   该电池Bake后与GH中显示不同的原因及解决办法见<Aligned Dimension知识点4>。  
+-   「[[Serial Dimension\|Serial Dimension]]」多点距离标注![](https://api2.mubu.com/v3/document_image/fc9b7a8a-6042-4979-b516-9bfef938ad86-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5e46c82c-7f66-400c-a4f8-8dbc9e40e55c-20454557.jpg)  
+-   多个点到第一个点的距离标注。  
+-   输入端：  
+	-   L:直线  
+	-   P:多个标注点  
+	-   T:标注文字  
+	-   S:标注文字大小  
+-   标注P端点在直线L上的连续投影长度，长度是从起点叠加计算，不是分段长短，端不输入时标注的是实际长度值。![](https://api2.mubu.com/v3/document_image/10b47307-7c33-4eea-9c43-02cbb46b079a-20454557.jpg)  
+-   T端可以输入指定格式控制标注小数位数，也可以输入任意其他文字信息，具体见点<Aligned Dimension知识2和3>。  
+-   该电池Bake后与GH中显示不同的原因及解决办法见<Aligned Dimension知识点4>。  
+-   「[[Angular Dimension\|Angular Dimension]]」角度标注![](https://api2.mubu.com/v3/document_image/cdba68f2-a455-4102-823d-329621dbb830-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d283dd94-644c-44bc-afba-4d0d31ddbb03-20454557.jpg)  
+-   基于输入点建立角度标注。  
+-   输入端：  
+	-   C：角点  
+	-   A：第一条边终点  
+	-   B：第二条边终点  
+	-   R：是否标注优角（180°—360°）  
+	-   T：标注文字  
+	-   S：标注文字大小  
+-   标注两条边的夹角大小，R端为True时标注优角（180°—360°），False时标注劣角（0°—180°），T端不输入时标注的是实际角度值。![](https://api2.mubu.com/v3/document_image/0d70123c-437a-44d9-a7f1-8b44b5599dc6-20454557.jpg)![](https://api2.mubu.com/v3/document_image/4094dd90-c10c-407d-ab8d-422ea2ae3fef-20454557.jpg)  
+-   T端可以输入指定格式控制标注小数位数，也可以输入任意其他文字信息  
+-   「[[Angular Dimensions (Mesh)\|Angular Dimensions (Mesh)]]」网格角度标注![](https://api2.mubu.com/v3/document_image/4180178d-4556-4329-8b47-aceca6933e58-20454557.jpg)![](https://api2.mubu.com/v3/document_image/0bf44b88-43f3-4276-80b8-53b5506fac01-20454557.jpg)  
+-   给网格所有角建立角度标注 。  
+-   输入端：  
+	-   M:网格  
+	-   T:标注文字  
+	-   S:标注文字大小  
+	-   F:标注文字与角点距离因子  
+	-   A0:标注最小角度（弧度制）  
+	-   A1:标注最大角度（弧度制）  
+-   对输入的网格在A0一A1的角度范围区间内进行自动标注，F端输入的是标注到角点的比例因子，越大距离角点越远，T端不输入时标注的是实际角度值。![](https://api2.mubu.com/v3/document_image/3f2f225e-13f2-476a-8534-258b589a7b18-20454557.jpg)  
+-   T端可以输入指定格式控制标注小数位数，也可以输入任意其他文字信息，具体见点<Aligned Dimension知识2和3>。  
+-   该电池Bake后与GH中显示不同的原因及解决办法见<Aligned Dimension知识点4>。  
+-   「[[Arc Dimension\|Arc Dimension]]」圆弧角度标注1![](https://api2.mubu.com/v3/document_image/b4b9d4c0-0bac-4499-b18c-9795f331d213-20454557.jpg)![](https://api2.mubu.com/v3/document_image/e252faf1-43a9-4ba2-b11d-a19eb84d43cc-20454557.jpg)  
+-   基于圆弧建立角度标注 。  
+-   输入端：  
+	-   A:圆弧  
+	-   O:标注偏移距离  
+	-   T:标注文字  
+	-   S:标注文字大小  
+-   标注圆弧的中心角度大小，T端不输入时标注的是实际角度值。![](https://api2.mubu.com/v3/document_image/d8ceed05-c932-477f-ab2f-f8ca41d29c29-20454557.jpg)  
+-   T端可以输入指定格式控制标注小数位数，也可以输入任意其他文字信息，具体见点<Aligned Dimension知识2和3>。  
+-   该电池Bake后与GH中显示不同的原因及解决办法见<Aligned Dimension知识点4>。  
+-   「[[Circular Dimension\|Circular Dimension]]」圆上点角度标注![](https://api2.mubu.com/v3/document_image/39050e10-94f9-4c00-9514-2e826e508cec-20454557.jpg)![](https://api2.mubu.com/v3/document_image/b2c1ac3f-72e8-4ad3-922b-9f9d2f12a487-20454557.jpg)  
+-   垂直投影两个点到圆上建立角度标注。  
+-   输入端：  
+	-   C:圆  
+	-   A:圆上第一点  
+	-   B:圆上第二点  
+	-   T:标注文字  
+	-   S:标注文字大小  
+-   通过圆上AB两点在圆上按照逆时针方向截取圆弧，并标注中心角度，T端不输入时标注的是实际角度值。![](https://api2.mubu.com/v3/document_image/6f8fc4d2-f316-4978-9e37-b3907b53eb1f-20454557.jpg)  
+-   T端可以输入指定格式控制标注小数位数，也可以输入任意其他文字信息，具体见点<Aligned Dimension知识2和3>。  
+-   该电池Bake后与GH中显示不同的原因及解决办法见<Aligned Dimension知识点4>。  
+-   「[[Make2D\|Make2D]]」Make2D![](https://api2.mubu.com/v3/document_image/2ebb3389-8576-4c62-a37a-d9cc85a26a40-20454557.jpg)![](https://api2.mubu.com/v3/document_image/43d7f377-3a0d-4838-ac19-8ed99003cecd-20454557.jpg)  
+-   使用Make2D工具建立模型的平面线图。  
+-   输入端：  
+	-   G:几何形  
+	-   C:截平面  
+	-   V:视角  
+	-   Te:是否计算正切边缘  
+	-   Ts:是否计算正切接缝  
+-   输出端：  
+	-   V:可见曲线  
+	-   ⅵ:可见曲线所属的原几何形序号  
+	-   Vt:可见曲线类型  
+	-   H:隐藏曲线  
+	-   Hi:隐藏曲线所属的原几何形序号  
+	-   Ht:隐藏曲线类型  
+-   生成V端输入视角的几何形Make2D,V端视角需结合Make2 D Parallel View、Make2 D Perspective View和Make2 D Rhino View这三个运算器设置。生成方式有两种，一是点击电池下面的Done手动生成，二是可以右键勾选Automatic实时生成。这里仅以Make Rhino Viewi演示，具体的各视角模式在各自电池介绍中详细讲解。![](https://api2.mubu.com/v3/document_image/f47c42dc-8899-423d-b86f-4068c6637ffd-20454557.jpg)  
+-   T端正切边缘是指两个曲面的相切边缘，Ts端按说明是接缝（接缝指一个曲面的首尾相连处，比如圆柱的侧面），但是试了下发现不太对，暂且存疑。![](https://api2.mubu.com/v3/document_image/7dd60a31-688c-4a98-807c-d972f7e1bb20-20454557.jpg)  
+-   C端是可以加入截平面形成剖面Make2D,注意截平面的Z轴要指向视口，才能生成正确的查看方向，否则会相反。![](https://api2.mubu.com/v3/document_image/150aab95-0614-46bd-a077-c0b667c19b02-20454557.jpg)  
+-   注意多个几何形的相交部分在Make2D中不会生成交线，需要先手动生成再Make2D![](https://api2.mubu.com/v3/document_image/ee118a03-2b82-4fa2-abd3-b6ffeb73dc38-20454557.jpg)  
+-   「[[Make2D Parallel View\|Make2D Parallel View]]」Make2D 平行视角![](https://api2.mubu.com/v3/document_image/5ca4daae-8347-449a-91e4-fee6407fea03-20454557.jpg)![](https://api2.mubu.com/v3/document_image/189e046f-2a09-4493-bc30-e6b9d88e4ba8-20454557.jpg)  
+-   为 Make2D 定义平面视角。  
+-   输入端：  
+	-   P:矩形视口  
+-   输入端：  
+	-   V:平行投影视角  
+-   结合Make2D运算器，生成几何形的平行投影Make2D。注意视口是有方向的，这里有两个箭头，法向箭头代表你看的方向，一般指向几何形；另一个箭头可以理解为观察者头的朝向，一般是向上或斜向上的。![](https://api2.mubu.com/v3/document_image/280811eb-c280-4529-ae2e-e1d222b12198-20454557.jpg)  
+-   注意和Make2D Perspective View不同的是，Make2D结果不受视口大小影响，即使不能完全覆盖几何形，也能生成全部物体轮廓。![](https://api2.mubu.com/v3/document_image/a8aaed48-7c6f-4d44-9118-19b24767c9ca-20454557.jpg)  
+-   「[[Make2D Perspective view\|Make2D Perspective view]]」Make2D 透视视角![](https://api2.mubu.com/v3/document_image/25eb8277-0cb8-4cdc-b81d-0a0dd8b92338-20454557.jpg)![](https://api2.mubu.com/v3/document_image/520394d1-a6e9-46ff-8376-ae64df822d22-20454557.jpg)  
+-   为 Make2D 定义透视视角。  
+-   输入端：  
+	-   C:相机位置  
+	-   F:矩形视口  
+-   输入端：  
+	-   V:透视视角  
+-   结合Make2D运算器，生成几何形的透视Make2D。视角是由相机和视口组成的一个正四棱推，注意视口是有方向的，这里有两个箭头，法向箭头代表你看的方向，一般指向几何形：另一个箭头可以理解为观察者头的朝向，一般是向上或斜向上的。![](https://api2.mubu.com/v3/document_image/71c57dee-f5ec-4ccb-bc47-7866babedc7d-20454557.jpg)  
+-   「[[Make2D Rhino View\|Make2D Rhino View]]」Make2D Rhino 视角![](https://api2.mubu.com/v3/document_image/fd48d656-097d-4625-8d88-2b66291d478f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/da79e8f7-49ab-4d89-8c1f-1e43112b15d2-20454557.jpg)  
+-   为 Make2D 导入 Rhino 视角。  
+-   输入端：  
+	-   N:Rhino视口名称  
+	-   C:是否将视口设定在四棱锥底面  
+-   输入端：  
+	-   V:Rhino视角  
+-   不用像Make2D Parallel/Perspective View那样设置视口位置，可以直接提取Rhino已命名视图名称进行Make2D,更加实用和方便。![](https://api2.mubu.com/v3/document_image/9c439e50-ca6b-4491-a0ce-73d3f11efa8b-20454557.jpg)  
+-   输入端C用来控制是否设定视口在四棱锥底面，视角四棱锥指由相机和视口组成的一个正四棱锥，具体见。用法就是，如果你的Rhino视角发生了改变，想切换到当下视角的时候，需要激活成True一下，因为Make2D视口不会随着视角的变化而实时变化。![](https://api2.mubu.com/v3/document_image/2ac0737c-4b7a-41cf-a0af-8f71ab6777ef-20454557.jpg)  
+-   还有一个需要注意的是，Rhino视口名称最好不要有重复，特别是当你用TopMostViewporti命令的时候，例如若出现了两个Perspective视角，那么提取的视角会以Rhino本身的Perspertive视口为准，不会生成你提到界面最前的这个Perspective的角度，解决办法就是将其中一个改名再设置。![](https://api2.mubu.com/v3/document_image/ba2d1e94-64ce-47c6-9061-e7372ccdbfee-20454557.jpg)  
+## Graphs 图表显示  
+-   Display类的Graphs组，图表相关的运算器。![](https://api2.mubu.com/v3/document_image/0108892d-abce-4666-9f8c-3fcb4ee0245e-20454557.jpg)  
+-   「[[Bar Graph\|Bar Graph]]」柱状图![](https://api2.mubu.com/v3/document_image/e68c237d-0261-4e1e-abcf-4e624fcb8fe4-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d079e39f-5923-4806-868d-1bb728438852-20454557.jpg)  
+-   将一组数字用柱状图表示 。  
+-   输入端：  
+	-   数值列表  
+-   显示每个输入值有多少个的柱状图，只能输入数字不能输入文字，且只能是线形数据。右键菜单可以选择X轴等分数量和柱状图颜色。![](https://api2.mubu.com/v3/document_image/66beecce-bcd4-4fc7-9e85-2719d2847aaa-20454557.jpg)  
+-   「[[Legend\|Legend]]」标签![](https://api2.mubu.com/v3/document_image/da681ef9-b829-496d-b4a0-18c1fc884a2a-20454557.jpg)![](https://api2.mubu.com/v3/document_image/26ab6048-b67f-4cdf-912e-18e3054033be-20454557.jpg)  
+-   将文字或数字显示为带颜色的标签。并在Rhino视窗中可见。  
+-   输入端：  
+-   C：颜色  
+-   T：图例文字  
+-   R：图例边框  
+-   对于景观和规划的朋友们来说，这个电池就很亲切了，在场地分析的时候你很容易想到它，不过不足之处是不能改变字体和文字颜色。![](https://api2.mubu.com/v3/document_image/969f10f1-c9cf-449f-abb6-82c57529519a-20454557.jpg)  
+-   「[[Pie Chart\|Pie Chart]]」饼图![](https://api2.mubu.com/v3/document_image/076a42a7-77dc-48e4-8024-affa2e550105-20454557.jpg)![](https://api2.mubu.com/v3/document_image/bea9e153-5092-4336-b991-c408737e301a-20454557.jpg)  
+-   使用Pie Chart（饼形图表）显示数据。  
+-   将输入的数据按照大小或其他顺序环形排列，并通过面积比例显示各数据的个数。既可以输入数字，也可以输入文字。![](https://api2.mubu.com/v3/document_image/4a1a0cc8-650b-44c8-a90f-450109457a66-20454557.jpg)  
+-   除了线形数据，还可以输入树形数据，每个分支是一个环。![](https://api2.mubu.com/v3/document_image/00b47208-4f51-4f08-80ec-9e55c8ce2efc-20454557.jpg)  
+-   右键的颜色设置并不是环形的颜色，而是背景色，所以就导致这个运算器自定义程度不高，用的也比较少![](https://api2.mubu.com/v3/document_image/4258f603-c56a-4168-9600-22403f6685e7-20454557.jpg)  
+-   右下角的凸点拖动可以缩放电池大小。  
+-   「[[Quick Graph\|Quick Graph]]」快速图形![](https://api2.mubu.com/v3/document_image/83468ff1-dd36-4f3d-b9af-0349301f2004-20454557.jpg)![](https://api2.mubu.com/v3/document_image/d89c0d05-85fc-4ec7-9525-46fe4e14fe06-20454557.jpg)  
+-   将一组数值显示为图形。它是很有用的数据分析工具。  
+-   快速生成一列数据的折线图，点击选中折线能显示最大值和最小值。只能输入数字不能输入文字，且只能是线形数据，也可以输入多组数据。![](https://api2.mubu.com/v3/document_image/19378950-44c3-4519-8b3a-81a5ef77538b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/cb1ede35-aa55-4a6b-b299-7f63f56801d6-20454557.jpg)  
+-   右键可勾选Sort Ascending:升序排列或Sort Descendingl降序排列，都不勾选就是默认的按输入顺序排列。![](https://api2.mubu.com/v3/document_image/07d1e3b8-fe97-4134-9f17-d06a32da4189-20454557.jpg)  
+-   「[[Image Gallery\|Image Gallery]]」图片框![](https://api2.mubu.com/v3/document_image/2f5f6be2-6bc1-4f98-a241-f19bb176bb76-20454557.jpg)![](https://api2.mubu.com/v3/document_image/a3c49e41-e956-4a7e-83a7-a21031fea7e6-20454557.jpg)  
+-   类似电子相框。在GH的界面中显示一系列图像并自动刷新，支持本地图片或网络图片。  
+-   可以将网络图片和本地图片载入并自动播放，双击电池，在弹出的编辑窗口中可以设置远程图片网址以及本地图片。使用方法简单介绍：  
+	-   (1)远程网址以搜狗浏览器为例，网页页面上右键图片选择“复制图片网址”粘贴到编辑框即可（Rhino6可以，Rhino7显示无法连接到远程服务器不知道什么原因）。  
+	-   (2)本地图片直接拖入。  
+	-   (3)网址图片和本地图片可以在编辑窗口全部勾选同时载入，也可单独勾选载入。  
+	-   (4)编辑窗口可以设置自动播放的时间间隔。  
+	-   (5)勾选Randomize order后可随机自动播放顺序。  
+	-   (6)图片显示会按照图片本身的分辨率，所以需要将图片设置成相同分辨率再载入比较好，否则会很乱，注意是分辨率完全相同，不是长宽比相同。  
+-   「[[Value Tracker\|Value Tracker]]」数据跟踪图![](https://api2.mubu.com/v3/document_image/12e094a2-9609-4a7f-a836-756695fb406f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6a944caa-33e3-409f-951b-67f4671eff32-20454557.jpg)  
+-   跟踪并显示数值变化的轨迹。类似地震波形图，或心跳轨迹图。是一种数据图形化显示工具。  
+-   对输入的数据进行记录跟踪，右下角的数字是实时的时间，没怎么用过，右键有菜单可以进行简单设置：  
+	-   (1)Period一记录周期，右下角时间的变化间隔。  
+	-   (2)Update一更新频率，电池面板数据刷新的速度  
+	-   (3)Domain一区间设置，一般勾选Automatic Domain自动设置区间。  
+	-   (4)Graph Colour-一设置颜色，当输入端输入多个数据时才能看出效果。![](https://api2.mubu.com/v3/document_image/a02d2b3f-e421-472d-a9df-85267036be56-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5482a020-0fe0-449f-8032-1a8d1c19ab48-20454557.jpg)  
+## Preview 预览显示  
+-   Display类的Preview组，预览相关的运算器，比如预览点、颜色等等![](https://api2.mubu.com/v3/document_image/4bf3b564-b5d9-4330-8006-ef8ebe06946f-20454557.jpg)  
+-   「[[Create Material\|Create Material]]」创建材质![](https://api2.mubu.com/v3/document_image/de17624d-2b73-4957-bdf8-4df16296610c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2ce98c60-6325-4903-9443-f859c5fd6be1-20454557.jpg)  
+-   创建一个 OpenGL 材质。  
+-   输入端：  
+-   Kd：漫反射颜色  
+-   Ks：反射颜色  
+-   Ke：自发光颜色  
+-   T：透明度（0—1，0=不透明，1=完全透明）  
+-   S：反光强度（0=不反光，1=低反光，100=高反光）  
+-   输出端：  
+-   M：颜色材质  
+-   只能创建颜色材质，不能附贴图，可以结合Custom Preview在物件上预览，只建模不渲染的话我们一般只输入Kd漫反射即可，可以简单调节T端透明度。![](https://api2.mubu.com/v3/document_image/968509f9-f361-4951-ba14-872594072f6f-20454557.jpg)  
+-   自发光颜色会和漫反射颜色混合，暗处显示自发光颜色，亮处显示混合色。![](https://api2.mubu.com/v3/document_image/9bdf2717-5ed1-4603-bd29-f6f9df355fcb-20454557.jpg)  
+-   「[[Custom Preview\|Custom Preview]]」自定义预览![](https://api2.mubu.com/v3/document_image/12efe08a-9fe0-4091-93e5-8ca4aabcc610-20454557.jpg)![](https://api2.mubu.com/v3/document_image/26055f0e-584e-4811-825a-3d64b63c4e3b-20454557.jpg)  
+-   自定义几何物件的预览颜色或材质效果。  
+-   输入端：  
+-   G：几何形  
+-   M：颜色或材质  
+-   Custom Preview可以预览曲面、多重曲面、网格的颜色，但是点和线不行，点的显示需要结合Dot Display，线的显示需要结合Human插件的Custom Preview Lineweights。该电池M端按正规来说应该连接Create Material，但我们一般为了快速看颜色经常直接连接Colour Swatch。![](https://api2.mubu.com/v3/document_image/11f2a46a-0a87-4776-9d61-504402639f09-20454557.jpg)  
+-   Custom Preview的预览颜色只有将其完全Disable才能不显示颜色，仅仅用Disable Preview还会保留颜色。![](https://api2.mubu.com/v3/document_image/63c67045-c790-4155-b23a-8e1a618cd268-20454557.jpg)  
+-   如果是6.0以上的Rhino版本，可以直接bake颜色或材质到Rhino中，包括透明度。![](https://api2.mubu.com/v3/document_image/6a1a1715-fe4a-4233-a0de-8c75aeb5d7c7-20454557.jpg)  
+-   「[[Cloud Display\|Cloud Display]]」点云显示![](https://api2.mubu.com/v3/document_image/008c8915-ea94-4f6d-abe8-85e8a4653ea4-20454557.jpg)![](https://api2.mubu.com/v3/document_image/5798cf64-ffe4-4738-b14e-4f912ad3fd80-20454557.jpg)  
+-   将点显示为边缘柔和的点，并可调颜色和尺寸。  
+-   输入端：  
+	-   P:点  
+	-   C:颜色  
+	-   S:大小  
+-   和Dot Display类似，右键电池可以选择Fuzzy Blobs/Blurry Blobs,二者都是模糊的意思，但Blurry要比Fuzzy清晰一些，不过都没有Dot Display显示清晰，所以我们一般还是用Dot Displayl即可。![](https://api2.mubu.com/v3/document_image/d780f33e-3b8e-42e1-bc9b-0abfc9a7c0bc-20454557.jpg)  
+-   「[[Dot Display\|Dot Display]]」圆点显示![](https://api2.mubu.com/v3/document_image/ea6572ad-45db-4595-b81f-35cbfc9b233d-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c77bc530-7c2a-4cd8-9aef-1af61b56f2e3-20454557.jpg)  
+-   将点显示为圆点，并可调颜色和尺寸。  
+-   输入端：  
+	-   P：点  
+	-   C：颜色  
+	-   S：大小  
+-   右键电池有个Lazy选项，勾选后为Lazy模式，不勾选为Greedy模式。Lazy模式下显示精度低，调节大小时速度快；Greedy模式下显示精度高，调节大小时速度慢。![](https://api2.mubu.com/v3/document_image/19c9f0d1-bb40-4ed0-be2e-c028d403786e-20454557.jpg)  
+-   「[[Symbol (Advanced)\|Symbol (Advanced)]]」图标（高级）![](https://api2.mubu.com/v3/document_image/b82be842-cf0e-4d1c-a425-ee23df11754f-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2ad49540-e903-4395-a7c9-32ddbb5adfa2-20454557.jpg)  
+-   图标（symbol ）高级显示设置。  
+-   输入端：  
+	-   X:图标类型  
+	-   S1:图标大小  
+	-   S2:图标距定位点偏移距离  
+	-   R:旋转角度（弧度制）  
+	-   Cf:填充颜色  
+	-   Ce:边框颜色  
+	-   W:边框粗细  
+	-   A:是否使用实际值(True=大小距离等显示实际数值，False=根据视口自动调整)  
+-   输出端：  
+	-   D:图标设置  
+-   进阶版图标设置，结合Symbol Displayi对点进行图标标记，可以做各种分析图，X端的图标类型里有丰富的形式供选择。![](https://api2.mubu.com/v3/document_image/3fcdc5e7-04ea-4c6e-afac-16f59edaa463-20454557.jpg)  
+-   「[[Symbol (Simple)\|Symbol (Simple)]]」图标（基本）![](https://api2.mubu.com/v3/document_image/65889ce2-f366-4594-9078-06b1194f90c6-20454557.jpg)![](https://api2.mubu.com/v3/document_image/3cb9a633-d4d0-4a04-add3-8dbf0d4bb905-20454557.jpg)  
+-   图标（symbol ）简单显示设置。  
+-   输入端：  
+	-   X:图标类型  
+	-   S:图标大小  
+	-   R:旋转角度（弧度制）  
+	-   C:颜色  
+-   输出端：  
+	-   D:图标设置  
+-   简易版图标设置，结合Symbol Displayi对点进行图标标记，可以做各种分析图，端的图标类型里有丰富的形式供选择。![](https://api2.mubu.com/v3/document_image/d1cb6c8b-e44e-4e8e-879a-d42cc2af3a23-20454557.jpg)  
+-   「[[Symbol Display\|Symbol Display]]」图标显示![](https://api2.mubu.com/v3/document_image/fdcff0c7-bccc-4fe9-b0d3-5c1bf0de0e56-20454557.jpg)![](https://api2.mubu.com/v3/document_image/c5ffd5bb-66f8-4384-b916-dde83f838b9c-20454557.jpg)  
+-   在点上显示特定图标（symbols）  
+-   输入端：  
+	-   P:点  
+	-   D:图标设置  
+-   结合Symbol(Advanced)和Symbol(Simple)对点进行图标标记，具体见和<Symbol(Advanced)>知识点和<Symbol(Simple)知识点1>。  
+## Vector 向量显示  
+-   Display类的Vector组，向量显示相关的运算器，比如预览向量方向、点的顺序等等![](https://api2.mubu.com/v3/document_image/b6bb8dc6-9904-45ed-bc39-6f3ba43d1c47-20454557.jpg)  
+-   「[[Point List\|Point List]]」点序号显示![](https://api2.mubu.com/v3/document_image/e017cf1f-a7e6-4f0d-9574-9cddd6685cf1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/6e87973b-211f-47eb-9bcc-5989176f1ea3-20454557.jpg)  
+-   显示点在列表中的序号。非常重要的顺序检查工具。  
+-   输入端：  
+	-   P：点  
+	-   S：大小  
+-   显示点的次序，线会按着点的顺序进行连接。![](https://api2.mubu.com/v3/document_image/959dc31e-7594-4d3f-9d34-44567ca27b78-20454557.jpg)  
+-   「[[Point Order\|Point Order]]」点顺序![](https://api2.mubu.com/v3/document_image/00b3b908-081e-46e8-a470-ca0e707ed66b-20454557.jpg)![](https://api2.mubu.com/v3/document_image/2d413c6b-ba96-4ce6-824d-2bfca62dc752-20454557.jpg)  
+-   使用带有箭头的连线显示点在列表中的顺序。非常重要的顺序检查工具。  
+-   输入端：  
+	-   P:点  
+-   通过箭头的指向来指示点的顺序，用的很少，判断点序直接用Point List更好。![](https://api2.mubu.com/v3/document_image/281647d3-da3a-4b6f-9cdb-d729080485c9-20454557.jpg)  
+-   「[[Vector Display\|Vector Display]]」矢量/向量 显示![](https://api2.mubu.com/v3/document_image/70489eb2-a60f-4b31-ac5b-4f7a6381ffe1-20454557.jpg)![](https://api2.mubu.com/v3/document_image/1bcf45ea-5e8d-4cb1-b964-c8889af75805-20454557.jpg)  
+-   在Rhino视窗中显示矢量。  
+-   输入端：  
+	-   A：起始点  
+	-   V：向量  
+-   显示向量。![](https://api2.mubu.com/v3/document_image/2327d361-9c89-4105-90df-eec74f6de71a-20454557.jpg)  
+-   右键的Arrows里可以设置箭头的显示方式：  
+	-   Default Size——默认箭头  
+	-   Screen Size——屏幕箭头（按照屏幕像素显示箭头，下方可以设置pix值改变大小，该选项下视角缩放不会改变箭头大小）  
+	-   Relative Size——关联箭头（根据向量长度的百分比显示箭头，下方可以设置百分比，该选项下视角缩放箭头大小跟着改变）![](https://api2.mubu.com/v3/document_image/544247c0-de82-4a36-993a-3980c5e46682-20454557.jpg)  
+-   「[[Vector Display Ex\|Vector Display Ex]]」矢量/向量 高级显示![](https://api2.mubu.com/v3/document_image/40379eed-9f26-4740-8dc6-3c61ed8faa42-20454557.jpg)![](https://api2.mubu.com/v3/document_image/f81e1b8c-ec1b-48c5-b6ed-7ebea8da19ef-20454557.jpg)  
+-   在Rhino视窗总显示矢量 。该工具可以设置矢量的箭头大小和颜色。  
+-   输入端：  
+	-   P：起始点  
+	-   V：向量  
+	-   C：颜色  
+	-   W：粗细  
+-   显示向量，并且能够附色和改变粗细。比如我们的风力模拟的显示就是用的这个运算器。![](https://api2.mubu.com/v3/document_image/759aad8d-7a9c-4c26-b09b-7a61459602f2-20454557.jpg)![](https://api2.mubu.com/v3/document_image/41adcf7f-cc38-4941-8877-65e94c4b8d8c-20454557.jpg)![](https://api2.mubu.com/v3/document_image/361bacbd-07a6-4f45-aafb-ca4170fea514-20454557.jpg)

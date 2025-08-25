@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/🍊 TANGERINE/Obsidian/Obsidian/","tags":["⚒️"],"noteIcon":"1","created":"2024-09-24T22:57:38.000+08:00","updated":"2024-12-12T15:53:38.148+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Obsidian/Obsidian/","noteIcon":"1","created":"2024-09-24T22:57:38.000+08:00","updated":"2025-08-17T16:02:06.368+08:00"}
 ---
 
 ## Obsidian 是什么
@@ -25,7 +25,7 @@ Obsidian 的优点集中在：
 ### Obsidian 生态
 
 - Dataview 插件 
-- Tasks + Templater 插件使我构筑好个人 [[🍊 TANGERINE/Nexp/GTD\|GTD]] 系统
+- Tasks + Templater 插件使我构筑好个人 [[🍊 TANGERINE/Nexp/GTD\|🍊 TANGERINE/Nexp/GTD]] 系统
 - Quickadd 插件使我完成了库内大部分的自动化，如一键录入灵感、建立 Tasks 、快速新建模板笔记等等
 - Map View 插件使我完成了个人 GIS 系统，可以标记自己去过/想去的地点、做旅游攻略等
 - Vran 大佬开发的 Components 插件 几乎实现了 Notion database 80%的功能，为 [[🍊 TANGERINE/Obsidian/Draedon\|Draedon]] 的核心之一
@@ -62,7 +62,7 @@ Obsidian 的生态主要围绕着 Discord 和 [英文社区](https://forum.obsid
 | ------ | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | 权益     | 端到端加密，版本历史，邮件优先支持                                                                                                        | 零门槛需求，笔记选择性发布，关系图和大纲，邮件优先支持                                                                                                                    |
 | 价格     | 年付 $8/月                                                                                                                  | 年付 $16/月/站点                                                                                                                                    |
-| 个人解决办法 | 第三方同步也不稳定冲突，iCloud 同步也经常冲突，百度云同步盘不支持带有 emoji 的文件。最后还是选择了官方同步，淘宝拼车 118 一年，是真香，好用是真的好用，达到类似幕布的无感同步，还特别稳不会冲突，详见 [[🍊 TANGERINE/Obsidian/Sync\|Sync]] | 为建立数字花园我采用了 Obsidian-Digital-Gander 插件作为搭建桥梁，以 [Netlify](https://app.netlify.com) 作为构筑网站，以 Gtihub 作为代码托管。最终发布了🍊橘园，详见 [[🍊 TANGERINE/Garden Management/Construction Process\|Construction Process]] |
+| 个人解决办法 | 第三方同步也不稳定冲突，iCloud 同步也经常冲突，百度云同步盘不支持带有 emoji 的文件。最后还是选择了官方同步，淘宝拼车 118 一年，是真香，好用是真的好用，达到类似幕布的无感同步，还特别稳不会冲突，详见 [[🍊 TANGERINE/Obsidian/Sync\|🍊 TANGERINE/Obsidian/Sync]] | 为建立数字花园我采用了 Obsidian-Digital-Gander 插件作为搭建桥梁，以 [Netlify](https://app.netlify.com) 作为构筑网站，以 Gtihub 作为代码托管。最终发布了🍊橘园，详见 [[🍊 TANGERINE/Garden Management/Construction Process\|Construction Process]] |
 
 是否会在未来收费这也是一个很大的问题，我个人倾向于这个免费 Obsidian 本体应该是永久的，基于下面的考虑：
 

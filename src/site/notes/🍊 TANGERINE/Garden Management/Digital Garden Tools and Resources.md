@@ -1,14 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/🍊 TANGERINE/Garden Management/Digital Garden Tools and Resources/","noteIcon":"signpost","created":"2024-11-03T11:52:34.379+08:00","updated":"2024-11-06T16:48:04.264+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Garden Management/Digital Garden Tools and Resources/","noteIcon":"signpost","created":"2024-11-03T11:52:34.379+08:00","updated":"2025-01-03T09:37:57.909+08:00"}
 ---
 
 # 数字园艺工具和资源
-
 这一系列应用程序、工具和文章旨在帮助您了解有关数字园艺的更多信息。理想情况下，它可以帮助您创建自己的花园。
-
-
 ##  园艺工具
-
 ####  建设数字花园
 
 - [Roam Research](https://roamresearch.com/) - 互联思想的个人笔记系统
@@ -17,6 +13,7 @@
         - [Gatsby 主题花园](https://github.com/mathieudutour/gatsby-digital-garden/)支持使用 Roam 作为源的 Gatsby 主题
         - 用于漫游数据的基于[Roam-to Garden](https://github.com/DoomHammer/roam-to-git/tree/roam-to-garden) Jekyll 的转换器
 - [Obsidian](https://obsidian.md/) - 类似 Roam 的知识库，在纯文本 Markdown 文件的本地文件夹之上工作。还允许您将图表的选择发布到开放网络。
+	- [Obsidian-Digital-Gander](https://dg-docs.ole.dev/) - 免费的把 Obsidian 内容发布到开放网络，支持域名，Git仓库做为数据源。
 - [TiddlyWiki](https://tiddlywiki.com/) - 无代码个人 wiki 系统
     - [漫步](https://giffmex.org/stroll/stroll.html)具有双向链接和其他类似漫游功能的 TiddlyWiki 插件
     - [TiddlyMap](http://tiddlymap.org/) - 一个思维导图插件，用于显示 TiddlyWiki 的可视化效果。
@@ -52,8 +49,6 @@
     - [Webmention.io](https://webmention.io/) - 将网络提及添加到您的花园的服务
 - [假设](https://web.hypothes.is/)- 一层社会元评论
 - [mkdocs-newsletter](https://lyz-code.github.io/mkdocs-newsletter/) - [MKdocs](https://www.mkdocs.org/)平台的附加组件，可生成新闻通讯，记录哪些页面已更改
-
-  
 
 ##  操作方法和教程
 

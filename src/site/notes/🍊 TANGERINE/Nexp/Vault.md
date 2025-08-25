@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/🍊 TANGERINE/Nexp/Vault/","noteIcon":"1","created":"2024-11-03T17:48:05.835+08:00","updated":"2024-11-06T16:47:52.291+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Nexp/Vault/","noteIcon":"1","created":"2024-11-03T17:48:05.835+08:00","updated":"2024-11-05T23:44:41.854+08:00"}
 ---
 
 是 Obsidian 的“库”，包含笔记本体以及配置文件

@@ -1,12 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/🍊 TANGERINE/Person/Notes  History/","noteIcon":"2","created":"2024-10-31T23:11:38.202+08:00","updated":"2024-11-06T17:13:45.117+08:00"}
+{"dg-publish":true,"permalink":"/🍊 TANGERINE/Person/Notes  History/","noteIcon":"2","created":"2024-10-31T23:11:38.202+08:00","updated":"2025-04-15T09:33:03.717+08:00"}
 ---
 
 ## 前言
 
 上大学之前，橘子都没有记笔记的习惯，直到大一的时候，我们景观设计专业开始教我们上机操作的软件了，当时正好是疫情期间，于是我们就网课听软件课。至此，因为专业软件有很多复杂的快捷键，以及一些操作步骤等，我便开始第一次尝试记笔记——备忘录。
 
-但是备忘录比较简陋，很多东西只能是写出来，于是偶然发现了一些笔记软件准备试试。当时听 [[C 📔 AREA/⚒️ Software/Rhinoceros 3D/Rhino\|Rhino]] 课程的时候，是蒯鼎老师主讲，他展示了一下**有道云笔记**，我就记下了准备后续自己研究一下。
+但是备忘录比较简陋，很多东西只能是写出来，于是偶然发现了一些笔记软件准备试试。当时听 [[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Rhino\|Rhino]] 课程的时候，是蒯鼎老师主讲，他展示了一下**有道云笔记**，我就记下了准备后续自己研究一下。
 
 ## 有道云笔记
 
@@ -20,7 +20,7 @@
 
 ## 幕布
 
-大纲笔记，界面简约精美，笔记引导交互也很不错，多端同步速度是非常快，基本上是无感同步。而且编辑长文速度真的挺快的，[[C 📔 AREA/⚒️ Software/Rhinoceros 3D/Grasshopper_ALU\|Grasshopper_ALU]] 这篇笔记 12 W 字 45 W 字符都没什么压力，而且大纲模式还可以随时切换成思维导图，可谓非常之方便。可是好景不长，幕布也出现了一次丢文件的问题，导致我又不得不考虑一下其他笔记软件了，最后幕布有一段时间是无运营状态，有一年多没更新了，直到我用上了其他软件很久，幕布才被浮墨笔记收购，开始运营
+大纲笔记，界面简约精美，笔记引导交互也很不错，多端同步速度是非常快，基本上是无感同步。而且编辑长文速度真的挺快的，[[C 📔 AREA/📖 Education/🌳 Landscape Architecture/Model/Rhinoceros 3D/Grasshopper_ALU\|Grasshopper_ALU]] 这篇笔记 12 W 字 45 W 字符都没什么压力，而且大纲模式还可以随时切换成思维导图，可谓非常之方便。可是好景不长，幕布也出现了一次丢文件的问题，导致我又不得不考虑一下其他笔记软件了，最后幕布有一段时间是无运营状态，有一年多没更新了，直到我用上了其他软件很久，幕布才被浮墨笔记收购，开始运营
 
 ## Notion
 
@@ -28,4 +28,4 @@
 
 最终，我发现了 Obsidian | 黑曜石，是我个人的最终答案。
 
-详见 [[🍊 TANGERINE/Obsidian/Obsidian\|Obsidian]] 介绍、快速入门、使用说明
+详见 [[🍊 TANGERINE/Obsidian/Obsidian\|🍊 TANGERINE/Obsidian/Obsidian]] 介绍、快速入门、使用说明
